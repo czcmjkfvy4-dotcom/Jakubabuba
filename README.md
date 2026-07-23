@@ -28,6 +28,7 @@ Głównym bohaterem miasta jest Billaden, specjalista od dyplomacji.
 ## Informacje
 
 - Autor: Billaden
+- Twórca moda: Billaden - Jakubabuba
 - Wersja moda: 1.4.1
 - Język rozgrywki: polski
 - Typ moda: nowe miasto
