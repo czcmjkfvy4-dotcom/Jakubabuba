@@ -1,11 +1,11 @@
 {
-  "name": "Smocza Cytadela",
-  "description": "Smocza Cytadela wznosi się ponad królestwami jako jedna z najdroższych i najpotężniejszych twierdz VCMI. Jej siedliska wymagają fortuny oraz rzadkich surowców, lecz w zamian oddają pod rozkazy gracza elitarnych tytanów, pradawne smoki i armię zdolną przełamać niemal każdą obronę.",
+  "name": "Dragon Citadel",
+  "description": "Dragon Citadel rises above the kingdoms as one of VCMI's most expensive and powerful fortresses. Its dwellings demand a fortune and rare resources, but in return they field elite titans, ancient dragons and an army capable of breaking almost any defense.",
   "author": "Billaden",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "contact": "https://github.com/czcmjkfvy4-dotcom/Jakubabuba",
   "modType": "Town",
-  "language": "polish",
+  "language": "english",
   "compatibility": {
     "min": "1.7.0"
   },
@@ -29,11 +29,27 @@
     "config/dragon-citadel/object-flaming-feather-sanctuary.json"
   ],
   "changelog": {
+    "1.4.2": [
+      "Raised every dwelling and dwelling upgrade construction cost by 50%.",
+      "Raised recruitment costs for every creature by 20%.",
+      "Changed English to the base language and added a complete Polish translation."
+    ],
     "1.4.1": [
-      "Dodano własne tło jednostek Smoczej Cytadeli.",
-      "Poprawiono miniatury Czarnego Mnicha i Tytana Burzy.",
-      "Rozjaśniono ikonę frakcji oraz wygląd miasta na mapie.",
-      "Ujednolicono polskie opisy, koszty i oprawę miasta."
+      "Added a custom Dragon Citadel creature background.",
+      "Improved the Black Monk and Storm Titan portraits.",
+      "Brightened the faction icon and adventure-map town appearance.",
+      "Unified the town's Polish descriptions, costs and visual presentation."
+    ]
+  },
+  "translations": [
+    "translation/dragon-citadel/english.json"
+  ],
+  "polish": {
+    "name": "Smocza Cytadela",
+    "description": "Smocza Cytadela wznosi się ponad królestwami jako jedna z najdroższych i najpotężniejszych twierdz VCMI. Jej siedliska wymagają fortuny oraz rzadkich surowców, lecz w zamian oddają pod rozkazy gracza elitarnych tytanów, pradawne smoki i armię zdolną przełamać niemal każdą obronę.",
+    "author": "Billaden",
+    "translations": [
+      "translation/dragon-citadel/polish.json"
     ]
   }
 }

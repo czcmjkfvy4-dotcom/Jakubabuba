@@ -1117,8 +1117,8 @@
           "name": "Twierdza Ostrostrzelców",
           "description": "Pozwala rekrutować Ostrostrzelców.",
           "cost": {
-            "wood": 10,
-            "gold": 3000
+            "wood": 15,
+            "gold": 4500
           },
           "requires": [
             "fort"
@@ -1128,8 +1128,8 @@
           "name": "Złota Odlewnia",
           "description": "Pozwala rekrutować Złote Golemy.",
           "cost": {
-            "ore": 10,
-            "gold": 4500
+            "ore": 15,
+            "gold": 6750
           },
           "requires": [
             "dwellingLvl1"
@@ -1139,9 +1139,9 @@
           "name": "Sala Tytanów",
           "description": "Pozwala rekrutować Tytanów.",
           "cost": {
-            "wood": 10,
-            "ore": 10,
-            "gold": 7500
+            "wood": 15,
+            "ore": 15,
+            "gold": 11250
           },
           "requires": [
             "dwellingLvl2"
@@ -1151,10 +1151,10 @@
           "name": "Grota Czarodziejskich Smoków",
           "description": "Pierwsza z dwóch wykluczających się smoczych grot.",
           "cost": {
-            "wood": 10,
-            "ore": 10,
-            "gems": 16,
-            "gold": 16000
+            "wood": 15,
+            "ore": 15,
+            "gems": 24,
+            "gold": 24000
           },
           "requires": [
             "allOf",
@@ -1176,9 +1176,9 @@
           "name": "Rdzawe Leże",
           "description": "Pozwala rekrutować Rdzawe Smoki.",
           "cost": {
-            "ore": 20,
-            "sulfur": 20,
-            "gold": 24000
+            "ore": 30,
+            "sulfur": 30,
+            "gold": 36000
           },
           "requires": [
             "anyOf",
@@ -1194,11 +1194,11 @@
           "name": "Szczyt Burzy",
           "description": "Pozwala rekrutować autorskie Smoki Burzy.",
           "cost": {
-            "wood": 20,
-            "ore": 20,
-            "mercury": 24,
-            "crystal": 16,
-            "gold": 36000
+            "wood": 30,
+            "ore": 30,
+            "mercury": 36,
+            "crystal": 24,
+            "gold": 54000
           },
           "requires": [
             "allOf",
@@ -1214,13 +1214,13 @@
           "name": "Błękitny Szczyt",
           "description": "Kosztowne leże pozwalające rekrutować Błękitne Smoki.",
           "cost": {
-            "wood": 40,
-            "ore": 40,
-            "mercury": 30,
-            "sulfur": 30,
-            "crystal": 30,
-            "gems": 30,
-            "gold": 60000
+            "wood": 60,
+            "ore": 60,
+            "mercury": 45,
+            "sulfur": 45,
+            "crystal": 45,
+            "gems": 45,
+            "gold": 90000
           },
           "requires": [
             "allOf",
@@ -1242,8 +1242,8 @@
           "name": "Królewska Twierdza Ostrostrzelców",
           "description": "Pozwala rekrutować Elitarnych Ostrostrzelców.",
           "cost": {
-            "wood": 5,
-            "gold": 2000
+            "wood": 8,
+            "gold": 3000
           },
           "upgrades": "dwellingLvl1"
         },
@@ -1251,8 +1251,8 @@
           "name": "Diamentowa Odlewnia",
           "description": "Pozwala rekrutować Diamentowe Golemy.",
           "cost": {
-            "ore": 5,
-            "gold": 3000
+            "ore": 8,
+            "gold": 4500
           },
           "upgrades": "dwellingLvl2"
         },
@@ -1260,8 +1260,8 @@
           "name": "Wieża Tytanów Burzy",
           "description": "Pozwala rekrutować strzelających Tytanów Burzy.",
           "cost": {
-            "gems": 5,
-            "gold": 6000
+            "gems": 8,
+            "gold": 9000
           },
           "upgrades": "dwellingLvl3"
         },
@@ -1269,9 +1269,9 @@
           "name": "Pradawna Grota Magii",
           "description": "Pozwala rekrutować Starsze Czarodziejskie Smoki.",
           "cost": {
-            "gems": 12,
-            "crystal": 6,
-            "gold": 12000
+            "gems": 18,
+            "crystal": 9,
+            "gold": 18000
           },
           "upgrades": "dwellingLvl4"
         },
@@ -1279,9 +1279,9 @@
           "name": "Pradawne Rdzawe Leże",
           "description": "Pozwala rekrutować Pradawne Rdzawe Smoki.",
           "cost": {
-            "sulfur": 16,
-            "mercury": 8,
-            "gold": 18000
+            "sulfur": 24,
+            "mercury": 12,
+            "gold": 27000
           },
           "upgrades": "dwellingLvl5"
         },
@@ -1289,10 +1289,10 @@
           "name": "Oko Wiecznej Burzy",
           "description": "Pozwala rekrutować Smoki Wiecznej Burzy.",
           "cost": {
-            "mercury": 20,
-            "crystal": 16,
-            "gems": 10,
-            "gold": 28000
+            "mercury": 30,
+            "crystal": 24,
+            "gems": 15,
+            "gold": 42000
           },
           "upgrades": "dwellingLvl6",
           "requires": [
@@ -1303,11 +1303,11 @@
           "name": "Sanktuarium Pradawnych Błękitnych Smoków",
           "description": "Najwyższe sanktuarium Pradawnych Błękitnych Smoków.",
           "cost": {
-            "mercury": 24,
-            "sulfur": 16,
-            "crystal": 24,
-            "gems": 24,
-            "gold": 44000
+            "mercury": 36,
+            "sulfur": 24,
+            "crystal": 36,
+            "gems": 36,
+            "gold": 66000
           },
           "upgrades": "dwellingLvl7",
           "requires": [
@@ -1330,10 +1330,10 @@
           "name": "Rubinowa Grota",
           "description": "Alternatywna grota pozwalająca rekrutować Rubinowe Smoki.",
           "cost": {
-            "wood": 10,
-            "ore": 10,
-            "crystal": 16,
-            "gold": 16000
+            "wood": 15,
+            "ore": 15,
+            "crystal": 24,
+            "gold": 24000
           },
           "requires": [
             "allOf",
@@ -1355,9 +1355,9 @@
           "name": "Pradawna Rubinowa Grota",
           "description": "Pozwala rekrutować Pradawne Rubinowe Smoki.",
           "cost": {
-            "crystal": 12,
-            "gems": 6,
-            "gold": 12000
+            "crystal": 18,
+            "gems": 9,
+            "gold": 18000
           },
           "upgrades": "dwellingUp2Lvl4"
         },

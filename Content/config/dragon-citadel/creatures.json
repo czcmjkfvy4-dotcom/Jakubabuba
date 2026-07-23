@@ -18,7 +18,7 @@
     "fightValue": 650,
     "aiValue": 720,
     "cost": {
-      "gold": 770
+      "gold": 924
     },
     "shots": 32,
     "advMapAmount": {
@@ -108,7 +108,7 @@
     "fightValue": 1050,
     "aiValue": 1180,
     "cost": {
-      "gold": 1430
+      "gold": 1716
     },
     "shots": 32,
     "advMapAmount": {
@@ -198,7 +198,7 @@
     "fightValue": 1150,
     "aiValue": 1280,
     "cost": {
-      "gold": 990
+      "gold": 1188
     },
     "advMapAmount": {
       "min": 10,
@@ -259,7 +259,7 @@
     "fightValue": 1750,
     "aiValue": 1950,
     "cost": {
-      "gold": 1430
+      "gold": 1716
     },
     "advMapAmount": {
       "min": 8,
@@ -317,7 +317,7 @@
     "fightValue": 3800,
     "aiValue": 4300,
     "cost": {
-      "gold": 1750
+      "gold": 2100
     },
     "advMapAmount": {
       "min": 5,
@@ -377,7 +377,7 @@
     "fightValue": 6200,
     "aiValue": 7200,
     "cost": {
-      "gold": 3000,
+      "gold": 3600,
       "gems": 2
     },
     "shots": 24,
@@ -469,8 +469,8 @@
     "fightValue": 9000,
     "aiValue": 10500,
     "cost": {
-      "gold": 5850,
-      "gems": 3
+      "gold": 7020,
+      "gems": 4
     },
     "doubleWide": true,
     "advMapAmount": {
@@ -599,8 +599,8 @@
     "fightValue": 13500,
     "aiValue": 15500,
     "cost": {
-      "gold": 7800,
-      "gems": 4
+      "gold": 9360,
+      "gems": 5
     },
     "doubleWide": true,
     "advMapAmount": {
@@ -726,8 +726,8 @@
     "fightValue": 21000,
     "aiValue": 24500,
     "cost": {
-      "gold": 9100,
-      "sulfur": 4
+      "gold": 10920,
+      "sulfur": 5
     },
     "doubleWide": true,
     "advMapAmount": {
@@ -808,8 +808,8 @@
     "fightValue": 31000,
     "aiValue": 36500,
     "cost": {
-      "gold": 11050,
-      "sulfur": 6
+      "gold": 13260,
+      "sulfur": 7
     },
     "doubleWide": true,
     "advMapAmount": {
@@ -887,8 +887,8 @@
     "fightValue": 9200,
     "aiValue": 10800,
     "cost": {
-      "gold": 5850,
-      "crystal": 3
+      "gold": 7020,
+      "crystal": 4
     },
     "doubleWide": true,
     "advMapAmount": {
@@ -961,8 +961,8 @@
     "fightValue": 14000,
     "aiValue": 16200,
     "cost": {
-      "gold": 7800,
-      "crystal": 4
+      "gold": 9360,
+      "crystal": 5
     },
     "doubleWide": true,
     "advMapAmount": {
@@ -1032,8 +1032,8 @@
     "fightValue": 52000,
     "aiValue": 62000,
     "cost": {
-      "gold": 11700,
-      "mercury": 6
+      "gold": 14040,
+      "mercury": 7
     },
     "doubleWide": true,
     "advMapAmount": {
@@ -1128,8 +1128,8 @@
     "fightValue": 78000,
     "aiValue": 93000,
     "cost": {
-      "gold": 15600,
-      "mercury": 8
+      "gold": 18720,
+      "mercury": 10
     },
     "doubleWide": true,
     "advMapAmount": {
@@ -1221,8 +1221,8 @@
     "fightValue": 30000,
     "aiValue": 35500,
     "cost": {
-      "gold": 11050,
-      "mercury": 4
+      "gold": 13260,
+      "mercury": 5
     },
     "doubleWide": true,
     "advMapAmount": {
@@ -1295,8 +1295,8 @@
     "fightValue": 44000,
     "aiValue": 52000,
     "cost": {
-      "gold": 13000,
-      "mercury": 6
+      "gold": 15600,
+      "mercury": 7
     },
     "doubleWide": true,
     "advMapAmount": {
