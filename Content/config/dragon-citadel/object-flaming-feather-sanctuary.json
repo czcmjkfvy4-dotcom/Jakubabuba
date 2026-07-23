@@ -1,0 +1,81 @@
+{
+  "core:creatureBank": {
+    "types": {
+      "flamingFeatherSanctuary": {
+        "name": "Sanktuarium Płonącego Pióra",
+        "templates": {
+          "base": {
+            "animation": "AVSutop0.def",
+            "visitableFrom": [
+              "+++",
+              "+++",
+              "+++"
+            ],
+            "allowedTerrains": [
+              "dirt",
+              "grass",
+              "lava",
+              "rough",
+              "sand",
+              "snow",
+              "subterra",
+              "swamp"
+            ],
+            "mask": [
+              "VVVVVVV",
+              "VVVVVVV",
+              "VVVBBBB",
+              "VBBBBBV",
+              "VVVBBAV"
+            ]
+          }
+        },
+        "rmg": {
+          "value": 18000,
+          "rarity": 18,
+          "mapLimit": 1,
+          "zoneLimit": 1
+        },
+        "aiValue": 18000,
+        "onGuardedMessage": "Płonącego Pióra strzeże rada smoków. Pokonaj je, aby zdobyć relikt.",
+        "onVisitedMessage": "Sanktuarium jest puste, a jego ogień zgasł.",
+        "visitMode": "once",
+        "selectMode": "selectFirst",
+        "guardsLayout": "creatureBankWide",
+        "rewards": [
+          {
+            "message": "Smoki poległy. Płonące Pióro należy teraz do ciebie.",
+            "guards": [
+              {
+                "amount": 8,
+                "type": "greenDragon"
+              },
+              {
+                "amount": 6,
+                "type": "redDragon"
+              },
+              {
+                "amount": 4,
+                "type": "goldDragon"
+              },
+              {
+                "amount": 3,
+                "type": "blackDragon"
+              },
+              {
+                "amount": 1,
+                "type": "azureDragon"
+              }
+            ],
+            "artifacts": [
+              "flamingFeather"
+            ],
+            "resources": {
+              "gold": 12000
+            }
+          }
+        ]
+      }
+    }
+  }
+}

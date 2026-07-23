@@ -1,0 +1,10 @@
+{
+  "basepath": "dragon-citadel/town/buildings/dwellingUpLvl6/",
+  "images": [
+    {
+      "group": 0,
+      "frame": 0,
+      "file": "frame-00"
+    }
+  ]
+}

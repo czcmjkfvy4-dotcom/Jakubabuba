@@ -1,0 +1,75 @@
+{
+  "basepath": "dragon-citadel/creatures/dcGiant/map/",
+  "images": [
+    {
+      "group": 0,
+      "frame": 0,
+      "file": "g00-f000"
+    },
+    {
+      "group": 0,
+      "frame": 1,
+      "file": "g00-f001"
+    },
+    {
+      "group": 0,
+      "frame": 2,
+      "file": "g00-f002"
+    },
+    {
+      "group": 0,
+      "frame": 3,
+      "file": "g00-f003"
+    },
+    {
+      "group": 0,
+      "frame": 4,
+      "file": "g00-f004"
+    },
+    {
+      "group": 0,
+      "frame": 5,
+      "file": "g00-f005"
+    },
+    {
+      "group": 0,
+      "frame": 6,
+      "file": "g00-f006"
+    },
+    {
+      "group": 0,
+      "frame": 7,
+      "file": "g00-f007"
+    },
+    {
+      "group": 0,
+      "frame": 8,
+      "file": "g00-f008"
+    },
+    {
+      "group": 0,
+      "frame": 9,
+      "file": "g00-f009"
+    },
+    {
+      "group": 0,
+      "frame": 10,
+      "file": "g00-f010"
+    },
+    {
+      "group": 0,
+      "frame": 11,
+      "file": "g00-f011"
+    },
+    {
+      "group": 0,
+      "frame": 12,
+      "file": "g00-f012"
+    },
+    {
+      "group": 0,
+      "frame": 13,
+      "file": "g00-f013"
+    }
+  ]
+}

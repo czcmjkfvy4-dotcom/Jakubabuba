@@ -1,0 +1,10 @@
+{
+  "basepath": "dragon-citadel/town/buildings/mageGuild/",
+  "images": [
+    {
+      "group": 0,
+      "frame": 0,
+      "file": "frame-00"
+    }
+  ]
+}

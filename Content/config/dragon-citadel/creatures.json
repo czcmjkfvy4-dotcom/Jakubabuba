@@ -1,0 +1,1350 @@
+{
+  "dcSharpshooter": {
+    "name": {
+      "singular": "Ostrostrzelec",
+      "plural": "Ostrostrzelcy"
+    },
+    "faction": "dragonCitadel",
+    "level": 1,
+    "attack": 13,
+    "defense": 11,
+    "damage": {
+      "min": 8,
+      "max": 10
+    },
+    "hitPoints": 18,
+    "speed": 9,
+    "growth": 4,
+    "fightValue": 650,
+    "aiValue": 720,
+    "cost": {
+      "gold": 770
+    },
+    "shots": 32,
+    "advMapAmount": {
+      "min": 15,
+      "max": 35
+    },
+    "excludeFromRandomization": true,
+    "abilities": {
+      "shooter": {
+        "type": "SHOOTER"
+      },
+      "noDistancePenalty": {
+        "type": "NO_DISTANCE_PENALTY"
+      },
+      "noWallPenalty": {
+        "type": "NO_WALL_PENALTY"
+      }
+    },
+    "graphics": {
+      "animation": "dragon-citadel/creatures/dcSharpshooter/battle",
+      "map": "dragon-citadel/creatures/dcSharpshooter/map",
+      "animationTime": {
+        "attack": 1,
+        "idle": 10,
+        "walk": 1
+      },
+      "timeBetweenFidgets": 1,
+      "mapAttackFromRight": "AvWattak.def:0:274",
+      "mapAttackFromLeft": "AvWattak.def:0:275",
+      "iconLarge": "dragon-citadel/creatures/icons/dcSharpshooter-large",
+      "iconSmall": "dragon-citadel/creatures/icons/dcSharpshooter-small",
+      "missile": {
+        "projectile": "PELFX.DEF",
+        "attackClimaxFrame": 7,
+        "offset": {
+          "upperX": 38,
+          "upperY": -65,
+          "middleX": 36,
+          "middleY": -59,
+          "lowerX": 21,
+          "lowerY": -50
+        },
+        "frameAngles": [
+          90,
+          72,
+          45,
+          27,
+          0,
+          -27,
+          -45,
+          -72,
+          -90,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "sound": {
+      "attack": "HCRSATTK.wav",
+      "defend": "HCRSDFND.wav",
+      "killed": "HCRSKILL.wav",
+      "move": "HCRSMOVE.wav",
+      "shoot": "HCRSSHOT.wav",
+      "wince": "HCRSWNCE.wav"
+    },
+    "upgrades": [
+      "dcEnchanter"
+    ]
+  },
+  "dcEnchanter": {
+    "name": {
+      "singular": "Elitarny Ostrostrzelec",
+      "plural": "Elitarni Ostrostrzelcy"
+    },
+    "faction": "dragonCitadel",
+    "level": 1,
+    "attack": 16,
+    "defense": 14,
+    "damage": {
+      "min": 11,
+      "max": 14
+    },
+    "hitPoints": 28,
+    "speed": 10,
+    "growth": 4,
+    "fightValue": 1050,
+    "aiValue": 1180,
+    "cost": {
+      "gold": 1430
+    },
+    "shots": 32,
+    "advMapAmount": {
+      "min": 15,
+      "max": 35
+    },
+    "excludeFromRandomization": true,
+    "abilities": {
+      "shooter": {
+        "type": "SHOOTER"
+      },
+      "noDistancePenalty": {
+        "type": "NO_DISTANCE_PENALTY"
+      },
+      "noWallPenalty": {
+        "type": "NO_WALL_PENALTY"
+      },
+      "noMeleePenalty": {
+        "type": "NO_MELEE_PENALTY"
+      }
+    },
+    "graphics": {
+      "animation": "dragon-citadel/creatures/dcEnchanter/battle",
+      "map": "dragon-citadel/creatures/dcEnchanter/map",
+      "animationTime": {
+        "attack": 1,
+        "idle": 10,
+        "walk": 1
+      },
+      "timeBetweenFidgets": 1,
+      "mapAttackFromRight": "AvWattak.def:0:274",
+      "mapAttackFromLeft": "AvWattak.def:0:275",
+      "iconLarge": "dragon-citadel/creatures/icons/dcEnchanter-large",
+      "iconSmall": "dragon-citadel/creatures/icons/dcEnchanter-small",
+      "missile": {
+        "projectile": "PELFX.DEF",
+        "attackClimaxFrame": 7,
+        "offset": {
+          "upperX": 38,
+          "upperY": -65,
+          "middleX": 36,
+          "middleY": -59,
+          "lowerX": 21,
+          "lowerY": -50
+        },
+        "frameAngles": [
+          90,
+          72,
+          45,
+          27,
+          0,
+          -27,
+          -45,
+          -72,
+          -90,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "sound": {
+      "attack": "HCRSATTK.wav",
+      "defend": "HCRSDFND.wav",
+      "killed": "HCRSKILL.wav",
+      "move": "HCRSMOVE.wav",
+      "shoot": "HCRSSHOT.wav",
+      "wince": "HCRSWNCE.wav"
+    }
+  },
+  "dcGoldGolem": {
+    "name": {
+      "singular": "Złoty Golem",
+      "plural": "Złote Golemy"
+    },
+    "faction": "dragonCitadel",
+    "level": 2,
+    "attack": 13,
+    "defense": 14,
+    "damage": {
+      "min": 10,
+      "max": 14
+    },
+    "hitPoints": 70,
+    "speed": 6,
+    "growth": 3,
+    "fightValue": 1150,
+    "aiValue": 1280,
+    "cost": {
+      "gold": 990
+    },
+    "advMapAmount": {
+      "min": 10,
+      "max": 25
+    },
+    "excludeFromRandomization": true,
+    "abilities": {
+      "nonliving": {
+        "type": "NON_LIVING"
+      },
+      "magicResistance": {
+        "type": "SPELL_DAMAGE_REDUCTION",
+        "subtype": "spellSchool.any",
+        "val": 85
+      }
+    },
+    "graphics": {
+      "animation": "dragon-citadel/creatures/dcGoldGolem/battle",
+      "map": "dragon-citadel/creatures/dcGoldGolem/map",
+      "animationTime": {
+        "attack": 1,
+        "idle": 10,
+        "walk": 1
+      },
+      "timeBetweenFidgets": 1,
+      "mapAttackFromRight": "AvWattak.def:0:232",
+      "mapAttackFromLeft": "AvWattak.def:0:233",
+      "iconLarge": "dragon-citadel/creatures/icons/dcGoldGolem-large",
+      "iconSmall": "dragon-citadel/creatures/icons/dcGoldGolem-small"
+    },
+    "sound": {
+      "attack": "GGLMATTK.wav",
+      "defend": "GGLMDFND.wav",
+      "killed": "GGLMKILL.wav",
+      "move": "GGLMMOVE.wav",
+      "wince": "GGLMWNCE.wav"
+    },
+    "upgrades": [
+      "dcDiamondGolem"
+    ]
+  },
+  "dcDiamondGolem": {
+    "name": {
+      "singular": "Diamentowy Golem",
+      "plural": "Diamentowe Golemy"
+    },
+    "faction": "dragonCitadel",
+    "level": 2,
+    "attack": 16,
+    "defense": 18,
+    "damage": {
+      "min": 14,
+      "max": 18
+    },
+    "hitPoints": 95,
+    "speed": 7,
+    "growth": 3,
+    "fightValue": 1750,
+    "aiValue": 1950,
+    "cost": {
+      "gold": 1430
+    },
+    "advMapAmount": {
+      "min": 8,
+      "max": 20
+    },
+    "excludeFromRandomization": true,
+    "abilities": {
+      "nonliving": {
+        "type": "NON_LIVING"
+      },
+      "magicResistance": {
+        "type": "SPELL_DAMAGE_REDUCTION",
+        "subtype": "spellSchool.any",
+        "val": 95
+      }
+    },
+    "graphics": {
+      "animation": "dragon-citadel/creatures/dcDiamondGolem/battle",
+      "map": "dragon-citadel/creatures/dcDiamondGolem/map",
+      "animationTime": {
+        "attack": 1,
+        "idle": 10,
+        "walk": 1
+      },
+      "timeBetweenFidgets": 1,
+      "mapAttackFromRight": "AvWattak.def:0:234",
+      "mapAttackFromLeft": "AvWattak.def:0:235",
+      "iconLarge": "dragon-citadel/creatures/icons/dcDiamondGolem-large",
+      "iconSmall": "dragon-citadel/creatures/icons/dcDiamondGolem-small"
+    },
+    "sound": {
+      "attack": "DGLMATTK.wav",
+      "defend": "DGLMDFND.wav",
+      "killed": "DGLMKILL.wav",
+      "move": "DGLMMOVE.wav",
+      "wince": "DGLMWNCE.wav"
+    }
+  },
+  "dcGiant": {
+    "name": {
+      "singular": "Tytan",
+      "plural": "Tytani"
+    },
+    "faction": "dragonCitadel",
+    "level": 3,
+    "attack": 20,
+    "defense": 18,
+    "damage": {
+      "min": 35,
+      "max": 50
+    },
+    "hitPoints": 180,
+    "speed": 7,
+    "growth": 2,
+    "fightValue": 3800,
+    "aiValue": 4300,
+    "cost": {
+      "gold": 1750
+    },
+    "advMapAmount": {
+      "min": 5,
+      "max": 12
+    },
+    "excludeFromRandomization": true,
+    "abilities": {
+      "immuneToMind": {
+        "type": "MIND_IMMUNITY"
+      },
+      "KING_3": {
+        "type": "KING",
+        "val": 3
+      }
+    },
+    "graphics": {
+      "animation": "dragon-citadel/creatures/dcGiant/battle",
+      "map": "dragon-citadel/creatures/dcGiant/map",
+      "animationTime": {
+        "attack": 1,
+        "idle": 10,
+        "walk": 1
+      },
+      "timeBetweenFidgets": 1,
+      "mapAttackFromRight": "AvWattak.def:0:80",
+      "mapAttackFromLeft": "AvWattak.def:0:81",
+      "iconLarge": "dragon-citadel/creatures/icons/dcGiant-large",
+      "iconSmall": "dragon-citadel/creatures/icons/dcGiant-small"
+    },
+    "sound": {
+      "attack": "LTITATTK.wav",
+      "defend": "LTITDFND.wav",
+      "killed": "LTITKILL.wav",
+      "move": "LTITMOVE.wav",
+      "wince": "LTITWNCE.wav"
+    },
+    "upgrades": [
+      "dcTitan"
+    ]
+  },
+  "dcTitan": {
+    "name": {
+      "singular": "Tytan Burzy",
+      "plural": "Tytani Burzy"
+    },
+    "faction": "dragonCitadel",
+    "level": 3,
+    "attack": 24,
+    "defense": 22,
+    "damage": {
+      "min": 45,
+      "max": 60
+    },
+    "hitPoints": 250,
+    "speed": 8,
+    "growth": 2,
+    "fightValue": 6200,
+    "aiValue": 7200,
+    "cost": {
+      "gold": 3000,
+      "gems": 2
+    },
+    "shots": 24,
+    "advMapAmount": {
+      "min": 3,
+      "max": 9
+    },
+    "excludeFromRandomization": true,
+    "abilities": {
+      "shooter": {
+        "type": "SHOOTER"
+      },
+      "noMeleePenalty": {
+        "type": "NO_MELEE_PENALTY"
+      },
+      "immuneToMind": {
+        "type": "MIND_IMMUNITY"
+      },
+      "KING_3": {
+        "type": "KING",
+        "val": 3
+      }
+    },
+    "graphics": {
+      "animation": "dragon-citadel/creatures/dcTitan/battle",
+      "map": "dragon-citadel/creatures/dcTitan/map",
+      "animationTime": {
+        "attack": 1,
+        "idle": 10,
+        "walk": 1
+      },
+      "timeBetweenFidgets": 1,
+      "mapAttackFromRight": "AvWattak.def:0:82",
+      "mapAttackFromLeft": "AvWattak.def:0:83",
+      "iconLarge": "dragon-citadel/creatures/icons/dcTitan-large",
+      "iconSmall": "dragon-citadel/creatures/icons/dcTitan-small",
+      "missile": {
+        "projectile": "CPRGTIX.DEF",
+        "attackClimaxFrame": 16,
+        "offset": {
+          "upperX": 38,
+          "upperY": -65,
+          "middleX": 36,
+          "middleY": -59,
+          "lowerX": 21,
+          "lowerY": -50
+        },
+        "frameAngles": [
+          90,
+          72,
+          45,
+          27,
+          0,
+          -27,
+          -45,
+          -72,
+          -90,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "sound": {
+      "attack": "GTITATTK.wav",
+      "defend": "GTITDFND.wav",
+      "killed": "GTITKILL.wav",
+      "move": "GTITMOVE.wav",
+      "shoot": "GTITSHOT.wav",
+      "wince": "GTITWNCE.wav"
+    }
+  },
+  "dcFirebird": {
+    "name": {
+      "singular": "Czarodziejski Smok",
+      "plural": "Czarodziejskie Smoki"
+    },
+    "faction": "dragonCitadel",
+    "level": 4,
+    "attack": 25,
+    "defense": 24,
+    "damage": {
+      "min": 35,
+      "max": 48
+    },
+    "hitPoints": 320,
+    "speed": 12,
+    "growth": 1,
+    "fightValue": 9000,
+    "aiValue": 10500,
+    "cost": {
+      "gold": 5850,
+      "gems": 3
+    },
+    "doubleWide": true,
+    "advMapAmount": {
+      "min": 2,
+      "max": 5
+    },
+    "excludeFromRandomization": true,
+    "abilities": {
+      "dragon": {
+        "type": "DRAGON_NATURE"
+      },
+      "dragonSkeleton": {
+        "type": "SKELETON_TRANSFORMER_TARGET",
+        "subtype": "boneDragon"
+      },
+      "canFly": {
+        "type": "FLYING"
+      },
+      "mirror": {
+        "type": "MAGIC_MIRROR",
+        "val": 20
+      },
+      "casts": {
+        "type": "CASTS",
+        "val": 5
+      },
+      "spellpower": {
+        "type": "CREATURE_SPELL_POWER",
+        "val": 500
+      },
+      "castsMagicArrow": {
+        "type": "SPELLCASTER",
+        "subtype": "spell.magicArrow",
+        "addInfo": 22,
+        "val": 2
+      },
+      "castsIceBolt": {
+        "type": "SPELLCASTER",
+        "subtype": "spell.iceBolt",
+        "addInfo": 22,
+        "val": 2
+      },
+      "castsLightningBolt": {
+        "type": "SPELLCASTER",
+        "subtype": "spell.lightningBolt",
+        "addInfo": 22,
+        "val": 2
+      },
+      "castsChainLightning": {
+        "type": "SPELLCASTER",
+        "subtype": "spell.chainLightning",
+        "addInfo": 5,
+        "val": 2
+      },
+      "castsFrostRing": {
+        "type": "SPELLCASTER",
+        "subtype": "spell.frostRing",
+        "addInfo": 10,
+        "val": 2
+      },
+      "castsFireball": {
+        "type": "SPELLCASTER",
+        "subtype": "spell.fireball",
+        "addInfo": 21,
+        "val": 2
+      },
+      "castsInferno": {
+        "type": "SPELLCASTER",
+        "subtype": "spell.inferno",
+        "addInfo": 5,
+        "val": 2
+      },
+      "castsMeteorShower": {
+        "type": "SPELLCASTER",
+        "subtype": "spell.meteorShower",
+        "addInfo": 5,
+        "val": 2
+      },
+      "KING_1": {
+        "type": "KING",
+        "val": 0
+      }
+    },
+    "graphics": {
+      "animation": "dragon-citadel/creatures/dcFirebird/battle",
+      "map": "dragon-citadel/creatures/dcFirebird/map",
+      "animationTime": {
+        "attack": 1,
+        "idle": 10,
+        "walk": 1
+      },
+      "timeBetweenFidgets": 1,
+      "mapAttackFromRight": "AvWattak.def:0:268",
+      "mapAttackFromLeft": "AvWattak.def:0:269",
+      "iconLarge": "dragon-citadel/creatures/icons/dcFirebird-large",
+      "iconSmall": "dragon-citadel/creatures/icons/dcFirebird-small"
+    },
+    "sound": {
+      "attack": "FAERATTK.wav",
+      "defend": "FAERDFND.wav",
+      "killed": "FAERKILL.wav",
+      "move": "FAERMOVE.wav",
+      "shoot": "FAERSHOT.wav",
+      "wince": "FAERWNCE.wav"
+    },
+    "upgrades": [
+      "dcPhoenix"
+    ]
+  },
+  "dcPhoenix": {
+    "name": {
+      "singular": "Starszy Czarodziejski Smok",
+      "plural": "Starsze Czarodziejskie Smoki"
+    },
+    "faction": "dragonCitadel",
+    "level": 4,
+    "attack": 30,
+    "defense": 29,
+    "damage": {
+      "min": 45,
+      "max": 60
+    },
+    "hitPoints": 430,
+    "speed": 14,
+    "growth": 1,
+    "fightValue": 13500,
+    "aiValue": 15500,
+    "cost": {
+      "gold": 7800,
+      "gems": 4
+    },
+    "doubleWide": true,
+    "advMapAmount": {
+      "min": 2,
+      "max": 5
+    },
+    "excludeFromRandomization": true,
+    "abilities": {
+      "dragon": {
+        "type": "DRAGON_NATURE"
+      },
+      "dragonSkeleton": {
+        "type": "SKELETON_TRANSFORMER_TARGET",
+        "subtype": "boneDragon"
+      },
+      "canFly": {
+        "type": "FLYING"
+      },
+      "mirror": {
+        "type": "MAGIC_MIRROR",
+        "val": 40
+      },
+      "casts": {
+        "type": "CASTS",
+        "val": 6
+      },
+      "spellpower": {
+        "type": "CREATURE_SPELL_POWER",
+        "val": 500
+      },
+      "castsMagicArrow": {
+        "type": "SPELLCASTER",
+        "subtype": "spell.magicArrow",
+        "addInfo": 22,
+        "val": 2
+      },
+      "castsIceBolt": {
+        "type": "SPELLCASTER",
+        "subtype": "spell.iceBolt",
+        "addInfo": 22,
+        "val": 2
+      },
+      "castsLightningBolt": {
+        "type": "SPELLCASTER",
+        "subtype": "spell.lightningBolt",
+        "addInfo": 22,
+        "val": 2
+      },
+      "castsChainLightning": {
+        "type": "SPELLCASTER",
+        "subtype": "spell.chainLightning",
+        "addInfo": 5,
+        "val": 2
+      },
+      "castsFrostRing": {
+        "type": "SPELLCASTER",
+        "subtype": "spell.frostRing",
+        "addInfo": 10,
+        "val": 2
+      },
+      "castsFireball": {
+        "type": "SPELLCASTER",
+        "subtype": "spell.fireball",
+        "addInfo": 21,
+        "val": 2
+      },
+      "castsInferno": {
+        "type": "SPELLCASTER",
+        "subtype": "spell.inferno",
+        "addInfo": 5,
+        "val": 2
+      },
+      "castsMeteorShower": {
+        "type": "SPELLCASTER",
+        "subtype": "spell.meteorShower",
+        "addInfo": 5,
+        "val": 2
+      },
+      "KING_1": {
+        "type": "KING",
+        "val": 0
+      }
+    },
+    "graphics": {
+      "animation": "dragon-citadel/creatures/dcPhoenix/battle",
+      "map": "dragon-citadel/creatures/dcPhoenix/map",
+      "animationTime": {
+        "attack": 1,
+        "idle": 10,
+        "walk": 1
+      },
+      "timeBetweenFidgets": 1,
+      "mapAttackFromRight": "AvWattak.def:0:268",
+      "mapAttackFromLeft": "AvWattak.def:0:269",
+      "iconLarge": "dragon-citadel/creatures/icons/dcPhoenix-large",
+      "iconSmall": "dragon-citadel/creatures/icons/dcPhoenix-small"
+    },
+    "sound": {
+      "attack": "FAERATTK.wav",
+      "defend": "FAERDFND.wav",
+      "killed": "FAERKILL.wav",
+      "move": "FAERMOVE.wav",
+      "shoot": "FAERSHOT.wav",
+      "wince": "FAERWNCE.wav"
+    }
+  },
+  "dcGoldDragon": {
+    "name": {
+      "singular": "Rdzawy Smok",
+      "plural": "Rdzawe Smoki"
+    },
+    "faction": "dragonCitadel",
+    "level": 5,
+    "attack": 34,
+    "defense": 34,
+    "damage": {
+      "min": 50,
+      "max": 65
+    },
+    "hitPoints": 650,
+    "speed": 13,
+    "growth": 1,
+    "fightValue": 21000,
+    "aiValue": 24500,
+    "cost": {
+      "gold": 9100,
+      "sulfur": 4
+    },
+    "doubleWide": true,
+    "advMapAmount": {
+      "min": 1,
+      "max": 4
+    },
+    "excludeFromRandomization": true,
+    "abilities": {
+      "dragon": {
+        "type": "DRAGON_NATURE"
+      },
+      "dragonSkeleton": {
+        "type": "SKELETON_TRANSFORMER_TARGET",
+        "subtype": "boneDragon"
+      },
+      "canFly": {
+        "type": "FLYING"
+      },
+      "twoHexAttackBreath": {
+        "type": "TWO_HEX_ATTACK_BREATH"
+      },
+      "acidBreath": {
+        "type": "ACID_BREATH",
+        "val": 25,
+        "addInfo": 30
+      },
+      "reduceDefence": {
+        "type": "SPELL_AFTER_ATTACK",
+        "subtype": "spell.acidBreath",
+        "val": 100
+      },
+      "KING_1": {
+        "type": "KING",
+        "val": 0
+      }
+    },
+    "graphics": {
+      "animation": "dragon-citadel/creatures/dcGoldDragon/battle",
+      "map": "dragon-citadel/creatures/dcGoldDragon/map",
+      "animationTime": {
+        "attack": 1,
+        "idle": 10,
+        "walk": 1
+      },
+      "timeBetweenFidgets": 1,
+      "mapAttackFromRight": "AvWattak.def:0:270",
+      "mapAttackFromLeft": "AvWattak.def:0:271",
+      "iconLarge": "dragon-citadel/creatures/icons/dcGoldDragon-large",
+      "iconSmall": "dragon-citadel/creatures/icons/dcGoldDragon-small"
+    },
+    "sound": {
+      "attack": "RUSTATTK.wav",
+      "defend": "RUSTDFND.wav",
+      "killed": "RUSTKILL.wav",
+      "move": "RUSTMOVE.wav",
+      "wince": "RUSTWNCE.wav"
+    },
+    "upgrades": [
+      "dcBlackDragon"
+    ]
+  },
+  "dcBlackDragon": {
+    "name": {
+      "singular": "Pradawny Rdzawy Smok",
+      "plural": "Pradawne Rdzawe Smoki"
+    },
+    "faction": "dragonCitadel",
+    "level": 5,
+    "attack": 40,
+    "defense": 40,
+    "damage": {
+      "min": 65,
+      "max": 82
+    },
+    "hitPoints": 850,
+    "speed": 15,
+    "growth": 1,
+    "fightValue": 31000,
+    "aiValue": 36500,
+    "cost": {
+      "gold": 11050,
+      "sulfur": 6
+    },
+    "doubleWide": true,
+    "advMapAmount": {
+      "min": 1,
+      "max": 4
+    },
+    "excludeFromRandomization": true,
+    "abilities": {
+      "dragon": {
+        "type": "DRAGON_NATURE"
+      },
+      "dragonSkeleton": {
+        "type": "SKELETON_TRANSFORMER_TARGET",
+        "subtype": "boneDragon"
+      },
+      "canFly": {
+        "type": "FLYING"
+      },
+      "twoHexAttackBreath": {
+        "type": "TWO_HEX_ATTACK_BREATH"
+      },
+      "acidBreath": {
+        "type": "ACID_BREATH",
+        "val": 40,
+        "addInfo": 30
+      },
+      "reduceDefence": {
+        "type": "SPELL_AFTER_ATTACK",
+        "subtype": "spell.acidBreath",
+        "val": 100
+      },
+      "KING_1": {
+        "type": "KING",
+        "val": 0
+      }
+    },
+    "graphics": {
+      "animation": "dragon-citadel/creatures/dcBlackDragon/battle",
+      "map": "dragon-citadel/creatures/dcBlackDragon/map",
+      "animationTime": {
+        "attack": 1,
+        "idle": 10,
+        "walk": 1
+      },
+      "timeBetweenFidgets": 1,
+      "mapAttackFromRight": "AvWattak.def:0:270",
+      "mapAttackFromLeft": "AvWattak.def:0:271",
+      "iconLarge": "dragon-citadel/creatures/icons/dcBlackDragon-large",
+      "iconSmall": "dragon-citadel/creatures/icons/dcBlackDragon-small"
+    },
+    "sound": {
+      "attack": "RUSTATTK.wav",
+      "defend": "RUSTDFND.wav",
+      "killed": "RUSTKILL.wav",
+      "move": "RUSTMOVE.wav",
+      "wince": "RUSTWNCE.wav"
+    }
+  },
+  "dcFairieDragon": {
+    "name": {
+      "singular": "Rubinowy Smok",
+      "plural": "Rubinowe Smoki"
+    },
+    "faction": "dragonCitadel",
+    "level": 4,
+    "attack": 26,
+    "defense": 26,
+    "damage": {
+      "min": 38,
+      "max": 50
+    },
+    "hitPoints": 350,
+    "speed": 11,
+    "growth": 1,
+    "fightValue": 9200,
+    "aiValue": 10800,
+    "cost": {
+      "gold": 5850,
+      "crystal": 3
+    },
+    "doubleWide": true,
+    "advMapAmount": {
+      "min": 1,
+      "max": 4
+    },
+    "excludeFromRandomization": true,
+    "abilities": {
+      "dragon": {
+        "type": "DRAGON_NATURE"
+      },
+      "dragonSkeleton": {
+        "type": "SKELETON_TRANSFORMER_TARGET",
+        "subtype": "boneDragon"
+      },
+      "magicResistance": {
+        "type": "MAGIC_RESISTANCE",
+        "val": 35
+      },
+      "KING_1": {
+        "type": "KING",
+        "val": 0
+      },
+      "immuneToFire": {
+        "type": "SPELL_SCHOOL_IMMUNITY",
+        "subtype": "spellSchool.fire"
+      }
+    },
+    "graphics": {
+      "animation": "dragon-citadel/creatures/dcFairieDragon/battle",
+      "map": "dragon-citadel/creatures/dcFairieDragon/map",
+      "animationTime": {
+        "attack": 1,
+        "idle": 10,
+        "walk": 1
+      },
+      "timeBetweenFidgets": 1,
+      "mapAttackFromRight": "AvWattak.def:0:266",
+      "mapAttackFromLeft": "AvWattak.def:0:267",
+      "iconLarge": "dragon-citadel/creatures/icons/dcFairieDragon-large",
+      "iconSmall": "dragon-citadel/creatures/icons/dcFairieDragon-small"
+    },
+    "sound": {
+      "attack": "CRYSATTK.wav",
+      "defend": "CRYSDFND.wav",
+      "killed": "CRYSKILL.wav",
+      "move": "CRYSMOVE.wav",
+      "wince": "CRYSWNCE.wav"
+    },
+    "upgrades": [
+      "dcCrystalDragon"
+    ]
+  },
+  "dcCrystalDragon": {
+    "name": {
+      "singular": "Pradawny Rubinowy Smok",
+      "plural": "Pradawne Rubinowe Smoki"
+    },
+    "faction": "dragonCitadel",
+    "level": 4,
+    "attack": 31,
+    "defense": 31,
+    "damage": {
+      "min": 48,
+      "max": 64
+    },
+    "hitPoints": 480,
+    "speed": 13,
+    "growth": 1,
+    "fightValue": 14000,
+    "aiValue": 16200,
+    "cost": {
+      "gold": 7800,
+      "crystal": 4
+    },
+    "doubleWide": true,
+    "advMapAmount": {
+      "min": 1,
+      "max": 4
+    },
+    "excludeFromRandomization": true,
+    "abilities": {
+      "dragon": {
+        "type": "DRAGON_NATURE"
+      },
+      "dragonSkeleton": {
+        "type": "SKELETON_TRANSFORMER_TARGET",
+        "subtype": "boneDragon"
+      },
+      "magicResistance": {
+        "type": "MAGIC_RESISTANCE",
+        "val": 35
+      },
+      "KING_1": {
+        "type": "KING",
+        "val": 0
+      },
+      "immuneToFire": {
+        "type": "SPELL_SCHOOL_IMMUNITY",
+        "subtype": "spellSchool.fire"
+      }
+    },
+    "graphics": {
+      "animation": "dragon-citadel/creatures/dcCrystalDragon/battle",
+      "map": "dragon-citadel/creatures/dcCrystalDragon/map",
+      "animationTime": {
+        "attack": 1,
+        "idle": 10,
+        "walk": 1
+      },
+      "timeBetweenFidgets": 1,
+      "mapAttackFromRight": "AvWattak.def:0:266",
+      "mapAttackFromLeft": "AvWattak.def:0:267",
+      "iconLarge": "dragon-citadel/creatures/icons/dcCrystalDragon-large",
+      "iconSmall": "dragon-citadel/creatures/icons/dcCrystalDragon-small"
+    },
+    "sound": {
+      "attack": "CRYSATTK.wav",
+      "defend": "CRYSDFND.wav",
+      "killed": "CRYSKILL.wav",
+      "move": "CRYSMOVE.wav",
+      "wince": "CRYSWNCE.wav"
+    }
+  },
+  "dcRustDragon": {
+    "name": {
+      "singular": "Błękitny Smok",
+      "plural": "Błękitne Smoki"
+    },
+    "faction": "dragonCitadel",
+    "level": 7,
+    "attack": 48,
+    "defense": 48,
+    "damage": {
+      "min": 75,
+      "max": 95
+    },
+    "hitPoints": 1100,
+    "speed": 16,
+    "growth": 1,
+    "fightValue": 52000,
+    "aiValue": 62000,
+    "cost": {
+      "gold": 11700,
+      "mercury": 6
+    },
+    "doubleWide": true,
+    "advMapAmount": {
+      "min": 1,
+      "max": 3
+    },
+    "excludeFromRandomization": true,
+    "abilities": {
+      "dragon": {
+        "type": "DRAGON_NATURE"
+      },
+      "dragonSkeleton": {
+        "type": "SKELETON_TRANSFORMER_TARGET",
+        "subtype": "boneDragon"
+      },
+      "canFly": {
+        "type": "FLYING"
+      },
+      "twoHexAttackBreath": {
+        "type": "TWO_HEX_ATTACK_BREATH"
+      },
+      "fearful": {
+        "type": "FEARFUL",
+        "val": 10,
+        "propagator": "BATTLE_WIDE",
+        "propagationUpdater": "BONUS_OWNER_UPDATER",
+        "description": "PLACEHOLDER",
+        "limiters": [
+          "OPPOSITE_SIDE",
+          {
+            "type": "HAS_ANOTHER_BONUS_LIMITER",
+            "bonusType": "LIVING"
+          }
+        ]
+      },
+      "fearless": {
+        "type": "FEARFUL",
+        "valueType": "INDEPENDENT_MIN",
+        "description": "PLACEHOLDER",
+        "val": 0
+      },
+      "spellImmunity": {
+        "type": "LEVEL_SPELL_IMMUNITY",
+        "val": 3
+      },
+      "KING_1": {
+        "type": "KING",
+        "val": 0
+      }
+    },
+    "graphics": {
+      "animation": "dragon-citadel/creatures/dcRustDragon/battle",
+      "map": "dragon-citadel/creatures/dcRustDragon/map",
+      "animationTime": {
+        "attack": 1,
+        "idle": 10,
+        "walk": 1
+      },
+      "timeBetweenFidgets": 1,
+      "mapAttackFromRight": "AvWattak.def:0:264",
+      "mapAttackFromLeft": "AvWattak.def:0:265",
+      "iconLarge": "dragon-citadel/creatures/icons/dcRustDragon-large",
+      "iconSmall": "dragon-citadel/creatures/icons/dcRustDragon-small"
+    },
+    "sound": {
+      "attack": "AZURATTK.wav",
+      "defend": "AZURDFND.wav",
+      "killed": "AZURKILL.wav",
+      "move": "AZURMOVE.wav",
+      "wince": "AZURWNCE.wav"
+    },
+    "upgrades": [
+      "dcAzureDragon"
+    ]
+  },
+  "dcAzureDragon": {
+    "name": {
+      "singular": "Pradawny Błękitny Smok",
+      "plural": "Pradawne Błękitne Smoki"
+    },
+    "faction": "dragonCitadel",
+    "level": 7,
+    "attack": 58,
+    "defense": 58,
+    "damage": {
+      "min": 95,
+      "max": 125
+    },
+    "hitPoints": 1500,
+    "speed": 19,
+    "growth": 1,
+    "fightValue": 78000,
+    "aiValue": 93000,
+    "cost": {
+      "gold": 15600,
+      "mercury": 8
+    },
+    "doubleWide": true,
+    "advMapAmount": {
+      "min": 1,
+      "max": 3
+    },
+    "excludeFromRandomization": true,
+    "abilities": {
+      "dragon": {
+        "type": "DRAGON_NATURE"
+      },
+      "dragonSkeleton": {
+        "type": "SKELETON_TRANSFORMER_TARGET",
+        "subtype": "boneDragon"
+      },
+      "canFly": {
+        "type": "FLYING"
+      },
+      "twoHexAttackBreath": {
+        "type": "TWO_HEX_ATTACK_BREATH"
+      },
+      "fearful": {
+        "type": "FEARFUL",
+        "val": 20,
+        "propagator": "BATTLE_WIDE",
+        "propagationUpdater": "BONUS_OWNER_UPDATER",
+        "description": "PLACEHOLDER",
+        "limiters": [
+          "OPPOSITE_SIDE",
+          {
+            "type": "HAS_ANOTHER_BONUS_LIMITER",
+            "bonusType": "LIVING"
+          }
+        ]
+      },
+      "fearless": {
+        "type": "FEARFUL",
+        "valueType": "INDEPENDENT_MIN",
+        "description": "PLACEHOLDER",
+        "val": 0
+      },
+      "spellImmunity": {
+        "type": "LEVEL_SPELL_IMMUNITY",
+        "val": 3
+      },
+      "KING_1": {
+        "type": "KING",
+        "val": 0
+      }
+    },
+    "graphics": {
+      "animation": "dragon-citadel/creatures/dcAzureDragon/battle",
+      "map": "dragon-citadel/creatures/dcAzureDragon/map",
+      "animationTime": {
+        "attack": 1,
+        "idle": 10,
+        "walk": 1
+      },
+      "timeBetweenFidgets": 1,
+      "mapAttackFromRight": "AvWattak.def:0:264",
+      "mapAttackFromLeft": "AvWattak.def:0:265",
+      "iconLarge": "dragon-citadel/creatures/icons/dcAzureDragon-large",
+      "iconSmall": "dragon-citadel/creatures/icons/dcAzureDragon-small"
+    },
+    "sound": {
+      "attack": "AZURATTK.wav",
+      "defend": "AZURDFND.wav",
+      "killed": "AZURKILL.wav",
+      "move": "AZURMOVE.wav",
+      "wince": "AZURWNCE.wav"
+    }
+  },
+  "dcStormDragon": {
+    "name": {
+      "singular": "Smok Burzy",
+      "plural": "Smoki Burzy"
+    },
+    "faction": "dragonCitadel",
+    "level": 6,
+    "attack": 40,
+    "defense": 38,
+    "damage": {
+      "min": 60,
+      "max": 78
+    },
+    "hitPoints": 800,
+    "speed": 14,
+    "growth": 1,
+    "fightValue": 30000,
+    "aiValue": 35500,
+    "cost": {
+      "gold": 11050,
+      "mercury": 4
+    },
+    "doubleWide": true,
+    "advMapAmount": {
+      "min": 3,
+      "max": 8
+    },
+    "excludeFromRandomization": true,
+    "abilities": {
+      "dragon": {
+        "type": "DRAGON_NATURE"
+      },
+      "dragonSkeleton": {
+        "type": "SKELETON_TRANSFORMER_TARGET",
+        "subtype": "boneDragon"
+      },
+      "canFly": {
+        "type": "FLYING"
+      },
+      "twoHexAttackBreath": {
+        "type": "TWO_HEX_ATTACK_BREATH"
+      },
+      "spellImmunity": {
+        "type": "LEVEL_SPELL_IMMUNITY",
+        "val": 5
+      },
+      "KING_1": {
+        "type": "KING",
+        "val": 0
+      }
+    },
+    "graphics": {
+      "animation": "dragon-citadel/creatures/dcStormDragon/battle",
+      "map": "dragon-citadel/creatures/dcStormDragon/map",
+      "animationTime": {
+        "attack": 1,
+        "idle": 10,
+        "walk": 1
+      },
+      "timeBetweenFidgets": 1,
+      "iconLarge": "dragon-citadel/creatures/icons/dcStormDragon-large",
+      "iconSmall": "dragon-citadel/creatures/icons/dcStormDragon-small"
+    },
+    "sound": {
+      "attack": "BKDRATTK.wav",
+      "defend": "BKDRDFND.wav",
+      "killed": "BKDRKILL.wav",
+      "move": "BKDRMOVE.wav",
+      "wince": "BKDRWNCE.wav"
+    },
+    "upgrades": [
+      "dcEternalStormDragon"
+    ]
+  },
+  "dcEternalStormDragon": {
+    "name": {
+      "singular": "Smok Wiecznej Burzy",
+      "plural": "Smoki Wiecznej Burzy"
+    },
+    "faction": "dragonCitadel",
+    "level": 6,
+    "attack": 47,
+    "defense": 45,
+    "damage": {
+      "min": 78,
+      "max": 98
+    },
+    "hitPoints": 1100,
+    "speed": 17,
+    "growth": 1,
+    "fightValue": 44000,
+    "aiValue": 52000,
+    "cost": {
+      "gold": 13000,
+      "mercury": 6
+    },
+    "doubleWide": true,
+    "advMapAmount": {
+      "min": 3,
+      "max": 8
+    },
+    "excludeFromRandomization": true,
+    "abilities": {
+      "dragon": {
+        "type": "DRAGON_NATURE"
+      },
+      "dragonSkeleton": {
+        "type": "SKELETON_TRANSFORMER_TARGET",
+        "subtype": "boneDragon"
+      },
+      "canFly": {
+        "type": "FLYING"
+      },
+      "twoHexAttackBreath": {
+        "type": "TWO_HEX_ATTACK_BREATH"
+      },
+      "spellImmunity": {
+        "type": "LEVEL_SPELL_IMMUNITY",
+        "val": 5
+      },
+      "KING_1": {
+        "type": "KING",
+        "val": 0
+      }
+    },
+    "graphics": {
+      "animation": "dragon-citadel/creatures/dcEternalStormDragon/battle",
+      "map": "dragon-citadel/creatures/dcEternalStormDragon/map",
+      "animationTime": {
+        "attack": 1,
+        "idle": 10,
+        "walk": 1
+      },
+      "timeBetweenFidgets": 1,
+      "iconLarge": "dragon-citadel/creatures/icons/dcEternalStormDragon-large",
+      "iconSmall": "dragon-citadel/creatures/icons/dcEternalStormDragon-small"
+    },
+    "sound": {
+      "attack": "BKDRATTK.wav",
+      "defend": "BKDRDFND.wav",
+      "killed": "BKDRKILL.wav",
+      "move": "BKDRMOVE.wav",
+      "wince": "BKDRWNCE.wav"
+    }
+  }
+}

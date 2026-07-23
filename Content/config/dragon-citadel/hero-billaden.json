@@ -1,0 +1,50 @@
+{
+  "billaden": {
+    "class": "dragonLord",
+    "female": false,
+    "special": false,
+    "spellbook": [
+      "magicArrow"
+    ],
+    "skills": [
+      {
+        "skill": "diplomacy",
+        "level": "advanced"
+      },
+      {
+        "skill": "tactics",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "secondary": "diplomacy"
+    },
+    "images": {
+      "large": "dragon-citadel/heroes/billaden/large",
+      "small": "dragon-citadel/heroes/billaden/small",
+      "specialtyLarge": "dragon-citadel/artifacts/flaming-feather-specialty-large",
+      "specialtySmall": "dragon-citadel/artifacts/flaming-feather-specialty-small"
+    },
+    "army": [
+      {
+        "creature": "dcSharpshooter",
+        "min": 14,
+        "max": 20
+      },
+      {
+        "creature": "dcGoldGolem",
+        "min": 3,
+        "max": 5
+      }
+    ],
+    "texts": {
+      "name": "Billaden",
+      "biography": "Smoczy władca, który łączy siłę pradawnych bestii z talentem do przekonywania nawet najbardziej nieufnych armii.",
+      "specialty": {
+        "name": "Dyplomacja",
+        "tooltip": "Specjalizacja: Dyplomacja",
+        "description": "Billaden otrzymuje rosnącą wraz z poziomem premię do Dyplomacji."
+      }
+    }
+  }
+}

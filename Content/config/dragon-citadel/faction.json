@@ -1,0 +1,1516 @@
+{
+  "dragonCitadel": {
+    "name": "Smocza Cytadela",
+    "description": "Monumentalna twierdza pradawnych bestii, tytanów i smoczych władców. Każdy budynek jest poważną inwestycją, lecz ukończona Cytadela wystawia armię o sile, przed którą drżą całe królestwa.",
+    "nativeTerrain": "subterra",
+    "alignment": "evil",
+    "preferUndergroundPlacement": true,
+    "creatureBackground": {
+      "120px": "dragon-citadel/interface/creature-background-120",
+      "130px": "dragon-citadel/interface/creature-background-130"
+    },
+    "boat": "boatCastle",
+    "puzzleMap": {
+      "prefix": "PUZDUN",
+      "pieces": [
+        {
+          "x": 7,
+          "y": 8,
+          "index": 31
+        },
+        {
+          "x": 7,
+          "y": 125,
+          "index": 1
+        },
+        {
+          "x": 7,
+          "y": 353,
+          "index": 33
+        },
+        {
+          "x": 7,
+          "y": 394,
+          "index": 6
+        },
+        {
+          "x": 30,
+          "y": 101,
+          "index": 36
+        },
+        {
+          "x": 33,
+          "y": 219,
+          "index": 16
+        },
+        {
+          "x": 57,
+          "y": 171,
+          "index": 13
+        },
+        {
+          "x": 62,
+          "y": 8,
+          "index": 47
+        },
+        {
+          "x": 63,
+          "y": 90,
+          "index": 41
+        },
+        {
+          "x": 83,
+          "y": 471,
+          "index": 10
+        },
+        {
+          "x": 94,
+          "y": 117,
+          "index": 21
+        },
+        {
+          "x": 99,
+          "y": 8,
+          "index": 5
+        },
+        {
+          "x": 113,
+          "y": 258,
+          "index": 32
+        },
+        {
+          "x": 156,
+          "y": 146,
+          "index": 28
+        },
+        {
+          "x": 165,
+          "y": 288,
+          "index": 42
+        },
+        {
+          "x": 172,
+          "y": 388,
+          "index": 44
+        },
+        {
+          "x": 177,
+          "y": 36,
+          "index": 39
+        },
+        {
+          "x": 194,
+          "y": 235,
+          "index": 46
+        },
+        {
+          "x": 204,
+          "y": 502,
+          "index": 3
+        },
+        {
+          "x": 236,
+          "y": 320,
+          "index": 23
+        },
+        {
+          "x": 238,
+          "y": 8,
+          "index": 20
+        },
+        {
+          "x": 245,
+          "y": 75,
+          "index": 25
+        },
+        {
+          "x": 247,
+          "y": 396,
+          "index": 29
+        },
+        {
+          "x": 247,
+          "y": 459,
+          "index": 14
+        },
+        {
+          "x": 253,
+          "y": 152,
+          "index": 48
+        },
+        {
+          "x": 301,
+          "y": 233,
+          "index": 43
+        },
+        {
+          "x": 323,
+          "y": 8,
+          "index": 12
+        },
+        {
+          "x": 323,
+          "y": 178,
+          "index": 45
+        },
+        {
+          "x": 328,
+          "y": 342,
+          "index": 30
+        },
+        {
+          "x": 329,
+          "y": 428,
+          "index": 19
+        },
+        {
+          "x": 339,
+          "y": 8,
+          "index": 26
+        },
+        {
+          "x": 357,
+          "y": 141,
+          "index": 27
+        },
+        {
+          "x": 374,
+          "y": 8,
+          "index": 15
+        },
+        {
+          "x": 374,
+          "y": 236,
+          "index": 34
+        },
+        {
+          "x": 392,
+          "y": 439,
+          "index": 35
+        },
+        {
+          "x": 400,
+          "y": 291,
+          "index": 40
+        },
+        {
+          "x": 401,
+          "y": 103,
+          "index": 18
+        },
+        {
+          "x": 422,
+          "y": 381,
+          "index": 37
+        },
+        {
+          "x": 436,
+          "y": 8,
+          "index": 17
+        },
+        {
+          "x": 438,
+          "y": 336,
+          "index": 24
+        },
+        {
+          "x": 449,
+          "y": 131,
+          "index": 9
+        },
+        {
+          "x": 453,
+          "y": 161,
+          "index": 11
+        },
+        {
+          "x": 471,
+          "y": 267,
+          "index": 38
+        },
+        {
+          "x": 477,
+          "y": 64,
+          "index": 22
+        },
+        {
+          "x": 480,
+          "y": 456,
+          "index": 8
+        },
+        {
+          "x": 485,
+          "y": 8,
+          "index": 2
+        },
+        {
+          "x": 536,
+          "y": 197,
+          "index": 4
+        },
+        {
+          "x": 541,
+          "y": 22,
+          "index": 7
+        }
+      ]
+    },
+    "town": {
+      "mapObject": {
+        "templates": {
+          "village": {
+            "animation": "dragon-citadel/map/town-village"
+          },
+          "fort": {
+            "animation": "dragon-citadel/map/town-fort"
+          },
+          "citadel": {
+            "animation": "dragon-citadel/map/town-citadel"
+          },
+          "castle": {
+            "animation": "dragon-citadel/map/town-castle"
+          },
+          "capitol": {
+            "animation": "dragon-citadel/map/town-capitol"
+          }
+        }
+      },
+      "structures": {
+        "mageGuild1": {
+          "animation": "dragon-citadel/town/buildings/mageGuild",
+          "x": 0,
+          "y": 0,
+          "z": 11800,
+          "campaignBonus": "BoDmage1.pcx",
+          "border": "dragon-citadel/town-screen/borders/mageGuild",
+          "area": "dragon-citadel/town-screen/areas/mageGuild"
+        },
+        "mageGuild2": {
+          "animation": "dragon-citadel/town/buildings/mageGuild",
+          "x": 0,
+          "y": 0,
+          "z": 11800,
+          "campaignBonus": "BoDmage2.pcx",
+          "border": "dragon-citadel/town-screen/borders/mageGuild",
+          "area": "dragon-citadel/town-screen/areas/mageGuild"
+        },
+        "mageGuild3": {
+          "animation": "dragon-citadel/town/buildings/mageGuild",
+          "x": 0,
+          "y": 0,
+          "z": 11800,
+          "campaignBonus": "BoDmage3.pcx",
+          "border": "dragon-citadel/town-screen/borders/mageGuild",
+          "area": "dragon-citadel/town-screen/areas/mageGuild"
+        },
+        "mageGuild4": {
+          "animation": "dragon-citadel/town/buildings/mageGuild",
+          "x": 0,
+          "y": 0,
+          "z": 11800,
+          "campaignBonus": "BoDmage4.pcx",
+          "border": "dragon-citadel/town-screen/borders/mageGuild",
+          "area": "dragon-citadel/town-screen/areas/mageGuild"
+        },
+        "mageGuild5": {
+          "animation": "dragon-citadel/town/buildings/mageGuild",
+          "x": 0,
+          "y": 0,
+          "z": 11800,
+          "campaignBonus": "BoDmage5.pcx",
+          "border": "dragon-citadel/town-screen/borders/mageGuild",
+          "area": "dragon-citadel/town-screen/areas/mageGuild"
+        },
+        "tavern": {
+          "animation": "dragon-citadel/town/buildings/tavern",
+          "x": 0,
+          "y": 0,
+          "campaignBonus": "BoDtav.pcx",
+          "border": "dragon-citadel/town-screen/borders/tavern",
+          "area": "dragon-citadel/town-screen/areas/tavern",
+          "z": 36005
+        },
+        "fort": {
+          "animation": "dragon-citadel/town/buildings/fort",
+          "x": 0,
+          "y": 0,
+          "z": 26006,
+          "campaignBonus": "BoDcas1.pcx",
+          "border": "dragon-citadel/town-screen/borders/fort",
+          "area": "dragon-citadel/town-screen/areas/fort"
+        },
+        "citadel": {
+          "animation": "dragon-citadel/town/buildings/citadel",
+          "x": 0,
+          "y": 0,
+          "z": 26006,
+          "campaignBonus": "BoDcas2.pcx",
+          "border": "dragon-citadel/town-screen/borders/citadel",
+          "area": "dragon-citadel/town-screen/areas/citadel"
+        },
+        "castle": {
+          "animation": "dragon-citadel/town/buildings/castle",
+          "x": 0,
+          "y": 0,
+          "z": 26006,
+          "campaignBonus": "BoDcas3.pcx",
+          "border": "dragon-citadel/town-screen/borders/castle",
+          "area": "dragon-citadel/town-screen/areas/castle"
+        },
+        "villageHall": {
+          "animation": "dragon-citadel/town/buildings/villageHall",
+          "x": 0,
+          "y": 0,
+          "campaignBonus": "BoDhall1.pcx",
+          "border": "dragon-citadel/town-screen/borders/villageHall",
+          "area": "dragon-citadel/town-screen/areas/villageHall",
+          "z": 36709
+        },
+        "townHall": {
+          "animation": "dragon-citadel/town/buildings/townHall",
+          "x": 0,
+          "y": 0,
+          "campaignBonus": "BoDhall2.pcx",
+          "border": "dragon-citadel/town-screen/borders/townHall",
+          "area": "dragon-citadel/town-screen/areas/townHall",
+          "z": 36709
+        },
+        "cityHall": {
+          "animation": "dragon-citadel/town/buildings/cityHall",
+          "x": 0,
+          "y": 0,
+          "campaignBonus": "BoDhall3.pcx",
+          "border": "dragon-citadel/town-screen/borders/cityHall",
+          "area": "dragon-citadel/town-screen/areas/cityHall",
+          "z": 36709
+        },
+        "capitol": {
+          "animation": "dragon-citadel/town/buildings/capitol",
+          "x": 0,
+          "y": 0,
+          "campaignBonus": "BoDhall4.pcx",
+          "border": "dragon-citadel/town-screen/borders/capitol",
+          "area": "dragon-citadel/town-screen/areas/capitol",
+          "z": 36709
+        },
+        "marketplace": {
+          "animation": "dragon-citadel/town/buildings/marketplace",
+          "x": 0,
+          "y": 0,
+          "z": 36513,
+          "campaignBonus": "BoDmark1.pcx",
+          "border": "dragon-citadel/town-screen/borders/marketplace",
+          "area": "dragon-citadel/town-screen/areas/marketplace"
+        },
+        "resourceSilo": {
+          "animation": "dragon-citadel/town/buildings/resourceSilo",
+          "x": 0,
+          "y": 0,
+          "z": 36614,
+          "campaignBonus": "BoDmark2.pcx",
+          "border": "dragon-citadel/town-screen/borders/resourceSilo",
+          "area": "dragon-citadel/town-screen/areas/resourceSilo"
+        },
+        "blacksmith": {
+          "animation": "dragon-citadel/town/buildings/blacksmith",
+          "x": 0,
+          "y": 0,
+          "z": 35615,
+          "campaignBonus": "BoDsmith.pcx",
+          "border": "dragon-citadel/town-screen/borders/blacksmith",
+          "area": "dragon-citadel/town-screen/areas/blacksmith"
+        },
+        "special1": {
+          "animation": "dragon-citadel/town/buildings/special1",
+          "x": 0,
+          "y": 0,
+          "z": 35716,
+          "campaignBonus": "BoDmarkA.pcx",
+          "border": "dragon-citadel/town-screen/borders/special1",
+          "area": "dragon-citadel/town-screen/areas/special1"
+        },
+        "special2": {
+          "animation": "dragon-citadel/town/buildings/special2",
+          "x": 0,
+          "y": 0,
+          "campaignBonus": "BoDvort.pcx",
+          "border": "dragon-citadel/town-screen/borders/special2",
+          "area": "dragon-citadel/town-screen/areas/special2",
+          "z": 24517
+        },
+        "special3": {
+          "animation": "dragon-citadel/town/buildings/special3",
+          "x": 0,
+          "y": 0,
+          "campaignBonus": "BoDport.pcx",
+          "border": "dragon-citadel/town-screen/borders/special3",
+          "area": "dragon-citadel/town-screen/areas/special3",
+          "z": 36518
+        },
+        "special4": {
+          "animation": "dragon-citadel/town/buildings/special4",
+          "x": 0,
+          "y": 0,
+          "campaignBonus": "BoDacad.pcx",
+          "border": "dragon-citadel/town-screen/borders/special4",
+          "area": "dragon-citadel/town-screen/areas/special4",
+          "z": 35419
+        },
+        "grail": {
+          "animation": "dragon-citadel/town/buildings/grail",
+          "x": 0,
+          "y": 0,
+          "z": 11121,
+          "campaignBonus": "BoDholy.pcx",
+          "border": "dragon-citadel/town-screen/borders/grail",
+          "area": "dragon-citadel/town-screen/areas/grail"
+        },
+        "dwellingLvl1": {
+          "animation": "dragon-citadel/town/buildings/dwellingLvl1",
+          "x": 0,
+          "y": 0,
+          "z": 35222,
+          "campaignBonus": "BoDtrog1.pcx",
+          "border": "dragon-citadel/town-screen/borders/dwellingLvl1",
+          "area": "dragon-citadel/town-screen/areas/dwellingLvl1"
+        },
+        "dwellingLvl2": {
+          "animation": "dragon-citadel/town/buildings/dwellingLvl2",
+          "x": 0,
+          "y": 0,
+          "campaignBonus": "BoDharp1.pcx",
+          "border": "dragon-citadel/town-screen/borders/dwellingLvl2",
+          "area": "dragon-citadel/town-screen/areas/dwellingLvl2",
+          "z": 35224
+        },
+        "dwellingLvl3": {
+          "animation": "dragon-citadel/town/buildings/dwellingLvl3",
+          "x": 0,
+          "y": 0,
+          "z": 26026,
+          "campaignBonus": "BoDbeh1.pcx",
+          "border": "dragon-citadel/town-screen/borders/dwellingLvl3",
+          "area": "dragon-citadel/town-screen/areas/dwellingLvl3"
+        },
+        "dwellingLvl4": {
+          "animation": "dragon-citadel/town/buildings/dwellingLvl4",
+          "x": 0,
+          "y": 0,
+          "z": 14228,
+          "campaignBonus": "BoDmedu1.pcx",
+          "border": "dragon-citadel/town-screen/borders/dwellingLvl4",
+          "area": "dragon-citadel/town-screen/areas/dwellingLvl4"
+        },
+        "dwellingLvl5": {
+          "animation": "dragon-citadel/town/buildings/dwellingLvl5",
+          "x": 0,
+          "y": 0,
+          "z": 26432,
+          "campaignBonus": "BoDmino1.pcx",
+          "border": "dragon-citadel/town-screen/borders/dwellingLvl5",
+          "area": "dragon-citadel/town-screen/areas/dwellingLvl5"
+        },
+        "dwellingLvl6": {
+          "animation": "dragon-citadel/town/buildings/dwellingLvl6",
+          "x": 0,
+          "y": 0,
+          "z": 15434,
+          "campaignBonus": "BoDmant1.pcx",
+          "border": "dragon-citadel/town-screen/borders/dwellingLvl6",
+          "area": "dragon-citadel/town-screen/areas/dwellingLvl6"
+        },
+        "dwellingLvl7": {
+          "animation": "dragon-citadel/town/buildings/dwellingLvl7",
+          "x": 0,
+          "y": 0,
+          "z": 10436,
+          "campaignBonus": "BoDdrag1.pcx",
+          "border": "dragon-citadel/town-screen/borders/dwellingLvl7",
+          "area": "dragon-citadel/town-screen/areas/dwellingLvl7"
+        },
+        "dwellingUpLvl1": {
+          "animation": "dragon-citadel/town/buildings/dwellingUpLvl1",
+          "x": 0,
+          "y": 0,
+          "z": 35222,
+          "campaignBonus": "BoDtrog2.pcx",
+          "border": "dragon-citadel/town-screen/borders/dwellingUpLvl1",
+          "area": "dragon-citadel/town-screen/areas/dwellingUpLvl1"
+        },
+        "dwellingUpLvl2": {
+          "animation": "dragon-citadel/town/buildings/dwellingUpLvl2",
+          "x": 0,
+          "y": 0,
+          "campaignBonus": "BoDharp2.pcx",
+          "border": "dragon-citadel/town-screen/borders/dwellingUpLvl2",
+          "area": "dragon-citadel/town-screen/areas/dwellingUpLvl2",
+          "z": 35224
+        },
+        "dwellingUpLvl3": {
+          "animation": "dragon-citadel/town/buildings/dwellingUpLvl3",
+          "x": 0,
+          "y": 0,
+          "z": 26026,
+          "campaignBonus": "BoDbeh2.pcx",
+          "border": "dragon-citadel/town-screen/borders/dwellingUpLvl3",
+          "area": "dragon-citadel/town-screen/areas/dwellingUpLvl3"
+        },
+        "dwellingUpLvl4": {
+          "animation": "dragon-citadel/town/buildings/dwellingUpLvl4",
+          "x": 0,
+          "y": 0,
+          "z": 14228,
+          "campaignBonus": "BoDmedu2.pcx",
+          "border": "dragon-citadel/town-screen/borders/dwellingUpLvl4",
+          "area": "dragon-citadel/town-screen/areas/dwellingUpLvl4"
+        },
+        "dwellingUpLvl5": {
+          "animation": "dragon-citadel/town/buildings/dwellingUpLvl5",
+          "x": 0,
+          "y": 0,
+          "z": 26432,
+          "campaignBonus": "BoDmino2.pcx",
+          "border": "dragon-citadel/town-screen/borders/dwellingUpLvl5",
+          "area": "dragon-citadel/town-screen/areas/dwellingUpLvl5"
+        },
+        "dwellingUpLvl6": {
+          "animation": "dragon-citadel/town/buildings/dwellingUpLvl6",
+          "x": 0,
+          "y": 0,
+          "z": 15434,
+          "campaignBonus": "BoDmant2.pcx",
+          "border": "dragon-citadel/town-screen/borders/dwellingUpLvl6",
+          "area": "dragon-citadel/town-screen/areas/dwellingUpLvl6"
+        },
+        "dwellingUpLvl7": {
+          "animation": "dragon-citadel/town/buildings/dwellingUpLvl7",
+          "x": 0,
+          "y": 0,
+          "z": 10436,
+          "campaignBonus": "BoDdrag2.pcx",
+          "border": "dragon-citadel/town-screen/borders/dwellingUpLvl7",
+          "area": "dragon-citadel/town-screen/areas/dwellingUpLvl7"
+        },
+        "dwellingUp2Lvl4": {
+          "animation": "dragon-citadel/town/buildings/dwellingUp2Lvl4",
+          "x": 0,
+          "y": 0,
+          "z": 14230,
+          "campaignBonus": "BoDmedu1.pcx",
+          "border": "dragon-citadel/town-screen/borders/dwellingUp2Lvl4",
+          "area": "dragon-citadel/town-screen/areas/dwellingUp2Lvl4"
+        },
+        "dwellingUp3Lvl4": {
+          "animation": "dragon-citadel/town/buildings/dwellingUp3Lvl4",
+          "x": 0,
+          "y": 0,
+          "z": 14230,
+          "campaignBonus": "BoDmedu2.pcx",
+          "border": "dragon-citadel/town-screen/borders/dwellingUp3Lvl4",
+          "area": "dragon-citadel/town-screen/areas/dwellingUp3Lvl4"
+        },
+        "special5": {
+          "animation": "dragon-citadel/town/buildings/special5",
+          "x": 0,
+          "y": 0,
+          "campaignBonus": "BoDport.pcx",
+          "border": "dragon-citadel/town-screen/borders/special5",
+          "area": "dragon-citadel/town-screen/areas/special5",
+          "z": 36520
+        }
+      },
+      "musicTheme": [
+        "music/Dungeon"
+      ],
+      "defaultTavern": 5,
+      "tavernVideo": "TAVERN.BIK",
+      "guildBackground": [
+        "TPMAGE.bmp"
+      ],
+      "townBackground": "dragon-citadel/town-screen/background",
+      "guildWindow": [
+        "TPMAGEDN.bmp"
+      ],
+      "buildingsIcons": "dragon-citadel/town/building-icons",
+      "hallBackground": "TPTHBKDG.BMP",
+      "hallSlots": [
+        [
+          [
+            "villageHall",
+            "townHall",
+            "cityHall",
+            "capitol"
+          ],
+          [
+            "fort",
+            "citadel",
+            "castle"
+          ],
+          [
+            "tavern"
+          ],
+          [
+            "blacksmith"
+          ]
+        ],
+        [
+          [
+            "marketplace",
+            "resourceSilo"
+          ],
+          [
+            "mageGuild1",
+            "mageGuild2",
+            "mageGuild3",
+            "mageGuild4",
+            "mageGuild5"
+          ],
+          [
+            "special2"
+          ],
+          [
+            "special3"
+          ]
+        ],
+        [
+          [
+            "special1"
+          ],
+          [
+            "special4"
+          ],
+          [
+            "special5"
+          ]
+        ],
+        [
+          [
+            "dwellingLvl1",
+            "dwellingUpLvl1"
+          ],
+          [
+            "dwellingLvl2",
+            "dwellingUpLvl2"
+          ],
+          [
+            "dwellingLvl3",
+            "dwellingUpLvl3"
+          ],
+          [
+            "dwellingLvl4",
+            "dwellingUpLvl4",
+            "dwellingUp2Lvl4",
+            "dwellingUp3Lvl4"
+          ]
+        ],
+        [
+          [
+            "dwellingLvl5",
+            "dwellingUpLvl5"
+          ],
+          [
+            "dwellingLvl6",
+            "dwellingUpLvl6"
+          ],
+          [
+            "dwellingLvl7",
+            "dwellingUpLvl7"
+          ]
+        ]
+      ],
+      "creatures": [
+        [
+          "dcSharpshooter",
+          "dcEnchanter"
+        ],
+        [
+          "dcGoldGolem",
+          "dcDiamondGolem"
+        ],
+        [
+          "dcGiant",
+          "dcTitan"
+        ],
+        [
+          "dcFirebird",
+          "dcPhoenix",
+          "dcFairieDragon",
+          "dcCrystalDragon"
+        ],
+        [
+          "dcGoldDragon",
+          "dcBlackDragon"
+        ],
+        [
+          "dcStormDragon",
+          "dcEternalStormDragon"
+        ],
+        [
+          "dcRustDragon",
+          "dcAzureDragon"
+        ]
+      ],
+      "horde": [
+        -1
+      ],
+      "mageGuild": 5,
+      "guildSpellPositions": [
+        [
+          {
+            "x": 222,
+            "y": 445
+          },
+          {
+            "x": 312,
+            "y": 445
+          },
+          {
+            "x": 402,
+            "y": 445
+          },
+          {
+            "x": 520,
+            "y": 445
+          },
+          {
+            "x": 610,
+            "y": 445
+          },
+          {
+            "x": 700,
+            "y": 445
+          }
+        ],
+        [
+          {
+            "x": 48,
+            "y": 53
+          },
+          {
+            "x": 48,
+            "y": 147
+          },
+          {
+            "x": 48,
+            "y": 241
+          },
+          {
+            "x": 48,
+            "y": 335
+          },
+          {
+            "x": 48,
+            "y": 429
+          }
+        ],
+        [
+          {
+            "x": 570,
+            "y": 82
+          },
+          {
+            "x": 672,
+            "y": 82
+          },
+          {
+            "x": 570,
+            "y": 157
+          },
+          {
+            "x": 672,
+            "y": 157
+          }
+        ],
+        [
+          {
+            "x": 183,
+            "y": 42
+          },
+          {
+            "x": 183,
+            "y": 148
+          },
+          {
+            "x": 183,
+            "y": 253
+          }
+        ],
+        [
+          {
+            "x": 491,
+            "y": 325
+          },
+          {
+            "x": 591,
+            "y": 325
+          }
+        ]
+      ],
+      "guildWindowPosition": {
+        "x": 332,
+        "y": 76
+      },
+      "primaryResource": "mercury",
+      "moatAbility": "dungeonMoat",
+      "names": [
+        "Smocza Cytadela",
+        "Korona Smokow",
+        "Blekitny Tron",
+        "Krysztalowe Leze",
+        "Rdzawe Wrota",
+        "Czarny Szczyt",
+        "Feniksowa Jama",
+        "Azuryt",
+        "Zloty Krag",
+        "Tytanowy Bastion"
+      ],
+      "tavern": {
+        "dragonVanguard": 10,
+        "dragonMystic": 10,
+        "dragonLord": 1
+      },
+      "buildings": {
+        "mageGuild1": {
+          "cost": {
+            "wood": 2,
+            "ore": 2,
+            "gold": 800
+          },
+          "name": "Gildia Smoczej Magii - poziom 1",
+          "description": "Udostępnia zaklęcia 1. poziomu odwiedzającym bohaterom posiadającym księgę zaklęć."
+        },
+        "mageGuild2": {
+          "cost": {
+            "wood": 2,
+            "ore": 2,
+            "mercury": 2,
+            "sulfur": 2,
+            "crystal": 2,
+            "gems": 2,
+            "gold": 900
+          },
+          "name": "Gildia Smoczej Magii - poziom 2",
+          "description": "Dodaje zaklęcia 2. poziomu. Do ich nauki wymagana jest odpowiednia biegłość Mądrości."
+        },
+        "mageGuild3": {
+          "cost": {
+            "wood": 3,
+            "ore": 3,
+            "mercury": 3,
+            "sulfur": 3,
+            "crystal": 3,
+            "gems": 3,
+            "gold": 1200
+          },
+          "name": "Gildia Smoczej Magii - poziom 3",
+          "description": "Dodaje zaklęcia 3. poziomu. Do ich nauki wymagana jest odpowiednia biegłość Mądrości."
+        },
+        "mageGuild4": {
+          "cost": {
+            "wood": 4,
+            "ore": 4,
+            "mercury": 4,
+            "sulfur": 4,
+            "crystal": 4,
+            "gems": 4,
+            "gold": 1600
+          },
+          "name": "Gildia Smoczej Magii - poziom 4",
+          "description": "Dodaje zaklęcia 4. poziomu. Do ich nauki wymagana jest odpowiednia biegłość Mądrości."
+        },
+        "mageGuild5": {
+          "cost": {
+            "wood": 5,
+            "ore": 5,
+            "mercury": 5,
+            "sulfur": 5,
+            "crystal": 5,
+            "gems": 5,
+            "gold": 2200
+          },
+          "name": "Gildia Smoczej Magii - poziom 5",
+          "description": "Dodaje najpotężniejsze zaklęcia 5. poziomu, dostępne mistrzom Mądrości."
+        },
+        "tavern": {
+          "cost": {
+            "wood": 2,
+            "gold": 400
+          },
+          "name": "Smocza Karczma",
+          "description": "Pozwala rekrutować bohaterów i zwiększa morale oddziałów broniących miasta o 1."
+        },
+        "fort": {
+          "cost": {
+            "wood": 8,
+            "ore": 8,
+            "gold": 2000
+          },
+          "name": "Smoczy Fort",
+          "description": "Otacza miasto murami obronnymi i otwiera drogę do dalszej rozbudowy umocnień."
+        },
+        "citadel": {
+          "cost": {
+            "ore": 3,
+            "gold": 1500
+          },
+          "name": "Smocza Cytadela",
+          "description": "Dodaje fosę i główną wieżę strzelecką oraz zwiększa tygodniowy przyrost stworzeń o 50%."
+        },
+        "castle": {
+          "cost": {
+            "wood": 5,
+            "ore": 5,
+            "gold": 2500
+          },
+          "name": "Smoczy Zamek",
+          "description": "Dodaje dwie boczne wieże strzeleckie i podwaja podstawowy tygodniowy przyrost stworzeń."
+        },
+        "villageHall": {
+          "name": "Rada Smoczej Osady",
+          "description": "Zapewnia 500 sztuk złota dziennie."
+        },
+        "townHall": {
+          "cost": {
+            "gold": 1500
+          },
+          "name": "Ratusz Smoczej Cytadeli",
+          "description": "Zapewnia 1000 sztuk złota dziennie."
+        },
+        "cityHall": {
+          "cost": {
+            "gold": 3500
+          },
+          "requires": [
+            "allOf",
+            [
+              "mageGuild1"
+            ],
+            [
+              "marketplace"
+            ]
+          ],
+          "name": "Wielki Ratusz",
+          "description": "Zapewnia 2000 sztuk złota dziennie."
+        },
+        "capitol": {
+          "cost": {
+            "gold": 7000
+          },
+          "name": "Smoczy Kapitol",
+          "description": "Zapewnia 4000 sztuk złota dziennie. W królestwie może istnieć tylko jeden Kapitol."
+        },
+        "marketplace": {
+          "cost": {
+            "wood": 2,
+            "gold": 500
+          },
+          "name": "Smoczy Targ",
+          "description": "Pozwala wymieniać zasoby. Kurs poprawia się wraz z liczbą posiadanych targów."
+        },
+        "resourceSilo": {
+          "cost": {
+            "ore": 3,
+            "gold": 2500
+          },
+          "produce": {
+            "mercury": 1
+          },
+          "name": "Magazyn Rtęci",
+          "description": "Dostarcza 1 jednostkę rtęci dziennie."
+        },
+        "blacksmith": {
+          "cost": {
+            "wood": 2,
+            "gold": 700
+          },
+          "warMachine": "ballista",
+          "name": "Smocza Kuźnia",
+          "description": "Pozwala kupować Balisty."
+        },
+        "special1": {
+          "cost": {
+            "gold": 1500
+          },
+          "requires": [
+            "marketplace"
+          ],
+          "marketModes": [
+            "resource-artifact",
+            "artifact-resource"
+          ],
+          "name": "Smoczy Targ Artefaktów",
+          "description": "Pozwala kupować artefakty za zasoby oraz sprzedawać artefakty w zamian za zasoby."
+        },
+        "special2": {
+          "cost": {
+            "gold": 1200
+          },
+          "requires": [
+            "mageGuild1"
+          ],
+          "configuration": {
+            "resetParameters": {
+              "period": 7,
+              "visitors": true
+            },
+            "visitMode": "once",
+            "rewards": [
+              {
+                "limiter": {
+                  "noneOf": [
+                    {
+                      "manaPercentage": 200
+                    }
+                  ]
+                },
+                "message": "@core.genrltxt.579",
+                "manaPercentage": 200
+              }
+            ]
+          },
+          "name": "Wir Smoczej Many",
+          "description": "Raz w tygodniu podwaja punkty many odwiedzającego bohatera do 200% jego maksimum."
+        },
+        "special3": {
+          "name": "Smoczy Skarbiec",
+          "description": "Co 7 dni zwiększa posiadane złoto gracza o 10%.",
+          "cost": {
+            "wood": 4,
+            "ore": 4,
+            "crystal": 2,
+            "gems": 2,
+            "gold": 2500
+          },
+          "type": "treasury",
+          "requires": [
+            "marketplace"
+          ]
+        },
+        "special4": {
+          "cost": {
+            "gold": 1200
+          },
+          "configuration": {
+            "visitMode": "hero",
+            "rewards": [
+              {
+                "message": "@core.genrltxt.583",
+                "heroExperience": 1000
+              }
+            ]
+          },
+          "name": "Akademia Smoczych Mistrzów",
+          "description": "Każdy bohater może odwiedzić Akademię raz i otrzymać 1000 punktów doświadczenia."
+        },
+        "grail": {
+          "bonuses": [
+            {
+              "type": "PRIMARY_SKILL",
+              "subtype": "primarySkill.spellpower",
+              "val": 12
+            }
+          ],
+          "name": "Serce Smoczej Cytadeli",
+          "description": "Zapewnia 5000 sztuk złota dziennie, zwiększa przyrost stworzeń o 50% i Moc Zaklęć broniącego bohatera o 12."
+        },
+        "dwellingLvl1": {
+          "name": "Twierdza Ostrostrzelców",
+          "description": "Pozwala rekrutować Ostrostrzelców.",
+          "cost": {
+            "wood": 10,
+            "gold": 3000
+          },
+          "requires": [
+            "fort"
+          ]
+        },
+        "dwellingLvl2": {
+          "name": "Złota Odlewnia",
+          "description": "Pozwala rekrutować Złote Golemy.",
+          "cost": {
+            "ore": 10,
+            "gold": 4500
+          },
+          "requires": [
+            "dwellingLvl1"
+          ]
+        },
+        "dwellingLvl3": {
+          "name": "Sala Tytanów",
+          "description": "Pozwala rekrutować Tytanów.",
+          "cost": {
+            "wood": 10,
+            "ore": 10,
+            "gold": 7500
+          },
+          "requires": [
+            "dwellingLvl2"
+          ]
+        },
+        "dwellingLvl4": {
+          "name": "Grota Czarodziejskich Smoków",
+          "description": "Pierwsza z dwóch wykluczających się smoczych grot.",
+          "cost": {
+            "wood": 10,
+            "ore": 10,
+            "gems": 16,
+            "gold": 16000
+          },
+          "requires": [
+            "allOf",
+            [
+              "dwellingLvl3"
+            ],
+            [
+              "mageGuild1"
+            ],
+            [
+              "noneOf",
+              [
+                "dwellingUp2Lvl4"
+              ]
+            ]
+          ]
+        },
+        "dwellingLvl5": {
+          "name": "Rdzawe Leże",
+          "description": "Pozwala rekrutować Rdzawe Smoki.",
+          "cost": {
+            "ore": 20,
+            "sulfur": 20,
+            "gold": 24000
+          },
+          "requires": [
+            "anyOf",
+            [
+              "dwellingLvl4"
+            ],
+            [
+              "dwellingUp2Lvl4"
+            ]
+          ]
+        },
+        "dwellingLvl6": {
+          "name": "Szczyt Burzy",
+          "description": "Pozwala rekrutować autorskie Smoki Burzy.",
+          "cost": {
+            "wood": 20,
+            "ore": 20,
+            "mercury": 24,
+            "crystal": 16,
+            "gold": 36000
+          },
+          "requires": [
+            "allOf",
+            [
+              "dwellingLvl5"
+            ],
+            [
+              "mageGuild2"
+            ]
+          ]
+        },
+        "dwellingLvl7": {
+          "name": "Błękitny Szczyt",
+          "description": "Kosztowne leże pozwalające rekrutować Błękitne Smoki.",
+          "cost": {
+            "wood": 40,
+            "ore": 40,
+            "mercury": 30,
+            "sulfur": 30,
+            "crystal": 30,
+            "gems": 30,
+            "gold": 60000
+          },
+          "requires": [
+            "allOf",
+            [
+              "castle"
+            ],
+            [
+              "mageGuild4"
+            ],
+            [
+              "dwellingLvl6"
+            ],
+            [
+              "special3"
+            ]
+          ]
+        },
+        "dwellingUpLvl1": {
+          "name": "Królewska Twierdza Ostrostrzelców",
+          "description": "Pozwala rekrutować Elitarnych Ostrostrzelców.",
+          "cost": {
+            "wood": 5,
+            "gold": 2000
+          },
+          "upgrades": "dwellingLvl1"
+        },
+        "dwellingUpLvl2": {
+          "name": "Diamentowa Odlewnia",
+          "description": "Pozwala rekrutować Diamentowe Golemy.",
+          "cost": {
+            "ore": 5,
+            "gold": 3000
+          },
+          "upgrades": "dwellingLvl2"
+        },
+        "dwellingUpLvl3": {
+          "name": "Wieża Tytanów Burzy",
+          "description": "Pozwala rekrutować strzelających Tytanów Burzy.",
+          "cost": {
+            "gems": 5,
+            "gold": 6000
+          },
+          "upgrades": "dwellingLvl3"
+        },
+        "dwellingUpLvl4": {
+          "name": "Pradawna Grota Magii",
+          "description": "Pozwala rekrutować Starsze Czarodziejskie Smoki.",
+          "cost": {
+            "gems": 12,
+            "crystal": 6,
+            "gold": 12000
+          },
+          "upgrades": "dwellingLvl4"
+        },
+        "dwellingUpLvl5": {
+          "name": "Pradawne Rdzawe Leże",
+          "description": "Pozwala rekrutować Pradawne Rdzawe Smoki.",
+          "cost": {
+            "sulfur": 16,
+            "mercury": 8,
+            "gold": 18000
+          },
+          "upgrades": "dwellingLvl5"
+        },
+        "dwellingUpLvl6": {
+          "name": "Oko Wiecznej Burzy",
+          "description": "Pozwala rekrutować Smoki Wiecznej Burzy.",
+          "cost": {
+            "mercury": 20,
+            "crystal": 16,
+            "gems": 10,
+            "gold": 28000
+          },
+          "upgrades": "dwellingLvl6",
+          "requires": [
+            "mageGuild3"
+          ]
+        },
+        "dwellingUpLvl7": {
+          "name": "Sanktuarium Pradawnych Błękitnych Smoków",
+          "description": "Najwyższe sanktuarium Pradawnych Błękitnych Smoków.",
+          "cost": {
+            "mercury": 24,
+            "sulfur": 16,
+            "crystal": 24,
+            "gems": 24,
+            "gold": 44000
+          },
+          "upgrades": "dwellingLvl7",
+          "requires": [
+            "allOf",
+            [
+              "mageGuild5"
+            ],
+            [
+              "castle"
+            ]
+          ]
+        },
+        "horde1": null,
+        "horde1Upgr": null,
+        "horde2": null,
+        "horde2Upgr": null,
+        "ship": null,
+        "shipyard": null,
+        "dwellingUp2Lvl4": {
+          "name": "Rubinowa Grota",
+          "description": "Alternatywna grota pozwalająca rekrutować Rubinowe Smoki.",
+          "cost": {
+            "wood": 10,
+            "ore": 10,
+            "crystal": 16,
+            "gold": 16000
+          },
+          "requires": [
+            "allOf",
+            [
+              "dwellingLvl3"
+            ],
+            [
+              "mageGuild1"
+            ],
+            [
+              "noneOf",
+              [
+                "dwellingLvl4"
+              ]
+            ]
+          ]
+        },
+        "dwellingUp3Lvl4": {
+          "name": "Pradawna Rubinowa Grota",
+          "description": "Pozwala rekrutować Pradawne Rubinowe Smoki.",
+          "cost": {
+            "crystal": 12,
+            "gems": 6,
+            "gold": 12000
+          },
+          "upgrades": "dwellingUp2Lvl4"
+        },
+        "special5": {
+          "id": 27,
+          "name": "Smocza Mennica",
+          "description": "Zwiększa dzienny dochód właściciela miasta o 4000 sztuk złota.",
+          "cost": {
+            "wood": 10,
+            "ore": 10,
+            "gold": 12000
+          },
+          "requires": [
+            "allOf",
+            [
+              "cityHall"
+            ],
+            [
+              "marketplace"
+            ],
+            [
+              "special3"
+            ]
+          ],
+          "produce": {
+            "gold": 4000
+          }
+        }
+      },
+      "siege": {
+        "shooter": "dcTitan",
+        "towerIconSmall": "dragon-citadel/icons/towerSmall",
+        "towerIconLarge": "dragon-citadel/icons/towerLarge",
+        "imagePrefix": "SGDN",
+        "gate": {
+          "arch": {
+            "x": 471,
+            "y": 165
+          },
+          "gate": {
+            "x": 395,
+            "y": 260
+          }
+        },
+        "moat": {
+          "bank": {
+            "x": 284,
+            "y": 94
+          },
+          "moat": {
+            "x": 284,
+            "y": 94
+          }
+        },
+        "static": {
+          "background": {
+            "x": 608,
+            "y": 50
+          },
+          "bottom": {
+            "x": 522,
+            "y": 306
+          },
+          "top": {
+            "x": 494,
+            "y": 53
+          }
+        },
+        "towers": {
+          "bottom": {
+            "battlement": {
+              "x": 595,
+              "y": 496
+            },
+            "creature": {
+              "x": 410,
+              "y": 293
+            },
+            "tower": {
+              "x": 595,
+              "y": 496
+            }
+          },
+          "keep": {
+            "battlement": {
+              "x": 732,
+              "y": 162
+            },
+            "creature": {
+              "x": 570,
+              "y": -50
+            },
+            "tower": {
+              "x": 732,
+              "y": 162
+            }
+          },
+          "top": {
+            "battlement": {
+              "x": 562,
+              "y": 15
+            },
+            "creature": {
+              "x": 381,
+              "y": -187
+            },
+            "tower": {
+              "x": 562,
+              "y": 15
+            }
+          }
+        },
+        "walls": {
+          "bottom": {
+            "x": 559,
+            "y": 448
+          },
+          "bottomMid": {
+            "x": 471,
+            "y": 296
+          },
+          "upper": {
+            "x": 523,
+            "y": 56
+          },
+          "upperMid": {
+            "x": 478,
+            "y": 181
+          }
+        }
+      },
+      "icons": {
+        "village": {
+          "normal": {
+            "small": "dragon-citadel/town-icons/village-normal-small",
+            "large": "dragon-citadel/town-icons/village-normal-large"
+          },
+          "built": {
+            "small": "dragon-citadel/town-icons/village-built-small",
+            "large": "dragon-citadel/town-icons/village-built-large"
+          }
+        },
+        "fort": {
+          "normal": {
+            "small": "dragon-citadel/town-icons/fort-normal-small",
+            "large": "dragon-citadel/town-icons/fort-normal-large"
+          },
+          "built": {
+            "small": "dragon-citadel/town-icons/fort-built-small",
+            "large": "dragon-citadel/town-icons/fort-built-large"
+          }
+        }
+      }
+    }
+  }
+}

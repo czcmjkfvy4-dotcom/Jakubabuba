@@ -1,0 +1,778 @@
+{
+  "dcLorelei": {
+    "class": "dragonVanguard",
+    "female": true,
+    "skills": [
+      {
+        "skill": "scouting",
+        "level": "basic"
+      },
+      {
+        "skill": "leadership",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "creature": "harpy"
+    },
+    "special": false,
+    "army": [
+      {
+        "creature": "dcSharpshooter",
+        "min": 12,
+        "max": 18
+      },
+      {
+        "creature": "dcGoldGolem",
+        "min": 2,
+        "max": 4
+      }
+    ],
+    "images": {
+      "large": "dragon-citadel/heroes/roster/dcLorelei/large",
+      "small": "dragon-citadel/heroes/roster/dcLorelei/small",
+      "specialtyLarge": "dragon-citadel/heroes/roster/dcLorelei/specialty-large",
+      "specialtySmall": "dragon-citadel/heroes/roster/dcLorelei/specialty-small"
+    },
+    "texts": {
+      "name": "Lorelei",
+      "biography": "Lorelei dołącza do Smoczej Cytadeli, zachowując swoje doświadczenie, umiejętności i klasyczną specjalizację.",
+      "specialty": {
+        "name": "Harpie",
+        "tooltip": "Specjalizacja: Harpie",
+        "description": "Klasyczna specjalizacja bohatera Lorelei: Harpie."
+      }
+    }
+  },
+  "dcArlach": {
+    "class": "dragonVanguard",
+    "female": false,
+    "skills": [
+      {
+        "skill": "artillery",
+        "level": "basic"
+      },
+      {
+        "skill": "offence",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "creature": "ballista",
+      "creatureLevel": 5
+    },
+    "special": false,
+    "army": [
+      {
+        "creature": "dcSharpshooter",
+        "min": 12,
+        "max": 18
+      },
+      {
+        "creature": "dcGoldGolem",
+        "min": 2,
+        "max": 4
+      }
+    ],
+    "images": {
+      "large": "dragon-citadel/heroes/roster/dcArlach/large",
+      "small": "dragon-citadel/heroes/roster/dcArlach/small",
+      "specialtyLarge": "dragon-citadel/heroes/roster/dcArlach/specialty-large",
+      "specialtySmall": "dragon-citadel/heroes/roster/dcArlach/specialty-small"
+    },
+    "texts": {
+      "name": "Arlach",
+      "biography": "Arlach dołącza do Smoczej Cytadeli, zachowując swoje doświadczenie, umiejętności i klasyczną specjalizację.",
+      "specialty": {
+        "name": "Balista",
+        "tooltip": "Specjalizacja: Balista",
+        "description": "Klasyczna specjalizacja bohatera Arlach: Balista."
+      }
+    }
+  },
+  "dcDace": {
+    "class": "dragonVanguard",
+    "female": false,
+    "skills": [
+      {
+        "skill": "tactics",
+        "level": "basic"
+      },
+      {
+        "skill": "offence",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "creature": "minotaur"
+    },
+    "special": false,
+    "army": [
+      {
+        "creature": "dcSharpshooter",
+        "min": 12,
+        "max": 18
+      },
+      {
+        "creature": "dcGoldGolem",
+        "min": 2,
+        "max": 4
+      }
+    ],
+    "images": {
+      "large": "dragon-citadel/heroes/roster/dcDace/large",
+      "small": "dragon-citadel/heroes/roster/dcDace/small",
+      "specialtyLarge": "dragon-citadel/heroes/roster/dcDace/specialty-large",
+      "specialtySmall": "dragon-citadel/heroes/roster/dcDace/specialty-small"
+    },
+    "texts": {
+      "name": "Dace",
+      "biography": "Dace dołącza do Smoczej Cytadeli, zachowując swoje doświadczenie, umiejętności i klasyczną specjalizację.",
+      "specialty": {
+        "name": "Minotaury",
+        "tooltip": "Specjalizacja: Minotaury",
+        "description": "Klasyczna specjalizacja bohatera Dace: Minotaury."
+      }
+    }
+  },
+  "dcAjit": {
+    "class": "dragonVanguard",
+    "female": false,
+    "skills": [
+      {
+        "skill": "leadership",
+        "level": "basic"
+      },
+      {
+        "skill": "resistance",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "creature": "beholder"
+    },
+    "special": false,
+    "army": [
+      {
+        "creature": "dcSharpshooter",
+        "min": 12,
+        "max": 18
+      },
+      {
+        "creature": "dcGoldGolem",
+        "min": 2,
+        "max": 4
+      }
+    ],
+    "images": {
+      "large": "dragon-citadel/heroes/roster/dcAjit/large",
+      "small": "dragon-citadel/heroes/roster/dcAjit/small",
+      "specialtyLarge": "dragon-citadel/heroes/roster/dcAjit/specialty-large",
+      "specialtySmall": "dragon-citadel/heroes/roster/dcAjit/specialty-small"
+    },
+    "texts": {
+      "name": "Ajit",
+      "biography": "Ajit dołącza do Smoczej Cytadeli, zachowując swoje doświadczenie, umiejętności i klasyczną specjalizację.",
+      "specialty": {
+        "name": "Obserwatorzy",
+        "tooltip": "Specjalizacja: Obserwatorzy",
+        "description": "Klasyczna specjalizacja bohatera Ajit: Obserwatorzy."
+      }
+    }
+  },
+  "dcDamacon": {
+    "class": "dragonVanguard",
+    "female": false,
+    "skills": [
+      {
+        "skill": "offence",
+        "level": "advanced"
+      }
+    ],
+    "specialty": {
+      "bonuses": {
+        "gold": {
+          "subtype": "resource.gold",
+          "type": "GENERATE_RESOURCE",
+          "val": 350
+        }
+      }
+    },
+    "special": false,
+    "army": [
+      {
+        "creature": "dcSharpshooter",
+        "min": 12,
+        "max": 18
+      },
+      {
+        "creature": "dcGoldGolem",
+        "min": 2,
+        "max": 4
+      }
+    ],
+    "images": {
+      "large": "dragon-citadel/heroes/roster/dcDamacon/large",
+      "small": "dragon-citadel/heroes/roster/dcDamacon/small",
+      "specialtyLarge": "dragon-citadel/heroes/roster/dcDamacon/specialty-large",
+      "specialtySmall": "dragon-citadel/heroes/roster/dcDamacon/specialty-small"
+    },
+    "texts": {
+      "name": "Damacon",
+      "biography": "Damacon dołącza do Smoczej Cytadeli, zachowując swoje doświadczenie, umiejętności i klasyczną specjalizację.",
+      "specialty": {
+        "name": "Złoto",
+        "tooltip": "Specjalizacja: Złoto",
+        "description": "Klasyczna specjalizacja bohatera Damacon: Złoto."
+      }
+    }
+  },
+  "dcGunnar": {
+    "class": "dragonVanguard",
+    "female": false,
+    "skills": [
+      {
+        "skill": "logistics",
+        "level": "basic"
+      },
+      {
+        "skill": "tactics",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "secondary": "logistics"
+    },
+    "special": false,
+    "army": [
+      {
+        "creature": "dcSharpshooter",
+        "min": 12,
+        "max": 18
+      },
+      {
+        "creature": "dcGoldGolem",
+        "min": 2,
+        "max": 4
+      }
+    ],
+    "images": {
+      "large": "dragon-citadel/heroes/roster/dcGunnar/large",
+      "small": "dragon-citadel/heroes/roster/dcGunnar/small",
+      "specialtyLarge": "dragon-citadel/heroes/roster/dcGunnar/specialty-large",
+      "specialtySmall": "dragon-citadel/heroes/roster/dcGunnar/specialty-small"
+    },
+    "texts": {
+      "name": "Gunnar",
+      "biography": "Gunnar dołącza do Smoczej Cytadeli, zachowując swoje doświadczenie, umiejętności i klasyczną specjalizację.",
+      "specialty": {
+        "name": "Logistyka",
+        "tooltip": "Specjalizacja: Logistyka",
+        "description": "Klasyczna specjalizacja bohatera Gunnar: Logistyka."
+      }
+    }
+  },
+  "dcSynca": {
+    "class": "dragonVanguard",
+    "female": true,
+    "skills": [
+      {
+        "skill": "leadership",
+        "level": "basic"
+      },
+      {
+        "skill": "scholar",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "creature": "manticore"
+    },
+    "special": false,
+    "army": [
+      {
+        "creature": "dcSharpshooter",
+        "min": 12,
+        "max": 18
+      },
+      {
+        "creature": "dcGoldGolem",
+        "min": 2,
+        "max": 4
+      }
+    ],
+    "images": {
+      "large": "dragon-citadel/heroes/roster/dcSynca/large",
+      "small": "dragon-citadel/heroes/roster/dcSynca/small",
+      "specialtyLarge": "dragon-citadel/heroes/roster/dcSynca/specialty-large",
+      "specialtySmall": "dragon-citadel/heroes/roster/dcSynca/specialty-small"
+    },
+    "texts": {
+      "name": "Synca",
+      "biography": "Synca dołącza do Smoczej Cytadeli, zachowując swoje doświadczenie, umiejętności i klasyczną specjalizację.",
+      "specialty": {
+        "name": "Mantykory",
+        "tooltip": "Specjalizacja: Mantykory",
+        "description": "Klasyczna specjalizacja bohatera Synca: Mantykory."
+      }
+    }
+  },
+  "dcShakti": {
+    "class": "dragonVanguard",
+    "female": false,
+    "skills": [
+      {
+        "skill": "tactics",
+        "level": "basic"
+      },
+      {
+        "skill": "offence",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "creature": "troglodyte"
+    },
+    "special": false,
+    "army": [
+      {
+        "creature": "dcSharpshooter",
+        "min": 12,
+        "max": 18
+      },
+      {
+        "creature": "dcGoldGolem",
+        "min": 2,
+        "max": 4
+      }
+    ],
+    "images": {
+      "large": "dragon-citadel/heroes/roster/dcShakti/large",
+      "small": "dragon-citadel/heroes/roster/dcShakti/small",
+      "specialtyLarge": "dragon-citadel/heroes/roster/dcShakti/specialty-large",
+      "specialtySmall": "dragon-citadel/heroes/roster/dcShakti/specialty-small"
+    },
+    "texts": {
+      "name": "Shakti",
+      "biography": "Shakti dołącza do Smoczej Cytadeli, zachowując swoje doświadczenie, umiejętności i klasyczną specjalizację.",
+      "specialty": {
+        "name": "Troglodyci",
+        "tooltip": "Specjalizacja: Troglodyci",
+        "description": "Klasyczna specjalizacja bohatera Shakti: Troglodyci."
+      }
+    }
+  },
+  "dcAlamar": {
+    "class": "dragonMystic",
+    "spellbook": [
+      "resurrection"
+    ],
+    "female": false,
+    "skills": [
+      {
+        "skill": "wisdom",
+        "level": "basic"
+      },
+      {
+        "skill": "scholar",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "bonuses": {
+        "resurrection": {
+          "subtype": "spell.resurrection",
+          "type": "SPECIAL_SPELL_LEV",
+          "updater": "TIMES_HERO_LEVEL",
+          "val": 3
+        }
+      }
+    },
+    "special": false,
+    "army": [
+      {
+        "creature": "dcSharpshooter",
+        "min": 10,
+        "max": 15
+      },
+      {
+        "creature": "dcGoldGolem",
+        "min": 2,
+        "max": 3
+      }
+    ],
+    "images": {
+      "large": "dragon-citadel/heroes/roster/dcAlamar/large",
+      "small": "dragon-citadel/heroes/roster/dcAlamar/small",
+      "specialtyLarge": "dragon-citadel/heroes/roster/dcAlamar/specialty-large",
+      "specialtySmall": "dragon-citadel/heroes/roster/dcAlamar/specialty-small"
+    },
+    "texts": {
+      "name": "Alamar",
+      "biography": "Alamar dołącza do Smoczej Cytadeli, zachowując swoje doświadczenie, umiejętności i klasyczną specjalizację.",
+      "specialty": {
+        "name": "Wskrzeszenie",
+        "tooltip": "Specjalizacja: Wskrzeszenie",
+        "description": "Klasyczna specjalizacja bohatera Alamar: Wskrzeszenie."
+      }
+    }
+  },
+  "dcJaegar": {
+    "class": "dragonMystic",
+    "female": false,
+    "spellbook": [
+      "shield"
+    ],
+    "skills": [
+      {
+        "skill": "wisdom",
+        "level": "basic"
+      },
+      {
+        "skill": "mysticism",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "secondary": "mysticism"
+    },
+    "special": false,
+    "army": [
+      {
+        "creature": "dcSharpshooter",
+        "min": 10,
+        "max": 15
+      },
+      {
+        "creature": "dcGoldGolem",
+        "min": 2,
+        "max": 3
+      }
+    ],
+    "images": {
+      "large": "dragon-citadel/heroes/roster/dcJaegar/large",
+      "small": "dragon-citadel/heroes/roster/dcJaegar/small",
+      "specialtyLarge": "dragon-citadel/heroes/roster/dcJaegar/specialty-large",
+      "specialtySmall": "dragon-citadel/heroes/roster/dcJaegar/specialty-small"
+    },
+    "texts": {
+      "name": "Jaegar",
+      "biography": "Jaegar dołącza do Smoczej Cytadeli, zachowując swoje doświadczenie, umiejętności i klasyczną specjalizację.",
+      "specialty": {
+        "name": "Mistycyzm",
+        "tooltip": "Specjalizacja: Mistycyzm",
+        "description": "Klasyczna specjalizacja bohatera Jaegar: Mistycyzm."
+      }
+    }
+  },
+  "dcMalekith": {
+    "class": "dragonMystic",
+    "female": false,
+    "spellbook": [
+      "bloodlust"
+    ],
+    "skills": [
+      {
+        "skill": "wisdom",
+        "level": "basic"
+      },
+      {
+        "skill": "sorcery",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "secondary": "sorcery"
+    },
+    "special": false,
+    "army": [
+      {
+        "creature": "dcSharpshooter",
+        "min": 10,
+        "max": 15
+      },
+      {
+        "creature": "dcGoldGolem",
+        "min": 2,
+        "max": 3
+      }
+    ],
+    "images": {
+      "large": "dragon-citadel/heroes/roster/dcMalekith/large",
+      "small": "dragon-citadel/heroes/roster/dcMalekith/small",
+      "specialtyLarge": "dragon-citadel/heroes/roster/dcMalekith/specialty-large",
+      "specialtySmall": "dragon-citadel/heroes/roster/dcMalekith/specialty-small"
+    },
+    "texts": {
+      "name": "Malekith",
+      "biography": "Malekith dołącza do Smoczej Cytadeli, zachowując swoje doświadczenie, umiejętności i klasyczną specjalizację.",
+      "specialty": {
+        "name": "Magia",
+        "tooltip": "Specjalizacja: Magia",
+        "description": "Klasyczna specjalizacja bohatera Malekith: Magia."
+      }
+    }
+  },
+  "dcJeddite": {
+    "class": "dragonMystic",
+    "female": false,
+    "spellbook": [
+      "resurrection"
+    ],
+    "skills": [
+      {
+        "skill": "wisdom",
+        "level": "advanced"
+      }
+    ],
+    "specialty": {
+      "bonuses": {
+        "resurrection": {
+          "subtype": "spell.resurrection",
+          "type": "SPECIAL_SPELL_LEV",
+          "updater": "TIMES_HERO_LEVEL",
+          "val": 3
+        }
+      }
+    },
+    "special": false,
+    "army": [
+      {
+        "creature": "dcSharpshooter",
+        "min": 10,
+        "max": 15
+      },
+      {
+        "creature": "dcGoldGolem",
+        "min": 2,
+        "max": 3
+      }
+    ],
+    "images": {
+      "large": "dragon-citadel/heroes/roster/dcJeddite/large",
+      "small": "dragon-citadel/heroes/roster/dcJeddite/small",
+      "specialtyLarge": "dragon-citadel/heroes/roster/dcJeddite/specialty-large",
+      "specialtySmall": "dragon-citadel/heroes/roster/dcJeddite/specialty-small"
+    },
+    "texts": {
+      "name": "Jeddite",
+      "biography": "Jeddite dołącza do Smoczej Cytadeli, zachowując swoje doświadczenie, umiejętności i klasyczną specjalizację.",
+      "specialty": {
+        "name": "Wskrzeszenie",
+        "tooltip": "Specjalizacja: Wskrzeszenie",
+        "description": "Klasyczna specjalizacja bohatera Jeddite: Wskrzeszenie."
+      }
+    }
+  },
+  "dcGeon": {
+    "class": "dragonMystic",
+    "female": false,
+    "spellbook": [
+      "slow"
+    ],
+    "skills": [
+      {
+        "skill": "wisdom",
+        "level": "basic"
+      },
+      {
+        "skill": "eagleEye",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "secondary": "eagleEye"
+    },
+    "special": false,
+    "army": [
+      {
+        "creature": "dcSharpshooter",
+        "min": 10,
+        "max": 15
+      },
+      {
+        "creature": "dcGoldGolem",
+        "min": 2,
+        "max": 3
+      }
+    ],
+    "images": {
+      "large": "dragon-citadel/heroes/roster/dcGeon/large",
+      "small": "dragon-citadel/heroes/roster/dcGeon/small",
+      "specialtyLarge": "dragon-citadel/heroes/roster/dcGeon/specialty-large",
+      "specialtySmall": "dragon-citadel/heroes/roster/dcGeon/specialty-small"
+    },
+    "texts": {
+      "name": "Geon",
+      "biography": "Geon dołącza do Smoczej Cytadeli, zachowując swoje doświadczenie, umiejętności i klasyczną specjalizację.",
+      "specialty": {
+        "name": "Sokole Oko",
+        "tooltip": "Specjalizacja: Sokole Oko",
+        "description": "Klasyczna specjalizacja bohatera Geon: Sokole Oko."
+      }
+    }
+  },
+  "dcDeemer": {
+    "class": "dragonMystic",
+    "female": false,
+    "spellbook": [
+      "meteorShower"
+    ],
+    "skills": [
+      {
+        "skill": "wisdom",
+        "level": "basic"
+      },
+      {
+        "skill": "scouting",
+        "level": "advanced"
+      }
+    ],
+    "specialty": {
+      "bonuses": {
+        "meteorShower": {
+          "subtype": "spell.meteorShower",
+          "type": "SPECIAL_SPELL_LEV",
+          "updater": "TIMES_HERO_LEVEL",
+          "val": 3
+        }
+      }
+    },
+    "special": false,
+    "army": [
+      {
+        "creature": "dcSharpshooter",
+        "min": 10,
+        "max": 15
+      },
+      {
+        "creature": "dcGoldGolem",
+        "min": 2,
+        "max": 3
+      }
+    ],
+    "images": {
+      "large": "dragon-citadel/heroes/roster/dcDeemer/large",
+      "small": "dragon-citadel/heroes/roster/dcDeemer/small",
+      "specialtyLarge": "dragon-citadel/heroes/roster/dcDeemer/specialty-large",
+      "specialtySmall": "dragon-citadel/heroes/roster/dcDeemer/specialty-small"
+    },
+    "texts": {
+      "name": "Deemer",
+      "biography": "Deemer dołącza do Smoczej Cytadeli, zachowując swoje doświadczenie, umiejętności i klasyczną specjalizację.",
+      "specialty": {
+        "name": "Deszcz Meteorytów",
+        "tooltip": "Specjalizacja: Deszcz Meteorytów",
+        "description": "Klasyczna specjalizacja bohatera Deemer: Deszcz Meteorytów."
+      }
+    }
+  },
+  "dcSephinroth": {
+    "class": "dragonMystic",
+    "female": true,
+    "spellbook": [
+      "protectAir"
+    ],
+    "skills": [
+      {
+        "skill": "wisdom",
+        "level": "basic"
+      },
+      {
+        "skill": "intelligence",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "bonuses": {
+        "crystal": {
+          "subtype": "resource.crystal",
+          "type": "GENERATE_RESOURCE",
+          "val": 1
+        }
+      }
+    },
+    "special": false,
+    "army": [
+      {
+        "creature": "dcSharpshooter",
+        "min": 10,
+        "max": 15
+      },
+      {
+        "creature": "dcGoldGolem",
+        "min": 2,
+        "max": 3
+      }
+    ],
+    "images": {
+      "large": "dragon-citadel/heroes/roster/dcSephinroth/large",
+      "small": "dragon-citadel/heroes/roster/dcSephinroth/small",
+      "specialtyLarge": "dragon-citadel/heroes/roster/dcSephinroth/specialty-large",
+      "specialtySmall": "dragon-citadel/heroes/roster/dcSephinroth/specialty-small"
+    },
+    "texts": {
+      "name": "Sephinroth",
+      "biography": "Sephinroth dołącza do Smoczej Cytadeli, zachowując swoje doświadczenie, umiejętności i klasyczną specjalizację.",
+      "specialty": {
+        "name": "Kryształy",
+        "tooltip": "Specjalizacja: Kryształy",
+        "description": "Klasyczna specjalizacja bohatera Sephinroth: Kryształy."
+      }
+    }
+  },
+  "dcDarkstorn": {
+    "class": "dragonMystic",
+    "female": false,
+    "spellbook": [
+      "stoneSkin"
+    ],
+    "skills": [
+      {
+        "skill": "wisdom",
+        "level": "basic"
+      },
+      {
+        "skill": "learning",
+        "level": "basic"
+      }
+    ],
+    "specialty": {
+      "bonuses": {
+        "stoneSkin": {
+          "addInfo": 0,
+          "subtype": "spell.stoneSkin",
+          "type": "SPECIAL_PECULIAR_ENCHANT"
+        }
+      }
+    },
+    "special": false,
+    "army": [
+      {
+        "creature": "dcSharpshooter",
+        "min": 10,
+        "max": 15
+      },
+      {
+        "creature": "dcGoldGolem",
+        "min": 2,
+        "max": 3
+      }
+    ],
+    "images": {
+      "large": "dragon-citadel/heroes/roster/dcDarkstorn/large",
+      "small": "dragon-citadel/heroes/roster/dcDarkstorn/small",
+      "specialtyLarge": "dragon-citadel/heroes/roster/dcDarkstorn/specialty-large",
+      "specialtySmall": "dragon-citadel/heroes/roster/dcDarkstorn/specialty-small"
+    },
+    "texts": {
+      "name": "Darkstorn",
+      "biography": "Darkstorn dołącza do Smoczej Cytadeli, zachowując swoje doświadczenie, umiejętności i klasyczną specjalizację.",
+      "specialty": {
+        "name": "Kamienna Skóra",
+        "tooltip": "Specjalizacja: Kamienna Skóra",
+        "description": "Klasyczna specjalizacja bohatera Darkstorn: Kamienna Skóra."
+      }
+    }
+  }
+}

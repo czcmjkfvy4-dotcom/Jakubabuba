@@ -1,0 +1,235 @@
+{
+  "basepath": "dragon-citadel/town/building-icons/",
+  "images": [
+    {
+      "group": 0,
+      "frame": 0,
+      "file": "frame-000"
+    },
+    {
+      "group": 0,
+      "frame": 1,
+      "file": "frame-001"
+    },
+    {
+      "group": 0,
+      "frame": 2,
+      "file": "frame-002"
+    },
+    {
+      "group": 0,
+      "frame": 3,
+      "file": "frame-003"
+    },
+    {
+      "group": 0,
+      "frame": 4,
+      "file": "frame-004"
+    },
+    {
+      "group": 0,
+      "frame": 5,
+      "file": "frame-005"
+    },
+    {
+      "group": 0,
+      "frame": 6,
+      "file": "frame-006"
+    },
+    {
+      "group": 0,
+      "frame": 7,
+      "file": "frame-007"
+    },
+    {
+      "group": 0,
+      "frame": 8,
+      "file": "frame-008"
+    },
+    {
+      "group": 0,
+      "frame": 9,
+      "file": "frame-009"
+    },
+    {
+      "group": 0,
+      "frame": 10,
+      "file": "frame-010"
+    },
+    {
+      "group": 0,
+      "frame": 11,
+      "file": "frame-011"
+    },
+    {
+      "group": 0,
+      "frame": 12,
+      "file": "frame-012"
+    },
+    {
+      "group": 0,
+      "frame": 13,
+      "file": "frame-013"
+    },
+    {
+      "group": 0,
+      "frame": 14,
+      "file": "frame-014"
+    },
+    {
+      "group": 0,
+      "frame": 15,
+      "file": "frame-015"
+    },
+    {
+      "group": 0,
+      "frame": 16,
+      "file": "frame-016"
+    },
+    {
+      "group": 0,
+      "frame": 17,
+      "file": "frame-017"
+    },
+    {
+      "group": 0,
+      "frame": 18,
+      "file": "frame-018"
+    },
+    {
+      "group": 0,
+      "frame": 19,
+      "file": "frame-019"
+    },
+    {
+      "group": 0,
+      "frame": 20,
+      "file": "frame-020"
+    },
+    {
+      "group": 0,
+      "frame": 21,
+      "file": "frame-021"
+    },
+    {
+      "group": 0,
+      "frame": 22,
+      "file": "frame-022"
+    },
+    {
+      "group": 0,
+      "frame": 23,
+      "file": "frame-023"
+    },
+    {
+      "group": 0,
+      "frame": 24,
+      "file": "frame-024"
+    },
+    {
+      "group": 0,
+      "frame": 25,
+      "file": "frame-025"
+    },
+    {
+      "group": 0,
+      "frame": 26,
+      "file": "frame-026"
+    },
+    {
+      "group": 0,
+      "frame": 27,
+      "file": "frame-027"
+    },
+    {
+      "group": 0,
+      "frame": 28,
+      "file": "frame-028"
+    },
+    {
+      "group": 0,
+      "frame": 29,
+      "file": "frame-029"
+    },
+    {
+      "group": 0,
+      "frame": 30,
+      "file": "frame-030"
+    },
+    {
+      "group": 0,
+      "frame": 31,
+      "file": "frame-031"
+    },
+    {
+      "group": 0,
+      "frame": 32,
+      "file": "frame-032"
+    },
+    {
+      "group": 0,
+      "frame": 33,
+      "file": "frame-033"
+    },
+    {
+      "group": 0,
+      "frame": 34,
+      "file": "frame-034"
+    },
+    {
+      "group": 0,
+      "frame": 35,
+      "file": "frame-035"
+    },
+    {
+      "group": 0,
+      "frame": 36,
+      "file": "frame-036"
+    },
+    {
+      "group": 0,
+      "frame": 37,
+      "file": "frame-037"
+    },
+    {
+      "group": 0,
+      "frame": 38,
+      "file": "frame-038"
+    },
+    {
+      "group": 0,
+      "frame": 39,
+      "file": "frame-039"
+    },
+    {
+      "group": 0,
+      "frame": 40,
+      "file": "frame-040"
+    },
+    {
+      "group": 0,
+      "frame": 41,
+      "file": "frame-041"
+    },
+    {
+      "group": 0,
+      "frame": 42,
+      "file": "frame-042"
+    },
+    {
+      "group": 0,
+      "frame": 43,
+      "file": "frame-043"
+    },
+    {
+      "group": 0,
+      "frame": 47,
+      "file": "frame-047"
+    },
+    {
+      "group": 0,
+      "frame": 54,
+      "file": "frame-054"
+    }
+  ]
+}

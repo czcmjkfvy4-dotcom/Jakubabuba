@@ -1,0 +1,179 @@
+{
+  "dragonLord": {
+    "name": "Smoczy Władca",
+    "faction": "dragonCitadel",
+    "affinity": "might",
+    "commander": "medusaQueen",
+    "primarySkills": {
+      "attack": 3,
+      "defence": 2,
+      "spellpower": 1,
+      "knowledge": 2
+    },
+    "lowLevelChance": {
+      "attack": 35,
+      "defence": 30,
+      "spellpower": 15,
+      "knowledge": 20
+    },
+    "highLevelChance": {
+      "attack": 30,
+      "defence": 30,
+      "spellpower": 20,
+      "knowledge": 20
+    },
+    "secondarySkills": {
+      "diplomacy": 10,
+      "leadership": 8,
+      "tactics": 8,
+      "logistics": 7,
+      "offence": 7,
+      "armorer": 7,
+      "wisdom": 5,
+      "airMagic": 5,
+      "earthMagic": 5,
+      "fireMagic": 4,
+      "waterMagic": 4,
+      "estates": 4,
+      "scouting": 4,
+      "learning": 3,
+      "necromancy": 0
+    },
+    "defaultTavern": 0,
+    "tavern": {
+      "dragonCitadel": 1
+    },
+    "mapObject": {
+      "templates": {
+        "default": {
+          "animation": "dragon-citadel/creatures/billadenHero/adventure",
+          "editorAnimation": "dragon-citadel/creatures/billadenHero/editor"
+        }
+      }
+    },
+    "animation": {
+      "battle": {
+        "male": "dragon-citadel/creatures/billadenHero/battle",
+        "female": "CH11.DEF"
+      }
+    }
+  },
+  "dragonVanguard": {
+    "name": "Smoczy Dowódca",
+    "faction": "dragonCitadel",
+    "affinity": "might",
+    "commander": "medusaQueen",
+    "primarySkills": {
+      "attack": 3,
+      "defence": 3,
+      "spellpower": 1,
+      "knowledge": 1
+    },
+    "lowLevelChance": {
+      "attack": 35,
+      "defence": 35,
+      "spellpower": 15,
+      "knowledge": 15
+    },
+    "highLevelChance": {
+      "attack": 30,
+      "defence": 30,
+      "spellpower": 20,
+      "knowledge": 20
+    },
+    "secondarySkills": {
+      "diplomacy": 10,
+      "leadership": 8,
+      "tactics": 8,
+      "logistics": 7,
+      "offence": 7,
+      "armorer": 7,
+      "wisdom": 5,
+      "airMagic": 5,
+      "earthMagic": 5,
+      "fireMagic": 4,
+      "waterMagic": 4,
+      "estates": 4,
+      "scouting": 4,
+      "learning": 3,
+      "necromancy": 0
+    },
+    "defaultTavern": 0,
+    "tavern": {
+      "dragonCitadel": 10
+    },
+    "mapObject": {
+      "templates": {
+        "default": {
+          "animation": "AH10_.def",
+          "editorAnimation": "AH10_E.def"
+        }
+      }
+    },
+    "animation": {
+      "battle": {
+        "male": "CH010.DEF",
+        "female": "CH11.DEF"
+      }
+    }
+  },
+  "dragonMystic": {
+    "name": "Smoczy Mistyk",
+    "faction": "dragonCitadel",
+    "affinity": "magic",
+    "commander": "medusaQueen",
+    "primarySkills": {
+      "attack": 1,
+      "defence": 1,
+      "spellpower": 2,
+      "knowledge": 3
+    },
+    "lowLevelChance": {
+      "attack": 10,
+      "defence": 20,
+      "spellpower": 35,
+      "knowledge": 35
+    },
+    "highLevelChance": {
+      "attack": 20,
+      "defence": 20,
+      "spellpower": 30,
+      "knowledge": 30
+    },
+    "secondarySkills": {
+      "diplomacy": 10,
+      "leadership": 8,
+      "tactics": 8,
+      "logistics": 7,
+      "offence": 7,
+      "armorer": 7,
+      "wisdom": 5,
+      "airMagic": 5,
+      "earthMagic": 5,
+      "fireMagic": 4,
+      "waterMagic": 4,
+      "estates": 4,
+      "scouting": 4,
+      "learning": 3,
+      "necromancy": 0
+    },
+    "defaultTavern": 0,
+    "tavern": {
+      "dragonCitadel": 10
+    },
+    "mapObject": {
+      "templates": {
+        "default": {
+          "animation": "AH11_.def",
+          "editorAnimation": "AH11_E.def"
+        }
+      }
+    },
+    "animation": {
+      "battle": {
+        "male": "CH010.DEF",
+        "female": "CH11.DEF"
+      }
+    }
+  }
+}

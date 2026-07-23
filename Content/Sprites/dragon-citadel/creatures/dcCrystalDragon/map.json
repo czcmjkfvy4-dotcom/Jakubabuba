@@ -1,0 +1,150 @@
+{
+  "basepath": "dragon-citadel/creatures/dcCrystalDragon/map/",
+  "images": [
+    {
+      "group": 0,
+      "frame": 0,
+      "file": "g00-f000"
+    },
+    {
+      "group": 0,
+      "frame": 1,
+      "file": "g00-f001"
+    },
+    {
+      "group": 0,
+      "frame": 2,
+      "file": "g00-f002"
+    },
+    {
+      "group": 0,
+      "frame": 3,
+      "file": "g00-f003"
+    },
+    {
+      "group": 0,
+      "frame": 4,
+      "file": "g00-f004"
+    },
+    {
+      "group": 0,
+      "frame": 5,
+      "file": "g00-f005"
+    },
+    {
+      "group": 0,
+      "frame": 6,
+      "file": "g00-f006"
+    },
+    {
+      "group": 0,
+      "frame": 7,
+      "file": "g00-f007"
+    },
+    {
+      "group": 0,
+      "frame": 8,
+      "file": "g00-f008"
+    },
+    {
+      "group": 0,
+      "frame": 9,
+      "file": "g00-f009"
+    },
+    {
+      "group": 0,
+      "frame": 10,
+      "file": "g00-f010"
+    },
+    {
+      "group": 0,
+      "frame": 11,
+      "file": "g00-f011"
+    },
+    {
+      "group": 0,
+      "frame": 12,
+      "file": "g00-f012"
+    },
+    {
+      "group": 0,
+      "frame": 13,
+      "file": "g00-f013"
+    },
+    {
+      "group": 0,
+      "frame": 14,
+      "file": "g00-f014"
+    },
+    {
+      "group": 0,
+      "frame": 15,
+      "file": "g00-f015"
+    },
+    {
+      "group": 0,
+      "frame": 16,
+      "file": "g00-f016"
+    },
+    {
+      "group": 0,
+      "frame": 17,
+      "file": "g00-f017"
+    },
+    {
+      "group": 0,
+      "frame": 18,
+      "file": "g00-f018"
+    },
+    {
+      "group": 0,
+      "frame": 19,
+      "file": "g00-f019"
+    },
+    {
+      "group": 0,
+      "frame": 20,
+      "file": "g00-f020"
+    },
+    {
+      "group": 0,
+      "frame": 21,
+      "file": "g00-f021"
+    },
+    {
+      "group": 0,
+      "frame": 22,
+      "file": "g00-f022"
+    },
+    {
+      "group": 0,
+      "frame": 23,
+      "file": "g00-f023"
+    },
+    {
+      "group": 0,
+      "frame": 24,
+      "file": "g00-f024"
+    },
+    {
+      "group": 0,
+      "frame": 25,
+      "file": "g00-f025"
+    },
+    {
+      "group": 0,
+      "frame": 26,
+      "file": "g00-f026"
+    },
+    {
+      "group": 0,
+      "frame": 27,
+      "file": "g00-f027"
+    },
+    {
+      "group": 0,
+      "frame": 28,
+      "file": "g00-f028"
+    }
+  ]
+}

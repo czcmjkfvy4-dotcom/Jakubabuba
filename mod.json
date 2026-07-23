@@ -1,0 +1,39 @@
+{
+  "name": "Smocza Cytadela",
+  "description": "Smocza Cytadela wznosi się ponad królestwami jako jedna z najdroższych i najpotężniejszych twierdz VCMI. Jej siedliska wymagają fortuny oraz rzadkich surowców, lecz w zamian oddają pod rozkazy gracza elitarnych tytanów, pradawne smoki i armię zdolną przełamać niemal każdą obronę.",
+  "author": "Billaden",
+  "version": "1.4.1",
+  "contact": "https://github.com/czcmjkfvy4-dotcom/Jakubabuba",
+  "modType": "Town",
+  "language": "polish",
+  "compatibility": {
+    "min": "1.7.0"
+  },
+  "factions": [
+    "config/dragon-citadel/faction.json"
+  ],
+  "creatures": [
+    "config/dragon-citadel/creatures.json"
+  ],
+  "heroClasses": [
+    "config/dragon-citadel/hero-class.json"
+  ],
+  "heroes": [
+    "config/dragon-citadel/hero-billaden.json",
+    "config/dragon-citadel/hero-roster.json"
+  ],
+  "artifacts": [
+    "config/dragon-citadel/artifact-flaming-feather.json"
+  ],
+  "objects": [
+    "config/dragon-citadel/object-flaming-feather-sanctuary.json"
+  ],
+  "changelog": {
+    "1.4.1": [
+      "Dodano własne tło jednostek Smoczej Cytadeli.",
+      "Poprawiono miniatury Czarnego Mnicha i Tytana Burzy.",
+      "Rozjaśniono ikonę frakcji oraz wygląd miasta na mapie.",
+      "Ujednolicono polskie opisy, koszty i oprawę miasta."
+    ]
+  }
+}

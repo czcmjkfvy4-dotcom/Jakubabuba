@@ -1,0 +1,60 @@
+{
+  "flamingFeather": {
+    "type": [
+      "HERO"
+    ],
+    "slot": "MISC",
+    "class": "RELIC",
+    "value": 30000,
+    "bonuses": {
+      "highTierAttack": {
+        "type": "PRIMARY_SKILL",
+        "subtype": "primarySkill.attack",
+        "val": 10,
+        "valueType": "BASE_NUMBER",
+        "limiters": [
+          {
+            "type": "CREATURE_LEVEL_LIMITER",
+            "minLevel": 4,
+            "maxlevel": 8
+          }
+        ]
+      },
+      "highTierDefence": {
+        "type": "PRIMARY_SKILL",
+        "subtype": "primarySkill.defence",
+        "val": 10,
+        "valueType": "BASE_NUMBER",
+        "limiters": [
+          {
+            "type": "CREATURE_LEVEL_LIMITER",
+            "minLevel": 4,
+            "maxlevel": 8
+          }
+        ]
+      },
+      "highTierHealth": {
+        "type": "STACK_HEALTH",
+        "val": 100,
+        "valueType": "ADDITIVE_VALUE",
+        "limiters": [
+          {
+            "type": "CREATURE_LEVEL_LIMITER",
+            "minLevel": 4,
+            "maxlevel": 8
+          }
+        ]
+      }
+    },
+    "graphics": {
+      "image": "dragon-citadel/artifacts/flaming-feather",
+      "map": "dragon-citadel/artifacts/flaming-feather-map",
+      "scenarioBonus": "dragon-citadel/artifacts/flaming-feather-scenario"
+    },
+    "text": {
+      "name": "Płonące Pióro",
+      "description": "{Płonące Pióro}\\n\\nJednostki poziomu 4 lub wyższego otrzymują +10 Ataku, +10 Obrony i +100 punktów Życia. Artefakt nie zmienia ani nie ulepsza stworzeń.",
+      "event": "W płomieniach znajdujesz pióro pradawnego Feniksa. Ogień nie parzy, lecz wzmacnia najpotężniejsze istoty w twojej armii."
+    }
+  }
+}
