@@ -25,11 +25,20 @@ Dragon Citadel is intentionally expensive. Its dwellings and army require an imm
 
 Billaden, a diplomacy specialist, is the town's signature hero.
 
+## Optional All-Towns Bulk Recruit
+
+The separate [Dragon Citadel Bulk Recruit](https://github.com/czcmjkfvy4-dotcom/Dragon-Citadel-Bulk-Recruit/releases/latest) companion for Windows adds two VCMI hotkeys:
+
+- `1`: recruit affordable creatures in global level priority `3 -> 2 -> 1`
+- `2`: recruit affordable creatures in global level priority `7 -> 6 -> 5 -> 4`
+
+Each action covers every town owned by the current player, regardless of faction.
+
 ## Information
 
 - Author: Billaden
 - Mod creator: Billaden - Jakubabuba
-- Mod version: 1.4.2
+- Mod version: 1.4.3
 - Languages: English and Polish
 - Mod type: new town
 
@@ -50,5 +59,14 @@ Autorskie, bardzo potężne miasto do Heroes of Might and Magic III uruchamianeg
 Smocza Cytadela jest celowo droga. Budowa siedlisk i rekrutacja armii wymagają ogromnego skarbca oraz rzadkich surowców. W zamian miasto oferuje tytanów, magiczne bestie i kolejne poziomy wyjątkowo silnych smoków.
 
 Głównym bohaterem miasta jest Billaden, specjalista od dyplomacji.
+
+### Opcjonalny wykup ze wszystkich miast
+
+Osobny dodatek [Dragon Citadel Bulk Recruit](https://github.com/czcmjkfvy4-dotcom/Dragon-Citadel-Bulk-Recruit/releases/latest) dodaje w VCMI dwa skróty:
+
+- `1`: wykup dostępnych jednostek według priorytetu poziomów `3 -> 2 -> 1`
+- `2`: wykup dostępnych jednostek według priorytetu poziomów `7 -> 6 -> 5 -> 4`
+
+Każda operacja obejmuje wszystkie miasta posiadane przez gracza, niezależnie od frakcji.
 
 Projekt fanowski, niekomercyjny i niepowiązany z Ubisoft Entertainment ani właścicielami marki Heroes of Might and Magic.

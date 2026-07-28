@@ -328,13 +328,13 @@
           "campaignBonus": "BoDtav.pcx",
           "border": "dragon-citadel/town-screen/borders/tavern",
           "area": "dragon-citadel/town-screen/areas/tavern",
-          "z": 36005
+          "z": 14505
         },
         "fort": {
           "animation": "dragon-citadel/town/buildings/fort",
           "x": 0,
           "y": 0,
-          "z": 26006,
+          "z": 27806,
           "campaignBonus": "BoDcas1.pcx",
           "border": "dragon-citadel/town-screen/borders/fort",
           "area": "dragon-citadel/town-screen/areas/fort"
@@ -343,7 +343,7 @@
           "animation": "dragon-citadel/town/buildings/citadel",
           "x": 0,
           "y": 0,
-          "z": 26006,
+          "z": 27806,
           "campaignBonus": "BoDcas2.pcx",
           "border": "dragon-citadel/town-screen/borders/citadel",
           "area": "dragon-citadel/town-screen/areas/citadel"
@@ -352,7 +352,7 @@
           "animation": "dragon-citadel/town/buildings/castle",
           "x": 0,
           "y": 0,
-          "z": 26006,
+          "z": 27806,
           "campaignBonus": "BoDcas3.pcx",
           "border": "dragon-citadel/town-screen/borders/castle",
           "area": "dragon-citadel/town-screen/areas/castle"
@@ -364,7 +364,7 @@
           "campaignBonus": "BoDhall1.pcx",
           "border": "dragon-citadel/town-screen/borders/villageHall",
           "area": "dragon-citadel/town-screen/areas/villageHall",
-          "z": 36709
+          "z": 36809
         },
         "townHall": {
           "animation": "dragon-citadel/town/buildings/townHall",
@@ -373,7 +373,7 @@
           "campaignBonus": "BoDhall2.pcx",
           "border": "dragon-citadel/town-screen/borders/townHall",
           "area": "dragon-citadel/town-screen/areas/townHall",
-          "z": 36709
+          "z": 36809
         },
         "cityHall": {
           "animation": "dragon-citadel/town/buildings/cityHall",
@@ -382,7 +382,7 @@
           "campaignBonus": "BoDhall3.pcx",
           "border": "dragon-citadel/town-screen/borders/cityHall",
           "area": "dragon-citadel/town-screen/areas/cityHall",
-          "z": 36709
+          "z": 36809
         },
         "capitol": {
           "animation": "dragon-citadel/town/buildings/capitol",
@@ -391,13 +391,13 @@
           "campaignBonus": "BoDhall4.pcx",
           "border": "dragon-citadel/town-screen/borders/capitol",
           "area": "dragon-citadel/town-screen/areas/capitol",
-          "z": 36709
+          "z": 36809
         },
         "marketplace": {
           "animation": "dragon-citadel/town/buildings/marketplace",
           "x": 0,
           "y": 0,
-          "z": 36513,
+          "z": 24813,
           "campaignBonus": "BoDmark1.pcx",
           "border": "dragon-citadel/town-screen/borders/marketplace",
           "area": "dragon-citadel/town-screen/areas/marketplace"
@@ -406,7 +406,7 @@
           "animation": "dragon-citadel/town/buildings/resourceSilo",
           "x": 0,
           "y": 0,
-          "z": 36614,
+          "z": 30014,
           "campaignBonus": "BoDmark2.pcx",
           "border": "dragon-citadel/town-screen/borders/resourceSilo",
           "area": "dragon-citadel/town-screen/areas/resourceSilo"
@@ -415,7 +415,7 @@
           "animation": "dragon-citadel/town/buildings/blacksmith",
           "x": 0,
           "y": 0,
-          "z": 35615,
+          "z": 36515,
           "campaignBonus": "BoDsmith.pcx",
           "border": "dragon-citadel/town-screen/borders/blacksmith",
           "area": "dragon-citadel/town-screen/areas/blacksmith"
@@ -424,7 +424,7 @@
           "animation": "dragon-citadel/town/buildings/special1",
           "x": 0,
           "y": 0,
-          "z": 35716,
+          "z": 14516,
           "campaignBonus": "BoDmarkA.pcx",
           "border": "dragon-citadel/town-screen/borders/special1",
           "area": "dragon-citadel/town-screen/areas/special1"
@@ -445,7 +445,7 @@
           "campaignBonus": "BoDport.pcx",
           "border": "dragon-citadel/town-screen/borders/special3",
           "area": "dragon-citadel/town-screen/areas/special3",
-          "z": 36518
+          "z": 26518
         },
         "special4": {
           "animation": "dragon-citadel/town/buildings/special4",
@@ -454,7 +454,7 @@
           "campaignBonus": "BoDacad.pcx",
           "border": "dragon-citadel/town-screen/borders/special4",
           "area": "dragon-citadel/town-screen/areas/special4",
-          "z": 35419
+          "z": 35019
         },
         "grail": {
           "animation": "dragon-citadel/town/buildings/grail",
@@ -469,7 +469,7 @@
           "animation": "dragon-citadel/town/buildings/dwellingLvl1",
           "x": 0,
           "y": 0,
-          "z": 35222,
+          "z": 31022,
           "campaignBonus": "BoDtrog1.pcx",
           "border": "dragon-citadel/town-screen/borders/dwellingLvl1",
           "area": "dragon-citadel/town-screen/areas/dwellingLvl1"
@@ -481,13 +481,13 @@
           "campaignBonus": "BoDharp1.pcx",
           "border": "dragon-citadel/town-screen/borders/dwellingLvl2",
           "area": "dragon-citadel/town-screen/areas/dwellingLvl2",
-          "z": 35224
+          "z": 36824
         },
         "dwellingLvl3": {
           "animation": "dragon-citadel/town/buildings/dwellingLvl3",
           "x": 0,
           "y": 0,
-          "z": 26026,
+          "z": 27826,
           "campaignBonus": "BoDbeh1.pcx",
           "border": "dragon-citadel/town-screen/borders/dwellingLvl3",
           "area": "dragon-citadel/town-screen/areas/dwellingLvl3"
@@ -532,7 +532,7 @@
           "animation": "dragon-citadel/town/buildings/dwellingUpLvl1",
           "x": 0,
           "y": 0,
-          "z": 35222,
+          "z": 31022,
           "campaignBonus": "BoDtrog2.pcx",
           "border": "dragon-citadel/town-screen/borders/dwellingUpLvl1",
           "area": "dragon-citadel/town-screen/areas/dwellingUpLvl1"
@@ -544,13 +544,13 @@
           "campaignBonus": "BoDharp2.pcx",
           "border": "dragon-citadel/town-screen/borders/dwellingUpLvl2",
           "area": "dragon-citadel/town-screen/areas/dwellingUpLvl2",
-          "z": 35224
+          "z": 36824
         },
         "dwellingUpLvl3": {
           "animation": "dragon-citadel/town/buildings/dwellingUpLvl3",
           "x": 0,
           "y": 0,
-          "z": 26026,
+          "z": 27826,
           "campaignBonus": "BoDbeh2.pcx",
           "border": "dragon-citadel/town-screen/borders/dwellingUpLvl3",
           "area": "dragon-citadel/town-screen/areas/dwellingUpLvl3"

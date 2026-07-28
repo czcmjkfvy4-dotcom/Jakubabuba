@@ -2,7 +2,7 @@
   "name": "Dragon Citadel",
   "description": "Dragon Citadel rises above the kingdoms as one of VCMI's most expensive and powerful fortresses. Its dwellings demand a fortune and rare resources, but in return they field elite titans, ancient dragons and an army capable of breaking almost any defense.",
   "author": "Billaden",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "contact": "https://github.com/czcmjkfvy4-dotcom/Jakubabuba",
   "modType": "Town",
   "language": "english",
@@ -29,6 +29,12 @@
     "config/dragon-citadel/object-flaming-feather-sanctuary.json"
   ],
   "changelog": {
+    "1.4.3": [
+      "Rebuilt the town layout across natural terraces and grounded every structure.",
+      "Increased the fortification stages by 30% and the adventure-map town by 35%.",
+      "Added a polished HD portrait for every creature over the Dragon Citadel background.",
+      "Improved the Storm Dragon palette and refined the Azure Sanctuary and treasury positions."
+    ],
     "1.4.2": [
       "Raised every dwelling and dwelling upgrade construction cost by 50%.",
       "Raised recruitment costs for every creature by 20%.",
