@@ -25,6 +25,13 @@ Dragon Citadel is intentionally expensive. Its dwellings and army require an imm
 
 Billaden, a diplomacy specialist, is the town's signature hero.
 
+## Balance
+
+- level 1 and 2 recruitment prices are based on comparable Heroes III creature strength
+- Titans have reduced early-game statistics, growth of 1 and substantially more expensive dwellings
+- level 5-7 dragons remain limited to 1 creature per week after building a Castle
+- super dragons require much more gold and rare resources
+
 ## Optional All-Towns Bulk Recruit
 
 The separate [Dragon Citadel Bulk Recruit](https://github.com/czcmjkfvy4-dotcom/Dragon-Citadel-Bulk-Recruit/releases/latest) companion for Windows adds two VCMI hotkeys:
@@ -38,7 +45,7 @@ Each action covers every town owned by the current player, regardless of faction
 
 - Author: Billaden
 - Mod creator: Billaden - Jakubabuba
-- Mod version: 1.4.3
+- Mod version: 1.4.4
 - Languages: English and Polish
 - Mod type: new town
 
@@ -59,6 +66,13 @@ Autorskie, bardzo potężne miasto do Heroes of Might and Magic III uruchamianeg
 Smocza Cytadela jest celowo droga. Budowa siedlisk i rekrutacja armii wymagają ogromnego skarbca oraz rzadkich surowców. W zamian miasto oferuje tytanów, magiczne bestie i kolejne poziomy wyjątkowo silnych smoków.
 
 Głównym bohaterem miasta jest Billaden, specjalista od dyplomacji.
+
+### Balans
+
+- ceny jednostek poziomu 1 i 2 odpowiadają ich rzeczywistej sile na tle innych miast
+- Tytani mają osłabione statystyki początkowe, przyrost 1 i znacznie droższe siedliska
+- po zbudowaniu Zamku przyrost smoków poziomów 5-7 pozostaje ograniczony do 1 sztuki tygodniowo
+- super-smoki wymagają znacznie więcej złota i rzadkich surowców
 
 ### Opcjonalny wykup ze wszystkich miast
 

@@ -6,7 +6,7 @@
 	"building.dragon-citadel.dragonCitadel.blacksmith.name" : "Smocza Kuźnia",
 	"building.dragon-citadel.dragonCitadel.capitol.description" : "Zapewnia 4000 sztuk złota dziennie. W królestwie może istnieć tylko jeden Kapitol.",
 	"building.dragon-citadel.dragonCitadel.capitol.name" : "Smoczy Kapitol",
-	"building.dragon-citadel.dragonCitadel.castle.description" : "Dodaje dwie boczne wieże strzeleckie i podwaja podstawowy tygodniowy przyrost stworzeń.",
+	"building.dragon-citadel.dragonCitadel.castle.description" : "Dodaje dwie boczne wieże strzeleckie i podwaja podstawowy tygodniowy przyrost stworzeń poziomów 1-4. Przyrost smoków poziomów 5-7 pozostaje ograniczony do 1 sztuki tygodniowo.",
 	"building.dragon-citadel.dragonCitadel.castle.name" : "Smoczy Zamek",
 	"building.dragon-citadel.dragonCitadel.citadel.description" : "Dodaje fosę i główną wieżę strzelecką oraz zwiększa tygodniowy przyrost stworzeń o 50%.",
 	"building.dragon-citadel.dragonCitadel.citadel.name" : "Smocza Cytadela",

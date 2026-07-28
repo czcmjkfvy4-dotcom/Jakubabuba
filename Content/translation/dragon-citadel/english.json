@@ -6,7 +6,7 @@
 	"building.dragon-citadel.dragonCitadel.blacksmith.name" : "Dragon Forge",
 	"building.dragon-citadel.dragonCitadel.capitol.description" : "Provides 4,000 gold per day. Only one Capitol may exist in the kingdom.",
 	"building.dragon-citadel.dragonCitadel.capitol.name" : "Dragon Capitol",
-	"building.dragon-citadel.dragonCitadel.castle.description" : "Adds two side arrow towers and doubles the base weekly creature growth.",
+	"building.dragon-citadel.dragonCitadel.castle.description" : "Adds two side arrow towers and doubles base weekly growth for levels 1-4. Level 5-7 dragon growth remains capped at 1 per week.",
 	"building.dragon-citadel.dragonCitadel.castle.name" : "Dragon Castle",
 	"building.dragon-citadel.dragonCitadel.citadel.description" : "Adds a moat and the main arrow tower, and increases weekly creature growth by 50%.",
 	"building.dragon-citadel.dragonCitadel.citadel.name" : "Dragon Citadel",

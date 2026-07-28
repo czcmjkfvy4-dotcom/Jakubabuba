@@ -2,7 +2,7 @@
   "name": "Dragon Citadel",
   "description": "Dragon Citadel rises above the kingdoms as one of VCMI's most expensive and powerful fortresses. Its dwellings demand a fortune and rare resources, but in return they field elite titans, ancient dragons and an army capable of breaking almost any defense.",
   "author": "Billaden",
-  "version": "1.4.3",
+  "version": "1.4.4",
   "contact": "https://github.com/czcmjkfvy4-dotcom/Jakubabuba",
   "modType": "Town",
   "language": "english",
@@ -29,6 +29,12 @@
     "config/dragon-citadel/object-flaming-feather-sanctuary.json"
   ],
   "changelog": {
+    "1.4.4": [
+      "Rebalanced level 1 and 2 recruitment prices against comparable Heroes III creatures.",
+      "Nerfed both Titan forms, reduced their growth to 1 and raised their dwelling costs.",
+      "Raised recruitment costs for every super dragon and capped level 5-7 growth at 1 per week after building a Castle.",
+      "Replaced the reused Dragon Mint model with a unique forge-and-coin-press structure."
+    ],
     "1.4.3": [
       "Rebuilt the town layout across natural terraces and grounded every structure.",
       "Increased the fortification stages by 30% and the adventure-map town by 35%.",

@@ -963,7 +963,27 @@
             "gold": 2500
           },
           "name": "Smoczy Zamek",
-          "description": "Dodaje dwie boczne wieże strzeleckie i podwaja podstawowy tygodniowy przyrost stworzeń."
+          "description": "Dodaje dwie boczne wieże strzeleckie i podwaja podstawowy tygodniowy przyrost stworzeń poziomów 1-4. Przyrost smoków poziomów 5-7 pozostaje ograniczony do 1 sztuki tygodniowo.",
+          "bonuses": [
+            {
+              "type": "CREATURE_GROWTH",
+              "subtype": "creatureLevel5",
+              "val": -1,
+              "propagator": "TOWN"
+            },
+            {
+              "type": "CREATURE_GROWTH",
+              "subtype": "creatureLevel6",
+              "val": -1,
+              "propagator": "TOWN"
+            },
+            {
+              "type": "CREATURE_GROWTH",
+              "subtype": "creatureLevel7",
+              "val": -1,
+              "propagator": "TOWN"
+            }
+          ]
         },
         "villageHall": {
           "name": "Rada Smoczej Osady",
@@ -1139,9 +1159,9 @@
           "name": "Sala Tytanów",
           "description": "Pozwala rekrutować Tytanów.",
           "cost": {
-            "wood": 15,
-            "ore": 15,
-            "gold": 11250
+            "wood": 23,
+            "ore": 23,
+            "gold": 18000
           },
           "requires": [
             "dwellingLvl2"
@@ -1260,8 +1280,8 @@
           "name": "Wieża Tytanów Burzy",
           "description": "Pozwala rekrutować strzelających Tytanów Burzy.",
           "cost": {
-            "gems": 8,
-            "gold": 9000
+            "gems": 15,
+            "gold": 15000
           },
           "upgrades": "dwellingLvl3"
         },
