@@ -1,13 +1,13 @@
 {
   "name": "Dragon Citadel",
-  "description": "Dragon Citadel rises above the kingdoms as one of VCMI's most expensive and powerful fortresses. Its dwellings demand a fortune and rare resources, but in return they field elite titans, ancient dragons and an army capable of breaking almost any defense.",
+  "description": "Dragon Citadel rises above the kingdoms as one of VCMI's most expensive and powerful fortresses. Its dwellings demand a fortune and rare resources, but in return they field elite titans, ancient dragons and the entirely original level 8 Ultimate Dragon line. Expensive, monumental and built for the endgame.",
   "author": "Billaden",
-  "version": "1.4.4",
+  "version": "1.5.0",
   "contact": "https://github.com/czcmjkfvy4-dotcom/Jakubabuba",
   "modType": "Town",
   "language": "english",
   "compatibility": {
-    "min": "1.7.0"
+    "min": "1.7.4"
   },
   "factions": [
     "config/dragon-citadel/faction.json"
@@ -26,9 +26,16 @@
     "config/dragon-citadel/artifact-flaming-feather.json"
   ],
   "objects": [
-    "config/dragon-citadel/object-flaming-feather-sanctuary.json"
+    "config/dragon-citadel/object-flaming-feather-sanctuary.json",
+    "config/dragon-citadel/object-ultimate-dragon-sanctum.json"
   ],
   "changelog": {
+    "1.5.0": [
+      "Added the entirely original level 8 Ultimate Dragon and its Absolute Dragon upgrade.",
+      "Added the Sanctuary at the End of Ages, its upgraded town structure and a guarded adventure-map dwelling.",
+      "Added original battle, portrait and adventure-map graphics based on the selected dragon concepts.",
+      "Added an optional BILLADENC4 runtime rule for one level 8 creature per month."
+    ],
     "1.4.4": [
       "Rebalanced level 1 and 2 recruitment prices against comparable Heroes III creatures.",
       "Nerfed both Titan forms, reduced their growth to 1 and raised their dwelling costs.",
@@ -58,7 +65,7 @@
   ],
   "polish": {
     "name": "Smocza Cytadela",
-    "description": "Smocza Cytadela wznosi się ponad królestwami jako jedna z najdroższych i najpotężniejszych twierdz VCMI. Jej siedliska wymagają fortuny oraz rzadkich surowców, lecz w zamian oddają pod rozkazy gracza elitarnych tytanów, pradawne smoki i armię zdolną przełamać niemal każdą obronę.",
+    "description": "Smocza Cytadela wznosi się ponad królestwami jako jedna z najdroższych i najpotężniejszych twierdz VCMI. Jej siedliska wymagają fortuny oraz rzadkich surowców, lecz w zamian oddają pod rozkazy gracza elitarnych tytanów, pradawne smoki i całkowicie autorską linię Smoków Ostatecznych poziomu 8.",
     "author": "Billaden",
     "translations": [
       "translation/dragon-citadel/polish.json"

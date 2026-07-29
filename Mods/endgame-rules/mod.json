@@ -1,0 +1,24 @@
+{
+  "name": "Dragon Citadel: Endgame Rules",
+  "description": "Optional expansion module for mechanics beyond stock VCMI. With the BILLADENC4 runtime it enforces monthly level 8 growth, one-dragon neutral stacks and the 10% joining limit.",
+  "author": "Billaden",
+  "contact": "https://github.com/czcmjkfvy4-dotcom/Jakubabuba",
+  "version": "1.0.0",
+  "modType": "Mechanics",
+  "language": "english",
+  "compatibility": {
+    "min": "1.7.4"
+  },
+  "polish": {
+    "name": "Smocza Cytadela: Reguły Końca Gry",
+    "description": "Opcjonalny moduł dodatku dla mechanik wykraczających poza zwykłe VCMI. Z silnikiem BILLADENC4 wymusza miesięczny przyrost poziomu 8, pojedyncze dzikie smoki i limit 10% szansy na dołączenie.",
+    "author": "Billaden"
+  },
+  "changelog": {
+    "1.0.0": [
+      "Added exact monthly growth for Ultimate and Absolute Dragons.",
+      "Kept wandering level 8 stacks and neutral sanctuary guards at one dragon.",
+      "Limited wandering level 8 joining eligibility to 10 percent."
+    ]
+  }
+}

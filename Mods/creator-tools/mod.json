@@ -1,0 +1,18 @@
+{
+  "name": "Dragon Citadel: Creator Tools",
+  "description": "Optional testing module for the documented nwcbilladen creator code. Requires the matching VCMI BILLADENC4 runtime.",
+  "author": "Billaden",
+  "contact": "https://github.com/czcmjkfvy4-dotcom/Jakubabuba",
+  "version": "1.1.0",
+  "modType": "Mechanics",
+  "language": "english",
+  "keepDisabled": true,
+  "compatibility": {
+    "min": "1.7.4"
+  },
+  "polish": {
+    "name": "Smocza Cytadela: Narzędzia Twórcy",
+    "description": "Opcjonalny moduł testowy z udokumentowanym kodem twórcy nwcbilladen. Wymaga odpowiedniej wersji VCMI BILLADENC4.",
+    "author": "Billaden"
+  }
+}

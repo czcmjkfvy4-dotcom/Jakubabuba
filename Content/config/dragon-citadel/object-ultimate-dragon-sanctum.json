@@ -1,0 +1,54 @@
+{
+  "core:creatureGeneratorCommon": {
+    "types": {
+      "ultimateDragonSanctum": {
+        "name": "Sanctuary at the End of Ages",
+        "creatures": [
+          [
+            "dcUltimateDragon",
+            "dcAbsoluteDragon"
+          ]
+        ],
+        "guards": [
+          {
+            "amount": 1,
+            "type": "dcUltimateDragon"
+          }
+        ],
+        "sounds": {
+          "ambient": [
+            "LOOPDRAG"
+          ]
+        },
+        "kingdomOverviewImage": "dragon-citadel/map/ultimate-sanctum-overview",
+      "rmg": {
+        "value": 30000,
+        "rarity": 10,
+          "mapLimit": 1,
+          "zoneLimit": 1
+        },
+        "templates": {
+          "default": {
+            "animation": "dragon-citadel/map/ultimate-sanctum",
+            "allowedTerrains": [
+              "dirt",
+              "grass",
+              "lava",
+              "rough",
+              "sand",
+              "snow",
+              "subterra",
+              "swamp"
+            ],
+            "mask": [
+              "VVVVVV",
+              "VVVVVV",
+              "VVVVBB",
+              "VVVVAB"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

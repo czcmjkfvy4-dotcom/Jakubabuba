@@ -1,0 +1,45 @@
+{
+  "basepath": "dragon-citadel/map/ultimate-sanctum/",
+  "images": [
+    {
+      "group": 0,
+      "frame": 0,
+      "file": "frame-00"
+    },
+    {
+      "group": 0,
+      "frame": 1,
+      "file": "frame-01"
+    },
+    {
+      "group": 0,
+      "frame": 2,
+      "file": "frame-02"
+    },
+    {
+      "group": 0,
+      "frame": 3,
+      "file": "frame-03"
+    },
+    {
+      "group": 0,
+      "frame": 4,
+      "file": "frame-04"
+    },
+    {
+      "group": 0,
+      "frame": 5,
+      "file": "frame-05"
+    },
+    {
+      "group": 0,
+      "frame": 6,
+      "file": "frame-06"
+    },
+    {
+      "group": 0,
+      "frame": 7,
+      "file": "frame-07"
+    }
+  ]
+}

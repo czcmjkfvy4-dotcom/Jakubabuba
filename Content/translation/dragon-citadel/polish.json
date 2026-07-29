@@ -26,6 +26,8 @@
 	"building.dragon-citadel.dragonCitadel.dwellingLvl6.name" : "Szczyt Burzy",
 	"building.dragon-citadel.dragonCitadel.dwellingLvl7.description" : "Kosztowne leże pozwalające rekrutować Błękitne Smoki.",
 	"building.dragon-citadel.dragonCitadel.dwellingLvl7.name" : "Błękitny Szczyt",
+	"building.dragon-citadel.dragonCitadel.dwellingLvl8.description" : "Pozwala rekrutować Smoki Ostateczne. W wersji BILLADENC4 przyrost wynosi 1 stworzenie na miesiąc.",
+	"building.dragon-citadel.dragonCitadel.dwellingLvl8.name" : "Sanktuarium Końca Wieków",
 	"building.dragon-citadel.dragonCitadel.dwellingUp2Lvl4.description" : "Alternatywna grota pozwalająca rekrutować Rubinowe Smoki.",
 	"building.dragon-citadel.dragonCitadel.dwellingUp2Lvl4.name" : "Rubinowa Grota",
 	"building.dragon-citadel.dragonCitadel.dwellingUp3Lvl4.description" : "Pozwala rekrutować Pradawne Rubinowe Smoki.",
@@ -44,6 +46,8 @@
 	"building.dragon-citadel.dragonCitadel.dwellingUpLvl6.name" : "Oko Wiecznej Burzy",
 	"building.dragon-citadel.dragonCitadel.dwellingUpLvl7.description" : "Najwyższe sanktuarium Pradawnych Błękitnych Smoków.",
 	"building.dragon-citadel.dragonCitadel.dwellingUpLvl7.name" : "Sanktuarium Pradawnych Błękitnych Smoków",
+	"building.dragon-citadel.dragonCitadel.dwellingUpLvl8.description" : "Pozwala rekrutować Smoki Absolutne, najpotężniejsze istoty Smoczej Cytadeli.",
+	"building.dragon-citadel.dragonCitadel.dwellingUpLvl8.name" : "Sanktuarium Absolutu",
 	"building.dragon-citadel.dragonCitadel.fort.description" : "Otacza miasto murami obronnymi i otwiera drogę do dalszej rozbudowy umocnień.",
 	"building.dragon-citadel.dragonCitadel.fort.name" : "Smoczy Fort",
 	"building.dragon-citadel.dragonCitadel.grail.description" : "Zapewnia 5000 sztuk złota dziennie, zwiększa przyrost stworzeń o 50% i Moc Zaklęć broniącego bohatera o 12.",
@@ -78,6 +82,8 @@
 	"building.dragon-citadel.dragonCitadel.townHall.name" : "Ratusz Smoczej Cytadeli",
 	"building.dragon-citadel.dragonCitadel.villageHall.description" : "Zapewnia 500 sztuk złota dziennie.",
 	"building.dragon-citadel.dragonCitadel.villageHall.name" : "Rada Smoczej Osady",
+	"creatures.dragon-citadel.dcAbsoluteDragon.name.plural" : "Smoki Absolutne",
+	"creatures.dragon-citadel.dcAbsoluteDragon.name.singular" : "Smok Absolutny",
 	"creatures.dragon-citadel.dcAzureDragon.bonus.fearful" : "PLACEHOLDER",
 	"creatures.dragon-citadel.dcAzureDragon.bonus.fearless" : "PLACEHOLDER",
 	"creatures.dragon-citadel.dcAzureDragon.name.plural" : "Pradawne Błękitne Smoki",
@@ -114,6 +120,8 @@
 	"creatures.dragon-citadel.dcStormDragon.name.singular" : "Smok Burzy",
 	"creatures.dragon-citadel.dcTitan.name.plural" : "Tytani Burzy",
 	"creatures.dragon-citadel.dcTitan.name.singular" : "Tytan Burzy",
+	"creatures.dragon-citadel.dcUltimateDragon.name.plural" : "Smoki Ostateczne",
+	"creatures.dragon-citadel.dcUltimateDragon.name.singular" : "Smok Ostateczny",
 	"faction.dragon-citadel.dragonCitadel.description" : "Monumentalna twierdza pradawnych bestii, tytanów i smoczych władców. Każdy budynek jest poważną inwestycją, lecz ukończona Cytadela wystawia armię o sile, przed którą drżą całe królestwa.",
 	"faction.dragon-citadel.dragonCitadel.name" : "Smocza Cytadela",
 	"faction.dragon-citadel.dragonCitadel.randomName.0" : "Smocza Cytadela",
@@ -217,5 +225,6 @@
 	"mapObject.dragon-citadel.creatureBank.flamingFeatherSanctuary.name" : "Sanktuarium Płonącego Pióra",
 	"mapObject.dragon-citadel.creatureBank.flamingFeatherSanctuary.onGuarded" : "Płonącego Pióra strzeże rada smoków. Pokonaj je, aby zdobyć relikt.",
 	"mapObject.dragon-citadel.creatureBank.flamingFeatherSanctuary.onVisited" : "Sanktuarium jest puste, a jego ogień zgasł.",
-	"mapObject.dragon-citadel.creatureBank.flamingFeatherSanctuary.rewards.0" : "Smoki poległy. Płonące Pióro należy teraz do ciebie."
+	"mapObject.dragon-citadel.creatureBank.flamingFeatherSanctuary.rewards.0" : "Smoki poległy. Płonące Pióro należy teraz do ciebie.",
+	"mapObject.dragon-citadel.creatureGeneratorCommon.ultimateDragonSanctum.name" : "Sanktuarium Końca Wieków"
 }

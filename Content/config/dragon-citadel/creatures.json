@@ -1347,5 +1347,210 @@
       "move": "BKDRMOVE.wav",
       "wince": "BKDRWNCE.wav"
     }
+  },
+  "dcUltimateDragon": {
+    "name": {
+      "singular": "Smok Ostateczny",
+      "plural": "Smoki Ostateczne"
+    },
+    "faction": "dragonCitadel",
+    "level": 8,
+    "attack": 100,
+    "defense": 100,
+    "damage": {
+      "min": 1000,
+      "max": 1500
+    },
+    "hitPoints": 10000,
+    "speed": 20,
+    "growth": 1,
+    "fightValue": 6500000,
+    "aiValue": 7500000,
+    "cost": {
+      "wood": 200,
+      "mercury": 200,
+      "ore": 200,
+      "sulfur": 200,
+      "crystal": 200,
+      "gems": 200,
+      "gold": 350000
+    },
+    "doubleWide": true,
+    "advMapAmount": {
+      "min": 1,
+      "max": 1
+    },
+    "excludeFromRandomization": false,
+    "abilities": {
+      "dragon": {
+        "type": "DRAGON_NATURE"
+      },
+      "dragonSkeleton": {
+        "type": "SKELETON_TRANSFORMER_TARGET",
+        "subtype": "boneDragon"
+      },
+      "canFly": {
+        "type": "FLYING"
+      },
+      "twoHexAttackBreath": {
+        "type": "TWO_HEX_ATTACK_BREATH"
+      },
+      "attacksAllAdjacent": {
+        "type": "ATTACKS_ALL_ADJACENT"
+      },
+      "blocksRetaliation": {
+        "type": "BLOCKS_RETALIATION"
+      },
+      "unlimitedRetaliations": {
+        "type": "UNLIMITED_RETALIATIONS"
+      },
+      "spellImmunity": {
+        "type": "LEVEL_SPELL_IMMUNITY",
+        "val": 5
+      },
+      "magicResistance": {
+        "type": "MAGIC_RESISTANCE",
+        "val": 100
+      },
+      "mindImmunity": {
+        "type": "MIND_IMMUNITY"
+      },
+      "meleeImmunity": {
+        "type": "GENERAL_DAMAGE_REDUCTION",
+        "subtype": "damageTypeMelee",
+        "val": 100
+      },
+      "regeneration": {
+        "type": "HP_REGENERATION",
+        "val": 1000
+      },
+      "king": {
+        "type": "KING",
+        "val": 3
+      }
+    },
+    "graphics": {
+      "animation": "dragon-citadel/creatures/dcUltimateDragon/battle",
+      "map": "dragon-citadel/creatures/dcUltimateDragon/map",
+      "animationTime": {
+        "attack": 1,
+        "idle": 7,
+        "walk": 1
+      },
+      "timeBetweenFidgets": 2,
+      "iconLarge": "dragon-citadel/creatures/icons/dcUltimateDragon-large",
+      "iconSmall": "dragon-citadel/creatures/icons/dcUltimateDragon-small"
+    },
+    "sound": {
+      "attack": "AZURATTK.wav",
+      "defend": "AZURDFND.wav",
+      "killed": "AZURKILL.wav",
+      "move": "AZURMOVE.wav",
+      "wince": "AZURWNCE.wav"
+    },
+    "upgrades": [
+      "dcAbsoluteDragon"
+    ]
+  },
+  "dcAbsoluteDragon": {
+    "name": {
+      "singular": "Smok Absolutny",
+      "plural": "Smoki Absolutne"
+    },
+    "faction": "dragonCitadel",
+    "level": 8,
+    "attack": 150,
+    "defense": 150,
+    "damage": {
+      "min": 1500,
+      "max": 2250
+    },
+    "hitPoints": 15000,
+    "speed": 30,
+    "growth": 1,
+    "fightValue": 9750000,
+    "aiValue": 11250000,
+    "cost": {
+      "wood": 300,
+      "mercury": 300,
+      "ore": 300,
+      "sulfur": 300,
+      "crystal": 300,
+      "gems": 300,
+      "gold": 525000
+    },
+    "doubleWide": true,
+    "advMapAmount": {
+      "min": 1,
+      "max": 1
+    },
+    "excludeFromRandomization": false,
+    "abilities": {
+      "dragon": {
+        "type": "DRAGON_NATURE"
+      },
+      "dragonSkeleton": {
+        "type": "SKELETON_TRANSFORMER_TARGET",
+        "subtype": "boneDragon"
+      },
+      "canFly": {
+        "type": "FLYING"
+      },
+      "twoHexAttackBreath": {
+        "type": "TWO_HEX_ATTACK_BREATH"
+      },
+      "attacksAllAdjacent": {
+        "type": "ATTACKS_ALL_ADJACENT"
+      },
+      "blocksRetaliation": {
+        "type": "BLOCKS_RETALIATION"
+      },
+      "unlimitedRetaliations": {
+        "type": "UNLIMITED_RETALIATIONS"
+      },
+      "spellImmunity": {
+        "type": "LEVEL_SPELL_IMMUNITY",
+        "val": 5
+      },
+      "magicResistance": {
+        "type": "MAGIC_RESISTANCE",
+        "val": 100
+      },
+      "mindImmunity": {
+        "type": "MIND_IMMUNITY"
+      },
+      "meleeImmunity": {
+        "type": "GENERAL_DAMAGE_REDUCTION",
+        "subtype": "damageTypeMelee",
+        "val": 100
+      },
+      "regeneration": {
+        "type": "HP_REGENERATION",
+        "val": 2250
+      },
+      "king": {
+        "type": "KING",
+        "val": 3
+      }
+    },
+    "graphics": {
+      "animation": "dragon-citadel/creatures/dcAbsoluteDragon/battle",
+      "map": "dragon-citadel/creatures/dcAbsoluteDragon/map",
+      "animationTime": {
+        "attack": 1,
+        "idle": 7,
+        "walk": 1
+      },
+      "timeBetweenFidgets": 2,
+      "iconLarge": "dragon-citadel/creatures/icons/dcAbsoluteDragon-large",
+      "iconSmall": "dragon-citadel/creatures/icons/dcAbsoluteDragon-small"
+    },
+    "sound": {
+      "attack": "AZURATTK.wav",
+      "defend": "AZURDFND.wav",
+      "killed": "AZURKILL.wav",
+      "move": "AZURMOVE.wav",
+      "wince": "AZURWNCE.wav"
+    }
   }
 }

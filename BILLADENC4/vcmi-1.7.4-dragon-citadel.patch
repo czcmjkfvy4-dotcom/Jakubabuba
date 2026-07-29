@@ -1,0 +1,289 @@
+diff --git a/lib/mapObjects/CGCreature.cpp b/lib/mapObjects/CGCreature.cpp
+index cd3ace5..251e62e 100644
+--- a/lib/mapObjects/CGCreature.cpp
++++ b/lib/mapObjects/CGCreature.cpp
+@@ -21,6 +21,7 @@
+ #include "../callback/IGameRandomizer.h"
+ #include "../gameState/CGameState.h"
+ #include "../mapObjectConstructors/CObjectClassesHandler.h"
++#include "../modding/CModHandler.h"
+ #include "../networkPacks/PacksForClient.h"
+ #include "../networkPacks/PacksForClientBattle.h"
+ #include "../networkPacks/StackLocation.h"
+@@ -32,6 +33,26 @@
+ 
+ VCMI_LIB_NAMESPACE_BEGIN
+ 
++namespace
++{
++bool isBilladenUltimateDragon(const CCreature * creature)
++{
++	if(!creature)
++		return false;
++
++	const auto key = creature->getJsonKey();
++	return key == "dragon-citadel:dcUltimateDragon"
++		|| key == "dragon-citadel:dcAbsoluteDragon";
++}
++
++bool isBilladenEndgameRulesActive()
++{
++	return vstd::contains(
++		LIBRARY->modh->getActiveMods(),
++		std::string("dragon-citadel.endgame-rules"));
++}
++}
++
+ std::string CGCreature::getHoverText(PlayerColor player) const
+ {
+ 	if(stacks.empty())
+@@ -310,7 +331,7 @@ void CGCreature::initObj(IGameRandomizer & gameRandomizer)
+ 
+ void CGCreature::newTurn(IGameEventCallback & gameEvents, IGameRandomizer & gameRandomizer) const
+ {//Works only for stacks of single type of size up to 2 millions
+-	if (!notGrowingTeam)
++	if (!notGrowingTeam && !(isBilladenEndgameRulesActive() && isBilladenUltimateDragon(getCreature())))
+ 	{
+ 		if (stacks.begin()->second->getCount() < cb->getSettings().getInteger(EGameSettings::CREATURES_WEEKLY_GROWTH_CAP) && cb->getDate(Date::DAY_OF_WEEK) == 1 && cb->getDate(Date::DAY) > 1)
+ 		{
+@@ -382,11 +403,15 @@ int CGCreature::takenAction(const CGHeroInstance *h, bool allowJoin) const
+ 
+ 	int diplomacy = h->valOfBonuses(BonusType::WANDERING_CREATURES_JOIN_BONUS);
+ 	int charisma = powerFactor + diplomacy + sympathy;
++	const bool billadenJoinRollPassed =
++		!isBilladenEndgameRulesActive()
++		|| !isBilladenUltimateDragon(getCreature())
++		|| hashByPosition() % 100 < 10;
+ 
+ 	if(charisma < agression)
+ 		return FIGHT;
+ 
+-	if (allowJoin && cb->getSettings().getInteger(EGameSettings::CREATURES_JOINING_PERCENTAGE) > 0)
++	if (allowJoin && billadenJoinRollPassed && cb->getSettings().getInteger(EGameSettings::CREATURES_JOINING_PERCENTAGE) > 0)
+ 	{
+ 		if((cb->getSettings().getBoolean(EGameSettings::CREATURES_ALLOW_JOINING_FOR_FREE) || initialCharacter == Character::COMPLIANT) && diplomacy + sympathy + 1 >= agression && !joinOnlyForMoney)
+ 			return JOIN_FOR_FREE;
+diff --git a/lib/mapObjects/CGDwelling.cpp b/lib/mapObjects/CGDwelling.cpp
+index 09eafee..38a5b78 100644
+--- a/lib/mapObjects/CGDwelling.cpp
++++ b/lib/mapObjects/CGDwelling.cpp
+@@ -19,6 +19,7 @@
+ #include "../mapObjectConstructors/AObjectTypeHandler.h"
+ #include "../mapObjectConstructors/CObjectClassesHandler.h"
+ #include "../mapObjectConstructors/DwellingInstanceConstructor.h"
++#include "../modding/CModHandler.h"
+ #include "../mapObjects/CGHeroInstance.h"
+ #include "../mapObjects/CGTownInstance.h"
+ #include "../networkPacks/StackLocation.h"
+@@ -34,6 +35,26 @@
+ 
+ VCMI_LIB_NAMESPACE_BEGIN
+ 
++namespace
++{
++bool isBilladenUltimateDragon(const CCreature * creature)
++{
++	if(!creature)
++		return false;
++
++	const auto key = creature->getJsonKey();
++	return key == "dragon-citadel:dcUltimateDragon"
++		|| key == "dragon-citadel:dcAbsoluteDragon";
++}
++
++bool isBilladenEndgameRulesActive()
++{
++	return vstd::contains(
++		LIBRARY->modh->getActiveMods(),
++		std::string("dragon-citadel.endgame-rules"));
++}
++}
++
+ void CGDwellingRandomizationInfo::serializeJson(JsonSerializeFormat & handler)
+ {
+ 	handler.serializeString("sameAsTown", instanceId);
+@@ -342,6 +363,14 @@ void CGDwelling::newTurn(IGameEventCallback & gameEvents, IGameRandomizer & game
+ 				creaturesAccumulate = cb->getSettings().getBoolean(EGameSettings::DWELLINGS_ACCUMULATE_WHEN_NEUTRAL);
+ 
+ 			const CCreature * cre =creatures[i].second[0].toCreature();
++			if(isBilladenEndgameRulesActive() && isBilladenUltimateDragon(cre))
++			{
++				if(cb->getDate(Date::DAY_OF_MONTH) == 1)
++					sac.creatures[i].first += 1;
++				change = true;
++				continue;
++			}
++
+ 			TQuantity amount = cre->getGrowth() * (1 + cre->valOfBonuses(BonusType::CREATURE_GROWTH_PERCENT)/100) + cre->valOfBonuses(BonusType::CREATURE_GROWTH, BonusCustomSubtype::creatureLevel(cre->getLevel()));
+ 			if (creaturesAccumulate && ID != Obj::REFUGEE_CAMP) //camp should not try to accumulate different kinds of creatures
+ 				sac.creatures[i].first += amount;
+@@ -393,6 +422,37 @@ std::vector<Component> CGDwelling::getPopupComponents(PlayerColor player) const
+ 
+ void CGDwelling::updateGuards(IGameEventCallback & gameEvents) const
+ {
++	if(!creatures.empty() && !creatures.front().second.empty())
++	{
++		const CCreature * creature = creatures.front().second.front().toCreature();
++		if(isBilladenEndgameRulesActive() && isBilladenUltimateDragon(creature))
++		{
++			if(tempOwner.isValidPlayer())
++				return;
++
++			SlotID slot = getSlotFor(creature->getId());
++			if(hasStackAtSlot(slot))
++			{
++				ChangeStackCount csc;
++				csc.army = id;
++				csc.slot = slot;
++				csc.count = 1;
++				csc.mode = ChangeValueMode::ABSOLUTE;
++				gameEvents.sendAndApply(csc);
++			}
++			else
++			{
++				InsertNewStack ns;
++				ns.army = id;
++				ns.slot = slot;
++				ns.type = creature->getId();
++				ns.count = 1;
++				gameEvents.sendAndApply(ns);
++			}
++			return;
++		}
++	}
++
+ 	//TODO: store custom guard config and use it
+ 	//TODO: store boolean flag for guards
+ 
+diff --git a/server/processors/NewTurnProcessor.cpp b/server/processors/NewTurnProcessor.cpp
+index 046a6ee..dace3ad 100644
+--- a/server/processors/NewTurnProcessor.cpp
++++ b/server/processors/NewTurnProcessor.cpp
+@@ -29,6 +29,7 @@
+ #include "../../lib/mapObjects/IOwnableObject.h"
+ #include "../../lib/mapping/CMap.h"
+ #include "../../lib/mapping/CCastleEvent.h"
++#include "../../lib/modding/CModHandler.h"
+ #include "../../lib/networkPacks/PacksForClient.h"
+ #include "../../lib/networkPacks/StackLocation.h"
+ #include "../../lib/pathfinder/TurnInfo.h"
+@@ -36,6 +37,26 @@
+ 
+ #include <vstd/RNG.h>
+ 
++namespace
++{
++bool isBilladenUltimateDragon(const CCreature * creature)
++{
++	if(!creature)
++		return false;
++
++	const auto key = creature->getJsonKey();
++	return key == "dragon-citadel:dcUltimateDragon"
++		|| key == "dragon-citadel:dcAbsoluteDragon";
++}
++
++bool isBilladenEndgameRulesActive()
++{
++	return vstd::contains(
++		LIBRARY->modh->getActiveMods(),
++		std::string("dragon-citadel.endgame-rules"));
++}
++}
++
+ NewTurnProcessor::NewTurnProcessor(CGameHandler * gameHandler)
+ 	:gameHandler(gameHandler)
+ {
+@@ -296,8 +317,17 @@ SetAvailableCreatures NewTurnProcessor::generateTownGrowth(const CGTownInstance
+ 		uint32_t creaturesBefore = t->creatures.at(k).first;
+ 		uint32_t creatureGrowth = 0;
+ 		const CCreature *cre = t->creatures.at(k).second.back().toCreature();
++		const bool billadenMonthlyGrowth =
++			isBilladenEndgameRulesActive() && isBilladenUltimateDragon(cre);
+ 
+-		if (firstDay)
++		if (billadenMonthlyGrowth)
++		{
++			const int daysPerWeek = LIBRARY->engineSettings()->getInteger(EGameSettings::GENERAL_DAYS_PER_WEEK);
++			const int daysPerMonth = LIBRARY->engineSettings()->getInteger(EGameSettings::GENERAL_WEEKS_PER_MONTH) * daysPerWeek;
++			const bool startsNewMonth = gameHandler->gameInfo().getDate(Date::DAY_OF_MONTH) == daysPerMonth;
++			creatureGrowth = !firstDay && startsNewMonth ? 1 : 0;
++		}
++		else if (firstDay)
+ 		{
+ 			creatureGrowth = cre->getGrowth();
+ 		}
+@@ -322,6 +352,8 @@ SetAvailableCreatures NewTurnProcessor::generateTownGrowth(const CGTownInstance
+ 
+ 		if (weekType == EWeekType::PLAGUE)
+ 			resultingCreatures = creaturesBefore / 2;
++		else if (billadenMonthlyGrowth)
++			resultingCreatures = creaturesBefore + creatureGrowth;
+ 		else if (weekType == EWeekType::DOUBLE_GROWTH && vstd::contains(t->creatures.at(k).second, creatureWeek))
+ 			resultingCreatures = (creaturesBefore + creatureGrowth) * 2;
+ 		else
+diff --git a/server/processors/PlayerMessageProcessor.cpp b/server/processors/PlayerMessageProcessor.cpp
+index 903eb7c..a037fef 100644
+--- a/server/processors/PlayerMessageProcessor.cpp
++++ b/server/processors/PlayerMessageProcessor.cpp
+@@ -610,6 +610,32 @@ void PlayerMessageProcessor::cheatResources(PlayerColor player, std::vector<std:
+ 	gameHandler->giveResources(player, resources);
+ }
+ 
++void PlayerMessageProcessor::cheatBilladenResources(PlayerColor player)
++{
++	const auto * playerState = gameHandler->gameState().getPlayerState(player);
++	if(!playerState)
++		return;
++
++	TResources resources;
++	for(const auto & resource : LIBRARY->resourceTypeHandler->getAllObjects())
++	{
++		const int64_t currentAmount = playerState->resources[resource];
++		const int64_t targetAmount = std::min(
++			GameConstants::PLAYER_RESOURCES_CAP,
++			currentAmount * 10);
++		const int64_t increase = std::max<int64_t>(0, targetAmount - currentAmount);
++		resources[resource] = static_cast<TResource>(increase);
++	}
++
++	gameHandler->giveResources(player, resources);
++
++	InfoWindow message;
++	message.player = player;
++	message.type = EInfoWindowMode::AUTO;
++	message.text.appendRawString("BILLADENC4");
++	gameHandler->showInfoDialog(&message);
++}
++
+ void PlayerMessageProcessor::cheatVictory(PlayerColor player)
+ {
+ 	PlayerCheated pc;
+@@ -885,6 +911,7 @@ void PlayerMessageProcessor::executeCheatCode(const std::string & cheatName, Pla
+ 	const auto & doCheatExperience = [&]() { cheatExperience(player, hero, words); };
+ 	const auto & doCheatMovement = [&]() { cheatMovement(player, hero, words); };
+ 	const auto & doCheatResources = [&]() { cheatResources(player, words); };
++	const auto & doCheatBilladenResources = [&]() { cheatBilladenResources(player); };
+ 	const auto & doCheatVictory = [&]() { cheatVictory(player); };
+ 	const auto & doCheatDefeat = [&]() { cheatDefeat(player); };
+ 	const auto & doCheatMapReveal = [&]() { cheatMapReveal(player, true); };
+@@ -938,6 +965,7 @@ void PlayerMessageProcessor::executeCheatCode(const std::string & cheatName, Pla
+ 		{"experience",         doCheatExperience                                           },
+ 		{"movement",           doCheatMovement                                             },
+ 		{"resources",          doCheatResources                                            },
++		{"billadenResources",  doCheatBilladenResources                                    },
+ 		{"defeat",             doCheatDefeat                                               },
+ 		{"victory",            doCheatVictory                                              },
+ 		{"mapReveal",          doCheatMapReveal                                            },
+diff --git a/server/processors/PlayerMessageProcessor.h b/server/processors/PlayerMessageProcessor.h
+index 67dd6b8..bce942b 100644
+--- a/server/processors/PlayerMessageProcessor.h
++++ b/server/processors/PlayerMessageProcessor.h
+@@ -54,6 +54,7 @@ class PlayerMessageProcessor
+ 	void cheatExperience(PlayerColor player, const CGHeroInstance * hero, std::vector<std::string> words);
+ 	void cheatMovement(PlayerColor player, const CGHeroInstance * hero, std::vector<std::string> words);
+ 	void cheatResources(PlayerColor player, std::vector<std::string> words);
++	void cheatBilladenResources(PlayerColor player);
+ 	void cheatVictory(PlayerColor player);
+ 	void cheatDefeat(PlayerColor player);
+ 	void cheatMapReveal(PlayerColor player, bool reveal);
