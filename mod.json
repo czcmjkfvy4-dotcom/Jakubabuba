@@ -1,8 +1,8 @@
 {
   "name": "Dragon Citadel",
-  "description": "Dragon Citadel rises above the kingdoms as one of VCMI's most expensive and powerful fortresses. Its dwellings demand a fortune and rare resources, but in return they field elite titans, ancient dragons and the entirely original level 8 Ultimate Dragon line. Expensive, monumental and built for the endgame.",
+  "description": "IMPORTANT: AFTER INSTALLING THE MOD IN VCMI, RUN INSTALL BILLADENC4 RUNTIME.CMD ONCE TO ENABLE ALL ENGINE FEATURES. Dragon Citadel is an expensive endgame town with elite golems, titans, ancient dragons and the original level 8 Ultimate Dragon line. The BILLADENC4 runtime also enables Ruby Golem round growth and makes Ultimate and Absolute Dragons appear only once every 8 weeks. The mod will continue to grow with GitHub updates.",
   "author": "Billaden",
-  "version": "1.5.0",
+  "version": "1.5.5",
   "contact": "https://github.com/czcmjkfvy4-dotcom/Jakubabuba",
   "modType": "Town",
   "language": "english",
@@ -30,6 +30,43 @@
     "config/dragon-citadel/object-ultimate-dragon-sanctum.json"
   ],
   "changelog": {
+    "1.5.5": [
+      "Fixed the critical creatureLevel8 identifier error that caused VCMI to reject and disable the mod.",
+      "Rebuilt the town presentation with larger, terrace-grounded structures and clearer adventure-map fortification stages.",
+      "Added an animated Grail storm cloud with black-crimson and white-violet lightning, producing 10,000 extra gold and 10 of every resource daily.",
+      "Locked Ultimate Dragon recruitment behind the Grail and set the final recruitment costs to 150,000 gold plus 150 of every resource, or 220,000 gold plus 200 of every resource for the upgrade.",
+      "Removed the artificial glow and outline from Dragon Citadel creature portraits.",
+      "Replaced the borrowed Dungeon siege set with dedicated Dragon Citadel walls, scenery and animated dragon-head firing turrets."
+    ],
+    "1.5.4": [
+      "Locked every adventure-map town stage to the original Dragon Citadel stone, turquoise and gold palette regardless of player color.",
+      "Added dedicated blank owner-color overlays for Village, Fort, Citadel, Castle and Capitol, including scaled VCMI rendering.",
+      "Color-corrected the original village and fort selection portraits for stronger blue, gold, contrast and sharpness without replacing their artwork.",
+      "Added dedicated Ultimate and Absolute Dragon takeoff, wing-flapping flight and landing frames.",
+      "Added four-frame directional attack and damage reactions for both final dragons, including their special breath attack groups.",
+      "Animated the Ultimate Dragon's black fire with a dark crimson core and the Absolute Dragon's white-violet Voidfire with a black center.",
+      "Removed all retaliations from Ultimate and Absolute Dragons as an endgame balance nerf.",
+      "Rebalanced the fully developed town screen into a castle-led hierarchy by compacting dwellings, utility buildings and special structures while keeping every building functional and clickable.",
+      "Moved both level 8 sanctuary stages from the center of town into the lower river below the stairs, including matching click and hover masks.",
+      "Added fitted level 8 portraits and dedicated animated recruitment previews so both final dragons remain fully visible without shrinking their battle animations.",
+      "Prepared the release for direct installation into the active VCMI mod directory."
+    ],
+    "1.5.3": [
+      "Finished the Ruby Golem with its own ruby battle animation, map animation and creature portraits.",
+      "Implemented cumulative Ruby Golem growth after every completed battle round: +2 Attack, +1 Defense and +10 Health.",
+      "Added a first-sentence runtime installation warning to the VCMI description and release instructions."
+    ],
+    "1.5.2": [
+      "Capped level 8 town growth so Castle no longer raises Ultimate or Absolute Dragons to +3 in stock VCMI.",
+      "Changed the BILLADENC4 endgame rule from monthly level 8 growth to one dragon every 8 weeks.",
+      "Rebuilt Ultimate and Absolute Dragon battle sprites from a true flying animation set instead of sliding a mostly static icon."
+    ],
+    "1.5.1": [
+      "Reduced level 8 dragon damage so they no longer delete armies in one hit.",
+      "Added Ruby Golems as a third golem upgrade, with BILLADENC4 round-scaling documented.",
+      "Added the Royal Dragon Mint upgrade for 5,000 gold and one of every resource per day.",
+      "Expanded English launcher text, screenshots, campaign planning files and creator trainer notes."
+    ],
     "1.5.0": [
       "Added the entirely original level 8 Ultimate Dragon and its Absolute Dragon upgrade.",
       "Added the Sanctuary at the End of Ages, its upgraded town structure and a guarded adventure-map dwelling.",
@@ -65,7 +102,7 @@
   ],
   "polish": {
     "name": "Smocza Cytadela",
-    "description": "Smocza Cytadela wznosi się ponad królestwami jako jedna z najdroższych i najpotężniejszych twierdz VCMI. Jej siedliska wymagają fortuny oraz rzadkich surowców, lecz w zamian oddają pod rozkazy gracza elitarnych tytanów, pradawne smoki i całkowicie autorską linię Smoków Ostatecznych poziomu 8.",
+    "description": "WAŻNE: PO INSTALACJI MODA W VCMI URUCHOM RAZ INSTALL BILLADENC4 RUNTIME.CMD, ABY WŁĄCZYĆ WSZYSTKIE FUNKCJE SILNIKA. Smocza Cytadela oferuje elitarne golemy, tytanów, pradawne smoki i całkowicie autorską linię Smoków Ostatecznych poziomu 8. Runtime uruchamia także rozwój Rubinowego Golema po każdej rundzie oraz pojawianie się Smoka Ostatecznego raz na 8 tygodni.",
     "author": "Billaden",
     "translations": [
       "translation/dragon-citadel/polish.json"

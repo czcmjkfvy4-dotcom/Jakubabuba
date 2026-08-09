@@ -296,6 +296,69 @@
       "killed": "DGLMKILL.wav",
       "move": "DGLMMOVE.wav",
       "wince": "DGLMWNCE.wav"
+    },
+    "upgrades": [
+      "dcRubyGolem"
+    ]
+  },
+  "dcRubyGolem": {
+    "name": {
+      "singular": "Rubinowy Golem",
+      "plural": "Rubinowe Golemy"
+    },
+    "faction": "dragonCitadel",
+    "level": 2,
+    "attack": 10,
+    "defense": 10,
+    "damage": {
+      "min": 10,
+      "max": 10
+    },
+    "hitPoints": 100,
+    "speed": 7,
+    "growth": 2,
+    "fightValue": 1900,
+    "aiValue": 2200,
+    "cost": {
+      "gold": 1600,
+      "ore": 2,
+      "crystal": 1
+    },
+    "advMapAmount": {
+      "min": 6,
+      "max": 16
+    },
+    "excludeFromRandomization": true,
+    "abilities": {
+      "nonliving": {
+        "type": "NON_LIVING"
+      },
+      "magicResistance": {
+        "type": "SPELL_DAMAGE_REDUCTION",
+        "subtype": "spellSchool.any",
+        "val": 95
+      }
+    },
+    "graphics": {
+      "animation": "dragon-citadel/creatures/dcRubyGolem/battle",
+      "map": "dragon-citadel/creatures/dcRubyGolem/map",
+      "animationTime": {
+        "attack": 1,
+        "idle": 10,
+        "walk": 1
+      },
+      "timeBetweenFidgets": 1,
+      "mapAttackFromRight": "AvWattak.def:0:234",
+      "mapAttackFromLeft": "AvWattak.def:0:235",
+      "iconLarge": "dragon-citadel/creatures/icons/dcRubyGolem-large",
+      "iconSmall": "dragon-citadel/creatures/icons/dcRubyGolem-small"
+    },
+    "sound": {
+      "attack": "DGLMATTK.wav",
+      "defend": "DGLMDFND.wav",
+      "killed": "DGLMKILL.wav",
+      "move": "DGLMMOVE.wav",
+      "wince": "DGLMWNCE.wav"
     }
   },
   "dcGiant": {
@@ -1358,22 +1421,22 @@
     "attack": 100,
     "defense": 100,
     "damage": {
-      "min": 1000,
-      "max": 1500
+      "min": 220,
+      "max": 320
     },
     "hitPoints": 10000,
     "speed": 20,
     "growth": 1,
-    "fightValue": 6500000,
-    "aiValue": 7500000,
+    "fightValue": 1200000,
+    "aiValue": 1500000,
     "cost": {
-      "wood": 200,
-      "mercury": 200,
-      "ore": 200,
-      "sulfur": 200,
-      "crystal": 200,
-      "gems": 200,
-      "gold": 350000
+      "wood": 150,
+      "mercury": 150,
+      "ore": 150,
+      "sulfur": 150,
+      "crystal": 150,
+      "gems": 150,
+      "gold": 150000
     },
     "doubleWide": true,
     "advMapAmount": {
@@ -1401,8 +1464,8 @@
       "blocksRetaliation": {
         "type": "BLOCKS_RETALIATION"
       },
-      "unlimitedRetaliations": {
-        "type": "UNLIMITED_RETALIATIONS"
+      "noRetaliation": {
+        "type": "NO_RETALIATION"
       },
       "spellImmunity": {
         "type": "LEVEL_SPELL_IMMUNITY",
@@ -1422,7 +1485,7 @@
       },
       "regeneration": {
         "type": "HP_REGENERATION",
-        "val": 1000
+        "val": 500
       },
       "king": {
         "type": "KING",
@@ -1437,7 +1500,7 @@
         "idle": 7,
         "walk": 1
       },
-      "timeBetweenFidgets": 2,
+      "timeBetweenFidgets": 1,
       "iconLarge": "dragon-citadel/creatures/icons/dcUltimateDragon-large",
       "iconSmall": "dragon-citadel/creatures/icons/dcUltimateDragon-small"
     },
@@ -1462,22 +1525,22 @@
     "attack": 150,
     "defense": 150,
     "damage": {
-      "min": 1500,
-      "max": 2250
+      "min": 320,
+      "max": 480
     },
     "hitPoints": 15000,
     "speed": 30,
     "growth": 1,
-    "fightValue": 9750000,
-    "aiValue": 11250000,
+    "fightValue": 1800000,
+    "aiValue": 2300000,
     "cost": {
-      "wood": 300,
-      "mercury": 300,
-      "ore": 300,
-      "sulfur": 300,
-      "crystal": 300,
-      "gems": 300,
-      "gold": 525000
+      "wood": 200,
+      "mercury": 200,
+      "ore": 200,
+      "sulfur": 200,
+      "crystal": 200,
+      "gems": 200,
+      "gold": 220000
     },
     "doubleWide": true,
     "advMapAmount": {
@@ -1505,8 +1568,8 @@
       "blocksRetaliation": {
         "type": "BLOCKS_RETALIATION"
       },
-      "unlimitedRetaliations": {
-        "type": "UNLIMITED_RETALIATIONS"
+      "noRetaliation": {
+        "type": "NO_RETALIATION"
       },
       "spellImmunity": {
         "type": "LEVEL_SPELL_IMMUNITY",
@@ -1526,7 +1589,7 @@
       },
       "regeneration": {
         "type": "HP_REGENERATION",
-        "val": 2250
+        "val": 750
       },
       "king": {
         "type": "KING",
@@ -1541,7 +1604,7 @@
         "idle": 7,
         "walk": 1
       },
-      "timeBetweenFidgets": 2,
+      "timeBetweenFidgets": 1,
       "iconLarge": "dragon-citadel/creatures/icons/dcAbsoluteDragon-large",
       "iconSmall": "dragon-citadel/creatures/icons/dcAbsoluteDragon-small"
     },
@@ -1551,6 +1614,94 @@
       "killed": "AZURKILL.wav",
       "move": "AZURMOVE.wav",
       "wince": "AZURWNCE.wav"
+    }
+  },
+  "dcDragonTurret": {
+    "name": {
+      "singular": "Dragon Turret",
+      "plural": "Dragon Turrets"
+    },
+    "faction": "dragonCitadel",
+    "level": 1,
+    "attack": 10,
+    "defense": 10,
+    "damage": {
+      "min": 1,
+      "max": 1
+    },
+    "hitPoints": 100,
+    "speed": 1,
+    "growth": 0,
+    "advMapAmount": {
+      "min": 1,
+      "max": 1
+    },
+    "fightValue": 1,
+    "aiValue": 1,
+    "cost": {
+      "gold": 0
+    },
+    "shots": 99,
+    "excludeFromRandomization": true,
+    "abilities": {
+      "shooter": {
+        "type": "SHOOTER"
+      },
+      "noDistancePenalty": {
+        "type": "NO_DISTANCE_PENALTY"
+      },
+      "noWallPenalty": {
+        "type": "NO_WALL_PENALTY"
+      },
+      "nonliving": {
+        "type": "NON_LIVING"
+      }
+    },
+    "graphics": {
+      "animation": "dragon-citadel/creatures/dcDragonTurret/battle",
+      "map": "dragon-citadel/creatures/dcDragonTurret/map",
+      "animationTime": {
+        "attack": 1,
+        "idle": 6,
+        "walk": 1
+      },
+      "timeBetweenFidgets": 2,
+      "iconLarge": "dragon-citadel/creatures/icons/dcDragonTurret-large",
+      "iconSmall": "dragon-citadel/creatures/icons/dcDragonTurret-small",
+      "missile": {
+        "projectile": "CPRGTIX.DEF",
+        "attackClimaxFrame": 2,
+        "offset": {
+          "upperX": 42,
+          "upperY": -52,
+          "middleX": 40,
+          "middleY": -48,
+          "lowerX": 36,
+          "lowerY": -42
+        },
+        "frameAngles": [
+          90,
+          72,
+          45,
+          27,
+          0,
+          -27,
+          -45,
+          -72,
+          -90,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "sound": {
+      "attack": "GTITATTK.wav",
+      "defend": "GTITDFND.wav",
+      "killed": "GTITKILL.wav",
+      "move": "GTITMOVE.wav",
+      "shoot": "GTITSHOT.wav",
+      "wince": "GTITWNCE.wav"
     }
   }
 }

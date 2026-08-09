@@ -32,16 +32,6 @@
       "file": "g00-f005"
     },
     {
-      "group": 0,
-      "frame": 6,
-      "file": "g00-f006"
-    },
-    {
-      "group": 0,
-      "frame": 7,
-      "file": "g00-f007"
-    },
-    {
       "group": 1,
       "frame": 0,
       "file": "g01-f000"
@@ -160,21 +150,6 @@
       "group": 3,
       "frame": 3,
       "file": "g03-f003"
-    },
-    {
-      "group": 3,
-      "frame": 4,
-      "file": "g03-f004"
-    },
-    {
-      "group": 3,
-      "frame": 5,
-      "file": "g03-f005"
-    },
-    {
-      "group": 3,
-      "frame": 6,
-      "file": "g03-f006"
     },
     {
       "group": 4,
@@ -312,41 +287,6 @@
       "file": "g11-f003"
     },
     {
-      "group": 11,
-      "frame": 4,
-      "file": "g11-f004"
-    },
-    {
-      "group": 11,
-      "frame": 5,
-      "file": "g11-f005"
-    },
-    {
-      "group": 11,
-      "frame": 6,
-      "file": "g11-f006"
-    },
-    {
-      "group": 11,
-      "frame": 7,
-      "file": "g11-f007"
-    },
-    {
-      "group": 11,
-      "frame": 8,
-      "file": "g11-f008"
-    },
-    {
-      "group": 11,
-      "frame": 9,
-      "file": "g11-f009"
-    },
-    {
-      "group": 11,
-      "frame": 10,
-      "file": "g11-f010"
-    },
-    {
       "group": 12,
       "frame": 0,
       "file": "g12-f000"
@@ -365,41 +305,6 @@
       "group": 12,
       "frame": 3,
       "file": "g12-f003"
-    },
-    {
-      "group": 12,
-      "frame": 4,
-      "file": "g12-f004"
-    },
-    {
-      "group": 12,
-      "frame": 5,
-      "file": "g12-f005"
-    },
-    {
-      "group": 12,
-      "frame": 6,
-      "file": "g12-f006"
-    },
-    {
-      "group": 12,
-      "frame": 7,
-      "file": "g12-f007"
-    },
-    {
-      "group": 12,
-      "frame": 8,
-      "file": "g12-f008"
-    },
-    {
-      "group": 12,
-      "frame": 9,
-      "file": "g12-f009"
-    },
-    {
-      "group": 12,
-      "frame": 10,
-      "file": "g12-f010"
     },
     {
       "group": 13,
@@ -422,41 +327,6 @@
       "file": "g13-f003"
     },
     {
-      "group": 13,
-      "frame": 4,
-      "file": "g13-f004"
-    },
-    {
-      "group": 13,
-      "frame": 5,
-      "file": "g13-f005"
-    },
-    {
-      "group": 13,
-      "frame": 6,
-      "file": "g13-f006"
-    },
-    {
-      "group": 13,
-      "frame": 7,
-      "file": "g13-f007"
-    },
-    {
-      "group": 13,
-      "frame": 8,
-      "file": "g13-f008"
-    },
-    {
-      "group": 13,
-      "frame": 9,
-      "file": "g13-f009"
-    },
-    {
-      "group": 13,
-      "frame": 10,
-      "file": "g13-f010"
-    },
-    {
       "group": 17,
       "frame": 0,
       "file": "g17-f000"
@@ -475,41 +345,6 @@
       "group": 17,
       "frame": 3,
       "file": "g17-f003"
-    },
-    {
-      "group": 17,
-      "frame": 4,
-      "file": "g17-f004"
-    },
-    {
-      "group": 17,
-      "frame": 5,
-      "file": "g17-f005"
-    },
-    {
-      "group": 17,
-      "frame": 6,
-      "file": "g17-f006"
-    },
-    {
-      "group": 17,
-      "frame": 7,
-      "file": "g17-f007"
-    },
-    {
-      "group": 17,
-      "frame": 8,
-      "file": "g17-f008"
-    },
-    {
-      "group": 17,
-      "frame": 9,
-      "file": "g17-f009"
-    },
-    {
-      "group": 17,
-      "frame": 10,
-      "file": "g17-f010"
     },
     {
       "group": 18,
@@ -532,41 +367,6 @@
       "file": "g18-f003"
     },
     {
-      "group": 18,
-      "frame": 4,
-      "file": "g18-f004"
-    },
-    {
-      "group": 18,
-      "frame": 5,
-      "file": "g18-f005"
-    },
-    {
-      "group": 18,
-      "frame": 6,
-      "file": "g18-f006"
-    },
-    {
-      "group": 18,
-      "frame": 7,
-      "file": "g18-f007"
-    },
-    {
-      "group": 18,
-      "frame": 8,
-      "file": "g18-f008"
-    },
-    {
-      "group": 18,
-      "frame": 9,
-      "file": "g18-f009"
-    },
-    {
-      "group": 18,
-      "frame": 10,
-      "file": "g18-f010"
-    },
-    {
       "group": 19,
       "frame": 0,
       "file": "g19-f000"
@@ -585,41 +385,6 @@
       "group": 19,
       "frame": 3,
       "file": "g19-f003"
-    },
-    {
-      "group": 19,
-      "frame": 4,
-      "file": "g19-f004"
-    },
-    {
-      "group": 19,
-      "frame": 5,
-      "file": "g19-f005"
-    },
-    {
-      "group": 19,
-      "frame": 6,
-      "file": "g19-f006"
-    },
-    {
-      "group": 19,
-      "frame": 7,
-      "file": "g19-f007"
-    },
-    {
-      "group": 19,
-      "frame": 8,
-      "file": "g19-f008"
-    },
-    {
-      "group": 19,
-      "frame": 9,
-      "file": "g19-f009"
-    },
-    {
-      "group": 19,
-      "frame": 10,
-      "file": "g19-f010"
     },
     {
       "group": 20,
@@ -642,11 +407,6 @@
       "file": "g20-f003"
     },
     {
-      "group": 20,
-      "frame": 4,
-      "file": "g20-f004"
-    },
-    {
       "group": 21,
       "frame": 0,
       "file": "g21-f000"
@@ -665,11 +425,6 @@
       "group": 21,
       "frame": 3,
       "file": "g21-f003"
-    },
-    {
-      "group": 21,
-      "frame": 4,
-      "file": "g21-f004"
     }
   ]
 }

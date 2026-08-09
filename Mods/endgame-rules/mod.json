@@ -1,9 +1,9 @@
 {
   "name": "Dragon Citadel: Endgame Rules",
-  "description": "Optional expansion module for mechanics beyond stock VCMI. With the BILLADENC4 runtime it enforces monthly level 8 growth, one-dragon neutral stacks and the 10% joining limit.",
+  "description": "IMPORTANT: RUN INSTALL BILLADENC4 RUNTIME.CMD ONCE AFTER INSTALLING THE MOD. This module enforces one level 8 dragon every 8 weeks, one-dragon neutral stacks, the 10% joining limit and Ruby Golem growth after every battle round.",
   "author": "Billaden",
   "contact": "https://github.com/czcmjkfvy4-dotcom/Jakubabuba",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "modType": "Mechanics",
   "language": "english",
   "compatibility": {
@@ -11,12 +11,16 @@
   },
   "polish": {
     "name": "Smocza Cytadela: Reguły Końca Gry",
-    "description": "Opcjonalny moduł dodatku dla mechanik wykraczających poza zwykłe VCMI. Z silnikiem BILLADENC4 wymusza miesięczny przyrost poziomu 8, pojedyncze dzikie smoki i limit 10% szansy na dołączenie.",
+    "description": "WAŻNE: PO INSTALACJI MODA URUCHOM RAZ INSTALL BILLADENC4 RUNTIME.CMD. Moduł wymusza jednego smoka poziomu 8 raz na 8 tygodni, pojedyncze dzikie smoki, limit 10% szansy na dołączenie i rozwój Rubinowego Golema po każdej rundzie.",
     "author": "Billaden"
   },
   "changelog": {
+    "1.1.0": [
+      "Added cumulative Ruby Golem growth after every completed battle round.",
+      "Added a prominent runtime installation warning."
+    ],
     "1.0.0": [
-      "Added exact monthly growth for Ultimate and Absolute Dragons.",
+      "Added exact 8-week growth for Ultimate and Absolute Dragons.",
       "Kept wandering level 8 stacks and neutral sanctuary guards at one dragon.",
       "Limited wandering level 8 joining eligibility to 10 percent."
     ]

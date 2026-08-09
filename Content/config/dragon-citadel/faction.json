@@ -546,6 +546,15 @@
           "area": "dragon-citadel/town-screen/areas/dwellingUpLvl2",
           "z": 36824
         },
+        "dwellingUp2Lvl2": {
+          "animation": "dragon-citadel/town/buildings/dwellingUpLvl2",
+          "x": 0,
+          "y": 0,
+          "campaignBonus": "BoDharp2.pcx",
+          "border": "dragon-citadel/town-screen/borders/dwellingUpLvl2",
+          "area": "dragon-citadel/town-screen/areas/dwellingUpLvl2",
+          "z": 36824
+        },
         "dwellingUpLvl3": {
           "animation": "dragon-citadel/town/buildings/dwellingUpLvl3",
           "x": 0,
@@ -635,6 +644,15 @@
           "border": "dragon-citadel/town-screen/borders/special5",
           "area": "dragon-citadel/town-screen/areas/special5",
           "z": 36520
+        },
+        "special6": {
+          "animation": "dragon-citadel/town/buildings/special5",
+          "x": 0,
+          "y": 0,
+          "campaignBonus": "BoDport.pcx",
+          "border": "dragon-citadel/town-screen/borders/special5",
+          "area": "dragon-citadel/town-screen/areas/special5",
+          "z": 36521
         }
       },
       "musicTheme": [
@@ -698,7 +716,8 @@
             "special4"
           ],
           [
-            "special5"
+            "special5",
+            "special6"
           ]
         ],
         [
@@ -708,7 +727,8 @@
           ],
           [
             "dwellingLvl2",
-            "dwellingUpLvl2"
+            "dwellingUpLvl2",
+            "dwellingUp2Lvl2"
           ],
           [
             "dwellingLvl3",
@@ -747,7 +767,8 @@
         ],
         [
           "dcGoldGolem",
-          "dcDiamondGolem"
+          "dcDiamondGolem",
+          "dcRubyGolem"
         ],
         [
           "dcGiant",
@@ -1156,8 +1177,17 @@
               "val": 12
             }
           ],
+          "produce": {
+            "wood": 10,
+            "mercury": 10,
+            "ore": 10,
+            "sulfur": 10,
+            "crystal": 10,
+            "gems": 10,
+            "gold": 10000
+          },
           "name": "Serce Smoczej Cytadeli",
-          "description": "Zapewnia 5000 sztuk złota dziennie, zwiększa przyrost stworzeń o 50% i Moc Zaklęć broniącego bohatera o 12."
+          "description": "Zapewnia dodatkowo 10000 sztuk złota i po 10 jednostek każdego surowca dziennie, zwiększa przyrost stworzeń o 50% i Moc Zaklęć broniącego bohatera o 12."
         },
         "dwellingLvl1": {
           "name": "Twierdza Ostrostrzelców",
@@ -1302,6 +1332,16 @@
           },
           "upgrades": "dwellingLvl2"
         },
+        "dwellingUp2Lvl2": {
+          "name": "Rubinowa Odlewnia",
+          "description": "Pozwala rekrutować Rubinowe Golemy. W wersji BILLADENC4 Rubinowy Golem otrzymuje w bitwie po każdej rundzie +2 Ataku, +1 Obrony i +10 Zdrowia.",
+          "cost": {
+            "ore": 12,
+            "crystal": 8,
+            "gold": 9000
+          },
+          "upgrades": "dwellingUpLvl2"
+        },
         "dwellingUpLvl3": {
           "name": "Wieża Tytanów Burzy",
           "description": "Pozwala rekrutować strzelających Tytanów Burzy.",
@@ -1409,7 +1449,7 @@
         },
         "dwellingLvl8": {
           "name": "Sanktuarium Końca Wieków",
-          "description": "Pozwala rekrutować Smoki Ostateczne. Przyrost wynosi 1 stworzenie na miesiąc w wersji BILLADENC4.",
+          "description": "Po zbudowaniu Graala pozwala rekrutować Smoki Ostateczne. W wersji BILLADENC4 Smok pojawia się tylko raz na 8 tygodni.",
           "cost": {
             "wood": 500,
             "mercury": 500,
@@ -1435,6 +1475,9 @@
             ],
             [
               "special5"
+            ],
+            [
+              "grail"
             ]
           ]
         },
@@ -1488,13 +1531,48 @@
           "produce": {
             "gold": 4000
           }
+        },
+        "special6": {
+          "id": 28,
+          "name": "Królewska Smocza Mennica",
+          "description": "Zwiększa dzienny dochód właściciela miasta o 5000 sztuk złota oraz dostarcza po 1 jednostce każdego surowca dziennie.",
+          "cost": {
+            "wood": 20,
+            "ore": 20,
+            "mercury": 10,
+            "sulfur": 10,
+            "crystal": 10,
+            "gems": 10,
+            "gold": 50000
+          },
+          "requires": [
+            "allOf",
+            [
+              "capitol"
+            ],
+            [
+              "special5"
+            ],
+            [
+              "resourceSilo"
+            ]
+          ],
+          "produce": {
+            "wood": 1,
+            "mercury": 1,
+            "ore": 1,
+            "sulfur": 1,
+            "crystal": 1,
+            "gems": 1,
+            "gold": 5000
+          }
         }
       },
       "siege": {
-        "shooter": "dcTitan",
+        "shooter": "dcDragonTurret",
         "towerIconSmall": "dragon-citadel/icons/towerSmall",
         "towerIconLarge": "dragon-citadel/icons/towerLarge",
-        "imagePrefix": "SGDN",
+        "imagePrefix": "dragon-citadel/siege/SGDC",
         "gate": {
           "arch": {
             "x": 471,

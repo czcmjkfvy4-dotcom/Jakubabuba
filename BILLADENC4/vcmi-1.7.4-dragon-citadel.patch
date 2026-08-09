@@ -1,3 +1,24 @@
+diff --git a/client/widgets/MiscWidgets.cpp b/client/widgets/MiscWidgets.cpp
+index eff27c8..1da12d9 100644
+--- a/client/widgets/MiscWidgets.cpp
++++ b/client/widgets/MiscWidgets.cpp
+@@ -694,7 +694,15 @@ CCreaturePic::CCreaturePic(int x, int y, const CCreature * cre, bool Big, bool A
+ 		bg = std::make_shared<CPicture>((*LIBRARY->townh)[faction]->creatureBg130);
+ 	else
+ 		bg = std::make_shared<CPicture>((*LIBRARY->townh)[faction]->creatureBg120);
+-	anim = std::make_shared<CCreatureAnim>(0, 0, cre->animDefName);
++
++	auto previewAnimation = cre->animDefName;
++	const auto creatureKey = cre->getJsonKey();
++	if(creatureKey == "dragon-citadel:dcUltimateDragon")
++		previewAnimation = AnimationPath::builtin("dragon-citadel/creatures/dcUltimateDragon/recruitment-preview");
++	else if(creatureKey == "dragon-citadel:dcAbsoluteDragon")
++		previewAnimation = AnimationPath::builtin("dragon-citadel/creatures/dcAbsoluteDragon/recruitment-preview");
++
++	anim = std::make_shared<CCreatureAnim>(0, 0, previewAnimation);
+ 	anim->clipRect(cre->isDoubleWide()?170:150, 155, bg->pos.w, bg->pos.h);
+ 	anim->startPreview(cre->hasBonusOfType(BonusType::SIEGE_WEAPON));
+ 
 diff --git a/lib/mapObjects/CGCreature.cpp b/lib/mapObjects/CGCreature.cpp
 index cd3ace5..251e62e 100644
 --- a/lib/mapObjects/CGCreature.cpp
@@ -64,7 +85,7 @@ index cd3ace5..251e62e 100644
  		if((cb->getSettings().getBoolean(EGameSettings::CREATURES_ALLOW_JOINING_FOR_FREE) || initialCharacter == Character::COMPLIANT) && diplomacy + sympathy + 1 >= agression && !joinOnlyForMoney)
  			return JOIN_FOR_FREE;
 diff --git a/lib/mapObjects/CGDwelling.cpp b/lib/mapObjects/CGDwelling.cpp
-index 09eafee..38a5b78 100644
+index 09eafee..da4fccb 100644
 --- a/lib/mapObjects/CGDwelling.cpp
 +++ b/lib/mapObjects/CGDwelling.cpp
 @@ -19,6 +19,7 @@
@@ -102,13 +123,17 @@ index 09eafee..38a5b78 100644
  void CGDwellingRandomizationInfo::serializeJson(JsonSerializeFormat & handler)
  {
  	handler.serializeString("sameAsTown", instanceId);
-@@ -342,6 +363,14 @@ void CGDwelling::newTurn(IGameEventCallback & gameEvents, IGameRandomizer & game
+@@ -342,6 +363,18 @@ void CGDwelling::newTurn(IGameEventCallback & gameEvents, IGameRandomizer & game
  				creaturesAccumulate = cb->getSettings().getBoolean(EGameSettings::DWELLINGS_ACCUMULATE_WHEN_NEUTRAL);
  
  			const CCreature * cre =creatures[i].second[0].toCreature();
 +			if(isBilladenEndgameRulesActive() && isBilladenUltimateDragon(cre))
 +			{
-+				if(cb->getDate(Date::DAY_OF_MONTH) == 1)
++				const int daysPerWeek = LIBRARY->engineSettings()->getInteger(EGameSettings::GENERAL_DAYS_PER_WEEK);
++				const bool startsEightWeekCycle = cb->getDate(Date::DAY) > 1
++					&& cb->getDate(Date::DAY_OF_WEEK) == 1
++					&& (cb->getDate(Date::DAY) - 1) % (8 * daysPerWeek) == 0;
++				if(startsEightWeekCycle)
 +					sac.creatures[i].first += 1;
 +				change = true;
 +				continue;
@@ -117,7 +142,7 @@ index 09eafee..38a5b78 100644
  			TQuantity amount = cre->getGrowth() * (1 + cre->valOfBonuses(BonusType::CREATURE_GROWTH_PERCENT)/100) + cre->valOfBonuses(BonusType::CREATURE_GROWTH, BonusCustomSubtype::creatureLevel(cre->getLevel()));
  			if (creaturesAccumulate && ID != Obj::REFUGEE_CAMP) //camp should not try to accumulate different kinds of creatures
  				sac.creatures[i].first += amount;
-@@ -393,6 +422,37 @@ std::vector<Component> CGDwelling::getPopupComponents(PlayerColor player) const
+@@ -393,6 +426,37 @@ std::vector<Component> CGDwelling::getPopupComponents(PlayerColor player) const
  
  void CGDwelling::updateGuards(IGameEventCallback & gameEvents) const
  {
@@ -155,8 +180,55 @@ index 09eafee..38a5b78 100644
  	//TODO: store custom guard config and use it
  	//TODO: store boolean flag for guards
  
+diff --git a/server/battles/BattleFlowProcessor.cpp b/server/battles/BattleFlowProcessor.cpp
+index 826a129..9c9bad3 100644
+--- a/server/battles/BattleFlowProcessor.cpp
++++ b/server/battles/BattleFlowProcessor.cpp
+@@ -23,6 +23,7 @@
+ #include "../../lib/entities/building/TownFortifications.h"
+ #include "../../lib/mapObjects/CGTownInstance.h"
+ #include "../../lib/networkPacks/PacksForClientBattle.h"
++#include "../../lib/networkPacks/SetStackEffect.h"
+ #include "../../lib/spells/BonusCaster.h"
+ #include "../../lib/spells/CSpellHandler.h"
+ #include "../../lib/spells/ISpellMechanics.h"
+@@ -255,6 +256,34 @@ void BattleFlowProcessor::startNextRound(const CBattleInfoCallback & battle, boo
+ 	logGlobal->debug("Next round starts");
+ 	gameHandler->sendAndApply(bnr);
+ 
++	if(!isFirstRound)
++	{
++		SetStackEffect rubyGolemGrowth;
++		rubyGolemGrowth.battleID = battle.getBattle()->getBattleID();
++
++		for(const auto * stack : battle.battleGetAllStacks(true))
++		{
++			if(!stack->alive() || stack->unitType()->getJsonKey() != "dragon-citadel:dcRubyGolem")
++				continue;
++
++			std::vector<Bonus> roundBonuses;
++			roundBonuses.emplace_back(BonusDuration::ONE_BATTLE, BonusType::PRIMARY_SKILL, BonusSource::OTHER, 2, BonusSourceID(), BonusSubtypeID(PrimarySkill::ATTACK));
++			roundBonuses.emplace_back(BonusDuration::ONE_BATTLE, BonusType::PRIMARY_SKILL, BonusSource::OTHER, 1, BonusSourceID(), BonusSubtypeID(PrimarySkill::DEFENSE));
++			roundBonuses.emplace_back(BonusDuration::ONE_BATTLE, BonusType::STACK_HEALTH, BonusSource::OTHER, 10, BonusSourceID());
++
++			for(auto & bonus : roundBonuses)
++			{
++				bonus.description.appendRawString("Ruby Golem: round growth");
++				bonus.stacking = "ALWAYS";
++			}
++
++			rubyGolemGrowth.toAdd.emplace_back(stack->unitId(), std::move(roundBonuses));
++		}
++
++		if(!rubyGolemGrowth.toAdd.empty())
++			gameHandler->sendAndApply(rubyGolemGrowth);
++	}
++
+ 	// operate on copy - removing obstacles will invalidate iterator on 'battle' container
+ 	auto obstacles = battle.battleGetAllObstacles();
+ 	for (const auto & obstPtr : obstacles)
 diff --git a/server/processors/NewTurnProcessor.cpp b/server/processors/NewTurnProcessor.cpp
-index 046a6ee..dace3ad 100644
+index 046a6ee..d031938 100644
 --- a/server/processors/NewTurnProcessor.cpp
 +++ b/server/processors/NewTurnProcessor.cpp
 @@ -29,6 +29,7 @@
@@ -194,30 +266,31 @@ index 046a6ee..dace3ad 100644
  NewTurnProcessor::NewTurnProcessor(CGameHandler * gameHandler)
  	:gameHandler(gameHandler)
  {
-@@ -296,8 +317,17 @@ SetAvailableCreatures NewTurnProcessor::generateTownGrowth(const CGTownInstance
+@@ -296,8 +317,18 @@ SetAvailableCreatures NewTurnProcessor::generateTownGrowth(const CGTownInstance
  		uint32_t creaturesBefore = t->creatures.at(k).first;
  		uint32_t creatureGrowth = 0;
  		const CCreature *cre = t->creatures.at(k).second.back().toCreature();
-+		const bool billadenMonthlyGrowth =
++		const bool billadenEightWeekGrowth =
 +			isBilladenEndgameRulesActive() && isBilladenUltimateDragon(cre);
  
 -		if (firstDay)
-+		if (billadenMonthlyGrowth)
++		if (billadenEightWeekGrowth)
 +		{
 +			const int daysPerWeek = LIBRARY->engineSettings()->getInteger(EGameSettings::GENERAL_DAYS_PER_WEEK);
-+			const int daysPerMonth = LIBRARY->engineSettings()->getInteger(EGameSettings::GENERAL_WEEKS_PER_MONTH) * daysPerWeek;
-+			const bool startsNewMonth = gameHandler->gameInfo().getDate(Date::DAY_OF_MONTH) == daysPerMonth;
-+			creatureGrowth = !firstDay && startsNewMonth ? 1 : 0;
++			const bool startsEightWeekCycle = gameHandler->gameInfo().getDate(Date::DAY) > 1
++				&& gameHandler->gameInfo().getDate(Date::DAY_OF_WEEK) == 1
++				&& (gameHandler->gameInfo().getDate(Date::DAY) - 1) % (8 * daysPerWeek) == 0;
++			creatureGrowth = startsEightWeekCycle ? 1 : 0;
 +		}
 +		else if (firstDay)
  		{
  			creatureGrowth = cre->getGrowth();
  		}
-@@ -322,6 +352,8 @@ SetAvailableCreatures NewTurnProcessor::generateTownGrowth(const CGTownInstance
+@@ -322,6 +353,8 @@ SetAvailableCreatures NewTurnProcessor::generateTownGrowth(const CGTownInstance
  
  		if (weekType == EWeekType::PLAGUE)
  			resultingCreatures = creaturesBefore / 2;
-+		else if (billadenMonthlyGrowth)
++		else if (billadenEightWeekGrowth)
 +			resultingCreatures = creaturesBefore + creatureGrowth;
  		else if (weekType == EWeekType::DOUBLE_GROWTH && vstd::contains(t->creatures.at(k).second, creatureWeek))
  			resultingCreatures = (creaturesBefore + creatureGrowth) * 2;

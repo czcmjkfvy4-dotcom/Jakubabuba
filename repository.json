@@ -2,11 +2,24 @@
   "dragon-citadel": {
     "mod": "https://raw.githubusercontent.com/czcmjkfvy4-dotcom/Jakubabuba/main/mod.json",
     "download": "https://github.com/czcmjkfvy4-dotcom/Jakubabuba/archive/refs/heads/main.zip",
-    "downloadSize": 66.782,
+    "downloadSize": 86.9,
     "screenshots": [
       "https://raw.githubusercontent.com/czcmjkfvy4-dotcom/Jakubabuba/main/screenshots/town-screen.png",
+      "https://raw.githubusercontent.com/czcmjkfvy4-dotcom/Jakubabuba/main/screenshots/dragon-citadel-siege-1.5.5.png",
+      "https://raw.githubusercontent.com/czcmjkfvy4-dotcom/Jakubabuba/main/screenshots/town-basic-and-developed.png",
+      "https://raw.githubusercontent.com/czcmjkfvy4-dotcom/Jakubabuba/main/screenshots/town-screen-decluttered-before-after-1.5.4.png",
+      "https://raw.githubusercontent.com/czcmjkfvy4-dotcom/Jakubabuba/main/screenshots/town-selection-icons-before-after-1.5.4.png",
+      "https://raw.githubusercontent.com/czcmjkfvy4-dotcom/Jakubabuba/main/screenshots/creature-purchase-upgrades.png",
+      "https://raw.githubusercontent.com/czcmjkfvy4-dotcom/Jakubabuba/main/screenshots/all-creature-stats-costs.png",
+      "https://raw.githubusercontent.com/czcmjkfvy4-dotcom/Jakubabuba/main/screenshots/hero-billaden-portrait.png",
+      "https://raw.githubusercontent.com/czcmjkfvy4-dotcom/Jakubabuba/main/screenshots/ruby-golem-complete-preview.png",
       "https://raw.githubusercontent.com/czcmjkfvy4-dotcom/Jakubabuba/main/screenshots/creature-roster.jpg",
       "https://raw.githubusercontent.com/czcmjkfvy4-dotcom/Jakubabuba/main/screenshots/level8-dragons.jpg",
+      "https://raw.githubusercontent.com/czcmjkfvy4-dotcom/Jakubabuba/main/screenshots/ultimate-dragon-flight-1.5.4.jpg",
+      "https://raw.githubusercontent.com/czcmjkfvy4-dotcom/Jakubabuba/main/screenshots/ultimate-dragon-actions-1.5.4.jpg",
+      "https://raw.githubusercontent.com/czcmjkfvy4-dotcom/Jakubabuba/main/screenshots/absolute-dragon-flight-1.5.4.jpg",
+      "https://raw.githubusercontent.com/czcmjkfvy4-dotcom/Jakubabuba/main/screenshots/absolute-dragon-actions-1.5.4.jpg",
+      "https://raw.githubusercontent.com/czcmjkfvy4-dotcom/Jakubabuba/main/screenshots/level8-recruitment-preview-1.5.4.png",
       "https://raw.githubusercontent.com/czcmjkfvy4-dotcom/Jakubabuba/main/screenshots/level8-sanctuaries.jpg"
     ]
   }
