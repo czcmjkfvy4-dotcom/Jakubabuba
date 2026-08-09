@@ -1,23 +1,27 @@
-# English
+# english
 
 **IMPORTANT: AFTER INSTALLING THE MOD IN VCMI, RUN `INSTALL BILLADENC4 RUNTIME.CMD` ONCE TO ENABLE ALL ENGINE FEATURES.**
 
-Dragon Citadel is an original and exceptionally expensive endgame town for Heroes of Might and Magic III running on VCMI. It fields elite golems, Storm Titans, magical beasts and several tiers of dragons in a fortress that always keeps its own dark stone, turquoise and gold colors.
+Dragon Citadel is a terrifying, immensely powerful and brutally expensive endgame town for Heroes of Might and Magic III running on VCMI. It was created for rulers willing to turn the wealth of entire kingdoms into an army capable of crushing almost anything that stands before it.
 
-Version 1.5.5 fixes the critical startup error, enlarges and grounds the town buildings, distinguishes the Village and Fort, removes creature portrait halos and replaces the Dungeon siege presentation with a dedicated Dragon Citadel battlefield and dragon-shaped tower shooters.
+Its forces begin with elite marksmen and heavy golems, then rise through magical beasts, Storm Titans and several bloodlines of ancient dragons. The Ruby Golem becomes stronger after every completed battle round. At the summit stand the entirely original Ultimate Dragon and Absolute Dragon: rare level 8 creatures with animated flight, attack, damage and supernatural breath effects. They are deliberately overwhelming, but their price and eight-week availability make obtaining even one a campaign-long objective.
 
-The Grail is an animated storm cloud with black-crimson and white-violet lightning. It provides an additional 10,000 gold and 10 of every resource per day and is required to unlock level 8 recruitment. An Ultimate Dragon costs 150,000 gold plus 150 of every resource. Its Absolute Dragon upgrade costs 220,000 gold plus 200 of every resource.
+The town is equally imposing. Dark stone, gold and turquoise remain unchanged regardless of the owning player. The mod includes a custom town interior, five distinct adventure-map stages, heroes, portraits, creature animations and a dedicated siege battlefield defended by dragon-shaped turrets instead of borrowed Dungeon scenery.
 
-The BILLADENC4 runtime enforces one level 8 creature every 8 weeks and enables Ruby Golem round growth. The mod includes an eight-stage campaign foundation and creator tools, and it will continue to be developed and updated on GitHub.
+The Grail appears as a violent storm cloud over the city, split by black-crimson and white-violet lightning. It provides an additional 10,000 gold and 10 of every resource per day. There is no separate final-dragon building: the Grail itself is the only structure that unlocks both level 8 creatures. An Ultimate Dragon costs 150,000 gold plus 150 of every resource; an Absolute Dragon costs 220,000 gold plus 200 of every resource.
 
-**Expensive. Monumental. Powerful.**
+The bundled BILLADENC4 runtime enforces one final dragon every 8 weeks, activates Ruby Golem round growth, enables the `nwcbilladen` creator code and preserves fitted level 8 recruitment animations. The mod also contains creator tools and the foundation for an eight-stage campaign. Dragon Citadel will continue to be developed and updated on GitHub.
 
-# Polski
+**Terrifying. Monumental. Powerful. Expensive.**
 
-**WAZNE: PO INSTALACJI MODA W VCMI URUCHOM RAZ `INSTALL BILLADENC4 RUNTIME.CMD`, ABY WLACZYC WSZYSTKIE FUNKCJE SILNIKA.**
+# polish
 
-Smocza Cytadela to autorskie i wyjatkowo drogie miasto koncowej fazy gry. Wersja 1.5.5 naprawia krytyczny blad uruchamiania, powieksza i osadza budynki, rozroznia modele Osady i Fortu, usuwa poswiate z portretow jednostek oraz dodaje wlasna scene oblezenia ze smoczymi wiezyczkami.
+**WAŻNE: PO INSTALACJI MODA W VCMI URUCHOM RAZ `INSTALL BILLADENC4 RUNTIME.CMD`, ABY WŁĄCZYĆ WSZYSTKIE FUNKCJE SILNIKA.**
 
-Graal ma postac animowanej chmury burzowej. Daje dodatkowo 10 000 zlota i po 10 kazdego surowca dziennie oraz jako jedyny odblokowuje rekrutacje poziomu 8. Smok Ostateczny kosztuje 150 000 zlota i po 150 kazdego surowca, a Smok Absolutny 220 000 zlota i po 200 kazdego surowca.
+Smocza Cytadela to przerażające, niezwykle potężne i brutalnie drogie miasto końcowej fazy gry. Powstało dla władców gotowych zamienić bogactwo całych królestw w armię zdolną zmiażdżyć niemal wszystko, co stanie jej na drodze.
 
-Runtime BILLADENC4 wymusza pojawienie sie jednej jednostki poziomu 8 raz na 8 tygodni i uruchamia wzrost statystyk Rubinowego Golema po rundach. Mod bedzie dalej rozwijany i aktualizowany na GitHubie.
+Armia zaczyna od elitarnych strzelców i ciężkich golemów, a następnie prowadzi przez magiczne bestie, Tytanów Burzy i kolejne rody pradawnych smoków. Rubinowy Golem rośnie w siłę po każdej zakończonej rundzie bitwy. Na szczycie stoją całkowicie autorskie Smoki Ostateczne i Smoki Absolutne z animowanym lotem, atakiem, otrzymywaniem obrażeń i nadnaturalnym oddechem.
+
+Graal ma postać gwałtownej chmury burzowej z czarno-szkarłatnymi i biało-fioletowymi piorunami. Daje dodatkowo 10 000 złota i po 10 każdego surowca dziennie. Nie ma osobnego budynku dla ostatnich smoków: tylko Graal odblokowuje rekrutację obu jednostek poziomu 8. Smok Ostateczny kosztuje 150 000 złota i po 150 każdego surowca, a Smok Absolutny 220 000 złota i po 200 każdego surowca.
+
+Dołączony runtime BILLADENC4 wymusza pojawienie się jednego ostatniego smoka raz na 8 tygodni, uruchamia wzrost Rubinowego Golema i kod twórcy `nwcbilladen`. Mod zawiera także własną scenę oblężenia ze smoczymi wieżyczkami, narzędzia twórcy i fundament ośmioetapowej kampanii. Projekt będzie dalej rozwijany i aktualizowany na GitHubie.
