@@ -1,6 +1,22 @@
-# Dragon Citadel Campaign Foundation
+# Kampania: Smocza Cytadela
 
 This folder prepares an eight-stage campaign for Dragon Citadel. The playable maps will be added stage by stage after the story and mission descriptions are provided.
+
+## Opis kampanii
+
+W świecie, w którym stare imperia dogasają pod ciężarem własnej pychy, a magia burz rozdziera niebo niczym gniew zapomnianych bogów, pojawia się nowa potęga. **Smocza Cytadela** nie jest zwykłym miastem — to monumentalna twierdza końca czasów, wzniesiona dla tych, którzy nie boją się poświęcić całych skarbców królestw w zamian za absolutną siłę.
+
+Kampania opowiada historię narodzin tej przerażającej potęgi: od pierwszych eksperymentów z runiczną stalą i rubinową magią, przez ujarzmianie pradawnych bestii burzy, aż po przebudzenie smoków, które nie powinny nigdy powrócić na świat. Na drodze gracza staną upadające królestwa, zazdrośni magowie, fanatyczne zakony i armie, które zrobią wszystko, by nie dopuścić do wzniesienia ostatniej smoczej dynastii.
+
+Każdy z ośmiu etapów kampanii prowadzi coraz głębiej w mroczne tajemnice Cytadeli. Zaczynając od walki o przetrwanie i zabezpieczenie pierwszych zasobów, gracz stopniowo odkryje sekrety Rubinowego Golema, potęgę Tytanów Burzy oraz znaczenie Graala — burzowej relikwii, bez której niemożliwe jest przywołanie najstraszliwszych istot tego świata. Dopiero zdobycie tej mocy otworzy drogę do rekrutacji dwóch legendarnych jednostek poziomu 8: **Smoka Ostatecznego** i **Smoka Absolutnego**.
+
+To opowieść o ambicji większej niż rozsądek, o wojnie droższej niż wszystkie wcześniejsze wojny razem wzięte i o potędze, która nie zna kompromisów. Tutaj każde zwycięstwo kosztuje fortunę, ale każda przegrana może kosztować cały świat.
+
+Czy zdołasz wznieść Smoczą Cytadelę ponad chmury, opanować burzę i poprowadzić ostatnie smoki do ostatecznego triumfu?
+
+Czy też zginiesz, próbując ujarzmić siłę, która od początku nie była przeznaczona śmiertelnikom?
+
+**Osiem etapów. Jedna Cytadela. Jedna burza. Jeden kres dla wszystkich, którzy staną ci na drodze.**
 
 ## Campaign Goals
 
