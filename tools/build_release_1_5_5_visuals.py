@@ -50,7 +50,6 @@ FULL_TOWN = (
     "dwellingUpLvl5",
     "dwellingUpLvl6",
     "dwellingUpLvl7",
-    "dwellingUpLvl8",
     "special5",
 )
 

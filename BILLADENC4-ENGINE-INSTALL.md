@@ -25,7 +25,6 @@ The patch changes:
 
 - town growth for `dcUltimateDragon` and `dcAbsoluteDragon` to one creature every 8 weeks,
 - adventure dwelling growth for the same dragons to one creature every 8 weeks,
-- neutral Ultimate Dragon sanctum guards to exactly one creature,
 - wandering Ultimate and Absolute Dragon stacks so they do not grow weekly,
 - joining checks so only 10% of those dragon stacks can agree to join,
 - the `nwcbilladen` cheat code,

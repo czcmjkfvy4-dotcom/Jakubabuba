@@ -16,7 +16,6 @@ The BILLADENC4 edition is therefore a small, source-available VCMI 1.7.4 extensi
 
 - Ultimate and Absolute Dragons add exactly one available creature once every 8 weeks.
 - Plague can still reduce an existing pool, but Week of the Creature cannot multiply level 8 growth.
-- A neutral Sanctuary at the End of Ages is guarded by exactly one Ultimate Dragon.
 - Wandering Ultimate and Absolute Dragon stacks remain at one creature.
 - Only positions whose deterministic VCMI map roll falls in the first 10% may agree to join.
 - `nwcbilladen` multiplies every current resource by 10, displays `BILLADENC4`, and does not set the standard `PlayerCheated` flag.

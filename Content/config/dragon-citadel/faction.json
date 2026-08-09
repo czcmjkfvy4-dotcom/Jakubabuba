@@ -618,24 +618,6 @@
           "border": "dragon-citadel/town-screen/borders/dwellingUp3Lvl4",
           "area": "dragon-citadel/town-screen/areas/dwellingUp3Lvl4"
         },
-        "dwellingLvl8": {
-          "animation": "dragon-citadel/town/buildings/dwellingLvl8",
-          "x": 0,
-          "y": 0,
-          "z": 23138,
-          "campaignBonus": "BoDdrag1.pcx",
-          "border": "dragon-citadel/town-screen/borders/dwellingLvl8",
-          "area": "dragon-citadel/town-screen/areas/dwellingLvl8"
-        },
-        "dwellingUpLvl8": {
-          "animation": "dragon-citadel/town/buildings/dwellingUpLvl8",
-          "x": 0,
-          "y": 0,
-          "z": 23138,
-          "campaignBonus": "BoDdrag2.pcx",
-          "border": "dragon-citadel/town-screen/borders/dwellingUpLvl8",
-          "area": "dragon-citadel/town-screen/areas/dwellingUpLvl8"
-        },
         "special5": {
           "animation": "dragon-citadel/town/buildings/special5",
           "x": 0,
@@ -1448,62 +1430,27 @@
           "upgrades": "dwellingUp2Lvl4"
         },
         "dwellingLvl8": {
-          "name": "Sanktuarium Końca Wieków",
-          "description": "Po zbudowaniu Graala pozwala rekrutować Smoki Ostateczne. W wersji BILLADENC4 Smok pojawia się tylko raz na 8 tygodni.",
-          "cost": {
-            "wood": 500,
-            "mercury": 500,
-            "ore": 500,
-            "sulfur": 500,
-            "crystal": 500,
-            "gems": 500,
-            "gold": 1000000
-          },
+          "name": "Graal: Smok Ostateczny",
+          "description": "Niewidoczna funkcja Graala, która odblokowuje rekrutację Smoków Ostatecznych. W wersji BILLADENC4 Smok pojawia się tylko raz na 8 tygodni.",
+          "mode": "auto",
+          "cost": {},
           "requires": [
             "allOf",
-            [
-              "dwellingLvl7"
-            ],
-            [
-              "castle"
-            ],
-            [
-              "mageGuild5"
-            ],
-            [
-              "capitol"
-            ],
-            [
-              "special5"
-            ],
             [
               "grail"
             ]
           ]
         },
         "dwellingUpLvl8": {
-          "name": "Sanktuarium Absolutu",
-          "description": "Pozwala rekrutować Smoki Absolutne, najpotężniejsze istoty Smoczej Cytadeli.",
-          "cost": {
-            "wood": 800,
-            "mercury": 800,
-            "ore": 800,
-            "sulfur": 800,
-            "crystal": 800,
-            "gems": 800,
-            "gold": 2500000
-          },
+          "name": "Graal: Smok Absolutny",
+          "description": "Niewidoczna funkcja Graala, która odblokowuje rekrutację Smoków Absolutnych.",
+          "mode": "auto",
+          "cost": {},
           "upgrades": "dwellingLvl8",
           "requires": [
             "allOf",
             [
-              "special1"
-            ],
-            [
-              "special4"
-            ],
-            [
-              "mageGuild5"
+              "grail"
             ]
           ]
         },
