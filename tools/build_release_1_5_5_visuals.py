@@ -4,7 +4,7 @@ import math
 import shutil
 from pathlib import Path
 
-from PIL import Image, ImageChops, ImageDraw, ImageEnhance, ImageFilter
+from PIL import Image, ImageChops, ImageDraw, ImageEnhance, ImageOps
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -52,6 +52,26 @@ FULL_TOWN = (
     "dwellingUpLvl7",
     "special5",
 )
+
+BATTLE_OUTLINE_COLORS = {
+    "dcAzureDragon": (240, 248, 255),
+    "dcBlackDragon": (245, 125, 44),
+    "dcCrystalDragon": (255, 255, 0),
+    "dcDiamondGolem": (255, 255, 0),
+    "dcEnchanter": (47, 51, 55),
+    "dcEternalStormDragon": (232, 236, 239),
+    "dcFairieDragon": (255, 255, 0),
+    "dcFirebird": (255, 255, 0),
+    "dcGiant": (255, 255, 0),
+    "dcGoldDragon": (255, 255, 0),
+    "dcGoldGolem": (255, 255, 0),
+    "dcPhoenix": (145, 235, 255),
+    "dcRubyGolem": (240, 74, 98),
+    "dcRustDragon": (255, 255, 0),
+    "dcSharpshooter": (255, 255, 0),
+    "dcStormDragon": (184, 196, 204),
+    "dcTitan": (255, 226, 125),
+}
 
 
 def alpha_bbox(image: Image.Image) -> tuple[int, int, int, int]:
@@ -298,6 +318,30 @@ def rebuild_creature_icons() -> None:
             background.convert("RGB").save(icon_dir / f"{unit}-{suffix}.png", optimize=True)
 
 
+def build_endgame_building_icons() -> None:
+    icon_dir = SPRITES / "town" / "building-icons"
+    animation_path = SPRITES / "town" / "building-icons.json"
+    animation = json.loads(animation_path.read_text(encoding="utf-8-sig"))
+    images = [entry for entry in animation["images"] if entry.get("frame") not in {150, 151}]
+
+    for frame, creature in ((150, "dcUltimateDragon"), (151, "dcAbsoluteDragon")):
+        canvas = Image.new("RGBA", (150, 70), (7, 9, 12, 255))
+        draw = ImageDraw.Draw(canvas, "RGBA")
+        draw.rectangle((0, 0, 149, 69), outline=(176, 139, 57, 255), width=1)
+        draw.rectangle((2, 2, 147, 67), outline=(72, 58, 31, 255), width=1)
+        draw.line((4, 61, 145, 61), fill=(184, 130, 38, 255), width=2)
+
+        frame_path = SPRITES / "creatures" / creature / "battle" / "g00-f000.png"
+        with Image.open(frame_path) as source:
+            subject = fit(source.convert("RGBA"), (70, 58))
+        canvas.alpha_composite(subject, ((150 - subject.width) // 2, 59 - subject.height))
+        canvas.convert("RGB").save(icon_dir / f"frame-{frame:03}.png", optimize=True)
+        images.append({"group": 0, "frame": frame, "file": f"frame-{frame:03}"})
+
+    animation["images"] = sorted(images, key=lambda entry: (entry.get("group", 0), entry["frame"]))
+    animation_path.write_text(json.dumps(animation, indent=2) + "\n", encoding="utf-8")
+
+
 def style_siege_piece(image: Image.Image) -> Image.Image:
     styled = image.convert("RGBA")
     pixels = []
@@ -310,6 +354,13 @@ def style_siege_piece(image: Image.Image) -> Image.Image:
         pixels.append(color)
     styled.putdata(pixels)
     return ImageEnhance.Contrast(styled).enhance(1.15)
+
+
+def style_siege_background(image: Image.Image) -> Image.Image:
+    gray = ImageOps.grayscale(image.convert("RGB"))
+    stone = ImageOps.colorize(gray, black=(4, 6, 9), white=(105, 111, 122))
+    stone = ImageEnhance.Contrast(stone).enhance(1.22)
+    return ImageEnhance.Brightness(stone).enhance(0.78)
 
 
 def make_tower_piece(turret: Image.Image, size: tuple[int, int], state: str, head_only: bool) -> Image.Image:
@@ -337,19 +388,10 @@ def build_siege() -> None:
     output.mkdir(parents=True, exist_ok=True)
     turret = keyed_rgba(SOURCE / "dragon-turret.png")
 
-    with Image.open(TOWN_DATA / "background.bmp") as source:
-        town = source.convert("RGB")
-    background = Image.new("RGB", (800, 555), (8, 10, 15))
-    background.paste(town, (0, 0))
-    lower = town.crop((0, 225, 800, 374)).resize((800, 181), Image.Resampling.BICUBIC)
-    lower = ImageEnhance.Brightness(lower).enhance(0.58)
-    lower = lower.filter(ImageFilter.GaussianBlur(0.5))
-    background.paste(lower, (0, 374))
-    fortress = fit(turret, (330, 440))
-    fortress.putalpha(fortress.getchannel("A").point(lambda value: round(value * 0.58)))
-    background_rgba = background.convert("RGBA")
-    background_rgba.alpha_composite(fortress, (800 - fortress.width + 35, 50))
-    background_rgba.convert("RGB").save(output / "SGDCBACK.png", optimize=True)
+    background_path = next(TEMPLATE.glob("*BACK.png"))
+    with Image.open(background_path) as source:
+        background = style_siege_background(source)
+    background.save(output / "SGDCBACK.png", optimize=True)
 
     for source_path in TEMPLATE.iterdir():
         if not source_path.is_file() or not source_path.stem.lower().startswith("sgdn"):
@@ -366,17 +408,6 @@ def build_siege() -> None:
             image = make_tower_piece(turret, image.size, state, True)
         else:
             image = style_siege_piece(image)
-            if suffix in {"WA11", "WA31", "WA41", "WA61", "ARCH", "MAN1"}:
-                draw = ImageDraw.Draw(image, "RGBA")
-                cx = image.width // 2
-                draw.polygon(((cx, 3), (cx - 4, 13), (cx, 20), (cx + 4, 13)), fill=(24, 196, 230, 225))
-                draw.line((cx, 4, cx, 18), fill=(220, 250, 255, 220), width=1)
-                gold = Image.new("RGBA", image.size, (0, 0, 0, 0))
-                gold_draw = ImageDraw.Draw(gold, "RGBA")
-                gold_draw.line((max(2, cx - 7), 8, max(2, cx - 7), image.height - 5), fill=(204, 157, 50, 185), width=1)
-                gold_draw.line((min(image.width - 3, cx + 7), 8, min(image.width - 3, cx + 7), image.height - 5), fill=(204, 157, 50, 185), width=1)
-                gold.putalpha(ImageChops.multiply(gold.getchannel("A"), image.getchannel("A")))
-                image.alpha_composite(gold)
         image.save(output / f"SGDC{suffix}.png", optimize=True)
 
     for suffix in ("TPW1", "TPWL"):
@@ -392,6 +423,54 @@ def build_siege() -> None:
         subject = fit(turret, (size[0] - 2, size[1] - 2))
         canvas.alpha_composite(subject, ((size[0] - subject.width) // 2, size[1] - subject.height))
         canvas.save(icon_dir / name, optimize=True)
+
+
+def remove_battle_outlines() -> None:
+    changed_frames = 0
+    removed_pixels = 0
+    for creature, outline_color in BATTLE_OUTLINE_COLORS.items():
+        battle_dir = SPRITES / "creatures" / creature / "battle"
+        for frame_path in sorted(battle_dir.glob("g??-f???.png")):
+            with Image.open(frame_path) as source:
+                image = source.convert("RGBA")
+            pixels = image.load()
+            width, height = image.size
+            boundary = []
+            for y in range(height):
+                for x in range(width):
+                    if pixels[x, y][3] == 0:
+                        continue
+                    if any(
+                        pixels[nx, ny][3] == 0
+                        for ny in range(max(0, y - 1), min(height, y + 2))
+                        for nx in range(max(0, x - 1), min(width, x + 2))
+                    ):
+                        boundary.append((x, y))
+
+            def matches_outline(color: tuple[int, int, int]) -> bool:
+                return max(abs(color[channel] - outline_color[channel]) for channel in range(3)) <= 8
+
+            outline_count = sum(1 for x, y in boundary if matches_outline(pixels[x, y][:3]))
+            if outline_count < 8:
+                continue
+
+            to_remove = []
+            for x, y in boundary:
+                red, green, blue, alpha = pixels[x, y]
+                is_chroma_remnant = (
+                    green > 245 and red < 12 and blue < 12
+                ) or (
+                    red > 170 and blue > 245 and green < 12
+                )
+                if matches_outline((red, green, blue)) or alpha <= 200 or is_chroma_remnant:
+                    to_remove.append((x, y))
+
+            for x, y in to_remove:
+                pixels[x, y] = (0, 0, 0, 0)
+            image.save(frame_path, optimize=True)
+            changed_frames += 1
+            removed_pixels += len(to_remove)
+    print(f"Battle outline cleanup: {changed_frames} frames, {removed_pixels} pixels removed")
 
 
 def strengthen_map_stages() -> None:
@@ -440,15 +519,15 @@ def compose_siege_preview() -> None:
         ("TPW1", 608, 50),
         ("WA5", 494, 53),
         ("WA61", 523, 56),
-        ("WA41", 478, 181),
-        ("ARCH", 471, 165),
+        ("WA41", 477, 180),
+        ("ARCH", 471, 164),
         ("DRW1", 395, 260),
         ("WA31", 471, 296),
-        ("WA2", 522, 306),
+        ("WA2", 522, 305),
         ("WA11", 559, 448),
         ("MAN1", 732, 162),
-        ("TW21", 562, 15),
-        ("TW11", 595, 496),
+        ("TW21", 565, 15),
+        ("TW11", 580, 495),
     )
     for suffix, x, y in layers:
         path = siege / f"SGDC{suffix}.png"
@@ -458,7 +537,7 @@ def compose_siege_preview() -> None:
     turret_frame = SPRITES / "creatures" / "dcDragonTurret" / "battle" / "g00-f000.png"
     with Image.open(turret_frame) as source:
         shooter = source.convert("RGBA")
-    for x, y in ((410, 293), (570, -50), (381, -187)):
+    for x, y in ((361, 293), (530, -33), (347, -187)):
         canvas.alpha_composite(shooter, (x, y))
     canvas.convert("RGB").save(ROOT / "screenshots" / "dragon-citadel-siege-1.5.5.png", optimize=True)
 
@@ -467,8 +546,17 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--preview-only", action="store_true")
     parser.add_argument("--rebuild-corrections", action="store_true")
+    parser.add_argument("--remove-battle-outlines", action="store_true")
+    parser.add_argument("--rebuild-siege", action="store_true")
+    parser.add_argument("--repair-building-icons", action="store_true")
     args = parser.parse_args()
-    if args.rebuild_corrections:
+    if args.remove_battle_outlines:
+        remove_battle_outlines()
+    elif args.repair_building_icons:
+        build_endgame_building_icons()
+    elif args.rebuild_siege:
+        build_siege()
+    elif args.rebuild_corrections:
         build_grail()
         build_siege()
         strengthen_map_stages()
@@ -477,6 +565,7 @@ def main() -> None:
         build_grail()
         build_turret_animation()
         rebuild_creature_icons()
+        build_endgame_building_icons()
         build_siege()
         strengthen_map_stages()
     compose_town_preview()
