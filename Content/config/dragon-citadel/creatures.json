@@ -1426,7 +1426,7 @@
     },
     "hitPoints": 10000,
     "speed": 20,
-    "growth": 1,
+    "growth": 0,
     "fightValue": 1200000,
     "aiValue": 1500000,
     "cost": {
@@ -1467,21 +1467,8 @@
       "noRetaliation": {
         "type": "NO_RETALIATION"
       },
-      "spellImmunity": {
-        "type": "LEVEL_SPELL_IMMUNITY",
-        "val": 5
-      },
-      "magicResistance": {
-        "type": "MAGIC_RESISTANCE",
-        "val": 100
-      },
       "mindImmunity": {
         "type": "MIND_IMMUNITY"
-      },
-      "meleeImmunity": {
-        "type": "GENERAL_DAMAGE_REDUCTION",
-        "subtype": "damageTypeMelee",
-        "val": 100
       },
       "regeneration": {
         "type": "HP_REGENERATION",
@@ -1530,7 +1517,7 @@
     },
     "hitPoints": 15000,
     "speed": 30,
-    "growth": 1,
+    "growth": 0,
     "fightValue": 1800000,
     "aiValue": 2300000,
     "cost": {
@@ -1571,21 +1558,8 @@
       "noRetaliation": {
         "type": "NO_RETALIATION"
       },
-      "spellImmunity": {
-        "type": "LEVEL_SPELL_IMMUNITY",
-        "val": 5
-      },
-      "magicResistance": {
-        "type": "MAGIC_RESISTANCE",
-        "val": 100
-      },
       "mindImmunity": {
         "type": "MIND_IMMUNITY"
-      },
-      "meleeImmunity": {
-        "type": "GENERAL_DAMAGE_REDUCTION",
-        "subtype": "damageTypeMelee",
-        "val": 100
       },
       "regeneration": {
         "type": "HP_REGENERATION",

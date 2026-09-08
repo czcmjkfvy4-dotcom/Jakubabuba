@@ -1,0 +1,7 @@
+staging/
+output/
+assets/wizard.bmp
+assets/wizard-small.bmp
+assets/dragon-citadel.ico
+install-*.log
+build-*.log

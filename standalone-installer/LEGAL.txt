@@ -1,0 +1,7 @@
+ORIGINAL HEROES III COMPLETE OR SHADOW OF DEATH DATA IS REQUIRED.
+
+This installer does not contain copyrighted Heroes III game data. On first launch it automatically imports the required data from an existing legal VCMI or Heroes III Complete / Shadow of Death installation. Heroes III HD Edition is not compatible with VCMI.
+
+The package contains the open-source VCMI 1.7.5 engine, the BILLADENC4 runtime changes, the Dragon Citadel mod and the third-party Maps Collection (`chinese-maps-collection`) from the VCMI mods repository. VCMI license and author information are installed in the licenses directory. Dragon Citadel credits and notices are included with the mod. Maps Collection credits remain in its own `mod.json`.
+
+Instalator nie zawiera chronionych danych Heroes III. Przy pierwszym uruchomieniu automatycznie importuje potrzebne pliki z legalnej instalacji VCMI albo Heroes III Complete / Shadow of Death. Wersja Heroes III HD Edition nie jest zgodna z VCMI.

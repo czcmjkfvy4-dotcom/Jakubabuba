@@ -1,0 +1,7 @@
+{
+  "userDataPath": "%LOCALAPPDATA%\\Dragon Citadel\\Profile",
+  "userCachePath": "%LOCALAPPDATA%\\Dragon Citadel\\Profile\\cache",
+  "userConfigPath": "%LOCALAPPDATA%\\Dragon Citadel\\Profile\\config",
+  "userLogsPath": "%LOCALAPPDATA%\\Dragon Citadel\\Profile\\logs",
+  "userSavePath": "%LOCALAPPDATA%\\Dragon Citadel\\Profile\\Saves"
+}

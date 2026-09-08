@@ -4,7 +4,7 @@ import math
 import shutil
 from pathlib import Path
 
-from PIL import Image, ImageChops, ImageDraw, ImageEnhance, ImageOps
+from PIL import Image, ImageChops, ImageDraw, ImageEnhance, ImageFilter, ImageOps
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -167,6 +167,33 @@ def enlarge_and_ground_town() -> None:
                 transform_mask(mask, bbox, scale, down)
 
 
+def add_town_grounding_shadows() -> None:
+    for directory in sorted(BUILDINGS.iterdir()):
+        if not directory.is_dir() or directory.name == "grail":
+            continue
+        for frame_path in sorted(directory.glob("frame-*.png")):
+            image = keyed_rgba(frame_path)
+            bbox = alpha_bbox(image)
+            width = max(18, bbox[2] - bbox[0])
+            height = max(5, min(15, round((bbox[3] - bbox[1]) * 0.10)))
+            shadow = Image.new("RGBA", image.size, (0, 0, 0, 0))
+            draw = ImageDraw.Draw(shadow, "RGBA")
+            center_x = (bbox[0] + bbox[2]) // 2
+            y = min(image.height - 3, bbox[3] - 4)
+            draw.ellipse(
+                (
+                    center_x - round(width * 0.58),
+                    y - height,
+                    center_x + round(width * 0.58),
+                    y + height,
+                ),
+                fill=(0, 0, 0, 95),
+            )
+            shadow = shadow.filter(ImageFilter.GaussianBlur(max(2, height // 3)))
+            shadow.alpha_composite(image)
+            shadow.save(frame_path, optimize=True)
+
+
 def build_grail() -> None:
     source = keyed_rgba(SOURCE / "grail-storm.png")
     cloud = fit(source, (450, 245))
@@ -211,35 +238,76 @@ def build_grail() -> None:
         result.save(TOWN_DATA / kind / "grail.bmp")
 
 
+def paint_dragon_turret(canvas: Image.Image, cx: int, ground: int, scale: float, fire_step: int = 0, with_base: bool = True) -> None:
+    draw = ImageDraw.Draw(canvas, "RGBA")
+
+    def p(x: float, y: float) -> tuple[int, int]:
+        return (round(cx + x * scale), round(ground + y * scale))
+
+    dark = (11, 16, 24, 245)
+    mid = (42, 50, 65, 245)
+    light = (105, 116, 136, 210)
+    gold = (126, 100, 42, 210)
+
+    if with_base:
+        draw.rectangle((p(-42, -38), p(42, 2)), fill=mid, outline=dark, width=max(1, round(2 * scale)))
+        for x in (-34, -14, 6, 26):
+            draw.rectangle((p(x, -52), p(x + 11, -34)), fill=(50, 59, 76, 245), outline=dark)
+    draw.polygon((p(-20, -96), p(14, -110), p(28, -46), p(-28, -42)), fill=(35, 43, 58, 245), outline=dark)
+    draw.polygon((p(-54, -108), p(-16, -134), p(42, -120), p(62, -96), p(24, -82), p(-34, -84)), fill=mid, outline=dark)
+    draw.polygon((p(-28, -126), p(-18, -166), p(-4, -130)), fill=(94, 105, 124, 230), outline=dark)
+    draw.polygon((p(18, -126), p(32, -160), p(34, -122)), fill=(88, 99, 118, 230), outline=dark)
+    draw.polygon((p(-58, -104), p(-82, -118), p(-62, -90)), fill=(28, 35, 48, 235), outline=dark)
+    draw.line((p(-32, -102), p(18, -110), p(48, -98)), fill=light, width=max(1, round(2 * scale)))
+    draw.ellipse((p(20, -112), p(30, -102)), fill=(98, 210, 225, 230), outline=dark)
+    if with_base:
+        draw.line((p(-42, -26), p(38, -32)), fill=(104, 115, 136, 155), width=max(1, round(2 * scale)))
+    draw.line((p(-2, -90), p(8, -54)), fill=gold, width=max(1, round(2 * scale)))
+
+    if fire_step:
+        length = 32 + fire_step * 13
+        spread = 6 + fire_step * 3
+        mouth = p(58, -98)
+        tip = p(58 + length, -99 + (fire_step % 2) * 3)
+        draw.polygon((p(54, -103 - spread), tip, p(54, -93 + spread)), fill=(2, 1, 3, 205))
+        draw.polygon((p(58, -101 - spread * 0.55), p(58 + length * 0.74, -99), p(58, -95 + spread * 0.55)), fill=(80, 0, 16, 210))
+        draw.line((mouth, tip), fill=(182, 24, 36, 230), width=max(1, round(3 * scale)))
+
+
+def stone_turret_head(max_size: tuple[int, int]) -> Image.Image:
+    source = keyed_rgba(SPRITES / "creatures" / "dcUltimateDragon" / "battle" / "g00-f000.png")
+    head = source.crop((230, 95, 380, 235))
+    head = head.crop(alpha_bbox(head))
+    return ImageEnhance.Contrast(style_siege_piece(fit(head, max_size))).enhance(1.08)
+
+
 def build_turret_animation() -> None:
-    source = keyed_rgba(SOURCE / "dragon-turret.png")
-    subject = source.crop(alpha_bbox(source))
-    upper = subject.crop((0, 0, subject.width, round(subject.height * 0.58)))
-    upper = fit(upper, (150, 190))
-    x = 225 - upper.width // 2
-    y = 315 - upper.height
     base = Image.new("RGBA", (450, 400), (0, 0, 0, 0))
-    base.alpha_composite(upper, (x, y))
+    head = stone_turret_head((78, 74))
+    x = 225 - head.width // 2
+    y = 300 - head.height
+    base.alpha_composite(head, (x, y))
     battle_dir = SPRITES / "creatures" / "dcDragonTurret" / "battle"
     map_dir = SPRITES / "creatures" / "dcDragonTurret" / "map"
     battle_dir.mkdir(parents=True, exist_ok=True)
     map_dir.mkdir(parents=True, exist_ok=True)
 
     attack_frames = []
-    for frame_index, radius in enumerate((3, 6, 10, 5)):
+    for frame_index, fire_step in enumerate((1, 2, 3, 2)):
         frame = base.copy()
         draw = ImageDraw.Draw(frame, "RGBA")
-        mouth = (x + round(upper.width * 0.58), y + round(upper.height * 0.28))
-        draw.ellipse(
-            (mouth[0] - radius, mouth[1] - radius, mouth[0] + radius, mouth[1] + radius),
-            fill=(255, 35 + frame_index * 20, 10, 120 + frame_index * 30),
+        mouth = (x + round(head.width * 0.86), y + round(head.height * 0.62))
+        length = 34 + fire_step * 16
+        spread = 6 + fire_step * 4
+        draw.polygon(
+            ((mouth[0] - 2, mouth[1] - spread), (mouth[0] + length, mouth[1] - 3), (mouth[0], mouth[1] + spread)),
+            fill=(3, 1, 5, 210),
         )
-        if frame_index == 2:
-            draw.polygon(
-                ((mouth[0] + 4, mouth[1] - 4), (mouth[0] + 42, mouth[1]), (mouth[0] + 4, mouth[1] + 5)),
-                fill=(120, 0, 0, 190),
-            )
-            draw.line((mouth[0] + 4, mouth[1], mouth[0] + 45, mouth[1]), fill=(255, 70, 18, 240), width=3)
+        draw.polygon(
+            ((mouth[0] + 3, mouth[1] - spread // 2), (mouth[0] + round(length * 0.78), mouth[1]), (mouth[0] + 3, mouth[1] + spread // 2)),
+            fill=(92, 0, 20, 220),
+        )
+        draw.line((mouth[0], mouth[1], mouth[0] + length, mouth[1] - 2), fill=(192, 24, 38, 235), width=3)
         attack_frames.append(frame)
 
     images = []
@@ -267,8 +335,8 @@ def build_turret_animation() -> None:
         encoding="utf-8",
     )
     map_frame = Image.new("RGBA", (173, 173), (0, 0, 0, 0))
-    map_subject = fit(subject, (145, 155))
-    map_frame.alpha_composite(map_subject, ((173 - map_subject.width) // 2, 168 - map_subject.height))
+    map_head = stone_turret_head((120, 118))
+    map_frame.alpha_composite(map_head, ((173 - map_head.width) // 2, 166 - map_head.height))
     map_frame.save(map_dir / "frame-00.png", optimize=True)
     (SPRITES / "creatures" / "dcDragonTurret" / "map.json").write_text(
         json.dumps(
@@ -363,19 +431,19 @@ def style_siege_background(image: Image.Image) -> Image.Image:
     return ImageEnhance.Brightness(stone).enhance(0.78)
 
 
-def make_tower_piece(turret: Image.Image, size: tuple[int, int], state: str, head_only: bool) -> Image.Image:
-    source = turret.crop(alpha_bbox(turret))
-    if head_only:
-        source = source.crop((0, 0, source.width, round(source.height * 0.48)))
-    piece = fit(source, (max(1, size[0] - 2), max(1, size[1] - 2)))
-    canvas = Image.new("RGBA", size, (0, 0, 0, 0))
-    canvas.alpha_composite(piece, ((size[0] - piece.width) // 2, size[1] - piece.height))
+def make_tower_piece(turret: Image.Image, template: Image.Image, state: str, head_only: bool) -> Image.Image:
+    size = template.size
+    canvas = style_siege_piece(template)
+    head = stone_turret_head((max(1, round(size[0] * 0.50)), max(1, round(size[1] * (0.32 if head_only else 0.42)))))
+    canvas.alpha_composite(head, ((size[0] - head.width) // 2, max(0, round(size[1] * 0.08))))
+    draw = ImageDraw.Draw(canvas, "RGBA")
+    draw.line((3, size[1] - 7, size[0] - 4, size[1] - 12), fill=(100, 110, 128, 170), width=2)
+    draw.rectangle((0, size[1] - 4, size[0], size[1]), fill=(7, 10, 15, 160))
     if state == "2":
-        draw = ImageDraw.Draw(canvas)
         draw.polygon(((size[0] * 0.62, 0), (size[0], 0), (size[0], size[1] * 0.38)), fill=(0, 0, 0, 0))
+        draw.line((round(size[0] * 0.35), round(size[1] * 0.18), round(size[0] * 0.52), round(size[1] * 0.62)), fill=(8, 10, 15, 170), width=2)
         canvas = ImageEnhance.Brightness(canvas).enhance(0.82)
     elif state == "C":
-        draw = ImageDraw.Draw(canvas)
         draw.rectangle((0, 0, size[0], round(size[1] * 0.48)), fill=(0, 0, 0, 0))
         canvas = ImageEnhance.Brightness(canvas).enhance(0.55)
     return canvas
@@ -402,10 +470,10 @@ def build_siege() -> None:
         image = keyed_rgba(source_path)
         if suffix.startswith("TW2"):
             state = suffix[-1]
-            image = make_tower_piece(turret, image.size, state, False)
+            image = make_tower_piece(turret, image, state, False)
         elif suffix.startswith("TW1"):
             state = suffix[-1]
-            image = make_tower_piece(turret, image.size, state, True)
+            image = make_tower_piece(turret, image, state, True)
         else:
             image = style_siege_piece(image)
         image.save(output / f"SGDC{suffix}.png", optimize=True)
@@ -420,8 +488,8 @@ def build_siege() -> None:
     icon_dir = SPRITES / "icons"
     for name, size in (("towerLarge.png", (58, 64)), ("towerSmall.png", (32, 32))):
         canvas = Image.new("RGBA", size, (0, 0, 0, 0))
-        subject = fit(turret, (size[0] - 2, size[1] - 2))
-        canvas.alpha_composite(subject, ((size[0] - subject.width) // 2, size[1] - subject.height))
+        head = stone_turret_head((max(1, size[0] - 4), max(1, size[1] - 4)))
+        canvas.alpha_composite(head, ((size[0] - head.width) // 2, size[1] - head.height - 1))
         canvas.save(icon_dir / name, optimize=True)
 
 
@@ -548,6 +616,7 @@ def main() -> None:
     parser.add_argument("--rebuild-corrections", action="store_true")
     parser.add_argument("--remove-battle-outlines", action="store_true")
     parser.add_argument("--rebuild-siege", action="store_true")
+    parser.add_argument("--ground-town-buildings", action="store_true")
     parser.add_argument("--repair-building-icons", action="store_true")
     args = parser.parse_args()
     if args.remove_battle_outlines:
@@ -555,7 +624,10 @@ def main() -> None:
     elif args.repair_building_icons:
         build_endgame_building_icons()
     elif args.rebuild_siege:
+        build_turret_animation()
         build_siege()
+    elif args.ground_town_buildings:
+        add_town_grounding_shadows()
     elif args.rebuild_corrections:
         build_grail()
         build_siege()

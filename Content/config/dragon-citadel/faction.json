@@ -1431,7 +1431,7 @@
         },
         "dwellingLvl8": {
           "name": "Graal: Smok Ostateczny",
-          "description": "Niewidoczna funkcja Graala, która odblokowuje rekrutację Smoków Ostatecznych. W wersji BILLADENC4 Smok pojawia się tylko raz na 8 tygodni.",
+          "description": "Niewidoczna funkcja Graala, która odblokowuje rekrutację Smoków Ostatecznych. W wersji BILLADENC4 tylko jeden ostatni smok pojawia się raz na miesiąc.",
           "mode": "auto",
           "cost": {},
           "requires": [

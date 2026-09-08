@@ -8,7 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 CREATURES = ROOT / "Content" / "Sprites" / "dragon-citadel" / "creatures"
 UNITS = ("dcUltimateDragon", "dcAbsoluteDragon")
 
-# VCMI 1.7.4 displays recruitment animations from this source rectangle.
+# VCMI 1.7.5 displays recruitment animations from this source rectangle.
 PREVIEW_RECT = (150, 155, 100, 130)
 MARGIN = 4
 

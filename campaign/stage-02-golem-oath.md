@@ -1,7 +1,10 @@
-# Stage 02 - Golem Oath
+# Stage 02 - Golden Cores
 
-Status: waiting for player story brief.
+Status: campaign foundation ready, playable map pending player story brief.
 
-Purpose: introduce Diamond Golems and Ruby Golems. The mission should teach the player that Ruby Golems start modestly but become stronger during longer battles.
+Unlocked creature levels: 1, 2.
+Locked creature levels: 3, 4, 5, 6, 7, 8.
 
-Map notes will be designed after the story description is provided.
+Focus: Gold Golems, Diamond Golems and Ruby Golems. The player learns defensive tempo, shielding shooters and the BILLADENC4 Ruby Golem round growth rule.
+
+Map target: a rocky ore-and-crystal region with short routes and durable neutral guards. The scenario should take about 30 minutes and end after reclaiming ore, building the golem line and surviving a counterattack.

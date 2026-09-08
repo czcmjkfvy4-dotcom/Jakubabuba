@@ -1,7 +1,10 @@
-# Stage 03 - Titan Halls
+# Stage 03 - Oath of the Titans
 
-Status: waiting for player story brief.
+Status: campaign foundation ready, playable map pending player story brief.
 
-Purpose: introduce Titans and Storm Titans without letting them dominate too early.
+Unlocked creature levels: 1, 2, 3.
+Locked creature levels: 4, 5, 6, 7, 8.
 
-Map notes will be designed after the story description is provided.
+Focus: Titans and Storm Titans. The player learns why the titan line is costly and how it breaks stronger enemies when protected by golems.
+
+Map target: mountain passes and storm towers with three obelisks to capture. The scenario should take about 30 minutes and end after defeating a jealous mage.

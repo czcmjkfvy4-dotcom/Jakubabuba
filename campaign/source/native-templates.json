@@ -1,0 +1,429 @@
+{
+	"buildingIDs" : {
+		"blacksmith" : 16,
+		"capitol" : 13,
+		"castle" : 9,
+		"citadel" : 8,
+		"cityHall" : 12,
+		"dwellingLvl1" : 30,
+		"dwellingLvl2" : 31,
+		"dwellingLvl3" : 32,
+		"dwellingLvl4" : 33,
+		"dwellingLvl5" : 34,
+		"dwellingLvl6" : 35,
+		"dwellingLvl7" : 36,
+		"dwellingLvl8" : 150,
+		"dwellingUp2Lvl2" : 45,
+		"dwellingUp2Lvl4" : 47,
+		"dwellingUp3Lvl4" : 54,
+		"dwellingUpLvl1" : 37,
+		"dwellingUpLvl2" : 38,
+		"dwellingUpLvl3" : 39,
+		"dwellingUpLvl4" : 40,
+		"dwellingUpLvl5" : 41,
+		"dwellingUpLvl6" : 42,
+		"dwellingUpLvl7" : 43,
+		"dwellingUpLvl8" : 151,
+		"fort" : 7,
+		"grail" : 26,
+		"mageGuild1" : 0,
+		"mageGuild2" : 1,
+		"mageGuild3" : 2,
+		"mageGuild4" : 3,
+		"mageGuild5" : 4,
+		"marketplace" : 14,
+		"resourceSilo" : 15,
+		"special1" : 17,
+		"special2" : 21,
+		"special3" : 22,
+		"special4" : 23,
+		"special5" : 27,
+		"special6" : 28,
+		"tavern" : 5,
+		"townHall" : 11,
+		"villageHall" : 10
+	},
+	"hero/dragon-citadel:dragonLord" : {
+		"allowedTerrains" : [
+		],
+		"animation" : "dragon-citadel/creatures/billadenHero/adventure",
+		"editorAnimation" : "dragon-citadel/creatures/billadenHero/editor",
+		"mask" : [
+			"VVV",
+			"VAV"
+		],
+		"visitableFrom" : [
+			"+++",
+			"+-+",
+			"+++"
+		]
+	},
+	"mine/goldMine" : {
+		"allowedTerrains" : [
+			"core:grass"
+		],
+		"animation" : "AVMgogr0",
+		"editorAnimation" : "",
+		"mask" : [
+			"VVV",
+			"BAB"
+		],
+		"visitableFrom" : [
+			"---",
+			"+-+",
+			"+++"
+		]
+	},
+	"mine/orePit" : {
+		"allowedTerrains" : [
+			"core:grass"
+		],
+		"animation" : "AVMore0",
+		"editorAnimation" : "",
+		"mask" : [
+			"BBB",
+			"BAB"
+		],
+		"visitableFrom" : [
+			"---",
+			"+-+",
+			"+++"
+		],
+		"zIndex" : 100
+	},
+	"mine/sawmill" : {
+		"allowedTerrains" : [
+			"core:grass",
+			"core:swamp"
+		],
+		"animation" : "AVMsawg0",
+		"editorAnimation" : "",
+		"mask" : [
+			"VVVVV",
+			"VVVBB",
+			"VBBAB"
+		],
+		"visitableFrom" : [
+			"---",
+			"+-+",
+			"+++"
+		]
+	},
+	"monster/angel" : {
+		"allowedTerrains" : [
+			"core:grass"
+		],
+		"animation" : "AvWAngl",
+		"editorAnimation" : "",
+		"mask" : [
+			"VV",
+			"VA"
+		],
+		"visitableFrom" : [
+			"+++",
+			"+-+",
+			"+++"
+		]
+	},
+	"monster/archangel" : {
+		"allowedTerrains" : [
+			"core:grass"
+		],
+		"animation" : "AvWArch",
+		"editorAnimation" : "",
+		"mask" : [
+			"VV",
+			"VA"
+		],
+		"visitableFrom" : [
+			"+++",
+			"+-+",
+			"+++"
+		]
+	},
+	"monster/archer" : {
+		"allowedTerrains" : [
+			"core:grass"
+		],
+		"animation" : "AvWLCrs",
+		"editorAnimation" : "",
+		"mask" : [
+			"VV",
+			"VA"
+		],
+		"visitableFrom" : [
+			"+++",
+			"+-+",
+			"+++"
+		]
+	},
+	"monster/blackDragon" : {
+		"allowedTerrains" : [
+			"core:dirt"
+		],
+		"animation" : "AVWddrx0",
+		"editorAnimation" : "",
+		"mask" : [
+			"VV",
+			"VA"
+		],
+		"visitableFrom" : [
+			"+++",
+			"+-+",
+			"+++"
+		]
+	},
+	"monster/cavalier" : {
+		"allowedTerrains" : [
+			"core:dirt"
+		],
+		"animation" : "AVWcvlr0",
+		"editorAnimation" : "",
+		"mask" : [
+			"VV",
+			"VA"
+		],
+		"visitableFrom" : [
+			"+++",
+			"+-+",
+			"+++"
+		]
+	},
+	"monster/champion" : {
+		"allowedTerrains" : [
+			"core:dirt"
+		],
+		"animation" : "AVWcvlx0",
+		"editorAnimation" : "",
+		"mask" : [
+			"VV",
+			"VA"
+		],
+		"visitableFrom" : [
+			"+++",
+			"+-+",
+			"+++"
+		]
+	},
+	"monster/crusader" : {
+		"allowedTerrains" : [
+			"core:dirt"
+		],
+		"animation" : "AVWswrx0",
+		"editorAnimation" : "",
+		"mask" : [
+			"VV",
+			"VA"
+		],
+		"visitableFrom" : [
+			"+++",
+			"+-+",
+			"+++"
+		]
+	},
+	"monster/halberdier" : {
+		"allowedTerrains" : [
+			"core:dirt"
+		],
+		"animation" : "AVWpikx0",
+		"editorAnimation" : "",
+		"mask" : [
+			"VV",
+			"VA"
+		],
+		"visitableFrom" : [
+			"+++",
+			"+-+",
+			"+++"
+		]
+	},
+	"monster/mage" : {
+		"allowedTerrains" : [
+			"core:dirt"
+		],
+		"animation" : "AVWmage0",
+		"editorAnimation" : "",
+		"mask" : [
+			"VV",
+			"VA"
+		],
+		"visitableFrom" : [
+			"+++",
+			"+-+",
+			"+++"
+		]
+	},
+	"monster/monk" : {
+		"allowedTerrains" : [
+			"core:grass"
+		],
+		"animation" : "AvWMonk",
+		"editorAnimation" : "",
+		"mask" : [
+			"VV",
+			"VA"
+		],
+		"visitableFrom" : [
+			"+++",
+			"+-+",
+			"+++"
+		]
+	},
+	"monster/pikeman" : {
+		"allowedTerrains" : [
+			"core:grass"
+		],
+		"animation" : "AvWPike",
+		"editorAnimation" : "",
+		"mask" : [
+			"VV",
+			"VA"
+		],
+		"visitableFrom" : [
+			"+++",
+			"+-+",
+			"+++"
+		]
+	},
+	"monster/swordsman" : {
+		"allowedTerrains" : [
+			"core:dirt"
+		],
+		"animation" : "AVWswrd0",
+		"editorAnimation" : "",
+		"mask" : [
+			"VV",
+			"VA"
+		],
+		"visitableFrom" : [
+			"+++",
+			"+-+",
+			"+++"
+		]
+	},
+	"mountain/object" : {
+		"allowedTerrains" : [
+			"core:grass"
+		],
+		"animation" : "AVLmtgn0",
+		"editorAnimation" : "",
+		"mask" : [
+			"VVVVVV",
+			"VVBBBB",
+			"VBBBBB",
+			"VBBBVV"
+		]
+	},
+	"oakTrees/object" : {
+		"allowedTerrains" : [
+			"core:dirt",
+			"core:grass"
+		],
+		"animation" : "avlautr0",
+		"editorAnimation" : "",
+		"mask" : [
+			"VV",
+			"VB"
+		]
+	},
+	"pineTrees/object" : {
+		"allowedTerrains" : [
+			"core:dirt",
+			"core:grass"
+		],
+		"animation" : "AVLPNTR0",
+		"editorAnimation" : "",
+		"mask" : [
+			"VV",
+			"VB"
+		]
+	},
+	"resource/gold" : {
+		"allowedTerrains" : [
+		],
+		"animation" : "AVTgold0",
+		"editorAnimation" : "",
+		"mask" : [
+			"VA"
+		],
+		"visitableFrom" : [
+			"+++",
+			"+-+",
+			"+++"
+		]
+	},
+	"resource/ore" : {
+		"allowedTerrains" : [
+		],
+		"animation" : "AVTore0",
+		"editorAnimation" : "",
+		"mask" : [
+			"VA"
+		],
+		"visitableFrom" : [
+			"+++",
+			"+-+",
+			"+++"
+		]
+	},
+	"resource/wood" : {
+		"allowedTerrains" : [
+		],
+		"animation" : "AVTwood0",
+		"editorAnimation" : "",
+		"mask" : [
+			"VA"
+		],
+		"visitableFrom" : [
+			"+++",
+			"+-+",
+			"+++"
+		]
+	},
+	"rock/object" : {
+		"allowedTerrains" : [
+			"core:grass"
+		],
+		"animation" : "AvLRG01",
+		"editorAnimation" : "",
+		"mask" : [
+			"BB"
+		]
+	},
+	"sign/object" : {
+		"allowedTerrains" : [
+			"core:dirt",
+			"core:grass",
+			"core:subterra"
+		],
+		"animation" : "AVXsndg0",
+		"editorAnimation" : "",
+		"mask" : [
+			"A"
+		],
+		"visitableFrom" : [
+			"---",
+			"+-+",
+			"+++"
+		]
+	},
+	"town/dragon-citadel:dragonCitadel" : {
+		"allowedTerrains" : [
+		],
+		"animation" : "dragon-citadel/map/town-capitol",
+		"editorAnimation" : "",
+		"mask" : [
+			"VVVVVV",
+			"VVVVVV",
+			"VVVVVV",
+			"VVBBBV",
+			"VBBBBB",
+			"VBBABB"
+		],
+		"visitableFrom" : [
+			"---",
+			"+-+",
+			"+++"
+		]
+	}
+}

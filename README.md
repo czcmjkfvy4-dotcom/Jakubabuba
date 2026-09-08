@@ -6,7 +6,7 @@ Dragon Citadel is an original, exceptionally expensive endgame town for Heroes o
 
 ![Fully developed Dragon Citadel](screenshots/town-screen.png)
 
-Version 1.5.5 enlarges the town buildings, places them firmly on their terraces and preserves matching click and hover areas. The main castle remains the visual anchor, while the Village and Fort now have clearly different adventure-map models.
+Version 1.5.7 fixes the monthly recruitment date check and PNG petrification, and ships all eight campaign scenarios with Polish story events and progressive creature unlocks. The matching VCMI 1.7.5 BILLADENC4 runtime is required for these engine mechanics.
 
 There is no separate level 8 town building. The Grail itself unlocks both final dragons through invisible automatic dwelling entries.
 
@@ -15,7 +15,15 @@ There is no separate level 8 town building. The Grail itself unlocks both final 
 ## Requirements
 
 - a legal copy of Heroes of Might and Magic III: Complete
-- VCMI 1.7.4 or newer
+- VCMI 1.7.5 with the matching BILLADENC4 runtime for all custom rules. The supplied Windows runtime is built for 1.7.5; later engines need separate compatibility testing.
+
+## Download 1.5.7
+
+[Release and verified downloads](https://github.com/czcmjkfvy4-dotcom/Jakubabuba/releases/tag/v1.5.7)
+
+On Windows x64, the Complete Edition installer installs VCMI 1.7.5, BILLADENC4, Dragon Citadel, its eight-chapter campaign and the map collection together in a separate installation. No additional runtime installation is needed with Complete Edition. You must supply legal Heroes III Complete or Shadow of Death game data; these are not included. The mod ZIP is for an existing VCMI installation and still requires the runtime step below.
+
+The optional third-form expansion is under development and is not part of 1.5.7. See [release notes](RELEASE-1.5.7.md) for fixes and testing limitations.
 
 ## Installation
 
@@ -25,13 +33,13 @@ There is no separate level 8 town building. The Grail itself unlocks both final 
 4. Close VCMI and VCMI Launcher.
 5. Double-click `INSTALL BILLADENC4 RUNTIME.CMD` inside the installed mod folder and approve the Windows administrator prompt.
 
-The bundled installer automatically detects a standard VCMI installation, creates a backup and enables the exact 8-week growth rule, Ruby Golem round growth, the `nwcbilladen` code and fitted level 8 recruitment animations. Players do not need to compile VCMI or apply a patch manually.
+The bundled installer automatically detects a standard VCMI installation, creates a backup and enables the exact monthly level 8 growth rule, Ruby Golem round growth, the `nwcbilladen` code, fixed-slot Dragon Citadel autosaves and fitted level 8 recruitment animations. Players do not need to compile VCMI or apply a patch manually.
 
 The mod can also be added as a custom VCMI Launcher repository:
 
 `https://raw.githubusercontent.com/czcmjkfvy4-dotcom/Jakubabuba/main/repository.json`
 
-## Version 1.5.5
+## Version 1.5.6
 
 Every adventure-map stage of the town remains in the original Dragon Citadel stone, turquoise and gold palette. Village, Fort, Citadel, Castle and Capitol never inherit the owning player's color, including when VCMI interface scaling is enabled.
 
@@ -64,7 +72,7 @@ Version 1.5.0 added two entirely original level 8 creatures. Version 1.5.5 moves
 | Ultimate Dragon | 100 | 100 | 220-320 | 10,000 | 20 | 150,000 gold + 150 of every resource |
 | Absolute Dragon | 150 | 150 | 320-480 | 15,000 | 30 | 220,000 gold + 200 of every resource |
 
-Both dragons are immune to level 1-5 magic and reduce melee damage by 100%. VCMI still applies its minimum one point of damage, so ranged creatures remain the intended way to hurt them. They also fly, breathe through two hexes, attack all adjacent enemies, block retaliation and regenerate. As a balance tradeoff, Ultimate and Absolute Dragons cannot retaliate when attacked.
+Both final dragons can now take damage from normal attacks and damaging magic. They still fly, breathe through two hexes, attack all adjacent enemies, block enemy retaliation and regenerate. As a balance tradeoff, Ultimate and Absolute Dragons cannot retaliate when attacked.
 
 No additional sanctuary construction cost is charged. After the Grail is built, the player only pays the recruitment prices shown above.
 
@@ -80,11 +88,11 @@ Wandering dragons use a custom 128x128 map animation and always begin in a stack
 
 ## VCMI And The Endgame Rules Submod
 
-The public town and its `Dragon Citadel: Endgame Rules` submod load normally through VCMI 1.7.4. BILLADENC4 is a modified VCMI 1.7.4 runtime, not a separate game. Stock VCMI can cap the visible level 8 town growth at +1, but the exact "one dragon every 8 weeks" rule requires the BILLADENC4 engine patch included with this mod.
+The public town and its `Dragon Citadel: Endgame Rules` submod load normally through VCMI 1.7.5. BILLADENC4 is a modified VCMI 1.7.5 runtime, not a separate game. Stock VCMI data cannot express a separate monthly growth rule for only one town creature line, so the exact "one final dragon per month" rule requires the BILLADENC4 engine patch included with this mod.
 
 When the submod is enabled in VCMI with the matching BILLADENC4 runtime, it enforces the exact endgame rules:
 
-- one Ultimate or Absolute Dragon appears every 8 weeks
+- one Ultimate or Absolute Dragon appears once per month
 - wandering level 8 stacks remain at one creature
 - only 10% of wandering level 8 positions are eligible to join
 - Ruby Golems cumulatively gain +2 Attack, +1 Defense and +10 Health after every completed battle round
@@ -105,7 +113,7 @@ The desktop package also includes `Dragon Citadel Trainer.cmd`, a small button-b
 
 ## Campaign Foundation
 
-The `campaign` folder contains an eight-stage campaign foundation. The actual maps will be built stage by stage after the mission descriptions are provided, so the work can continue safely in small pieces.
+The native eight-scenario campaign is installed as `Content/Maps/Smocza_Cytadela.vcmp`. Open New Game > Campaign > Custom and select **Smocza Cytadela: Narodziny Ostatniej Burzy**. It includes Polish prologues, epilogues, 45 in-game story messages, current unit statistics and costs, and progressive recruitment restrictions. Chapter 5 demonstrates the Treasury and Royal Mint; chapter 8 requires a Grail-recruited final dragon. See `campaign/README.md` for build instructions and the limits of automated testing.
 
 ## Ongoing Development
 
@@ -122,7 +130,7 @@ Dragon Citadel will continue to be developed and updated on GitHub. Public playe
 
 - Author: Billaden
 - Mod creator: Billaden - Jakubabuba
-- Version: 1.5.5
+- Version: 1.5.7
 - Languages: English by default, full Polish support
 - Type: new VCMI town
 
@@ -132,10 +140,10 @@ Dragon Citadel will continue to be developed and updated on GitHub. Public playe
 
 Smocza Cytadela to autorskie, wyjątkowo drogie miasto końcowej fazy gry do Heroes III uruchamianego przez VCMI.
 
-Wersja 1.5.5 naprawia krytyczny błąd startu, powiększa budynki, dodaje animowany Graal i własną scenę oblężenia ze smoczymi wieżyczkami. Kolory wszystkich etapów zamku pozostają stałe niezależnie od koloru gracza.
+Wersja 1.5.7 naprawia datę miesięcznego przyrostu ostatnich smoków i wygląd skamienienia jednostek PNG. Zawiera osiem map kampanii z polskimi historiami, 45 wydarzeniami w grze i stopniowym odblokowywaniem jednostek. Kampanię uruchom przez Nowa gra > Kampania > Własne. Wybierz „Smocza Cytadela: Narodziny Ostatniej Burzy”.
 
 Graal daje dodatkowo 10 000 złota i po 10 każdego surowca dziennie oraz bezpośrednio odblokowuje rekrutację poziomu 8. Nie ma osobnego budynku dla Smoka Ostatecznego. Smok Ostateczny kosztuje 150 000 złota oraz po 150 każdego surowca. Smok Absolutny kosztuje 220 000 złota oraz po 200 każdego surowca.
 
-Z runtime BILLADENC4 jedna jednostka poziomu 8 pojawia się raz na 8 tygodni. Ten sam runtime uruchamia przyrost Rubinowego Golema o +2 Ataku, +1 Obrony i +10 Zdrowia po każdej zakończonej rundzie bitwy.
+Z runtime BILLADENC4 jedna jednostka poziomu 8 pojawia się raz na miesiąc. Ten sam runtime uruchamia przyrost Rubinowego Golema o +2 Ataku, +1 Obrony i +10 Zdrowia po każdej zakończonej rundzie bitwy oraz nadpisywany autosave Smoczej Cytadeli co turę.
 
 Projekt fanowski, niekomercyjny i niepowiązany z Ubisoft Entertainment ani właścicielami marki Heroes of Might and Magic.

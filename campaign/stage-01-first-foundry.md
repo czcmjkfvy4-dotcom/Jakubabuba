@@ -1,7 +1,10 @@
-# Stage 01 - First Foundry
+# Stage 01 - Spark of the Citadel
 
-Status: waiting for player story brief.
+Status: campaign foundation ready, playable map pending player story brief.
 
-Purpose: introduce Dragon Citadel as a costly but survivable town. The player should rely on Sharpshooters, Gold Golems and careful resource collection.
+Unlocked creature levels: 1.
+Locked creature levels: 2, 3, 4, 5, 6, 7, 8.
 
-Map notes will be designed after the story description is provided.
+Focus: Sharpshooters and Elite Sharpshooters. The player learns that Dragon Citadel begins with expensive precision troops, guarded positions and careful spending.
+
+Map target: a small valley with a gold mine, sawmill and stone outposts. The scenario should take about 30 minutes and end after securing three resource sites and defeating a local commander.

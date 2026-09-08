@@ -1,26 +1,35 @@
 {
   "name": "Dragon Citadel: Endgame Rules",
-  "description": "IMPORTANT: RUN INSTALL BILLADENC4 RUNTIME.CMD ONCE AFTER INSTALLING THE MOD. This module enforces one level 8 dragon every 8 weeks, one-dragon neutral stacks, the 10% joining limit and Ruby Golem growth after every battle round.",
+  "description": "IMPORTANT: RUN INSTALL BILLADENC4 RUNTIME.CMD ONCE AFTER INSTALLING THE MOD. This module enforces one level 8 dragon per month, one-dragon neutral stacks, the 10% joining limit and Ruby Golem growth after every battle round.",
   "author": "Billaden",
   "contact": "https://github.com/czcmjkfvy4-dotcom/Jakubabuba",
-  "version": "1.1.0",
+  "version": "1.2.1",
   "modType": "Mechanics",
   "language": "english",
   "compatibility": {
-    "min": "1.7.4"
+    "min": "1.7.5"
   },
   "polish": {
     "name": "Smocza Cytadela: Reguły Końca Gry",
-    "description": "WAŻNE: PO INSTALACJI MODA URUCHOM RAZ INSTALL BILLADENC4 RUNTIME.CMD. Moduł wymusza jednego smoka poziomu 8 raz na 8 tygodni, pojedyncze dzikie smoki, limit 10% szansy na dołączenie i rozwój Rubinowego Golema po każdej rundzie.",
+    "description": "WAŻNE: PO INSTALACJI MODA URUCHOM RAZ INSTALL BILLADENC4 RUNTIME.CMD. Moduł wymusza jednego smoka poziomu 8 raz na miesiąc, pojedyncze dzikie smoki, limit 10% szansy na dołączenie i rozwój Rubinowego Golema po każdej rundzie.",
     "author": "Billaden"
   },
   "changelog": {
+    "1.2.1": [
+      "Fixed monthly town growth being checked against the old game date, which prevented all monthly recruits.",
+      "Preserved exactly one new recruit on month boundaries, including plague and neutral towns."
+    ],
+    "1.2.0": [
+      "Rebased the matching BILLADENC4 runtime patch on VCMI 1.7.5.",
+      "Changed Ultimate and Absolute Dragon growth to exactly one dragon per month.",
+      "Kept Castle, Grail, plague and bonus-week effects from multiplying final dragon growth."
+    ],
     "1.1.0": [
       "Added cumulative Ruby Golem growth after every completed battle round.",
       "Added a prominent runtime installation warning."
     ],
     "1.0.0": [
-      "Added exact 8-week growth for Ultimate and Absolute Dragons.",
+      "Added initial custom growth handling for Ultimate and Absolute Dragons.",
       "Kept wandering level 8 stacks and neutral sanctuary guards at one dragon.",
       "Limited wandering level 8 joining eligibility to 10 percent."
     ]

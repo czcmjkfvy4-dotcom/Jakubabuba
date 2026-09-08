@@ -1,0 +1,229 @@
+{
+  "version": 1,
+  "name": "Smocza Cytadela: Narodziny Ostatniej Burzy",
+  "description": "Osiem krótkich rozdziałów o narodzinach przerażającej, potężnej i kosztownej Cytadeli. Jednostki odblokowywane stopniowo; polska historia i odprawy widoczne w grze.",
+  "author": "Billaden",
+  "authorContact": "https://github.com/czcmjkfvy4-dotcom/Jakubabuba",
+  "campaignVersion": "1.5.7",
+  "creationDateTime": 1788379200,
+  "allowDifficultySelection": false,
+  "regions": {
+    "prefix": "AR",
+    "colorSuffixLength": 2,
+    "desc": [
+      {
+        "infix": "A",
+        "x": 135,
+        "y": 238
+      },
+      {
+        "infix": "B",
+        "x": 135,
+        "y": 121
+      },
+      {
+        "infix": "C",
+        "x": 206,
+        "y": 155
+      },
+      {
+        "infix": "D",
+        "x": 105,
+        "y": 397
+      },
+      {
+        "infix": "E",
+        "x": 109,
+        "y": 275
+      },
+      {
+        "infix": "F",
+        "x": 158,
+        "y": 188
+      },
+      {
+        "infix": "G",
+        "x": 200,
+        "y": 261
+      },
+      {
+        "infix": "H",
+        "x": 232,
+        "y": 197
+      }
+    ]
+  },
+  "scenarios": [
+    {
+      "map": "maps/01-first-foundry",
+      "preconditions": [],
+      "color": 0,
+      "difficulty": 0,
+      "regionText": "1. Iskra Cytadeli\nZajmij tartak, kopalnię rudy i kopalnię złota. Rozbij trzy posterunki imperium. Rozdział kończy się najwcześniej piątego dnia, po odprawach o jednostkach.",
+      "prolog": {
+        "text": "Stare imperium żąda ostatniego podatku od doliny, która nie ma już czego oddać. Billaden gromadzi ocalałych przy niedokończonej Cytadeli. Nie ma smoków. Są kusznicy, kuźnia i decyzja, że następny poborca nie wróci do domu."
+      },
+      "epilog": {
+        "text": "Poborca drwił z miasta bez smoków. Poległ pod pierwszą salwą. Nad odzyskaną doliną wznosi się dym odlewni: następnym razem łucznicy nie będą walczyć sami."
+      },
+      "heroKeeps": [],
+      "keepCreatures": [],
+      "startOptions": "none",
+      "playerColor": 0
+    },
+    {
+      "map": "maps/02-golem-oath",
+      "preconditions": [
+        0
+      ],
+      "color": 1,
+      "difficulty": 0,
+      "regionText": "2. Złote Rdzenie\nOdzyskaj trzy kopalnie, zbuduj Rubinową Odlewnię i pokonaj trzy oddziały interwencyjne. Zostaw miejsce w armii na nowe ulepszenie.",
+      "prolog": {
+        "text": "Pod doliną znaleziono matryce armii starszej niż imperium. Odlewnicy potrafią obudzić złoto, ale do jego przemiany potrzebują rudy i rubinowego serca. Królewska piechota maszeruje zniszczyć formy, zanim te nauczą się chodzić."
+      },
+      "epilog": {
+        "text": "Kamień nie uciekł. Rubinowe serce wytrzymało. Ostatni piechur zobaczył, jak pęknięcia golema zasklepia światło, a z gór odpowiedział odległy grzmot."
+      },
+      "heroKeeps": [],
+      "keepCreatures": [],
+      "startOptions": "none",
+      "playerColor": 0
+    },
+    {
+      "map": "maps/03-titan-halls",
+      "preconditions": [
+        0,
+        1
+      ],
+      "color": 2,
+      "difficulty": 0,
+      "regionText": "3. Przysięga Tytanów\nOdbij trzy kopalnie z rdzeniami, rozbij straże i maga. Zbuduj Wieżę Tytanów Burzy, aby przypieczętować przysięgę.",
+      "prolog": {
+        "text": "Magowie próbują zamknąć burzę w trzech górniczych rdzeniach. Uwięzieni Tytani słyszą każdy ich obrót. Billaden oferuje im wolność, a nie posłuszeństwo. W zamian prosi, aby stanęli na murach Cytadeli."
+      },
+      "epilog": {
+        "text": "Magowie zamknęli piorun w krysztale. Tytani rozbili kryształ i niebo odpowiedziało. Teraz trzeba znaleźć istoty, które potrafią żyć w takiej magii."
+      },
+      "heroKeeps": [],
+      "keepCreatures": [],
+      "startOptions": "none",
+      "playerColor": 0
+    },
+    {
+      "map": "maps/04-split-grotto",
+      "preconditions": [
+        0,
+        1,
+        2
+      ],
+      "color": 3,
+      "difficulty": 0,
+      "regionText": "4. Groty Pękniętej Magii\nOcal oba smocze rody: zbuduj ulepszoną grotę magii w głównej Cytadeli i ulepszoną grotę rubinu we wschodniej osadzie. Odzyskaj kopalnie i rozbij trzy oddziały zakonu.",
+      "prolog": {
+        "text": "W jednej grocie magia śmieje się i zmienia kształt; w drugiej krzepnie w rubin. Zakon Czystego Płomienia chce spalić obie. Dwie osady Cytadeli muszą osłonić dwa różne smocze rody."
+      },
+      "epilog": {
+        "text": "Zakon chciał jednej barwy ognia. Dwie groty odpowiedziały dwiema różnymi potęgami. Zwycięstwo kosztowało więcej niż cała pierwsza dolina."
+      },
+      "heroKeeps": [],
+      "keepCreatures": [],
+      "startOptions": "none",
+      "playerColor": 0
+    },
+    {
+      "map": "maps/05-treasury-of-the-storm",
+      "preconditions": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "color": 4,
+      "difficulty": 0,
+      "regionText": "5. Skarbnica Burzy\nOdzyskaj trzy kopalnie, pokonaj poborcę i jego straże. Zbuduj Królewską Smoczą Mennicę i zachowaj co najmniej 50000 złota. Zwycięstwo jest możliwe od dnia 8, aby Skarbiec zdążył wypłacić pierwsze odsetki.",
+      "prolog": {
+        "text": "Wojny nie przegrywa się tylko na polu bitwy. Smoki potrzebują metalu i siarki, Tytani klejnotów, a kupcy chcą złota przed dostawą. Królewski poborca odciął trzy szlaki zaopatrzenia. Tym razem Billaden musi pokonać także pusty skarbiec."
+      },
+      "epilog": {
+        "text": "Poborca szukał skrzyń. Znalazł złoto, które chodzi, lata i pali. Cytadela może finansować następną wojnę; po raz pierwszy cena ostatecznej potęgi przestaje być wyłącznie legendą."
+      },
+      "heroKeeps": [],
+      "keepCreatures": [],
+      "startOptions": "none",
+      "playerColor": 0
+    },
+    {
+      "map": "maps/06-eternal-storm",
+      "preconditions": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "color": 5,
+      "difficulty": 0,
+      "regionText": "6. Nadciąga Wieczna Burza\nPrzywróć trzy kopalnie-przewodniki, zbuduj Oko Wiecznej Burzy i rozbij trzy oddziały konnicy. Starsze jednostki pozostają dostępne.",
+      "prolog": {
+        "text": "Pioruny wracają do gór co noc i nie gasną o świcie. Trzy oddziały królewskiej konnicy odcięły przewodniki energii przy kopalniach. Billaden musi przywrócić przepływ, zanim burza rozerwie Cytadelę od środka."
+      },
+      "epilog": {
+        "text": "Konnica nigdy wcześniej nie przegrała wyścigu. Burza nie ścigała koni. Czekała już na końcu przełęczy."
+      },
+      "heroKeeps": [],
+      "keepCreatures": [],
+      "startOptions": "none",
+      "playerColor": 0
+    },
+    {
+      "map": "maps/07-azure-throne",
+      "preconditions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "color": 6,
+      "difficulty": 0,
+      "regionText": "7. Błękitny Tron\nOdbij trzy źródła surowców, zbuduj sanktuarium Pradawnych Błękitnych Smoków i pokonaj trzy straże Tronu. Relikwia zostanie przewieziona do Cytadeli w zakończeniu rozdziału.",
+      "prolog": {
+        "text": "Ostatni sojusz królów ukrył relikwię burzy za Błękitnym Tronem. Pradawne smoki zgadzają się przeprowadzić Billadena, lecz za ich cień trzeba zapłacić więcej niż za koronę. Anielskie straże nie zamierzają oddać relikwii."
+      },
+      "epilog": {
+        "text": "Na tronie nie leżała korona. Leżało serce burzy. Billaden kazał wieźć Graala do Cytadeli, choć Tytani odwrócili wzrok. Ostatnie drzwi powinny pozostać zamknięte."
+      },
+      "heroKeeps": [],
+      "keepCreatures": [],
+      "startOptions": "none",
+      "playerColor": 0
+    },
+    {
+      "map": "maps/08-heart-of-the-end",
+      "preconditions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "color": 7,
+      "difficulty": 0,
+      "regionText": "8. Serce Końca Wieków\nZajmij trzy kopalnie, pokonaj obie straże oraz ostatnią armię na południowym wschodzie. Zakończ rozdział z co najmniej jednym Smokiem Ostatecznym lub Absolutnym w armii. Rekrutacja od dnia 29; ulepszenia i wcześniejsze poziomy pozostają dostępne.",
+      "prolog": {
+        "text": "Graal zdobyty przy Błękitnym Tronie został osadzony w Cytadeli. Daje 10000 złota i po 10 każdego surowca dziennie, ale nie rozdaje smoków. Pierwsze przebudzenie nastąpi dnia 29, na początku drugiego miesiąca. Do tego czasu trzeba odbić kopalnie i pokonać przednie straże ostatniego sojuszu."
+      },
+      "epilog": {
+        "text": "Niebo pękło, lecz Cytadela stoi. Ostatni smok otworzył oczy, a świat zrozumiał, dlaczego ta wojna kosztowała fortunę. Osiem etapów. Jedna Cytadela. Jedna burza. Teraz ktoś będzie musiał nauczyć się żyć w jej cieniu."
+      },
+      "heroKeeps": [],
+      "keepCreatures": [],
+      "startOptions": "none",
+      "playerColor": 0
+    }
+  ]
+}

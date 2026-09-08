@@ -1,0 +1,72 @@
+{
+  "campaign": "Dragon Citadel",
+  "targetDurationMinutes": 30,
+  "commonPrebuiltBuildings": [
+    "villageHall",
+    "tavern",
+    "fort",
+    "marketplace",
+    "blacksmith",
+    "mageGuild1"
+  ],
+  "commonAvailableBuildings": "all non-creature buildings unless a mission deliberately delays one tutorial feature",
+  "lockPolicy": "Creature dwellings above the current chapter level must be disabled in the scenario so they appear grey/locked in town construction.",
+  "stages": [
+    {
+      "chapter": 1,
+      "title": "Spark of the Citadel",
+      "unlockedCreatureLevels": [1],
+      "lockedCreatureLevels": [2, 3, 4, 5, 6, 7, 8],
+      "focus": "Sharpshooters and Elite Sharpshooters"
+    },
+    {
+      "chapter": 2,
+      "title": "Golden Cores",
+      "unlockedCreatureLevels": [1, 2],
+      "lockedCreatureLevels": [3, 4, 5, 6, 7, 8],
+      "focus": "Gold, Diamond and Ruby Golems"
+    },
+    {
+      "chapter": 3,
+      "title": "Oath of the Titans",
+      "unlockedCreatureLevels": [1, 2, 3],
+      "lockedCreatureLevels": [4, 5, 6, 7, 8],
+      "focus": "Titans and Storm Titans"
+    },
+    {
+      "chapter": 4,
+      "title": "Grottos of Broken Magic",
+      "unlockedCreatureLevels": [1, 2, 3, 4],
+      "lockedCreatureLevels": [5, 6, 7, 8],
+      "focus": "Faerie, Ruby and Ancient Ruby Dragons"
+    },
+    {
+      "chapter": 5,
+      "title": "Treasury of the Storm",
+      "unlockedCreatureLevels": [1, 2, 3, 4, 5],
+      "lockedCreatureLevels": [6, 7, 8],
+      "focus": "Rust Dragons, Dragon Treasury, Dragon Mint and Royal Dragon Mint"
+    },
+    {
+      "chapter": 6,
+      "title": "The Eternal Storm Approaches",
+      "unlockedCreatureLevels": [1, 2, 3, 4, 5, 6],
+      "lockedCreatureLevels": [7, 8],
+      "focus": "Storm Dragons and Eternal Storm Dragons"
+    },
+    {
+      "chapter": 7,
+      "title": "The Azure Throne",
+      "unlockedCreatureLevels": [1, 2, 3, 4, 5, 6, 7],
+      "lockedCreatureLevels": [8],
+      "focus": "Azure Dragons and Ancient Azure Dragons"
+    },
+    {
+      "chapter": 8,
+      "title": "Heart of the End of Ages",
+      "unlockedCreatureLevels": [1, 2, 3, 4, 5, 6, 7, 8],
+      "lockedCreatureLevels": [],
+      "focus": "Grail, Ultimate Dragons and Absolute Dragons"
+    }
+  ]
+}

@@ -1,13 +1,13 @@
 {
   "name": "Dragon Citadel",
-  "description": "IMPORTANT: AFTER INSTALLING THE MOD IN VCMI, RUN INSTALL BILLADENC4 RUNTIME.CMD ONCE TO ENABLE ALL ENGINE FEATURES. Dragon Citadel is a terrifying, immensely powerful and brutally expensive endgame town built for rulers willing to spend the wealth of entire kingdoms. Its army rises from elite marksmen and evolving Ruby Golems through Storm Titans, magical beasts and ancient dragons to the original Ultimate and Absolute Dragons. The mod includes a custom town, heroes, creature animations, fixed-color map models, a dedicated siege battlefield with dragon turrets, creator tools and an eight-stage campaign foundation. The animated Grail grants 10,000 gold and 10 of every resource per day and is the only way to unlock level 8 recruitment. BILLADENC4 enforces one final dragon every 8 weeks and Ruby Golem growth after every battle round. Dragon Citadel will continue to be developed and updated on GitHub.",
+  "description": "IMPORTANT: THE VCMI MOD MANAGER DOES NOT INSTALL THE CUSTOM ENGINE AUTOMATICALLY. RUN INSTALL BILLADENC4 RUNTIME.CMD ONCE, OR USE THE COMPLETE EDITION INSTALLER WHICH INCLUDES IT. Dragon Citadel is a terrifying, immensely powerful and brutally expensive endgame town built for rulers willing to spend the wealth of entire kingdoms. Its army rises from elite marksmen and evolving Ruby Golems through Storm Titans, magical beasts and ancient dragons to the original Ultimate and Absolute Dragons. The mod includes a custom town, heroes, creature animations, fixed-color map models, a dedicated siege battlefield with dragon turrets, creator tools and an eight-scenario campaign with Polish in-game story and unit briefings. The animated Grail grants 10,000 gold and 10 of every resource per day and is the only way to unlock level 8 recruitment. BILLADENC4 enforces one final dragon per month and Ruby Golem growth after every battle round. Dragon Citadel will continue to be developed and updated on GitHub.",
   "author": "Billaden",
-  "version": "1.5.5",
+  "version": "1.5.7",
   "contact": "https://github.com/czcmjkfvy4-dotcom/Jakubabuba",
   "modType": "Town",
   "language": "english",
   "compatibility": {
-    "min": "1.7.4"
+    "min": "1.7.5"
   },
   "factions": [
     "config/dragon-citadel/faction.json"
@@ -29,7 +29,28 @@
     "config/dragon-citadel/object-flaming-feather-sanctuary.json"
   ],
   "changelog": {
+    "1.5.7": [
+      "Fixed the monthly recruitment date check: one level 8 dragon now appears at the start of each new month after the Grail unlocks recruitment.",
+      "Both final dragon forms share one recruitment pool. Castle, Grail and special creature weeks do not multiply the monthly recruit.",
+      "Plague reduces only the existing pool; the new monthly recruit is still added.",
+      "Fixed petrification rendering for true-color PNG creatures without changing their original sprites or transparency.",
+      "Added all eight native campaign maps, Polish prologues, epilogues and 45 in-game story events with current unit statistics and costs.",
+      "Campaign chapters progressively unlock creature tiers; automatic Grail dwellings now respect the scenario's final-dragon restrictions.",
+      "Added engine regressions for day transitions, save/load, special weeks, petrification, campaign loading, objective connectivity and victory/defeat predicates."
+    ],
+    "1.5.6": [
+      "Rebased the bundled BILLADENC4 runtime patch and standalone edition on VCMI 1.7.5.",
+      "Changed BILLADENC4 level 8 dragon growth to one dragon per month and made the town growth preview use the same rule.",
+      "Set Ultimate and Absolute Dragon JSON growth to zero so Castle and Grail bonuses cannot raise them above the custom monthly rule.",
+      "Removed full magic resistance, level spell immunity and melee damage immunity from Ultimate and Absolute Dragons so every enemy can damage them.",
+      "Enabled Dragon Citadel autosaves to overwrite one fixed autosave slot every turn, independently of the global VCMI autosave frequency.",
+      "Reworked siege tower shooters into smaller stone dragon-head turrets that match the Dragon Citadel walls.",
+      "Added stronger grounding shadows for town buildings and refreshed battle outline cleanup.",
+      "Removed the leftover inactive neutral Ultimate Dragon sanctuary definition so level 8 recruitment is Grail-only.",
+      "Added the eight-stage campaign design, VCMI campaign header source, packer script and in-game message pack for gradual unit introduction."
+    ],
     "1.5.5": [
+      "Added a dedicated Dragon Citadel main-menu background based on the edition icon, with a matching storm surround for widescreen displays.",
       "Fixed the critical creatureLevel8 identifier error that caused VCMI to reject and disable the mod.",
       "Rebuilt the town presentation with larger, terrace-grounded structures and clearer adventure-map fortification stages.",
       "Added an animated Grail storm cloud with black-crimson and white-violet lightning, producing 10,000 extra gold and 10 of every resource daily.",
@@ -37,7 +58,8 @@
       "Removed the artificial glow and outline from Dragon Citadel creature portraits.",
       "Replaced the borrowed Dungeon siege set with dedicated Dragon Citadel walls, scenery and animated dragon-head firing turrets.",
       "Bundled an elevated one-click BILLADENC4 runtime installer with automatic detection of a standard VCMI installation.",
-      "Removed the separate level 8 town and adventure-map sanctuaries; the Grail now activates both final dragon recruitment entries automatically."
+      "Removed the separate level 8 town and adventure-map sanctuaries; the Grail now activates both final dragon recruitment entries automatically.",
+      "Added a pre-battle warning that names the owned mine or other independent structure being attacked by an enemy."
     ],
     "1.5.4": [
       "Locked every adventure-map town stage to the original Dragon Citadel stone, turquoise and gold palette regardless of player color.",
@@ -59,7 +81,7 @@
     ],
     "1.5.2": [
       "Capped level 8 town growth so Castle no longer raises Ultimate or Absolute Dragons to +3 in stock VCMI.",
-      "Changed the BILLADENC4 endgame rule from monthly level 8 growth to one dragon every 8 weeks.",
+      "Experimented with a stricter custom level 8 growth rule in BILLADENC4.",
       "Rebuilt Ultimate and Absolute Dragon battle sprites from a true flying animation set instead of sliding a mostly static icon."
     ],
     "1.5.1": [
@@ -103,7 +125,7 @@
   ],
   "polish": {
     "name": "Smocza Cytadela",
-    "description": "WAŻNE: PO INSTALACJI MODA W VCMI URUCHOM RAZ INSTALL BILLADENC4 RUNTIME.CMD, ABY WŁĄCZYĆ WSZYSTKIE FUNKCJE SILNIKA. Smocza Cytadela oferuje elitarne golemy, tytanów, pradawne smoki i całkowicie autorską linię Smoków Ostatecznych poziomu 8. Runtime uruchamia także rozwój Rubinowego Golema po każdej rundzie oraz pojawianie się Smoka Ostatecznego raz na 8 tygodni.",
+    "description": "WAŻNE: PO INSTALACJI MODA W VCMI URUCHOM RAZ INSTALL BILLADENC4 RUNTIME.CMD, ABY WŁĄCZYĆ WSZYSTKIE FUNKCJE SILNIKA. Smocza Cytadela oferuje elitarne golemy, tytanów, pradawne smoki i całkowicie autorską linię Smoków Ostatecznych poziomu 8. Runtime uruchamia także rozwój Rubinowego Golema po każdej rundzie oraz pojawianie się jednego ostatniego smoka raz na miesiąc.",
     "author": "Billaden",
     "translations": [
       "translation/dragon-citadel/polish.json"

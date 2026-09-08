@@ -2,3 +2,4 @@
 *.7z
 __pycache__/
 *.pyc
+tools/install_local_1_5_7.ps1

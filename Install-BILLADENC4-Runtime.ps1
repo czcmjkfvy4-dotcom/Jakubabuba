@@ -32,7 +32,7 @@ $candidates = @(
 $target = $candidates | Where-Object { Test-VcmiFolder $_ } | Select-Object -First 1
 if (-not $target) {
     $dialog = New-Object System.Windows.Forms.FolderBrowserDialog
-    $dialog.Description = "Choose your VCMI 1.7.4 program folder. It should contain VCMI_client.exe or VCMI_launcher.exe."
+    $dialog.Description = "Choose your VCMI 1.7.5 program folder. It should contain VCMI_client.exe or VCMI_launcher.exe."
     $dialog.ShowNewFolderButton = $false
 
     if ($dialog.ShowDialog() -ne [System.Windows.Forms.DialogResult]::OK) {

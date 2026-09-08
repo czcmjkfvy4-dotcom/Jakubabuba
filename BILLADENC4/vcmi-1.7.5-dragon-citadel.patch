@@ -1,0 +1,1135 @@
+diff --git a/client/CMakeLists.txt b/client/CMakeLists.txt
+index 232538efd..82a09c6cf 100644
+--- a/client/CMakeLists.txt
++++ b/client/CMakeLists.txt
+@@ -585,3 +585,7 @@ endif()
+ 
+ vcmi_set_output_dir(vcmiclientcommon "")
+ enable_pch(vcmiclientcommon)
++
++add_executable(dragon_visual_regression EXCLUDE_FROM_ALL ../test/game/DragonVisualRegression.cpp)
++target_link_libraries(dragon_visual_regression PRIVATE vcmiclientcommon vcmi)
++vcmi_set_output_dir(dragon_visual_regression "")
+diff --git a/client/CPlayerInterface.cpp b/client/CPlayerInterface.cpp
+index 81f2505e1..21297b2c6 100644
+--- a/client/CPlayerInterface.cpp
++++ b/client/CPlayerInterface.cpp
+@@ -84,6 +84,7 @@
+ #include "../lib/VCMIDirs.h"
+ 
+ #include "../lib/battle/CPlayerBattleCallback.h"
++#include "../lib/battle/IBattleState.h"
+ 
+ #include "../lib/bonuses/Limiters.h"
+ #include "../lib/bonuses/Propagators.h"
+@@ -95,12 +96,15 @@
+ 
+ #include "../lib/mapObjects/CGMarket.h"
+ #include "../lib/mapObjects/CGTownInstance.h"
++#include "../lib/mapObjects/army/CArmedInstance.h"
+ #include "../lib/mapObjects/MiscObjects.h"
+ #include "../lib/mapObjects/ObjectTemplate.h"
+ 
+ #include "../lib/mapping/CMap.h"
+ #include "../lib/mapping/CMapHeader.h"
+ 
++#include "../lib/modding/CModHandler.h"
++
+ #include "../lib/networkPacks/PacksForClient.h"
+ #include "../lib/networkPacks/PacksForClientBattle.h"
+ #include "../lib/networkPacks/PacksForServer.h"
+@@ -126,6 +130,25 @@
+ 
+ #define BATTLE_EVENT_POSSIBLE_RETURN	if (GAME->interface() != this) return; if (isAutoFightOn && !battleInt) return
+ 
++namespace
++{
++bool isIndependentStructure(const CArmedInstance * army)
++{
++	if(!army)
++		return false;
++
++	// Heroes, towns and wandering monsters have their own battle notifications.
++	// Other armed map objects are independent structures such as mines,
++	// garrisons, dwellings and guarded reward locations.
++	return army->ID != Obj::HERO && army->ID != Obj::TOWN && army->ID != Obj::MONSTER;
++}
++
++bool isDragonCitadelAutosaveActive()
++{
++	return vstd::contains(LIBRARY->modh->getActiveMods(), std::string("dragon-citadel"));
++}
++}
++
+ std::shared_ptr<BattleInterface> CPlayerInterface::battleInt;
+ 
+ CPlayerInterface::CPlayerInterface(PlayerColor Player):
+@@ -249,6 +272,12 @@ void CPlayerInterface::playerStartsTurn(PlayerColor player)
+ 
+ void CPlayerInterface::performAutosave()
+ {
++	if(isDragonCitadelAutosaveActive())
++	{
++		cb->save("Saves/Autosave/DragonCitadel-Autosave", false);
++		return;
++	}
++
+ 	int frequency = static_cast<int>(settings["general"]["saveFrequency"].Integer());
+ 	if(frequency > 0 && cb->getDate() % frequency == 0)
+ 	{
+@@ -672,6 +701,30 @@ void CPlayerInterface::battleStartBefore(const BattleID & battleID, const CCreat
+ 	movementController->onBattleStarted();
+ 
+ 	waitForAllDialogs();
++
++	const auto battleCallback = cb->getBattle(battleID);
++	const auto * battle = battleCallback ? battleCallback->getBattle() : nullptr;
++	const auto * defendedObject = battle ? battle->getSideArmy(BattleSide::RIGHT_SIDE) : nullptr;
++	const bool isOurStructure = battle
++		&& battle->getSidePlayer(BattleSide::RIGHT_SIDE) == playerID
++		&& playerID != PlayerColor::SPECTATOR
++		&& playerID != PlayerColor::UNFLAGGABLE;
++
++	if(isOurStructure && isIndependentStructure(defendedObject))
++	{
++		if(GAME->server().howManyPlayerInterfaces() > 1 && GAME->interface() != this && !GAME->interface()->makingTurn)
++		{
++			GAME->setInterfaceInstance(this);
++			adventureInt->onCurrentPlayerChanged(playerID);
++		}
++
++		std::string message = LIBRARY->generaltexth->translate("dragon-citadel.adventureMap.independentStructureAttacked");
++		boost::replace_first(message, "%s", defendedObject->getObjectName());
++		makingTurn = true; // Keep the warning visible before the battle window opens.
++		showInfoDialog(message);
++		waitWhileDialog();
++		makingTurn = false;
++	}
+ }
+ 
+ void CPlayerInterface::battleStart(const BattleID & battleID, const CCreatureSet *army1, const CCreatureSet *army2, int3 tile, const CGHeroInstance *hero1, const CGHeroInstance *hero2, BattleSide side, bool replayAllowed)
+diff --git a/client/renderSDL/RenderHandler.cpp b/client/renderSDL/RenderHandler.cpp
+index 72c9d5851..ef4395377 100644
+--- a/client/renderSDL/RenderHandler.cpp
++++ b/client/renderSDL/RenderHandler.cpp
+@@ -404,6 +404,8 @@ std::shared_ptr<SDLImageShared> RenderHandler::loadScaledImage(const ImageLocato
+ 			img = img->drawShadow((*locator.generateShadow) == SharedImageLocator::ShadowMode::SHADOW_SHEAR);
+ 		if(isOverlay && generateOverlay && (*locator.generateOverlay) == SharedImageLocator::OverlayMode::OVERLAY_OUTLINE)
+ 			img = img->drawOutline(Colors::WHITE, 1);
++		if(locator.layer == EImageBlitMode::GRAYSCALE_BODY_HIDE_SELECTION && !img->getPalette())
++			img = img->grayscale();
+ 
+ 		if(locator.scalingFactor == 1)
+ 			img->setAsyncUpscale(false); // no base image, needs to be done in sync
+diff --git a/client/renderSDL/SDLImage.cpp b/client/renderSDL/SDLImage.cpp
+index c7c04b78e..8b809a479 100644
+--- a/client/renderSDL/SDLImage.cpp
++++ b/client/renderSDL/SDLImage.cpp
+@@ -226,6 +226,25 @@ void SDLImageShared::optimizeSurface()
+ 	fullSize = optimizer.getResultDimensions().dimensions();
+ }
+ 
++std::shared_ptr<SDLImageShared> SDLImageShared::grayscale() const
++{
++	if(upscalingInProgress)
++		throw std::runtime_error("Cannot convert an image that is still loading");
++	if(!surf)
++		return std::make_shared<SDLImageShared>(nullptr);
++
++	auto * converted = SDL_ConvertSurfaceFormat(surf, SDL_PIXELFORMAT_ARGB8888, 0);
++	if(!converted)
++		throw std::runtime_error(SDL_GetError());
++	CSDL_Ext::convertToGrayscale(converted, Rect(0, 0, converted->w, converted->h));
++	auto result = std::make_shared<SDLImageShared>(converted);
++	result->margins = margins;
++	result->fullSize = fullSize;
++	result->asyncUpscale = asyncUpscale;
++	SDL_FreeSurface(converted);
++	return result;
++}
++
+ std::shared_ptr<const ISharedImage> SDLImageShared::scaleInteger(int factor, SDL_Palette * palette, EImageBlitMode mode) const
+ {
+ 	if(upscalingInProgress)
+diff --git a/client/renderSDL/SDLImage.h b/client/renderSDL/SDLImage.h
+index 77b5b2b29..fb3507094 100644
+--- a/client/renderSDL/SDLImage.h
++++ b/client/renderSDL/SDLImage.h
+@@ -75,6 +75,7 @@ public:
+ 	[[nodiscard]] std::shared_ptr<const ISharedImage> scaleTo(const Point & size, SDL_Palette * palette) const override;
+ 
+ 	std::shared_ptr<SDLImageShared> drawShadow(bool doSheer) const;
++	std::shared_ptr<SDLImageShared> grayscale() const;
+ 	std::shared_ptr<SDLImageShared> drawOutline(const ColorRGBA & color, int thickness) const;
+ 
+ 	void setMargins(const Point & newMargins);
+diff --git a/client/renderSDL/ScalableImage.cpp b/client/renderSDL/ScalableImage.cpp
+index 8eb3b03e0..58e1391e8 100644
+--- a/client/renderSDL/ScalableImage.cpp
++++ b/client/renderSDL/ScalableImage.cpp
+@@ -283,7 +283,10 @@ void ScalableImageShared::draw(SDL_Surface * where, const Point & dest, const Re
+ 		getFlippedImage(scaled[1].body)->scaledDraw(where, parameters.palette, dimensions() * scalingFactor, dest, src, parameters.colorMultiplier, parameters.alphaValue, locator.layer);
+ 
+ 		if (parameters.effectColorMultiplier.a != ColorRGBA::ALPHA_TRANSPARENT)
+-			getFlippedImage(scaled[1].body)->scaledDraw(where, parameters.palette, dimensions() * scalingFactor, dest, src, parameters.effectColorMultiplier, parameters.alphaValue, locator.layer);
++		{
++			auto & effectBody = scaled[1].bodyGrayscale[0] ? scaled[1].bodyGrayscale : scaled[1].body;
++			getFlippedImage(effectBody)->scaledDraw(where, parameters.palette, dimensions() * scalingFactor, dest, src, parameters.effectColorMultiplier, parameters.alphaValue, locator.layer);
++		}
+ 		return;
+ 	}
+ 
+@@ -601,6 +604,8 @@ void ScalableImageShared::preparePlayerColoredImage(PlayerColor color)
+ void ScalableImageShared::prepareEffectImage()
+ {
+ 	int scalingFactor = ENGINE->screenHandler().getScalingFactor();
++	if(locator.layer == EImageBlitMode::WITH_SHADOW_AND_SELECTION && !getPalette() && !scaled[1].bodyGrayscale[0])
++		scaled[1].bodyGrayscale[0] = loadOrGenerateImage(EImageBlitMode::GRAYSCALE_BODY_HIDE_SELECTION, 1, PlayerColor::CANNOT_DETERMINE, nullptr);
+ 
+ 	if (scaled[scalingFactor].bodyGrayscale[0] == nullptr)
+ 	{
+diff --git a/client/widgets/MiscWidgets.cpp b/client/widgets/MiscWidgets.cpp
+index eff27c8b7..1da12d96e 100644
+--- a/client/widgets/MiscWidgets.cpp
++++ b/client/widgets/MiscWidgets.cpp
+@@ -694,7 +694,15 @@ CCreaturePic::CCreaturePic(int x, int y, const CCreature * cre, bool Big, bool A
+ 		bg = std::make_shared<CPicture>((*LIBRARY->townh)[faction]->creatureBg130);
+ 	else
+ 		bg = std::make_shared<CPicture>((*LIBRARY->townh)[faction]->creatureBg120);
+-	anim = std::make_shared<CCreatureAnim>(0, 0, cre->animDefName);
++
++	auto previewAnimation = cre->animDefName;
++	const auto creatureKey = cre->getJsonKey();
++	if(creatureKey == "dragon-citadel:dcUltimateDragon")
++		previewAnimation = AnimationPath::builtin("dragon-citadel/creatures/dcUltimateDragon/recruitment-preview");
++	else if(creatureKey == "dragon-citadel:dcAbsoluteDragon")
++		previewAnimation = AnimationPath::builtin("dragon-citadel/creatures/dcAbsoluteDragon/recruitment-preview");
++
++	anim = std::make_shared<CCreatureAnim>(0, 0, previewAnimation);
+ 	anim->clipRect(cre->isDoubleWide()?170:150, 155, bg->pos.w, bg->pos.h);
+ 	anim->startPreview(cre->hasBonusOfType(BonusType::SIEGE_WEAPON));
+ 
+diff --git a/lib/mapObjects/CGCreature.cpp b/lib/mapObjects/CGCreature.cpp
+index cd3ace5f8..251e62e7c 100644
+--- a/lib/mapObjects/CGCreature.cpp
++++ b/lib/mapObjects/CGCreature.cpp
+@@ -21,6 +21,7 @@
+ #include "../callback/IGameRandomizer.h"
+ #include "../gameState/CGameState.h"
+ #include "../mapObjectConstructors/CObjectClassesHandler.h"
++#include "../modding/CModHandler.h"
+ #include "../networkPacks/PacksForClient.h"
+ #include "../networkPacks/PacksForClientBattle.h"
+ #include "../networkPacks/StackLocation.h"
+@@ -32,6 +33,26 @@
+ 
+ VCMI_LIB_NAMESPACE_BEGIN
+ 
++namespace
++{
++bool isBilladenUltimateDragon(const CCreature * creature)
++{
++	if(!creature)
++		return false;
++
++	const auto key = creature->getJsonKey();
++	return key == "dragon-citadel:dcUltimateDragon"
++		|| key == "dragon-citadel:dcAbsoluteDragon";
++}
++
++bool isBilladenEndgameRulesActive()
++{
++	return vstd::contains(
++		LIBRARY->modh->getActiveMods(),
++		std::string("dragon-citadel.endgame-rules"));
++}
++}
++
+ std::string CGCreature::getHoverText(PlayerColor player) const
+ {
+ 	if(stacks.empty())
+@@ -310,7 +331,7 @@ void CGCreature::initObj(IGameRandomizer & gameRandomizer)
+ 
+ void CGCreature::newTurn(IGameEventCallback & gameEvents, IGameRandomizer & gameRandomizer) const
+ {//Works only for stacks of single type of size up to 2 millions
+-	if (!notGrowingTeam)
++	if (!notGrowingTeam && !(isBilladenEndgameRulesActive() && isBilladenUltimateDragon(getCreature())))
+ 	{
+ 		if (stacks.begin()->second->getCount() < cb->getSettings().getInteger(EGameSettings::CREATURES_WEEKLY_GROWTH_CAP) && cb->getDate(Date::DAY_OF_WEEK) == 1 && cb->getDate(Date::DAY) > 1)
+ 		{
+@@ -382,11 +403,15 @@ int CGCreature::takenAction(const CGHeroInstance *h, bool allowJoin) const
+ 
+ 	int diplomacy = h->valOfBonuses(BonusType::WANDERING_CREATURES_JOIN_BONUS);
+ 	int charisma = powerFactor + diplomacy + sympathy;
++	const bool billadenJoinRollPassed =
++		!isBilladenEndgameRulesActive()
++		|| !isBilladenUltimateDragon(getCreature())
++		|| hashByPosition() % 100 < 10;
+ 
+ 	if(charisma < agression)
+ 		return FIGHT;
+ 
+-	if (allowJoin && cb->getSettings().getInteger(EGameSettings::CREATURES_JOINING_PERCENTAGE) > 0)
++	if (allowJoin && billadenJoinRollPassed && cb->getSettings().getInteger(EGameSettings::CREATURES_JOINING_PERCENTAGE) > 0)
+ 	{
+ 		if((cb->getSettings().getBoolean(EGameSettings::CREATURES_ALLOW_JOINING_FOR_FREE) || initialCharacter == Character::COMPLIANT) && diplomacy + sympathy + 1 >= agression && !joinOnlyForMoney)
+ 			return JOIN_FOR_FREE;
+diff --git a/lib/mapObjects/CGDwelling.cpp b/lib/mapObjects/CGDwelling.cpp
+index 09eafee8b..af79cf444 100644
+--- a/lib/mapObjects/CGDwelling.cpp
++++ b/lib/mapObjects/CGDwelling.cpp
+@@ -19,6 +19,7 @@
+ #include "../mapObjectConstructors/AObjectTypeHandler.h"
+ #include "../mapObjectConstructors/CObjectClassesHandler.h"
+ #include "../mapObjectConstructors/DwellingInstanceConstructor.h"
++#include "../modding/CModHandler.h"
+ #include "../mapObjects/CGHeroInstance.h"
+ #include "../mapObjects/CGTownInstance.h"
+ #include "../networkPacks/StackLocation.h"
+@@ -34,6 +35,26 @@
+ 
+ VCMI_LIB_NAMESPACE_BEGIN
+ 
++namespace
++{
++bool isBilladenUltimateDragon(const CCreature * creature)
++{
++	if(!creature)
++		return false;
++
++	const auto key = creature->getJsonKey();
++	return key == "dragon-citadel:dcUltimateDragon"
++		|| key == "dragon-citadel:dcAbsoluteDragon";
++}
++
++bool isBilladenEndgameRulesActive()
++{
++	return vstd::contains(
++		LIBRARY->modh->getActiveMods(),
++		std::string("dragon-citadel.endgame-rules"));
++}
++}
++
+ void CGDwellingRandomizationInfo::serializeJson(JsonSerializeFormat & handler)
+ {
+ 	handler.serializeString("sameAsTown", instanceId);
+@@ -342,6 +363,16 @@ void CGDwelling::newTurn(IGameEventCallback & gameEvents, IGameRandomizer & game
+ 				creaturesAccumulate = cb->getSettings().getBoolean(EGameSettings::DWELLINGS_ACCUMULATE_WHEN_NEUTRAL);
+ 
+ 			const CCreature * cre =creatures[i].second[0].toCreature();
++			if(isBilladenEndgameRulesActive() && isBilladenUltimateDragon(cre))
++			{
++				const bool startsNewMonth = cb->getDate(Date::DAY) > 1
++					&& cb->getDate(Date::DAY_OF_MONTH) == 1;
++				if(startsNewMonth)
++					sac.creatures[i].first += 1;
++				change = true;
++				continue;
++			}
++
+ 			TQuantity amount = cre->getGrowth() * (1 + cre->valOfBonuses(BonusType::CREATURE_GROWTH_PERCENT)/100) + cre->valOfBonuses(BonusType::CREATURE_GROWTH, BonusCustomSubtype::creatureLevel(cre->getLevel()));
+ 			if (creaturesAccumulate && ID != Obj::REFUGEE_CAMP) //camp should not try to accumulate different kinds of creatures
+ 				sac.creatures[i].first += amount;
+@@ -393,6 +424,37 @@ std::vector<Component> CGDwelling::getPopupComponents(PlayerColor player) const
+ 
+ void CGDwelling::updateGuards(IGameEventCallback & gameEvents) const
+ {
++	if(!creatures.empty() && !creatures.front().second.empty())
++	{
++		const CCreature * creature = creatures.front().second.front().toCreature();
++		if(isBilladenEndgameRulesActive() && isBilladenUltimateDragon(creature))
++		{
++			if(tempOwner.isValidPlayer())
++				return;
++
++			SlotID slot = getSlotFor(creature->getId());
++			if(hasStackAtSlot(slot))
++			{
++				ChangeStackCount csc;
++				csc.army = id;
++				csc.slot = slot;
++				csc.count = 1;
++				csc.mode = ChangeValueMode::ABSOLUTE;
++				gameEvents.sendAndApply(csc);
++			}
++			else
++			{
++				InsertNewStack ns;
++				ns.army = id;
++				ns.slot = slot;
++				ns.type = creature->getId();
++				ns.count = 1;
++				gameEvents.sendAndApply(ns);
++			}
++			return;
++		}
++	}
++
+ 	//TODO: store custom guard config and use it
+ 	//TODO: store boolean flag for guards
+ 
+diff --git a/lib/mapObjects/CGTownInstance.cpp b/lib/mapObjects/CGTownInstance.cpp
+index 1496aafdf..c99298358 100644
+--- a/lib/mapObjects/CGTownInstance.cpp
++++ b/lib/mapObjects/CGTownInstance.cpp
+@@ -36,6 +36,7 @@
+ #include "../mapObjectConstructors/AObjectTypeHandler.h"
+ #include "../mapObjectConstructors/CObjectClassesHandler.h"
+ #include "../mapObjects/CGHeroInstance.h"
++#include "../modding/CModHandler.h"
+ #include "../modding/ModScope.h"
+ #include "../networkPacks/StackLocation.h"
+ #include "../networkPacks/PacksForClient.h"
+@@ -46,6 +47,26 @@
+ 
+ VCMI_LIB_NAMESPACE_BEGIN
+ 
++namespace
++{
++bool isBilladenUltimateDragon(const Creature * creature)
++{
++	if(!creature)
++		return false;
++
++	const auto key = creature->getJsonKey();
++	return key == "dragon-citadel:dcUltimateDragon"
++		|| key == "dragon-citadel:dcAbsoluteDragon";
++}
++
++bool isBilladenEndgameRulesActive()
++{
++	return vstd::contains(
++		LIBRARY->modh->getActiveMods(),
++		std::string("dragon-citadel.endgame-rules"));
++}
++}
++
+ int CGTownInstance::getSightRadius() const
+ {
+ 	int baseValue = LIBRARY->engineSettings()->getInteger(EGameSettings::TOWNS_BASE_SCOUNTING_RANGE);
+@@ -144,6 +165,13 @@ GrowthInfo CGTownInstance::getGrowthInfo(int level) const
+ 	else
+ 		ret.handicapPercentage = 100;
+ 
++	if(isBilladenEndgameRulesActive() && isBilladenUltimateDragon(creature))
++	{
++		ret.handicapPercentage = 100;
++		ret.entries.emplace_back(1, "Dragon Citadel monthly growth +1");
++		return ret;
++	}
++
+ 	ret.entries.emplace_back(LIBRARY->generaltexth->allTexts[590], base); // \n\nBasic growth %d"
+ 
+ 	if (hasBuilt(BuildingID::CASTLE))
+diff --git a/server/CGameHandler.cpp b/server/CGameHandler.cpp
+index ca0afc755..23d260a04 100644
+--- a/server/CGameHandler.cpp
++++ b/server/CGameHandler.cpp
+@@ -2217,6 +2217,11 @@ bool CGameHandler::buildStructure(ObjectInstanceID tid, BuildingID requestedID,
+ 		}
+ 		else
+ 		{
++			// Campaign restrictions must also gate the Grail's hidden final-dragon dwellings.
++			if(t->getFaction()->getJsonKey() == "dragon-citadel:dragonCitadel"
++				&& build.first.isDwelling() && BuildingID::getLevelIndexFromDwelling(build.first) == 7
++				&& t->forbiddenBuildings.count(build.first))
++				continue;
+ 			if(build.second->mode == CBuilding::BUILD_AUTO) //not built auto building
+ 				remainingAutoBuildings.push_back(build.second.get());
+ 		}
+diff --git a/server/CMakeLists.txt b/server/CMakeLists.txt
+index 5df5dea5b..9e6ad7690 100644
+--- a/server/CMakeLists.txt
++++ b/server/CMakeLists.txt
+@@ -84,3 +84,11 @@ endif()
+ 
+ vcmi_set_output_dir(vcmiservercommon "")
+ enable_pch(vcmiservercommon)
++
++add_executable(dragon_growth_regression EXCLUDE_FROM_ALL ../test/game/DragonGrowthRegression.cpp)
++target_link_libraries(dragon_growth_regression PRIVATE vcmiservercommon vcmi minizip::minizip)
++vcmi_set_output_dir(dragon_growth_regression "")
++
++add_executable(dragon_campaign_regression EXCLUDE_FROM_ALL ../test/game/DragonCampaignRegression.cpp)
++target_link_libraries(dragon_campaign_regression PRIVATE vcmiservercommon vcmi minizip::minizip)
++vcmi_set_output_dir(dragon_campaign_regression "")
+diff --git a/server/battles/BattleFlowProcessor.cpp b/server/battles/BattleFlowProcessor.cpp
+index 826a129da..9c9bad3a1 100644
+--- a/server/battles/BattleFlowProcessor.cpp
++++ b/server/battles/BattleFlowProcessor.cpp
+@@ -23,6 +23,7 @@
+ #include "../../lib/entities/building/TownFortifications.h"
+ #include "../../lib/mapObjects/CGTownInstance.h"
+ #include "../../lib/networkPacks/PacksForClientBattle.h"
++#include "../../lib/networkPacks/SetStackEffect.h"
+ #include "../../lib/spells/BonusCaster.h"
+ #include "../../lib/spells/CSpellHandler.h"
+ #include "../../lib/spells/ISpellMechanics.h"
+@@ -255,6 +256,34 @@ void BattleFlowProcessor::startNextRound(const CBattleInfoCallback & battle, boo
+ 	logGlobal->debug("Next round starts");
+ 	gameHandler->sendAndApply(bnr);
+ 
++	if(!isFirstRound)
++	{
++		SetStackEffect rubyGolemGrowth;
++		rubyGolemGrowth.battleID = battle.getBattle()->getBattleID();
++
++		for(const auto * stack : battle.battleGetAllStacks(true))
++		{
++			if(!stack->alive() || stack->unitType()->getJsonKey() != "dragon-citadel:dcRubyGolem")
++				continue;
++
++			std::vector<Bonus> roundBonuses;
++			roundBonuses.emplace_back(BonusDuration::ONE_BATTLE, BonusType::PRIMARY_SKILL, BonusSource::OTHER, 2, BonusSourceID(), BonusSubtypeID(PrimarySkill::ATTACK));
++			roundBonuses.emplace_back(BonusDuration::ONE_BATTLE, BonusType::PRIMARY_SKILL, BonusSource::OTHER, 1, BonusSourceID(), BonusSubtypeID(PrimarySkill::DEFENSE));
++			roundBonuses.emplace_back(BonusDuration::ONE_BATTLE, BonusType::STACK_HEALTH, BonusSource::OTHER, 10, BonusSourceID());
++
++			for(auto & bonus : roundBonuses)
++			{
++				bonus.description.appendRawString("Ruby Golem: round growth");
++				bonus.stacking = "ALWAYS";
++			}
++
++			rubyGolemGrowth.toAdd.emplace_back(stack->unitId(), std::move(roundBonuses));
++		}
++
++		if(!rubyGolemGrowth.toAdd.empty())
++			gameHandler->sendAndApply(rubyGolemGrowth);
++	}
++
+ 	// operate on copy - removing obstacles will invalidate iterator on 'battle' container
+ 	auto obstacles = battle.battleGetAllObstacles();
+ 	for (const auto & obstPtr : obstacles)
+diff --git a/server/processors/NewTurnProcessor.cpp b/server/processors/NewTurnProcessor.cpp
+index 9f756bcb1..76909544a 100644
+--- a/server/processors/NewTurnProcessor.cpp
++++ b/server/processors/NewTurnProcessor.cpp
+@@ -30,6 +30,7 @@
+ #include "../../lib/mapObjects/IOwnableObject.h"
+ #include "../../lib/mapping/CMap.h"
+ #include "../../lib/mapping/CCastleEvent.h"
++#include "../../lib/modding/CModHandler.h"
+ #include "../../lib/networkPacks/PacksForClient.h"
+ #include "../../lib/networkPacks/StackLocation.h"
+ #include "../../lib/pathfinder/TurnInfo.h"
+@@ -37,6 +38,26 @@
+ 
+ #include <vstd/RNG.h>
+ 
++namespace
++{
++bool isBilladenUltimateDragon(const CCreature * creature)
++{
++	if(!creature)
++		return false;
++
++	const auto key = creature->getJsonKey();
++	return key == "dragon-citadel:dcUltimateDragon"
++		|| key == "dragon-citadel:dcAbsoluteDragon";
++}
++
++bool isBilladenEndgameRulesActive()
++{
++	return vstd::contains(
++		LIBRARY->modh->getActiveMods(),
++		std::string("dragon-citadel.endgame-rules"));
++}
++}
++
+ NewTurnProcessor::NewTurnProcessor(CGameHandler * gameHandler)
+ 	:gameHandler(gameHandler)
+ {
+@@ -281,7 +302,7 @@ ResourceSet NewTurnProcessor::generatePlayerIncome(PlayerColor playerID, bool ne
+ 	return incomeHandicapped;
+ }
+ 
+-SetAvailableCreatures NewTurnProcessor::generateTownGrowth(const CGTownInstance * t, EWeekType weekType, CreatureID creatureWeek, bool firstDay, int additionalGrowth)
++SetAvailableCreatures NewTurnProcessor::generateTownGrowth(const CGTownInstance * t, EWeekType weekType, CreatureID creatureWeek, bool firstDay, bool newMonth, int additionalGrowth)
+ {
+ 	SetAvailableCreatures sac;
+ 	PlayerColor player = t->tempOwner;
+@@ -297,7 +318,21 @@ SetAvailableCreatures NewTurnProcessor::generateTownGrowth(const CGTownInstance
+ 		uint32_t creaturesBefore = t->creatures.at(k).first;
+ 		uint32_t creatureGrowth = 0;
+ 		const CCreature *cre = t->creatures.at(k).second.back().toCreature();
++		const bool billadenMonthlyGrowth =
++			isBilladenEndgameRulesActive() && isBilladenUltimateDragon(cre);
+ 
++		if (billadenMonthlyGrowth)
++		{
++			// The new-turn packet is calculated before the game date advances.
++			// Plague affects the old pool, but never removes the monthly recruit.
++			const auto existing = weekType == EWeekType::PLAGUE ? creaturesBefore / 2 : creaturesBefore;
++			creatureGrowth = newMonth && !firstDay ? 1 : 0;
++			sac.creatures.at(k).first = existing + creatureGrowth;
++			if(creatureGrowth)
++				logGlobal->info("Dragon Citadel monthly recruitment: day %d, town %s, pool %d -> %d (+1)",
++					gameHandler->gameState().day + 1, t->getNameTranslated(), creaturesBefore, sac.creatures.at(k).first);
++			continue;
++		}
+ 		if (firstDay)
+ 		{
+ 			creatureGrowth = cre->getGrowth();
+@@ -711,7 +746,7 @@ NewTurn NewTurnProcessor::generateNewTurnPack()
+ 		for (const auto & townID : gameHandler->gameState().getMap().getAllTowns())
+ 		{
+ 			const auto * t = gameHandler->gameState().getTown(townID);
+-			n.availableCreatures.push_back(generateTownGrowth(t, n.specialWeek, n.creatureid, firstTurn, additionalGrowth));
++			n.availableCreatures.push_back(generateTownGrowth(t, n.specialWeek, n.creatureid, firstTurn, newMonth, additionalGrowth));
+ 		}
+ 
+ 		n.newRumor = pickNewRumor();
+diff --git a/server/processors/NewTurnProcessor.h b/server/processors/NewTurnProcessor.h
+index 0648e87ec..3c8a14aec 100644
+--- a/server/processors/NewTurnProcessor.h
++++ b/server/processors/NewTurnProcessor.h
+@@ -27,13 +27,14 @@ class CGameHandler;
+ 
+ class NewTurnProcessor : boost::noncopyable
+ {
++	friend class DragonGrowthRegression;
+ 	CGameHandler * gameHandler;
+ 
+ 	std::vector<SetMana> updateHeroesManaPoints();
+ 	std::vector<SetMovePoints> updateHeroesMovementPoints();
+ 
+ 	ResourceSet generatePlayerIncome(PlayerColor playerID, bool newWeek);
+-	SetAvailableCreatures generateTownGrowth(const CGTownInstance * town, EWeekType weekType, CreatureID creatureWeek, bool firstDay, int additionalGrowth);
++	SetAvailableCreatures generateTownGrowth(const CGTownInstance * town, EWeekType weekType, CreatureID creatureWeek, bool firstDay, bool newMonth, int additionalGrowth);
+ 	RumorState pickNewRumor();
+ 	InfoWindow createInfoWindow(EWeekType weekType, CreatureID creatureWeek, bool newMonth, int additionalGrowth);
+ 	std::tuple<EWeekType, CreatureID, int> pickWeekType(bool newMonth);
+diff --git a/server/processors/PlayerMessageProcessor.cpp b/server/processors/PlayerMessageProcessor.cpp
+index 903eb7cf9..a037fef76 100644
+--- a/server/processors/PlayerMessageProcessor.cpp
++++ b/server/processors/PlayerMessageProcessor.cpp
+@@ -610,6 +610,32 @@ void PlayerMessageProcessor::cheatResources(PlayerColor player, std::vector<std:
+ 	gameHandler->giveResources(player, resources);
+ }
+ 
++void PlayerMessageProcessor::cheatBilladenResources(PlayerColor player)
++{
++	const auto * playerState = gameHandler->gameState().getPlayerState(player);
++	if(!playerState)
++		return;
++
++	TResources resources;
++	for(const auto & resource : LIBRARY->resourceTypeHandler->getAllObjects())
++	{
++		const int64_t currentAmount = playerState->resources[resource];
++		const int64_t targetAmount = std::min(
++			GameConstants::PLAYER_RESOURCES_CAP,
++			currentAmount * 10);
++		const int64_t increase = std::max<int64_t>(0, targetAmount - currentAmount);
++		resources[resource] = static_cast<TResource>(increase);
++	}
++
++	gameHandler->giveResources(player, resources);
++
++	InfoWindow message;
++	message.player = player;
++	message.type = EInfoWindowMode::AUTO;
++	message.text.appendRawString("BILLADENC4");
++	gameHandler->showInfoDialog(&message);
++}
++
+ void PlayerMessageProcessor::cheatVictory(PlayerColor player)
+ {
+ 	PlayerCheated pc;
+@@ -885,6 +911,7 @@ void PlayerMessageProcessor::executeCheatCode(const std::string & cheatName, Pla
+ 	const auto & doCheatExperience = [&]() { cheatExperience(player, hero, words); };
+ 	const auto & doCheatMovement = [&]() { cheatMovement(player, hero, words); };
+ 	const auto & doCheatResources = [&]() { cheatResources(player, words); };
++	const auto & doCheatBilladenResources = [&]() { cheatBilladenResources(player); };
+ 	const auto & doCheatVictory = [&]() { cheatVictory(player); };
+ 	const auto & doCheatDefeat = [&]() { cheatDefeat(player); };
+ 	const auto & doCheatMapReveal = [&]() { cheatMapReveal(player, true); };
+@@ -938,6 +965,7 @@ void PlayerMessageProcessor::executeCheatCode(const std::string & cheatName, Pla
+ 		{"experience",         doCheatExperience                                           },
+ 		{"movement",           doCheatMovement                                             },
+ 		{"resources",          doCheatResources                                            },
++		{"billadenResources",  doCheatBilladenResources                                    },
+ 		{"defeat",             doCheatDefeat                                               },
+ 		{"victory",            doCheatVictory                                              },
+ 		{"mapReveal",          doCheatMapReveal                                            },
+diff --git a/server/processors/PlayerMessageProcessor.h b/server/processors/PlayerMessageProcessor.h
+index 67dd6b8ef..bce942b1a 100644
+--- a/server/processors/PlayerMessageProcessor.h
++++ b/server/processors/PlayerMessageProcessor.h
+@@ -54,6 +54,7 @@ class PlayerMessageProcessor
+ 	void cheatExperience(PlayerColor player, const CGHeroInstance * hero, std::vector<std::string> words);
+ 	void cheatMovement(PlayerColor player, const CGHeroInstance * hero, std::vector<std::string> words);
+ 	void cheatResources(PlayerColor player, std::vector<std::string> words);
++	void cheatBilladenResources(PlayerColor player);
+ 	void cheatVictory(PlayerColor player);
+ 	void cheatDefeat(PlayerColor player);
+ 	void cheatMapReveal(PlayerColor player, bool reveal);
+diff --git a/test/game/DragonGrowthRegression.cpp b/test/game/DragonGrowthRegression.cpp
+new file mode 100644
+index 000000000..feb8451d8
+--- /dev/null
++++ b/test/game/DragonGrowthRegression.cpp
+@@ -0,0 +1,150 @@
++#include "../../server/StdInc.h"
++#include "../../server/CGameHandler.h"
++#include "../../server/IGameServer.h"
++#include "../../server/processors/NewTurnProcessor.h"
++#include "../../lib/GameLibrary.h"
++#include "../../lib/StartInfo.h"
++#include "../../lib/CPlayerState.h"
++#include "../../lib/gameState/CGameState.h"
++#include "../../lib/mapping/CMap.h"
++#include "../../lib/mapping/CMapService.h"
++#include "../../lib/mapObjects/CGTownInstance.h"
++#include "../../lib/networkPacks/PacksForClient.h"
++#include "../../lib/filesystem/ResourcePath.h"
++#include "../../lib/modding/CModHandler.h"
++
++class RegressionServer : public IGameServer
++{
++public:
++	CGameHandler * handler = nullptr;
++	void setState(EServerState) override {}
++	EServerState getState() const override { return EServerState::GAMEPLAY; }
++	bool isPlayerHost(const PlayerColor &) const override { return true; }
++	bool hasPlayerAt(PlayerColor, GameConnectionID) const override { return true; }
++	bool hasBothPlayersAtSameConnection(PlayerColor, PlayerColor) const override { return true; }
++	void applyPack(CPackForClient & pack) override { handler->gs->apply(pack); }
++	void sendPack(CPackForClient &, GameConnectionID) override {}
++};
++
++class DragonGrowthRegression
++{
++	static void require(bool condition, const std::string & message)
++	{
++		if(!condition)
++			throw std::runtime_error(message);
++	}
++
++public:
++	static void run(const std::string & mapName)
++	{
++		require(vstd::contains(LIBRARY->modh->getActiveMods(), std::string("dragon-citadel.endgame-rules")), "Endgame rules must be active");
++		CMapService maps;
++		auto header = maps.loadMapHeader(ResourcePath(mapName));
++		StartInfo start;
++		start.mapname = mapName;
++		start.mode = EStartMode::NEW_GAME;
++		start.difficulty = 0;
++		for(int i = 0; i < header->players.size(); ++i)
++		{
++			const auto & info = header->players[i];
++			if(!info.canHumanPlay && !info.canComputerPlay)
++				continue;
++			auto & player = start.playerInfos[PlayerColor(i)];
++			player.color = PlayerColor(i);
++			player.name = "Regression";
++			player.connectedPlayerIDs.insert(static_cast<PlayerConnectionID>(i));
++			player.castle = info.defaultCastle();
++			player.hero = info.defaultHero();
++		}
++		RegressionServer server;
++		CGameHandler handler(server);
++		server.handler = &handler;
++		Load::ProgressAccumulator progress;
++		handler.init(&start, progress);
++		CGTownInstance * town = nullptr;
++		for(const auto id : handler.gs->getMap().getAllTowns())
++		{
++			auto * candidate = handler.gs->getTown(id);
++			if(candidate->getFaction()->getJsonKey() == "dragon-citadel:dragonCitadel")
++				town = candidate;
++		}
++		require(town != nullptr, "Test map must contain a Dragon Citadel town");
++		const auto base = town->getTown()->creatures.at(7).at(0);
++		const auto upgraded = town->getTown()->creatures.at(7).at(1);
++		handler.buildStructure(town->id, BuildingID::CASTLE, true);
++		handler.buildStructure(town->id, BuildingID::GRAIL, true);
++		require(vstd::contains(town->creatures.at(7).second, base) && vstd::contains(town->creatures.at(7).second, upgraded), "Building the Grail must unlock both dragon forms");
++		for(const auto dragon : {base, upgraded})
++		{
++			town->creatures.at(7).second = {dragon};
++			town->creatures.at(7).first = 0;
++			handler.gs->day = 0;
++			// Exercise the real packet calculation and application, including its date change.
++			for(int day = 1; day <= 85; ++day)
++			{
++				if(day == 29)
++				{
++					const auto townID = town->id;
++					handler.save("Saves/Monthly-regression", PlayerColor::NEUTRAL);
++					auto resume = *handler.gs->getStartInfo();
++					resume.mapname = "Saves/Monthly-regression.vsgm1";
++					resume.mode = EStartMode::LOAD_GAME;
++					handler.load(resume);
++					town = handler.gs->getTown(townID);
++					require(handler.gs->day == 28 && town->creatures.at(7).first == 0, "Day-28 save/load must preserve the empty recruitment pool");
++					std::cout << "PASS save/load immediately before month boundary" << std::endl;
++				}
++				auto pack = handler.newTurnProcessor->generateNewTurnPack();
++				const auto previous = town->creatures.at(7).first;
++				const auto expected = pack.specialWeek == EWeekType::PLAGUE ? previous / 2 + 1 : previous + (day > 1 && day % 28 == 1 ? 1 : 0);
++				handler.gs->apply(pack);
++				const auto actual = town->creatures.at(7).first;
++				require(actual == expected, "Day " + std::to_string(day) + ": expected " + std::to_string(expected) + " recruitable dragons, got " + std::to_string(actual));
++				if(day == 1 || day % 7 == 1)
++					std::cout << "PASS " << dragon.toCreature()->getJsonKey() << " day=" << day << " recruitable=" << actual << std::endl;
++			}
++			for(const auto owner : {town->tempOwner, PlayerColor::NEUTRAL})
++			{
++				const auto originalOwner = town->tempOwner;
++				town->tempOwner = owner;
++				for(const auto week : {EWeekType::NORMAL, EWeekType::BONUS_GROWTH, EWeekType::DOUBLE_GROWTH, EWeekType::DEITYOFFIRE, EWeekType::PLAGUE})
++				{
++					for(const auto monthly : {false, true})
++					{
++						town->creatures.at(7).first = 6;
++						auto pool = handler.newTurnProcessor->generateTownGrowth(town, week, dragon, false, monthly, 15);
++						const auto expected = (week == EWeekType::PLAGUE ? 3 : 6) + (monthly ? 1 : 0);
++						require(pool.creatures.at(7).first == expected, "Special week or neutral owner changed monthly growth");
++					}
++				}
++				town->tempOwner = originalOwner;
++			}
++		}
++		town->creatures.at(7).second.clear();
++		town->creatures.at(7).first = 0;
++		auto unavailable = handler.newTurnProcessor->generateTownGrowth(town, EWeekType::NORMAL, base, false, true, 0);
++		require(unavailable.creatures.at(7).first == 0, "No growth is allowed before recruitment is unlocked");
++		town->creatures.at(7).second = {base, upgraded};
++		auto shared = handler.newTurnProcessor->generateTownGrowth(town, EWeekType::DOUBLE_GROWTH, upgraded, false, true, 15);
++		require(shared.creatures.at(7).first == 1, "Both dragon forms must share a single monthly recruit");
++		require(town->getGrowthInfo(7).totalGrowth() == 1, "Town growth display must show the monthly recruit");
++		std::cout << "PASS both dragons, 170 daily transitions, 40 special-week/owner cases, locked recruitment and shared pool" << std::endl;
++	}
++};
++
++int main(int argc, char ** argv)
++{
++	try
++	{
++		LIBRARY = new GameLibrary;
++		LIBRARY->initializeFilesystem(false);
++		LIBRARY->initializeLibrary();
++		DragonGrowthRegression::run(argc > 1 ? argv[1] : "MAPS/Smocza_Cytadela_AI_Bill_S.vmap");
++		return 0;
++	}
++	catch(const std::exception & error)
++	{
++		std::cerr << "FAIL: " << error.what() << std::endl;
++		return 1;
++	}
++}
+diff --git a/test/game/DragonVisualRegression.cpp b/test/game/DragonVisualRegression.cpp
+new file mode 100644
+index 000000000..c3fb506f8
+--- /dev/null
++++ b/test/game/DragonVisualRegression.cpp
+@@ -0,0 +1,91 @@
++#include "../../client/StdInc.h"
++#include "../../lib/GameLibrary.h"
++#include "../../client/renderSDL/RenderHandler.h"
++#include "../../client/renderSDL/SDLImage.h"
++#include "../../client/renderSDL/SDL_Extensions.h"
++#include "../../client/render/ImageLocator.h"
++#include "../../lib/campaign/CampaignHandler.h"
++#include "../../lib/campaign/CampaignState.h"
++#include <SDL_surface.h>
++#include <SDL_image.h>
++
++void handleFatalError(const std::string & message, bool)
++{
++	throw std::runtime_error(message);
++}
++
++int main(int argc, char ** argv)
++{
++	try
++	{
++		LIBRARY = new GameLibrary;
++		LIBRARY->initializeFilesystem(false);
++		RenderHandler renderer;
++		for(const std::string name : {"dcUltimateDragon", "dcAbsoluteDragon", "dcRubyGolem"})
++		{
++			ImageLocator locator;
++			locator.image = ImagePath::builtin("dragon-citadel/creatures/" + name + "/battle/g02-f000");
++			locator.scalingFactor = 1;
++			locator.layer = EImageBlitMode::ONLY_BODY_HIDE_SELECTION;
++			auto original = renderer.loadScaledImage(locator);
++			locator.layer = EImageBlitMode::GRAYSCALE_BODY_HIDE_SELECTION;
++			auto stone = renderer.loadScaledImage(locator);
++			if(!original || !stone)
++				throw std::runtime_error("Missing test sprite: " + name);
++			original->exportBitmap("visual/" + name + "-original.png", nullptr);
++			stone->exportBitmap("visual/" + name + "-stone.png", nullptr);
++			auto * a = IMG_Load(("visual/" + name + "-original.png").c_str());
++			auto * b = IMG_Load(("visual/" + name + "-stone.png").c_str());
++			if(!a || !b || a->w != b->w || a->h != b->h)
++				throw std::runtime_error("Petrification changed image size");
++			int changed = 0;
++			int visible = 0;
++			for(int y = 0; y < a->h; ++y)
++				for(int x = 0; x < a->w; ++x)
++				{
++					ColorRGBA ca, cb;
++					SDL_GetRGBA(CSDL_Ext::getPixel(a, x, y), a->format, &ca.r, &ca.g, &ca.b, &ca.a);
++					SDL_GetRGBA(CSDL_Ext::getPixel(b, x, y), b->format, &cb.r, &cb.g, &cb.b, &cb.a);
++					if(ca.a != cb.a)
++						throw std::runtime_error("Petrification changed transparency");
++					if(cb.a)
++					{
++						++visible;
++						if(cb.r != cb.g || cb.g != cb.b)
++							throw std::runtime_error("Petrified sprite still contains colored pixels: " + name);
++						if(ca.r != cb.r || ca.g != cb.g || ca.b != cb.b)
++							++changed;
++					}
++				}
++			SDL_FreeSurface(a);
++			SDL_FreeSurface(b);
++			if(visible == 0 || changed == 0)
++				throw std::runtime_error("Petrification test must visibly change the creature");
++			std::cout << "PASS " << name << ": " << visible << " visible pixels, " << changed << " converted; dimensions and alpha unchanged" << std::endl;
++		}
++		LIBRARY->initializeLibrary();
++		auto campaign = CampaignHandler::getCampaign("MAPS/Smocza_Cytadela.vcmp");
++		std::vector<ImagePath> images{campaign->getRegions().getBackgroundName()};
++		for(int i = 0; i < 8; ++i)
++		{
++			images.push_back(campaign->getRegions().getAvailableName(CampaignScenarioID(i), i));
++			images.push_back(campaign->getRegions().getSelectedName(CampaignScenarioID(i), i));
++			images.push_back(campaign->getRegions().getConqueredName(CampaignScenarioID(i), i));
++		}
++		for(const auto & path : images)
++		{
++			ImageLocator locator;
++			locator.image = path;
++			locator.scalingFactor = 1;
++			if(!renderer.loadScaledImage(locator))
++				throw std::runtime_error("Campaign region graphics missing");
++		}
++		std::cout << "PASS all 25 campaign background/region graphics load" << std::endl;
++		return 0;
++	}
++	catch(const std::exception & error)
++	{
++		std::cerr << "FAIL: " << error.what() << std::endl;
++		return 1;
++	}
++}
+diff --git a/test/game/DragonCampaignRegression.cpp b/test/game/DragonCampaignRegression.cpp
+new file mode 100644
+index 000000000..2e415d942
+--- /dev/null
++++ b/test/game/DragonCampaignRegression.cpp
+@@ -0,0 +1,210 @@
++#include "../../server/StdInc.h"
++#include "../../server/CGameHandler.h"
++#include "../../server/IGameServer.h"
++#include "../../lib/GameLibrary.h"
++#include "../../lib/StartInfo.h"
++#include "../../lib/gameState/CGameState.h"
++#include "../../lib/mapping/CMap.h"
++#include "../../lib/mapObjects/CGTownInstance.h"
++#include "../../lib/mapObjects/ObjectTemplate.h"
++#include "../../lib/mapObjectConstructors/CObjectClassesHandler.h"
++#include "../../lib/mapObjectConstructors/AObjectTypeHandler.h"
++#include "../../lib/networkPacks/PacksForClient.h"
++#include "../../lib/campaign/CampaignHandler.h"
++#include "../../lib/campaign/CampaignState.h"
++#include "../../lib/json/JsonNode.h"
++#include "../../lib/entities/building/CBuilding.h"
++#include "../../lib/mapObjects/CGHeroInstance.h"
++#include "../../lib/mapping/TerrainTile.h"
++#include "../../lib/CPlayerState.h"
++#include "../../lib/networkPacks/StackLocation.h"
++#include <fstream>
++
++class CampaignTestServer : public IGameServer
++{
++public:
++ CGameHandler * handler = nullptr;
++ void setState(EServerState) override {}
++ EServerState getState() const override { return EServerState::GAMEPLAY; }
++ bool isPlayerHost(const PlayerColor &) const override { return true; }
++ bool hasPlayerAt(PlayerColor, GameConnectionID) const override { return true; }
++ bool hasBothPlayersAtSameConnection(PlayerColor, PlayerColor) const override { return true; }
++ void applyPack(CPackForClient & pack) override { handler->gs->apply(pack); }
++ void sendPack(CPackForClient &, GameConnectionID) override {}
++};
++
++static void require(bool ok, const std::string & why)
++{
++ if(!ok) throw std::runtime_error(why);
++}
++
++static void exportTemplates()
++{
++ JsonNode result;
++ const std::vector<std::pair<std::string, std::string>> specs = {
++  {"town", "dragon-citadel:dragonCitadel"}, {"hero", "dragon-citadel:dragonLord"},
++  {"sign", "object"}, {"mine", "sawmill"}, {"mine", "orePit"}, {"mine", "goldMine"},
++  {"resource", "gold"}, {"resource", "wood"}, {"resource", "ore"},
++  {"monster", "pikeman"}, {"monster", "halberdier"}, {"monster", "archer"},
++  {"monster", "swordsman"}, {"monster", "crusader"}, {"monster", "mage"},
++  {"monster", "monk"}, {"monster", "cavalier"}, {"monster", "champion"},
++  {"monster", "angel"}, {"monster", "archangel"}, {"monster", "blackDragon"},
++  {"mountain", "object"}, {"oakTrees", "object"}, {"pineTrees", "object"}, {"rock", "object"}
++ };
++ for(const auto & [type, sub] : specs)
++ {
++  auto handler = LIBRARY->objtypeh->getHandlerFor("dragon-citadel", type, sub);
++  auto templates = handler->getMostSpecificTemplates(TerrainId(2));
++  if(templates.empty()) templates = handler->getTemplates();
++  require(!templates.empty(), "Missing template: " + type + "/" + sub);
++  templates.front()->writeJson(result[type + "/" + sub]);
++ }
++ const auto * faction = FactionID(FactionID::decode("dragon-citadel:dragonCitadel")).toFaction();
++ for(const auto & [id, building] : faction->town->buildings)
++ {
++  auto key = building->getJsonKey();
++  key = key.substr(key.find(':') + 1);
++  result["buildingIDs"][key].Integer() = id.getNum();
++ }
++ std::ofstream("campaign-templates.json") << result.toString();
++ std::cout << "PASS exported " << specs.size() << " native object templates" << std::endl;
++}
++
++static void validateCampaign()
++{
++ auto campaign = CampaignHandler::getCampaign("MAPS/Smocza_Cytadela.vcmp");
++ require(campaign->scenariosCount() == 8, "Campaign must contain eight scenarios");
++ for(int stage = 0; stage < 8; ++stage)
++ {
++  CampaignScenarioID id(stage);
++  require(campaign->isAvailable(id), "Scenario not available in sequence");
++  if(stage < 7) require(!campaign->isAvailable(CampaignScenarioID(stage + 1)), "Next chapter unlocked too soon");
++  campaign->setCurrentMap(id);
++  StartInfo start;
++  start.mode = EStartMode::CAMPAIGN;
++  start.campState = campaign;
++  start.difficulty = 0;
++  auto header = campaign->getMapHeader(id);
++  for(int p = 0; p < header->players.size(); ++p)
++  {
++   const auto & info = header->players[p];
++   if(!info.canHumanPlay && !info.canComputerPlay) continue;
++   auto & player = start.playerInfos[PlayerColor(p)];
++   player.color = PlayerColor(p);
++   player.name = "Campaign regression";
++   player.connectedPlayerIDs.insert(static_cast<PlayerConnectionID>(p));
++   player.castle = info.defaultCastle();
++   player.hero = info.defaultHero();
++  }
++  CampaignTestServer server;
++  CGameHandler handler(server);
++  server.handler = &handler;
++  Load::ProgressAccumulator progress;
++  handler.init(&start, progress);
++  const auto & map = handler.gs->getMap();
++  require(map.events.size() >= 5, "Missing in-game story events");
++  require(!map.getAllTowns().empty(), "Missing starting town");
++  auto * town = handler.gs->getTown(map.getAllTowns().front());
++  require(town->getFaction()->getJsonKey() == "dragon-citadel:dragonCitadel", "Wrong starting faction");
++  for(int tier = 0; tier < 7; ++tier)
++  {
++   const auto dwelling = BuildingID(BuildingID::DWELL_LVL_1 + tier);
++   require(town->forbiddenBuildings.count(dwelling) == (tier > stage ? 1 : 0), "Incorrect dwelling restriction");
++   if(tier <= stage) require(town->hasBuilt(dwelling), "Unlocked base dwelling must already exist");
++  }
++  require(town->creatures.at(7).second.empty() == (stage < 7), "Level 8 recruitment gate incorrect");
++  require(!handler.gs->checkForVictoryAndLoss(PlayerColor(0)).victory(), "Chapter wins without completing objectives");
++  for(const auto & event : map.events)
++  {
++   require(event.message.toString().size() > 20, "Empty in-game story text");
++   require(event.affectsPlayer(PlayerColor(0), true), "Story event not addressed to human player");
++  }
++  const auto heroes = map.getObjects<CGHeroInstance>();
++  require(heroes.size() == 1, "Expected a single authored campaign hero");
++  const auto * hero = heroes.front();
++  // Test land connectivity after collectible resources and hostile guards are cleared.
++  std::set<int3> reachable{hero->visitablePos()};
++  std::vector<int3> frontier{hero->visitablePos()};
++  for(size_t p = 0; p < frontier.size(); ++p)
++  {
++   for(int dx = -1; dx <= 1; ++dx)
++    for(int dy = -1; dy <= 1; ++dy)
++    {
++     const auto tile = frontier[p] + int3(dx, dy, 0);
++     if(!map.isInTheMap(tile) || reachable.count(tile)) continue;
++     const auto & terrain = map.getTile(tile);
++     if(!terrain.isLand() || (terrain.blocked() && !terrain.visitable())) continue;
++     reachable.insert(tile);
++     frontier.push_back(tile);
++    }
++  }
++  int objectives = 0;
++  for(const auto * object : map.getObjects())
++  {
++   if(object->ID == Obj::TOWN || object->ID == Obj::MINE || object->ID == Obj::MONSTER || object->ID == Obj::SIGN)
++   {
++    require(reachable.count(object->visitablePos()) != 0, "Unreachable objective: " + object->instanceName);
++    ++objectives;
++   }
++  }
++  if(stage < 7)
++  {
++   handler.buildStructure(town->id, BuildingID::GRAIL, true);
++   require(town->creatures.at(7).second.empty(), "Grail bypassed the chapter's level-8 restriction");
++  }
++  // Exercise actual victory predicates with simulated completed battles, not a human playthrough.
++  for(const auto * object : map.getObjects())
++  {
++   if(object->ID == Obj::MINE) handler.setOwner(object, PlayerColor(0));
++   if(object->ID == Obj::MONSTER) handler.removeObject(object, PlayerColor(0));
++  }
++  handler.gs->day = 30;
++  handler.giveResources(PlayerColor(0), ResourceSet() + 1000000);
++  for(const auto townID : map.getAllTowns())
++  {
++   auto * current = handler.gs->getTown(townID);
++   for(const auto & [buildingID, building] : current->getTown()->buildings)
++   {
++    if(current->forbiddenBuildings.count(buildingID)) continue;
++    const auto key = building->getJsonKey();
++    if(key.find("dwellingUp") != std::string::npos || key.find("special6") != std::string::npos)
++    {
++     if(key.find("Lvl4") != std::string::npos)
++     {
++      const auto ruby = key.find("Up3") != std::string::npos || key.find("Up2") != std::string::npos;
++      if(ruby != (current->instanceName == "ruby_outpost")) continue;
++     }
++     handler.buildStructure(townID, buildingID, true);
++    }
++   }
++  }
++  if(stage == 7)
++  {
++   require(!handler.gs->checkForVictoryAndLoss(PlayerColor(0)).victory(), "Finale won without recruiting a final dragon");
++   const auto dragon = CreatureID(CreatureID::decode("dragon-citadel:dcUltimateDragon"));
++   require(handler.insertNewStack(StackLocation(hero->id, SlotID(6)), dragon.toCreature(), 1), "Could not place the finale recruit");
++  }
++  require(handler.gs->checkForVictoryAndLoss(PlayerColor(0)).victory(), "Chapter cannot be won after completing its objectives");
++  handler.removeObject(hero, PlayerColor::NEUTRAL);
++  require(handler.gs->checkForVictoryAndLoss(PlayerColor(0)).loss(), "Losing Billaden must end the chapter in defeat");
++  std::cout << "PASS " << objectives << " reachable objective locations and native victory predicates" << std::endl;
++  std::cout << "PASS chapter " << stage + 1 << ": native campaign start, town, restrictions and " << map.events.size() << " story events" << std::endl;
++  campaign->setCurrentMapAsConquered({});
++ }
++ require(campaign->isCampaignFinished(), "Campaign progression did not finish");
++ std::cout << "PASS all eight maps load and all seven chapter transitions unlock correctly" << std::endl;
++}
++
++int main(int argc, char ** argv)
++{
++ try
++ {
++  LIBRARY = new GameLibrary;
++  LIBRARY->initializeFilesystem(false);
++  LIBRARY->initializeLibrary();
++  if(argc > 1 && std::string(argv[1]) == "--export") exportTemplates();
++  else validateCampaign();
++  return 0;
++ }
++ catch(const std::exception & e) { std::cerr << "FAIL: " << e.what() << std::endl; return 1; }
++}

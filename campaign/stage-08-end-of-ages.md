@@ -1,7 +1,10 @@
-# Stage 08 - End of Ages
+# Stage 08 - Heart of the End of Ages
 
-Status: waiting for player story brief.
+Status: campaign foundation ready, playable map pending player story brief.
 
-Purpose: introduce Ultimate Dragons and Absolute Dragons as rare endgame creatures with 8-week growth through BILLADENC4.
+Unlocked creature levels: 1, 2, 3, 4, 5, 6, 7, 8.
+Locked creature levels: none.
 
-Map notes will be designed after the story description is provided.
+Focus: the Grail, Ultimate Dragons and Absolute Dragons. The player learns that the Grail unlocks the final dragon line, but the final creatures still require enormous resources and appear only once per month in BILLADENC4.
+
+Map target: a short final map with a developed economy, a Grail race, final attacks against the city and one decisive end battle after recruiting an Ultimate or Absolute Dragon.
