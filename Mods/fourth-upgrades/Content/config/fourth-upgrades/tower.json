@@ -1,0 +1,312 @@
+{
+  "core:tower": {
+    "town": {
+      "creatures": [
+        [
+          "core:gremlin",
+          "core:masterGremlin",
+          "dragon-citadel:dcMechanicGremlin",
+          "dragon-citadel.fourth-upgrades:tumGrandmasterGremlin"
+        ],
+        [
+          "core:stoneGargoyle",
+          "core:obsidianGargoyle",
+          "dragon-citadel:dcIcewingGargoyle",
+          "dragon-citadel.fourth-upgrades:tumMarbleGargoyle"
+        ],
+        [
+          "core:ironGolem",
+          "core:stoneGolem",
+          "dragon-citadel:dcAdamantGolem",
+          "dragon-citadel.fourth-upgrades:tumSteelGolem"
+        ],
+        [
+          "core:mage",
+          "core:archMage",
+          "dragon-citadel:dcRuneMage",
+          "dragon-citadel.fourth-upgrades:tumSupremeArchMage"
+        ],
+        [
+          "core:genie",
+          "core:masterGenie",
+          "dragon-citadel:dcDjinnSultan",
+          "dragon-citadel.fourth-upgrades:tumArcaneGenie"
+        ],
+        [
+          "core:naga",
+          "core:nagaQueen",
+          "dragon-citadel:dcNagaEmpress",
+          "dragon-citadel.fourth-upgrades:tumNagaEmpress"
+        ],
+        [
+          "core:giant",
+          "core:titan",
+          "dragon-citadel:dcFirmamentTitan",
+          "wake-of-gods.level8units:lordOfThunder"
+        ]
+      ],
+      "hallSlots": [
+        [
+          [
+            "villageHall",
+            "townHall",
+            "cityHall",
+            "capitol"
+          ],
+          [
+            "fort",
+            "citadel",
+            "castle"
+          ],
+          [
+            "tavern"
+          ],
+          [
+            "blacksmith"
+          ]
+        ],
+        [
+          [
+            "marketplace",
+            "resourceSilo"
+          ],
+          [
+            "mageGuild1",
+            "mageGuild2",
+            "mageGuild3",
+            "mageGuild4",
+            "mageGuild5"
+          ],
+          [
+            "special3"
+          ],
+          [
+            "special4"
+          ]
+        ],
+        [
+          [
+            "special1"
+          ],
+          [
+            "special2"
+          ],
+          [
+            "horde1",
+            "horde1Upgr"
+          ]
+        ],
+        [
+          [
+            "dwellingLvl1",
+            "dwellingUpLvl1",
+            "dwellingUp2Lvl1",
+            "dwellingUp3Lvl1"
+          ],
+          [
+            "dwellingLvl2",
+            "dwellingUpLvl2",
+            "dwellingUp2Lvl2",
+            "dwellingUp3Lvl2"
+          ],
+          [
+            "dwellingLvl3",
+            "dwellingUpLvl3",
+            "dwellingUp2Lvl3",
+            "dwellingUp3Lvl3"
+          ],
+          [
+            "dwellingLvl4",
+            "dwellingUpLvl4",
+            "dwellingUp2Lvl4",
+            "dwellingUp3Lvl4"
+          ]
+        ],
+        [
+          [
+            "dwellingLvl5",
+            "dwellingUpLvl5",
+            "dwellingUp2Lvl5",
+            "dwellingUp3Lvl5"
+          ],
+          [
+            "dwellingLvl6",
+            "dwellingUpLvl6",
+            "dwellingUp2Lvl6",
+            "dwellingUp3Lvl6"
+          ],
+          [
+            "dwellingLvl7",
+            "dwellingUpLvl7",
+            "dwellingUp2Lvl7",
+            "dwellingUp3Lvl7"
+          ]
+        ]
+      ],
+      "buildings": {
+        "dwellingUp3Lvl1": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Workshop}",
+          "requires": [
+            "dwellingUp2Lvl1"
+          ],
+          "upgrades": "dwellingUp2Lvl1",
+          "cost": {
+            "gold": 5250,
+            "wood": 15,
+            "ore": 23
+          },
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl2": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Parapet}",
+          "requires": [
+            "dwellingUp2Lvl2"
+          ],
+          "cost": {
+            "gold": 8100,
+            "wood": 18,
+            "ore": 36,
+            "crystal": 6
+          },
+          "upgrades": "dwellingUp2Lvl2",
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl3": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Golem Factory}",
+          "requires": [
+            "dwellingUp2Lvl3"
+          ],
+          "cost": {
+            "gold": 14040,
+            "wood": 33,
+            "ore": 54,
+            "crystal": 11
+          },
+          "upgrades": "dwellingUp2Lvl3",
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl4": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Mage Towers}",
+          "requires": [
+            "dwellingUp2Lvl4"
+          ],
+          "cost": {
+            "gold": 22035,
+            "wood": 39,
+            "ore": 39,
+            "gems": 21
+          },
+          "upgrades": "dwellingUp2Lvl4",
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl5": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Altar of Wishes}",
+          "requires": [
+            "dwellingUp2Lvl5"
+          ],
+          "cost": {
+            "gold": 43550,
+            "wood": 47,
+            "ore": 47,
+            "gems": 32
+          },
+          "upgrades": "dwellingUp2Lvl5",
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl6": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Golden Pavilion}",
+          "requires": [
+            "dwellingUp2Lvl6"
+          ],
+          "cost": {
+            "gold": 82115,
+            "wood": 75,
+            "ore": 75,
+            "gems": 56
+          },
+          "upgrades": "dwellingUp2Lvl6",
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl7": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Cloud Temple}",
+          "requires": [
+            "dwellingUp2Lvl7"
+          ],
+          "cost": {
+            "gold": 268740,
+            "wood": 135,
+            "ore": 135,
+            "gems": 112
+          },
+          "upgrades": "dwellingUp2Lvl7",
+          "mode": "normal"
+        }
+      },
+      "structures": {
+        "dwellingUp3Lvl1": {
+          "animation": "town-screen/tower/TBTWUP2_0.def",
+          "x": 440,
+          "y": 221,
+          "z": 3,
+          "border": "town-screen/tower/borders/TOTGRM2AU.bmp",
+          "area": "town-screen/tower/areas/TZTGRM2AU.bmp"
+        },
+        "dwellingUp3Lvl2": {
+          "animation": "town-screen/tower/TBTWUP2_1.def",
+          "x": 4,
+          "y": 8,
+          "border": "town-screen/tower/borders/TOTGAR2U.bmp",
+          "area": "town-screen/tower/areas/TZTGAR2U.bmp",
+          "z": -5
+        },
+        "dwellingUp3Lvl3": {
+          "animation": "town-screen/tower/TBTWUP2_2.def",
+          "x": 209,
+          "y": 177,
+          "z": 4,
+          "border": "town-screen/tower/borders/TOTGOL2AU.bmp",
+          "area": "town-screen/tower/areas/TZTGOL2AU.bmp"
+        },
+        "dwellingUp3Lvl4": {
+          "animation": "town-screen/tower/TBTWUP2_3.def",
+          "x": 610,
+          "y": 37,
+          "border": "town-screen/tower/borders/TOTMAG2U.bmp",
+          "area": "town-screen/tower/areas/TZTMAG2U.bmp",
+          "z": -2
+        },
+        "dwellingUp3Lvl5": {
+          "animation": "town-screen/tower/TBTWUP2_4.def",
+          "x": 511,
+          "y": 8,
+          "border": "town-screen/tower/borders/TOTGEN2U.bmp",
+          "area": "town-screen/tower/areas/TZTGEN2U.bmp",
+          "z": -4
+        },
+        "dwellingUp3Lvl6": {
+          "animation": "town-screen/tower/TBTWUP2_5.def",
+          "x": 681,
+          "y": 118,
+          "z": 6,
+          "border": "town-screen/tower/borders/TOTNag2U.bmp",
+          "area": "town-screen/tower/areas/TZTNag2U.bmp"
+        },
+        "dwellingUp3Lvl7": {
+          "animation": "town-screen/tower/TBTWUP2_6.def",
+          "x": 75,
+          "y": 7,
+          "z": -8,
+          "border": "town-screen/tower/borders/TOTTit2U.bmp",
+          "area": "town-screen/tower/areas/TZTTit2U.bmp"
+        }
+      }
+    }
+  }
+}

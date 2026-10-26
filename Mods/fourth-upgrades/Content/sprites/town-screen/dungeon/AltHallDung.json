@@ -1,0 +1,39 @@
+{
+  "images": [
+    {
+      "group": 0,
+      "frame": 51,
+      "file": "town-screen/dungeon/frames/TBDGTRG3"
+    },
+    {
+      "group": 0,
+      "frame": 52,
+      "file": "town-screen/dungeon/frames/TBDGHRP3"
+    },
+    {
+      "group": 0,
+      "frame": 53,
+      "file": "town-screen/dungeon/frames/TBDGBEH3"
+    },
+    {
+      "group": 0,
+      "frame": 54,
+      "file": "town-screen/dungeon/frames/TBDGMED3"
+    },
+    {
+      "group": 0,
+      "frame": 55,
+      "file": "town-screen/dungeon/frames/TBDGMIN3"
+    },
+    {
+      "group": 0,
+      "frame": 56,
+      "file": "town-screen/dungeon/frames/TBDGMAN3"
+    },
+    {
+      "group": 0,
+      "frame": 57,
+      "file": "town-screen/dungeon/frames/TBDGDRG3"
+    }
+  ]
+}

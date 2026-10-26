@@ -1,0 +1,308 @@
+{
+  "core:stronghold": {
+    "town": {
+      "creatures": [
+        [
+          "core:goblin",
+          "core:hobgoblin",
+          "dragon-citadel:dcVeteranHobgoblin",
+          "dragon-citadel.fourth-upgrades:tumHobgoblinOverlord"
+        ],
+        [
+          "core:goblinWolfRider",
+          "core:hobgoblinWolfRider",
+          "dragon-citadel:dcWolfHetman",
+          "dragon-citadel.fourth-upgrades:tumWolfRiderKiller"
+        ],
+        [
+          "core:orc",
+          "core:orcChieftain",
+          "dragon-citadel:dcAxeMasterOrc",
+          "dragon-citadel.fourth-upgrades:tumOrcLeader"
+        ],
+        [
+          "core:ogre",
+          "core:ogreMage",
+          "dragon-citadel:dcElderOgreShaman",
+          "dragon-citadel.fourth-upgrades:tumElderOgre"
+        ],
+        [
+          "core:roc",
+          "core:thunderbird",
+          "dragon-citadel:dcStormbird",
+          "dragon-citadel.fourth-upgrades:tumLightningbird"
+        ],
+        [
+          "core:cyclop",
+          "core:cyclopKing",
+          "dragon-citadel:dcDestroyerCyclops",
+          "dragon-citadel.fourth-upgrades:tumCyclopsEmperor"
+        ],
+        [
+          "core:behemoth",
+          "core:ancientBehemoth",
+          "dragon-citadel:dcBehemothPatriarch",
+          "wake-of-gods.level8units:ghostBehemoth"
+        ]
+      ],
+      "hallSlots": [
+        [
+          [
+            "villageHall",
+            "townHall",
+            "cityHall",
+            "capitol"
+          ],
+          [
+            "fort",
+            "citadel",
+            "castle"
+          ],
+          [
+            "tavern"
+          ],
+          [
+            "blacksmith"
+          ]
+        ],
+        [
+          [
+            "marketplace",
+            "resourceSilo"
+          ],
+          [
+            "mageGuild1",
+            "mageGuild2",
+            "mageGuild3"
+          ],
+          [
+            "special4"
+          ],
+          [
+            "special1"
+          ]
+        ],
+        [
+          [
+            "special2"
+          ],
+          [
+            "special3"
+          ],
+          [
+            "horde1",
+            "horde1Upgr"
+          ]
+        ],
+        [
+          [
+            "dwellingLvl1",
+            "dwellingUpLvl1",
+            "dwellingUp2Lvl1",
+            "dwellingUp3Lvl1"
+          ],
+          [
+            "dwellingLvl2",
+            "dwellingUpLvl2",
+            "dwellingUp2Lvl2",
+            "dwellingUp3Lvl2"
+          ],
+          [
+            "dwellingLvl3",
+            "dwellingUpLvl3",
+            "dwellingUp2Lvl3",
+            "dwellingUp3Lvl3"
+          ],
+          [
+            "dwellingLvl4",
+            "dwellingUpLvl4",
+            "dwellingUp2Lvl4",
+            "dwellingUp3Lvl4"
+          ]
+        ],
+        [
+          [
+            "dwellingLvl5",
+            "dwellingUpLvl5",
+            "dwellingUp2Lvl5",
+            "dwellingUp3Lvl5"
+          ],
+          [
+            "dwellingLvl6",
+            "dwellingUpLvl6",
+            "dwellingUp2Lvl6",
+            "dwellingUp3Lvl6"
+          ],
+          [
+            "dwellingLvl7",
+            "dwellingUpLvl7",
+            "dwellingUp2Lvl7",
+            "dwellingUp3Lvl7"
+          ]
+        ]
+      ],
+      "buildings": {
+        "dwellingUp3Lvl1": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Goblin Barracks}",
+          "cost": {
+            "gold": 5250,
+            "wood": 23,
+            "ore": 15
+          },
+          "requires": [
+            "dwellingUp2Lvl1"
+          ],
+          "upgrades": "dwellingUp2Lvl1",
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl2": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Wolf Pen}",
+          "cost": {
+            "gold": 9000,
+            "wood": 27,
+            "ore": 27
+          },
+          "requires": [
+            "dwellingUp2Lvl2"
+          ],
+          "upgrades": "dwellingUp2Lvl2",
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl3": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Orc Tower}",
+          "cost": {
+            "gold": 14040,
+            "wood": 33,
+            "ore": 44
+          },
+          "requires": [
+            "dwellingUp2Lvl3"
+          ],
+          "upgrades": "dwellingUp2Lvl3",
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl4": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Ogre Fort}",
+          "cost": {
+            "gold": 25920,
+            "wood": 52,
+            "ore": 39,
+            "crystal": 13
+          },
+          "requires": [
+            "dwellingUp2Lvl4"
+          ],
+          "upgrades": "dwellingUp2Lvl4",
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl5": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Cliff Nest}",
+          "cost": {
+            "gold": 43550,
+            "wood": 63,
+            "ore": 47,
+            "crystal": 32
+          },
+          "requires": [
+            "dwellingUp2Lvl5"
+          ],
+          "upgrades": "dwellingUp2Lvl5",
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl6": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Cyclops Cave}",
+          "cost": {
+            "gold": 93315,
+            "wood": 75,
+            "ore": 94,
+            "crystal": 56
+          },
+          "requires": [
+            "dwellingUp2Lvl6"
+          ],
+          "upgrades": "dwellingUp2Lvl6",
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl7": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Behemoth Lair}",
+          "cost": {
+            "gold": 268740,
+            "wood": 135,
+            "ore": 135,
+            "crystal": 112
+          },
+          "requires": [
+            "dwellingUp2Lvl7"
+          ],
+          "upgrades": "dwellingUp2Lvl7",
+          "mode": "normal"
+        }
+      },
+      "structures": {
+        "dwellingUp3Lvl1": {
+          "animation": "town-screen/stronghold/TBSTUP2_0.def",
+          "x": 373,
+          "y": 187,
+          "border": "town-screen/stronghold/borders/TOSGOB2U.bmp",
+          "area": "town-screen/stronghold/areas/TZSGOB2U.bmp",
+          "z": -1
+        },
+        "dwellingUp3Lvl2": {
+          "animation": "town-screen/stronghold/TBSTUP2_1.def",
+          "x": 266,
+          "y": 225,
+          "z": 2,
+          "border": "town-screen/stronghold/borders/TOSWol2U",
+          "area": "town-screen/stronghold/areas/TZSWol2U"
+        },
+        "dwellingUp3Lvl3": {
+          "animation": "town-screen/stronghold/TBSTUP2_2.def",
+          "x": 566,
+          "y": 134,
+          "z": 5,
+          "border": "town-screen/stronghold/borders/TOSORC2U.bmp",
+          "area": "town-screen/stronghold/areas/TZSORC2U.bmp"
+        },
+        "dwellingUp3Lvl4": {
+          "animation": "town-screen/stronghold/TBSTUP2_3.def",
+          "x": 197,
+          "y": 107,
+          "border": "town-screen/stronghold/borders/TOSOGR2U.bmp",
+          "area": "town-screen/stronghold/areas/TZSOGR2U.bmp",
+          "z": -2
+        },
+        "dwellingUp3Lvl5": {
+          "animation": "town-screen/stronghold/TBSTUP2_4.def",
+          "x": 129,
+          "y": 15,
+          "z": -7,
+          "border": "town-screen/stronghold/borders/TOSROC2U.bmp",
+          "area": "town-screen/stronghold/areas/TZSROC2U.bmp"
+        },
+        "dwellingUp3Lvl6": {
+          "animation": "town-screen/stronghold/TBSTUP2_5.def",
+          "x": 616,
+          "y": 93,
+          "z": -9,
+          "border": "town-screen/stronghold/borders/TOSCYC2UA.bmp",
+          "area": "town-screen/stronghold/areas/TZSCYC2UA.bmp"
+        },
+        "dwellingUp3Lvl7": {
+          "animation": "town-screen/stronghold/TBSTUP2_6.def",
+          "x": 604,
+          "y": 0,
+          "z": -4,
+          "border": "TOSBEH2A.bmp",
+          "area": "TZSBEH2A.bmp"
+        }
+      }
+    }
+  }
+}

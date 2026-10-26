@@ -1,0 +1,71 @@
+{
+  "author": "VMaiko (author of the idea), avatar (porting), Xardas33 (upgraded buildings graphics), Olegmods.INC (ToW third upgrades idea, some building and creature graphics, configs), Aphra (graphics), FirePaladin (Tower T7 building graphics), Koven1Nordsiard (Dungeon alt-T5 building graphics), Toriko (some unit graphics), Nephretes (3rd upgrade dryad), yogdush (3rd upgrade Centaur, Dwarf and Swordsman) Naga Empresses' updated moving animation by Orzie, Elf Noble supposedly made by Witchking, Elder Dendroid made by Trith and edited by Olegmods.INC, Arcane Genie made by Kallen.",
+  "licenseName": "Creative Commons Attribution-ShareAlike",
+  "licenseURL": "http://creativecommons.org/licenses/by-sa/4.0/deed",
+  "name": "4 ulepszenie - TUM",
+  "version": "0.1.0",
+  "keepDisabled": true,
+  "modType": "Expansion",
+  "compatibility": {
+    "min": "1.7.5"
+  },
+  "depends": [
+    "dragon-citadel",
+    "wake-of-gods.level8units"
+  ],
+  "conflicts": [
+    "dragon-citadel.tum",
+    "dragon-citadel.third-upgrades",
+    "dragon-citadel.fourth-forms",
+    "third-upgrades",
+    "dragon-citadel-2"
+  ],
+  "description": "ISOLATED TEST: optional fourth forms, priced and scaled from the main mod third forms. Start a new game. Saves containing these units require this submod.",
+  "creatures": [
+    "config/fourth-upgrades/creatures.json",
+    "config/fourth-upgrades/links.json"
+  ],
+  "factions": [
+    "config/fourth-upgrades/castle.json",
+    "config/fourth-upgrades/rampart.json",
+    "config/fourth-upgrades/tower.json",
+    "config/fourth-upgrades/inferno.json",
+    "config/fourth-upgrades/necropolis.json",
+    "config/fourth-upgrades/dungeon.json",
+    "config/fourth-upgrades/stronghold.json",
+    "config/fourth-upgrades/fortress.json",
+    "config/fourth-upgrades/conflux.json"
+  ],
+  "polish": {
+    "name": "Opcjonalne czwarte formy",
+    "description": "Opcjonalne czwarte formy. Prace nad wyglądem Smoczej Cytadeli w trakcie."
+  },
+  "english": {
+    "name": "Optional fourth forms",
+    "description": "Optional fourth forms. Work on the appearance of Dragon Citadel is in progress."
+  },
+  "german": {
+    "name": "Optionale vierte Formen",
+    "description": "Optionale vierte Formen. Die grafische Überarbeitung der Drachenzitadelle ist noch in Arbeit."
+  },
+  "chinese": {
+    "name": "可选第四形态",
+    "description": "可选第四形态. 龙之要塞的外观仍在改进中。"
+  },
+  "japanese": {
+    "name": "任意の第4形態",
+    "description": "任意の第4形態. ドラゴン・シタデルの外観は現在改修中です。"
+  },
+  "russian": {
+    "name": "Дополнительные четвёртые формы",
+    "description": "Дополнительные четвёртые формы. Внешний вид Драконьей цитадели находится в доработке."
+  },
+  "spanish": {
+    "name": "Cuartas formas opcionales",
+    "description": "Cuartas formas opcionales. El aspecto de la Ciudadela del Dragón sigue en desarrollo."
+  },
+  "french": {
+    "name": "Quatrièmes formes facultatives",
+    "description": "Quatrièmes formes facultatives. L’apparence de la Citadelle du Dragon est en cours d’amélioration."
+  }
+}

@@ -1,0 +1,424 @@
+{
+  "core:rampart": {
+    "town": {
+      "creatures": [
+        [
+          "core:centaur",
+          "core:centaurCaptain",
+          "dragon-citadel:dcCentaurWarlord"
+        ],
+        [
+          "core:dwarf",
+          "core:battleDwarf",
+          "dragon-citadel:dcRuneDwarf"
+        ],
+        [
+          "core:woodElf",
+          "core:grandElf",
+          "dragon-citadel:dcMoonElf"
+        ],
+        [
+          "core:pegasus",
+          "core:silverPegasus",
+          "dragon-citadel:dcAuroraPegasus"
+        ],
+        [
+          "core:dendroidGuard",
+          "core:dendroidSoldier",
+          "dragon-citadel:dcAncientEnt"
+        ],
+        [
+          "core:unicorn",
+          "core:warUnicorn",
+          "dragon-citadel:dcArmoredUnicorn"
+        ],
+        [
+          "core:greenDragon",
+          "core:goldDragon",
+          "dragon-citadel:dcEmeraldDragon"
+        ]
+      ],
+      "hallSlots": [
+        [
+          [
+            "villageHall",
+            "townHall",
+            "cityHall",
+            "capitol"
+          ],
+          [
+            "fort",
+            "citadel",
+            "castle"
+          ],
+          [
+            "tavern"
+          ],
+          [
+            "blacksmith"
+          ]
+        ],
+        [
+          [
+            "marketplace",
+            "resourceSilo"
+          ],
+          [
+            "mageGuild1",
+            "mageGuild2",
+            "mageGuild3",
+            "mageGuild4",
+            "mageGuild5"
+          ],
+          [
+            "special1",
+            "special2"
+          ]
+        ],
+        [
+          [
+            "special3"
+          ],
+          [
+            "horde2",
+            "horde2Upgr"
+          ],
+          [
+            "horde1",
+            "horde1Upgr"
+          ]
+        ],
+        [
+          [
+            "dwellingLvl1",
+            "dwellingUpLvl1",
+            "dwellingUp2Lvl1"
+          ],
+          [
+            "dwellingLvl2",
+            "dwellingUpLvl2",
+            "dwellingUp2Lvl2"
+          ],
+          [
+            "dwellingLvl3",
+            "dwellingUpLvl3",
+            "dwellingUp2Lvl3"
+          ],
+          [
+            "dwellingLvl4",
+            "dwellingUpLvl4",
+            "dwellingUp2Lvl4"
+          ]
+        ],
+        [
+          [
+            "dwellingLvl5",
+            "dwellingUpLvl5",
+            "dwellingUp2Lvl5"
+          ],
+          [
+            "dwellingLvl6",
+            "dwellingUpLvl6",
+            "dwellingUp2Lvl6"
+          ],
+          [
+            "dwellingLvl7",
+            "dwellingUpLvl7",
+            "dwellingUp2Lvl7"
+          ]
+        ]
+      ],
+      "buildings": {
+        "dwellingUp2Lvl1": {
+          "name": "Oboz Wodzow Centaurow",
+          "description": "Recruits Wodzowie Centaurow, the third form. Growth is unchanged.",
+          "upgrades": "dwellingUpLvl1",
+          "requires": [
+            "dwellingUpLvl1"
+          ],
+          "cost": {
+            "gold": 3500,
+            "wood": 15,
+            "ore": 10
+          },
+          "mode": "normal"
+        },
+        "dwellingUp2Lvl2": {
+          "name": "Runiczna Kuznia Krasnoludow",
+          "description": "Recruits Runiczni Krasnoludowie, the third form. Growth is unchanged.",
+          "upgrades": "dwellingUpLvl2",
+          "requires": [
+            "dwellingUpLvl2"
+          ],
+          "cost": {
+            "gold": 4500,
+            "wood": 10,
+            "ore": 20,
+            "crystal": 3
+          },
+          "mode": "normal"
+        },
+        "dwellingUp2Lvl3": {
+          "name": "Strzelnica Ksiezycowych Elfow",
+          "description": "Recruits Elfy Ksiezycowe, the third form. Growth is unchanged.",
+          "upgrades": "dwellingUpLvl3",
+          "requires": [
+            "dwellingUpLvl3"
+          ],
+          "cost": {
+            "gold": 6500,
+            "wood": 20,
+            "ore": 10,
+            "gems": 5
+          },
+          "mode": "normal"
+        },
+        "dwellingUp2Lvl4": {
+          "name": "Stajnie Pegazow Zorzy",
+          "description": "Recruits Pegazy Zorzy, the third form. Growth is unchanged.",
+          "upgrades": "dwellingUpLvl4",
+          "requires": [
+            "dwellingUpLvl4"
+          ],
+          "cost": {
+            "gold": 8500,
+            "wood": 20,
+            "ore": 15,
+            "crystal": 5
+          },
+          "mode": "normal"
+        },
+        "dwellingUp2Lvl5": {
+          "name": "Gaj Pradawnych Entow",
+          "description": "Recruits Pradawne Enty, the third form. Growth is unchanged.",
+          "upgrades": "dwellingUpLvl5",
+          "requires": [
+            "dwellingUpLvl5"
+          ],
+          "cost": {
+            "gold": 12000,
+            "wood": 30,
+            "ore": 15,
+            "gems": 5
+          },
+          "mode": "normal"
+        },
+        "dwellingUp2Lvl6": {
+          "name": "Polana Pancernych Jednorozcow",
+          "description": "Recruits Jednorozce Pancerne, the third form. Growth is unchanged.",
+          "upgrades": "dwellingUpLvl6",
+          "requires": [
+            "dwellingUpLvl6"
+          ],
+          "cost": {
+            "gold": 22000,
+            "wood": 25,
+            "ore": 25,
+            "gems": 10
+          },
+          "mode": "normal"
+        },
+        "dwellingUp2Lvl7": {
+          "name": "Gniazdo Szmaragdowych Smokow",
+          "description": "Recruits Szmaragdowe Smoki, the third form. Growth is unchanged.",
+          "upgrades": "dwellingUpLvl7",
+          "requires": [
+            "dwellingUpLvl7"
+          ],
+          "cost": {
+            "gold": 60000,
+            "wood": 30,
+            "ore": 30,
+            "crystal": 25
+          },
+          "mode": "normal"
+        }
+      },
+      "structures": {
+        "dwellingUp2Lvl1": {
+          "animation": "fourth-forms/buildings/rampart/dcCentaurWarlord",
+          "x": 19,
+          "y": 276,
+          "z": 5,
+          "area": "fourth-forms/buildings/rampart/dcCentaurWarlord-area.png",
+          "border": "fourth-forms/buildings/rampart/dcCentaurWarlord-border.png"
+        },
+        "dwellingUp2Lvl2": {
+          "animation": "fourth-forms/buildings/rampart/dcRuneDwarf",
+          "x": 0,
+          "y": 193,
+          "z": -5,
+          "area": "fourth-forms/buildings/rampart/dcRuneDwarf-area.png",
+          "border": "fourth-forms/buildings/rampart/dcRuneDwarf-border.png"
+        },
+        "dwellingUp2Lvl3": {
+          "animation": "fourth-forms/buildings/rampart/dcMoonElf",
+          "x": 665,
+          "y": 129,
+          "z": -4,
+          "area": "fourth-forms/buildings/rampart/dcMoonElf-area.png",
+          "border": "fourth-forms/buildings/rampart/dcMoonElf-border.png"
+        },
+        "dwellingUp2Lvl4": {
+          "animation": "fourth-forms/buildings/rampart/dcAuroraPegasus",
+          "x": 298,
+          "y": 69,
+          "z": -3,
+          "area": "fourth-forms/buildings/rampart/dcAuroraPegasus-area.png",
+          "border": "fourth-forms/buildings/rampart/dcAuroraPegasus-border.png"
+        },
+        "dwellingUp2Lvl5": {
+          "animation": "fourth-forms/buildings/rampart/dcAncientEnt",
+          "x": 86,
+          "y": 165,
+          "z": -2,
+          "area": "fourth-forms/buildings/rampart/dcAncientEnt-area.png",
+          "border": "fourth-forms/buildings/rampart/dcAncientEnt-border.png"
+        },
+        "dwellingUp2Lvl6": {
+          "animation": "fourth-forms/buildings/rampart/dcArmoredUnicorn",
+          "x": 395,
+          "y": 104,
+          "z": -6,
+          "area": "fourth-forms/buildings/rampart/dcArmoredUnicorn-area.png",
+          "border": "fourth-forms/buildings/rampart/dcArmoredUnicorn-border.png"
+        },
+        "dwellingUp2Lvl7": {
+          "animation": "fourth-forms/buildings/rampart/dcEmeraldDragon",
+          "x": 551,
+          "y": 9,
+          "z": -10,
+          "area": "fourth-forms/buildings/rampart/dcEmeraldDragon-area.png",
+          "border": "fourth-forms/buildings/rampart/dcEmeraldDragon-border.png"
+        },
+        "dwellingLvl7": {
+          "z": -10
+        },
+        "dwellingUpLvl7": {
+          "z": -10
+        },
+        "castle": {
+          "z": -9
+        },
+        "citadel": {
+          "z": -9
+        },
+        "fort": {
+          "z": -9
+        },
+        "grail": {
+          "z": -8
+        },
+        "blacksmith": {
+          "z": -7
+        },
+        "dwellingLvl6": {
+          "z": -6
+        },
+        "dwellingUpLvl6": {
+          "z": -6
+        },
+        "dwellingLvl2": {
+          "z": -5
+        },
+        "dwellingUpLvl2": {
+          "z": -5
+        },
+        "horde1": {
+          "z": -5
+        },
+        "horde1Upgr": {
+          "z": -5
+        },
+        "dwellingLvl3": {
+          "z": -4
+        },
+        "dwellingUpLvl3": {
+          "z": -4
+        },
+        "dwellingLvl4": {
+          "z": -3
+        },
+        "dwellingUpLvl4": {
+          "z": -3
+        },
+        "dwellingLvl5": {
+          "z": -2
+        },
+        "dwellingUpLvl5": {
+          "z": -2
+        },
+        "horde2": {
+          "z": -2
+        },
+        "horde2Upgr": {
+          "z": -2
+        },
+        "mageGuild1": {
+          "z": -1
+        },
+        "mageGuild2": {
+          "z": -1
+        },
+        "mageGuild3": {
+          "z": -1
+        },
+        "mageGuild4": {
+          "z": -1
+        },
+        "mageGuild5": {
+          "z": -1
+        },
+        "extraCityHall": {
+          "z": 0
+        },
+        "capitol": {
+          "z": 1
+        },
+        "cityHall": {
+          "z": 1
+        },
+        "townHall": {
+          "z": 1
+        },
+        "villageHall": {
+          "z": 1
+        },
+        "special3": {
+          "z": 2
+        },
+        "tavern": {
+          "z": 3
+        },
+        "extraAnimation": {
+          "z": 4
+        },
+        "dwellingLvl1": {
+          "z": 5
+        },
+        "dwellingUpLvl1": {
+          "z": 5
+        },
+        "extraTownHall": {
+          "z": 6
+        },
+        "special1": {
+          "z": 7
+        },
+        "special2": {
+          "z": 7
+        },
+        "extraCapitol": {
+          "z": 8
+        },
+        "marketplace": {
+          "z": 9
+        },
+        "resourceSilo": {
+          "z": 10
+        }
+      },
+      "buildingsIcons": "town-screen/rampart/ALTHALLRMT.DEF"
+    }
+  }
+}

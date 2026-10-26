@@ -1,0 +1,39 @@
+{
+  "images": [
+    {
+      "group": 0,
+      "frame": 44,
+      "file": "fourth-forms/buildings/dungeon/dcDeepTroglodyte-hall.png"
+    },
+    {
+      "group": 0,
+      "frame": 45,
+      "file": "fourth-forms/buildings/dungeon/dcNightHarpy-hall.png"
+    },
+    {
+      "group": 0,
+      "frame": 46,
+      "file": "fourth-forms/buildings/dungeon/dcAbyssEye-hall.png"
+    },
+    {
+      "group": 0,
+      "frame": 47,
+      "file": "fourth-forms/buildings/dungeon/dcMedusaEmpress-hall.png"
+    },
+    {
+      "group": 0,
+      "frame": 48,
+      "file": "fourth-forms/buildings/dungeon/dcLabyrinthLord-hall.png"
+    },
+    {
+      "group": 0,
+      "frame": 49,
+      "file": "fourth-forms/buildings/dungeon/dcDeepScorpicore-hall.png"
+    },
+    {
+      "group": 0,
+      "frame": 50,
+      "file": "fourth-forms/buildings/dungeon/dcObsidianDragon-hall.png"
+    }
+  ]
+}

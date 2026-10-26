@@ -1,8 +1,8 @@
 {
   "name": "Dragon Citadel",
-  "description": "IMPORTANT: THE VCMI MOD MANAGER DOES NOT INSTALL THE CUSTOM ENGINE AUTOMATICALLY. RUN INSTALL BILLADENC4 RUNTIME.CMD ONCE, OR USE THE COMPLETE EDITION INSTALLER WHICH INCLUDES IT. Dragon Citadel is a terrifying, immensely powerful and brutally expensive endgame town built for rulers willing to spend the wealth of entire kingdoms. Its army rises from elite marksmen and evolving Ruby Golems through Storm Titans, magical beasts and ancient dragons to the original Ultimate and Absolute Dragons. The mod includes a custom town, heroes, creature animations, fixed-color map models, a dedicated siege battlefield with dragon turrets, creator tools and an eight-scenario campaign with Polish in-game story and unit briefings. The animated Grail grants 10,000 gold and 10 of every resource per day and is the only way to unlock level 8 recruitment. BILLADENC4 enforces one final dragon per month and Ruby Golem growth after every battle round. Dragon Citadel will continue to be developed and updated on GitHub.",
+  "description": "Requires the matching BILLADENC4 engine for custom mechanics; use the complete installer. Dragon Citadel with integral third creature forms, an eight-chapter campaign and optional fourth forms. Work on the appearance of Dragon Citadel is in progress.",
   "author": "Billaden",
-  "version": "1.5.7",
+  "version": "1.5.8",
   "contact": "https://github.com/czcmjkfvy4-dotcom/Jakubabuba",
   "modType": "Town",
   "language": "english",
@@ -10,10 +10,23 @@
     "min": "1.7.5"
   },
   "factions": [
-    "config/dragon-citadel/faction.json"
+    "config/dragon-citadel/faction.json",
+    "config/promoted-upgrades/castle.json",
+    "config/promoted-upgrades/rampart.json",
+    "config/promoted-upgrades/tower.json",
+    "config/promoted-upgrades/inferno.json",
+    "config/promoted-upgrades/necropolis.json",
+    "config/promoted-upgrades/dungeon.json",
+    "config/promoted-upgrades/stronghold.json",
+    "config/promoted-upgrades/fortress.json",
+    "config/promoted-upgrades/conflux.json",
+    "config/citadel-third/faction.json"
   ],
   "creatures": [
-    "config/dragon-citadel/creatures.json"
+    "config/dragon-citadel/creatures.json",
+    "config/promoted-upgrades/creatures.json",
+    "config/promoted-upgrades/links.json",
+    "config/citadel-third/creatures.json"
   ],
   "heroClasses": [
     "config/dragon-citadel/hero-class.json"
@@ -125,10 +138,66 @@
   ],
   "polish": {
     "name": "Smocza Cytadela",
-    "description": "WAŻNE: PO INSTALACJI MODA W VCMI URUCHOM RAZ INSTALL BILLADENC4 RUNTIME.CMD, ABY WŁĄCZYĆ WSZYSTKIE FUNKCJE SILNIKA. Smocza Cytadela oferuje elitarne golemy, tytanów, pradawne smoki i całkowicie autorską linię Smoków Ostatecznych poziomu 8. Runtime uruchamia także rozwój Rubinowego Golema po każdej rundzie oraz pojawianie się jednego ostatniego smoka raz na miesiąc.",
+    "description": "Smocza Cytadela z integralnymi trzecimi formami jednostek, ośmiorozdziałową kampanią i opcjonalnymi czwartymi formami. Prace nad wyglądem Smoczej Cytadeli w trakcie.",
     "author": "Billaden",
     "translations": [
       "translation/dragon-citadel/polish.json"
+    ]
+  },
+  "english": {
+    "name": "Dragon Citadel",
+    "description": "Dragon Citadel with integral third creature forms, an eight-chapter campaign and optional fourth forms. Work on the appearance of Dragon Citadel is in progress.",
+    "author": "Billaden",
+    "translations": [
+      "translation/dragon-citadel/english.json"
+    ]
+  },
+  "german": {
+    "name": "Drachenzitadelle",
+    "description": "Drachenzitadelle mit integrierten dritten Kreaturenformen, einer Kampagne mit acht Kapiteln und optionalen vierten Formen. Die grafische Überarbeitung der Drachenzitadelle ist noch in Arbeit.",
+    "author": "Billaden",
+    "translations": [
+      "translation/dragon-citadel/german.json"
+    ]
+  },
+  "chinese": {
+    "name": "龙之要塞",
+    "description": "龙之要塞包含内置的第三形态兵种、八章战役及可选的第四形态。 龙之要塞的外观仍在改进中。",
+    "author": "Billaden",
+    "translations": [
+      "translation/dragon-citadel/chinese.json"
+    ]
+  },
+  "japanese": {
+    "name": "ドラゴン・シタデル",
+    "description": "ドラゴン・シタデルには兵士の第3形態、全8章のキャンペーン、任意で有効にできる第4形態が含まれます。 ドラゴン・シタデルの外観は現在改修中です。",
+    "author": "Billaden",
+    "translations": [
+      "translation/dragon-citadel/japanese.json"
+    ]
+  },
+  "russian": {
+    "name": "Драконья цитадель",
+    "description": "Драконья цитадель со встроенными третьими формами существ, кампанией из восьми глав и дополнительными четвёртыми формами. Внешний вид Драконьей цитадели находится в доработке.",
+    "author": "Billaden",
+    "translations": [
+      "translation/dragon-citadel/russian.json"
+    ]
+  },
+  "spanish": {
+    "name": "Ciudadela del Dragón",
+    "description": "Ciudadela del Dragón con terceras formas de criaturas integradas, una campaña de ocho capítulos y cuartas formas opcionales. El aspecto de la Ciudadela del Dragón sigue en desarrollo.",
+    "author": "Billaden",
+    "translations": [
+      "translation/dragon-citadel/spanish.json"
+    ]
+  },
+  "french": {
+    "name": "Citadelle du Dragon",
+    "description": "Citadelle du Dragon avec les troisièmes formes des créatures intégrées, une campagne de huit chapitres et des quatrièmes formes facultatives. L’apparence de la Citadelle du Dragon est en cours d’amélioration.",
+    "author": "Billaden",
+    "translations": [
+      "translation/dragon-citadel/french.json"
     ]
   }
 }

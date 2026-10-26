@@ -1,0 +1,311 @@
+{
+  "core:rampart": {
+    "town": {
+      "creatures": [
+        [
+          "core:centaur",
+          "core:centaurCaptain",
+          "dragon-citadel:dcCentaurWarlord",
+          "dragon-citadel.fourth-upgrades:tumCentaurGeneral"
+        ],
+        [
+          "core:dwarf",
+          "core:battleDwarf",
+          "dragon-citadel:dcRuneDwarf",
+          "dragon-citadel.fourth-upgrades:tumBerserkerDwarf"
+        ],
+        [
+          "core:woodElf",
+          "core:grandElf",
+          "dragon-citadel:dcMoonElf",
+          "dragon-citadel.fourth-upgrades:tumSharpshooterElf"
+        ],
+        [
+          "core:pegasus",
+          "core:silverPegasus",
+          "dragon-citadel:dcAuroraPegasus",
+          "dragon-citadel.fourth-upgrades:tumGoldenPegasus"
+        ],
+        [
+          "core:dendroidGuard",
+          "core:dendroidSoldier",
+          "dragon-citadel:dcAncientEnt",
+          "dragon-citadel.fourth-upgrades:tumElderDendroid"
+        ],
+        [
+          "core:unicorn",
+          "core:warUnicorn",
+          "dragon-citadel:dcArmoredUnicorn",
+          "dragon-citadel.fourth-upgrades:tumLegendaryUnicorn"
+        ],
+        [
+          "core:greenDragon",
+          "core:goldDragon",
+          "dragon-citadel:dcEmeraldDragon",
+          "wake-of-gods.level8units:diamondDragon"
+        ]
+      ],
+      "hallSlots": [
+        [
+          [
+            "villageHall",
+            "townHall",
+            "cityHall",
+            "capitol"
+          ],
+          [
+            "fort",
+            "citadel",
+            "castle"
+          ],
+          [
+            "tavern"
+          ],
+          [
+            "blacksmith"
+          ]
+        ],
+        [
+          [
+            "marketplace",
+            "resourceSilo"
+          ],
+          [
+            "mageGuild1",
+            "mageGuild2",
+            "mageGuild3",
+            "mageGuild4",
+            "mageGuild5"
+          ],
+          [
+            "special1",
+            "special2"
+          ]
+        ],
+        [
+          [
+            "special3"
+          ],
+          [
+            "horde2",
+            "horde2Upgr"
+          ],
+          [
+            "horde1",
+            "horde1Upgr"
+          ]
+        ],
+        [
+          [
+            "dwellingLvl1",
+            "dwellingUpLvl1",
+            "dwellingUp2Lvl1",
+            "dwellingUp3Lvl1"
+          ],
+          [
+            "dwellingLvl2",
+            "dwellingUpLvl2",
+            "dwellingUp2Lvl2",
+            "dwellingUp3Lvl2"
+          ],
+          [
+            "dwellingLvl3",
+            "dwellingUpLvl3",
+            "dwellingUp2Lvl3",
+            "dwellingUp3Lvl3"
+          ],
+          [
+            "dwellingLvl4",
+            "dwellingUpLvl4",
+            "dwellingUp2Lvl4",
+            "dwellingUp3Lvl4"
+          ]
+        ],
+        [
+          [
+            "dwellingLvl5",
+            "dwellingUpLvl5",
+            "dwellingUp2Lvl5",
+            "dwellingUp3Lvl5"
+          ],
+          [
+            "dwellingLvl6",
+            "dwellingUpLvl6",
+            "dwellingUp2Lvl6",
+            "dwellingUp3Lvl6"
+          ],
+          [
+            "dwellingLvl7",
+            "dwellingUpLvl7",
+            "dwellingUp2Lvl7",
+            "dwellingUp3Lvl7"
+          ]
+        ]
+      ],
+      "buildings": {
+        "dwellingUp3Lvl1": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Centaur Stables}",
+          "cost": {
+            "gold": 5250,
+            "wood": 23,
+            "ore": 15
+          },
+          "requires": [
+            "dwellingUp2Lvl1"
+          ],
+          "upgrades": "dwellingUp2Lvl1",
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl2": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Dwarf Cottage}",
+          "cost": {
+            "gold": 8100,
+            "wood": 18,
+            "ore": 36,
+            "crystal": 6
+          },
+          "requires": [
+            "dwellingUp2Lvl2"
+          ],
+          "upgrades": "dwellingUp2Lvl2",
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl3": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Homestead}",
+          "cost": {
+            "gold": 14040,
+            "wood": 44,
+            "ore": 22,
+            "gems": 11
+          },
+          "requires": [
+            "dwellingUp2Lvl3"
+          ],
+          "upgrades": "dwellingUp2Lvl3",
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl4": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Enchanted Spring}",
+          "cost": {
+            "gold": 22035,
+            "wood": 52,
+            "ore": 39,
+            "crystal": 13
+          },
+          "requires": [
+            "dwellingUp2Lvl4"
+          ],
+          "upgrades": "dwellingUp2Lvl4",
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl5": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Dendroid Arches}",
+          "cost": {
+            "gold": 37325,
+            "wood": 94,
+            "ore": 47,
+            "gems": 16
+          },
+          "requires": [
+            "dwellingUp2Lvl5"
+          ],
+          "upgrades": "dwellingUp2Lvl5",
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl6": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Unicorn Glade}",
+          "cost": {
+            "gold": 82115,
+            "wood": 94,
+            "ore": 94,
+            "gems": 38
+          },
+          "requires": [
+            "dwellingUp2Lvl6"
+          ],
+          "upgrades": "dwellingUp2Lvl6",
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl7": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Dragon Cliffs}",
+          "cost": {
+            "gold": 268740,
+            "wood": 135,
+            "ore": 135,
+            "crystal": 112
+          },
+          "requires": [
+            "dwellingUp2Lvl7"
+          ],
+          "upgrades": "dwellingUp2Lvl7",
+          "mode": "normal"
+        }
+      },
+      "structures": {
+        "dwellingUp3Lvl1": {
+          "animation": "town-screen/rampart/TBRMUP2_0.def",
+          "x": 0,
+          "y": 216,
+          "z": 5,
+          "border": "town-screen/rampart/borders/TORCEN2AU.bmp",
+          "area": "town-screen/rampart/areas/TZRCEN2AU.bmp"
+        },
+        "dwellingUp3Lvl2": {
+          "animation": "town-screen/rampart/TBRMUP2_1.def",
+          "x": 0,
+          "y": 143,
+          "border": "town-screen/rampart/borders/TORDWF2U.bmp",
+          "area": "town-screen/rampart/areas/TZRDWF2U.bmp",
+          "z": -5
+        },
+        "dwellingUp3Lvl3": {
+          "animation": "town-screen/rampart/TBRMUP2_2.def",
+          "x": 665,
+          "y": 101,
+          "z": -4,
+          "border": "town-screen/rampart/borders/TORELF2U.bmp",
+          "area": "town-screen/rampart/areas/TZRELF2U.bmp"
+        },
+        "dwellingUp3Lvl4": {
+          "animation": "town-screen/rampart/TBRMUP2_3.def",
+          "x": 287,
+          "y": 23,
+          "z": -3,
+          "border": "town-screen/rampart/borders/TORPEG2AU.bmp",
+          "area": "town-screen/rampart/areas/TZRPEG2AU.bmp"
+        },
+        "dwellingUp3Lvl5": {
+          "animation": "town-screen/rampart/TBRMUP2_4.def",
+          "x": 63,
+          "y": 146,
+          "z": -2,
+          "border": "town-screen/rampart/borders/TORTRE2U.bmp",
+          "area": "town-screen/rampart/areas/TZRTRE2U.bmp"
+        },
+        "dwellingUp3Lvl6": {
+          "animation": "town-screen/rampart/TBRMUP2_5.def",
+          "x": 362,
+          "y": 90,
+          "z": -6,
+          "border": "town-screen/rampart/borders/TORUNI2U.bmp",
+          "area": "town-screen/rampart/areas/TZRUNI2U.bmp"
+        },
+        "dwellingUp3Lvl7": {
+          "animation": "town-screen/rampart/TBRMUP2_6.def",
+          "x": 502,
+          "y": 5,
+          "z": -10,
+          "border": "town-screen/rampart/borders/TORDR2AU.bmp",
+          "area": "town-screen/rampart/areas/TZRDR2AAU.bmp"
+        }
+      }
+    }
+  }
+}

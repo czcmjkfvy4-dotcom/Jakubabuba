@@ -1,0 +1,61 @@
+{
+  "passed": true,
+  "languages": [
+    {
+      "language": "polish",
+      "baseStrings": 6453,
+      "verifiedEngineOverrides": 0,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "language": "english",
+      "baseStrings": 0,
+      "verifiedEngineOverrides": 0,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "language": "german",
+      "baseStrings": 6453,
+      "verifiedEngineOverrides": 0,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "language": "chinese",
+      "baseStrings": 6443,
+      "verifiedEngineOverrides": 0,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "language": "japanese",
+      "baseStrings": 6453,
+      "verifiedEngineOverrides": 0,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "language": "russian",
+      "baseStrings": 6415,
+      "verifiedEngineOverrides": 7,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "language": "spanish",
+      "baseStrings": 6415,
+      "verifiedEngineOverrides": 0,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "language": "french",
+      "baseStrings": 6415,
+      "verifiedEngineOverrides": 0,
+      "errors": 0,
+      "warnings": 0
+    }
+  ]
+}

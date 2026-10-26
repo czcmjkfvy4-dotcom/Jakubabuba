@@ -1,0 +1,632 @@
+{
+  "dragon-citadel:dcCrownGuard": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumRoyalHalberdier"
+    ]
+  },
+  "core:halberdier": {
+    "upgrades": [
+      "dragon-citadel:dcCrownGuard"
+    ]
+  },
+  "dragon-citadel:dcRoyalCrossbowman": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumCrossbowman"
+    ]
+  },
+  "core:marksman": {
+    "upgrades": [
+      "dragon-citadel:dcRoyalCrossbowman"
+    ]
+  },
+  "dragon-citadel:dcCrownGriffin": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumCeasarGriffin"
+    ]
+  },
+  "core:royalGriffin": {
+    "upgrades": [
+      "dragon-citadel:dcCrownGriffin"
+    ]
+  },
+  "dragon-citadel:dcPaladin": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumInquisitor"
+    ]
+  },
+  "core:crusader": {
+    "upgrades": [
+      "dragon-citadel:dcPaladin"
+    ]
+  },
+  "dragon-citadel:dcHierophant": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumHighPriest"
+    ]
+  },
+  "core:zealot": {
+    "upgrades": [
+      "dragon-citadel:dcHierophant"
+    ]
+  },
+  "dragon-citadel:dcRoyalBannerKnight": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumHolyChampion"
+    ]
+  },
+  "core:champion": {
+    "upgrades": [
+      "dragon-citadel:dcRoyalBannerKnight"
+    ]
+  },
+  "dragon-citadel:dcSeraph": {
+    "upgrades": [
+      "wake-of-gods.level8units:supremeArchangel"
+    ]
+  },
+  "core:archangel": {
+    "upgrades": [
+      "dragon-citadel:dcSeraph"
+    ]
+  },
+  "dragon-citadel:dcCentaurWarlord": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumCentaurGeneral"
+    ]
+  },
+  "core:centaurCaptain": {
+    "upgrades": [
+      "dragon-citadel:dcCentaurWarlord"
+    ]
+  },
+  "dragon-citadel:dcRuneDwarf": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumBerserkerDwarf"
+    ]
+  },
+  "core:battleDwarf": {
+    "upgrades": [
+      "dragon-citadel:dcRuneDwarf"
+    ]
+  },
+  "dragon-citadel:dcMoonElf": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumSharpshooterElf"
+    ]
+  },
+  "core:grandElf": {
+    "upgrades": [
+      "dragon-citadel:dcMoonElf"
+    ]
+  },
+  "dragon-citadel:dcAuroraPegasus": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumGoldenPegasus"
+    ]
+  },
+  "core:silverPegasus": {
+    "upgrades": [
+      "dragon-citadel:dcAuroraPegasus"
+    ]
+  },
+  "dragon-citadel:dcAncientEnt": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumElderDendroid"
+    ]
+  },
+  "core:dendroidSoldier": {
+    "upgrades": [
+      "dragon-citadel:dcAncientEnt"
+    ]
+  },
+  "dragon-citadel:dcArmoredUnicorn": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumLegendaryUnicorn"
+    ]
+  },
+  "core:warUnicorn": {
+    "upgrades": [
+      "dragon-citadel:dcArmoredUnicorn"
+    ]
+  },
+  "dragon-citadel:dcEmeraldDragon": {
+    "upgrades": [
+      "wake-of-gods.level8units:diamondDragon"
+    ]
+  },
+  "core:goldDragon": {
+    "upgrades": [
+      "dragon-citadel:dcEmeraldDragon"
+    ]
+  },
+  "dragon-citadel:dcMechanicGremlin": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumGrandmasterGremlin"
+    ]
+  },
+  "core:masterGremlin": {
+    "upgrades": [
+      "dragon-citadel:dcMechanicGremlin"
+    ]
+  },
+  "dragon-citadel:dcIcewingGargoyle": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumMarbleGargoyle"
+    ]
+  },
+  "core:obsidianGargoyle": {
+    "upgrades": [
+      "dragon-citadel:dcIcewingGargoyle"
+    ]
+  },
+  "dragon-citadel:dcAdamantGolem": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumSteelGolem"
+    ]
+  },
+  "core:ironGolem": {
+    "upgrades": [
+      "dragon-citadel:dcAdamantGolem"
+    ]
+  },
+  "dragon-citadel:dcRuneMage": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumSupremeArchMage"
+    ]
+  },
+  "core:archMage": {
+    "upgrades": [
+      "dragon-citadel:dcRuneMage"
+    ]
+  },
+  "dragon-citadel:dcDjinnSultan": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumArcaneGenie"
+    ]
+  },
+  "core:masterGenie": {
+    "upgrades": [
+      "dragon-citadel:dcDjinnSultan"
+    ]
+  },
+  "dragon-citadel:dcNagaEmpress": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumNagaEmpress"
+    ]
+  },
+  "core:nagaQueen": {
+    "upgrades": [
+      "dragon-citadel:dcNagaEmpress"
+    ]
+  },
+  "dragon-citadel:dcFirmamentTitan": {
+    "upgrades": [
+      "wake-of-gods.level8units:lordOfThunder"
+    ]
+  },
+  "core:titan": {
+    "upgrades": [
+      "dragon-citadel:dcFirmamentTitan"
+    ]
+  },
+  "dragon-citadel:dcAshImp": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumVermin"
+    ]
+  },
+  "core:familiar": {
+    "upgrades": [
+      "dragon-citadel:dcAshImp"
+    ]
+  },
+  "dragon-citadel:dcAbyssMagog": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumWingedMagog"
+    ]
+  },
+  "core:magog": {
+    "upgrades": [
+      "dragon-citadel:dcAbyssMagog"
+    ]
+  },
+  "dragon-citadel:dcHellCerberus": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumAstralCerberus"
+    ]
+  },
+  "core:cerberus": {
+    "upgrades": [
+      "dragon-citadel:dcHellCerberus"
+    ]
+  },
+  "dragon-citadel:dcIronHornDemon": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumSharpHornedDemon"
+    ]
+  },
+  "core:hornedDemon": {
+    "upgrades": [
+      "dragon-citadel:dcIronHornDemon"
+    ]
+  },
+  "dragon-citadel:dcAshLord": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumPitMaster"
+    ]
+  },
+  "core:pitLord": {
+    "upgrades": [
+      "dragon-citadel:dcAshLord"
+    ]
+  },
+  "dragon-citadel:dcCrownedEfreet": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumEfreetRajah"
+    ]
+  },
+  "core:efreetSultan": {
+    "upgrades": [
+      "dragon-citadel:dcCrownedEfreet"
+    ]
+  },
+  "dragon-citadel:dcAbyssPrince": {
+    "upgrades": [
+      "wake-of-gods.level8units:hellBaron"
+    ]
+  },
+  "core:archDevil": {
+    "upgrades": [
+      "dragon-citadel:dcAbyssPrince"
+    ]
+  },
+  "dragon-citadel:dcBoneLegionary": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumSkeletonKnight"
+    ]
+  },
+  "core:skeletonWarrior": {
+    "upgrades": [
+      "dragon-citadel:dcBoneLegionary"
+    ]
+  },
+  "dragon-citadel:dcPlagueGuard": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumGhoul"
+    ]
+  },
+  "core:zombieLord": {
+    "upgrades": [
+      "dragon-citadel:dcPlagueGuard"
+    ]
+  },
+  "dragon-citadel:dcTombWraith": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumSpecter"
+    ]
+  },
+  "core:wraith": {
+    "upgrades": [
+      "dragon-citadel:dcTombWraith"
+    ]
+  },
+  "dragon-citadel:dcAncientBloodVampire": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumNosferatu"
+    ]
+  },
+  "core:vampireLord": {
+    "upgrades": [
+      "dragon-citadel:dcAncientBloodVampire"
+    ]
+  },
+  "dragon-citadel:dcArchlich": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumLichKing"
+    ]
+  },
+  "core:powerLich": {
+    "upgrades": [
+      "dragon-citadel:dcArchlich"
+    ]
+  },
+  "dragon-citadel:dcDoomKnight": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumDeathKnight"
+    ]
+  },
+  "core:dreadKnight": {
+    "upgrades": [
+      "dragon-citadel:dcDoomKnight"
+    ]
+  },
+  "dragon-citadel:dcGraveDragon": {
+    "upgrades": [
+      "wake-of-gods.level8units:bloodDragon"
+    ]
+  },
+  "core:ghostDragon": {
+    "upgrades": [
+      "dragon-citadel:dcGraveDragon"
+    ]
+  },
+  "dragon-citadel:dcDeepTroglodyte": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumPhosphorescentTroglodyte"
+    ]
+  },
+  "core:infernalTroglodyte": {
+    "upgrades": [
+      "dragon-citadel:dcDeepTroglodyte"
+    ]
+  },
+  "dragon-citadel:dcNightHarpy": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumHarpySanguinary"
+    ]
+  },
+  "core:harpyHag": {
+    "upgrades": [
+      "dragon-citadel:dcNightHarpy"
+    ]
+  },
+  "dragon-citadel:dcAbyssEye": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumMonstrousEye"
+    ]
+  },
+  "core:evilEye": {
+    "upgrades": [
+      "dragon-citadel:dcAbyssEye"
+    ]
+  },
+  "dragon-citadel:dcMedusaEmpress": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumMedusaEmpress"
+    ]
+  },
+  "core:medusaQueen": {
+    "upgrades": [
+      "dragon-citadel:dcMedusaEmpress"
+    ]
+  },
+  "dragon-citadel:dcLabyrinthLord": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumBlackMinotaur"
+    ]
+  },
+  "core:minotaurKing": {
+    "upgrades": [
+      "dragon-citadel:dcLabyrinthLord"
+    ]
+  },
+  "dragon-citadel:dcDeepScorpicore": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumChimera"
+    ]
+  },
+  "core:scorpicore": {
+    "upgrades": [
+      "dragon-citadel:dcDeepScorpicore"
+    ]
+  },
+  "dragon-citadel:dcObsidianDragon": {
+    "upgrades": [
+      "wake-of-gods.level8units:darknessDragon"
+    ]
+  },
+  "core:blackDragon": {
+    "upgrades": [
+      "dragon-citadel:dcObsidianDragon"
+    ]
+  },
+  "dragon-citadel:dcVeteranHobgoblin": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumHobgoblinOverlord"
+    ]
+  },
+  "core:hobgoblin": {
+    "upgrades": [
+      "dragon-citadel:dcVeteranHobgoblin"
+    ]
+  },
+  "dragon-citadel:dcWolfHetman": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumWolfRiderKiller"
+    ]
+  },
+  "core:hobgoblinWolfRider": {
+    "upgrades": [
+      "dragon-citadel:dcWolfHetman"
+    ]
+  },
+  "dragon-citadel:dcAxeMasterOrc": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumOrcLeader"
+    ]
+  },
+  "core:orcChieftain": {
+    "upgrades": [
+      "dragon-citadel:dcAxeMasterOrc"
+    ]
+  },
+  "dragon-citadel:dcElderOgreShaman": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumElderOgre"
+    ]
+  },
+  "core:ogreMage": {
+    "upgrades": [
+      "dragon-citadel:dcElderOgreShaman"
+    ]
+  },
+  "dragon-citadel:dcStormbird": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumLightningbird"
+    ]
+  },
+  "core:thunderbird": {
+    "upgrades": [
+      "dragon-citadel:dcStormbird"
+    ]
+  },
+  "dragon-citadel:dcDestroyerCyclops": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumCyclopsEmperor"
+    ]
+  },
+  "core:cyclopKing": {
+    "upgrades": [
+      "dragon-citadel:dcDestroyerCyclops"
+    ]
+  },
+  "dragon-citadel:dcBehemothPatriarch": {
+    "upgrades": [
+      "wake-of-gods.level8units:ghostBehemoth"
+    ]
+  },
+  "core:ancientBehemoth": {
+    "upgrades": [
+      "dragon-citadel:dcBehemothPatriarch"
+    ]
+  },
+  "dragon-citadel:dcIronshieldGnoll": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumGnollShaman"
+    ]
+  },
+  "core:gnollMarauder": {
+    "upgrades": [
+      "dragon-citadel:dcIronshieldGnoll"
+    ]
+  },
+  "dragon-citadel:dcLizardHunter": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumEliteLizard"
+    ]
+  },
+  "core:lizardWarrior": {
+    "upgrades": [
+      "dragon-citadel:dcLizardHunter"
+    ]
+  },
+  "dragon-citadel:dcVenomFly": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumChaoticDragonFly"
+    ]
+  },
+  "core:fireDragonFly": {
+    "upgrades": [
+      "dragon-citadel:dcVenomFly"
+    ]
+  },
+  "dragon-citadel:dcPrimevalBasilisk": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumLavaBasilisk"
+    ]
+  },
+  "core:greaterBasilisk": {
+    "upgrades": [
+      "dragon-citadel:dcPrimevalBasilisk"
+    ]
+  },
+  "dragon-citadel:dcGorgonMatriarch": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumCatopleba"
+    ]
+  },
+  "core:mightyGorgon": {
+    "upgrades": [
+      "dragon-citadel:dcGorgonMatriarch"
+    ]
+  },
+  "dragon-citadel:dcMarshWyvern": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumAcidWyvern"
+    ]
+  },
+  "core:wyvernMonarch": {
+    "upgrades": [
+      "dragon-citadel:dcMarshWyvern"
+    ]
+  },
+  "dragon-citadel:dcPrimordialHydra": {
+    "upgrades": [
+      "wake-of-gods.level8units:hellHydra"
+    ]
+  },
+  "core:chaosHydra": {
+    "upgrades": [
+      "dragon-citadel:dcPrimordialHydra"
+    ]
+  },
+  "dragon-citadel:dcAuroraNymph": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumFairy"
+    ]
+  },
+  "core:sprite": {
+    "upgrades": [
+      "dragon-citadel:dcAuroraNymph"
+    ]
+  },
+  "dragon-citadel:dcTempestElemental": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumHurricaneElemental"
+    ]
+  },
+  "core:stormElemental": {
+    "upgrades": [
+      "dragon-citadel:dcTempestElemental"
+    ]
+  },
+  "dragon-citadel:dcGlacierElemental": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumLifeElemental"
+    ]
+  },
+  "core:iceElemental": {
+    "upgrades": [
+      "dragon-citadel:dcGlacierElemental"
+    ]
+  },
+  "dragon-citadel:dcPlasmaElemental": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumPlasmaElemental"
+    ]
+  },
+  "core:energyElemental": {
+    "upgrades": [
+      "dragon-citadel:dcPlasmaElemental"
+    ]
+  },
+  "dragon-citadel:dcObsidianElemental": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumMineralElemental"
+    ]
+  },
+  "core:magmaElemental": {
+    "upgrades": [
+      "dragon-citadel:dcObsidianElemental"
+    ]
+  },
+  "dragon-citadel:dcEtherElemental": {
+    "upgrades": [
+      "dragon-citadel.fourth-upgrades:tumVoidElemental"
+    ]
+  },
+  "core:magicElemental": {
+    "upgrades": [
+      "dragon-citadel:dcEtherElemental"
+    ]
+  },
+  "dragon-citadel:dcPrimordialPhoenix": {
+    "upgrades": [
+      "wake-of-gods.level8units:sacredPhoenix"
+    ]
+  },
+  "core:phoenix": {
+    "upgrades": [
+      "dragon-citadel:dcPrimordialPhoenix"
+    ]
+  }
+}

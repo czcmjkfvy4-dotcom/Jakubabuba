@@ -1,0 +1,21 @@
+{
+  "basepath": "fourth-forms/projectiles/dcFirmamentTitan/",
+  "sequences": [
+    {
+      "group": 0,
+      "frames": [
+        "f000.png",
+        "f001.png",
+        "f002.png",
+        "f003.png",
+        "f004.png",
+        "f005.png",
+        "f006.png",
+        "f007.png",
+        "f008.png"
+      ],
+      "generateShadow": 0,
+      "generateOverlay": 0
+    }
+  ]
+}

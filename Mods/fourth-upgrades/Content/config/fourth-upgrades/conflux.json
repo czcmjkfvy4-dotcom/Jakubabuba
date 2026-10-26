@@ -1,0 +1,312 @@
+{
+  "core:conflux": {
+    "town": {
+      "creatures": [
+        [
+          "core:pixie",
+          "core:sprite",
+          "dragon-citadel:dcAuroraNymph",
+          "dragon-citadel.fourth-upgrades:tumFairy"
+        ],
+        [
+          "core:airElemental",
+          "core:stormElemental",
+          "dragon-citadel:dcTempestElemental",
+          "dragon-citadel.fourth-upgrades:tumHurricaneElemental"
+        ],
+        [
+          "core:waterElemental",
+          "core:iceElemental",
+          "dragon-citadel:dcGlacierElemental",
+          "dragon-citadel.fourth-upgrades:tumLifeElemental"
+        ],
+        [
+          "core:fireElemental",
+          "core:energyElemental",
+          "dragon-citadel:dcPlasmaElemental",
+          "dragon-citadel.fourth-upgrades:tumPlasmaElemental"
+        ],
+        [
+          "core:earthElemental",
+          "core:magmaElemental",
+          "dragon-citadel:dcObsidianElemental",
+          "dragon-citadel.fourth-upgrades:tumMineralElemental"
+        ],
+        [
+          "core:psychicElemental",
+          "core:magicElemental",
+          "dragon-citadel:dcEtherElemental",
+          "dragon-citadel.fourth-upgrades:tumVoidElemental"
+        ],
+        [
+          "core:firebird",
+          "core:phoenix",
+          "dragon-citadel:dcPrimordialPhoenix",
+          "wake-of-gods.level8units:sacredPhoenix"
+        ]
+      ],
+      "hallSlots": [
+        [
+          [
+            "villageHall",
+            "townHall",
+            "cityHall",
+            "capitol"
+          ],
+          [
+            "fort",
+            "citadel",
+            "castle"
+          ],
+          [
+            "tavern"
+          ],
+          [
+            "blacksmith"
+          ]
+        ],
+        [
+          [
+            "marketplace",
+            "resourceSilo"
+          ],
+          [
+            "mageGuild1",
+            "mageGuild2",
+            "mageGuild3",
+            "mageGuild4",
+            "mageGuild5"
+          ],
+          [
+            "shipyard"
+          ]
+        ],
+        [
+          [
+            "special2"
+          ],
+          [
+            "special1"
+          ],
+          [
+            "horde1",
+            "horde1Upgr"
+          ]
+        ],
+        [
+          [
+            "dwellingLvl1",
+            "dwellingUpLvl1",
+            "dwellingUp2Lvl1",
+            "dwellingUp3Lvl1"
+          ],
+          [
+            "dwellingLvl2",
+            "dwellingUpLvl2",
+            "dwellingUp2Lvl2",
+            "dwellingUp3Lvl2"
+          ],
+          [
+            "dwellingLvl3",
+            "dwellingUpLvl3",
+            "dwellingUp2Lvl3",
+            "dwellingUp3Lvl3"
+          ],
+          [
+            "dwellingLvl4",
+            "dwellingUpLvl4",
+            "dwellingUp2Lvl4",
+            "dwellingUp3Lvl4"
+          ]
+        ],
+        [
+          [
+            "dwellingLvl5",
+            "dwellingUpLvl5",
+            "dwellingUp2Lvl5",
+            "dwellingUp3Lvl5"
+          ],
+          [
+            "dwellingLvl6",
+            "dwellingUpLvl6",
+            "dwellingUp2Lvl6",
+            "dwellingUp3Lvl6"
+          ],
+          [
+            "dwellingLvl7",
+            "dwellingUpLvl7",
+            "dwellingUp2Lvl7",
+            "dwellingUp3Lvl7"
+          ]
+        ]
+      ],
+      "buildings": {
+        "dwellingUp3Lvl1": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Magic Lantern}",
+          "cost": {
+            "gold": 10500,
+            "wood": 23,
+            "ore": 8,
+            "gems": 8
+          },
+          "requires": [
+            "dwellingUp2Lvl1"
+          ],
+          "upgrades": "dwellingUp2Lvl1",
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl2": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Altar of Air}",
+          "cost": {
+            "gold": 19800,
+            "wood": 22,
+            "ore": 18,
+            "gems": 11
+          },
+          "requires": [
+            "dwellingUp2Lvl2"
+          ],
+          "upgrades": "dwellingUp2Lvl2",
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl3": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Altar of Water}",
+          "cost": {
+            "gold": 32400,
+            "wood": 26,
+            "ore": 33,
+            "crystal": 22
+          },
+          "requires": [
+            "dwellingUp2Lvl3"
+          ],
+          "upgrades": "dwellingUp2Lvl3",
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl4": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Altar of Fire}",
+          "cost": {
+            "gold": 57025,
+            "wood": 32,
+            "ore": 47,
+            "sulfur": 32
+          },
+          "requires": [
+            "dwellingUp2Lvl4"
+          ],
+          "upgrades": "dwellingUp2Lvl4",
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl5": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Altar of Earth}",
+          "cost": {
+            "gold": 93315,
+            "wood": 47,
+            "ore": 78,
+            "crystal": 47
+          },
+          "requires": [
+            "dwellingUp2Lvl5"
+          ],
+          "upgrades": "dwellingUp2Lvl5",
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl6": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Altar of Thought}",
+          "cost": {
+            "gold": 156765,
+            "wood": 56,
+            "ore": 75,
+            "gems": 56,
+            "mercury": 38
+          },
+          "requires": [
+            "dwellingUp2Lvl6"
+          ],
+          "upgrades": "dwellingUp2Lvl6",
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl7": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Pyre}",
+          "cost": {
+            "gold": 291135,
+            "wood": 90,
+            "ore": 112,
+            "sulfur": 112,
+            "mercury": 90
+          },
+          "requires": [
+            "dwellingUp2Lvl7"
+          ],
+          "upgrades": "dwellingUp2Lvl7",
+          "mode": "normal"
+        }
+      },
+      "structures": {
+        "dwellingUp3Lvl1": {
+          "animation": "town-screen/conflux/TBELUP2_0.def",
+          "x": 689,
+          "y": 250,
+          "border": "town-screen/conflux/borders/TOEL2UP_0.bmp",
+          "area": "town-screen/conflux/areas/TZEL2UP_0.bmp",
+          "z": 11
+        },
+        "dwellingUp3Lvl2": {
+          "animation": "town-screen/conflux/TBELUP2_1.def",
+          "x": 630,
+          "y": 50,
+          "border": "town-screen/conflux/borders/TOEL2UP_1.bmp",
+          "area": "town-screen/conflux/areas/TZEL2UP_1.bmp",
+          "z": -10
+        },
+        "dwellingUp3Lvl3": {
+          "animation": "town-screen/conflux/TBELUP2_2.def",
+          "x": 709,
+          "y": 210,
+          "z": -2,
+          "border": "TOELUP_2.bmp",
+          "area": "TZELUP_2.bmp"
+        },
+        "dwellingUp3Lvl4": {
+          "animation": "town-screen/conflux/TBELUP2_3.def",
+          "x": 108,
+          "y": 131,
+          "z": -7,
+          "border": "TOELUP_3.bmp",
+          "area": "TZELUP_3.bmp"
+        },
+        "dwellingUp3Lvl5": {
+          "animation": "town-screen/conflux/TBELUP2_4.def",
+          "x": 264,
+          "y": 168,
+          "z": -8,
+          "border": "town-screen/conflux/borders/TOEL2UP_4.bmp",
+          "area": "town-screen/conflux/areas/TZEL2UP_4.bmp"
+        },
+        "dwellingUp3Lvl6": {
+          "animation": "town-screen/conflux/TBELUP2_5.def",
+          "x": 394,
+          "y": 283,
+          "z": 9,
+          "border": "TOELUP_5.bmp",
+          "area": "TZELUP_5.bmp"
+        },
+        "dwellingUp3Lvl7": {
+          "animation": "town-screen/conflux/TBELUP2_6.def",
+          "x": 34,
+          "y": 0,
+          "z": -9,
+          "border": "TOELUP_6.bmp",
+          "area": "TZELUP_6.bmp"
+        }
+      }
+    }
+  }
+}

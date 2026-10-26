@@ -1,0 +1,14 @@
+{
+  "name": "ドラゴン・シタデル — Unicode fonts",
+  "description": "ドラゴン・シタデルの外観は現在改修中です。",
+  "author": "Noto Project / Billaden",
+  "version": "1.0.0",
+  "modType": "Translation",
+  "language": "japanese",
+  "depends": [
+    "dragon-citadel"
+  ],
+  "compatibility": {
+    "min": "1.7.5"
+  }
+}

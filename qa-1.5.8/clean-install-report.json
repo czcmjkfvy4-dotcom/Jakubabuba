@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "archiveSHA256": "3f9aa4ea0a36a159a7f578ee41f112d0e5bef047dd2885c4aad8362a4e2f61be",
+  "installedFromExtractedArchive": true,
+  "originalGameDataImportedFromUserSource": true,
+  "unrelatedUserSavesUnchanged": 94,
+  "modes": {
+    "third-only": {
+      "passed": true,
+      "markersReached": true,
+      "errorCount": 0,
+      "warningCount": 0,
+      "errors": [],
+      "warnings": []
+    },
+    "third-fourth-graphics": {
+      "passed": true,
+      "markersReached": true,
+      "errorCount": 0,
+      "warningCount": 0,
+      "errors": [],
+      "warnings": []
+    },
+    "third-only-again": {
+      "passed": true,
+      "markersReached": true,
+      "errorCount": 0,
+      "warningCount": 0,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  "fullCampaignPlaythrough": false
+}

@@ -1,0 +1,410 @@
+{
+  "core:tower": {
+    "town": {
+      "creatures": [
+        [
+          "core:gremlin",
+          "core:masterGremlin",
+          "dragon-citadel:dcMechanicGremlin"
+        ],
+        [
+          "core:stoneGargoyle",
+          "core:obsidianGargoyle",
+          "dragon-citadel:dcIcewingGargoyle"
+        ],
+        [
+          "core:ironGolem",
+          "core:stoneGolem",
+          "dragon-citadel:dcAdamantGolem"
+        ],
+        [
+          "core:mage",
+          "core:archMage",
+          "dragon-citadel:dcRuneMage"
+        ],
+        [
+          "core:genie",
+          "core:masterGenie",
+          "dragon-citadel:dcDjinnSultan"
+        ],
+        [
+          "core:naga",
+          "core:nagaQueen",
+          "dragon-citadel:dcNagaEmpress"
+        ],
+        [
+          "core:giant",
+          "core:titan",
+          "dragon-citadel:dcFirmamentTitan"
+        ]
+      ],
+      "hallSlots": [
+        [
+          [
+            "villageHall",
+            "townHall",
+            "cityHall",
+            "capitol"
+          ],
+          [
+            "fort",
+            "citadel",
+            "castle"
+          ],
+          [
+            "tavern"
+          ],
+          [
+            "blacksmith"
+          ]
+        ],
+        [
+          [
+            "marketplace",
+            "resourceSilo"
+          ],
+          [
+            "mageGuild1",
+            "mageGuild2",
+            "mageGuild3",
+            "mageGuild4",
+            "mageGuild5"
+          ],
+          [
+            "special3"
+          ],
+          [
+            "special4"
+          ]
+        ],
+        [
+          [
+            "special1"
+          ],
+          [
+            "special2"
+          ],
+          [
+            "horde1",
+            "horde1Upgr"
+          ]
+        ],
+        [
+          [
+            "dwellingLvl1",
+            "dwellingUpLvl1",
+            "dwellingUp2Lvl1"
+          ],
+          [
+            "dwellingLvl2",
+            "dwellingUpLvl2",
+            "dwellingUp2Lvl2"
+          ],
+          [
+            "dwellingLvl3",
+            "dwellingUpLvl3",
+            "dwellingUp2Lvl3"
+          ],
+          [
+            "dwellingLvl4",
+            "dwellingUpLvl4",
+            "dwellingUp2Lvl4"
+          ]
+        ],
+        [
+          [
+            "dwellingLvl5",
+            "dwellingUpLvl5",
+            "dwellingUp2Lvl5"
+          ],
+          [
+            "dwellingLvl6",
+            "dwellingUpLvl6",
+            "dwellingUp2Lvl6"
+          ],
+          [
+            "dwellingLvl7",
+            "dwellingUpLvl7",
+            "dwellingUp2Lvl7"
+          ]
+        ]
+      ],
+      "buildings": {
+        "dwellingUp2Lvl1": {
+          "name": "Warsztat Gremlinow Mechanikow",
+          "description": "Recruits Gremliny Mechanicy, the third form. Growth is unchanged.",
+          "upgrades": "dwellingUpLvl1",
+          "requires": [
+            "dwellingUpLvl1"
+          ],
+          "cost": {
+            "gold": 3500,
+            "wood": 10,
+            "ore": 15
+          },
+          "mode": "normal"
+        },
+        "dwellingUp2Lvl2": {
+          "name": "Lodowa Galeria Gargulcow",
+          "description": "Recruits Gargulce Lodowych Skrzydel, the third form. Growth is unchanged.",
+          "upgrades": "dwellingUpLvl2",
+          "requires": [
+            "dwellingUpLvl2"
+          ],
+          "cost": {
+            "gold": 4500,
+            "wood": 10,
+            "ore": 20,
+            "crystal": 3
+          },
+          "mode": "normal"
+        },
+        "dwellingUp2Lvl3": {
+          "name": "Odlewnia Adamantowych Golemow",
+          "description": "Recruits Adamantowe Golemy, the third form. Growth is unchanged.",
+          "upgrades": "dwellingUpLvl3",
+          "requires": [
+            "dwellingUpLvl3"
+          ],
+          "cost": {
+            "gold": 6500,
+            "wood": 15,
+            "ore": 25,
+            "crystal": 5
+          },
+          "mode": "normal"
+        },
+        "dwellingUp2Lvl4": {
+          "name": "Runiczna Akademia Magow",
+          "description": "Recruits Runiczni Magowie, the third form. Growth is unchanged.",
+          "upgrades": "dwellingUpLvl4",
+          "requires": [
+            "dwellingUpLvl4"
+          ],
+          "cost": {
+            "gold": 8500,
+            "wood": 15,
+            "ore": 15,
+            "gems": 8
+          },
+          "mode": "normal"
+        },
+        "dwellingUp2Lvl5": {
+          "name": "Palac Sultanow Dzinow",
+          "description": "Recruits Sultani Dzinow, the third form. Growth is unchanged.",
+          "upgrades": "dwellingUpLvl5",
+          "requires": [
+            "dwellingUpLvl5"
+          ],
+          "cost": {
+            "gold": 14000,
+            "wood": 15,
+            "ore": 15,
+            "gems": 10
+          },
+          "mode": "normal"
+        },
+        "dwellingUp2Lvl6": {
+          "name": "Swiatynia Cesarzowych Nag",
+          "description": "Recruits Cesarzowe Nag, the third form. Growth is unchanged.",
+          "upgrades": "dwellingUpLvl6",
+          "requires": [
+            "dwellingUpLvl6"
+          ],
+          "cost": {
+            "gold": 22000,
+            "wood": 20,
+            "ore": 20,
+            "gems": 15
+          },
+          "mode": "normal"
+        },
+        "dwellingUp2Lvl7": {
+          "name": "Swiatynia Tytanow Firmamentu",
+          "description": "Recruits Tytani Firmamentu, the third form. Growth is unchanged.",
+          "upgrades": "dwellingUpLvl7",
+          "requires": [
+            "dwellingUpLvl7"
+          ],
+          "cost": {
+            "gold": 60000,
+            "wood": 30,
+            "ore": 30,
+            "gems": 25
+          },
+          "mode": "normal"
+        }
+      },
+      "structures": {
+        "dwellingUp2Lvl1": {
+          "animation": "fourth-forms/buildings/tower/dcMechanicGremlin",
+          "x": 440,
+          "y": 226,
+          "z": 3,
+          "area": "fourth-forms/buildings/tower/dcMechanicGremlin-area.png",
+          "border": "fourth-forms/buildings/tower/dcMechanicGremlin-border.png"
+        },
+        "dwellingUp2Lvl2": {
+          "animation": "fourth-forms/buildings/tower/dcIcewingGargoyle",
+          "x": 4,
+          "y": 69,
+          "z": -5,
+          "area": "fourth-forms/buildings/tower/dcIcewingGargoyle-area.png",
+          "border": "fourth-forms/buildings/tower/dcIcewingGargoyle-border.png"
+        },
+        "dwellingUp2Lvl3": {
+          "animation": "fourth-forms/buildings/tower/dcAdamantGolem",
+          "x": 209,
+          "y": 209,
+          "z": 4,
+          "area": "fourth-forms/buildings/tower/dcAdamantGolem-area.png",
+          "border": "fourth-forms/buildings/tower/dcAdamantGolem-border.png"
+        },
+        "dwellingUp2Lvl4": {
+          "animation": "fourth-forms/buildings/tower/dcRuneMage",
+          "x": 612,
+          "y": 143,
+          "z": -2,
+          "area": "fourth-forms/buildings/tower/dcRuneMage-area.png",
+          "border": "fourth-forms/buildings/tower/dcRuneMage-border.png"
+        },
+        "dwellingUp2Lvl5": {
+          "animation": "fourth-forms/buildings/tower/dcDjinnSultan",
+          "x": 511,
+          "y": 41,
+          "z": -4,
+          "area": "fourth-forms/buildings/tower/dcDjinnSultan-area.png",
+          "border": "fourth-forms/buildings/tower/dcDjinnSultan-border.png"
+        },
+        "dwellingUp2Lvl6": {
+          "animation": "fourth-forms/buildings/tower/dcNagaEmpress",
+          "x": 681,
+          "y": 206,
+          "z": 6,
+          "area": "fourth-forms/buildings/tower/dcNagaEmpress-area.png",
+          "border": "fourth-forms/buildings/tower/dcNagaEmpress-border.png"
+        },
+        "dwellingUp2Lvl7": {
+          "animation": "fourth-forms/buildings/tower/dcFirmamentTitan",
+          "x": 75,
+          "y": 121,
+          "z": -8,
+          "area": "fourth-forms/buildings/tower/dcFirmamentTitan-area.png",
+          "border": "fourth-forms/buildings/tower/dcFirmamentTitan-border.png"
+        },
+        "grail": {
+          "z": -9
+        },
+        "dwellingLvl7": {
+          "z": -8
+        },
+        "dwellingUpLvl7": {
+          "z": -8
+        },
+        "mageGuild1": {
+          "z": -7
+        },
+        "mageGuild2": {
+          "z": -7
+        },
+        "mageGuild3": {
+          "z": -7
+        },
+        "mageGuild4": {
+          "z": -7
+        },
+        "mageGuild5": {
+          "z": -7
+        },
+        "castle": {
+          "z": -6
+        },
+        "citadel": {
+          "z": -6
+        },
+        "fort": {
+          "z": -6
+        },
+        "dwellingLvl2": {
+          "z": -5
+        },
+        "dwellingUpLvl2": {
+          "z": -5
+        },
+        "horde1": {
+          "z": -5
+        },
+        "horde1Upgr": {
+          "z": -5
+        },
+        "dwellingLvl5": {
+          "z": -4
+        },
+        "dwellingUpLvl5": {
+          "z": -4
+        },
+        "special3": {
+          "z": -3
+        },
+        "dwellingLvl4": {
+          "z": -2
+        },
+        "dwellingUpLvl4": {
+          "z": -2
+        },
+        "special2": {
+          "z": -1
+        },
+        "blacksmith": {
+          "z": 0
+        },
+        "marketplace": {
+          "z": 1
+        },
+        "special4": {
+          "z": 2
+        },
+        "dwellingLvl1": {
+          "z": 3
+        },
+        "dwellingUpLvl1": {
+          "z": 3
+        },
+        "dwellingLvl3": {
+          "z": 4
+        },
+        "dwellingUpLvl3": {
+          "z": 4
+        },
+        "tavern": {
+          "z": 5
+        },
+        "dwellingLvl6": {
+          "z": 6
+        },
+        "dwellingUpLvl6": {
+          "z": 6
+        },
+        "capitol": {
+          "z": 7
+        },
+        "cityHall": {
+          "z": 7
+        },
+        "townHall": {
+          "z": 7
+        },
+        "villageHall": {
+          "z": 7
+        },
+        "special1": {
+          "z": 8
+        },
+        "resourceSilo": {
+          "z": 9
+        }
+      },
+      "buildingsIcons": "town-screen/tower/ALTHALLTOWR.DEF"
+    }
+  }
+}

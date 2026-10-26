@@ -1,0 +1,39 @@
+{
+  "images": [
+    {
+      "group": 0,
+      "frame": 44,
+      "file": "fourth-forms/buildings/necropolis/dcBoneLegionary-hall.png"
+    },
+    {
+      "group": 0,
+      "frame": 45,
+      "file": "fourth-forms/buildings/necropolis/dcPlagueGuard-hall.png"
+    },
+    {
+      "group": 0,
+      "frame": 46,
+      "file": "fourth-forms/buildings/necropolis/dcTombWraith-hall.png"
+    },
+    {
+      "group": 0,
+      "frame": 47,
+      "file": "fourth-forms/buildings/necropolis/dcAncientBloodVampire-hall.png"
+    },
+    {
+      "group": 0,
+      "frame": 48,
+      "file": "fourth-forms/buildings/necropolis/dcArchlich-hall.png"
+    },
+    {
+      "group": 0,
+      "frame": 49,
+      "file": "fourth-forms/buildings/necropolis/dcDoomKnight-hall.png"
+    },
+    {
+      "group": 0,
+      "frame": 50,
+      "file": "fourth-forms/buildings/necropolis/dcGraveDragon-hall.png"
+    }
+  ]
+}

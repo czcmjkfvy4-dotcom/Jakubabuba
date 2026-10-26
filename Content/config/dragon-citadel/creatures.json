@@ -131,7 +131,7 @@
       }
     },
     "graphics": {
-      "animation": "dragon-citadel/creatures/dcEnchanter/battle",
+      "animation": "fourth-forms/creatures/dcDragonExecutioner",
       "map": "dragon-citadel/creatures/dcEnchanter/map",
       "animationTime": {
         "attack": 1,
@@ -141,11 +141,11 @@
       "timeBetweenFidgets": 1,
       "mapAttackFromRight": "AvWattak.def:0:274",
       "mapAttackFromLeft": "AvWattak.def:0:275",
-      "iconLarge": "dragon-citadel/creatures/icons/dcEnchanter-large",
-      "iconSmall": "dragon-citadel/creatures/icons/dcEnchanter-small",
+      "iconLarge": "fourth-forms/creatures/dcDragonExecutioner/portrait-large",
+      "iconSmall": "fourth-forms/creatures/dcDragonExecutioner/portrait-small",
       "missile": {
         "projectile": "PELFX.DEF",
-        "attackClimaxFrame": 7,
+        "attackClimaxFrame": 2,
         "offset": {
           "upperX": 38,
           "upperY": -65,
@@ -480,7 +480,7 @@
       "iconSmall": "dragon-citadel/creatures/icons/dcTitan-small",
       "missile": {
         "projectile": "CPRGTIX.DEF",
-        "attackClimaxFrame": 16,
+        "attackClimaxFrame": 5,
         "offset": {
           "upperX": 38,
           "upperY": -65,

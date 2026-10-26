@@ -1,0 +1,39 @@
+{
+  "images": [
+    {
+      "group": 0,
+      "frame": 51,
+      "file": "town-screen/castle/frames/ThCsPik3"
+    },
+    {
+      "group": 0,
+      "frame": 52,
+      "file": "town-screen/castle/frames/ThCsCrs3"
+    },
+    {
+      "group": 0,
+      "frame": 53,
+      "file": "town-screen/castle/frames/ThCsGr3"
+    },
+    {
+      "group": 0,
+      "frame": 54,
+      "file": "town-screen/castle/frames/ThCsSwd3"
+    },
+    {
+      "group": 0,
+      "frame": 55,
+      "file": "town-screen/castle/frames/ThCsMon3"
+    },
+    {
+      "group": 0,
+      "frame": 56,
+      "file": "town-screen/castle/frames/ThCsCv3"
+    },
+    {
+      "group": 0,
+      "frame": 57,
+      "file": "town-screen/castle/frames/ThCsAng3"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "images": [
+    {
+      "group": 0,
+      "frame": 51,
+      "file": "town-screen/inferno/frames/TBIFIMP3"
+    },
+    {
+      "group": 0,
+      "frame": 52,
+      "file": "town-screen/inferno/frames/TBIFGOG3"
+    },
+    {
+      "group": 0,
+      "frame": 53,
+      "file": "town-screen/inferno/frames/TBIFCERB3"
+    },
+    {
+      "group": 0,
+      "frame": 54,
+      "file": "town-screen/inferno/frames/TBIFDEM3"
+    },
+    {
+      "group": 0,
+      "frame": 55,
+      "file": "town-screen/inferno/frames/TBIFPIT3"
+    },
+    {
+      "group": 0,
+      "frame": 56,
+      "file": "town-screen/inferno/frames/TBIFEFR3"
+    },
+    {
+      "group": 0,
+      "frame": 57,
+      "file": "town-screen/inferno/frames/TBIFDEV3"
+    }
+  ]
+}

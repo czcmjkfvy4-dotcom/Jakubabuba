@@ -10,9 +10,8 @@
     "min": "1.7.5"
   },
   "polish": {
-    "name": "Smocza Cytadela: Reguły Końca Gry",
-    "description": "WAŻNE: PO INSTALACJI MODA URUCHOM RAZ INSTALL BILLADENC4 RUNTIME.CMD. Moduł wymusza jednego smoka poziomu 8 raz na miesiąc, pojedyncze dzikie smoki, limit 10% szansy na dołączenie i rozwój Rubinowego Golema po każdej rundzie.",
-    "author": "Billaden"
+    "name": "Zasady końcowych smoków",
+    "description": "Zasady końcowych smoków. Prace nad wyglądem Smoczej Cytadeli w trakcie."
   },
   "changelog": {
     "1.2.1": [
@@ -33,5 +32,33 @@
       "Kept wandering level 8 stacks and neutral sanctuary guards at one dragon.",
       "Limited wandering level 8 joining eligibility to 10 percent."
     ]
+  },
+  "english": {
+    "name": "Final dragon rules",
+    "description": "Final dragon rules. Work on the appearance of Dragon Citadel is in progress."
+  },
+  "german": {
+    "name": "Regeln für die höchsten Drachen",
+    "description": "Regeln für die höchsten Drachen. Die grafische Überarbeitung der Drachenzitadelle ist noch in Arbeit."
+  },
+  "chinese": {
+    "name": "终阶巨龙规则",
+    "description": "终阶巨龙规则. 龙之要塞的外观仍在改进中。"
+  },
+  "japanese": {
+    "name": "最終ドラゴンのルール",
+    "description": "最終ドラゴンのルール. ドラゴン・シタデルの外観は現在改修中です。"
+  },
+  "russian": {
+    "name": "Правила высших драконов",
+    "description": "Правила высших драконов. Внешний вид Драконьей цитадели находится в доработке."
+  },
+  "spanish": {
+    "name": "Reglas de los dragones finales",
+    "description": "Reglas de los dragones finales. El aspecto de la Ciudadela del Dragón sigue en desarrollo."
+  },
+  "french": {
+    "name": "Règles des dragons suprêmes",
+    "description": "Règles des dragons suprêmes. L’apparence de la Citadelle du Dragon est en cours d’amélioration."
   }
 }

@@ -1,255 +1,239 @@
 {
-  "basepath": "dragon-citadel/town/building-icons/",
   "images": [
     {
       "group": 0,
       "frame": 0,
-      "file": "frame-000"
+      "file": "city-redesign/dragonCitadel/mageGuild1-hall.png"
     },
     {
       "group": 0,
       "frame": 1,
-      "file": "frame-001"
+      "file": "city-redesign/dragonCitadel/mageGuild2-hall.png"
     },
     {
       "group": 0,
       "frame": 2,
-      "file": "frame-002"
+      "file": "city-redesign/dragonCitadel/mageGuild3-hall.png"
     },
     {
       "group": 0,
       "frame": 3,
-      "file": "frame-003"
+      "file": "city-redesign/dragonCitadel/mageGuild4-hall.png"
     },
     {
       "group": 0,
       "frame": 4,
-      "file": "frame-004"
+      "file": "city-redesign/dragonCitadel/mageGuild5-hall.png"
     },
     {
       "group": 0,
       "frame": 5,
-      "file": "frame-005"
-    },
-    {
-      "group": 0,
-      "frame": 6,
-      "file": "frame-006"
+      "file": "city-redesign/dragonCitadel/tavern-hall.png"
     },
     {
       "group": 0,
       "frame": 7,
-      "file": "frame-007"
+      "file": "city-redesign/dragonCitadel/fort-hall.png"
     },
     {
       "group": 0,
       "frame": 8,
-      "file": "frame-008"
+      "file": "city-redesign/dragonCitadel/citadel-hall.png"
     },
     {
       "group": 0,
       "frame": 9,
-      "file": "frame-009"
+      "file": "city-redesign/dragonCitadel/castle-hall.png"
     },
     {
       "group": 0,
       "frame": 10,
-      "file": "frame-010"
+      "file": "city-redesign/dragonCitadel/villageHall-hall.png"
     },
     {
       "group": 0,
       "frame": 11,
-      "file": "frame-011"
+      "file": "city-redesign/dragonCitadel/townHall-hall.png"
     },
     {
       "group": 0,
       "frame": 12,
-      "file": "frame-012"
+      "file": "city-redesign/dragonCitadel/cityHall-hall.png"
     },
     {
       "group": 0,
       "frame": 13,
-      "file": "frame-013"
+      "file": "city-redesign/dragonCitadel/capitol-hall.png"
     },
     {
       "group": 0,
       "frame": 14,
-      "file": "frame-014"
+      "file": "city-redesign/dragonCitadel/marketplace-hall.png"
     },
     {
       "group": 0,
       "frame": 15,
-      "file": "frame-015"
+      "file": "city-redesign/dragonCitadel/resourceSilo-hall.png"
     },
     {
       "group": 0,
       "frame": 16,
-      "file": "frame-016"
+      "file": "city-redesign/dragonCitadel/blacksmith-hall.png"
     },
     {
       "group": 0,
       "frame": 17,
-      "file": "frame-017"
-    },
-    {
-      "group": 0,
-      "frame": 18,
-      "file": "frame-018"
-    },
-    {
-      "group": 0,
-      "frame": 19,
-      "file": "frame-019"
-    },
-    {
-      "group": 0,
-      "frame": 20,
-      "file": "frame-020"
+      "file": "city-redesign/dragonCitadel/special1-hall.png"
     },
     {
       "group": 0,
       "frame": 21,
-      "file": "frame-021"
+      "file": "city-redesign/dragonCitadel/special2-hall.png"
     },
     {
       "group": 0,
       "frame": 22,
-      "file": "frame-022"
+      "file": "city-redesign/dragonCitadel/special3-hall.png"
     },
     {
       "group": 0,
       "frame": 23,
-      "file": "frame-023"
-    },
-    {
-      "group": 0,
-      "frame": 24,
-      "file": "frame-024"
-    },
-    {
-      "group": 0,
-      "frame": 25,
-      "file": "frame-025"
+      "file": "city-redesign/dragonCitadel/special4-hall.png"
     },
     {
       "group": 0,
       "frame": 26,
-      "file": "frame-026"
-    },
-    {
-      "group": 0,
-      "frame": 27,
-      "file": "frame-027"
-    },
-    {
-      "group": 0,
-      "frame": 28,
-      "file": "frame-028"
-    },
-    {
-      "group": 0,
-      "frame": 29,
-      "file": "frame-029"
+      "file": "city-redesign/dragonCitadel/grail-hall.png"
     },
     {
       "group": 0,
       "frame": 30,
-      "file": "frame-030"
+      "file": "city-redesign/dragonCitadel/dwellingLvl1-hall.png"
     },
     {
       "group": 0,
       "frame": 31,
-      "file": "frame-031"
+      "file": "city-redesign/dragonCitadel/dwellingLvl2-hall.png"
     },
     {
       "group": 0,
       "frame": 32,
-      "file": "frame-032"
+      "file": "city-redesign/dragonCitadel/dwellingLvl3-hall.png"
     },
     {
       "group": 0,
       "frame": 33,
-      "file": "frame-033"
+      "file": "city-redesign/dragonCitadel/dwellingLvl4-hall.png"
     },
     {
       "group": 0,
       "frame": 34,
-      "file": "frame-034"
+      "file": "city-redesign/dragonCitadel/dwellingLvl5-hall.png"
     },
     {
       "group": 0,
       "frame": 35,
-      "file": "frame-035"
+      "file": "city-redesign/dragonCitadel/dwellingLvl6-hall.png"
     },
     {
       "group": 0,
       "frame": 36,
-      "file": "frame-036"
+      "file": "city-redesign/dragonCitadel/dwellingLvl7-hall.png"
     },
     {
       "group": 0,
       "frame": 37,
-      "file": "frame-037"
+      "file": "city-redesign/dragonCitadel/dwellingUpLvl1-hall.png"
     },
     {
       "group": 0,
       "frame": 38,
-      "file": "frame-038"
-    },
-    {
-      "group": 0,
-      "frame": 39,
-      "file": "frame-039"
-    },
-    {
-      "group": 0,
-      "frame": 40,
-      "file": "frame-040"
-    },
-    {
-      "group": 0,
-      "frame": 41,
-      "file": "frame-041"
-    },
-    {
-      "group": 0,
-      "frame": 42,
-      "file": "frame-042"
-    },
-    {
-      "group": 0,
-      "frame": 43,
-      "file": "frame-043"
-    },
-    {
-      "group": 0,
-      "frame": 44,
-      "file": "frame-044"
+      "file": "city-redesign/dragonCitadel/dwellingUpLvl2-hall.png"
     },
     {
       "group": 0,
       "frame": 45,
-      "file": "frame-045"
+      "file": "city-redesign/dragonCitadel/dwellingUp2Lvl2-hall.png"
+    },
+    {
+      "group": 0,
+      "frame": 39,
+      "file": "city-redesign/dragonCitadel/dwellingUpLvl3-hall.png"
+    },
+    {
+      "group": 0,
+      "frame": 40,
+      "file": "city-redesign/dragonCitadel/dwellingUpLvl4-hall.png"
+    },
+    {
+      "group": 0,
+      "frame": 41,
+      "file": "city-redesign/dragonCitadel/dwellingUpLvl5-hall.png"
+    },
+    {
+      "group": 0,
+      "frame": 42,
+      "file": "city-redesign/dragonCitadel/dwellingUpLvl6-hall.png"
+    },
+    {
+      "group": 0,
+      "frame": 43,
+      "file": "city-redesign/dragonCitadel/dwellingUpLvl7-hall.png"
     },
     {
       "group": 0,
       "frame": 47,
-      "file": "frame-047"
+      "file": "city-redesign/dragonCitadel/dwellingUp2Lvl4-hall.png"
     },
     {
       "group": 0,
       "frame": 54,
-      "file": "frame-054"
+      "file": "city-redesign/dragonCitadel/dwellingUp3Lvl4-hall.png"
     },
     {
       "group": 0,
-      "frame": 150,
-      "file": "frame-150"
+      "frame": 27,
+      "file": "city-redesign/dragonCitadel/special5-hall.png"
     },
     {
       "group": 0,
-      "frame": 151,
-      "file": "frame-151"
+      "frame": 28,
+      "file": "city-redesign/dragonCitadel/special6-hall.png"
+    },
+    {
+      "group": 0,
+      "frame": 61,
+      "file": "city-redesign/dragonCitadel/dwellingUp4Lvl4-hall.png"
+    },
+    {
+      "group": 0,
+      "frame": 44,
+      "file": "city-redesign/dragonCitadel/dwellingUp2Lvl1-hall.png"
+    },
+    {
+      "group": 0,
+      "frame": 68,
+      "file": "city-redesign/dragonCitadel/dwellingUp5Lvl4-hall.png"
+    },
+    {
+      "group": 0,
+      "frame": 48,
+      "file": "city-redesign/dragonCitadel/dwellingUp2Lvl5-hall.png"
+    },
+    {
+      "group": 0,
+      "frame": 49,
+      "file": "city-redesign/dragonCitadel/dwellingUp2Lvl6-hall.png"
+    },
+    {
+      "group": 0,
+      "frame": 50,
+      "file": "city-redesign/dragonCitadel/dwellingUp2Lvl7-hall.png"
+    },
+    {
+      "group": 0,
+      "frame": 46,
+      "file": "city-redesign/dragonCitadel/dwellingUp2Lvl3-hall.png"
     }
   ]
 }

@@ -1,0 +1,439 @@
+{
+  "dragonCitadel": {
+    "town": {
+      "creatures": [
+        [
+          "dcSharpshooter",
+          "dcEnchanter",
+          "dcDragonExecutioner"
+        ],
+        [
+          "dcGoldGolem",
+          "dcDiamondGolem",
+          "dcRubyGolem"
+        ],
+        [
+          "dcGiant",
+          "dcTitan",
+          "dcStormheartTitan"
+        ],
+        [
+          "dcFirebird",
+          "dcPhoenix",
+          "dcRuneMagicDragon",
+          "dcFairieDragon",
+          "dcCrystalDragon",
+          "dcCrownedRubyDragon"
+        ],
+        [
+          "dcGoldDragon",
+          "dcBlackDragon",
+          "dcEternalCorrosionDragon"
+        ],
+        [
+          "dcStormDragon",
+          "dcEternalStormDragon",
+          "dcTempestEyeDragon"
+        ],
+        [
+          "dcRustDragon",
+          "dcAzureDragon",
+          "dcFrozenFirmamentDragon"
+        ],
+        [
+          "dcUltimateDragon",
+          "dcAbsoluteDragon",
+          "dcLastEclipseDragon"
+        ]
+      ],
+      "hallSlots": [
+        [
+          [
+            "villageHall",
+            "townHall",
+            "cityHall",
+            "capitol"
+          ],
+          [
+            "fort",
+            "citadel",
+            "castle"
+          ],
+          [
+            "tavern"
+          ],
+          [
+            "blacksmith"
+          ]
+        ],
+        [
+          [
+            "marketplace",
+            "resourceSilo"
+          ],
+          [
+            "mageGuild1",
+            "mageGuild2",
+            "mageGuild3",
+            "mageGuild4",
+            "mageGuild5"
+          ],
+          [
+            "special2"
+          ],
+          [
+            "special3"
+          ]
+        ],
+        [
+          [
+            "special1"
+          ],
+          [
+            "special4"
+          ],
+          [
+            "special5",
+            "special6"
+          ]
+        ],
+        [
+          [
+            "dwellingLvl1",
+            "dwellingUpLvl1",
+            "dwellingUp2Lvl1"
+          ],
+          [
+            "dwellingLvl2",
+            "dwellingUpLvl2",
+            "dwellingUp2Lvl2"
+          ],
+          [
+            "dwellingLvl3",
+            "dwellingUpLvl3",
+            "dwellingUp2Lvl3"
+          ],
+          [
+            "dwellingLvl4",
+            "dwellingUpLvl4",
+            "dwellingUp2Lvl4",
+            "dwellingUp3Lvl4",
+            "dwellingUp4Lvl4",
+            "dwellingUp5Lvl4"
+          ]
+        ],
+        [
+          [
+            "dwellingLvl5",
+            "dwellingUpLvl5",
+            "dwellingUp2Lvl5"
+          ],
+          [
+            "dwellingLvl6",
+            "dwellingUpLvl6",
+            "dwellingUp2Lvl6"
+          ],
+          [
+            "dwellingLvl7",
+            "dwellingUpLvl7",
+            "dwellingUp2Lvl7"
+          ],
+          [
+            "dwellingLvl8",
+            "dwellingUpLvl8"
+          ]
+        ]
+      ],
+      "buildings": {
+        "dwellingUp3Lvl4": {
+          "name": "Rubinowa Grota",
+          "description": "Alternatywna grota pozwalająca rekrutować Rubinowe Smoki.",
+          "cost": {
+            "wood": 15,
+            "ore": 15,
+            "crystal": 24,
+            "gold": 24000
+          },
+          "requires": [
+            "allOf",
+            [
+              "dwellingLvl3"
+            ],
+            [
+              "mageGuild1"
+            ],
+            [
+              "noneOf",
+              [
+                "dwellingLvl4"
+              ]
+            ]
+          ],
+          "upgrades": null
+        },
+        "dwellingUp4Lvl4": {
+          "name": "Pradawna Rubinowa Grota",
+          "description": "Pozwala rekrutować Pradawne Rubinowe Smoki.",
+          "cost": {
+            "crystal": 18,
+            "gems": 9,
+            "gold": 18000
+          },
+          "upgrades": "dwellingUp3Lvl4"
+        },
+        "dwellingLvl4": {
+          "name": "Grota Czarodziejskich Smoków",
+          "description": "Pierwsza z dwóch wykluczających się smoczych grot.",
+          "cost": {
+            "wood": 15,
+            "ore": 15,
+            "gems": 24,
+            "gold": 24000
+          },
+          "requires": [
+            "allOf",
+            [
+              "dwellingLvl3"
+            ],
+            [
+              "mageGuild1"
+            ],
+            [
+              "noneOf",
+              [
+                "dwellingUp3Lvl4"
+              ]
+            ]
+          ]
+        },
+        "dwellingLvl5": {
+          "name": "Rdzawe Leże",
+          "description": "Pozwala rekrutować Rdzawe Smoki.",
+          "cost": {
+            "ore": 30,
+            "sulfur": 30,
+            "gold": 36000
+          },
+          "requires": [
+            "anyOf",
+            [
+              "dwellingLvl4"
+            ],
+            [
+              "dwellingUp3Lvl4"
+            ]
+          ]
+        },
+        "dwellingUp2Lvl1": {
+          "name": "Bastion Egzekutorów",
+          "description": "Recruits Smoczy Egzekutor. Growth unchanged.",
+          "upgrades": "dwellingUpLvl1",
+          "requires": [
+            "dwellingUpLvl1"
+          ],
+          "cost": {
+            "wood": 16,
+            "gold": 6000
+          },
+          "mode": "normal"
+        },
+        "dwellingUp2Lvl2": {
+          "name": "Rubinowa Odlewnia",
+          "description": "Recruits Rubinowe Golemy. Growth unchanged.",
+          "upgrades": "dwellingUpLvl2",
+          "requires": [
+            "dwellingUpLvl2"
+          ],
+          "cost": {
+            "ore": 24,
+            "crystal": 16,
+            "gold": 18000
+          },
+          "mode": "normal"
+        },
+        "dwellingUp2Lvl4": {
+          "name": "Pradawne Archiwum Smoków",
+          "description": "Recruits Smok Runicznej Magii. Growth unchanged.",
+          "upgrades": "dwellingUpLvl4",
+          "requires": [
+            "dwellingUpLvl4"
+          ],
+          "cost": {
+            "gems": 36,
+            "crystal": 18,
+            "gold": 36000
+          },
+          "mode": "normal"
+        },
+        "dwellingUp5Lvl4": {
+          "name": "Rubinowa Korona",
+          "description": "Recruits Rubinowy Smok Koronny. Growth unchanged.",
+          "upgrades": "dwellingUp4Lvl4",
+          "requires": [
+            "dwellingUp4Lvl4"
+          ],
+          "cost": {
+            "crystal": 36,
+            "gems": 18,
+            "gold": 36000
+          },
+          "mode": "normal"
+        },
+        "dwellingUp2Lvl5": {
+          "name": "Ołtarz Korozji",
+          "description": "Recruits Smok Wiecznej Korozji. Growth unchanged.",
+          "upgrades": "dwellingUpLvl5",
+          "requires": [
+            "dwellingUpLvl5"
+          ],
+          "cost": {
+            "sulfur": 48,
+            "mercury": 24,
+            "gold": 54000
+          },
+          "mode": "normal"
+        },
+        "dwellingUp2Lvl6": {
+          "name": "Oko Nawałnicy",
+          "description": "Recruits Smok Oka Nawałnicy. Growth unchanged.",
+          "upgrades": "dwellingUpLvl6",
+          "requires": [
+            "dwellingUpLvl6"
+          ],
+          "cost": {
+            "mercury": 60,
+            "crystal": 48,
+            "gems": 30,
+            "gold": 84000
+          },
+          "mode": "normal"
+        },
+        "dwellingUp2Lvl7": {
+          "name": "Tron Firmamentu",
+          "description": "Recruits Smok Lodowego Firmamentu. Growth unchanged.",
+          "upgrades": "dwellingUpLvl7",
+          "requires": [
+            "dwellingUpLvl7"
+          ],
+          "cost": {
+            "mercury": 72,
+            "sulfur": 48,
+            "crystal": 72,
+            "gems": 72,
+            "gold": 132000
+          },
+          "mode": "normal"
+        },
+        "dwellingUp2Lvl8": {
+          "name": "Grail: Last Eclipse Dragon",
+          "description": "Grail-only third final form. Requires the extended monthly runtime rule.",
+          "mode": "auto",
+          "cost": {},
+          "upgrades": "dwellingUpLvl8",
+          "requires": [
+            "grail"
+          ]
+        },
+        "dwellingUp2Lvl3": {
+          "name": "Tron Serca Burzy",
+          "description": "Native trial of the approved v2 Titan; growth unchanged.",
+          "upgrades": "dwellingUpLvl3",
+          "requires": [
+            "dwellingUpLvl3"
+          ],
+          "mode": "normal",
+          "cost": {
+            "gems": 30,
+            "gold": 30000
+          }
+        }
+      },
+      "structures": {
+        "dwellingUp3Lvl4": {
+          "animation": "city-redesign/dragonCitadel/dwellingUp3Lvl4",
+          "x": 164,
+          "y": 303,
+          "z": 47,
+          "campaignBonus": "BoDmedu1.pcx",
+          "border": "city-redesign/dragonCitadel/dwellingUp3Lvl4-border.png",
+          "area": "city-redesign/dragonCitadel/dwellingUp3Lvl4-area.png"
+        },
+        "dwellingUp4Lvl4": {
+          "animation": "city-redesign/dragonCitadel/dwellingUp4Lvl4",
+          "x": 162,
+          "y": 301,
+          "z": 47,
+          "campaignBonus": "BoDmedu2.pcx",
+          "border": "city-redesign/dragonCitadel/dwellingUp4Lvl4-border.png",
+          "area": "city-redesign/dragonCitadel/dwellingUp4Lvl4-area.png"
+        },
+        "dwellingUp2Lvl1": {
+          "animation": "city-redesign/dragonCitadel/dwellingUp2Lvl1",
+          "x": 694,
+          "y": 252,
+          "z": 40,
+          "area": "city-redesign/dragonCitadel/dwellingUp2Lvl1-area.png",
+          "border": "city-redesign/dragonCitadel/dwellingUp2Lvl1-border.png"
+        },
+        "dwellingUp2Lvl2": {
+          "animation": "city-redesign/dragonCitadel/dwellingUp2Lvl2",
+          "x": 296,
+          "y": 312,
+          "z": 61,
+          "area": "city-redesign/dragonCitadel/dwellingUp2Lvl2-area.png",
+          "border": "city-redesign/dragonCitadel/dwellingUp2Lvl2-border.png",
+          "campaignBonus": "BoDharp2.pcx"
+        },
+        "dwellingUp2Lvl4": {
+          "animation": "city-redesign/dragonCitadel/dwellingUp2Lvl4",
+          "x": 162,
+          "y": 298,
+          "z": 46,
+          "area": "city-redesign/dragonCitadel/dwellingUp2Lvl4-area.png",
+          "border": "city-redesign/dragonCitadel/dwellingUp2Lvl4-border.png",
+          "campaignBonus": "BoDmedu1.pcx"
+        },
+        "dwellingUp5Lvl4": {
+          "animation": "city-redesign/dragonCitadel/dwellingUp5Lvl4",
+          "x": 162,
+          "y": 298,
+          "z": 47,
+          "area": "city-redesign/dragonCitadel/dwellingUp5Lvl4-area.png",
+          "border": "city-redesign/dragonCitadel/dwellingUp5Lvl4-border.png"
+        },
+        "dwellingUp2Lvl5": {
+          "animation": "city-redesign/dragonCitadel/dwellingUp2Lvl5",
+          "x": 672,
+          "y": 216,
+          "z": 34,
+          "area": "city-redesign/dragonCitadel/dwellingUp2Lvl5-area.png",
+          "border": "city-redesign/dragonCitadel/dwellingUp2Lvl5-border.png"
+        },
+        "dwellingUp2Lvl6": {
+          "animation": "city-redesign/dragonCitadel/dwellingUp2Lvl6",
+          "x": 50,
+          "y": 39,
+          "z": 1,
+          "area": "city-redesign/dragonCitadel/dwellingUp2Lvl6-area.png",
+          "border": "city-redesign/dragonCitadel/dwellingUp2Lvl6-border.png"
+        },
+        "dwellingUp2Lvl7": {
+          "animation": "city-redesign/dragonCitadel/dwellingUp2Lvl7",
+          "x": 574,
+          "y": 53,
+          "z": 13,
+          "area": "city-redesign/dragonCitadel/dwellingUp2Lvl7-area.png",
+          "border": "city-redesign/dragonCitadel/dwellingUp2Lvl7-border.png"
+        },
+        "dwellingUp2Lvl3": {
+          "animation": "city-redesign/dragonCitadel/dwellingUp2Lvl3",
+          "x": 27,
+          "y": 166,
+          "z": 25,
+          "area": "city-redesign/dragonCitadel/dwellingUp2Lvl3-area.png",
+          "border": "city-redesign/dragonCitadel/dwellingUp2Lvl3-border.png"
+        }
+      }
+    }
+  }
+}

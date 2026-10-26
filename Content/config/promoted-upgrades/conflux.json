@@ -1,0 +1,425 @@
+{
+  "core:conflux": {
+    "town": {
+      "creatures": [
+        [
+          "core:pixie",
+          "core:sprite",
+          "dragon-citadel:dcAuroraNymph"
+        ],
+        [
+          "core:airElemental",
+          "core:stormElemental",
+          "dragon-citadel:dcTempestElemental"
+        ],
+        [
+          "core:waterElemental",
+          "core:iceElemental",
+          "dragon-citadel:dcGlacierElemental"
+        ],
+        [
+          "core:fireElemental",
+          "core:energyElemental",
+          "dragon-citadel:dcPlasmaElemental"
+        ],
+        [
+          "core:earthElemental",
+          "core:magmaElemental",
+          "dragon-citadel:dcObsidianElemental"
+        ],
+        [
+          "core:psychicElemental",
+          "core:magicElemental",
+          "dragon-citadel:dcEtherElemental"
+        ],
+        [
+          "core:firebird",
+          "core:phoenix",
+          "dragon-citadel:dcPrimordialPhoenix"
+        ]
+      ],
+      "hallSlots": [
+        [
+          [
+            "villageHall",
+            "townHall",
+            "cityHall",
+            "capitol"
+          ],
+          [
+            "fort",
+            "citadel",
+            "castle"
+          ],
+          [
+            "tavern"
+          ],
+          [
+            "blacksmith"
+          ]
+        ],
+        [
+          [
+            "marketplace",
+            "resourceSilo"
+          ],
+          [
+            "mageGuild1",
+            "mageGuild2",
+            "mageGuild3",
+            "mageGuild4",
+            "mageGuild5"
+          ],
+          [
+            "shipyard"
+          ]
+        ],
+        [
+          [
+            "special2"
+          ],
+          [
+            "special1"
+          ],
+          [
+            "horde1",
+            "horde1Upgr"
+          ]
+        ],
+        [
+          [
+            "dwellingLvl1",
+            "dwellingUpLvl1",
+            "dwellingUp2Lvl1"
+          ],
+          [
+            "dwellingLvl2",
+            "dwellingUpLvl2",
+            "dwellingUp2Lvl2"
+          ],
+          [
+            "dwellingLvl3",
+            "dwellingUpLvl3",
+            "dwellingUp2Lvl3"
+          ],
+          [
+            "dwellingLvl4",
+            "dwellingUpLvl4",
+            "dwellingUp2Lvl4"
+          ]
+        ],
+        [
+          [
+            "dwellingLvl5",
+            "dwellingUpLvl5",
+            "dwellingUp2Lvl5"
+          ],
+          [
+            "dwellingLvl6",
+            "dwellingUpLvl6",
+            "dwellingUp2Lvl6"
+          ],
+          [
+            "dwellingLvl7",
+            "dwellingUpLvl7",
+            "dwellingUp2Lvl7"
+          ]
+        ]
+      ],
+      "buildings": {
+        "dwellingUp2Lvl1": {
+          "name": "Aurora Nymph Grove",
+          "description": "Recruits Nimfy Zorzy, the third form. Growth is unchanged.",
+          "upgrades": "dwellingUpLvl1",
+          "requires": [
+            "dwellingUpLvl1"
+          ],
+          "cost": {
+            "gold": 7000,
+            "wood": 15,
+            "ore": 5,
+            "gems": 5
+          },
+          "mode": "normal"
+        },
+        "dwellingUp2Lvl2": {
+          "name": "Tempest Altar",
+          "description": "Recruits Zywiolaki Nawalnicy, the third form. Growth is unchanged.",
+          "upgrades": "dwellingUpLvl2",
+          "requires": [
+            "dwellingUpLvl2"
+          ],
+          "cost": {
+            "gold": 11000,
+            "wood": 12,
+            "ore": 10,
+            "gems": 6
+          },
+          "mode": "normal"
+        },
+        "dwellingUp2Lvl3": {
+          "name": "Glacier Altar",
+          "description": "Recruits Zywiolaki Lodowca, the third form. Growth is unchanged.",
+          "upgrades": "dwellingUpLvl3",
+          "requires": [
+            "dwellingUpLvl3"
+          ],
+          "cost": {
+            "gold": 15000,
+            "wood": 12,
+            "ore": 15,
+            "crystal": 10
+          },
+          "mode": "normal"
+        },
+        "dwellingUp2Lvl4": {
+          "name": "Plasma Altar",
+          "description": "Recruits Zywiolaki Plazmy, the third form. Growth is unchanged.",
+          "upgrades": "dwellingUpLvl4",
+          "requires": [
+            "dwellingUpLvl4"
+          ],
+          "cost": {
+            "gold": 22000,
+            "wood": 12,
+            "ore": 18,
+            "sulfur": 12
+          },
+          "mode": "normal"
+        },
+        "dwellingUp2Lvl5": {
+          "name": "Obsidian Chamber",
+          "description": "Recruits Zywiolaki Obsydianu, the third form. Growth is unchanged.",
+          "upgrades": "dwellingUpLvl5",
+          "requires": [
+            "dwellingUpLvl5"
+          ],
+          "cost": {
+            "gold": 30000,
+            "wood": 15,
+            "ore": 25,
+            "crystal": 15
+          },
+          "mode": "normal"
+        },
+        "dwellingUp2Lvl6": {
+          "name": "Ether Sanctuary",
+          "description": "Recruits Zywiolaki Eteru, the third form. Growth is unchanged.",
+          "upgrades": "dwellingUpLvl6",
+          "requires": [
+            "dwellingUpLvl6"
+          ],
+          "cost": {
+            "gold": 42000,
+            "wood": 15,
+            "ore": 20,
+            "gems": 15,
+            "mercury": 10
+          },
+          "mode": "normal"
+        },
+        "dwellingUp2Lvl7": {
+          "name": "Primordial Phoenix Pyre",
+          "description": "Recruits Feniksy Pierwotne, the third form. Growth is unchanged.",
+          "upgrades": "dwellingUpLvl7",
+          "requires": [
+            "dwellingUpLvl7"
+          ],
+          "cost": {
+            "gold": 65000,
+            "wood": 20,
+            "ore": 25,
+            "sulfur": 25,
+            "mercury": 20
+          },
+          "mode": "normal"
+        }
+      },
+      "structures": {
+        "dwellingUp2Lvl1": {
+          "animation": "fourth-forms/buildings/conflux/dcAuroraNymph",
+          "x": 689,
+          "y": 250,
+          "z": 11,
+          "area": "fourth-forms/buildings/conflux/dcAuroraNymph-area.png",
+          "border": "fourth-forms/buildings/conflux/dcAuroraNymph-border.png"
+        },
+        "dwellingUp2Lvl2": {
+          "animation": "fourth-forms/buildings/conflux/dcTempestElemental",
+          "x": 630,
+          "y": 50,
+          "z": -10,
+          "area": "fourth-forms/buildings/conflux/dcTempestElemental-area.png",
+          "border": "fourth-forms/buildings/conflux/dcTempestElemental-border.png"
+        },
+        "dwellingUp2Lvl3": {
+          "animation": "fourth-forms/buildings/conflux/dcGlacierElemental",
+          "x": 709,
+          "y": 210,
+          "z": -2,
+          "area": "fourth-forms/buildings/conflux/dcGlacierElemental-area.png",
+          "border": "fourth-forms/buildings/conflux/dcGlacierElemental-border.png"
+        },
+        "dwellingUp2Lvl4": {
+          "animation": "fourth-forms/buildings/conflux/dcPlasmaElemental",
+          "x": 108,
+          "y": 131,
+          "z": -7,
+          "area": "fourth-forms/buildings/conflux/dcPlasmaElemental-area.png",
+          "border": "fourth-forms/buildings/conflux/dcPlasmaElemental-border.png"
+        },
+        "dwellingUp2Lvl5": {
+          "animation": "fourth-forms/buildings/conflux/dcObsidianElemental",
+          "x": 264,
+          "y": 168,
+          "z": -8,
+          "area": "fourth-forms/buildings/conflux/dcObsidianElemental-area.png",
+          "border": "fourth-forms/buildings/conflux/dcObsidianElemental-border.png"
+        },
+        "dwellingUp2Lvl6": {
+          "animation": "fourth-forms/buildings/conflux/dcEtherElemental",
+          "x": 394,
+          "y": 283,
+          "z": 9,
+          "area": "fourth-forms/buildings/conflux/dcEtherElemental-area.png",
+          "border": "fourth-forms/buildings/conflux/dcEtherElemental-border.png"
+        },
+        "dwellingUp2Lvl7": {
+          "animation": "fourth-forms/buildings/conflux/dcPrimordialPhoenix",
+          "x": 100,
+          "y": 25,
+          "z": -9,
+          "area": "fourth-forms/buildings/conflux/dcPrimordialPhoenix-area.png",
+          "border": "fourth-forms/buildings/conflux/dcPrimordialPhoenix-border.png"
+        },
+        "grail": {
+          "z": -11
+        },
+        "dwellingLvl2": {
+          "z": -10
+        },
+        "dwellingUpLvl2": {
+          "z": -10
+        },
+        "dwellingLvl7": {
+          "z": -9
+        },
+        "dwellingUpLvl7": {
+          "z": -9
+        },
+        "dwellingLvl5": {
+          "z": -8
+        },
+        "dwellingUpLvl5": {
+          "z": -8
+        },
+        "dwellingLvl4": {
+          "z": -7
+        },
+        "dwellingUpLvl4": {
+          "z": -7
+        },
+        "castle": {
+          "z": -6
+        },
+        "citadel": {
+          "z": -6
+        },
+        "fort": {
+          "z": -6
+        },
+        "extraAnimation2": {
+          "z": -5
+        },
+        "extraAnimation": {
+          "z": -4
+        },
+        "extraTownHall": {
+          "z": -3
+        },
+        "dwellingLvl3": {
+          "z": -2
+        },
+        "dwellingUpLvl3": {
+          "z": -2
+        },
+        "ship": {
+          "z": -1
+        },
+        "shipyard": {
+          "z": -1
+        },
+        "blacksmith": {
+          "z": 0
+        },
+        "special2": {
+          "z": 1
+        },
+        "extraCityHall": {
+          "z": 2
+        },
+        "tavern": {
+          "z": 3
+        },
+        "resourceSilo": {
+          "z": 4
+        },
+        "mageGuild1": {
+          "z": 5
+        },
+        "mageGuild2": {
+          "z": 5
+        },
+        "mageGuild3": {
+          "z": 5
+        },
+        "mageGuild4": {
+          "z": 5
+        },
+        "mageGuild5": {
+          "z": 5
+        },
+        "marketplace": {
+          "z": 6
+        },
+        "capitol": {
+          "z": 7
+        },
+        "cityHall": {
+          "z": 7
+        },
+        "townHall": {
+          "z": 7
+        },
+        "villageHall": {
+          "z": 7
+        },
+        "special1": {
+          "z": 8
+        },
+        "dwellingLvl6": {
+          "z": 9
+        },
+        "dwellingUpLvl6": {
+          "z": 9
+        },
+        "extraCapitol": {
+          "z": 10
+        },
+        "dwellingLvl1": {
+          "z": 11
+        },
+        "dwellingUpLvl1": {
+          "z": 11
+        },
+        "horde1": {
+          "z": 11
+        },
+        "horde1Upgr": {
+          "z": 11
+        }
+      },
+      "buildingsIcons": "town-screen/conflux/ALTHALLELEM.DEF"
+    }
+  }
+}

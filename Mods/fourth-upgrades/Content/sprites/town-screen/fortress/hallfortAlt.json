@@ -1,0 +1,39 @@
+{
+  "images": [
+    {
+      "group": 0,
+      "frame": 51,
+      "file": "town-screen/fortress/frames/TBFTGNL3"
+    },
+    {
+      "group": 0,
+      "frame": 52,
+      "file": "town-screen/fortress/frames/TBFTLIZ3"
+    },
+    {
+      "group": 0,
+      "frame": 53,
+      "file": "town-screen/fortress/frames/TBFTFLY3"
+    },
+    {
+      "group": 0,
+      "frame": 54,
+      "file": "town-screen/fortress/frames/TBFTBAS3"
+    },
+    {
+      "group": 0,
+      "frame": 55,
+      "file": "town-screen/fortress/frames/TBFTGRG3"
+    },
+    {
+      "group": 0,
+      "frame": 56,
+      "file": "town-screen/fortress/frames/TBFTWYW3"
+    },
+    {
+      "group": 0,
+      "frame": 57,
+      "file": "town-screen/fortress/frames/TBFTHYD3"
+    }
+  ]
+}

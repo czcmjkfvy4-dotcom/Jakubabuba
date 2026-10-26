@@ -1,0 +1,39 @@
+{
+  "images": [
+    {
+      "group": 0,
+      "frame": 51,
+      "file": "town-screen/rampart/frames/TPRCen3"
+    },
+    {
+      "group": 0,
+      "frame": 52,
+      "file": "town-screen/rampart/frames/TPRDwf3"
+    },
+    {
+      "group": 0,
+      "frame": 53,
+      "file": "town-screen/rampart/frames/TPRElf3"
+    },
+    {
+      "group": 0,
+      "frame": 54,
+      "file": "town-screen/rampart/frames/TPRPeg3"
+    },
+    {
+      "group": 0,
+      "frame": 55,
+      "file": "town-screen/rampart/frames/TPRTre3"
+    },
+    {
+      "group": 0,
+      "frame": 56,
+      "file": "town-screen/rampart/frames/TPRUni3"
+    },
+    {
+      "group": 0,
+      "frame": 57,
+      "file": "town-screen/rampart/frames/TPRDra3"
+    }
+  ]
+}

@@ -1,0 +1,312 @@
+{
+  "core:necropolis": {
+    "town": {
+      "creatures": [
+        [
+          "core:skeleton",
+          "core:skeletonWarrior",
+          "dragon-citadel:dcBoneLegionary",
+          "dragon-citadel.fourth-upgrades:tumSkeletonKnight"
+        ],
+        [
+          "core:walkingDead",
+          "core:zombieLord",
+          "dragon-citadel:dcPlagueGuard",
+          "dragon-citadel.fourth-upgrades:tumGhoul"
+        ],
+        [
+          "core:wight",
+          "core:wraith",
+          "dragon-citadel:dcTombWraith",
+          "dragon-citadel.fourth-upgrades:tumSpecter"
+        ],
+        [
+          "core:vampire",
+          "core:vampireLord",
+          "dragon-citadel:dcAncientBloodVampire",
+          "dragon-citadel.fourth-upgrades:tumNosferatu"
+        ],
+        [
+          "core:lich",
+          "core:powerLich",
+          "dragon-citadel:dcArchlich",
+          "dragon-citadel.fourth-upgrades:tumLichKing"
+        ],
+        [
+          "core:blackKnight",
+          "core:dreadKnight",
+          "dragon-citadel:dcDoomKnight",
+          "dragon-citadel.fourth-upgrades:tumDeathKnight"
+        ],
+        [
+          "core:boneDragon",
+          "core:ghostDragon",
+          "dragon-citadel:dcGraveDragon",
+          "wake-of-gods.level8units:bloodDragon"
+        ]
+      ],
+      "hallSlots": [
+        [
+          [
+            "villageHall",
+            "townHall",
+            "cityHall",
+            "capitol"
+          ],
+          [
+            "fort",
+            "citadel",
+            "castle"
+          ],
+          [
+            "tavern"
+          ],
+          [
+            "blacksmith"
+          ]
+        ],
+        [
+          [
+            "marketplace",
+            "resourceSilo"
+          ],
+          [
+            "mageGuild1",
+            "mageGuild2",
+            "mageGuild3",
+            "mageGuild4",
+            "mageGuild5"
+          ],
+          [
+            "special2"
+          ],
+          [
+            "shipyard"
+          ]
+        ],
+        [
+          [
+            "special1"
+          ],
+          [
+            "special3"
+          ],
+          [
+            "horde1",
+            "horde1Upgr"
+          ]
+        ],
+        [
+          [
+            "dwellingLvl1",
+            "dwellingUpLvl1",
+            "dwellingUp2Lvl1",
+            "dwellingUp3Lvl1"
+          ],
+          [
+            "dwellingLvl2",
+            "dwellingUpLvl2",
+            "dwellingUp2Lvl2",
+            "dwellingUp3Lvl2"
+          ],
+          [
+            "dwellingLvl3",
+            "dwellingUpLvl3",
+            "dwellingUp2Lvl3",
+            "dwellingUp3Lvl3"
+          ],
+          [
+            "dwellingLvl4",
+            "dwellingUpLvl4",
+            "dwellingUp2Lvl4",
+            "dwellingUp3Lvl4"
+          ]
+        ],
+        [
+          [
+            "dwellingLvl5",
+            "dwellingUpLvl5",
+            "dwellingUp2Lvl5",
+            "dwellingUp3Lvl5"
+          ],
+          [
+            "dwellingLvl6",
+            "dwellingUpLvl6",
+            "dwellingUp2Lvl6",
+            "dwellingUp3Lvl6"
+          ],
+          [
+            "dwellingLvl7",
+            "dwellingUpLvl7",
+            "dwellingUp2Lvl7",
+            "dwellingUp3Lvl7"
+          ]
+        ]
+      ],
+      "buildings": {
+        "dwellingUp3Lvl1": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Cursed Temple}",
+          "cost": {
+            "gold": 5250,
+            "wood": 15,
+            "ore": 23
+          },
+          "requires": [
+            "dwellingUp2Lvl1"
+          ],
+          "upgrades": "dwellingUp2Lvl1",
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl2": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Graveyard}",
+          "cost": {
+            "gold": 8100,
+            "wood": 18,
+            "ore": 27,
+            "mercury": 6
+          },
+          "requires": [
+            "dwellingUp2Lvl2"
+          ],
+          "upgrades": "dwellingUp2Lvl2",
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl3": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Tomb of Souls}",
+          "cost": {
+            "gold": 14040,
+            "wood": 33,
+            "ore": 33,
+            "mercury": 11
+          },
+          "requires": [
+            "dwellingUp2Lvl3"
+          ],
+          "upgrades": "dwellingUp2Lvl3",
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl4": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Estate}",
+          "cost": {
+            "gold": 24625,
+            "wood": 39,
+            "ore": 52,
+            "mercury": 21
+          },
+          "requires": [
+            "dwellingUp2Lvl4"
+          ],
+          "upgrades": "dwellingUp2Lvl4",
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl5": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Mausolem}",
+          "cost": {
+            "gold": 43550,
+            "wood": 47,
+            "ore": 63,
+            "mercury": 32
+          },
+          "upgrades": "dwellingUp2Lvl5",
+          "requires": [
+            "dwellingUp2Lvl5"
+          ],
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl6": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Hall of Darkness}",
+          "cost": {
+            "gold": 82115,
+            "wood": 75,
+            "ore": 94,
+            "mercury": 56
+          },
+          "upgrades": "dwellingUp2Lvl6",
+          "requires": [
+            "dwellingUp2Lvl6"
+          ],
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl7": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Dragon Vault}",
+          "cost": {
+            "gold": 268740,
+            "wood": 135,
+            "ore": 135,
+            "mercury": 112
+          },
+          "requires": [
+            "dwellingUp2Lvl7"
+          ],
+          "upgrades": "dwellingUp2Lvl7",
+          "mode": "normal"
+        }
+      },
+      "structures": {
+        "dwellingUp3Lvl1": {
+          "animation": "town-screen/necropolis/TBNCUP2_0.def",
+          "x": 64,
+          "y": 185,
+          "z": 5,
+          "border": "town-screen/necropolis/borders/TONSKEL3.bmp",
+          "area": "town-screen/necropolis/areas/TZNSKEL3.bmp"
+        },
+        "dwellingUp3Lvl2": {
+          "animation": "town-screen/necropolis/TBNCUP2_1.def",
+          "x": 498,
+          "y": 224,
+          "border": "town-screen/necropolis/borders/TONZOMB3.bmp",
+          "area": "town-screen/necropolis/areas/TZNZOMB3.bmp",
+          "z": 0
+        },
+        "dwellingUp3Lvl3": {
+          "animation": "town-screen/necropolis/TBNCUP2_2.def",
+          "x": 0,
+          "y": 179,
+          "z": 10,
+          "border": "town-screen/necropolis/borders/TONWIGH3.bmp",
+          "area": "town-screen/necropolis/areas/TZNWIGH3.bmp"
+        },
+        "dwellingUp3Lvl4": {
+          "animation": "town-screen/necropolis/TBNCUP2_3.def",
+          "x": 615,
+          "y": 158,
+          "z": 2,
+          "border": "town-screen/necropolis/borders/TONVAM3.bmp",
+          "area": "town-screen/necropolis/areas/TZNVAM3.bmp"
+        },
+        "dwellingUp3Lvl5": {
+          "animation": "town-screen/necropolis/TBNCUP2_4.def",
+          "x": 222,
+          "y": 124,
+          "z": 3,
+          "border": "town-screen/necropolis/borders/TONLICH3.bmp",
+          "area": "town-screen/necropolis/areas/TZNLICH3.bmp"
+        },
+        "dwellingUp3Lvl6": {
+          "animation": "town-screen/necropolis/TBNCUP2_5.def",
+          "x": 0,
+          "y": 30,
+          "border": "town-screen/necropolis/borders/TONBKN3.bmp",
+          "area": "town-screen/necropolis/areas/TZNBKN3.bmp",
+          "z": -10
+        },
+        "dwellingUp3Lvl7": {
+          "animation": "town-screen/necropolis/TBNCUP2_6.def",
+          "x": 641,
+          "y": 23,
+          "border": "town-screen/necropolis/borders/TONBON3.bmp",
+          "area": "town-screen/necropolis/areas/TZNBON3.bmp",
+          "z": -5
+        }
+      }
+    }
+  }
+}

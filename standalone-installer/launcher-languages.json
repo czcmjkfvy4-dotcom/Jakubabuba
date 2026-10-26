@@ -1,0 +1,98 @@
+{
+  "polish": {
+    "title": "Smocza Cytadela",
+    "main": "Trzecie ulepszenia są integralną częścią moda.",
+    "fourth": "Włącz czwarte ulepszenia (opcjonalne)",
+    "graphics": "Włącz dodatkowe krajobrazy bitew",
+    "language": "Język gry",
+    "note": "Zmiana języka może wymagać pobrania pakietu z katalogu VCMI.",
+    "save": "Zapisz ustawienia",
+    "play": "Uruchom grę",
+    "saved": "Zapisano ustawienia.",
+    "error": "Błąd"
+  },
+  "english": {
+    "title": "Dragon Citadel",
+    "main": "Third upgrades are included in the main mod.",
+    "fourth": "Enable fourth upgrades (optional)",
+    "graphics": "Enable additional battle landscapes",
+    "language": "Game language",
+    "note": "Changing language may download a package from the VCMI catalog.",
+    "save": "Save settings",
+    "play": "Play",
+    "saved": "Settings saved.",
+    "error": "Error"
+  },
+  "german": {
+    "title": "Drachenzitadelle",
+    "main": "Dritte Aufwertungen sind im Hauptmod enthalten.",
+    "fourth": "Vierte Aufwertungen aktivieren (optional)",
+    "graphics": "Zusätzliche Kampflandschaften aktivieren",
+    "language": "Spielsprache",
+    "note": "Ein Sprachwechsel kann ein Paket aus dem VCMI-Katalog herunterladen.",
+    "save": "Einstellungen speichern",
+    "play": "Spielen",
+    "saved": "Einstellungen gespeichert.",
+    "error": "Fehler"
+  },
+  "chinese": {
+    "title": "龙之要塞",
+    "main": "第三级升级已包含在主模组中。",
+    "fourth": "启用第四级升级（可选）",
+    "graphics": "启用额外战场背景",
+    "language": "游戏语言",
+    "note": "切换语言可能需要从 VCMI 目录下载语言包。",
+    "save": "保存设置",
+    "play": "开始游戏",
+    "saved": "设置已保存。",
+    "error": "错误"
+  },
+  "japanese": {
+    "title": "ドラゴン・シタデル",
+    "main": "第3段階のアップグレードは本体に含まれます。",
+    "fourth": "第4段階のアップグレードを有効化（任意）",
+    "graphics": "追加の戦場背景を有効化",
+    "language": "ゲームの言語",
+    "note": "言語の変更時にVCMIの言語パックをダウンロードする場合があります。",
+    "save": "設定を保存",
+    "play": "ゲーム開始",
+    "saved": "設定を保存しました。",
+    "error": "エラー"
+  },
+  "russian": {
+    "title": "Драконья цитадель",
+    "main": "Третьи улучшения включены в основной мод.",
+    "fourth": "Включить четвёртые улучшения (необязательно)",
+    "graphics": "Включить дополнительные фоны сражений",
+    "language": "Язык игры",
+    "note": "При смене языка может загружаться пакет из каталога VCMI.",
+    "save": "Сохранить настройки",
+    "play": "Играть",
+    "saved": "Настройки сохранены.",
+    "error": "Ошибка"
+  },
+  "spanish": {
+    "title": "Ciudadela del Dragón",
+    "main": "Las terceras mejoras están incluidas en el mod principal.",
+    "fourth": "Activar cuartas mejoras (opcional)",
+    "graphics": "Activar paisajes de batalla adicionales",
+    "language": "Idioma del juego",
+    "note": "Cambiar el idioma puede descargar un paquete del catálogo VCMI.",
+    "save": "Guardar ajustes",
+    "play": "Jugar",
+    "saved": "Ajustes guardados.",
+    "error": "Error"
+  },
+  "french": {
+    "title": "Citadelle du Dragon",
+    "main": "Les troisièmes améliorations sont incluses dans le mod principal.",
+    "fourth": "Activer les quatrièmes améliorations (facultatif)",
+    "graphics": "Activer les paysages de bataille supplémentaires",
+    "language": "Langue du jeu",
+    "note": "Changer de langue peut télécharger un pack du catalogue VCMI.",
+    "save": "Enregistrer",
+    "play": "Jouer",
+    "saved": "Paramètres enregistrés.",
+    "error": "Erreur"
+  }
+}

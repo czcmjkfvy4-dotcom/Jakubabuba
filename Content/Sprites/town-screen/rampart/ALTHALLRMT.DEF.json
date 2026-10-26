@@ -1,0 +1,39 @@
+{
+  "images": [
+    {
+      "group": 0,
+      "frame": 44,
+      "file": "fourth-forms/buildings/rampart/dcCentaurWarlord-hall.png"
+    },
+    {
+      "group": 0,
+      "frame": 45,
+      "file": "fourth-forms/buildings/rampart/dcRuneDwarf-hall.png"
+    },
+    {
+      "group": 0,
+      "frame": 46,
+      "file": "fourth-forms/buildings/rampart/dcMoonElf-hall.png"
+    },
+    {
+      "group": 0,
+      "frame": 47,
+      "file": "fourth-forms/buildings/rampart/dcAuroraPegasus-hall.png"
+    },
+    {
+      "group": 0,
+      "frame": 48,
+      "file": "fourth-forms/buildings/rampart/dcAncientEnt-hall.png"
+    },
+    {
+      "group": 0,
+      "frame": 49,
+      "file": "fourth-forms/buildings/rampart/dcArmoredUnicorn-hall.png"
+    },
+    {
+      "group": 0,
+      "frame": 50,
+      "file": "fourth-forms/buildings/rampart/dcEmeraldDragon-hall.png"
+    }
+  ]
+}

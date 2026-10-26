@@ -1,0 +1,44 @@
+[
+  {
+    "id": "german-translation",
+    "bytes": 112682759,
+    "sha256": "d5858e169614645d2f99cd4f013dbccb56afc6908a2856499523c979e7094cc4",
+    "source": "https://github.com/vcmi-mods/german-translation/releases/download/1.7/german-translation-vcmi-1.7.zip"
+  },
+  {
+    "id": "spanish-translation",
+    "bytes": 83226142,
+    "sha256": "108e5104458e2c3611e94d99cf5826a94044e513792373bb78bf66147fc7a96c",
+    "source": "https://github.com/vcmi-mods/spanish-translation/releases/download/1.7/spanish-translation-vcmi-1.7.zip"
+  },
+  {
+    "id": "chinese-translation",
+    "bytes": 17782942,
+    "sha256": "ab3a146964ac5aaca77e7fe8f7b4d459f806f2a214232356771e378b6abe9fad",
+    "source": "https://github.com/vcmi-mods/chinese-translation/releases/download/1.7/chinese-translation-vcmi-1.7.zip"
+  },
+  {
+    "id": "french-translation",
+    "bytes": 53676861,
+    "sha256": "8b93eb02493793383ec3d6b5a89f124afe5d95960dfd081afbc7a22fd3ae1b93",
+    "source": "https://github.com/vcmi-mods/french-translation/releases/download/1.7/french-translation-vcmi-1.7.zip"
+  },
+  {
+    "id": "polish-translation",
+    "bytes": 191586995,
+    "sha256": "71721c3b95973b4115c4c4c077b603fb98266165b7c5a04427640bdf61bd554f",
+    "source": "https://github.com/vcmi-mods/polish-translation/releases/download/1.7/polish-translation-vcmi-1.7.zip"
+  },
+  {
+    "id": "russian-translation",
+    "bytes": 60285699,
+    "sha256": "020ae03076e4595ed2ea1a4ff3b70e991c13dd38d9552b3562f0143f7057235d",
+    "source": "https://github.com/vcmi-mods/mega-pack-rus/releases/download/1.7/mega-pack-rus-vcmi-1.7.zip"
+  },
+  {
+    "id": "japanese-translation",
+    "bytes": 57088202,
+    "sha256": "cf9288fa88107e590426fbb99cb6ec4f7caa8af86bce08ee0804518831ec38d3",
+    "source": "https://github.com/vcmi-mods/japanese-translation/releases/download/1.7/japanese-translation-vcmi-1.7.zip"
+  }
+]

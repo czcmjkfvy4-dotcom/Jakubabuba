@@ -1,0 +1,39 @@
+{
+  "images": [
+    {
+      "group": 0,
+      "frame": 44,
+      "file": "fourth-forms/buildings/fortress/dcIronshieldGnoll-hall.png"
+    },
+    {
+      "group": 0,
+      "frame": 45,
+      "file": "fourth-forms/buildings/fortress/dcLizardHunter-hall.png"
+    },
+    {
+      "group": 0,
+      "frame": 46,
+      "file": "fourth-forms/buildings/fortress/dcVenomFly-hall.png"
+    },
+    {
+      "group": 0,
+      "frame": 47,
+      "file": "fourth-forms/buildings/fortress/dcPrimevalBasilisk-hall.png"
+    },
+    {
+      "group": 0,
+      "frame": 48,
+      "file": "fourth-forms/buildings/fortress/dcGorgonMatriarch-hall.png"
+    },
+    {
+      "group": 0,
+      "frame": 49,
+      "file": "fourth-forms/buildings/fortress/dcMarshWyvern-hall.png"
+    },
+    {
+      "group": 0,
+      "frame": 50,
+      "file": "fourth-forms/buildings/fortress/dcPrimordialHydra-hall.png"
+    }
+  ]
+}

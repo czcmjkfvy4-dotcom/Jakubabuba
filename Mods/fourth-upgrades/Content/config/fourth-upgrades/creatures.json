@@ -1,0 +1,7290 @@
+{
+  "tumRoyalHalberdier": {
+    "name": {
+      "plural": "Royal Halberdiers",
+      "singular": "Royal Halberdier"
+    },
+    "advMapAmount": {
+      "max": 25,
+      "min": 20
+    },
+    "faction": "core:castle",
+    "attack": 8,
+    "defense": 11,
+    "damage": {
+      "max": 5,
+      "min": 4
+    },
+    "growth": 14,
+    "hitPoints": 15,
+    "level": 1,
+    "speed": 5,
+    "cost": {
+      "gold": 175
+    },
+    "fightValue": 115,
+    "aiValue": 115,
+    "graphics": {
+      "animation": "creatures/castle/battle/cr197",
+      "map": "creatures/castle/map/AVWCR197.DEF",
+      "iconSmall": "creatures/castle/iconsSmall/CPrS197X",
+      "iconLarge": "creatures/castle/iconsBig/CPrL197X",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 10.0,
+        "attack": 1.0
+      }
+    },
+    "doubleWide": false,
+    "sound": {
+      "attack": "HALBATTK.wav",
+      "defend": "HALBDFND.wav",
+      "killed": "HALBKILL.wav",
+      "move": "HALBMOVE.wav",
+      "wince": "HALBWNCE.wav"
+    },
+    "abilities": {
+      "cavalryChargeImmunity": {
+        "type": "CHARGE_IMMUNITY"
+      },
+      "blockRetaliation": {
+        "type": "BLOCKS_RETALIATION"
+      }
+    },
+    "stackExperience": [
+      {
+        "bonus": {
+          "type": "FEARLESS"
+        },
+        "values": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "bonus": {
+          "type": "HATE",
+          "subtype": "creature.blackKnight"
+        },
+        "values": [
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35,
+          40,
+          45,
+          50
+        ]
+      },
+      {
+        "bonus": {
+          "type": "HATE",
+          "subtype": "creature.dreadKnight"
+        },
+        "values": [
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35,
+          40,
+          45,
+          50
+        ]
+      },
+      {
+        "bonus": {
+          "type": "STACKS_SPEED"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    ],
+    "shots": 0,
+    "horde": 0,
+    "upgrades": []
+  },
+  "tumCrossbowman": {
+    "name": {
+      "plural": "Crossbowmen",
+      "singular": "Crossbowman"
+    },
+    "advMapAmount": {
+      "max": 22,
+      "min": 16
+    },
+    "faction": "core:castle",
+    "attack": 10,
+    "defense": 5,
+    "damage": {
+      "max": 5,
+      "min": 4
+    },
+    "growth": 9,
+    "hitPoints": 14,
+    "level": 2,
+    "shots": 24,
+    "speed": 6,
+    "aiValue": 184,
+    "fightValue": 115,
+    "cost": {
+      "gold": 490
+    },
+    "graphics": {
+      "animation": "creatures/castle/battle/cr198",
+      "map": "creatures/castle/map/AVWCR198",
+      "iconSmall": "creatures/castle/iconsSmall/CPrS198X",
+      "iconLarge": "creatures/castle/iconsBig/CPrL198X",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 10.0,
+        "attack": 1.0
+      },
+      "missile": {
+        "projectile": "PLCBOWX.DEF",
+        "attackClimaxFrame": 7,
+        "offset": {
+          "upperX": 38,
+          "upperY": -65,
+          "middleX": 36,
+          "middleY": -59,
+          "lowerX": 21,
+          "lowerY": -50
+        },
+        "frameAngles": [
+          90,
+          72,
+          45,
+          27,
+          0,
+          -27,
+          -45,
+          -72,
+          -90,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "doubleWide": false,
+    "sound": {
+      "attack": "HCRSATTK.wav",
+      "defend": "HCRSDFND.wav",
+      "killed": "HCRSKILL.wav",
+      "move": "HCRSMOVE.wav",
+      "shoot": "HCRSSHOT.wav",
+      "wince": "HCRSWNCE.wav"
+    },
+    "abilities": {
+      "canShoot": {
+        "type": "SHOOTER"
+      },
+      "extraAttack": {
+        "type": "ADDITIONAL_ATTACK",
+        "val": 1,
+        "effectRange": "ONLY_DISTANCE_FIGHT"
+      }
+    },
+    "stackExperience": [
+      {
+        "bonus": {
+          "type": "ENEMY_DEFENCE_REDUCTION"
+        },
+        "values": [
+          0,
+          10,
+          12,
+          13,
+          15,
+          17,
+          19,
+          21,
+          23,
+          25
+        ]
+      },
+      {
+        "bonus": {
+          "type": "SHOTS"
+        },
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "bonus": {
+          "type": "STACKS_SPEED"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      }
+    ],
+    "horde": 0,
+    "upgrades": []
+  },
+  "tumCeasarGriffin": {
+    "name": {
+      "plural": "Cesar Griffins",
+      "singular": "Cesar Griffin"
+    },
+    "advMapAmount": {
+      "max": 17,
+      "min": 12
+    },
+    "faction": "core:castle",
+    "attack": 11,
+    "defense": 15,
+    "cost": {
+      "gold": 1125
+    },
+    "damage": {
+      "max": 8,
+      "min": 5
+    },
+    "growth": 7,
+    "hitPoints": 36,
+    "speed": 9,
+    "horde": 3,
+    "level": 3,
+    "fightValue": 364,
+    "aiValue": 448,
+    "graphics": {
+      "animation": "creatures/castle/battle/cr199",
+      "map": "creatures/castle/map/AVWCR199",
+      "iconSmall": "creatures/castle/iconsSmall/CPrS199X",
+      "iconLarge": "creatures/castle/iconsBig/CPrL199X",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 10.0,
+        "attack": 1.0
+      }
+    },
+    "doubleWide": true,
+    "sound": {
+      "attack": "RGRFATTK.wav",
+      "defend": "RGRFDFND.wav",
+      "killed": "RGRFKILL.wav",
+      "move": "RGRFMOVE.wav",
+      "wince": "RGRFWNCE.wav"
+    },
+    "abilities": {
+      "canFly": {
+        "type": "FLYING"
+      },
+      "unlimitedRetaliation": {
+        "type": "UNLIMITED_RETALIATIONS"
+      },
+      "fearless": {
+        "type": "FEARLESS"
+      }
+    },
+    "stackExperience": [
+      {
+        "bonus": {
+          "type": "BLOCKS_RETALIATION"
+        },
+        "values": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "bonus": {
+          "type": "STACKS_SPEED"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      }
+    ],
+    "shots": 0,
+    "upgrades": []
+  },
+  "tumInquisitor": {
+    "name": {
+      "plural": "Inquisitors",
+      "singular": "Inquisitor"
+    },
+    "advMapAmount": {
+      "max": 14,
+      "min": 10
+    },
+    "faction": "core:castle",
+    "attack": 18,
+    "defense": 14,
+    "damage": {
+      "max": 14,
+      "min": 11
+    },
+    "growth": 4,
+    "hitPoints": 45,
+    "level": 4,
+    "speed": 6,
+    "cost": {
+      "gold": 2700
+    },
+    "fightValue": 588,
+    "aiValue": 588,
+    "graphics": {
+      "animation": "creatures/castle/battle/cr291",
+      "map": "creatures/castle/map/AVWCR291",
+      "iconSmall": "creatures/castle/iconsSmall/CPrS291X",
+      "iconLarge": "creatures/castle/iconsBig/CPrL291X",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 10.0,
+        "attack": 1.0
+      }
+    },
+    "doubleWide": false,
+    "sound": {
+      "attack": "CRUSATTK.wav",
+      "defend": "CRUSDFND.wav",
+      "killed": "CRUSKILL.wav",
+      "move": "CRUSMOVE.wav",
+      "wince": "CRUSWNCE.wav"
+    },
+    "abilities": {
+      "extraAttack": {
+        "type": "ADDITIONAL_ATTACK",
+        "val": 1
+      }
+    },
+    "stackExperience": [
+      {
+        "bonus": {
+          "type": "GENERAL_DAMAGE_REDUCTION",
+          "subtype": "damageTypeAll"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          10,
+          15,
+          20
+        ]
+      },
+      {
+        "bonus": {
+          "type": "DOUBLE_DAMAGE_CHANCE"
+        },
+        "values": [
+          0,
+          8,
+          12,
+          16,
+          20,
+          24,
+          28,
+          32,
+          36,
+          40
+        ]
+      },
+      {
+        "bonus": {
+          "type": "HATE",
+          "subtype": "creature.vampire"
+        },
+        "values": [
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80,
+          90,
+          100
+        ]
+      },
+      {
+        "bonus": {
+          "type": "HATE",
+          "subtype": "creature.vampireLord"
+        },
+        "values": [
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80,
+          90,
+          100
+        ]
+      },
+      {
+        "bonus": {
+          "type": "STACKS_SPEED"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      }
+    ],
+    "shots": 0,
+    "horde": 0,
+    "upgrades": []
+  },
+  "tumHighPriest": {
+    "name": {
+      "plural": "High Priests",
+      "singular": "High Priest"
+    },
+    "advMapAmount": {
+      "max": 10,
+      "min": 8
+    },
+    "faction": "core:castle",
+    "attack": 14,
+    "defense": 14,
+    "damage": {
+      "max": 14,
+      "min": 12
+    },
+    "growth": 3,
+    "hitPoints": 41,
+    "level": 5,
+    "shots": 24,
+    "speed": 7,
+    "cost": {
+      "gold": 4355
+    },
+    "fightValue": 500,
+    "aiValue": 750,
+    "graphics": {
+      "animation": "creatures/castle/battle/cr320",
+      "map": "creatures/castle/map/AVWCR320",
+      "iconSmall": "creatures/castle/iconsSmall/CPrS320X",
+      "iconLarge": "creatures/castle/iconsBig/CPrL320X",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 10.0,
+        "attack": 1.0
+      },
+      "missile": {
+        "projectile": "CPRZEAX.DEF",
+        "attackClimaxFrame": 6,
+        "offset": {
+          "upperX": 37,
+          "upperY": -98,
+          "middleX": 62,
+          "middleY": -53,
+          "lowerX": 28,
+          "lowerY": -3
+        },
+        "frameAngles": [
+          90,
+          72,
+          45,
+          27,
+          0,
+          -27,
+          -45,
+          -72,
+          -90,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "doubleWide": false,
+    "sound": {
+      "attack": "ZELTATTK.wav",
+      "defend": "ZELTDFND.wav",
+      "killed": "ZELTKILL.wav",
+      "move": "ZELTMOVE.wav",
+      "shoot": "ZELTSHOT.wav",
+      "wince": "ZELTWNCE.wav"
+    },
+    "abilities": {
+      "canShoot": {
+        "type": "SHOOTER"
+      },
+      "noMeleePenalty": {
+        "type": "NO_MELEE_PENALTY"
+      },
+      "prayerPower": {
+        "type": "SPECIFIC_SPELL_POWER",
+        "subtype": "spell.prayer",
+        "val": 100
+      },
+      "castPrayer": {
+        "type": "SPELLCASTER",
+        "subtype": "spell.prayer",
+        "val": 3
+      },
+      "spellpoints": {
+        "type": "CASTS",
+        "val": 2
+      }
+    },
+    "stackExperience": [
+      {
+        "bonus": {
+          "type": "ADDITIONAL_ATTACK"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "bonus": {
+          "type": "NO_DISTANCE_PENALTY"
+        },
+        "values": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "bonus": {
+          "type": "SPELL_IMMUNITY",
+          "subtype": "spell.dispelHelpful"
+        },
+        "values": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "bonus": {
+          "type": "MIND_IMMUNITY"
+        },
+        "values": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "bonus": {
+          "type": "HATE",
+          "subtype": "creature.lich"
+        },
+        "values": [
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35,
+          40,
+          45,
+          50
+        ]
+      },
+      {
+        "bonus": {
+          "type": "HATE",
+          "subtype": "creature.powerLich"
+        },
+        "values": [
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35,
+          40,
+          45,
+          50
+        ]
+      },
+      {
+        "bonus": {
+          "type": "HATE",
+          "subtype": "creature.tumLichKing"
+        },
+        "values": [
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35,
+          40,
+          45,
+          50
+        ]
+      },
+      {
+        "bonus": {
+          "type": "STACKS_SPEED"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      }
+    ],
+    "horde": 0,
+    "upgrades": []
+  },
+  "tumHolyChampion": {
+    "name": {
+      "plural": "Holy Champions",
+      "singular": "Holy Champion"
+    },
+    "advMapAmount": {
+      "max": 8,
+      "min": 5
+    },
+    "faction": "core:castle",
+    "attack": 22,
+    "defense": 18,
+    "damage": {
+      "max": 34,
+      "min": 27
+    },
+    "growth": 2,
+    "hitPoints": 126,
+    "level": 6,
+    "speed": 9,
+    "cost": {
+      "gold": 16725
+    },
+    "fightValue": 1800,
+    "aiValue": 2100,
+    "graphics": {
+      "animation": "creatures/castle/battle/cr201",
+      "map": "creatures/castle/map/AVWCR201",
+      "iconSmall": "creatures/castle/iconsSmall/CPrS201X",
+      "iconLarge": "creatures/castle/iconsBig/CPrL201X",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 10.0,
+        "attack": 1.0
+      }
+    },
+    "doubleWide": true,
+    "sound": {
+      "attack": "CHMPATTK.wav",
+      "defend": "CHMPDFND.wav",
+      "killed": "CHMPKILL.wav",
+      "move": "CHMPMOVE.wav",
+      "wince": "CHMPWNCE.wav"
+    },
+    "abilities": {
+      "justing": {
+        "type": "JOUSTING",
+        "val": 10
+      },
+      "fearless": {
+        "type": "MORALE",
+        "val": 1,
+        "valueType": "INDEPENDENT_MAX"
+      }
+    },
+    "stackExperience": [
+      {
+        "bonus": {
+          "type": "SPELL_IMMUNITY",
+          "subtype": "spell.frenzy"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          50,
+          60,
+          70,
+          80,
+          90,
+          100
+        ]
+      },
+      {
+        "bonus": {
+          "type": "HATE",
+          "subtype": "creature.tumDeathKnight"
+        },
+        "values": [
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80,
+          90,
+          100
+        ]
+      },
+      {
+        "bonus": {
+          "type": "SLAYER"
+        },
+        "values": [
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80,
+          90,
+          100
+        ]
+      },
+      {
+        "bonus": {
+          "type": "STACKS_SPEED"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      }
+    ],
+    "shots": 0,
+    "horde": 0,
+    "upgrades": []
+  },
+  "wake-of-gods.level8units:supremeArchangel": {
+    "attack": 34,
+    "defense": 34,
+    "hitPoints": 332,
+    "damage": {
+      "max": 61,
+      "min": 61
+    },
+    "speed": 18,
+    "shots": 0,
+    "growth": 1,
+    "horde": 0,
+    "aiValue": 8776,
+    "fightValue": 6033,
+    "level": 7,
+    "faction": "core:castle",
+    "doubleWide": true,
+    "cost": {
+      "gems": 63,
+      "gold": 100310
+    }
+  },
+  "tumCentaurGeneral": {
+    "name": {
+      "plural": "Centaur Generals",
+      "singular": "Centaur General"
+    },
+    "advMapAmount": {
+      "max": 25,
+      "min": 20
+    },
+    "faction": "core:rampart",
+    "attack": 12,
+    "defense": 5,
+    "damage": {
+      "max": 5,
+      "min": 4
+    },
+    "growth": 14,
+    "hitPoints": 14,
+    "level": 1,
+    "speed": 8,
+    "cost": {
+      "gold": 205
+    },
+    "fightValue": 115,
+    "aiValue": 138,
+    "graphics": {
+      "animation": "creatures/rampart/battle/cr293",
+      "map": "creatures/rampart/map/AVWCR293",
+      "iconSmall": "creatures/rampart/iconsSmall/CPrS293X",
+      "iconLarge": "creatures/rampart/iconsBig/CPrL293X",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 10.0,
+        "attack": 1.0
+      }
+    },
+    "doubleWide": true,
+    "sound": {
+      "attack": "ECNTATTK.wav",
+      "defend": "ECNTDFND.wav",
+      "killed": "ECNTKILL.wav",
+      "move": "ECNTMOVE.wav",
+      "wince": "ECNTWNCE.wav"
+    },
+    "abilities": {
+      "jousting": {
+        "type": "JOUSTING",
+        "val": 10
+      }
+    },
+    "stackExperience": [
+      {
+        "bonus": {
+          "type": "LEVEL_SPELL_IMMUNITY"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "bonus": {
+          "type": "MIND_IMMUNITY"
+        },
+        "values": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "bonus": {
+          "type": "STACKS_SPEED"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      }
+    ],
+    "shots": 0,
+    "horde": 0,
+    "upgrades": []
+  },
+  "tumBerserkerDwarf": {
+    "name": {
+      "plural": "Dwarf Chieftains",
+      "singular": "Dwarf Chieftain"
+    },
+    "advMapAmount": {
+      "max": 22,
+      "min": 16
+    },
+    "faction": "core:rampart",
+    "attack": 9,
+    "defense": 13,
+    "damage": {
+      "max": 6,
+      "min": 4
+    },
+    "growth": 8,
+    "hitPoints": 29,
+    "horde": 4,
+    "level": 2,
+    "speed": 5,
+    "cost": {
+      "gold": 490
+    },
+    "fightValue": 209,
+    "aiValue": 209,
+    "graphics": {
+      "animation": "creatures/rampart/battle/cr203",
+      "map": "creatures/rampart/map/AVWCR203",
+      "iconSmall": "creatures/rampart/iconsSmall/CPrS203X",
+      "iconLarge": "creatures/rampart/iconsBig/CPrL203X",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 10.0,
+        "attack": 1.0
+      }
+    },
+    "doubleWide": false,
+    "sound": {
+      "attack": "BDRFATTK.wav",
+      "defend": "BDRFDFND.wav",
+      "killed": "BDRFKILL.wav",
+      "move": "BDRFMOVE.wav",
+      "wince": "BDRFWNCE.wav"
+    },
+    "abilities": {
+      "magicResistance": {
+        "type": "MAGIC_RESISTANCE",
+        "val": 60
+      },
+      "bloodlust": {
+        "type": "ENCHANTED",
+        "subtype": "spell.bloodlust",
+        "val": 1
+      }
+    },
+    "stackExperience": [
+      {
+        "bonus": {
+          "type": "MAGIC_RESISTANCE"
+        },
+        "values": [
+          4,
+          8,
+          12,
+          16,
+          20,
+          24,
+          28,
+          32,
+          36,
+          40
+        ]
+      },
+      {
+        "bonus": {
+          "type": "GENERAL_DAMAGE_REDUCTION",
+          "subtype": "damageTypeMelee"
+        },
+        "values": [
+          0,
+          0,
+          2,
+          6,
+          10,
+          14,
+          18,
+          22,
+          26,
+          30
+        ]
+      },
+      {
+        "bonus": {
+          "type": "STACKS_SPEED"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    ],
+    "shots": 0,
+    "upgrades": []
+  },
+  "tumSharpshooterElf": {
+    "name": {
+      "plural": "Noble Elves",
+      "singular": "Noble Elf"
+    },
+    "advMapAmount": {
+      "max": 17,
+      "min": 12
+    },
+    "faction": "core:rampart",
+    "attack": 13,
+    "defense": 7,
+    "damage": {
+      "max": 7,
+      "min": 5
+    },
+    "growth": 7,
+    "hitPoints": 20,
+    "level": 3,
+    "shots": 24,
+    "speed": 7,
+    "cost": {
+      "gold": 1060
+    },
+    "fightValue": 195,
+    "aiValue": 331,
+    "graphics": {
+      "animation": "creatures/rampart/battle/cr256",
+      "map": "creatures/rampart/map/AVWCR256",
+      "iconSmall": "creatures/rampart/iconsSmall/CPrS256X",
+      "iconLarge": "creatures/rampart/iconsBig/CPrL256X",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 10.2,
+        "attack": 1.0
+      },
+      "missile": {
+        "projectile": "PELFX.DEF",
+        "attackClimaxFrame": 11,
+        "offset": {
+          "upperX": 32,
+          "upperY": -77,
+          "middleX": 40,
+          "middleY": -61,
+          "lowerX": 18,
+          "lowerY": -55
+        },
+        "frameAngles": [
+          90,
+          72,
+          45,
+          27,
+          0,
+          -27,
+          -45,
+          -72,
+          -90,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "sound": {
+      "attack": "HCRSATTK.wav",
+      "defend": "HCRSDFND.wav",
+      "killed": "HCRSKILL.wav",
+      "move": "HCRSMOVE.wav",
+      "shoot": "HCRSSHOT.wav",
+      "wince": "HCRSWNCE.wav"
+    },
+    "abilities": {
+      "canShoot": {
+        "type": "SHOOTER"
+      },
+      "additionalAttack": {
+        "type": "ADDITIONAL_ATTACK",
+        "val": 2
+      }
+    },
+    "stackExperience": [
+      {
+        "bonus": {
+          "type": "ENCHANTED",
+          "subtype": "spell.precision"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "bonus": {
+          "type": "NO_WALL_PENALTY"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "bonus": {
+          "type": "MIND_IMMUNITY"
+        },
+        "values": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "bonus": {
+          "type": "HATE",
+          "subtype": "creature.tumOrcLeader"
+        },
+        "values": [
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35,
+          40,
+          45,
+          50
+        ]
+      },
+      {
+        "bonus": {
+          "type": "STACKS_SPEED"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      }
+    ],
+    "horde": 0,
+    "doubleWide": false,
+    "upgrades": []
+  },
+  "tumGoldenPegasus": {
+    "name": {
+      "plural": " Golden Pegasi",
+      "singular": "Golden Pegasus"
+    },
+    "advMapAmount": {
+      "max": 14,
+      "min": 10
+    },
+    "faction": "core:rampart",
+    "attack": 15,
+    "defense": 12,
+    "cost": {
+      "gold": 1855
+    },
+    "damage": {
+      "max": 13,
+      "min": 7
+    },
+    "growth": 5,
+    "hitPoints": 39,
+    "speed": 12,
+    "level": 4,
+    "fightValue": 418,
+    "aiValue": 532,
+    "graphics": {
+      "animation": "creatures/rampart/battle/cr204",
+      "map": "creatures/rampart/map/AVWCR204",
+      "iconSmall": "creatures/rampart/iconsSmall/CPrS204X",
+      "iconLarge": "creatures/rampart/iconsBig/CPrL204X",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 10.0,
+        "attack": 1.0
+      }
+    },
+    "doubleWide": true,
+    "sound": {
+      "attack": "APEGATTK.wav",
+      "defend": "APEGDFND.wav",
+      "killed": "APEGKILL.wav",
+      "move": "APEGMOVE.wav",
+      "wince": "APEGWNCE.wav"
+    },
+    "abilities": {
+      "canFly": {
+        "type": "FLYING"
+      },
+      "increaseManaCost": {
+        "type": "CHANGES_SPELL_COST_FOR_ENEMY",
+        "val": 1
+      },
+      "noReataliation": {
+        "type": "BLOCKS_RETALIATION"
+      }
+    },
+    "stackExperience": [
+      {
+        "bonus": {
+          "type": "ENEMY_DEFENCE_REDUCTION"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "bonus": {
+          "type": "RETURN_AFTER_STRIKE"
+        },
+        "values": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "bonus": {
+          "type": "BLOCKS_RETALIATION"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          3
+        ]
+      },
+      {
+        "bonus": {
+          "type": "STACKS_SPEED"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          3
+        ]
+      }
+    ],
+    "shots": 0,
+    "horde": 0,
+    "upgrades": []
+  },
+  "tumElderDendroid": {
+    "name": {
+      "plural": "Elder Dendroids",
+      "singular": "Elder Dendroid"
+    },
+    "advMapAmount": {
+      "max": 10,
+      "min": 8
+    },
+    "faction": "core:rampart",
+    "attack": 11,
+    "defense": 18,
+    "damage": {
+      "max": 16,
+      "min": 12
+    },
+    "cost": {
+      "gold": 4125
+    },
+    "growth": 3,
+    "horde": 2,
+    "hitPoints": 94,
+    "level": 5,
+    "speed": 4,
+    "fightValue": 765,
+    "aiValue": 803,
+    "graphics": {
+      "animation": "creatures/rampart/battle/cr205",
+      "map": "creatures/rampart/map/AVWCR205",
+      "iconSmall": "creatures/rampart/iconsSmall/CPrS205X",
+      "iconLarge": "creatures/rampart/iconsBig/CPrL205X",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 10.0,
+        "attack": 1.0
+      }
+    },
+    "doubleWide": false,
+    "sound": {
+      "attack": "BTREATTK.wav",
+      "defend": "BTREDFND.wav",
+      "killed": "BTREKILL.wav",
+      "move": "BTREMOVE.wav",
+      "wince": "BTREWNCE.wav"
+    },
+    "abilities": {
+      "binds": {
+        "type": "SPELL_AFTER_ATTACK",
+        "subtype": "spell.bind",
+        "val": 100
+      },
+      "hpRegen": {
+        "type": "HP_REGENERATION",
+        "val": 20
+      }
+    },
+    "stackExperience": [
+      {
+        "bonus": {
+          "type": "CASTS"
+        },
+        "values": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      },
+      {
+        "bonus": {
+          "type": "ENEMY_DEFENCE_REDUCTION"
+        },
+        "values": [
+          4,
+          8,
+          12,
+          16,
+          20,
+          24,
+          28,
+          32,
+          36,
+          40
+        ]
+      },
+      {
+        "bonus": {
+          "type": "STACKS_SPEED"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      }
+    ],
+    "shots": 0,
+    "upgrades": []
+  },
+  "tumLegendaryUnicorn": {
+    "name": {
+      "plural": "Legendary Unicorns",
+      "singular": "Legendary Unicorn"
+    },
+    "advMapAmount": {
+      "max": 8,
+      "min": 5
+    },
+    "faction": "core:rampart",
+    "attack": 21,
+    "defense": 16,
+    "damage": {
+      "max": 30,
+      "min": 25
+    },
+    "growth": 2,
+    "hitPoints": 139,
+    "level": 6,
+    "cost": {
+      "gold": 13255
+    },
+    "speed": 9,
+    "fightValue": 1740,
+    "aiValue": 2030,
+    "graphics": {
+      "animation": "creatures/rampart/battle/cr206",
+      "map": "creatures/rampart/map/AVWCR206",
+      "iconSmall": "creatures/rampart/iconsSmall/CPrS206X",
+      "iconLarge": "creatures/rampart/iconsBig/CPrL206X",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 10.0,
+        "attack": 1.0
+      }
+    },
+    "doubleWide": true,
+    "sound": {
+      "attack": "WUNCATTK.wav",
+      "defend": "WUNCDFND.wav",
+      "killed": "WUNCKILL.wav",
+      "move": "WUNCMOVE.wav",
+      "shoot": "WUNCSHOT.wav",
+      "wince": "WUNCWNCE.wav"
+    },
+    "abilities": {
+      "spellResistAura": {
+        "type": "SPELL_RESISTANCE_AURA",
+        "val": 40
+      },
+      "spellAfterBlind": {
+        "type": "SPELL_AFTER_ATTACK",
+        "subtype": "spell.blind",
+        "val": 20
+      },
+      "unlimitedRetaliations": {
+        "type": "UNLIMITED_RETALIATIONS"
+      },
+      "ufearless": {
+        "type": "FEARLESS"
+      }
+    },
+    "stackExperience": [
+      {
+        "bonus": {
+          "type": "FEARLESS"
+        },
+        "values": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "bonus": {
+          "type": "SPELL_AFTER_ATTACK",
+          "subtype": "spell.blind"
+        },
+        "values": [
+          0,
+          5,
+          5,
+          10,
+          10,
+          15,
+          15,
+          20,
+          25,
+          30
+        ]
+      },
+      {
+        "bonus": {
+          "type": "SPELL_IMMUNITY",
+          "subtype": "spell.blind"
+        },
+        "values": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "bonus": {
+          "type": "STACKS_SPEED"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      }
+    ],
+    "shots": 0,
+    "horde": 0,
+    "upgrades": []
+  },
+  "wake-of-gods.level8units:diamondDragon": {
+    "attack": 31,
+    "defense": 31,
+    "hitPoints": 332,
+    "damage": {
+      "max": 61,
+      "min": 49
+    },
+    "speed": 16,
+    "shots": 0,
+    "growth": 1,
+    "horde": 0,
+    "aiValue": 8613,
+    "fightValue": 6220,
+    "level": 7,
+    "faction": "core:rampart",
+    "doubleWide": true,
+    "cost": {
+      "crystal": 41,
+      "gold": 80265
+    }
+  },
+  "tumGrandmasterGremlin": {
+    "name": {
+      "plural": "Grandmaster Gremlins",
+      "singular": "Grandmaster Gremlin"
+    },
+    "advMapAmount": {
+      "max": 25,
+      "min": 20
+    },
+    "faction": "core:tower",
+    "attack": 8,
+    "defense": 6,
+    "damage": {
+      "max": 4,
+      "min": 3
+    },
+    "cost": {
+      "gold": 90
+    },
+    "growth": 16,
+    "hitPoints": 6,
+    "level": 1,
+    "shots": 8,
+    "speed": 5,
+    "fightValue": 55,
+    "aiValue": 66,
+    "graphics": {
+      "animation": "creatures/tower/battle/Cr255",
+      "map": "creatures/tower/map/AVWCR255",
+      "iconSmall": "creatures/tower/iconsSmall/CPrs255X",
+      "iconLarge": "creatures/tower/iconsBig/CPrL255X",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 10.0,
+        "attack": 1.0
+      },
+      "missile": {
+        "attackClimaxFrame": 11,
+        "frameAngles": [
+          90,
+          72,
+          45,
+          27,
+          0,
+          -27,
+          -45,
+          -72,
+          -90,
+          0,
+          0,
+          0
+        ],
+        "offset": {
+          "lowerX": 9,
+          "lowerY": 9,
+          "middleX": 46,
+          "middleY": -17,
+          "upperX": 55,
+          "upperY": -52
+        },
+        "projectile": "CPRGRE.DEF"
+      }
+    },
+    "doubleWide": false,
+    "sound": {
+      "attack": "AAGLATTK.wav",
+      "defend": "AAGLDFND.wav",
+      "killed": "AAGLKILL.wav",
+      "move": "AAGLMOVE.wav",
+      "shoot": "AGRMSHOT.wav",
+      "wince": "AAGLWNCE.wav"
+    },
+    "abilities": {
+      "canShoot": {
+        "type": "SHOOTER"
+      },
+      "extraAttack": {
+        "type": "ADDITIONAL_ATTACK",
+        "val": 1,
+        "effectRange": "ONLY_DISTANCE_FIGHT"
+      }
+    },
+    "stackExperience": [
+      {
+        "bonus": {
+          "type": "STACKS_SPEED"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    ],
+    "horde": 0,
+    "upgrades": []
+  },
+  "tumMarbleGargoyle": {
+    "name": {
+      "plural": "Marble Gargoyle",
+      "singular": "Marble Gargoyle"
+    },
+    "advMapAmount": {
+      "max": 22,
+      "min": 16
+    },
+    "faction": "core:tower",
+    "attack": 9,
+    "defense": 13,
+    "damage": {
+      "max": 5,
+      "min": 4
+    },
+    "cost": {
+      "gold": 525
+    },
+    "growth": 9,
+    "hitPoints": 24,
+    "horde": 4,
+    "level": 2,
+    "speed": 9,
+    "fightValue": 155,
+    "aiValue": 201,
+    "graphics": {
+      "animation": "creatures/tower/battle/Cr208",
+      "map": "creatures/tower/map/AVWCR208",
+      "iconSmall": "creatures/tower/iconsSmall/CPrs208X.bmp",
+      "iconLarge": "creatures/tower/iconsBig/CPrL208X",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 10.0,
+        "attack": 1.0
+      }
+    },
+    "doubleWide": false,
+    "sound": {
+      "attack": "OGRGATTK.wav",
+      "defend": "OGRGDFND.wav",
+      "killed": "OGRGKILL.wav",
+      "move": "OGRGMOVE.wav",
+      "wince": "OGRGWNCE.wav"
+    },
+    "abilities": {
+      "canFly": {
+        "type": "FLYING"
+      },
+      "nonliving": {
+        "type": "GARGOYLE"
+      },
+      "noMorale": {
+        "type": "NO_MORALE"
+      }
+    },
+    "stackExperience": [
+      {
+        "bonus": {
+          "type": "ENCHANTER",
+          "subtype": "spell.stoneSkin",
+          "addInfo": 3
+        },
+        "values": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      },
+      {
+        "bonus": {
+          "type": "STACKS_SPEED"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      }
+    ],
+    "shots": 0,
+    "upgrades": []
+  },
+  "tumSteelGolem": {
+    "name": {
+      "singular": "Mithril Golem",
+      "plural": "Mithril Golems"
+    },
+    "faction": "core:tower",
+    "level": 3,
+    "cost": {
+      "gold": 705
+    },
+    "speed": 3,
+    "hitPoints": 44,
+    "attack": 9,
+    "defense": 16,
+    "damage": {
+      "max": 7,
+      "min": 6
+    },
+    "growth": 6,
+    "aiValue": 250,
+    "fightValue": 339,
+    "advMapAmount": {
+      "min": 12,
+      "max": 17
+    },
+    "abilities": {
+      "nonliving": {
+        "type": "NON_LIVING"
+      },
+      "magicResistance": {
+        "type": "SPELL_DAMAGE_REDUCTION",
+        "subtype": "spellSchool.any",
+        "val": 80
+      }
+    },
+    "graphics": {
+      "animation": "creatures/tower/battle/Cr209",
+      "map": "creatures/tower/map/AVWCR209",
+      "iconSmall": "creatures/tower/iconsSmall/CPrs209X",
+      "iconLarge": "creatures/tower/iconsBig/CPrL209X",
+      "animationTime": {
+        "attack": 1,
+        "idle": 10,
+        "walk": 1.2
+      },
+      "timeBetweenFidgets": 1
+    },
+    "sound": {
+      "attack": "SGLMATTK.wav",
+      "defend": "SGLMDFND.wav",
+      "killed": "SGLMKILL.wav",
+      "move": "SGLMMOVE.wav",
+      "wince": "SGLMWNCE.wav"
+    },
+    "shots": 0,
+    "horde": 0,
+    "doubleWide": false,
+    "upgrades": []
+  },
+  "tumSupremeArchMage": {
+    "name": {
+      "singular": "Supreme Arch Mage",
+      "plural": "Supreme Arch Magi"
+    },
+    "faction": "core:tower",
+    "level": 4,
+    "cost": {
+      "gold": 3035
+    },
+    "speed": 7,
+    "hitPoints": 41,
+    "attack": 14,
+    "defense": 13,
+    "damage": {
+      "max": 11,
+      "min": 9
+    },
+    "shots": 24,
+    "growth": 4,
+    "aiValue": 680,
+    "fightValue": 467,
+    "advMapAmount": {
+      "min": 10,
+      "max": 14
+    },
+    "abilities": {
+      "SHOOTING_ARMY": {
+        "type": "SHOOTER"
+      },
+      "const_no_melee_penalty": {
+        "type": "NO_MELEE_PENALTY"
+      },
+      "const_no_wall_penalty": {
+        "type": "NO_WALL_PENALTY"
+      },
+      "reduceSpellCost": {
+        "type": "CHANGES_SPELL_COST_FOR_ALLY",
+        "val": 2
+      },
+      "weakness": {
+        "type": "SPELL_AFTER_ATTACK",
+        "subtype": "spell.weakness",
+        "val": 20,
+        "addInfo": [
+          0,
+          1
+        ]
+      },
+      "deasease": {
+        "type": "SPELL_AFTER_ATTACK",
+        "subtype": "spell.disease",
+        "val": 20,
+        "addInfo": [
+          0,
+          1
+        ]
+      },
+      "curse": {
+        "type": "SPELL_AFTER_ATTACK",
+        "subtype": "spell.curse",
+        "val": 20,
+        "addInfo": [
+          0,
+          1
+        ]
+      }
+    },
+    "graphics": {
+      "animation": "creatures/tower/battle/CR257",
+      "map": "creatures/tower/map/AVWCR257",
+      "iconSmall": "creatures/tower/iconsSmall/CPrs257X",
+      "iconLarge": "creatures/tower/iconsBig/CPrL257X",
+      "animationTime": {
+        "attack": 1,
+        "idle": 10,
+        "walk": 1
+      },
+      "missile": {
+        "attackClimaxFrame": 8,
+        "frameAngles": [
+          90,
+          72,
+          45,
+          27,
+          0,
+          -27,
+          -45,
+          -72,
+          -90,
+          0,
+          0,
+          0
+        ],
+        "offset": {
+          "lowerX": 18,
+          "lowerY": -92,
+          "middleX": 43,
+          "middleY": -99,
+          "upperX": 28,
+          "upperY": -107
+        },
+        "ray": [
+          {
+            "end": [
+              160,
+              192,
+              0,
+              64
+            ],
+            "start": [
+              160,
+              192,
+              0,
+              255
+            ]
+          },
+          {
+            "end": [
+              128,
+              224,
+              128,
+              128
+            ],
+            "start": [
+              128,
+              224,
+              128,
+              255
+            ]
+          },
+          {
+            "end": [
+              32,
+              176,
+              32,
+              255
+            ],
+            "start": [
+              32,
+              176,
+              32,
+              255
+            ]
+          },
+          {
+            "end": [
+              128,
+              224,
+              128,
+              128
+            ],
+            "start": [
+              128,
+              224,
+              128,
+              255
+            ]
+          },
+          {
+            "end": [
+              160,
+              192,
+              0,
+              64
+            ],
+            "start": [
+              160,
+              192,
+              0,
+              255
+            ]
+          }
+        ]
+      },
+      "timeBetweenFidgets": 1
+    },
+    "sound": {
+      "attack": "AMAGATTK.wav",
+      "defend": "AMAGDFND.wav",
+      "killed": "AMAGKILL.wav",
+      "move": "AMAGMOVE.wav",
+      "shoot": "AMAGSHOT.wav",
+      "wince": "AMAGWNCE.wav"
+    },
+    "horde": 0,
+    "doubleWide": false,
+    "upgrades": []
+  },
+  "tumArcaneGenie": {
+    "name": {
+      "plural": "Arcane Genies",
+      "singular": "Arcane Genie"
+    },
+    "advMapAmount": {
+      "max": 10,
+      "min": 8
+    },
+    "faction": "core:tower",
+    "attack": 14,
+    "defense": 16,
+    "damage": {
+      "max": 18,
+      "min": 15
+    },
+    "cost": {
+      "gold": 5820
+    },
+    "growth": 3,
+    "hitPoints": 53,
+    "speed": 11,
+    "level": 5,
+    "fightValue": 748,
+    "aiValue": 942,
+    "graphics": {
+      "animation": "creatures/tower/battle/Cr210",
+      "map": "creatures/tower/map/AVWCR210",
+      "iconSmall": "creatures/tower/iconsSmall/CPrs210X",
+      "iconLarge": "creatures/tower/iconsBig/CPrL210X",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 10.0,
+        "attack": 1.0
+      }
+    },
+    "doubleWide": false,
+    "sound": {
+      "attack": "CALFATTK.wav",
+      "defend": "CALFDFND.wav",
+      "killed": "CALFKILL.wav",
+      "move": "CALFMOVE.wav",
+      "shoot": "CALFSHOT.wav",
+      "wince": "CALFWNCE.wav"
+    },
+    "abilities": {
+      "canFly": {
+        "type": "FLYING",
+        "subtype": "movementFlying"
+      },
+      "hateEfreet": {
+        "type": "HATE",
+        "subtype": "creature.efreet",
+        "val": 50
+      },
+      "hateEfreetSultan": {
+        "type": "HATE",
+        "subtype": "creature.efreetSultan",
+        "val": 50
+      },
+      "hateEfreetRajah": {
+        "type": "HATE",
+        "subtype": "creature.tumEfreetRajah",
+        "val": 50
+      },
+      "spellsLength": {
+        "type": "CREATURE_ENCHANT_POWER",
+        "val": 5
+      },
+      "randomSpellcaster": {
+        "type": "RANDOM_SPELLCASTER",
+        "val": 2
+      },
+      "casts": {
+        "type": "CASTS",
+        "val": 3
+      },
+      "drainMana": {
+        "type": "MANA_DRAIN",
+        "val": 3
+      },
+      "mindImmunity": {
+        "type": "MIND_IMMUNITY"
+      }
+    },
+    "stackExperience": [
+      {
+        "bonus": {
+          "type": "ENCHANTER",
+          "subtype": "spell.stoneSkin",
+          "addInfo": 2
+        },
+        "values": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      },
+      {
+        "bonus": {
+          "type": "SPELL_IMMUNITY",
+          "subtype": "spell.berserk"
+        },
+        "values": [
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "bonus": {
+          "type": "SPELL_IMMUNITY",
+          "subtype": "spell.blind"
+        },
+        "values": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "bonus": {
+          "type": "SPELL_IMMUNITY",
+          "subtype": "spell.hypnotize"
+        },
+        "values": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "bonus": {
+          "type": "CASTS"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "bonus": {
+          "type": "STACKS_SPEED"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          3
+        ]
+      }
+    ],
+    "shots": 0,
+    "horde": 0,
+    "upgrades": []
+  },
+  "tumNagaEmpress": {
+    "name": {
+      "plural": "Naga Empresses",
+      "singular": "Naga Empress"
+    },
+    "advMapAmount": {
+      "max": 8,
+      "min": 5
+    },
+    "faction": "core:tower",
+    "attack": 22,
+    "defense": 15,
+    "damage": {
+      "max": 41,
+      "min": 41
+    },
+    "growth": 2,
+    "hitPoints": 139,
+    "speed": 7,
+    "level": 6,
+    "cost": {
+      "gold": 22305
+    },
+    "fightValue": 2485,
+    "aiValue": 2840,
+    "graphics": {
+      "animation": "creatures/tower/battle/Cr211",
+      "map": "creatures/tower/map/AVWCR211",
+      "iconSmall": "creatures/tower/iconsSmall/CPrs211X",
+      "iconLarge": "creatures/tower/iconsBig/CPrL211X",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 10.0,
+        "attack": 1.0
+      }
+    },
+    "doubleWide": true,
+    "sound": {
+      "attack": "NGRDATTK.wav",
+      "defend": "NGRDDFND.wav",
+      "killed": "NGRDKILL.wav",
+      "move": "NGRDMOVE.wav",
+      "wince": "NGRDWNCE.wav"
+    },
+    "abilities": {
+      "noRetaliation": {
+        "type": "BLOCKS_RETALIATION"
+      },
+      "threeHeads": {
+        "type": "THREE_HEADED_ATTACK"
+      },
+      "chargeImmunity": {
+        "type": "CHARGE_IMMUNITY"
+      }
+    },
+    "stackExperience": [
+      {
+        "bonus": {
+          "type": "DOUBLE_DAMAGE_CHANCE"
+        },
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "bonus": {
+          "type": "UNLIMITED_RETALIATIONS"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          5
+        ]
+      },
+      {
+        "bonus": {
+          "type": "STACKS_SPEED"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      }
+    ],
+    "shots": 0,
+    "horde": 0,
+    "upgrades": []
+  },
+  "wake-of-gods.level8units:lordOfThunder": {
+    "attack": 28,
+    "defense": 28,
+    "hitPoints": 397,
+    "damage": {
+      "max": 73,
+      "min": 49
+    },
+    "speed": 11,
+    "shots": 24,
+    "growth": 1,
+    "horde": 0,
+    "aiValue": 7500,
+    "fightValue": 5000,
+    "level": 7,
+    "faction": "core:tower",
+    "doubleWide": false,
+    "cost": {
+      "gems": 41,
+      "gold": 100310
+    }
+  },
+  "tumVermin": {
+    "name": {
+      "plural": "Vermins",
+      "singular": "Vermin"
+    },
+    "advMapAmount": {
+      "max": 25,
+      "min": 20
+    },
+    "faction": "core:inferno",
+    "attack": 6,
+    "defense": 8,
+    "cost": {
+      "gold": 135
+    },
+    "damage": {
+      "max": 4,
+      "min": 3
+    },
+    "growth": 15,
+    "horde": 8,
+    "hitPoints": 6,
+    "speed": 7,
+    "level": 1,
+    "fightValue": 60,
+    "aiValue": 60,
+    "graphics": {
+      "animation": "creatures/inferno/battle/CR213",
+      "map": "creatures/inferno/map/AVWCR213",
+      "iconSmall": "creatures/inferno/iconsSmall/CPrs213X",
+      "iconLarge": "creatures/inferno/iconsBig/CPrL213X",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 10.0,
+        "attack": 1.0
+      }
+    },
+    "doubleWide": false,
+    "sound": {
+      "attack": "FMLRATTK.wav",
+      "defend": "FMLRDFND.wav",
+      "killed": "FMLRKILL.wav",
+      "move": "FMLRMOVE.wav",
+      "wince": "FMLRWNCE.wav"
+    },
+    "abilities": {
+      "manaChannel": {
+        "type": "MANA_CHANNELING",
+        "val": 20
+      },
+      "canFly": {
+        "type": "FLYING",
+        "subtype": "movementFlying"
+      },
+      "hateGremlin": {
+        "type": "HATE",
+        "subtype": "creature.gremlin",
+        "val": 50
+      },
+      "hateMasterGremlin": {
+        "type": "HATE",
+        "subtype": "creature.masterGremlin",
+        "val": 50
+      },
+      "hateGrandmasterGremlin": {
+        "type": "HATE",
+        "subtype": "creature.tumGrandmasterGremlin",
+        "val": 50
+      }
+    },
+    "stackExperience": [
+      {
+        "bonus": {
+          "type": "ENCHANTED",
+          "subtype": "spell.mirth"
+        },
+        "values": [
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3
+        ]
+      },
+      {
+        "bonus": {
+          "type": "HATE",
+          "subtype": "creature.tumGrandmasterGremlin"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          5,
+          10,
+          20,
+          30,
+          40,
+          50
+        ]
+      },
+      {
+        "bonus": {
+          "type": "MANA_CHANNELING"
+        },
+        "values": [
+          2,
+          4,
+          6,
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          20
+        ]
+      },
+      {
+        "bonus": {
+          "type": "SPELL_SCHOOL_IMMUNITY",
+          "subtype": "fire"
+        },
+        "values": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "bonus": {
+          "type": "STACKS_SPEED"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      }
+    ],
+    "shots": 0,
+    "upgrades": []
+  },
+  "tumWingedMagog": {
+    "name": {
+      "singular": "Winged Magog",
+      "plural": "Winged Magogs"
+    },
+    "faction": "core:inferno",
+    "level": 2,
+    "cost": {
+      "gold": 570
+    },
+    "speed": 6,
+    "shots": 24,
+    "hitPoints": 17,
+    "attack": 11,
+    "defense": 6,
+    "damage": {
+      "max": 6,
+      "min": 4
+    },
+    "growth": 8,
+    "aiValue": 240,
+    "fightValue": 210,
+    "advMapAmount": {
+      "min": 16,
+      "max": 22
+    },
+    "abilities": {
+      "shooter": {
+        "type": "SHOOTER"
+      },
+      "meleenopenalty": {
+        "type": "NO_MELEE_PENALTY"
+      },
+      "canFly": {
+        "type": "FLYING",
+        "subtype": "movementFlying"
+      },
+      "fireball": {
+        "type": "SPELL_LIKE_ATTACK",
+        "subtype": "spell.inferno"
+      },
+      "fireImmunity": {
+        "type": "SPELL_SCHOOL_IMMUNITY",
+        "subtype": "fire"
+      },
+      "receptive": {
+        "type": "RECEPTIVE"
+      },
+      "fireShield": {
+        "type": "FIRE_SHIELD",
+        "val": 25
+      }
+    },
+    "graphics": {
+      "animation": "creatures/inferno/battle/CR214.def",
+      "map": "creatures/inferno/map/AVWCR214",
+      "iconSmall": "creatures/inferno/iconsSmall/CPrs214X",
+      "iconLarge": "creatures/inferno/iconsBig/CPrL214X",
+      "animationTime": {
+        "attack": 1,
+        "idle": 10,
+        "walk": 1.33
+      },
+      "missile": {
+        "projectile": "CPRGOGX.DEF",
+        "attackClimaxFrame": 6,
+        "frameAngles": [
+          90,
+          72,
+          45,
+          27,
+          0,
+          -27,
+          -45,
+          -72,
+          -90,
+          0,
+          0,
+          0
+        ],
+        "offset": {
+          "lowerX": 15,
+          "lowerY": -9,
+          "middleX": 69,
+          "middleY": -51,
+          "upperX": 38,
+          "upperY": -89
+        }
+      },
+      "timeBetweenFidgets": 1
+    },
+    "sound": {
+      "attack": "MGOGATTK.wav",
+      "defend": "MGOGDFND.wav",
+      "killed": "MGOGKILL.wav",
+      "move": "MGOGMOVE.wav",
+      "shoot": "MGOGSHOT.wav",
+      "wince": "MGOGWNCE.wav"
+    },
+    "horde": 0,
+    "doubleWide": false,
+    "upgrades": []
+  },
+  "tumAstralCerberus": {
+    "name": {
+      "singular": "Astral Cerberus",
+      "plural": "Astral Cerberi"
+    },
+    "faction": "core:inferno",
+    "level": 3,
+    "cost": {
+      "gold": 1170
+    },
+    "speed": 8,
+    "hitPoints": 32,
+    "attack": 16,
+    "defense": 10,
+    "damage": {
+      "max": 11,
+      "min": 4
+    },
+    "doubleWide": true,
+    "growth": 5,
+    "horde": 3,
+    "aiValue": 392,
+    "fightValue": 308,
+    "advMapAmount": {
+      "min": 12,
+      "max": 17
+    },
+    "abilities": {
+      "noRetaliation": {
+        "type": "BLOCKS_RETALIATION"
+      },
+      "threeHeads": {
+        "type": "THREE_HEADED_ATTACK"
+      },
+      "fearless": {
+        "type": "FEARLESS"
+      },
+      "poison": {
+        "type": "SPELL_AFTER_ATTACK",
+        "subtype": "spell.poison",
+        "val": 50,
+        "addInfo": [
+          1,
+          2
+        ]
+      },
+      "hateGriffin": {
+        "type": "HATE",
+        "subtype": "creature.griffin",
+        "val": 50
+      },
+      "hateRoyalGriffin": {
+        "type": "HATE",
+        "subtype": "creature.royalGriffin",
+        "val": 50
+      },
+      "hateCesarGriffin": {
+        "type": "HATE",
+        "subtype": "creature.tumCeasarGriffin",
+        "val": 50
+      }
+    },
+    "graphics": {
+      "animation": "creatures/inferno/battle/CR215",
+      "map": "creatures/inferno/map/AVWCR215",
+      "iconSmall": "creatures/inferno/iconsSmall/CPrs215X",
+      "iconLarge": "creatures/inferno/iconsBig/CPrL215X",
+      "animationTime": {
+        "attack": 1,
+        "idle": 10,
+        "walk": 1
+      },
+      "timeBetweenFidgets": 1
+    },
+    "sound": {
+      "attack": "CERBATTK.wav",
+      "defend": "CERBDFND.wav",
+      "killed": "CERBKILL.wav",
+      "move": "CERBMOVE.wav",
+      "wince": "CERBWNCE.wav"
+    },
+    "shots": 0,
+    "upgrades": []
+  },
+  "tumSharpHornedDemon": {
+    "name": {
+      "plural": "Sharp-Horned Demons",
+      "singular": "Sharp-Horned Demon"
+    },
+    "advMapAmount": {
+      "max": 14,
+      "min": 10
+    },
+    "faction": "core:inferno",
+    "attack": 12,
+    "defense": 16,
+    "cost": {
+      "gold": 1815
+    },
+    "damage": {
+      "max": 11,
+      "min": 9
+    },
+    "growth": 4,
+    "hitPoints": 58,
+    "level": 4,
+    "speed": 6,
+    "fightValue": 480,
+    "aiValue": 480,
+    "graphics": {
+      "animation": "creatures/inferno/battle/CR216",
+      "map": "creatures/inferno/map/AVWCR216",
+      "iconSmall": "creatures/inferno/iconsSmall/CPrs216X",
+      "iconLarge": "creatures/inferno/iconsBig/CPrL216X",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 10.0,
+        "attack": 1.0
+      }
+    },
+    "doubleWide": false,
+    "sound": {
+      "attack": "DHDMATTK.wav",
+      "defend": "DHDMDFND.wav",
+      "killed": "DHDMKILL.wav",
+      "move": "DHDMMOVE.wav",
+      "wince": "DHDMWNCE.wav"
+    },
+    "abilities": {
+      "plusAttack": {
+        "type": "ADDITIONAL_ATTACK",
+        "val": 1
+      },
+      "deathBlow": {
+        "type": "DOUBLE_DAMAGE_CHANCE",
+        "val": 15
+      }
+    },
+    "stackExperience": [
+      {
+        "bonus": {
+          "type": "GENERAL_DAMAGE_REDUCTION",
+          "subtype": "damageTypeRanged"
+        },
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          10,
+          15,
+          20,
+          25,
+          30
+        ]
+      },
+      {
+        "bonus": {
+          "type": "ENCHANTED",
+          "subtype": "spell.protectFire"
+        },
+        "values": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "bonus": {
+          "type": "DOUBLE_DAMAGE_CHANCE"
+        },
+        "values": [
+          0,
+          0,
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          40,
+          50
+        ]
+      },
+      {
+        "bonus": {
+          "type": "FEARLESS"
+        },
+        "values": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "bonus": {
+          "type": "STACKS_SPEED"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      }
+    ],
+    "shots": 0,
+    "horde": 0,
+    "upgrades": []
+  },
+  "tumPitMaster": {
+    "name": {
+      "plural": "Pit Masters",
+      "singular": "Pit Master"
+    },
+    "advMapAmount": {
+      "max": 10,
+      "min": 8
+    },
+    "faction": "core:inferno",
+    "attack": 15,
+    "defense": 17,
+    "cost": {
+      "gold": 6785
+    },
+    "damage": {
+      "max": 19,
+      "min": 15
+    },
+    "growth": 3,
+    "hitPoints": 60,
+    "level": 5,
+    "speed": 7,
+    "fightValue": 1071,
+    "aiValue": 1224,
+    "graphics": {
+      "animation": "creatures/inferno/battle/CR217",
+      "map": "creatures/inferno/map/AVWCR217",
+      "iconSmall": "creatures/inferno/iconsSmall/CPrs217X",
+      "iconLarge": "creatures/inferno/iconsBig/CPrL217X",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 10.0,
+        "attack": 1.0
+      }
+    },
+    "doubleWide": false,
+    "sound": {
+      "attack": "PFOEATTK.wav",
+      "defend": "PFOEDFND.wav",
+      "killed": "PFOEKILL.wav",
+      "move": "PFOEMOVE.wav",
+      "wince": "PFOEWNCE.wav"
+    },
+    "abilities": {
+      "summons50HP": {
+        "type": "SPECIFIC_SPELL_POWER",
+        "subtype": "spell.summonDemons",
+        "val": 50
+      },
+      "resurrects": {
+        "type": "SPELLCASTER",
+        "subtype": "spell.summonDemons",
+        "val": 0
+      },
+      "noRetaliation": {
+        "type": "BLOCKS_RETALIATION"
+      },
+      "castsAmount": {
+        "type": "CASTS",
+        "val": 1
+      },
+      "attackAround": {
+        "type": "THREE_HEADED_ATTACK"
+      }
+    },
+    "stackExperience": [
+      {
+        "bonus": {
+          "type": "UNLIMITED_RETALIATIONS"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "bonus": {
+          "type": "ENCHANTED",
+          "subtype": "spell.protectFire"
+        },
+        "values": [
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3
+        ]
+      },
+      {
+        "bonus": {
+          "type": "FEARLESS"
+        },
+        "values": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "bonus": {
+          "type": "CASTS"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "bonus": {
+          "type": "MIND_IMMUNITY"
+        },
+        "values": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "bonus": {
+          "type": "STACKS_SPEED"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      }
+    ],
+    "shots": 0,
+    "horde": 0,
+    "upgrades": []
+  },
+  "tumEfreetRajah": {
+    "name": {
+      "plural": "Efreet Rajahs",
+      "singular": "Efreet Rajah"
+    },
+    "advMapAmount": {
+      "max": 8,
+      "min": 5
+    },
+    "faction": "core:inferno",
+    "attack": 22,
+    "defense": 16,
+    "cost": {
+      "gold": 15345
+    },
+    "damage": {
+      "max": 33,
+      "min": 22
+    },
+    "growth": 2,
+    "hitPoints": 114,
+    "level": 6,
+    "speed": 13,
+    "fightValue": 1584,
+    "aiValue": 1848,
+    "graphics": {
+      "animation": "creatures/inferno/battle/CR218",
+      "map": "creatures/inferno/map/AVWCR218",
+      "iconSmall": "creatures/inferno/iconsSmall/CPrs218X",
+      "iconLarge": "creatures/inferno/iconsBig/CPrL218X",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 10.0,
+        "attack": 1.0
+      }
+    },
+    "doubleWide": false,
+    "sound": {
+      "attack": "ESULATTK.wav",
+      "defend": "ESULDFND.wav",
+      "killed": "ESULKILL.wav",
+      "move": "ESULMOVE.wav",
+      "shoot": "ESULSHOT.wav",
+      "wince": "ESULWNCE.wav"
+    },
+    "abilities": {
+      "hateGenies": {
+        "type": "HATE",
+        "subtype": "creature.genie",
+        "val": 50
+      },
+      "hateMasterGenies": {
+        "type": "HATE",
+        "subtype": "creature.masterGenie",
+        "val": 50
+      },
+      "hateVisionaryGenies": {
+        "type": "HATE",
+        "subtype": "creature.tumArcaneGenie",
+        "val": 50
+      },
+      "canFly": {
+        "type": "FLYING",
+        "subtype": "movementFlying"
+      },
+      "immuneToFire": {
+        "type": "SPELL_SCHOOL_IMMUNITY",
+        "subtype": "fire"
+      },
+      "fireShield": {
+        "type": "FIRE_SHIELD",
+        "val": 30
+      },
+      "immuneToMind": {
+        "type": "MIND_IMMUNITY"
+      },
+      "spellFireWall": {
+        "type": "SPELL_AFTER_ATTACK",
+        "subtype": "spell.fireWall",
+        "val": 20,
+        "addInfo": [
+          0,
+          2
+        ]
+      },
+      "spellpower": {
+        "type": "CREATURE_SPELL_POWER",
+        "val": 100
+      },
+      "fireShieldPower": {
+        "type": "SPECIFIC_SPELL_POWER",
+        "subtype": "spell.fireShield",
+        "val": 50
+      },
+      "castFireShield": {
+        "type": "SPELLCASTER",
+        "subtype": "spell.fireShield",
+        "val": 3
+      }
+    },
+    "stackExperience": [
+      {
+        "bonus": {
+          "type": "BLOCKS_RETALIATION"
+        },
+        "values": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "bonus": {
+          "type": "RECEPTIVE"
+        },
+        "values": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "bonus": {
+          "type": "STACKS_SPEED"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          3
+        ]
+      }
+    ],
+    "shots": 0,
+    "horde": 0,
+    "upgrades": []
+  },
+  "wake-of-gods.level8units:hellBaron": {
+    "attack": 30,
+    "defense": 32,
+    "hitPoints": 265,
+    "damage": {
+      "max": 49,
+      "min": 37
+    },
+    "speed": 17,
+    "shots": 0,
+    "growth": 1,
+    "horde": 0,
+    "aiValue": 7115,
+    "fightValue": 5243,
+    "level": 7,
+    "faction": "core:inferno",
+    "doubleWide": false,
+    "cost": {
+      "gold": 90300,
+      "mercury": 41
+    }
+  },
+  "tumSkeletonKnight": {
+    "name": {
+      "plural": "Skeleton Knights",
+      "singular": "Skeleton Knight"
+    },
+    "advMapAmount": {
+      "max": 25,
+      "min": 20
+    },
+    "faction": "core:necropolis",
+    "attack": 8,
+    "defense": 12,
+    "cost": {
+      "gold": 160
+    },
+    "damage": {
+      "max": 5,
+      "min": 3
+    },
+    "growth": 12,
+    "hitPoints": 10,
+    "horde": 6,
+    "level": 1,
+    "speed": 5,
+    "fightValue": 85,
+    "aiValue": 85,
+    "graphics": {
+      "animation": "creatures/necropolis/battle/CR220",
+      "map": "creatures/necropolis/map/AVWCR220",
+      "iconSmall": "creatures/necropolis/iconsSmall/CPrs220X",
+      "iconLarge": "creatures/necropolis/iconsBig/CPrL220X",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 10.0,
+        "attack": 1.0
+      }
+    },
+    "doubleWide": false,
+    "sound": {
+      "attack": "SKLWATTK.wav",
+      "defend": "SKLWDFND.wav",
+      "killed": "SKLWKILL.wav",
+      "move": "SKLWMOVE.wav",
+      "wince": "SKLWWNCE.wav"
+    },
+    "abilities": {
+      "addAttack": {
+        "type": "ADDITIONAL_ATTACK",
+        "val": 1
+      },
+      "undead": {
+        "type": "UNDEAD"
+      }
+    },
+    "stackExperience": [
+      {
+        "bonus": {
+          "type": "NO_DISTANCE_PENALTY"
+        },
+        "values": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "bonus": {
+          "type": "SHOTS"
+        },
+        "values": [
+          0,
+          1,
+          2,
+          2,
+          3,
+          3,
+          4,
+          4,
+          5,
+          5
+        ]
+      },
+      {
+        "bonus": {
+          "type": "STACKS_SPEED"
+        },
+        "values": [
+          0,
+          0,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          3,
+          3
+        ]
+      }
+    ],
+    "shots": 0,
+    "upgrades": []
+  },
+  "tumGhoul": {
+    "name": {
+      "singular": "Ghoul",
+      "plural": "Ghouls"
+    },
+    "faction": "core:necropolis",
+    "level": 2,
+    "cost": {
+      "gold": 405
+    },
+    "speed": 4,
+    "hitPoints": 29,
+    "attack": 7,
+    "defense": 11,
+    "damage": {
+      "max": 5,
+      "min": 4
+    },
+    "growth": 8,
+    "aiValue": 128,
+    "fightValue": 160,
+    "advMapAmount": {
+      "min": 16,
+      "max": 22
+    },
+    "abilities": {
+      "IS_UNDEAD": {
+        "type": "UNDEAD"
+      },
+      "castDisease": {
+        "type": "SPELL_AFTER_ATTACK",
+        "subtype": "spell.disease",
+        "val": 50
+      }
+    },
+    "graphics": {
+      "animation": "creatures/necropolis/battle/CR329",
+      "map": "creatures/necropolis/map/AVWCR329",
+      "iconSmall": "creatures/necropolis/iconsSmall/CPrs329X",
+      "iconLarge": "creatures/necropolis/iconsBig/CPrL329X",
+      "animationTime": {
+        "attack": 1,
+        "idle": 10,
+        "walk": 1.3
+      },
+      "timeBetweenFidgets": 1
+    },
+    "sound": {
+      "attack": "ZMBLATTK.wav",
+      "defend": "ZMBLDFND.wav",
+      "killed": "ZMBLKILL.wav",
+      "move": "ZMBLMOVE.wav",
+      "wince": "ZMBLWNCE.wav"
+    },
+    "shots": 0,
+    "horde": 0,
+    "doubleWide": false,
+    "upgrades": []
+  },
+  "tumSpecter": {
+    "name": {
+      "plural": "Specters",
+      "singular": "Specter"
+    },
+    "advMapAmount": {
+      "max": 17,
+      "min": 12
+    },
+    "faction": "core:necropolis",
+    "attack": 9,
+    "defense": 11,
+    "cost": {
+      "gold": 1080
+    },
+    "damage": {
+      "max": 7,
+      "min": 5
+    },
+    "growth": 7,
+    "hitPoints": 25,
+    "level": 3,
+    "speed": 7,
+    "fightValue": 252,
+    "aiValue": 315,
+    "graphics": {
+      "animation": "creatures/necropolis/battle/CR261",
+      "map": "creatures/necropolis/map/AVWCR261",
+      "iconSmall": "creatures/necropolis/iconsSmall/CPrs261X",
+      "iconLarge": "creatures/necropolis/iconsBig/CPrL261X",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 10.0,
+        "attack": 1.0
+      }
+    },
+    "doubleWide": false,
+    "sound": {
+      "attack": "WRTHATTK.wav",
+      "defend": "WRTHDFND.wav",
+      "killed": "WRTHKILL.wav",
+      "move": "WRTHMOVE.wav",
+      "wince": "WRTHWNCE.wav"
+    },
+    "abilities": {
+      "canFly": {
+        "type": "FLYING",
+        "subtype": "movementFlying"
+      },
+      "undead": {
+        "type": "UNDEAD"
+      },
+      "drainsMana": {
+        "type": "MANA_DRAIN",
+        "val": 2
+      },
+      "regenerate": {
+        "type": "HP_REGENERATION",
+        "val": 100000,
+        "valueType": "ADDITIVE_VALUE"
+      }
+    },
+    "stackExperience": [
+      {
+        "bonus": {
+          "type": "SPELL_IMMUNITY",
+          "subtype": "spell.slow"
+        },
+        "values": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "bonus": {
+          "type": "SPELL_AFTER_ATTACK",
+          "subtype": "spell.sorrow",
+          "addInfo": [
+            2,
+            2
+          ]
+        },
+        "values": [
+          0,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35,
+          40,
+          45,
+          50
+        ]
+      },
+      {
+        "bonus": {
+          "type": "STACKS_SPEED"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      }
+    ],
+    "shots": 0,
+    "horde": 0,
+    "upgrades": []
+  },
+  "tumNosferatu": {
+    "name": {
+      "singular": "Nosferatu",
+      "plural": "Nosferatus"
+    },
+    "faction": "core:necropolis",
+    "level": 4,
+    "cost": {
+      "gold": 3370
+    },
+    "speed": 9,
+    "hitPoints": 51,
+    "attack": 16,
+    "defense": 12,
+    "damage": {
+      "max": 12,
+      "min": 7
+    },
+    "growth": 4,
+    "horde": 0,
+    "aiValue": 783,
+    "fightValue": 652,
+    "advMapAmount": {
+      "min": 10,
+      "max": 14
+    },
+    "abilities": {
+      "IS_UNDEAD": {
+        "type": "UNDEAD"
+      },
+      "FLYING_ARMY": {
+        "type": "FLYING",
+        "subtype": "movementFlying"
+      },
+      "drainsLife": {
+        "type": "LIFE_DRAIN",
+        "val": 100
+      },
+      "noRetalitation": {
+        "type": "BLOCKS_RETALIATION"
+      }
+    },
+    "graphics": {
+      "animation": "creatures/necropolis/battle/CR221",
+      "map": "creatures/necropolis/map/AVWCR221",
+      "iconSmall": "creatures/necropolis/iconsSmall/CPrS221X",
+      "iconLarge": "creatures/necropolis/iconsBig/CPrL221X",
+      "animationTime": {
+        "attack": 1,
+        "idle": 10,
+        "walk": 1
+      },
+      "timeBetweenFidgets": 1
+    },
+    "sound": {
+      "attack": "NOSFATTK.wav",
+      "defend": "NOSFDFND.wav",
+      "endMoving": "NOSFEXT2.wav",
+      "killed": "NOSFKILL.wav",
+      "move": "NOSFMOVE.wav",
+      "shoot": "NOSFSHOT.wav",
+      "startMoving": "NOSFEXT1.wav",
+      "wince": "NOSFWNCE.wav"
+    },
+    "shots": 0,
+    "doubleWide": false,
+    "upgrades": []
+  },
+  "tumLichKing": {
+    "name": {
+      "plural": "Lich Kings",
+      "singular": "Lich King"
+    },
+    "advMapAmount": {
+      "max": 10,
+      "min": 8
+    },
+    "faction": "core:necropolis",
+    "attack": 17,
+    "defense": 12,
+    "cost": {
+      "gold": 5820
+    },
+    "damage": {
+      "max": 19,
+      "min": 13
+    },
+    "growth": 3,
+    "hitPoints": 51,
+    "level": 5,
+    "shots": 24,
+    "speed": 7,
+    "fightValue": 889,
+    "aiValue": 1079,
+    "graphics": {
+      "animation": "creatures/necropolis/battle/CR222",
+      "map": "creatures/necropolis/map/AVWCR222",
+      "iconSmall": "creatures/necropolis/iconsSmall/CPrS222X",
+      "iconLarge": "creatures/necropolis/iconsBig/CPrL222X",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 10.0,
+        "attack": 1.0
+      },
+      "missile": {
+        "projectile": "PLICH.DEF",
+        "attackClimaxFrame": 8,
+        "offset": {
+          "upperX": 41,
+          "upperY": -92,
+          "middleX": 58,
+          "middleY": -79,
+          "lowerX": 29,
+          "lowerY": -14
+        },
+        "frameAngles": [
+          90,
+          72,
+          45,
+          27,
+          0,
+          -27,
+          -45,
+          -72,
+          -90,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "doubleWide": false,
+    "sound": {
+      "attack": "PLCHATTK.wav",
+      "defend": "PLCHDFND.wav",
+      "killed": "PLCHKILL.wav",
+      "move": "PLCHMOVE.wav",
+      "shoot": "PLCHSHOT.wav",
+      "wince": "PLCHWNCE.wav"
+    },
+    "abilities": {
+      "canShoot": {
+        "type": "SHOOTER"
+      },
+      "undead": {
+        "type": "UNDEAD"
+      },
+      "summons50HP": {
+        "type": "SPECIFIC_SPELL_POWER",
+        "subtype": "spell.summonDemons",
+        "val": 50
+      },
+      "resurrects": {
+        "type": "SPELLCASTER",
+        "subtype": "spell.summonDemons",
+        "val": 0
+      },
+      "castsAmount": {
+        "type": "CASTS",
+        "val": 1
+      },
+      "deathCloud": {
+        "type": "SPELL_LIKE_ATTACK",
+        "subtype": "spell.deathCloud"
+      },
+      "airShield": {
+        "type": "ENCHANTED",
+        "subtype": "spell.precision",
+        "val": 3
+      },
+      "hateMage": {
+        "type": "HATE",
+        "subtype": "creature.mage",
+        "val": 50
+      },
+      "hateArchMage": {
+        "type": "HATE",
+        "subtype": "creature.archMage",
+        "val": 50
+      },
+      "hateSupremeArchMage": {
+        "type": "HATE",
+        "subtype": "creature.tumSupremeArchMage",
+        "val": 50
+      }
+    },
+    "stackExperience": [
+      {
+        "bonus": {
+          "type": "HATE",
+          "subtype": "creature.enchanter"
+        },
+        "values": [
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80,
+          90,
+          100
+        ]
+      },
+      {
+        "bonus": {
+          "type": "SPELL_AFTER_ATTACK",
+          "subtype": "spell.deathRipple"
+        },
+        "values": [
+          0,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35,
+          40,
+          45,
+          50
+        ]
+      },
+      {
+        "bonus": {
+          "type": "SHOTS"
+        },
+        "values": [
+          0,
+          0,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          3,
+          3
+        ]
+      },
+      {
+        "bonus": {
+          "type": "STACKS_SPEED"
+        },
+        "values": [
+          0,
+          0,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          3,
+          3
+        ]
+      }
+    ],
+    "horde": 0,
+    "upgrades": []
+  },
+  "tumDeathKnight": {
+    "name": {
+      "plural": "Death Knights",
+      "singular": "Death Knight"
+    },
+    "advMapAmount": {
+      "max": 8,
+      "min": 5
+    },
+    "faction": "core:necropolis",
+    "attack": 24,
+    "defense": 20,
+    "cost": {
+      "gold": 20905
+    },
+    "damage": {
+      "max": 41,
+      "min": 21
+    },
+    "growth": 2,
+    "hitPoints": 152,
+    "level": 6,
+    "speed": 9,
+    "fightValue": 2029,
+    "aiValue": 2382,
+    "graphics": {
+      "animation": "creatures/necropolis/battle/CR223",
+      "map": "creatures/necropolis/map/AVWCR223",
+      "iconSmall": "creatures/necropolis/iconsSmall/CPrS223X",
+      "iconLarge": "creatures/necropolis/iconsBig/CPrL223X",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 10.0,
+        "attack": 1.0
+      }
+    },
+    "doubleWide": true,
+    "sound": {
+      "attack": "BLRDATTK.wav",
+      "defend": "BLRDDFND.wav",
+      "killed": "BLRDKILL.wav",
+      "move": "BLRDMOVE.wav",
+      "wince": "BLRDWNCE.wav"
+    },
+    "abilities": {
+      "undead": {
+        "type": "UNDEAD"
+      },
+      "curses": {
+        "type": "SPELL_AFTER_ATTACK",
+        "subtype": "spell.curse",
+        "val": 30
+      },
+      "deathStrike": {
+        "type": "DOUBLE_DAMAGE_CHANCE",
+        "val": 20
+      },
+      "deathStare": {
+        "type": "DEATH_STARE",
+        "subtype": "deathStareGorgon",
+        "val": 10
+      },
+      "hateCavalier": {
+        "type": "HATE",
+        "subtype": "creature.cavalier",
+        "val": 50
+      },
+      "hateChampion": {
+        "type": "HATE",
+        "subtype": "creature.champion",
+        "val": 50
+      },
+      "hateHolyChampion": {
+        "type": "HATE",
+        "subtype": "creature.tumHolyChampion",
+        "val": 50
+      }
+    },
+    "stackExperience": [
+      {
+        "bonus": {
+          "type": "HATE",
+          "subtype": "creature.tumHolyChampion"
+        },
+        "values": [
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80,
+          90,
+          100
+        ]
+      },
+      {
+        "bonus": {
+          "type": "BLOCKS_RETALIATION"
+        },
+        "values": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "bonus": {
+          "type": "SPELL_AFTER_ATTACK",
+          "subtype": "spell.curse",
+          "addInfo": [
+            1,
+            2
+          ]
+        },
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "bonus": {
+          "type": "DOUBLE_DAMAGE_CHANCE"
+        },
+        "values": [
+          10,
+          17,
+          25,
+          33,
+          38,
+          46,
+          52,
+          58,
+          64,
+          70
+        ]
+      },
+      {
+        "bonus": {
+          "type": "STACKS_SPEED"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      }
+    ],
+    "shots": 0,
+    "horde": 0,
+    "upgrades": []
+  },
+  "wake-of-gods.level8units:bloodDragon": {
+    "attack": 23,
+    "defense": 21,
+    "hitPoints": 265,
+    "damage": {
+      "max": 61,
+      "min": 31
+    },
+    "speed": 14,
+    "shots": 0,
+    "growth": 1,
+    "horde": 0,
+    "aiValue": 4696,
+    "fightValue": 3228,
+    "level": 7,
+    "faction": "core:necropolis",
+    "doubleWide": true,
+    "cost": {
+      "gold": 60200,
+      "mercury": 23
+    }
+  },
+  "tumPhosphorescentTroglodyte": {
+    "name": {
+      "singular": "Phosphorescent Troglodyte",
+      "plural": "Phosphorescent Troglodytes"
+    },
+    "faction": "core:dungeon",
+    "level": 1,
+    "cost": {
+      "gold": 150
+    },
+    "speed": 5,
+    "hitPoints": 10,
+    "attack": 7,
+    "defense": 10,
+    "damage": {
+      "max": 5,
+      "min": 3
+    },
+    "growth": 14,
+    "horde": 7,
+    "aiValue": 84,
+    "fightValue": 84,
+    "advMapAmount": {
+      "min": 20,
+      "max": 25
+    },
+    "abilities": {
+      "blindImmunity": {
+        "type": "SPELL_IMMUNITY",
+        "subtype": "spell.blind",
+        "addInfo": 1
+      },
+      "petrifyImmunity": {
+        "type": "SPELL_IMMUNITY",
+        "subtype": "spell.stoneGaze",
+        "addInfo": 1
+      },
+      "showerImmunity": {
+        "type": "SPELL_IMMUNITY",
+        "subtype": "spell.meteorShower",
+        "addInfo": 1
+      },
+      "fearless": {
+        "type": "FEARLESS"
+      },
+      "hatePixie": {
+        "type": "HATE",
+        "subtype": "creature.pixie",
+        "val": 50
+      },
+      "hateSprite": {
+        "type": "HATE",
+        "subtype": "creature.sprite",
+        "val": 50
+      },
+      "hateFairy": {
+        "type": "HATE",
+        "subtype": "creature.tumFairy",
+        "val": 50
+      }
+    },
+    "graphics": {
+      "animation": "creatures/dungeon/battle/CR225",
+      "map": "creatures/dungeon/map/AVWCR225",
+      "iconSmall": "creatures/dungeon/iconsSmall/CPrS225X",
+      "iconLarge": "creatures/dungeon/iconsBig/CPrL225X",
+      "animationTime": {
+        "attack": 1,
+        "idle": 10,
+        "walk": 0.8
+      },
+      "timeBetweenFidgets": 1
+    },
+    "sound": {
+      "attack": "ITRGATTK.wav",
+      "defend": "ITRGDFND.wav",
+      "killed": "ITRGKILL.wav",
+      "move": "ITRGMOVE.wav",
+      "wince": "ITRGWNCE.wav"
+    },
+    "shots": 0,
+    "doubleWide": false,
+    "upgrades": []
+  },
+  "tumHarpySanguinary": {
+    "name": {
+      "singular": "Harpy Sanguinary",
+      "plural": "Harpy Sanguinaries"
+    },
+    "faction": "core:dungeon",
+    "level": 2,
+    "cost": {
+      "gold": 560
+    },
+    "speed": 9,
+    "hitPoints": 18,
+    "attack": 12,
+    "defense": 8,
+    "damage": {
+      "max": 6,
+      "min": 3
+    },
+    "growth": 8,
+    "horde": 0,
+    "aiValue": 238,
+    "fightValue": 196,
+    "advMapAmount": {
+      "min": 16,
+      "max": 22
+    },
+    "abilities": {
+      "FLYING_ARMY": {
+        "type": "FLYING"
+      },
+      "noRetaliation": {
+        "type": "BLOCKS_RETALIATION"
+      },
+      "strikeAndReturn": {
+        "type": "RETURN_AFTER_STRIKE"
+      },
+      "fearless": {
+        "type": "FEARLESS"
+      },
+      "age": {
+        "type": "SPELL_AFTER_ATTACK",
+        "subtype": "spell.age",
+        "val": 20
+      }
+    },
+    "graphics": {
+      "animation": "creatures/dungeon/battle/CR227",
+      "map": "creatures/dungeon/map/AVWCR227",
+      "iconSmall": "creatures/dungeon/iconsSmall/CPrS227X",
+      "iconLarge": "creatures/dungeon/iconsBig/CPrL227X",
+      "animationTime": {
+        "attack": 1,
+        "idle": 10,
+        "walk": 0.85
+      },
+      "timeBetweenFidgets": 1
+    },
+    "sound": {
+      "attack": "HHAGATTK.wav",
+      "defend": "HHAGDFND.wav",
+      "killed": "HHAGKILL.wav",
+      "move": "HHAGMOVE.wav",
+      "shoot": "HHAGSHOT.wav",
+      "wince": "HHAGWNCE.wav"
+    },
+    "shots": 0,
+    "doubleWide": false,
+    "upgrades": []
+  },
+  "tumMonstrousEye": {
+    "name": {
+      "plural": "Monstrous Eyes",
+      "singular": "Monstrous Eye"
+    },
+    "advMapAmount": {
+      "max": 17,
+      "min": 12
+    },
+    "faction": "core:dungeon",
+    "attack": 12,
+    "defense": 17,
+    "cost": {
+      "gold": 1310
+    },
+    "damage": {
+      "max": 7,
+      "min": 5
+    },
+    "growth": 7,
+    "hitPoints": 28,
+    "level": 3,
+    "speed": 7,
+    "shots": 24,
+    "fightValue": 245,
+    "aiValue": 367,
+    "graphics": {
+      "animation": "creatures/dungeon/battle/CR226",
+      "map": "creatures/dungeon/map/AVWCR226",
+      "iconSmall": "creatures/dungeon/iconsSmall/CPrS226X",
+      "iconLarge": "creatures/dungeon/iconsBig/CPrL226X",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 10.0,
+        "attack": 1.0
+      },
+      "missile": {
+        "ray": [
+          {
+            "start": [
+              160,
+              160,
+              160,
+              255
+            ],
+            "end": [
+              160,
+              160,
+              160,
+              64
+            ]
+          },
+          {
+            "start": [
+              192,
+              192,
+              192,
+              255
+            ],
+            "end": [
+              192,
+              192,
+              192,
+              128
+            ]
+          },
+          {
+            "start": [
+              224,
+              224,
+              224,
+              255
+            ],
+            "end": [
+              224,
+              224,
+              224,
+              255
+            ]
+          },
+          {
+            "start": [
+              192,
+              192,
+              192,
+              255
+            ],
+            "end": [
+              192,
+              192,
+              192,
+              128
+            ]
+          },
+          {
+            "start": [
+              160,
+              160,
+              160,
+              255
+            ],
+            "end": [
+              160,
+              160,
+              160,
+              64
+            ]
+          }
+        ],
+        "attackClimaxFrame": 6,
+        "offset": {
+          "upperX": 41,
+          "upperY": -92,
+          "middleX": 58,
+          "middleY": -79,
+          "lowerX": 29,
+          "lowerY": -14
+        },
+        "frameAngles": [
+          90,
+          72,
+          45,
+          27,
+          0,
+          -27,
+          -45,
+          -72,
+          -90,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "sound": {
+      "attack": "EVLIATTK.wav",
+      "defend": "EVLIDFND.wav",
+      "killed": "EVLIKILL.wav",
+      "move": "EVLIMOVE.wav",
+      "shoot": "EVLISHOT.wav",
+      "wince": "EVLIWNCE.wav"
+    },
+    "abilities": {
+      "canShoot": {
+        "type": "SHOOTER"
+      },
+      "extraAttack": {
+        "type": "ADDITIONAL_ATTACK",
+        "val": 1
+      },
+      "noPenalty": {
+        "type": "NO_WALL_PENALTY"
+      },
+      "noDefaultCast": {
+        "type": "NO_SPELLCAST_BY_DEFAULT"
+      },
+      "noMeleePenalty": {
+        "type": "NO_MELEE_PENALTY"
+      },
+      "castsHypnotize": {
+        "type": "SPELLCASTER",
+        "subtype": "spell.hypnotize",
+        "val": 1,
+        "addInfo": 100,
+        "turns": 3
+      },
+      "castsCount": {
+        "type": "CASTS",
+        "val": 1
+      },
+      "spellpower": {
+        "type": "CREATURE_SPELL_POWER",
+        "val": 100
+      },
+      "visionsMonsters": {
+        "type": "VISIONS",
+        "subtype": "visionsMonsters",
+        "val": 3,
+        "valueType": "INDEPENDENT_MAX",
+        "propagator": "HERO"
+      },
+      "visionsHeroes": {
+        "type": "VISIONS",
+        "subtype": "visionsHeroes",
+        "val": 3,
+        "valueType": "INDEPENDENT_MAX",
+        "propagator": "HERO"
+      },
+      "visionsTowns": {
+        "type": "VISIONS",
+        "subtype": "visionsTowns",
+        "val": 3,
+        "valueType": "INDEPENDENT_MAX",
+        "propagator": "HERO"
+      }
+    },
+    "stackExperience": [
+      {
+        "bonus": {
+          "type": "SPELL_AFTER_ATTACK",
+          "subtype": "spell.weakness",
+          "addInfo": [
+            2,
+            1
+          ]
+        },
+        "values": [
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35,
+          40,
+          45,
+          50
+        ]
+      },
+      {
+        "bonus": {
+          "type": "MIND_IMMUNITY"
+        },
+        "values": [
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "bonus": {
+          "type": "STACKS_SPEED"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      }
+    ],
+    "horde": 0,
+    "doubleWide": false,
+    "upgrades": []
+  },
+  "tumMedusaEmpress": {
+    "name": {
+      "plural": "Medusa Empresses",
+      "singular": "Medusa Empress"
+    },
+    "advMapAmount": {
+      "max": 14,
+      "min": 10
+    },
+    "faction": "core:dungeon",
+    "aiValue": 577,
+    "attack": 14,
+    "cost": {
+      "gold": 2230
+    },
+    "damage": {
+      "max": 10,
+      "min": 8
+    },
+    "defense": 12,
+    "fightValue": 423,
+    "graphics": {
+      "animation": "creatures/dungeon/battle/CR228",
+      "map": "creatures/dungeon/map/AVWCR228",
+      "iconSmall": "creatures/dungeon/iconsSmall/CPrS228X",
+      "iconLarge": "creatures/dungeon/iconsBig/CPrL228X",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 10.0,
+        "attack": 1.0
+      },
+      "missile": {
+        "projectile": "PMEDUSX.DEF",
+        "attackClimaxFrame": 7,
+        "offset": {
+          "upperX": 41,
+          "upperY": -92,
+          "middleX": 58,
+          "middleY": -79,
+          "lowerX": 29,
+          "lowerY": -14
+        },
+        "frameAngles": [
+          90,
+          72,
+          45,
+          27,
+          0,
+          -27,
+          -45,
+          -72,
+          -90,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "growth": 4,
+    "hitPoints": 39,
+    "level": 4,
+    "shots": 8,
+    "doubleWide": true,
+    "sound": {
+      "attack": "MEDQATTK.wav",
+      "defend": "MEDQDFND.wav",
+      "killed": "MEDQKILL.wav",
+      "move": "MEDQMOVE.wav",
+      "shoot": "MEDQSHOT.wav",
+      "wince": "MEDQWNCE.wav"
+    },
+    "speed": 6,
+    "abilities": {
+      "canShoot": {
+        "type": "SHOOTER"
+      },
+      "petrification": {
+        "type": "SPELL_AFTER_ATTACK",
+        "subtype": "spell.stoneGaze",
+        "val": 20,
+        "addInfo": [
+          0,
+          1
+        ]
+      },
+      "noPenalty": {
+        "type": "NO_MELEE_PENALTY"
+      },
+      "extraAttack": {
+        "type": "ADDITIONAL_ATTACK",
+        "val": 1
+      }
+    },
+    "stackExperience": [
+      {
+        "bonus": {
+          "type": "SHOTS"
+        },
+        "values": [
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          4
+        ]
+      },
+      {
+        "bonus": {
+          "type": "SPELL_AFTER_ATTACK",
+          "subtype": "spell.stoneGaze",
+          "addInfo": [
+            0,
+            1
+          ]
+        },
+        "values": [
+          0,
+          0,
+          0,
+          2,
+          4,
+          6,
+          8,
+          10,
+          12,
+          15
+        ]
+      },
+      {
+        "bonus": {
+          "type": "STACKS_SPEED"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      }
+    ],
+    "horde": 0,
+    "upgrades": []
+  },
+  "tumBlackMinotaur": {
+    "name": {
+      "plural": "Black Minotaurs",
+      "singular": "Black Minotaur"
+    },
+    "advMapAmount": {
+      "max": 10,
+      "min": 8
+    },
+    "faction": "core:dungeon",
+    "attack": 21,
+    "defense": 17,
+    "cost": {
+      "gold": 5570
+    },
+    "damage": {
+      "max": 27,
+      "min": 17
+    },
+    "growth": 3,
+    "hitPoints": 63,
+    "speed": 8,
+    "level": 5,
+    "fightValue": 890,
+    "aiValue": 1068,
+    "graphics": {
+      "animation": "creatures/dungeon/battle/CR229",
+      "map": "creatures/dungeon/map/AVWCR229",
+      "iconSmall": "creatures/dungeon/iconsSmall/CPrS229X",
+      "iconLarge": "creatures/dungeon/iconsBig/CPrL229X",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 10.0,
+        "attack": 1.0
+      }
+    },
+    "sound": {
+      "attack": "MINKATTK.wav",
+      "defend": "MINKDFND.wav",
+      "killed": "MINKKILL.wav",
+      "move": "MINKMOVE.wav",
+      "shoot": "MINKSHOT.wav",
+      "wince": "MINKWNCE.wav"
+    },
+    "abilities": {
+      "selfMorale": {
+        "type": "MORALE",
+        "val": 1,
+        "valueType": "INDEPENDENT_MAX"
+      },
+      "fearless": {
+        "type": "FEARLESS"
+      },
+      "mirth": {
+        "type": "ENCHANTED",
+        "subtype": "spell.mirth",
+        "val": 2
+      },
+      "deathBlow": {
+        "type": "DOUBLE_DAMAGE_CHANCE",
+        "val": 20
+      }
+    },
+    "stackExperience": [
+      {
+        "bonus": {
+          "type": "DOUBLE_DAMAGE_CHANCE"
+        },
+        "values": [
+          3,
+          6,
+          9,
+          12,
+          15,
+          18,
+          21,
+          24,
+          27,
+          30
+        ]
+      },
+      {
+        "bonus": {
+          "type": "FEARLESS"
+        },
+        "values": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "bonus": {
+          "type": "STACKS_SPEED"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      }
+    ],
+    "shots": 0,
+    "horde": 0,
+    "doubleWide": false,
+    "upgrades": []
+  },
+  "tumChimera": {
+    "name": {
+      "plural": "Chimeras",
+      "singular": "Chimera"
+    },
+    "advMapAmount": {
+      "max": 8,
+      "min": 5
+    },
+    "faction": "core:dungeon",
+    "attack": 22,
+    "defense": 16,
+    "cost": {
+      "gold": 14635
+    },
+    "damage": {
+      "max": 27,
+      "min": 20
+    },
+    "growth": 2,
+    "hitPoints": 101,
+    "level": 6,
+    "speed": 11,
+    "fightValue": 1248,
+    "aiValue": 1589,
+    "graphics": {
+      "animation": "creatures/dungeon/battle/CR230",
+      "map": "creatures/dungeon/map/AVWCR230",
+      "iconSmall": "creatures/dungeon/iconsSmall/CPrS230X",
+      "iconLarge": "creatures/dungeon/iconsBig/CPrL230X",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 0.8,
+        "idle": 10.0,
+        "attack": 1.0
+      }
+    },
+    "doubleWide": true,
+    "sound": {
+      "attack": "SCRPATTK.wav",
+      "defend": "SCRPDFND.wav",
+      "killed": "SCRPKILL.wav",
+      "move": "SCRPMOVE.wav",
+      "shoot": "SCRPSHOT.wav",
+      "wince": "SCRPWNCE.wav"
+    },
+    "abilities": {
+      "canFly": {
+        "type": "FLYING",
+        "subtype": "movementFlying"
+      },
+      "cavalryChargeImmunity": {
+        "type": "CHARGE_IMMUNITY"
+      },
+      "acidBreath": {
+        "type": "ACID_BREATH",
+        "val": 25,
+        "addInfo": 30
+      },
+      "threeHeads": {
+        "type": "THREE_HEADED_ATTACK"
+      },
+      "reduceDefence": {
+        "type": "SPELL_AFTER_ATTACK",
+        "subtype": "spell.acidBreath",
+        "val": 100,
+        "addInfo": [
+          1,
+          2
+        ]
+      },
+      "spellResistAura": {
+        "type": "SPELL_RESISTANCE_AURA",
+        "val": 20
+      },
+      "extraRetal": {
+        "type": "ADDITIONAL_RETALIATION",
+        "val": 2
+      }
+    },
+    "stackExperience": [
+      {
+        "bonus": {
+          "type": "ACID_BREATH",
+          "addInfo": 5
+        },
+        "values": [
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35,
+          40,
+          45,
+          50
+        ]
+      },
+      {
+        "bonus": {
+          "type": "SPELL_AFTER_ATTACK",
+          "subtype": "spell.acidBreathDamage"
+        },
+        "values": [
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35,
+          40,
+          45,
+          50
+        ]
+      },
+      {
+        "bonus": {
+          "type": "SPELL_IMMUNITY",
+          "subtype": "spell.paralyze"
+        },
+        "values": [
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "bonus": {
+          "type": "STACKS_SPEED"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          3
+        ]
+      }
+    ],
+    "shots": 0,
+    "horde": 0,
+    "upgrades": []
+  },
+  "wake-of-gods.level8units:darknessDragon": {
+    "attack": 29,
+    "defense": 29,
+    "hitPoints": 397,
+    "damage": {
+      "max": 61,
+      "min": 49
+    },
+    "speed": 15,
+    "shots": 0,
+    "growth": 1,
+    "horde": 0,
+    "aiValue": 8721,
+    "fightValue": 6783,
+    "level": 7,
+    "faction": "core:dungeon",
+    "doubleWide": true,
+    "cost": {
+      "gold": 80265,
+      "sulfur": 41
+    }
+  },
+  "tumHobgoblinOverlord": {
+    "name": {
+      "singular": "Hobgoblin Overlord",
+      "plural": "Hobgoblin Overlords"
+    },
+    "faction": "core:stronghold",
+    "level": 1,
+    "cost": {
+      "gold": 115
+    },
+    "speed": 7,
+    "hitPoints": 7,
+    "attack": 11,
+    "defense": 5,
+    "damage": {
+      "max": 4,
+      "min": 3
+    },
+    "growth": 15,
+    "horde": 8,
+    "hasDoubleWeek": true,
+    "aiValue": 78,
+    "fightValue": 65,
+    "advMapAmount": {
+      "min": 20,
+      "max": 25
+    },
+    "graphics": {
+      "animation": "creatures/stronghold/battle/CR232",
+      "map": "creatures/stronghold/map/AVWCR232",
+      "iconSmall": "creatures/stronghold/iconsSmall/CPrS232X",
+      "iconLarge": "creatures/stronghold/iconsBig/CPrL232X",
+      "animationTime": {
+        "attack": 1,
+        "idle": 10,
+        "walk": 1.24
+      },
+      "timeBetweenFidgets": 1
+    },
+    "sound": {
+      "attack": "HGOBATTK.wav",
+      "defend": "HGOBDFND.wav",
+      "killed": "HGOBKILL.wav",
+      "move": "HGOBMOVE.wav",
+      "wince": "HGOBWNCE.wav"
+    },
+    "abilities": {
+      "extraAttack": {
+        "type": "ADDITIONAL_ATTACK",
+        "val": 1
+      },
+      "stoneSkin": {
+        "type": "ENCHANTED",
+        "subtype": "spell.stoneSkin",
+        "val": 1
+      },
+      "hateDwarf": {
+        "type": "HATE",
+        "subtype": "creature.dwarf",
+        "val": 50
+      },
+      "hateBattleDwarf": {
+        "type": "HATE",
+        "subtype": "creature.battleDwarf",
+        "val": 50
+      },
+      "hateBerserkerDwarf": {
+        "type": "HATE",
+        "subtype": "creature.tumBerserkerDwarf",
+        "val": 50
+      }
+    },
+    "shots": 0,
+    "doubleWide": false,
+    "upgrades": []
+  },
+  "tumWolfRiderKiller": {
+    "name": {
+      "plural": "Wolf Captains",
+      "singular": "Wolf Captain"
+    },
+    "advMapAmount": {
+      "max": 22,
+      "min": 16
+    },
+    "faction": "core:stronghold",
+    "attack": 14,
+    "defense": 7,
+    "cost": {
+      "gold": 460
+    },
+    "damage": {
+      "max": 6,
+      "min": 5
+    },
+    "growth": 9,
+    "hitPoints": 14,
+    "level": 2,
+    "speed": 8,
+    "doubleWide": true,
+    "fightValue": 174,
+    "aiValue": 203,
+    "graphics": {
+      "animation": "creatures/stronghold/battle/CR233",
+      "map": "creatures/stronghold/map/AVWCR233",
+      "iconSmall": "creatures/stronghold/iconsSmall/CPrS233X",
+      "iconLarge": "creatures/stronghold/iconsBig/CPrL233X",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 10.0,
+        "attack": 1.0
+      }
+    },
+    "sound": {
+      "attack": "creatures/stronghold/wolf/wolfattk.wav",
+      "defend": "creatures/stronghold/wolf/wolfdfnd.wav",
+      "killed": "creatures/stronghold/wolf/wolfkill.wav",
+      "move": "creatures/stronghold/wolf/wolfmove.wav",
+      "wince": "creatures/stronghold/wolf/wolfwnce.wav"
+    },
+    "abilities": {
+      "extraAttack": {
+        "type": "ADDITIONAL_ATTACK",
+        "val": 1
+      },
+      "stoneSkin": {
+        "type": "ENCHANTED",
+        "subtype": "spell.bloodlust",
+        "val": 3
+      },
+      "unlimitedRetaliation": {
+        "type": "UNLIMITED_RETALIATIONS"
+      }
+    },
+    "stackExperience": [
+      {
+        "bonus": {
+          "type": "ADDITIONAL_RETALIATION"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "bonus": {
+          "type": "STACKS_SPEED"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      }
+    ],
+    "shots": 0,
+    "horde": 0,
+    "upgrades": []
+  },
+  "tumOrcLeader": {
+    "name": {
+      "plural": "Orc Leaders",
+      "singular": "Orc Leader"
+    },
+    "advMapAmount": {
+      "max": 17,
+      "min": 12
+    },
+    "faction": "core:stronghold",
+    "attack": 12,
+    "defense": 6,
+    "cost": {
+      "gold": 780
+    },
+    "damage": {
+      "max": 7,
+      "min": 4
+    },
+    "growth": 7,
+    "hitPoints": 26,
+    "speed": 5,
+    "shots": 24,
+    "level": 3,
+    "fightValue": 200,
+    "aiValue": 240,
+    "graphics": {
+      "animation": "creatures/stronghold/battle/CR234",
+      "map": "creatures/stronghold/map/AVWCR234",
+      "iconSmall": "creatures/stronghold/iconsSmall/CPrS234X",
+      "iconLarge": "creatures/stronghold/iconsBig/CPrL234X",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 10.0,
+        "attack": 1.0
+      },
+      "missile": {
+        "projectile": "PORCHX.DEF",
+        "attackClimaxFrame": 9,
+        "offset": {
+          "upperX": 41,
+          "upperY": -92,
+          "middleX": 58,
+          "middleY": -79,
+          "lowerX": 29,
+          "lowerY": -14
+        },
+        "frameAngles": [
+          90,
+          72,
+          45,
+          27,
+          0,
+          -27,
+          -45,
+          -72,
+          -90,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "sound": {
+      "attack": "ORCCATTK.wav",
+      "defend": "ORCCDFND.wav",
+      "killed": "ORCCKILL.wav",
+      "move": "ORCCMOVE.wav",
+      "shoot": "ORCCSHOT.wav",
+      "wince": "ORCCWNCE.wav"
+    },
+    "abilities": {
+      "canShoot": {
+        "type": "SHOOTER"
+      },
+      "noMeleePenalty": {
+        "type": "NO_MELEE_PENALTY"
+      },
+      "extraAttack": {
+        "type": "ADDITIONAL_ATTACK",
+        "val": 1
+      },
+      "precision": {
+        "type": "ENCHANTED",
+        "subtype": "spell.precision",
+        "val": 2
+      },
+      "hateWoodElf": {
+        "type": "HATE",
+        "subtype": "creature.woodElf",
+        "val": 50
+      },
+      "hateGrandElf": {
+        "type": "HATE",
+        "subtype": "creature.grandElf",
+        "val": 50
+      },
+      "hateSharpshooterElf": {
+        "type": "HATE",
+        "subtype": "creature.tumSharpshooterElf",
+        "val": 50
+      }
+    },
+    "stackExperience": [
+      {
+        "bonus": {
+          "type": "SHOTS"
+        },
+        "values": [
+          0,
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "bonus": {
+          "type": "STACKS_SPEED"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    ],
+    "horde": 0,
+    "doubleWide": false,
+    "upgrades": []
+  },
+  "tumElderOgre": {
+    "name": {
+      "plural": "Elder Ogres",
+      "singular": "Elder Ogre"
+    },
+    "advMapAmount": {
+      "max": 14,
+      "min": 10
+    },
+    "faction": "core:stronghold",
+    "attack": 15,
+    "defense": 11,
+    "cost": {
+      "gold": 2700
+    },
+    "damage": {
+      "max": 14,
+      "min": 8
+    },
+    "growth": 4,
+    "hitPoints": 80,
+    "speed": 5,
+    "level": 4,
+    "fightValue": 672,
+    "aiValue": 672,
+    "graphics": {
+      "animation": "creatures/stronghold/battle/CR235",
+      "map": "creatures/stronghold/map/AVWCR235",
+      "iconSmall": "creatures/stronghold/iconsSmall/CPrS235X",
+      "iconLarge": "creatures/stronghold/iconsBig/CPrL235X",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 10.0,
+        "attack": 1.0
+      }
+    },
+    "sound": {
+      "attack": "creatures/stronghold/ogreMagic/OgreMattack.wav",
+      "defend": "creatures/stronghold/ogreMagic/OgreMaware.wav",
+      "killed": "creatures/stronghold/ogreMagic/OgreMdeath.wav",
+      "move": "OGRMMOVE.wav",
+      "shoot": "OGRMSHOT.wav",
+      "wince": "creatures/stronghold/ogreMagic/OgreMwince.wav"
+    },
+    "abilities": {
+      "castsBloodlust": {
+        "type": "SPELLCASTER",
+        "subtype": "spell.frenzy",
+        "val": 3
+      },
+      "castsCount": {
+        "type": "CASTS",
+        "val": 3
+      },
+      "castLength": {
+        "type": "CREATURE_ENCHANT_POWER",
+        "val": 50
+      }
+    },
+    "stackExperience": [
+      {
+        "bonus": {
+          "type": "DOUBLE_DAMAGE_CHANCE"
+        },
+        "values": [
+          0,
+          0,
+          4,
+          8,
+          12,
+          16,
+          20,
+          24,
+          28,
+          35
+        ]
+      },
+      {
+        "bonus": {
+          "type": "STACKS_SPEED"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    ],
+    "shots": 0,
+    "horde": 0,
+    "doubleWide": false,
+    "upgrades": []
+  },
+  "tumLightningbird": {
+    "name": {
+      "plural": "Lightningbirds",
+      "singular": "Lightningbird"
+    },
+    "advMapAmount": {
+      "max": 10,
+      "min": 8
+    },
+    "faction": "core:stronghold",
+    "attack": 19,
+    "defense": 13,
+    "cost": {
+      "gold": 6785
+    },
+    "damage": {
+      "max": 21,
+      "min": 15
+    },
+    "growth": 3,
+    "hitPoints": 77,
+    "speed": 11,
+    "level": 5,
+    "doubleWide": true,
+    "fightValue": 869,
+    "aiValue": 1106,
+    "graphics": {
+      "animation": "creatures/stronghold/battle/CR236",
+      "map": "creatures/stronghold/map/AVWCR236",
+      "iconSmall": "creatures/stronghold/iconsSmall/CPrS236X",
+      "iconLarge": "creatures/stronghold/iconsBig/CPrL236X",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 10.0,
+        "attack": 1.0
+      }
+    },
+    "sound": {
+      "attack": "TBRDATTK.wav",
+      "defend": "TBRDDFND.wav",
+      "killed": "TBRDKILL.wav",
+      "move": "TBRDMOVE.wav",
+      "wince": "TBRDWNCE.wav"
+    },
+    "abilities": {
+      "canFly": {
+        "type": "FLYING",
+        "subtype": "movementFlying"
+      },
+      "thunderStrength": {
+        "type": "SPECIFIC_SPELL_POWER",
+        "subtype": "spell.thunderbolt",
+        "val": 20
+      },
+      "lightningStrengh": {
+        "type": "SPECIFIC_SPELL_POWER",
+        "subtype": "spell.lightningBolt",
+        "val": 50
+      },
+      "thunderOnAttack": {
+        "type": "SPELL_AFTER_ATTACK",
+        "subtype": "spell.thunderbolt",
+        "val": 50,
+        "addInfo": [
+          1,
+          2
+        ]
+      },
+      "lightningImmunity": {
+        "type": "SPELL_IMMUNITY",
+        "subtype": "spell.lightningBolt",
+        "addInfo": 0
+      },
+      "resurrects": {
+        "type": "SPELLCASTER",
+        "subtype": "spell.lightningBolt",
+        "val": 1
+      },
+      "spellpoints": {
+        "type": "CASTS",
+        "val": 1
+      }
+    },
+    "stackExperience": [
+      {
+        "bonus": {
+          "type": "SPELL_AFTER_ATTACK",
+          "subtype": "spell.thunderbolt",
+          "addInfo": [
+            1,
+            2
+          ]
+        },
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          20,
+          30,
+          40,
+          50
+        ]
+      },
+      {
+        "bonus": {
+          "type": "HP_REGENERATION"
+        },
+        "values": [
+          9,
+          18,
+          27,
+          36,
+          45,
+          54,
+          63,
+          72,
+          81,
+          90
+        ]
+      },
+      {
+        "bonus": {
+          "type": "STACKS_SPEED"
+        },
+        "values": [
+          0,
+          0,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          3,
+          3
+        ]
+      }
+    ],
+    "shots": 0,
+    "horde": 0,
+    "upgrades": []
+  },
+  "tumCyclopsEmperor": {
+    "name": {
+      "plural": "Cyclops Emperors",
+      "singular": "Cyclops Emperor"
+    },
+    "advMapAmount": {
+      "max": 6,
+      "min": 5
+    },
+    "faction": "core:stronghold",
+    "attack": 21,
+    "defense": 15,
+    "cost": {
+      "gold": 15345
+    },
+    "damage": {
+      "max": 24,
+      "min": 20
+    },
+    "growth": 2,
+    "hitPoints": 89,
+    "shots": 24,
+    "speed": 8,
+    "level": 6,
+    "fightValue": 1110,
+    "aiValue": 1443,
+    "graphics": {
+      "animation": "creatures/stronghold/battle/CR237",
+      "map": "creatures/stronghold/map/AVWCR237",
+      "iconSmall": "creatures/stronghold/iconsSmall/CPrS237X",
+      "iconLarge": "creatures/stronghold/iconsBig/CPrL237X",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 10.0,
+        "attack": 1.0
+      },
+      "missile": {
+        "projectile": "PORCHX.DEF",
+        "attackClimaxFrame": 9,
+        "offset": {
+          "upperX": 41,
+          "upperY": -92,
+          "middleX": 58,
+          "middleY": -79,
+          "lowerX": 29,
+          "lowerY": -14
+        },
+        "frameAngles": [
+          90,
+          72,
+          45,
+          27,
+          0,
+          -27,
+          -45,
+          -72,
+          -90,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "sound": {
+      "attack": "ORCCATTK.wav",
+      "defend": "ORCCDFND.wav",
+      "killed": "ORCCKILL.wav",
+      "move": "ORCCMOVE.wav",
+      "shoot": "ORCCSHOT.wav",
+      "wince": "ORCCWNCE.wav"
+    },
+    "abilities": {
+      "shooter": {
+        "type": "SHOOTER"
+      },
+      "siege": {
+        "subtype": "spell.cyclopsShot",
+        "type": "CATAPULT"
+      },
+      "siegeLevel": {
+        "subtype": "spell.cyclopsShot",
+        "type": "CATAPULT_EXTRA_SHOTS",
+        "valueType": "BASE_NUMBER",
+        "val": 1
+      },
+      "siegeDoubleAttack": {
+        "type": "CATAPULT_EXTRA_SHOTS",
+        "val": 1
+      }
+    },
+    "stackExperience": [
+      {
+        "bonus": {
+          "type": "SHOTS"
+        },
+        "values": [
+          0,
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "bonus": {
+          "type": "STACKS_SPEED"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    ],
+    "horde": 0,
+    "doubleWide": false,
+    "upgrades": []
+  },
+  "wake-of-gods.level8units:ghostBehemoth": {
+    "attack": 23,
+    "defense": 23,
+    "hitPoints": 397,
+    "damage": {
+      "max": 61,
+      "min": 37
+    },
+    "speed": 9,
+    "shots": 0,
+    "growth": 1,
+    "horde": 0,
+    "aiValue": 6168,
+    "fightValue": 5397,
+    "level": 7,
+    "faction": "core:stronghold",
+    "doubleWide": true,
+    "cost": {
+      "crystal": 23,
+      "gold": 60200
+    }
+  },
+  "tumGnollShaman": {
+    "name": {
+      "singular": "Gnoll Shaman",
+      "plural": "Gnoll Shamans"
+    },
+    "faction": "core:fortress",
+    "level": 1,
+    "cost": {
+      "gold": 160
+    },
+    "speed": 5,
+    "hitPoints": 10,
+    "attack": 6,
+    "defense": 12,
+    "damage": {
+      "max": 5,
+      "min": 4
+    },
+    "growth": 12,
+    "horde": 6,
+    "aiValue": 90,
+    "fightValue": 90,
+    "advMapAmount": {
+      "min": 20,
+      "max": 25
+    },
+    "hasDoubleWeek": true,
+    "graphics": {
+      "animation": "creatures/fortress/battle/CR321",
+      "map": "creatures/fortress/map/AVWCR321",
+      "iconSmall": "creatures/fortress/iconsSmall/CPrS321X",
+      "iconLarge": "creatures/fortress/iconsBig/CPrL321X",
+      "animationTime": {
+        "attack": 1,
+        "idle": 10,
+        "walk": 1
+      },
+      "timeBetweenFidgets": 1
+    },
+    "sound": {
+      "attack": "GNLMATTK.wav",
+      "defend": "GNLMDFND.wav",
+      "killed": "GNLMKILL.wav",
+      "move": "GNLMMOVE.wav",
+      "wince": "GNLMWNCE.wav"
+    },
+    "abilities": {
+      "castsCurse": {
+        "type": "SPELLCASTER",
+        "subtype": "spell.curse",
+        "val": 2
+      },
+      "castsCount": {
+        "type": "CASTS",
+        "val": 1
+      },
+      "castLength": {
+        "type": "CREATURE_ENCHANT_POWER",
+        "val": 50
+      }
+    },
+    "shots": 0,
+    "doubleWide": false,
+    "upgrades": []
+  },
+  "tumEliteLizard": {
+    "name": {
+      "plural": "Elite Lizards",
+      "singular": "Elite Lizard"
+    },
+    "advMapAmount": {
+      "max": 22,
+      "min": 16
+    },
+    "faction": "core:fortress",
+    "attack": 10,
+    "defense": 10,
+    "cost": {
+      "gold": 460
+    },
+    "damage": {
+      "max": 7,
+      "min": 4
+    },
+    "growth": 9,
+    "hitPoints": 20,
+    "level": 2,
+    "speed": 5,
+    "shots": 24,
+    "fightValue": 130,
+    "aiValue": 156,
+    "graphics": {
+      "animation": "creatures/fortress/battle/CR240",
+      "map": "creatures/fortress/map/AVWCR240",
+      "iconSmall": "creatures/fortress/iconsSmall/CPrS240X",
+      "iconLarge": "creatures/fortress/iconsBig/CPrL240X",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 10.0,
+        "attack": 1.0
+      },
+      "missile": {
+        "projectile": "PPLIZAX.DEF",
+        "attackClimaxFrame": 9,
+        "offset": {
+          "upperX": 41,
+          "upperY": -92,
+          "middleX": 58,
+          "middleY": -79,
+          "lowerX": 29,
+          "lowerY": -14
+        },
+        "frameAngles": [
+          90,
+          72,
+          45,
+          27,
+          0,
+          -27,
+          -45,
+          -72,
+          -90,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "doubleWide": false,
+    "sound": {
+      "attack": "ALIZATTK.wav",
+      "defend": "ALIZDFND.wav",
+      "killed": "ALIZKILL.wav",
+      "move": "ALIZMOVE.wav",
+      "shoot": "ALIZSHOT.wav",
+      "wince": "ALIZWNCE.wav"
+    },
+    "abilities": {
+      "canShoot": {
+        "type": "SHOOTER"
+      },
+      "extraAttack": {
+        "type": "ADDITIONAL_ATTACK",
+        "val": 1
+      },
+      "poison": {
+        "type": "SPELL_AFTER_ATTACK",
+        "subtype": "spell.poison",
+        "val": 80,
+        "addInfo": [
+          1,
+          1
+        ]
+      },
+      "freeShoot": {
+        "type": "FREE_SHOOTING"
+      },
+      "noWall": {
+        "type": "NO_WALL_PENALTY"
+      }
+    },
+    "stackExperience": [
+      {
+        "bonus": {
+          "type": "ADDITIONAL_ATTACK"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "bonus": {
+          "type": "SPELL_AFTER_ATTACK",
+          "subtype": "spell.poison",
+          "addInfo": [
+            1,
+            1
+          ]
+        },
+        "values": [
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35,
+          40,
+          45,
+          50
+        ]
+      },
+      {
+        "bonus": {
+          "type": "SHOTS"
+        },
+        "values": [
+          1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          8,
+          10,
+          12
+        ]
+      },
+      {
+        "bonus": {
+          "type": "STACKS_SPEED"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    ],
+    "horde": 0,
+    "upgrades": []
+  },
+  "tumChaoticDragonFly": {
+    "name": {
+      "plural": "Chaotic Dragon Flies",
+      "singular": "Chaotic Dragon Fly"
+    },
+    "advMapAmount": {
+      "max": 17,
+      "min": 12
+    },
+    "faction": "core:fortress",
+    "attack": 14,
+    "defense": 12,
+    "cost": {
+      "gold": 1125
+    },
+    "damage": {
+      "max": 7,
+      "min": 4
+    },
+    "growth": 8,
+    "hitPoints": 26,
+    "speed": 13,
+    "level": 3,
+    "fightValue": 250,
+    "aiValue": 312,
+    "graphics": {
+      "animation": "creatures/fortress/battle/CR241",
+      "map": "creatures/fortress/map/AVWCR241",
+      "iconSmall": "creatures/fortress/iconsSmall/CPrS241X",
+      "iconLarge": "creatures/fortress/iconsBig/CPrL241X",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 10.0,
+        "attack": 1.0
+      }
+    },
+    "sound": {
+      "attack": "FDFLATTK.wav",
+      "defend": "FDFLDFND.wav",
+      "killed": "FDFLKILL.wav",
+      "move": "FDFLMOVE.wav",
+      "shoot": "FDFLSHOT.wav",
+      "wince": "FDFLWNCE.wav"
+    },
+    "abilities": {
+      "canFly": {
+        "type": "FLYING"
+      },
+      "dispellHelpful": {
+        "type": "SPELL_AFTER_ATTACK",
+        "subtype": "spell.dispelHelpful",
+        "val": 100,
+        "addInfo": [
+          1,
+          0
+        ]
+      },
+      "castWeakness": {
+        "type": "SPELL_AFTER_ATTACK",
+        "subtype": "spell.weakness",
+        "val": 100,
+        "addInfo": [
+          1,
+          0
+        ]
+      },
+      "unlimitedRetaliation": {
+        "type": "UNLIMITED_RETALIATIONS"
+      },
+      "strikeAndReturn": {
+        "type": "RETURN_AFTER_STRIKE"
+      }
+    },
+    "stackExperience": [
+      {
+        "bonus": {
+          "type": "BLOCKS_RETALIATION"
+        },
+        "values": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "bonus": {
+          "type": "STACKS_SPEED"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          1,
+          2,
+          3,
+          3,
+          4,
+          4,
+          5
+        ]
+      }
+    ],
+    "shots": 0,
+    "horde": 0,
+    "doubleWide": false,
+    "upgrades": []
+  },
+  "tumLavaBasilisk": {
+    "name": {
+      "plural": "Lava Basilisks",
+      "singular": "Lava Basilisk"
+    },
+    "advMapAmount": {
+      "max": 14,
+      "min": 10
+    },
+    "faction": "core:fortress",
+    "attack": 14,
+    "defense": 18,
+    "cost": {
+      "gold": 2700
+    },
+    "damage": {
+      "max": 12,
+      "min": 8
+    },
+    "growth": 4,
+    "hitPoints": 58,
+    "level": 4,
+    "speed": 7,
+    "fightValue": 561,
+    "aiValue": 714,
+    "graphics": {
+      "animation": "creatures/fortress/battle/CR242",
+      "map": "creatures/fortress/map/AVWCR242",
+      "iconSmall": "creatures/fortress/iconsSmall/CPrS242X",
+      "iconLarge": "creatures/fortress/iconsBig/CPrL242X",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 10.0,
+        "attack": 1.0
+      }
+    },
+    "doubleWide": true,
+    "sound": {
+      "attack": "GBASATTK.wav",
+      "defend": "GBASDFND.wav",
+      "killed": "GBASKILL.wav",
+      "move": "GBASMOVE.wav",
+      "wince": "GBASWNCE.wav"
+    },
+    "abilities": {
+      "petrify": {
+        "type": "SPELL_AFTER_ATTACK",
+        "subtype": "spell.stoneGaze",
+        "val": 20,
+        "addInfo": [
+          0,
+          2
+        ]
+      },
+      "fireShield": {
+        "type": "FIRE_SHIELD",
+        "val": 20
+      },
+      "fireImm": {
+        "type": "SPELL_SCHOOL_IMMUNITY",
+        "subtype": "fire"
+      },
+      "fireBall": {
+        "type": "SPELL_LIKE_ATTACK",
+        "subtype": "spell.fireball"
+      },
+      "castsCurse": {
+        "type": "SPELLCASTER",
+        "subtype": "spell.fireWall",
+        "val": 1
+      },
+      "castsCount": {
+        "type": "CASTS",
+        "val": 1
+      },
+      "castLength": {
+        "type": "CREATURE_ENCHANT_POWER",
+        "val": 50
+      }
+    },
+    "stackExperience": [
+      {
+        "bonus": {
+          "type": "SPELL_AFTER_ATTACK",
+          "subtype": "stoneGaze",
+          "addInfo": [
+            0,
+            2
+          ]
+        },
+        "values": [
+          3,
+          6,
+          9,
+          12,
+          15,
+          18,
+          21,
+          24,
+          27,
+          30
+        ]
+      },
+      {
+        "bonus": {
+          "type": "STACKS_SPEED"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      }
+    ],
+    "shots": 0,
+    "horde": 0,
+    "upgrades": []
+  },
+  "tumCatopleba": {
+    "name": {
+      "plural": "Catoblepas",
+      "singular": "Catopleba"
+    },
+    "advMapAmount": {
+      "max": 10,
+      "min": 8
+    },
+    "faction": "core:fortress",
+    "attack": 13,
+    "defense": 22,
+    "cost": {
+      "gold": 5820
+    },
+    "damage": {
+      "max": 18,
+      "min": 14
+    },
+    "growth": 3,
+    "hitPoints": 101,
+    "level": 5,
+    "speed": 6,
+    "fightValue": 1028,
+    "aiValue": 1028,
+    "graphics": {
+      "animation": "creatures/fortress/battle/CR244",
+      "map": "creatures/fortress/map/AVWCR244",
+      "iconSmall": "creatures/fortress/iconsSmall/CPrS244X",
+      "iconLarge": "creatures/fortress/iconsBig/CPrL244X",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 10.0,
+        "attack": 1.0
+      }
+    },
+    "doubleWide": true,
+    "sound": {
+      "attack": "BGORATTK.wav",
+      "defend": "BGORDFND.wav",
+      "killed": "BGORKILL.wav",
+      "move": "BGORMOVE.wav",
+      "wince": "BGORWNCE.wav"
+    },
+    "abilities": {
+      "deathStare": {
+        "type": "DEATH_STARE",
+        "subtype": "deathStareGorgon",
+        "val": 10
+      },
+      "thriceRetal": {
+        "type": "ADDITIONAL_RETALIATION",
+        "val": 2
+      },
+      "petrify": {
+        "type": "SPELL_AFTER_ATTACK",
+        "subtype": "spell.stoneGaze",
+        "val": 20,
+        "addInfo": [
+          1,
+          2
+        ]
+      }
+    },
+    "stackExperience": [
+      {
+        "bonus": {
+          "type": "FEAR"
+        },
+        "values": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "bonus": {
+          "type": "DEATH_STARE",
+          "subtype": "deathStareGorgon"
+        },
+        "values": [
+          13,
+          16,
+          19,
+          22,
+          25,
+          28,
+          31,
+          34,
+          37,
+          40
+        ]
+      },
+      {
+        "bonus": {
+          "type": "SPELL_DAMAGE_REDUCTION",
+          "subtype": "spellSchool.any"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          10,
+          15,
+          20,
+          25
+        ]
+      },
+      {
+        "bonus": {
+          "type": "STACKS_SPEED"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      }
+    ],
+    "shots": 0,
+    "horde": 0,
+    "upgrades": []
+  },
+  "tumAcidWyvern": {
+    "name": {
+      "plural": "Acid Wyverns",
+      "singular": "Acid Wyvern"
+    },
+    "advMapAmount": {
+      "max": 6,
+      "min": 5
+    },
+    "faction": "core:fortress",
+    "attack": 20,
+    "defense": 16,
+    "cost": {
+      "gold": 15345
+    },
+    "damage": {
+      "max": 30,
+      "min": 25
+    },
+    "growth": 2,
+    "hitPoints": 89,
+    "level": 6,
+    "speed": 11,
+    "doubleWide": true,
+    "fightValue": 1181,
+    "aiValue": 1518,
+    "graphics": {
+      "animation": "creatures/fortress/battle/CR243",
+      "map": "creatures/fortress/map/AVWCR243",
+      "iconSmall": "creatures/fortress/iconsSmall/CPrS243X",
+      "iconLarge": "creatures/fortress/iconsBig/CPrL243X",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 10.0,
+        "attack": 1.0
+      }
+    },
+    "sound": {
+      "attack": "WYVMATTK.wav",
+      "defend": "WYVMDFND.wav",
+      "killed": "WYVMKILL.wav",
+      "move": "WYVMMOVE.wav",
+      "wince": "WYVMWNCE.wav"
+    },
+    "abilities": {
+      "canFly": {
+        "type": "FLYING",
+        "subtype": "movementFlying"
+      },
+      "petrify": {
+        "type": "SPELL_AFTER_ATTACK",
+        "subtype": "spell.poison",
+        "val": 50,
+        "addInfo": [
+          1,
+          2
+        ]
+      },
+      "acidBreath": {
+        "type": "ACID_BREATH",
+        "val": 25,
+        "addInfo": 30
+      },
+      "reduceDefence": {
+        "type": "SPELL_AFTER_ATTACK",
+        "subtype": "spell.acidBreath",
+        "val": 100,
+        "addInfo": [
+          1,
+          2
+        ]
+      }
+    },
+    "stackExperience": [
+      {
+        "bonus": {
+          "type": "SPELL_AFTER_ATTACK",
+          "subtype": "spell.poison",
+          "addInfo": [
+            1,
+            2
+          ]
+        },
+        "values": [
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35,
+          40,
+          45,
+          50
+        ]
+      },
+      {
+        "bonus": {
+          "type": "STACKS_SPEED"
+        },
+        "values": [
+          0,
+          0,
+          1,
+          2,
+          3,
+          4,
+          4,
+          5,
+          5,
+          6
+        ]
+      }
+    ],
+    "shots": 0,
+    "horde": 0,
+    "upgrades": []
+  },
+  "wake-of-gods.level8units:hellHydra": {
+    "attack": 22,
+    "defense": 24,
+    "hitPoints": 332,
+    "damage": {
+      "max": 55,
+      "min": 31
+    },
+    "speed": 7,
+    "shots": 0,
+    "growth": 1,
+    "horde": 0,
+    "aiValue": 5931,
+    "fightValue": 5272,
+    "level": 7,
+    "faction": "core:fortress",
+    "doubleWide": true,
+    "cost": {
+      "gold": 70235,
+      "sulfur": 23
+    }
+  },
+  "tumFairy": {
+    "name": {
+      "plural": "Fairies",
+      "singular": "Fairy"
+    },
+    "advMapAmount": {
+      "max": 25,
+      "min": 20
+    },
+    "faction": "core:conflux",
+    "attack": 8,
+    "defense": 4,
+    "cost": {
+      "gold": 70
+    },
+    "damage": {
+      "max": 5,
+      "min": 3
+    },
+    "growth": 20,
+    "horde": 10,
+    "hitPoints": 5,
+    "speed": 9,
+    "level": 1,
+    "fightValue": 70,
+    "aiValue": 95,
+    "graphics": {
+      "animation": "creatures/conflux/battle/CR246",
+      "map": "creatures/conflux/map/AVWCR246",
+      "iconSmall": "creatures/conflux/iconsSmall/CPrS246X",
+      "iconLarge": "creatures/conflux/iconsBig/CPrL246X",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 10.0,
+        "attack": 1.0
+      }
+    },
+    "sound": {
+      "attack": "SPRTATTK.wav",
+      "defend": "SPRTDFND.wav",
+      "killed": "SPRTKILL.wav",
+      "move": "SPRTMOVE.wav",
+      "wince": "SPRTWNCE.wav"
+    },
+    "abilities": {
+      "canFly": {
+        "type": "FLYING",
+        "subtype": "movementFlying"
+      },
+      "noRetaliation": {
+        "type": "BLOCKS_RETALIATION"
+      },
+      "spellResistAura": {
+        "type": "SPELL_RESISTANCE_AURA",
+        "val": 20
+      },
+      "castsBless": {
+        "type": "SPELLCASTER",
+        "subtype": "spell.bless",
+        "val": 2
+      },
+      "castsCount": {
+        "type": "CASTS",
+        "val": 1
+      },
+      "castLength": {
+        "type": "CREATURE_ENCHANT_POWER",
+        "val": 50
+      }
+    },
+    "stackExperience": [
+      {
+        "bonus": {
+          "type": "HATE",
+          "subtype": "creature.skeleton"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          20,
+          30,
+          40,
+          50
+        ]
+      },
+      {
+        "bonus": {
+          "type": "HATE",
+          "subtype": "creature.skeletonWarrior"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          20,
+          30,
+          40,
+          50
+        ]
+      },
+      {
+        "bonus": {
+          "type": "HATE",
+          "subtype": "creature.tumSkeletonKnight"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          20,
+          30,
+          40,
+          50
+        ]
+      },
+      {
+        "bonus": {
+          "type": "MAGIC_RESISTANCE"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          2,
+          5,
+          8,
+          11,
+          14,
+          17,
+          20
+        ]
+      },
+      {
+        "bonus": {
+          "type": "STACKS_SPEED"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    ],
+    "shots": 0,
+    "doubleWide": false,
+    "upgrades": []
+  },
+  "tumHurricaneElemental": {
+    "name": {
+      "plural": "Hurricane Elementals",
+      "singular": "Hurricane Elemental"
+    },
+    "advMapAmount": {
+      "max": 22,
+      "min": 16
+    },
+    "faction": "core:conflux",
+    "attack": 13,
+    "defense": 11,
+    "cost": {
+      "gold": 895
+    },
+    "damage": {
+      "max": 10,
+      "min": 4
+    },
+    "growth": 6,
+    "hitPoints": 32,
+    "speed": 8,
+    "level": 2,
+    "shots": 24,
+    "fightValue": 324,
+    "aiValue": 486,
+    "graphics": {
+      "animation": "creatures/conflux/battle/CR247",
+      "map": "creatures/conflux/map/AVWCR247",
+      "iconSmall": "creatures/conflux/iconsSmall/CPrS247X",
+      "iconLarge": "creatures/conflux/iconsBig/CPrL247X",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 10.0,
+        "attack": 1.0
+      },
+      "missile": {
+        "projectile": "CPRGTIX.DEF",
+        "attackClimaxFrame": 4,
+        "offset": {
+          "upperX": 50,
+          "upperY": -100,
+          "middleX": 80,
+          "middleY": -80,
+          "lowerX": 45,
+          "lowerY": -40
+        },
+        "frameAngles": [
+          90,
+          72,
+          45,
+          27,
+          0,
+          -27,
+          -45,
+          -72,
+          -90,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "sound": {
+      "attack": "STORATTK.wav",
+      "defend": "STORDFND.wav",
+      "killed": "STORKILL.wav",
+      "move": "STORMOVE.wav",
+      "shoot": "STORSHOT.wav",
+      "wince": "STORWNCE.wav"
+    },
+    "abilities": {
+      "canShoot": {
+        "type": "SHOOTER"
+      },
+      "noMeleePenalty": {
+        "type": "NO_MELEE_PENALTY"
+      },
+      "nonLiving": {
+        "type": "NON_LIVING"
+      },
+      "canFly": {
+        "type": "FLYING",
+        "subtype": "movementFlying"
+      },
+      "lightingVulnerablity": {
+        "type": "MORE_DAMAGE_FROM_SPELL",
+        "subtype": "spell.lightningBolt",
+        "val": 100
+      },
+      "chainLightingVulnerablity": {
+        "type": "MORE_DAMAGE_FROM_SPELL",
+        "subtype": "spell.chainLightning",
+        "val": 100
+      },
+      "armageddonVulnerablity": {
+        "type": "MORE_DAMAGE_FROM_SPELL",
+        "subtype": "spell.armageddon",
+        "val": 100
+      },
+      "spellPower": {
+        "type": "CREATURE_ENCHANT_POWER",
+        "val": 6
+      },
+      "spellPoints": {
+        "type": "CASTS",
+        "val": 3
+      },
+      "protectAir": {
+        "type": "ENCHANTED",
+        "subtype": "spell.protectAir",
+        "val": 2
+      },
+      "castAirShield": {
+        "type": "SPELLCASTER",
+        "subtype": "spell.airShield",
+        "val": 2
+      },
+      "airShield": {
+        "type": "ENCHANTED",
+        "subtype": "spell.airShield",
+        "val": 1
+      }
+    },
+    "stackExperience": [
+      {
+        "bonus": {
+          "type": "SPELL_AFTER_ATTACK",
+          "subtype": "spell.thunderbolt",
+          "addInfo": [
+            1,
+            1
+          ]
+        },
+        "values": [
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35,
+          40,
+          45,
+          50
+        ]
+      },
+      {
+        "bonus": {
+          "type": "SPELL_DAMAGE_REDUCTION",
+          "subtype": "air"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          100,
+          100,
+          100,
+          100,
+          100
+        ]
+      },
+      {
+        "bonus": {
+          "type": "MIND_IMMUNITY"
+        },
+        "values": [
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "bonus": {
+          "type": "SHOTS"
+        },
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "bonus": {
+          "type": "STACKS_SPEED"
+        },
+        "values": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      }
+    ],
+    "horde": 0,
+    "doubleWide": false,
+    "upgrades": []
+  },
+  "tumLifeElemental": {
+    "name": {
+      "singular": "Cryogenic Elemental",
+      "plural": "Cryogenic Elementals"
+    },
+    "faction": "core:conflux",
+    "level": 3,
+    "cost": {
+      "gold": 1750
+    },
+    "speed": 6,
+    "hitPoints": 39,
+    "attack": 12,
+    "defense": 12,
+    "damage": {
+      "max": 9,
+      "min": 5
+    },
+    "shots": 24,
+    "doubleWide": true,
+    "growth": 6,
+    "aiValue": 380,
+    "fightValue": 315,
+    "advMapAmount": {
+      "min": 12,
+      "max": 17
+    },
+    "abilities": {
+      "nonLiving": {
+        "type": "NON_LIVING"
+      },
+      "SHOOTING_ARMY": {
+        "type": "SHOOTER"
+      },
+      "noMeleePenalty": {
+        "type": "NO_MELEE_PENALTY"
+      },
+      "spellPoints": {
+        "type": "CASTS",
+        "val": 3
+      },
+      "immuneToMind": {
+        "type": "MIND_IMMUNITY"
+      },
+      "extraAttack": {
+        "type": "ADDITIONAL_ATTACK",
+        "val": 1
+      },
+      "hpRegen": {
+        "type": "HP_REGENERATION",
+        "val": 100000,
+        "valueType": "ADDITIVE_VALUE"
+      },
+      "spellcaster": {
+        "type": "ENCHANTED",
+        "subtype": "spell.protectWater",
+        "val": 2
+      },
+      "spellPower": {
+        "type": "CREATURE_ENCHANT_POWER",
+        "val": 6
+      },
+      "immuneToWater": {
+        "type": "SPELL_DAMAGE_REDUCTION",
+        "subtype": "water",
+        "val": 100
+      },
+      "iceBolt": {
+        "type": "SPELL_BEFORE_ATTACK",
+        "val": 30,
+        "subtype": "spell.iceBolt",
+        "addInfo": [
+          1,
+          1
+        ]
+      },
+      "fireShieldVulnerablity": {
+        "type": "MORE_DAMAGE_FROM_SPELL",
+        "subtype": "spell.fireShield",
+        "val": 100
+      },
+      "fireWallVulnerablity": {
+        "type": "MORE_DAMAGE_FROM_SPELL",
+        "subtype": "spell.fireWall",
+        "val": 100
+      },
+      "fireballVulnerablity": {
+        "type": "MORE_DAMAGE_FROM_SPELL",
+        "subtype": "spell.fireball",
+        "val": 100
+      },
+      "infernoVulnerablity": {
+        "type": "MORE_DAMAGE_FROM_SPELL",
+        "subtype": "spell.inferno",
+        "val": 100
+      },
+      "armageddonVulnerablity": {
+        "type": "MORE_DAMAGE_FROM_SPELL",
+        "subtype": "spell.armageddon",
+        "val": 100
+      }
+    },
+    "graphics": {
+      "animation": "creatures/conflux/battle/CR248",
+      "map": "creatures/conflux/map/AVWCR248",
+      "iconSmall": "creatures/conflux/iconsSmall/CPrS248X",
+      "iconLarge": "creatures/conflux/iconsBig/CPrL248X",
+      "animationTime": {
+        "attack": 1,
+        "idle": 10,
+        "walk": 1
+      },
+      "missile": {
+        "projectile": "PICEE.DEF",
+        "attackClimaxFrame": 4,
+        "frameAngles": [
+          90,
+          72,
+          45,
+          27,
+          0,
+          -27,
+          -45,
+          -72,
+          -90,
+          0,
+          0,
+          0
+        ],
+        "offset": {
+          "lowerX": 18,
+          "lowerY": -92,
+          "middleX": 43,
+          "middleY": -99,
+          "upperX": 28,
+          "upperY": -107
+        }
+      },
+      "timeBetweenFidgets": 1
+    },
+    "sound": {
+      "attack": "ICELATTK.wav",
+      "defend": "ICELDFND.wav",
+      "killed": "ICELKILL.wav",
+      "move": "ICELMOVE.wav",
+      "shoot": "ICELSHOT.wav",
+      "wince": "ICELWNCE.wav"
+    },
+    "horde": 0,
+    "upgrades": []
+  },
+  "tumPlasmaElemental": {
+    "name": {
+      "plural": "Plasma Elementals",
+      "singular": "Plasma Elemental"
+    },
+    "advMapAmount": {
+      "max": 24,
+      "min": 10
+    },
+    "faction": "core:conflux",
+    "attack": 18,
+    "defense": 10,
+    "cost": {
+      "gold": 2700
+    },
+    "damage": {
+      "max": 9,
+      "min": 6
+    },
+    "growth": 5,
+    "hitPoints": 45,
+    "speed": 8,
+    "level": 4,
+    "fightValue": 360,
+    "aiValue": 470,
+    "graphics": {
+      "animation": "creatures/conflux/battle/CR249",
+      "map": "creatures/conflux/map/AVWCR249",
+      "iconSmall": "creatures/conflux/iconsSmall/CPrS249X",
+      "iconLarge": "creatures/conflux/iconsBig/CPrL249X",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 10.0,
+        "attack": 1.0
+      }
+    },
+    "sound": {
+      "attack": "FELMATTK.wav",
+      "defend": "FELMDFND.wav",
+      "killed": "FELMKILL.wav",
+      "move": "FELMMOVE.wav",
+      "wince": "FELMWNCE.wav"
+    },
+    "abilities": {
+      "canFly": {
+        "type": "FLYING",
+        "subtype": "movementFlying"
+      },
+      "nonLiving": {
+        "type": "NON_LIVING"
+      },
+      "immuneToMind": {
+        "type": "MIND_IMMUNITY"
+      },
+      "immuneToFire": {
+        "type": "SPELL_SCHOOL_IMMUNITY",
+        "subtype": "fire"
+      },
+      "frostRingVulnerablity": {
+        "type": "MORE_DAMAGE_FROM_SPELL",
+        "subtype": "spell.frostRing",
+        "val": 100
+      },
+      "iceBoltVulnerablity": {
+        "type": "MORE_DAMAGE_FROM_SPELL",
+        "subtype": "spell.iceBolt",
+        "val": 100
+      },
+      "spellPower": {
+        "type": "CREATURE_ENCHANT_POWER",
+        "val": 6
+      },
+      "spellPoints": {
+        "type": "CASTS",
+        "val": 3
+      },
+      "spellcaster": {
+        "type": "SPELLCASTER",
+        "subtype": "spell.fireShield",
+        "val": 2
+      },
+      "protectFire": {
+        "type": "ENCHANTED",
+        "subtype": "spell.protectFire",
+        "val": 2
+      },
+      "fireShield": {
+        "type": "FIRE_SHIELD",
+        "val": 20
+      }
+    },
+    "shots": 0,
+    "horde": 0,
+    "doubleWide": false,
+    "upgrades": []
+  },
+  "tumMineralElemental": {
+    "name": {
+      "plural": "Lava Elementals",
+      "singular": "Lava Elemental"
+    },
+    "advMapAmount": {
+      "max": 10,
+      "min": 8
+    },
+    "faction": "core:conflux",
+    "attack": 13,
+    "defense": 17,
+    "cost": {
+      "gold": 4855
+    },
+    "damage": {
+      "max": 12,
+      "min": 8
+    },
+    "growth": 4,
+    "hitPoints": 58,
+    "speed": 6,
+    "level": 5,
+    "fightValue": 490,
+    "aiValue": 490,
+    "graphics": {
+      "animation": "creatures/conflux/battle/CR250",
+      "map": "creatures/conflux/map/AVWCR250",
+      "iconSmall": "creatures/conflux/iconsSmall/CPrS250X",
+      "iconLarge": "creatures/conflux/iconsBig/CPrL250X",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 10.0,
+        "attack": 1.0
+      }
+    },
+    "sound": {
+      "attack": "MAGMATTK.wav",
+      "defend": "MAGMDFND.wav",
+      "killed": "MAGMKILL.wav",
+      "move": "MAGMMOVE.wav",
+      "wince": "MAGMWNCE.wav"
+    },
+    "abilities": {
+      "nonLiving": {
+        "type": "NON_LIVING"
+      },
+      "spellPower": {
+        "type": "CREATURE_ENCHANT_POWER",
+        "val": 6
+      },
+      "spellPoints": {
+        "type": "CASTS",
+        "val": 3
+      },
+      "immuneToMind": {
+        "type": "MIND_IMMUNITY"
+      },
+      "spellcaster": {
+        "type": "SPELLCASTER",
+        "subtype": "spell.protectEarth",
+        "val": 2
+      },
+      "meteorShowerVulnerability": {
+        "type": "MORE_DAMAGE_FROM_SPELL",
+        "subtype": "spell.meteorShower",
+        "val": 100
+      },
+      "lightingImmunity": {
+        "type": "SPELL_IMMUNITY",
+        "subtype": "spell.lightningBolt"
+      },
+      "chainLightingImmunity": {
+        "type": "SPELL_IMMUNITY",
+        "subtype": "spell.chainLightning"
+      },
+      "armageddonImmunity": {
+        "type": "SPELL_IMMUNITY",
+        "subtype": "spell.armageddon"
+      },
+      "protectEarth": {
+        "type": "ENCHANTED",
+        "subtype": "spell.protectEarth",
+        "val": 2
+      },
+      "castStoneSkin": {
+        "type": "SPELLCASTER",
+        "subtype": "spell.stoneSkin",
+        "val": 2
+      }
+    },
+    "shots": 0,
+    "horde": 0,
+    "doubleWide": false,
+    "upgrades": []
+  },
+  "tumVoidElemental": {
+    "name": {
+      "singular": "Void Elemental",
+      "plural": "Void Elementals"
+    },
+    "faction": "core:conflux",
+    "level": 6,
+    "cost": {
+      "gold": 11165
+    },
+    "speed": 9,
+    "hitPoints": 101,
+    "attack": 21,
+    "defense": 15,
+    "damage": {
+      "max": 34,
+      "min": 21
+    },
+    "growth": 2,
+    "horde": 0,
+    "aiValue": 2012,
+    "fightValue": 1724,
+    "advMapAmount": {
+      "min": 5,
+      "max": 8
+    },
+    "abilities": {
+      "nonLiving": {
+        "type": "NON_LIVING"
+      },
+      "MULTI_HEADED": {
+        "type": "ATTACKS_ALL_ADJACENT"
+      },
+      "const_free_attack": {
+        "type": "BLOCKS_RETALIATION"
+      },
+      "IMMUNE_TO_MIND_SPELLS": {
+        "type": "MIND_IMMUNITY"
+      },
+      "magicImmunity": {
+        "type": "LEVEL_SPELL_IMMUNITY",
+        "val": 5
+      },
+      "spellResistAura": {
+        "type": "SPELL_RESISTANCE_AURA",
+        "val": 20
+      },
+      "manaChannel": {
+        "type": "MANA_CHANNELING",
+        "val": 20
+      },
+      "drainsMana": {
+        "type": "MANA_DRAIN",
+        "val": 2
+      },
+      "dispellHelpful": {
+        "type": "SPELL_AFTER_ATTACK",
+        "subtype": "spell.dispelHelpful",
+        "val": 100
+      }
+    },
+    "graphics": {
+      "animation": "creatures/conflux/battle/CR251",
+      "map": "creatures/conflux/map/AVWCR251",
+      "iconSmall": "creatures/conflux/iconsSmall/CPrS251X",
+      "iconLarge": "creatures/conflux/iconsBig/CPrL251X",
+      "animationTime": {
+        "attack": 1,
+        "idle": 10,
+        "walk": 1
+      },
+      "timeBetweenFidgets": 1
+    },
+    "sound": {
+      "attack": "MGELATTK.wav",
+      "defend": "MGELDFND.wav",
+      "killed": "MGELKILL.wav",
+      "move": "MGELMOVE.wav",
+      "wince": "MGELWNCE.wav"
+    },
+    "shots": 0,
+    "doubleWide": false,
+    "upgrades": []
+  },
+  "wake-of-gods.level8units:sacredPhoenix": {
+    "attack": 25,
+    "defense": 22,
+    "hitPoints": 265,
+    "damage": {
+      "max": 49,
+      "min": 37
+    },
+    "speed": 21,
+    "shots": 0,
+    "growth": 2,
+    "horde": 0,
+    "aiValue": 6721,
+    "fightValue": 4929,
+    "level": 7,
+    "faction": "core:conflux",
+    "doubleWide": true,
+    "cost": {
+      "gold": 40135,
+      "mercury": 23
+    }
+  }
+}

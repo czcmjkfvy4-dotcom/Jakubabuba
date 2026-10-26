@@ -1,0 +1,39 @@
+{
+  "images": [
+    {
+      "group": 0,
+      "frame": 44,
+      "file": "fourth-forms/buildings/tower/dcMechanicGremlin-hall.png"
+    },
+    {
+      "group": 0,
+      "frame": 45,
+      "file": "fourth-forms/buildings/tower/dcIcewingGargoyle-hall.png"
+    },
+    {
+      "group": 0,
+      "frame": 46,
+      "file": "fourth-forms/buildings/tower/dcAdamantGolem-hall.png"
+    },
+    {
+      "group": 0,
+      "frame": 47,
+      "file": "fourth-forms/buildings/tower/dcRuneMage-hall.png"
+    },
+    {
+      "group": 0,
+      "frame": 48,
+      "file": "fourth-forms/buildings/tower/dcDjinnSultan-hall.png"
+    },
+    {
+      "group": 0,
+      "frame": 49,
+      "file": "fourth-forms/buildings/tower/dcNagaEmpress-hall.png"
+    },
+    {
+      "group": 0,
+      "frame": 50,
+      "file": "fourth-forms/buildings/tower/dcFirmamentTitan-hall.png"
+    }
+  ]
+}

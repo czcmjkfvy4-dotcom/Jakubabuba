@@ -1,0 +1,313 @@
+{
+  "core:inferno": {
+    "town": {
+      "creatures": [
+        [
+          "core:imp",
+          "core:familiar",
+          "dragon-citadel:dcAshImp",
+          "dragon-citadel.fourth-upgrades:tumVermin"
+        ],
+        [
+          "core:gog",
+          "core:magog",
+          "dragon-citadel:dcAbyssMagog",
+          "dragon-citadel.fourth-upgrades:tumWingedMagog"
+        ],
+        [
+          "core:hellHound",
+          "core:cerberus",
+          "dragon-citadel:dcHellCerberus",
+          "dragon-citadel.fourth-upgrades:tumAstralCerberus"
+        ],
+        [
+          "core:demon",
+          "core:hornedDemon",
+          "dragon-citadel:dcIronHornDemon",
+          "dragon-citadel.fourth-upgrades:tumSharpHornedDemon"
+        ],
+        [
+          "core:pitFiend",
+          "core:pitLord",
+          "dragon-citadel:dcAshLord",
+          "dragon-citadel.fourth-upgrades:tumPitMaster"
+        ],
+        [
+          "core:efreet",
+          "core:efreetSultan",
+          "dragon-citadel:dcCrownedEfreet",
+          "dragon-citadel.fourth-upgrades:tumEfreetRajah"
+        ],
+        [
+          "core:devil",
+          "core:archDevil",
+          "dragon-citadel:dcAbyssPrince",
+          "wake-of-gods.level8units:hellBaron"
+        ]
+      ],
+      "hallSlots": [
+        [
+          [
+            "villageHall",
+            "townHall",
+            "cityHall",
+            "capitol"
+          ],
+          [
+            "fort",
+            "citadel",
+            "castle"
+          ],
+          [
+            "tavern"
+          ],
+          [
+            "blacksmith"
+          ]
+        ],
+        [
+          [
+            "marketplace",
+            "resourceSilo"
+          ],
+          [
+            "mageGuild1",
+            "mageGuild2",
+            "mageGuild3",
+            "mageGuild4",
+            "mageGuild5"
+          ],
+          [
+            "special4"
+          ],
+          [
+            "special2"
+          ]
+        ],
+        [
+          [
+            "special3"
+          ],
+          [
+            "horde1",
+            "horde1Upgr"
+          ],
+          [
+            "horde2",
+            "horde2Upgr"
+          ]
+        ],
+        [
+          [
+            "dwellingLvl1",
+            "dwellingUpLvl1",
+            "dwellingUp2Lvl1",
+            "dwellingUp3Lvl1"
+          ],
+          [
+            "dwellingLvl2",
+            "dwellingUpLvl2",
+            "dwellingUp2Lvl2",
+            "dwellingUp3Lvl2"
+          ],
+          [
+            "dwellingLvl3",
+            "dwellingUpLvl3",
+            "dwellingUp2Lvl3",
+            "dwellingUp3Lvl3"
+          ],
+          [
+            "dwellingLvl4",
+            "dwellingUpLvl4",
+            "dwellingUp2Lvl4",
+            "dwellingUp3Lvl4"
+          ]
+        ],
+        [
+          [
+            "dwellingLvl5",
+            "dwellingUpLvl5",
+            "dwellingUp2Lvl5",
+            "dwellingUp3Lvl5"
+          ],
+          [
+            "dwellingLvl6",
+            "dwellingUpLvl6",
+            "dwellingUp2Lvl6",
+            "dwellingUp3Lvl6"
+          ],
+          [
+            "dwellingLvl7",
+            "dwellingUpLvl7",
+            "dwellingUp2Lvl7",
+            "dwellingUp3Lvl7"
+          ]
+        ]
+      ],
+      "buildings": {
+        "dwellingUp3Lvl1": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Imp Crucible}",
+          "cost": {
+            "gold": 5250,
+            "wood": 15,
+            "ore": 15
+          },
+          "requires": [
+            "dwellingUp2Lvl1"
+          ],
+          "upgrades": "dwellingUp2Lvl1",
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl2": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Hall of Sins}",
+          "cost": {
+            "gold": 8100,
+            "wood": 18,
+            "ore": 27,
+            "mercury": 6
+          },
+          "requires": [
+            "dwellingUp2Lvl2"
+          ],
+          "upgrades": "dwellingUp2Lvl2",
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl3": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Kennels}",
+          "cost": {
+            "gold": 14040,
+            "wood": 33,
+            "ore": 44,
+            "mercury": 11
+          },
+          "requires": [
+            "dwellingUp2Lvl3"
+          ],
+          "upgrades": "dwellingUp2Lvl3",
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl4": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Demon Gate}",
+          "requires": [
+            "dwellingUp2Lvl4"
+          ],
+          "cost": {
+            "gold": 22035,
+            "wood": 39,
+            "ore": 52,
+            "mercury": 21
+          },
+          "upgrades": "dwellingUp2Lvl4",
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl5": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Hell Hole}",
+          "cost": {
+            "gold": 43550,
+            "wood": 47,
+            "ore": 47,
+            "mercury": 32
+          },
+          "requires": [
+            "dwellingUp2Lvl5"
+          ],
+          "upgrades": "dwellingUp2Lvl5",
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl6": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Fire Lake}",
+          "cost": {
+            "gold": 82115,
+            "wood": 75,
+            "ore": 75,
+            "sulfur": 56
+          },
+          "requires": [
+            "dwellingUp2Lvl6"
+          ],
+          "upgrades": "dwellingUp2Lvl6",
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl7": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Forsaken Palace}",
+          "cost": {
+            "gold": 268740,
+            "wood": 135,
+            "ore": 135,
+            "mercury": 112
+          },
+          "requires": [
+            "dwellingUp2Lvl7"
+          ],
+          "upgrades": "dwellingUp2Lvl7",
+          "mode": "normal"
+        }
+      },
+      "structures": {
+        "dwellingUp3Lvl1": {
+          "animation": "town-screen/inferno/TBINUP2_0.def",
+          "x": 614,
+          "y": 221,
+          "border": "town-screen/inferno/borders/TOIMP3A.bmp",
+          "area": "town-screen/inferno/areas/TZIMP3A.bmp",
+          "z": -1
+        },
+        "dwellingUp3Lvl2": {
+          "animation": "town-screen/inferno/TBINUP2_1.def",
+          "x": 187,
+          "y": 212,
+          "z": 6,
+          "border": "town-screen/inferno/borders/TOIGOG3A.bmp",
+          "area": "town-screen/inferno/areas/TZIGOG3A.bmp"
+        },
+        "dwellingUp3Lvl3": {
+          "animation": "town-screen/inferno/TBINUP2_2.def",
+          "x": 9,
+          "y": 273,
+          "border": "town-screen/inferno/borders/TOIHND3.bmp",
+          "area": "town-screen/inferno/areas/TZIHND3.bmp",
+          "z": 0
+        },
+        "dwellingUp3Lvl4": {
+          "animation": "town-screen/inferno/TBINUP2_3.def",
+          "x": 412,
+          "y": 197,
+          "z": 3,
+          "border": "town-screen/inferno/borders/TOIDMN3.bmp",
+          "area": "town-screen/inferno/areas/TZIDMN3.bmp"
+        },
+        "dwellingUp3Lvl5": {
+          "animation": "town-screen/inferno/TBINUP2_4.def",
+          "x": 359,
+          "y": 223,
+          "z": 4,
+          "border": "town-screen/inferno/borders/TOIPIT3.bmp",
+          "area": "town-screen/inferno/areas/TZIPIT3.bmp"
+        },
+        "dwellingUp3Lvl6": {
+          "animation": "town-screen/inferno/TBINUP2_5.def",
+          "x": 220,
+          "y": 282,
+          "z": 7,
+          "border": "town-screen/inferno/borders/TOIEFR3.bmp",
+          "area": "town-screen/inferno/areas/TZIEFR3.bmp"
+        },
+        "dwellingUp3Lvl7": {
+          "animation": "town-screen/inferno/TBINUP2_6.def",
+          "x": 420,
+          "y": 72,
+          "z": -8,
+          "border": "town-screen/inferno/borders/TOIDVL3.bmp",
+          "area": "town-screen/inferno/areas/TZIDVL3.bmp"
+        }
+      }
+    }
+  }
+}

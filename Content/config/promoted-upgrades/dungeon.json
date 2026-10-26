@@ -1,0 +1,410 @@
+{
+  "core:dungeon": {
+    "town": {
+      "creatures": [
+        [
+          "core:troglodyte",
+          "core:infernalTroglodyte",
+          "dragon-citadel:dcDeepTroglodyte"
+        ],
+        [
+          "core:harpy",
+          "core:harpyHag",
+          "dragon-citadel:dcNightHarpy"
+        ],
+        [
+          "core:beholder",
+          "core:evilEye",
+          "dragon-citadel:dcAbyssEye"
+        ],
+        [
+          "core:medusa",
+          "core:medusaQueen",
+          "dragon-citadel:dcMedusaEmpress"
+        ],
+        [
+          "core:minotaur",
+          "core:minotaurKing",
+          "dragon-citadel:dcLabyrinthLord"
+        ],
+        [
+          "core:manticore",
+          "core:scorpicore",
+          "dragon-citadel:dcDeepScorpicore"
+        ],
+        [
+          "core:redDragon",
+          "core:blackDragon",
+          "dragon-citadel:dcObsidianDragon"
+        ]
+      ],
+      "hallSlots": [
+        [
+          [
+            "villageHall",
+            "townHall",
+            "cityHall",
+            "capitol"
+          ],
+          [
+            "fort",
+            "citadel",
+            "castle"
+          ],
+          [
+            "tavern"
+          ],
+          [
+            "blacksmith"
+          ]
+        ],
+        [
+          [
+            "marketplace",
+            "resourceSilo"
+          ],
+          [
+            "mageGuild1",
+            "mageGuild2",
+            "mageGuild3",
+            "mageGuild4",
+            "mageGuild5"
+          ],
+          [
+            "special2"
+          ],
+          [
+            "special3"
+          ]
+        ],
+        [
+          [
+            "special1"
+          ],
+          [
+            "special4"
+          ],
+          [
+            "horde1",
+            "horde1Upgr"
+          ]
+        ],
+        [
+          [
+            "dwellingLvl1",
+            "dwellingUpLvl1",
+            "dwellingUp2Lvl1"
+          ],
+          [
+            "dwellingLvl2",
+            "dwellingUpLvl2",
+            "dwellingUp2Lvl2"
+          ],
+          [
+            "dwellingLvl3",
+            "dwellingUpLvl3",
+            "dwellingUp2Lvl3"
+          ],
+          [
+            "dwellingLvl4",
+            "dwellingUpLvl4",
+            "dwellingUp2Lvl4"
+          ]
+        ],
+        [
+          [
+            "dwellingLvl5",
+            "dwellingUpLvl5",
+            "dwellingUp2Lvl5"
+          ],
+          [
+            "dwellingLvl6",
+            "dwellingUpLvl6",
+            "dwellingUp2Lvl6"
+          ],
+          [
+            "dwellingLvl7",
+            "dwellingUpLvl7",
+            "dwellingUp2Lvl7"
+          ]
+        ]
+      ],
+      "buildings": {
+        "dwellingUp2Lvl1": {
+          "name": "Grota Glebin",
+          "description": "Recruits Troglodyci Glebinowi, the third form. Growth is unchanged.",
+          "upgrades": "dwellingUpLvl1",
+          "requires": [
+            "dwellingUpLvl1"
+          ],
+          "cost": {
+            "gold": 3500,
+            "wood": 10,
+            "ore": 15
+          },
+          "mode": "normal"
+        },
+        "dwellingUp2Lvl2": {
+          "name": "Gniazdo Nocnych Harpii",
+          "description": "Recruits Harpie Nocne, the third form. Growth is unchanged.",
+          "upgrades": "dwellingUpLvl2",
+          "requires": [
+            "dwellingUpLvl2"
+          ],
+          "cost": {
+            "gold": 4500,
+            "wood": 15,
+            "ore": 10,
+            "sulfur": 3
+          },
+          "mode": "normal"
+        },
+        "dwellingUp2Lvl3": {
+          "name": "Sanktuarium Oka Otchlani",
+          "description": "Recruits Oczy Otchlani, the third form. Growth is unchanged.",
+          "upgrades": "dwellingUpLvl3",
+          "requires": [
+            "dwellingUpLvl3"
+          ],
+          "cost": {
+            "gold": 6500,
+            "wood": 10,
+            "ore": 20,
+            "sulfur": 5
+          },
+          "mode": "normal"
+        },
+        "dwellingUp2Lvl4": {
+          "name": "Palac Meduzy Cesarzowej",
+          "description": "Recruits Meduzy Cesarzowe, the third form. Growth is unchanged.",
+          "upgrades": "dwellingUpLvl4",
+          "requires": [
+            "dwellingUpLvl4"
+          ],
+          "cost": {
+            "gold": 9500,
+            "wood": 15,
+            "ore": 20,
+            "sulfur": 8
+          },
+          "mode": "normal"
+        },
+        "dwellingUp2Lvl5": {
+          "name": "Labirynt Wladcow",
+          "description": "Recruits Wladcy Labiryntu, the third form. Growth is unchanged.",
+          "upgrades": "dwellingUpLvl5",
+          "requires": [
+            "dwellingUpLvl5"
+          ],
+          "cost": {
+            "gold": 14000,
+            "wood": 15,
+            "ore": 20,
+            "sulfur": 10
+          },
+          "mode": "normal"
+        },
+        "dwellingUp2Lvl6": {
+          "name": "Bastion Skorpen",
+          "description": "Recruits Skorpeny Glebinowe, the third form. Growth is unchanged.",
+          "upgrades": "dwellingUpLvl6",
+          "requires": [
+            "dwellingUpLvl6"
+          ],
+          "cost": {
+            "gold": 25000,
+            "wood": 20,
+            "ore": 20,
+            "sulfur": 20
+          },
+          "mode": "normal"
+        },
+        "dwellingUp2Lvl7": {
+          "name": "Obsydianowy Szczyt",
+          "description": "Recruits Smoki Obsydianowe, the third form. Growth is unchanged.",
+          "upgrades": "dwellingUpLvl7",
+          "requires": [
+            "dwellingUpLvl7"
+          ],
+          "cost": {
+            "gold": 60000,
+            "wood": 30,
+            "ore": 30,
+            "sulfur": 25
+          },
+          "mode": "normal"
+        }
+      },
+      "structures": {
+        "dwellingUp2Lvl1": {
+          "animation": "fourth-forms/buildings/dungeon/dcDeepTroglodyte",
+          "x": 0,
+          "y": 301,
+          "z": 9,
+          "area": "fourth-forms/buildings/dungeon/dcDeepTroglodyte-area.png",
+          "border": "fourth-forms/buildings/dungeon/dcDeepTroglodyte-border.png"
+        },
+        "dwellingUp2Lvl2": {
+          "animation": "fourth-forms/buildings/dungeon/dcNightHarpy",
+          "x": 0,
+          "y": 26,
+          "z": -2,
+          "area": "fourth-forms/buildings/dungeon/dcNightHarpy-area.png",
+          "border": "fourth-forms/buildings/dungeon/dcNightHarpy-border.png"
+        },
+        "dwellingUp2Lvl3": {
+          "animation": "fourth-forms/buildings/dungeon/dcAbyssEye",
+          "x": 118,
+          "y": 256,
+          "z": 6,
+          "area": "fourth-forms/buildings/dungeon/dcAbyssEye-area.png",
+          "border": "fourth-forms/buildings/dungeon/dcAbyssEye-border.png"
+        },
+        "dwellingUp2Lvl4": {
+          "animation": "fourth-forms/buildings/dungeon/dcMedusaEmpress",
+          "x": 300,
+          "y": 29,
+          "z": -6,
+          "area": "fourth-forms/buildings/dungeon/dcMedusaEmpress-area.png",
+          "border": "fourth-forms/buildings/dungeon/dcMedusaEmpress-border.png"
+        },
+        "dwellingUp2Lvl5": {
+          "animation": "fourth-forms/buildings/dungeon/dcLabyrinthLord",
+          "x": 519,
+          "y": 172,
+          "z": 4,
+          "area": "fourth-forms/buildings/dungeon/dcLabyrinthLord-area.png",
+          "border": "fourth-forms/buildings/dungeon/dcLabyrinthLord-border.png"
+        },
+        "dwellingUp2Lvl6": {
+          "animation": "fourth-forms/buildings/dungeon/dcDeepScorpicore",
+          "x": 270,
+          "y": 253,
+          "z": -4,
+          "area": "fourth-forms/buildings/dungeon/dcDeepScorpicore-area.png",
+          "border": "fourth-forms/buildings/dungeon/dcDeepScorpicore-border.png"
+        },
+        "dwellingUp2Lvl7": {
+          "animation": "fourth-forms/buildings/dungeon/dcObsidianDragon",
+          "x": 550,
+          "y": 0,
+          "z": -7,
+          "area": "fourth-forms/buildings/dungeon/dcObsidianDragon-area.png",
+          "border": "fourth-forms/buildings/dungeon/dcObsidianDragon-border.png"
+        },
+        "blacksmith": {
+          "z": -9
+        },
+        "marketplace": {
+          "z": -8
+        },
+        "dwellingLvl7": {
+          "z": -7
+        },
+        "dwellingUpLvl7": {
+          "z": -7
+        },
+        "dwellingLvl4": {
+          "z": -6
+        },
+        "dwellingUpLvl4": {
+          "z": -6
+        },
+        "mageGuild1": {
+          "z": -5
+        },
+        "mageGuild2": {
+          "z": -5
+        },
+        "mageGuild3": {
+          "z": -5
+        },
+        "mageGuild4": {
+          "z": -5
+        },
+        "mageGuild5": {
+          "z": -5
+        },
+        "dwellingLvl6": {
+          "z": -4
+        },
+        "dwellingUpLvl6": {
+          "z": -4
+        },
+        "special2": {
+          "z": -3
+        },
+        "dwellingLvl2": {
+          "z": -2
+        },
+        "dwellingUpLvl2": {
+          "z": -2
+        },
+        "special3": {
+          "z": -1
+        },
+        "capitol": {
+          "z": 0
+        },
+        "cityHall": {
+          "z": 0
+        },
+        "townHall": {
+          "z": 0
+        },
+        "villageHall": {
+          "z": 0
+        },
+        "tavern": {
+          "z": 1
+        },
+        "special4": {
+          "z": 2
+        },
+        "grail": {
+          "z": 3
+        },
+        "dwellingLvl5": {
+          "z": 4
+        },
+        "dwellingUpLvl5": {
+          "z": 4
+        },
+        "resourceSilo": {
+          "z": 5
+        },
+        "dwellingLvl3": {
+          "z": 6
+        },
+        "dwellingUpLvl3": {
+          "z": 6
+        },
+        "special1": {
+          "z": 7
+        },
+        "castle": {
+          "z": 8
+        },
+        "citadel": {
+          "z": 8
+        },
+        "fort": {
+          "z": 8
+        },
+        "dwellingLvl1": {
+          "z": 9
+        },
+        "dwellingUpLvl1": {
+          "z": 9
+        },
+        "horde1": {
+          "z": 9
+        },
+        "horde1Upgr": {
+          "z": 9
+        }
+      },
+      "buildingsIcons": "town-screen/dungeon/AltHallDung.DEF"
+    }
+  }
+}

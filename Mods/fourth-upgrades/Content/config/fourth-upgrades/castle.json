@@ -1,0 +1,304 @@
+{
+  "core:castle": {
+    "town": {
+      "creatures": [
+        [
+          "core:pikeman",
+          "core:halberdier",
+          "dragon-citadel:dcCrownGuard",
+          "dragon-citadel.fourth-upgrades:tumRoyalHalberdier"
+        ],
+        [
+          "core:archer",
+          "core:marksman",
+          "dragon-citadel:dcRoyalCrossbowman",
+          "dragon-citadel.fourth-upgrades:tumCrossbowman"
+        ],
+        [
+          "core:griffin",
+          "core:royalGriffin",
+          "dragon-citadel:dcCrownGriffin",
+          "dragon-citadel.fourth-upgrades:tumCeasarGriffin"
+        ],
+        [
+          "core:swordsman",
+          "core:crusader",
+          "dragon-citadel:dcPaladin",
+          "dragon-citadel.fourth-upgrades:tumInquisitor"
+        ],
+        [
+          "core:monk",
+          "core:zealot",
+          "dragon-citadel:dcHierophant",
+          "dragon-citadel.fourth-upgrades:tumHighPriest"
+        ],
+        [
+          "core:cavalier",
+          "core:champion",
+          "dragon-citadel:dcRoyalBannerKnight",
+          "dragon-citadel.fourth-upgrades:tumHolyChampion"
+        ],
+        [
+          "core:angel",
+          "core:archangel",
+          "dragon-citadel:dcSeraph",
+          "wake-of-gods.level8units:supremeArchangel"
+        ]
+      ],
+      "hallSlots": [
+        [
+          [
+            "villageHall",
+            "townHall",
+            "cityHall",
+            "capitol"
+          ],
+          [
+            "fort",
+            "citadel",
+            "castle"
+          ],
+          [
+            "tavern",
+            "special3"
+          ],
+          [
+            "blacksmith"
+          ]
+        ],
+        [
+          [
+            "marketplace",
+            "resourceSilo"
+          ],
+          [
+            "mageGuild1",
+            "mageGuild2",
+            "mageGuild3",
+            "mageGuild4"
+          ],
+          [
+            "shipyard",
+            "special1"
+          ]
+        ],
+        [
+          [
+            "special2"
+          ],
+          [
+            "horde1",
+            "horde1Upgr"
+          ]
+        ],
+        [
+          [
+            "dwellingLvl1",
+            "dwellingUpLvl1",
+            "dwellingUp2Lvl1",
+            "dwellingUp3Lvl1"
+          ],
+          [
+            "dwellingLvl2",
+            "dwellingUpLvl2",
+            "dwellingUp2Lvl2",
+            "dwellingUp3Lvl2"
+          ],
+          [
+            "dwellingLvl3",
+            "dwellingUpLvl3",
+            "dwellingUp2Lvl3",
+            "dwellingUp3Lvl3"
+          ],
+          [
+            "dwellingLvl4",
+            "dwellingUpLvl4",
+            "dwellingUp2Lvl4",
+            "dwellingUp3Lvl4"
+          ]
+        ],
+        [
+          [
+            "dwellingLvl5",
+            "dwellingUpLvl5",
+            "dwellingUp2Lvl5",
+            "dwellingUp3Lvl5"
+          ],
+          [
+            "dwellingLvl6",
+            "dwellingUpLvl6",
+            "dwellingUp2Lvl6",
+            "dwellingUp3Lvl6"
+          ],
+          [
+            "dwellingLvl7",
+            "dwellingUpLvl7",
+            "dwellingUp2Lvl7",
+            "dwellingUp3Lvl7"
+          ]
+        ]
+      ],
+      "buildings": {
+        "dwellingUp3Lvl1": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Guardhouse}",
+          "cost": {
+            "gold": 4500,
+            "ore": 23,
+            "wood": 15
+          },
+          "requires": [
+            "dwellingUp2Lvl1"
+          ],
+          "upgrades": "dwellingUp2Lvl1",
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl2": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Archers' Tower}",
+          "cost": {
+            "gold": 8100,
+            "wood": 27,
+            "ore": 18
+          },
+          "requires": [
+            "dwellingUp2Lvl2"
+          ],
+          "upgrades": "dwellingUp2Lvl2",
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl3": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Griffin Tower}",
+          "cost": {
+            "gold": 14040,
+            "wood": 33,
+            "ore": 33
+          },
+          "requires": [
+            "dwellingUp2Lvl3"
+          ],
+          "upgrades": "dwellingUp2Lvl3",
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl4": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Barracks}",
+          "cost": {
+            "gold": 22035,
+            "wood": 39,
+            "ore": 52
+          },
+          "requires": [
+            "dwellingUp2Lvl4"
+          ],
+          "upgrades": "dwellingUp2Lvl4",
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl5": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Monastery}",
+          "cost": {
+            "gold": 37325,
+            "wood": 63,
+            "ore": 63,
+            "gems": 16
+          },
+          "requires": [
+            "dwellingUp2Lvl5"
+          ],
+          "upgrades": "dwellingUp2Lvl5",
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl6": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Training Grounds}",
+          "cost": {
+            "gold": 82115,
+            "wood": 94,
+            "ore": 94,
+            "crystal": 38
+          },
+          "requires": [
+            "dwellingUp2Lvl6"
+          ],
+          "upgrades": "dwellingUp2Lvl6",
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl7": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Portal of Glory}",
+          "cost": {
+            "gold": 268740,
+            "wood": 135,
+            "ore": 135,
+            "gems": 112
+          },
+          "requires": [
+            "dwellingUp2Lvl7"
+          ],
+          "upgrades": "dwellingUp2Lvl7",
+          "mode": "normal"
+        }
+      },
+      "structures": {
+        "dwellingUp3Lvl1": {
+          "animation": "town-screen/castle/TBCSUP2_0.def",
+          "x": 304,
+          "y": 51,
+          "border": "town-screen/castle/borders/TOCSPIK2U.png",
+          "area": "town-screen/castle/areas/TZCSPIK2U.png",
+          "z": -3
+        },
+        "dwellingUp3Lvl2": {
+          "animation": "town-screen/castle/TBCSUP2_1",
+          "x": 360,
+          "y": 102,
+          "border": "town-screen/castle/borders/TOCSCRS2U.png",
+          "area": "town-screen/castle/areas/TZCSCRS2U.png",
+          "z": 2
+        },
+        "dwellingUp3Lvl3": {
+          "animation": "town-screen/castle/TBCSUP2_2",
+          "x": 76,
+          "y": 1,
+          "border": "town-screen/castle/borders/TOCSGR2NU.png",
+          "area": "town-screen/castle/areas/TZCSGR2NU.png",
+          "z": -2
+        },
+        "dwellingUp3Lvl4": {
+          "animation": "town-screen/castle/TBCSUP2_3",
+          "x": 176,
+          "y": 72,
+          "border": "town-screen/castle/borders/TOCSSWD2U.png",
+          "area": "town-screen/castle/areas/TZCSSWD2U.png",
+          "z": 1
+        },
+        "dwellingUp3Lvl5": {
+          "animation": "town-screen/castle/TBCSUP2_4",
+          "x": 563,
+          "y": 149,
+          "z": 5,
+          "border": "town-screen/castle/borders/TOCSMON2U.png",
+          "area": "town-screen/castle/areas/TZCSMON2U.png"
+        },
+        "dwellingUp3Lvl6": {
+          "animation": "town-screen/castle/TBCSUP2_5",
+          "x": 160,
+          "y": 184,
+          "z": -1,
+          "border": "town-screen/castle/borders/TOCSCAV2U.png",
+          "area": "town-screen/castle/areas/TZCSCAV2U.png"
+        },
+        "dwellingUp3Lvl7": {
+          "animation": "town-screen/castle/TBCSUP2_6",
+          "x": 303,
+          "y": 0,
+          "z": -5,
+          "border": "town-screen/castle/borders/TOCSANG2U.png",
+          "area": "town-screen/castle/areas/TZCSANG2U.png"
+        }
+      }
+    }
+  }
+}

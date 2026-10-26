@@ -1,0 +1,414 @@
+{
+  "core:inferno": {
+    "town": {
+      "creatures": [
+        [
+          "core:imp",
+          "core:familiar",
+          "dragon-citadel:dcAshImp"
+        ],
+        [
+          "core:gog",
+          "core:magog",
+          "dragon-citadel:dcAbyssMagog"
+        ],
+        [
+          "core:hellHound",
+          "core:cerberus",
+          "dragon-citadel:dcHellCerberus"
+        ],
+        [
+          "core:demon",
+          "core:hornedDemon",
+          "dragon-citadel:dcIronHornDemon"
+        ],
+        [
+          "core:pitFiend",
+          "core:pitLord",
+          "dragon-citadel:dcAshLord"
+        ],
+        [
+          "core:efreet",
+          "core:efreetSultan",
+          "dragon-citadel:dcCrownedEfreet"
+        ],
+        [
+          "core:devil",
+          "core:archDevil",
+          "dragon-citadel:dcAbyssPrince"
+        ]
+      ],
+      "hallSlots": [
+        [
+          [
+            "villageHall",
+            "townHall",
+            "cityHall",
+            "capitol"
+          ],
+          [
+            "fort",
+            "citadel",
+            "castle"
+          ],
+          [
+            "tavern"
+          ],
+          [
+            "blacksmith"
+          ]
+        ],
+        [
+          [
+            "marketplace",
+            "resourceSilo"
+          ],
+          [
+            "mageGuild1",
+            "mageGuild2",
+            "mageGuild3",
+            "mageGuild4",
+            "mageGuild5"
+          ],
+          [
+            "special4"
+          ],
+          [
+            "special2"
+          ]
+        ],
+        [
+          [
+            "special3"
+          ],
+          [
+            "horde1",
+            "horde1Upgr"
+          ],
+          [
+            "horde2",
+            "horde2Upgr"
+          ]
+        ],
+        [
+          [
+            "dwellingLvl1",
+            "dwellingUpLvl1",
+            "dwellingUp2Lvl1"
+          ],
+          [
+            "dwellingLvl2",
+            "dwellingUpLvl2",
+            "dwellingUp2Lvl2"
+          ],
+          [
+            "dwellingLvl3",
+            "dwellingUpLvl3",
+            "dwellingUp2Lvl3"
+          ],
+          [
+            "dwellingLvl4",
+            "dwellingUpLvl4",
+            "dwellingUp2Lvl4"
+          ]
+        ],
+        [
+          [
+            "dwellingLvl5",
+            "dwellingUpLvl5",
+            "dwellingUp2Lvl5"
+          ],
+          [
+            "dwellingLvl6",
+            "dwellingUpLvl6",
+            "dwellingUp2Lvl6"
+          ],
+          [
+            "dwellingLvl7",
+            "dwellingUpLvl7",
+            "dwellingUp2Lvl7"
+          ]
+        ]
+      ],
+      "buildings": {
+        "dwellingUp2Lvl1": {
+          "name": "Gniazdo Popiolu",
+          "description": "Recruits Chochliki Popiolu, the third form. Growth is unchanged.",
+          "upgrades": "dwellingUpLvl1",
+          "requires": [
+            "dwellingUpLvl1"
+          ],
+          "cost": {
+            "gold": 3500,
+            "wood": 10,
+            "ore": 10
+          },
+          "mode": "normal"
+        },
+        "dwellingUp2Lvl2": {
+          "name": "Piec Otchlani",
+          "description": "Recruits Magogi Otchlani, the third form. Growth is unchanged.",
+          "upgrades": "dwellingUpLvl2",
+          "requires": [
+            "dwellingUpLvl2"
+          ],
+          "cost": {
+            "gold": 4500,
+            "wood": 10,
+            "ore": 15,
+            "mercury": 3
+          },
+          "mode": "normal"
+        },
+        "dwellingUp2Lvl3": {
+          "name": "Piekielne Kojce",
+          "description": "Recruits Cerbery Piekielne, the third form. Growth is unchanged.",
+          "upgrades": "dwellingUpLvl3",
+          "requires": [
+            "dwellingUpLvl3"
+          ],
+          "cost": {
+            "gold": 6500,
+            "wood": 15,
+            "ore": 20,
+            "mercury": 5
+          },
+          "mode": "normal"
+        },
+        "dwellingUp2Lvl4": {
+          "name": "Kuznia Zelaznego Rogu",
+          "description": "Recruits Demony Zelaznego Rogu, the third form. Growth is unchanged.",
+          "upgrades": "dwellingUpLvl4",
+          "requires": [
+            "dwellingUpLvl4"
+          ],
+          "cost": {
+            "gold": 8500,
+            "wood": 15,
+            "ore": 20,
+            "mercury": 8
+          },
+          "mode": "normal"
+        },
+        "dwellingUp2Lvl5": {
+          "name": "Otchlan Wladcow Popiolu",
+          "description": "Recruits Wladcy Popiolu, the third form. Growth is unchanged.",
+          "upgrades": "dwellingUpLvl5",
+          "requires": [
+            "dwellingUpLvl5"
+          ],
+          "cost": {
+            "gold": 14000,
+            "wood": 15,
+            "ore": 15,
+            "mercury": 10
+          },
+          "mode": "normal"
+        },
+        "dwellingUp2Lvl6": {
+          "name": "Palac Koronowanych Ifrytow",
+          "description": "Recruits Koronowani Ifryci, the third form. Growth is unchanged.",
+          "upgrades": "dwellingUpLvl6",
+          "requires": [
+            "dwellingUpLvl6"
+          ],
+          "cost": {
+            "gold": 22000,
+            "wood": 20,
+            "ore": 20,
+            "sulfur": 15
+          },
+          "mode": "normal"
+        },
+        "dwellingUp2Lvl7": {
+          "name": "Tron Ksiazeca Otchlani",
+          "description": "Recruits Ksiazeta Otchlani, the third form. Growth is unchanged.",
+          "upgrades": "dwellingUpLvl7",
+          "requires": [
+            "dwellingUpLvl7"
+          ],
+          "cost": {
+            "gold": 60000,
+            "wood": 30,
+            "ore": 30,
+            "mercury": 25
+          },
+          "mode": "normal"
+        }
+      },
+      "structures": {
+        "dwellingUp2Lvl1": {
+          "animation": "fourth-forms/buildings/inferno/dcAshImp",
+          "x": 614,
+          "y": 221,
+          "z": -1,
+          "area": "fourth-forms/buildings/inferno/dcAshImp-area.png",
+          "border": "fourth-forms/buildings/inferno/dcAshImp-border.png"
+        },
+        "dwellingUp2Lvl2": {
+          "animation": "fourth-forms/buildings/inferno/dcAbyssMagog",
+          "x": 187,
+          "y": 212,
+          "z": 6,
+          "area": "fourth-forms/buildings/inferno/dcAbyssMagog-area.png",
+          "border": "fourth-forms/buildings/inferno/dcAbyssMagog-border.png"
+        },
+        "dwellingUp2Lvl3": {
+          "animation": "fourth-forms/buildings/inferno/dcHellCerberus",
+          "x": 9,
+          "y": 273,
+          "z": 0,
+          "area": "fourth-forms/buildings/inferno/dcHellCerberus-area.png",
+          "border": "fourth-forms/buildings/inferno/dcHellCerberus-border.png"
+        },
+        "dwellingUp2Lvl4": {
+          "animation": "fourth-forms/buildings/inferno/dcIronHornDemon",
+          "x": 412,
+          "y": 197,
+          "z": 3,
+          "area": "fourth-forms/buildings/inferno/dcIronHornDemon-area.png",
+          "border": "fourth-forms/buildings/inferno/dcIronHornDemon-border.png"
+        },
+        "dwellingUp2Lvl5": {
+          "animation": "fourth-forms/buildings/inferno/dcAshLord",
+          "x": 359,
+          "y": 244,
+          "z": 4,
+          "area": "fourth-forms/buildings/inferno/dcAshLord-area.png",
+          "border": "fourth-forms/buildings/inferno/dcAshLord-border.png"
+        },
+        "dwellingUp2Lvl6": {
+          "animation": "fourth-forms/buildings/inferno/dcCrownedEfreet",
+          "x": 220,
+          "y": 282,
+          "z": 7,
+          "area": "fourth-forms/buildings/inferno/dcCrownedEfreet-area.png",
+          "border": "fourth-forms/buildings/inferno/dcCrownedEfreet-border.png"
+        },
+        "dwellingUp2Lvl7": {
+          "animation": "fourth-forms/buildings/inferno/dcAbyssPrince",
+          "x": 420,
+          "y": 108,
+          "z": -8,
+          "area": "fourth-forms/buildings/inferno/dcAbyssPrince-area.png",
+          "border": "fourth-forms/buildings/inferno/dcAbyssPrince-border.png"
+        },
+        "special2": {
+          "z": -9
+        },
+        "dwellingLvl7": {
+          "z": -8
+        },
+        "dwellingUpLvl7": {
+          "z": -8
+        },
+        "castle": {
+          "z": -7
+        },
+        "citadel": {
+          "z": -7
+        },
+        "fort": {
+          "z": -7
+        },
+        "grail": {
+          "z": -6
+        },
+        "special4": {
+          "z": -5
+        },
+        "special3": {
+          "z": -4
+        },
+        "mageGuild1": {
+          "z": -3
+        },
+        "mageGuild2": {
+          "z": -3
+        },
+        "mageGuild3": {
+          "z": -3
+        },
+        "mageGuild4": {
+          "z": -3
+        },
+        "mageGuild5": {
+          "z": -3
+        },
+        "capitol": {
+          "z": -2
+        },
+        "cityHall": {
+          "z": -2
+        },
+        "townHall": {
+          "z": -2
+        },
+        "villageHall": {
+          "z": -2
+        },
+        "dwellingLvl1": {
+          "z": -1
+        },
+        "dwellingUpLvl1": {
+          "z": -1
+        },
+        "horde1": {
+          "z": -1
+        },
+        "horde1Upgr": {
+          "z": -1
+        },
+        "dwellingLvl3": {
+          "z": 0
+        },
+        "dwellingUpLvl3": {
+          "z": 0
+        },
+        "horde2": {
+          "z": 0
+        },
+        "horde2Upgr": {
+          "z": 0
+        },
+        "tavern": {
+          "z": 1
+        },
+        "blacksmith": {
+          "z": 2
+        },
+        "dwellingLvl4": {
+          "z": 3
+        },
+        "dwellingUpLvl4": {
+          "z": 3
+        },
+        "dwellingLvl5": {
+          "z": 4
+        },
+        "dwellingUpLvl5": {
+          "z": 4
+        },
+        "marketplace": {
+          "z": 5
+        },
+        "dwellingLvl2": {
+          "z": 6
+        },
+        "dwellingUpLvl2": {
+          "z": 6
+        },
+        "dwellingLvl6": {
+          "z": 7
+        },
+        "dwellingUpLvl6": {
+          "z": 7
+        },
+        "resourceSilo": {
+          "z": 8
+        }
+      },
+      "buildingsIcons": "town-screen/inferno/ALTHALLINFR.DEF"
+    }
+  }
+}

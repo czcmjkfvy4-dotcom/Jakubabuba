@@ -1,0 +1,70 @@
+{
+  "chapters": [
+    {
+      "chapter": 1,
+      "mapSHA256": "b6eb5e7bdf6d886eaaf65d5e3b9a47c4e88ed40baf767a973ee8a82685b2b793",
+      "canonicalObjectNames": 62,
+      "neutralOwnersOmitted": 3,
+      "emptySingleHeroPoolRemoved": true,
+      "conditionReferencesValid": true
+    },
+    {
+      "chapter": 2,
+      "mapSHA256": "7223e9878f444f8576b52e49c6736955c55532ab5e50c13e0e4b6b53805ec0a3",
+      "canonicalObjectNames": 56,
+      "neutralOwnersOmitted": 3,
+      "emptySingleHeroPoolRemoved": true,
+      "conditionReferencesValid": true
+    },
+    {
+      "chapter": 3,
+      "mapSHA256": "a11cb1056054b7a590e34e5b29c968ed28463201ddfbc7a0a98ddf7107eaa2ed",
+      "canonicalObjectNames": 63,
+      "neutralOwnersOmitted": 3,
+      "emptySingleHeroPoolRemoved": true,
+      "conditionReferencesValid": true
+    },
+    {
+      "chapter": 4,
+      "mapSHA256": "51724c323bfa03102c6a48f5321f32ba25b4f0fe451ab69e108a4b7bf99a9c3e",
+      "canonicalObjectNames": 59,
+      "neutralOwnersOmitted": 3,
+      "emptySingleHeroPoolRemoved": true,
+      "conditionReferencesValid": true
+    },
+    {
+      "chapter": 5,
+      "mapSHA256": "9f568d20ddf7bd4132910d40231e85e0037423374de087b5d2a6d20d21135c1f",
+      "canonicalObjectNames": 68,
+      "neutralOwnersOmitted": 3,
+      "emptySingleHeroPoolRemoved": true,
+      "conditionReferencesValid": true
+    },
+    {
+      "chapter": 6,
+      "mapSHA256": "83b622ac4b59ed40d2d886d734fd20f3ff569dfa920ad59eda1545c2bf097432",
+      "canonicalObjectNames": 61,
+      "neutralOwnersOmitted": 3,
+      "emptySingleHeroPoolRemoved": true,
+      "conditionReferencesValid": true
+    },
+    {
+      "chapter": 7,
+      "mapSHA256": "81d71adc37c3aa6f5f04f1aa035b9e1d4362592c7ca1e551a1a78ebb8d0c6b25",
+      "canonicalObjectNames": 53,
+      "neutralOwnersOmitted": 3,
+      "emptySingleHeroPoolRemoved": true,
+      "conditionReferencesValid": true
+    },
+    {
+      "chapter": 8,
+      "mapSHA256": "192243a4cec70e1d8d0926455d65371437611ef3578a26545aef1e7902f837bb",
+      "canonicalObjectNames": 52,
+      "neutralOwnersOmitted": 3,
+      "emptySingleHeroPoolRemoved": true,
+      "conditionReferencesValid": true
+    }
+  ],
+  "embeddedMapsMatch": true,
+  "historicalCrashRootCauseProven": false
+}

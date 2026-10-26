@@ -1,0 +1,4871 @@
+{
+  "dcCrownGuard": {
+    "name": {
+      "singular": "Strażnik Korony",
+      "plural": "Strażnicy Korony"
+    },
+    "advMapAmount": {
+      "max": 25,
+      "min": 20
+    },
+    "faction": "core:castle",
+    "attack": 7,
+    "defense": 8,
+    "damage": {
+      "max": 4,
+      "min": 3
+    },
+    "growth": 14,
+    "hitPoints": 12,
+    "level": 1,
+    "speed": 5,
+    "cost": {
+      "gold": 115
+    },
+    "fightValue": 115,
+    "aiValue": 115,
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcCrownGuard",
+      "iconSmall": "fourth-forms/creatures/dcCrownGuard/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcCrownGuard/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 0.9,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "mapAttackFromRight": "AvWattak.def:0:2",
+      "mapAttackFromLeft": "AvWattak.def:0:3",
+      "map": "AVWpikx0"
+    },
+    "doubleWide": false,
+    "sound": {
+      "attack": "HALBATTK.wav",
+      "defend": "HALBDFND.wav",
+      "killed": "HALBKILL.wav",
+      "move": "HALBMOVE.wav",
+      "wince": "HALBWNCE.wav"
+    },
+    "abilities": {
+      "inherited6": {
+        "type": "CHARGE_IMMUNITY"
+      },
+      "inherited7": {
+        "type": "LIVING"
+      }
+    },
+    "shots": 0,
+    "horde": 0,
+    "upgrades": [],
+    "description": "Third form of Halberdier. Growth is unchanged."
+  },
+  "dcRoyalCrossbowman": {
+    "name": {
+      "singular": "Królewski Kusznik",
+      "plural": "Królewscy Kusznicy"
+    },
+    "advMapAmount": {
+      "max": 22,
+      "min": 16
+    },
+    "faction": "core:castle",
+    "attack": 8,
+    "defense": 4,
+    "damage": {
+      "max": 4,
+      "min": 3
+    },
+    "growth": 9,
+    "hitPoints": 12,
+    "level": 2,
+    "shots": 24,
+    "speed": 6,
+    "aiValue": 184,
+    "fightValue": 115,
+    "cost": {
+      "gold": 270
+    },
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcRoyalCrossbowman",
+      "iconSmall": "fourth-forms/creatures/dcRoyalCrossbowman/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcRoyalCrossbowman/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 0.9,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "missile": {
+        "projectile": "PLCBOWX.DEF",
+        "attackClimaxFrame": 4,
+        "offset": {
+          "upperX": 32,
+          "upperY": -69,
+          "middleX": 34,
+          "middleY": -54,
+          "lowerX": 33,
+          "lowerY": -33
+        },
+        "frameAngles": [
+          90,
+          72,
+          45,
+          27,
+          0,
+          -27,
+          -45,
+          -72,
+          -90,
+          0,
+          0,
+          0
+        ]
+      },
+      "mapAttackFromRight": "AvWattak.def:0:6",
+      "mapAttackFromLeft": "AvWattak.def:0:7",
+      "map": "AvWHCrs"
+    },
+    "doubleWide": false,
+    "sound": {
+      "attack": "HCRSATTK.wav",
+      "defend": "HCRSDFND.wav",
+      "killed": "HCRSKILL.wav",
+      "move": "HCRSMOVE.wav",
+      "shoot": "HCRSSHOT.wav",
+      "wince": "HCRSWNCE.wav"
+    },
+    "abilities": {
+      "inherited7": {
+        "description": "{Shoots Twice}\nThis unit can shoot twice.",
+        "effectRange": "ONLY_DISTANCE_FIGHT",
+        "type": "ADDITIONAL_ATTACK",
+        "val": 1
+      },
+      "inherited8": {
+        "type": "SHOOTER"
+      },
+      "inherited9": {
+        "type": "LIVING"
+      }
+    },
+    "horde": 0,
+    "upgrades": [],
+    "description": "Third form of Marksman. Growth is unchanged."
+  },
+  "dcCrownGriffin": {
+    "name": {
+      "singular": "Gryf Korony",
+      "plural": "Gryfy Korony"
+    },
+    "advMapAmount": {
+      "max": 17,
+      "min": 12
+    },
+    "faction": "core:castle",
+    "attack": 10,
+    "defense": 12,
+    "cost": {
+      "gold": 520
+    },
+    "damage": {
+      "max": 7,
+      "min": 4
+    },
+    "growth": 7,
+    "hitPoints": 30,
+    "speed": 9,
+    "horde": 3,
+    "level": 3,
+    "fightValue": 364,
+    "aiValue": 448,
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcCrownGriffin",
+      "iconSmall": "fourth-forms/creatures/dcCrownGriffin/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcCrownGriffin/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 0.9,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "mapAttackFromRight": "AvWattak.def:0:10",
+      "mapAttackFromLeft": "AvWattak.def:0:11",
+      "map": "AVWgrix0"
+    },
+    "doubleWide": true,
+    "sound": {
+      "attack": "RGRFATTK.wav",
+      "defend": "RGRFDFND.wav",
+      "killed": "RGRFKILL.wav",
+      "move": "RGRFMOVE.wav",
+      "wince": "RGRFWNCE.wav"
+    },
+    "abilities": {
+      "inherited6": {
+        "type": "FLYING"
+      },
+      "inherited7": {
+        "type": "UNLIMITED_RETALIATIONS"
+      },
+      "inherited8": {
+        "type": "LIVING"
+      }
+    },
+    "shots": 0,
+    "upgrades": [],
+    "description": "Third form of Royal Griffin. Growth is unchanged."
+  },
+  "dcPaladin": {
+    "name": {
+      "singular": "Paladyn",
+      "plural": "Paladyni"
+    },
+    "advMapAmount": {
+      "max": 14,
+      "min": 10
+    },
+    "faction": "core:castle",
+    "attack": 15,
+    "defense": 13,
+    "damage": {
+      "max": 12,
+      "min": 9
+    },
+    "growth": 4,
+    "hitPoints": 40,
+    "level": 4,
+    "speed": 6,
+    "cost": {
+      "gold": 1040
+    },
+    "fightValue": 588,
+    "aiValue": 588,
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcPaladin",
+      "iconSmall": "fourth-forms/creatures/dcPaladin/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcPaladin/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "mapAttackFromRight": "AvWattak.def:0:14",
+      "mapAttackFromLeft": "AvWattak.def:0:15",
+      "map": "AVWswrx0"
+    },
+    "doubleWide": false,
+    "sound": {
+      "attack": "CRUSATTK.wav",
+      "defend": "CRUSDFND.wav",
+      "killed": "CRUSKILL.wav",
+      "move": "CRUSMOVE.wav",
+      "wince": "CRUSWNCE.wav"
+    },
+    "abilities": {
+      "inherited6": {
+        "type": "ADDITIONAL_ATTACK",
+        "val": 1
+      },
+      "inherited7": {
+        "type": "LIVING"
+      }
+    },
+    "shots": 0,
+    "horde": 0,
+    "upgrades": [],
+    "description": "Third form of Crusader. Growth is unchanged."
+  },
+  "dcHierophant": {
+    "name": {
+      "singular": "Hierofant",
+      "plural": "Hierofanci"
+    },
+    "advMapAmount": {
+      "max": 10,
+      "min": 8
+    },
+    "faction": "core:castle",
+    "attack": 13,
+    "defense": 12,
+    "damage": {
+      "max": 13,
+      "min": 11
+    },
+    "growth": 3,
+    "hitPoints": 35,
+    "level": 5,
+    "shots": 24,
+    "speed": 7,
+    "cost": {
+      "gold": 1400
+    },
+    "fightValue": 500,
+    "aiValue": 750,
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcHierophant",
+      "iconSmall": "fourth-forms/creatures/dcHierophant/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcHierophant/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "missile": {
+        "projectile": "CPRZEAX.DEF",
+        "attackClimaxFrame": 4,
+        "offset": {
+          "upperX": 33,
+          "upperY": -72,
+          "middleX": 30,
+          "middleY": -56,
+          "lowerX": 27,
+          "lowerY": -29
+        },
+        "frameAngles": [
+          90,
+          72,
+          45,
+          27,
+          0,
+          -27,
+          -45,
+          -72,
+          -90,
+          0,
+          0,
+          0
+        ]
+      },
+      "mapAttackFromRight": "AvWattak.def:0:18",
+      "mapAttackFromLeft": "AvWattak.def:0:19",
+      "map": "AVWmonx0"
+    },
+    "doubleWide": false,
+    "sound": {
+      "attack": "ZELTATTK.wav",
+      "defend": "ZELTDFND.wav",
+      "killed": "ZELTKILL.wav",
+      "move": "ZELTMOVE.wav",
+      "shoot": "ZELTSHOT.wav",
+      "wince": "ZELTWNCE.wav"
+    },
+    "abilities": {
+      "inherited7": {
+        "type": "NO_MELEE_PENALTY"
+      },
+      "inherited8": {
+        "type": "SHOOTER"
+      },
+      "inherited9": {
+        "type": "LIVING"
+      }
+    },
+    "horde": 0,
+    "upgrades": [],
+    "description": "Third form of Zealot. Growth is unchanged."
+  },
+  "dcRoyalBannerKnight": {
+    "name": {
+      "singular": "Rycerz Chorągwi Królewskiej",
+      "plural": "Rycerze Choragwi Krolewskiej"
+    },
+    "advMapAmount": {
+      "max": 8,
+      "min": 5
+    },
+    "faction": "core:castle",
+    "attack": 19,
+    "defense": 17,
+    "damage": {
+      "max": 29,
+      "min": 23
+    },
+    "growth": 2,
+    "hitPoints": 112,
+    "level": 6,
+    "speed": 9,
+    "cost": {
+      "gold": 4480
+    },
+    "fightValue": 1800,
+    "aiValue": 2100,
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcRoyalBannerKnight",
+      "iconSmall": "fourth-forms/creatures/dcRoyalBannerKnight/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcRoyalBannerKnight/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "mapAttackFromRight": "AvWattak.def:0:22",
+      "mapAttackFromLeft": "AvWattak.def:0:23",
+      "map": "AVWcvlx0"
+    },
+    "doubleWide": true,
+    "sound": {
+      "attack": "CHMPATTK.wav",
+      "defend": "CHMPDFND.wav",
+      "killed": "CHMPKILL.wav",
+      "move": "CHMPMOVE.wav",
+      "wince": "CHMPWNCE.wav"
+    },
+    "abilities": {
+      "inherited6": {
+        "type": "JOUSTING",
+        "val": 5
+      },
+      "inherited7": {
+        "type": "LIVING"
+      }
+    },
+    "shots": 0,
+    "horde": 0,
+    "upgrades": [],
+    "description": "Third form of Champion. Growth is unchanged."
+  },
+  "dcSeraph": {
+    "name": {
+      "singular": "Serafin",
+      "plural": "Serafini"
+    },
+    "faction": "core:castle",
+    "level": 7,
+    "cost": {
+      "gems": 14,
+      "gold": 22395
+    },
+    "doubleWide": true,
+    "speed": 18,
+    "hitPoints": 288,
+    "attack": 32,
+    "defense": 32,
+    "damage": {
+      "max": 55,
+      "min": 55
+    },
+    "fightValue": 6033,
+    "aiValue": 8776,
+    "advMapAmount": {
+      "min": 2,
+      "max": 5
+    },
+    "growth": 1,
+    "hasDoubleWeek": false,
+    "abilities": {
+      "inherited6": {
+        "type": "KING",
+        "val": 2
+      },
+      "inherited7": {
+        "type": "FLYING"
+      },
+      "inherited8": {
+        "subtype": "core:archDevil",
+        "type": "HATE",
+        "val": 50
+      },
+      "inherited9": {
+        "subtype": "core:devil",
+        "type": "HATE",
+        "val": 50
+      },
+      "inherited10": {
+        "description": "{Increases allies morale}\nAngels and Archangels increase allies Morale by one",
+        "propagator": "ARMY",
+        "stacking": "Angels",
+        "type": "MORALE",
+        "val": 1
+      },
+      "inherited12": {
+        "subtype": "core:resurrection",
+        "type": "SPELLCASTER",
+        "val": 3
+      },
+      "inherited14": {
+        "type": "LIVING"
+      },
+      "threeResurrections": {
+        "type": "CASTS",
+        "val": 3
+      }
+    },
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcSeraph",
+      "iconSmall": "fourth-forms/creatures/dcSeraph/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcSeraph/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "mapAttackFromRight": "AvWattak.def:0:26",
+      "mapAttackFromLeft": "AvWattak.def:0:27",
+      "map": "AvWArch"
+    },
+    "sound": {
+      "attack": "AAGLATTK.wav",
+      "defend": "AAGLDFND.wav",
+      "killed": "AAGLKILL.wav",
+      "move": "AAGLMOVE.wav",
+      "wince": "AAGLWNCE.wav"
+    },
+    "shots": 0,
+    "horde": 0,
+    "upgrades": [],
+    "description": "Third form of Archangel. Growth is unchanged."
+  },
+  "dcCentaurWarlord": {
+    "name": {
+      "singular": "Wódz Centaurów",
+      "plural": "Wodzowie Centaurow"
+    },
+    "advMapAmount": {
+      "max": 25,
+      "min": 20
+    },
+    "faction": "core:rampart",
+    "attack": 9,
+    "defense": 4,
+    "damage": {
+      "max": 4,
+      "min": 3
+    },
+    "growth": 14,
+    "hitPoints": 12,
+    "level": 1,
+    "speed": 8,
+    "cost": {
+      "gold": 135
+    },
+    "fightValue": 115,
+    "aiValue": 138,
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcCentaurWarlord",
+      "iconSmall": "fourth-forms/creatures/dcCentaurWarlord/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcCentaurWarlord/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "mapAttackFromRight": "AvWattak.def:0:30",
+      "mapAttackFromLeft": "AvWattak.def:0:31",
+      "map": "AVWcenx0"
+    },
+    "doubleWide": true,
+    "sound": {
+      "attack": "ECNTATTK.wav",
+      "defend": "ECNTDFND.wav",
+      "killed": "ECNTKILL.wav",
+      "move": "ECNTMOVE.wav",
+      "wince": "ECNTWNCE.wav"
+    },
+    "abilities": {
+      "inherited6": {
+        "type": "LIVING"
+      }
+    },
+    "shots": 0,
+    "horde": 0,
+    "upgrades": [],
+    "description": "Third form of Centaur Captain. Growth is unchanged."
+  },
+  "dcRuneDwarf": {
+    "name": {
+      "singular": "Runiczny Krasnolud",
+      "plural": "Runiczni Krasnoludowie"
+    },
+    "advMapAmount": {
+      "max": 22,
+      "min": 16
+    },
+    "faction": "core:rampart",
+    "attack": 8,
+    "defense": 10,
+    "damage": {
+      "max": 5,
+      "min": 3
+    },
+    "growth": 8,
+    "hitPoints": 24,
+    "horde": 4,
+    "level": 2,
+    "speed": 5,
+    "cost": {
+      "gold": 270
+    },
+    "fightValue": 209,
+    "aiValue": 209,
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcRuneDwarf",
+      "iconSmall": "fourth-forms/creatures/dcRuneDwarf/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcRuneDwarf/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "mapAttackFromRight": "AvWattak.def:0:34",
+      "mapAttackFromLeft": "AvWattak.def:0:35",
+      "map": "AVWdwrx0"
+    },
+    "doubleWide": false,
+    "sound": {
+      "attack": "BDRFATTK.wav",
+      "defend": "BDRFDFND.wav",
+      "killed": "BDRFKILL.wav",
+      "move": "BDRFMOVE.wav",
+      "wince": "BDRFWNCE.wav"
+    },
+    "abilities": {
+      "inherited6": {
+        "type": "MAGIC_RESISTANCE",
+        "val": 40
+      },
+      "inherited7": {
+        "type": "LIVING"
+      }
+    },
+    "shots": 0,
+    "upgrades": [],
+    "description": "Third form of Battle Dwarf. Growth is unchanged."
+  },
+  "dcMoonElf": {
+    "name": {
+      "singular": "Elf Księżycowy",
+      "plural": "Elfy Ksiezycowe"
+    },
+    "advMapAmount": {
+      "max": 17,
+      "min": 12
+    },
+    "faction": "core:rampart",
+    "attack": 11,
+    "defense": 6,
+    "damage": {
+      "max": 6,
+      "min": 4
+    },
+    "growth": 7,
+    "hitPoints": 17,
+    "level": 3,
+    "shots": 24,
+    "speed": 7,
+    "cost": {
+      "gold": 490
+    },
+    "fightValue": 195,
+    "aiValue": 331,
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcMoonElf",
+      "iconSmall": "fourth-forms/creatures/dcMoonElf/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcMoonElf/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "missile": {
+        "projectile": "PELFX.DEF",
+        "attackClimaxFrame": 4,
+        "offset": {
+          "upperX": 32,
+          "upperY": -77,
+          "middleX": 40,
+          "middleY": -61,
+          "lowerX": 18,
+          "lowerY": -55
+        },
+        "frameAngles": [
+          90,
+          72,
+          45,
+          27,
+          0,
+          -27,
+          -45,
+          -72,
+          -90,
+          0,
+          0,
+          0
+        ]
+      },
+      "mapAttackFromRight": "AvWattak.def:0:38",
+      "mapAttackFromLeft": "AvWattak.def:0:39",
+      "map": "AVWelfx0"
+    },
+    "sound": {
+      "attack": "GELFATTK.wav",
+      "defend": "GELFDFND.wav",
+      "killed": "GELFKILL.wav",
+      "move": "GELFMOVE.wav",
+      "shoot": "GELFSHOT.wav",
+      "wince": "GELFWNCE.wav"
+    },
+    "abilities": {
+      "inherited7": {
+        "description": "{Shoots Twice}\nThis unit can shoot twice.",
+        "effectRange": "ONLY_DISTANCE_FIGHT",
+        "type": "ADDITIONAL_ATTACK",
+        "val": 1
+      },
+      "inherited8": {
+        "type": "SHOOTER"
+      },
+      "inherited9": {
+        "type": "LIVING"
+      }
+    },
+    "horde": 0,
+    "doubleWide": false,
+    "upgrades": [],
+    "description": "Third form of Grand Elf. Growth is unchanged."
+  },
+  "dcAuroraPegasus": {
+    "name": {
+      "singular": "Pegaz Zorzy",
+      "plural": "Pegazy Zorzy"
+    },
+    "advMapAmount": {
+      "max": 14,
+      "min": 10
+    },
+    "faction": "core:rampart",
+    "attack": 12,
+    "defense": 11,
+    "cost": {
+      "gold": 715
+    },
+    "damage": {
+      "max": 11,
+      "min": 6
+    },
+    "growth": 5,
+    "hitPoints": 34,
+    "speed": 12,
+    "level": 4,
+    "fightValue": 418,
+    "aiValue": 532,
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcAuroraPegasus",
+      "iconSmall": "fourth-forms/creatures/dcAuroraPegasus/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcAuroraPegasus/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "mapAttackFromRight": "AvWattak.def:0:42",
+      "mapAttackFromLeft": "AvWattak.def:0:43",
+      "map": "AVWpegx0"
+    },
+    "doubleWide": true,
+    "sound": {
+      "attack": "APEGATTK.wav",
+      "defend": "APEGDFND.wav",
+      "killed": "APEGKILL.wav",
+      "move": "APEGMOVE.wav",
+      "wince": "APEGWNCE.wav"
+    },
+    "abilities": {
+      "inherited6": {
+        "type": "FLYING"
+      },
+      "inherited7": {
+        "type": "CHANGES_SPELL_COST_FOR_ENEMY",
+        "val": 2
+      },
+      "inherited8": {
+        "type": "LIVING"
+      }
+    },
+    "shots": 0,
+    "horde": 0,
+    "upgrades": [],
+    "description": "Third form of Silver Pegasus. Growth is unchanged."
+  },
+  "dcAncientEnt": {
+    "name": {
+      "singular": "Pradawny Ent",
+      "plural": "Pradawne Enty"
+    },
+    "advMapAmount": {
+      "max": 10,
+      "min": 8
+    },
+    "faction": "core:rampart",
+    "attack": 10,
+    "defense": 15,
+    "damage": {
+      "max": 15,
+      "min": 11
+    },
+    "cost": {
+      "gold": 1325
+    },
+    "growth": 3,
+    "horde": 2,
+    "hitPoints": 78,
+    "level": 5,
+    "speed": 4,
+    "fightValue": 765,
+    "aiValue": 803,
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcAncientEnt",
+      "iconSmall": "fourth-forms/creatures/dcAncientEnt/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcAncientEnt/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "mapAttackFromRight": "AvWattak.def:0:46",
+      "mapAttackFromLeft": "AvWattak.def:0:47",
+      "map": "AVWtrex0"
+    },
+    "doubleWide": false,
+    "sound": {
+      "attack": "BTREATTK.wav",
+      "defend": "BTREDFND.wav",
+      "killed": "BTREKILL.wav",
+      "move": "BTREMOVE.wav",
+      "wince": "BTREWNCE.wav"
+    },
+    "abilities": {
+      "inherited6": {
+        "subtype": "core:bind",
+        "type": "SPELL_AFTER_ATTACK",
+        "val": 100
+      },
+      "inherited7": {
+        "type": "LIVING"
+      },
+      "alwaysSlow": {
+        "type": "SPELL_AFTER_ATTACK",
+        "addInfo": [
+          2,
+          0
+        ],
+        "val": 100,
+        "subtype": "core:slow"
+      }
+    },
+    "shots": 0,
+    "upgrades": [],
+    "description": "Third form of Dendroid Soldier. Growth is unchanged."
+  },
+  "dcArmoredUnicorn": {
+    "name": {
+      "singular": "Jednorożec Pancerny",
+      "plural": "Jednorozce Pancerne"
+    },
+    "advMapAmount": {
+      "max": 8,
+      "min": 5
+    },
+    "faction": "core:rampart",
+    "attack": 18,
+    "defense": 15,
+    "damage": {
+      "max": 26,
+      "min": 21
+    },
+    "growth": 2,
+    "hitPoints": 124,
+    "level": 6,
+    "cost": {
+      "gold": 3550
+    },
+    "speed": 9,
+    "fightValue": 1740,
+    "aiValue": 2030,
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcArmoredUnicorn",
+      "iconSmall": "fourth-forms/creatures/dcArmoredUnicorn/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcArmoredUnicorn/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "mapAttackFromRight": "AvWattak.def:0:50",
+      "mapAttackFromLeft": "AvWattak.def:0:51",
+      "map": "AVWunix0"
+    },
+    "doubleWide": true,
+    "sound": {
+      "attack": "WUNCATTK.wav",
+      "defend": "WUNCDFND.wav",
+      "killed": "WUNCKILL.wav",
+      "move": "WUNCMOVE.wav",
+      "shoot": "WUNCSHOT.wav",
+      "wince": "WUNCWNCE.wav"
+    },
+    "abilities": {
+      "inherited6": {
+        "addInfo": null,
+        "subtype": "core:blind",
+        "type": "SPELL_AFTER_ATTACK",
+        "val": 20
+      },
+      "inherited7": {
+        "type": "SPELL_RESISTANCE_AURA",
+        "val": 20
+      },
+      "inherited8": {
+        "type": "LIVING"
+      }
+    },
+    "shots": 0,
+    "horde": 0,
+    "upgrades": [],
+    "description": "Third form of War Unicorn. Growth is unchanged."
+  },
+  "dcEmeraldDragon": {
+    "name": {
+      "singular": "Szmaragdowy Smok",
+      "plural": "Szmaragdowe Smoki"
+    },
+    "faction": "core:rampart",
+    "level": 7,
+    "cost": {
+      "crystal": 9,
+      "gold": 17920
+    },
+    "doubleWide": true,
+    "speed": 16,
+    "hitPoints": 288,
+    "attack": 29,
+    "defense": 29,
+    "damage": {
+      "max": 55,
+      "min": 44
+    },
+    "fightValue": 6220,
+    "aiValue": 8613,
+    "advMapAmount": {
+      "min": 2,
+      "max": 5
+    },
+    "growth": 1,
+    "hasDoubleWeek": false,
+    "abilities": {
+      "inherited6": {
+        "type": "KING"
+      },
+      "inherited7": {
+        "type": "FLYING"
+      },
+      "inherited8": {
+        "type": "DRAGON_NATURE"
+      },
+      "inherited9": {
+        "subtype": "core:boneDragon",
+        "type": "SKELETON_TRANSFORMER_TARGET"
+      },
+      "inherited10": {
+        "type": "LEVEL_SPELL_IMMUNITY",
+        "val": 4
+      },
+      "inherited11": {
+        "type": "TWO_HEX_ATTACK_BREATH"
+      },
+      "inherited12": {
+        "type": "LIVING"
+      }
+    },
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcEmeraldDragon",
+      "iconSmall": "fourth-forms/creatures/dcEmeraldDragon/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcEmeraldDragon/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "mapAttackFromRight": "AvWattak.def:0:54",
+      "mapAttackFromLeft": "AvWattak.def:0:55",
+      "map": "AVWdrax0"
+    },
+    "sound": {
+      "attack": "GODRATTK.wav",
+      "defend": "GODRDFND.wav",
+      "killed": "GODRKILL.wav",
+      "move": "GODRMOVE.wav",
+      "wince": "GODRWNCE.wav"
+    },
+    "shots": 0,
+    "horde": 0,
+    "upgrades": [],
+    "description": "Third form of Gold Dragon. Growth is unchanged."
+  },
+  "dcMechanicGremlin": {
+    "name": {
+      "singular": "Gremlin Mechanik",
+      "plural": "Gremliny Mechanicy"
+    },
+    "advMapAmount": {
+      "max": 25,
+      "min": 20
+    },
+    "faction": "core:tower",
+    "attack": 6,
+    "defense": 5,
+    "damage": {
+      "max": 3,
+      "min": 2
+    },
+    "cost": {
+      "gold": 60
+    },
+    "growth": 16,
+    "hitPoints": 5,
+    "level": 1,
+    "shots": 8,
+    "speed": 5,
+    "fightValue": 55,
+    "aiValue": 66,
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcMechanicGremlin",
+      "iconSmall": "fourth-forms/creatures/dcMechanicGremlin/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcMechanicGremlin/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "missile": {
+        "attackClimaxFrame": 4,
+        "frameAngles": [
+          90,
+          72,
+          45,
+          27,
+          0,
+          -27,
+          -45,
+          -72,
+          -90,
+          0,
+          0,
+          0
+        ],
+        "offset": {
+          "lowerX": 9,
+          "lowerY": 9,
+          "middleX": 46,
+          "middleY": -17,
+          "upperX": 55,
+          "upperY": -52
+        },
+        "projectile": "CPRGRE.DEF"
+      },
+      "mapAttackFromRight": "AvWattak.def:0:58",
+      "mapAttackFromLeft": "AvWattak.def:0:59",
+      "map": "AVWgrex0"
+    },
+    "doubleWide": false,
+    "sound": {
+      "attack": "MGRMATTK.wav",
+      "defend": "MGRMDFND.wav",
+      "killed": "MGRMKILL.wav",
+      "move": "MGRMMOVE.wav",
+      "shoot": "MGRMSHOT.wav",
+      "wince": "MGRMWNCE.wav"
+    },
+    "abilities": {
+      "inherited7": {
+        "type": "SHOOTER"
+      },
+      "inherited8": {
+        "type": "LIVING"
+      }
+    },
+    "horde": 0,
+    "upgrades": [],
+    "description": "Third form of Master Gremlin. Growth is unchanged."
+  },
+  "dcIcewingGargoyle": {
+    "name": {
+      "singular": "Gargulec Lodowych Skrzydeł",
+      "plural": "Gargulce Lodowych Skrzydel"
+    },
+    "advMapAmount": {
+      "max": 22,
+      "min": 16
+    },
+    "faction": "core:tower",
+    "attack": 8,
+    "defense": 10,
+    "damage": {
+      "max": 4,
+      "min": 3
+    },
+    "cost": {
+      "gold": 290
+    },
+    "growth": 9,
+    "hitPoints": 20,
+    "horde": 4,
+    "level": 2,
+    "speed": 9,
+    "fightValue": 155,
+    "aiValue": 201,
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcIcewingGargoyle",
+      "iconSmall": "fourth-forms/creatures/dcIcewingGargoyle/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcIcewingGargoyle/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "mapAttackFromRight": "AvWattak.def:0:62",
+      "mapAttackFromLeft": "AvWattak.def:0:63",
+      "map": "AVWgarx0"
+    },
+    "doubleWide": false,
+    "sound": {
+      "attack": "OGRGATTK.wav",
+      "defend": "OGRGDFND.wav",
+      "killed": "OGRGKILL.wav",
+      "move": "OGRGMOVE.wav",
+      "wince": "OGRGWNCE.wav"
+    },
+    "abilities": {
+      "inherited6": {
+        "type": "FLYING"
+      },
+      "inherited7": {
+        "type": "GARGOYLE"
+      }
+    },
+    "shots": 0,
+    "upgrades": [],
+    "description": "Third form of Obsidian Gargoyle. Growth is unchanged."
+  },
+  "dcAdamantGolem": {
+    "name": {
+      "singular": "Adamantowy Golem",
+      "plural": "Adamantowe Golemy"
+    },
+    "faction": "core:tower",
+    "level": 3,
+    "cost": {
+      "gold": 325
+    },
+    "speed": 3,
+    "hitPoints": 36,
+    "attack": 8,
+    "defense": 13,
+    "damage": {
+      "max": 6,
+      "min": 5
+    },
+    "growth": 6,
+    "aiValue": 250,
+    "fightValue": 339,
+    "advMapAmount": {
+      "min": 12,
+      "max": 17
+    },
+    "abilities": {
+      "inherited7": {
+        "type": "NON_LIVING"
+      },
+      "physicalArmor": {
+        "type": "GENERAL_DAMAGE_REDUCTION",
+        "val": 30,
+        "subtype": "damageTypeAll"
+      }
+    },
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcAdamantGolem",
+      "iconSmall": "fourth-forms/creatures/dcAdamantGolem/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcAdamantGolem/portrait-large",
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "timeBetweenFidgets": 1,
+      "mapAttackFromRight": "AvWattak.def:0:64",
+      "mapAttackFromLeft": "AvWattak.def:0:65",
+      "map": "AVWgolm0"
+    },
+    "sound": {
+      "attack": "SGLMATTK.wav",
+      "defend": "SGLMDFND.wav",
+      "killed": "SGLMKILL.wav",
+      "move": "SGLMMOVE.wav",
+      "wince": "SGLMWNCE.wav"
+    },
+    "shots": 0,
+    "horde": 0,
+    "doubleWide": false,
+    "upgrades": [],
+    "description": "Third form of Stone Golem. Growth is unchanged."
+  },
+  "dcRuneMage": {
+    "name": {
+      "singular": "Mag Run",
+      "plural": "Runiczni Magowie"
+    },
+    "faction": "core:tower",
+    "level": 4,
+    "cost": {
+      "gold": 1170
+    },
+    "speed": 7,
+    "hitPoints": 35,
+    "attack": 13,
+    "defense": 11,
+    "damage": {
+      "max": 10,
+      "min": 8
+    },
+    "shots": 24,
+    "growth": 4,
+    "aiValue": 680,
+    "fightValue": 467,
+    "advMapAmount": {
+      "min": 10,
+      "max": 14
+    },
+    "abilities": {
+      "inherited7": {
+        "type": "NO_MELEE_PENALTY"
+      },
+      "inherited8": {
+        "type": "NO_WALL_PENALTY"
+      },
+      "inherited9": {
+        "type": "CHANGES_SPELL_COST_FOR_ALLY",
+        "val": 2
+      },
+      "inherited10": {
+        "type": "SHOOTER"
+      },
+      "inherited11": {
+        "type": "LIVING"
+      }
+    },
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcRuneMage",
+      "iconSmall": "fourth-forms/creatures/dcRuneMage/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcRuneMage/portrait-large",
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "missile": {
+        "attackClimaxFrame": 4,
+        "frameAngles": [
+          90,
+          72,
+          45,
+          27,
+          0,
+          -27,
+          -45,
+          -72,
+          -90,
+          0,
+          0,
+          0
+        ],
+        "offset": {
+          "lowerX": 61,
+          "lowerY": -21,
+          "middleX": 67,
+          "middleY": -68,
+          "upperX": 47,
+          "upperY": -107
+        },
+        "ray": [
+          {
+            "end": [
+              160,
+              192,
+              0,
+              64
+            ],
+            "start": [
+              160,
+              192,
+              0,
+              255
+            ]
+          },
+          {
+            "end": [
+              128,
+              224,
+              128,
+              128
+            ],
+            "start": [
+              128,
+              224,
+              128,
+              255
+            ]
+          },
+          {
+            "end": [
+              32,
+              176,
+              32,
+              255
+            ],
+            "start": [
+              32,
+              176,
+              32,
+              255
+            ]
+          },
+          {
+            "end": [
+              128,
+              224,
+              128,
+              128
+            ],
+            "start": [
+              128,
+              224,
+              128,
+              255
+            ]
+          },
+          {
+            "end": [
+              160,
+              192,
+              0,
+              64
+            ],
+            "start": [
+              160,
+              192,
+              0,
+              255
+            ]
+          }
+        ]
+      },
+      "timeBetweenFidgets": 1,
+      "mapAttackFromRight": "AvWattak.def:0:70",
+      "mapAttackFromLeft": "AvWattak.def:0:71",
+      "map": "AVWmagx0"
+    },
+    "sound": {
+      "attack": "AMAGATTK.wav",
+      "defend": "AMAGDFND.wav",
+      "killed": "AMAGKILL.wav",
+      "move": "AMAGMOVE.wav",
+      "shoot": "AMAGSHOT.wav",
+      "wince": "AMAGWNCE.wav"
+    },
+    "horde": 0,
+    "doubleWide": false,
+    "upgrades": [],
+    "description": "Third form of Arch Mage. Growth is unchanged."
+  },
+  "dcDjinnSultan": {
+    "name": {
+      "singular": "Sułtan Dżinnów",
+      "plural": "Sultani Dzinow"
+    },
+    "advMapAmount": {
+      "max": 10,
+      "min": 8
+    },
+    "faction": "core:tower",
+    "attack": 13,
+    "defense": 14,
+    "damage": {
+      "max": 17,
+      "min": 14
+    },
+    "cost": {
+      "gold": 1870
+    },
+    "growth": 3,
+    "hitPoints": 46,
+    "speed": 11,
+    "level": 5,
+    "fightValue": 748,
+    "aiValue": 942,
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcDjinnSultan",
+      "iconSmall": "fourth-forms/creatures/dcDjinnSultan/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcDjinnSultan/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "mapAttackFromRight": "AvWattak.def:0:74",
+      "mapAttackFromLeft": "AvWattak.def:0:75",
+      "map": "AVWgenx0"
+    },
+    "doubleWide": false,
+    "sound": {
+      "attack": "CALFATTK.wav",
+      "defend": "CALFDFND.wav",
+      "killed": "CALFKILL.wav",
+      "move": "CALFMOVE.wav",
+      "shoot": "CALFSHOT.wav",
+      "wince": "CALFWNCE.wav"
+    },
+    "abilities": {
+      "inherited6": {
+        "type": "FLYING"
+      },
+      "inherited8": {
+        "subtype": "core:efreet",
+        "type": "HATE",
+        "val": 50
+      },
+      "inherited9": {
+        "subtype": "core:efreetSultan",
+        "type": "HATE",
+        "val": 50
+      },
+      "inherited10": {
+        "type": "RANDOM_SPELLCASTER",
+        "val": 2
+      },
+      "inherited12": {
+        "type": "LIVING"
+      }
+    },
+    "shots": 0,
+    "horde": 0,
+    "upgrades": [],
+    "description": "Third form of Master Genie. Growth is unchanged."
+  },
+  "dcNagaEmpress": {
+    "name": {
+      "singular": "Naga Cesarzowa",
+      "plural": "Cesarzowe Nag"
+    },
+    "advMapAmount": {
+      "max": 8,
+      "min": 5
+    },
+    "faction": "core:tower",
+    "attack": 19,
+    "defense": 14,
+    "damage": {
+      "max": 35,
+      "min": 35
+    },
+    "growth": 2,
+    "hitPoints": 124,
+    "speed": 7,
+    "level": 6,
+    "cost": {
+      "gold": 5975
+    },
+    "fightValue": 2485,
+    "aiValue": 2840,
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcNagaEmpress",
+      "iconSmall": "fourth-forms/creatures/dcNagaEmpress/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcNagaEmpress/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "mapAttackFromRight": "AvWattak.def:0:78",
+      "mapAttackFromLeft": "AvWattak.def:0:79",
+      "map": "AVWnagx0"
+    },
+    "doubleWide": true,
+    "sound": {
+      "attack": "NGRDATTK.wav",
+      "defend": "NGRDDFND.wav",
+      "killed": "NGRDKILL.wav",
+      "move": "NGRDMOVE.wav",
+      "wince": "NGRDWNCE.wav"
+    },
+    "abilities": {
+      "inherited6": {
+        "type": "BLOCKS_RETALIATION"
+      },
+      "inherited7": {
+        "type": "LIVING"
+      },
+      "rangedArmor": {
+        "type": "GENERAL_DAMAGE_REDUCTION",
+        "val": 50,
+        "subtype": "damageTypeRanged"
+      }
+    },
+    "shots": 0,
+    "horde": 0,
+    "upgrades": [],
+    "description": "Third form of Naga Queen. Growth is unchanged."
+  },
+  "dcFirmamentTitan": {
+    "name": {
+      "singular": "Tytan Firmamentu",
+      "plural": "Tytani Firmamentu"
+    },
+    "faction": "core:tower",
+    "level": 7,
+    "cost": {
+      "gems": 9,
+      "gold": 22395
+    },
+    "doubleWide": false,
+    "speed": 11,
+    "hitPoints": 345,
+    "shots": 24,
+    "attack": 26,
+    "defense": 26,
+    "damage": {
+      "max": 66,
+      "min": 44
+    },
+    "fightValue": 5000,
+    "aiValue": 7500,
+    "advMapAmount": {
+      "min": 2,
+      "max": 5
+    },
+    "growth": 1,
+    "hasDoubleWeek": false,
+    "abilities": {
+      "inherited7": {
+        "type": "KING",
+        "val": 3
+      },
+      "inherited8": {
+        "subtype": "core:blackDragon",
+        "type": "HATE",
+        "val": 50
+      },
+      "inherited9": {
+        "type": "MIND_IMMUNITY"
+      },
+      "inherited10": {
+        "type": "NO_MELEE_PENALTY"
+      },
+      "inherited11": {
+        "type": "SHOOTER"
+      },
+      "inherited12": {
+        "type": "LIVING"
+      }
+    },
+    "graphics": {
+      "iconSmall": "fourth-forms/creatures/dcFirmamentTitan/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcFirmamentTitan/portrait-large",
+      "animation": "fourth-forms/creatures/dcFirmamentTitan",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "missile": {
+        "projectile": "fourth-forms/projectiles/dcFirmamentTitan",
+        "attackClimaxFrame": 4,
+        "offset": {
+          "upperX": 42,
+          "upperY": -87,
+          "middleX": 45,
+          "middleY": -69,
+          "lowerX": 39,
+          "lowerY": -43
+        },
+        "frameAngles": [
+          90,
+          72,
+          45,
+          27,
+          0,
+          -27,
+          -45,
+          -72,
+          -90
+        ]
+      },
+      "mapAttackFromRight": "AvWattak.def:0:82",
+      "mapAttackFromLeft": "AvWattak.def:0:83",
+      "map": "AVWtitx0"
+    },
+    "sound": {
+      "attack": "GTITATTK.wav",
+      "defend": "GTITDFND.wav",
+      "killed": "GTITKILL.wav",
+      "move": "GTITMOVE.wav",
+      "shoot": "GTITSHOT.wav",
+      "wince": "GTITWNCE.wav"
+    },
+    "horde": 0,
+    "upgrades": [],
+    "description": "Third form of Titan. Growth is unchanged."
+  },
+  "dcAshImp": {
+    "name": {
+      "singular": "Chochlik Popiołu",
+      "plural": "Chochliki Popiolu"
+    },
+    "advMapAmount": {
+      "max": 25,
+      "min": 20
+    },
+    "faction": "core:inferno",
+    "attack": 5,
+    "defense": 6,
+    "cost": {
+      "gold": 90
+    },
+    "damage": {
+      "max": 3,
+      "min": 2
+    },
+    "growth": 15,
+    "horde": 8,
+    "hitPoints": 5,
+    "speed": 7,
+    "level": 1,
+    "fightValue": 60,
+    "aiValue": 60,
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcAshImp",
+      "iconSmall": "fourth-forms/creatures/dcAshImp/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcAshImp/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "mapAttackFromRight": "AvWattak.def:0:86",
+      "mapAttackFromLeft": "AvWattak.def:0:87",
+      "map": "AVWimpx0"
+    },
+    "doubleWide": false,
+    "sound": {
+      "attack": "FMLRATTK.wav",
+      "defend": "FMLRDFND.wav",
+      "killed": "FMLRKILL.wav",
+      "move": "FMLRMOVE.wav",
+      "wince": "FMLRWNCE.wav"
+    },
+    "abilities": {
+      "inherited6": {
+        "type": "MANA_CHANNELING",
+        "val": 20
+      },
+      "inherited7": {
+        "type": "LIVING"
+      }
+    },
+    "shots": 0,
+    "upgrades": [],
+    "description": "Third form of Familiar. Growth is unchanged."
+  },
+  "dcAbyssMagog": {
+    "name": {
+      "singular": "Magog Otchłani",
+      "plural": "Magogi Otchlani"
+    },
+    "faction": "core:inferno",
+    "level": 2,
+    "cost": {
+      "gold": 315
+    },
+    "speed": 6,
+    "shots": 24,
+    "hitPoints": 15,
+    "attack": 9,
+    "defense": 5,
+    "damage": {
+      "max": 5,
+      "min": 3
+    },
+    "growth": 8,
+    "aiValue": 240,
+    "fightValue": 210,
+    "advMapAmount": {
+      "min": 16,
+      "max": 22
+    },
+    "abilities": {
+      "inherited7": {
+        "subtype": "core:fireballAbility",
+        "type": "SPELL_LIKE_ATTACK"
+      },
+      "inherited8": {
+        "type": "SHOOTER"
+      },
+      "inherited9": {
+        "type": "LIVING"
+      }
+    },
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcAbyssMagog",
+      "iconSmall": "fourth-forms/creatures/dcAbyssMagog/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcAbyssMagog/portrait-large",
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "missile": {
+        "projectile": "CPRGOGX.DEF",
+        "attackClimaxFrame": 4,
+        "frameAngles": [
+          90,
+          72,
+          45,
+          27,
+          0,
+          -27,
+          -45,
+          -72,
+          -90,
+          0,
+          0,
+          0
+        ],
+        "offset": {
+          "lowerX": 19,
+          "lowerY": -31,
+          "middleX": 26,
+          "middleY": -57,
+          "upperX": 30,
+          "upperY": -68
+        }
+      },
+      "timeBetweenFidgets": 1,
+      "mapAttackFromRight": "AvWattak.def:0:90",
+      "mapAttackFromLeft": "AvWattak.def:0:91",
+      "map": "AVWgogx0"
+    },
+    "sound": {
+      "attack": "MGOGATTK.wav",
+      "defend": "MGOGDFND.wav",
+      "killed": "MGOGKILL.wav",
+      "move": "MGOGMOVE.wav",
+      "shoot": "SPONTCOMB.wav",
+      "wince": "MGOGWNCE.wav"
+    },
+    "horde": 0,
+    "doubleWide": false,
+    "upgrades": [],
+    "description": "Third form of Magog. Growth is unchanged."
+  },
+  "dcHellCerberus": {
+    "name": {
+      "singular": "Cerber Piekielny",
+      "plural": "Cerbery Piekielne"
+    },
+    "faction": "core:inferno",
+    "level": 3,
+    "cost": {
+      "gold": 540
+    },
+    "speed": 8,
+    "hitPoints": 28,
+    "attack": 13,
+    "defense": 9,
+    "damage": {
+      "max": 9,
+      "min": 3
+    },
+    "doubleWide": true,
+    "growth": 5,
+    "horde": 3,
+    "aiValue": 392,
+    "fightValue": 308,
+    "advMapAmount": {
+      "min": 12,
+      "max": 17
+    },
+    "abilities": {
+      "inherited6": {
+        "type": "BLOCKS_RETALIATION"
+      },
+      "inherited7": {
+        "type": "THREE_HEADED_ATTACK"
+      },
+      "inherited8": {
+        "type": "LIVING"
+      }
+    },
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcHellCerberus",
+      "iconSmall": "fourth-forms/creatures/dcHellCerberus/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcHellCerberus/portrait-large",
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "timeBetweenFidgets": 1,
+      "mapAttackFromRight": "AvWattak.def:0:94",
+      "mapAttackFromLeft": "AvWattak.def:0:95",
+      "map": "AVWhoux0"
+    },
+    "sound": {
+      "attack": "CERBATTK.wav",
+      "defend": "CERBDFND.wav",
+      "killed": "CERBKILL.wav",
+      "move": "CERBMOVE.wav",
+      "wince": "CERBWNCE.wav"
+    },
+    "shots": 0,
+    "upgrades": [],
+    "description": "Third form of Cerberus. Growth is unchanged."
+  },
+  "dcIronHornDemon": {
+    "name": {
+      "singular": "Demon Żelaznego Rogu",
+      "plural": "Demony Zelaznego Rogu"
+    },
+    "advMapAmount": {
+      "max": 14,
+      "min": 10
+    },
+    "faction": "core:inferno",
+    "attack": 11,
+    "defense": 13,
+    "cost": {
+      "gold": 700
+    },
+    "damage": {
+      "max": 10,
+      "min": 8
+    },
+    "growth": 4,
+    "hitPoints": 48,
+    "level": 4,
+    "speed": 6,
+    "fightValue": 480,
+    "aiValue": 480,
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcIronHornDemon",
+      "iconSmall": "fourth-forms/creatures/dcIronHornDemon/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcIronHornDemon/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "mapAttackFromRight": "AvWattak.def:0:98",
+      "mapAttackFromLeft": "AvWattak.def:0:99",
+      "map": "AVWdemx0"
+    },
+    "doubleWide": false,
+    "sound": {
+      "attack": "DHDMATTK.wav",
+      "defend": "DHDMDFND.wav",
+      "killed": "DHDMKILL.wav",
+      "move": "DHDMMOVE.wav",
+      "wince": "DHDMWNCE.wav"
+    },
+    "abilities": {
+      "inherited6": {
+        "type": "LIVING"
+      }
+    },
+    "shots": 0,
+    "horde": 0,
+    "upgrades": [],
+    "description": "Third form of Horned Demon. Growth is unchanged."
+  },
+  "dcAshLord": {
+    "name": {
+      "singular": "Władca Popiołów",
+      "plural": "Wladcy Popiolu"
+    },
+    "advMapAmount": {
+      "max": 10,
+      "min": 8
+    },
+    "faction": "core:inferno",
+    "attack": 14,
+    "defense": 15,
+    "cost": {
+      "gold": 2180
+    },
+    "damage": {
+      "max": 18,
+      "min": 14
+    },
+    "growth": 3,
+    "hitPoints": 52,
+    "level": 5,
+    "speed": 7,
+    "fightValue": 1071,
+    "aiValue": 1224,
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcAshLord",
+      "iconSmall": "fourth-forms/creatures/dcAshLord/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcAshLord/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "mapAttackFromRight": "AvWattak.def:0:102",
+      "mapAttackFromLeft": "AvWattak.def:0:103",
+      "map": "AVWpitx0"
+    },
+    "doubleWide": false,
+    "sound": {
+      "attack": "PFOEATTK.wav",
+      "defend": "PFOEDFND.wav",
+      "killed": "PFOEKILL.wav",
+      "move": "PFOEMOVE.wav",
+      "wince": "PFOEWNCE.wav"
+    },
+    "abilities": {
+      "inherited7": {
+        "subtype": "core:summonDemons",
+        "type": "SPELLCASTER"
+      },
+      "inherited9": {
+        "type": "LIVING"
+      }
+    },
+    "shots": 0,
+    "horde": 0,
+    "upgrades": [],
+    "description": "Third form of Pit Lord. Growth is unchanged."
+  },
+  "dcCrownedEfreet": {
+    "name": {
+      "singular": "Ifryt Koronny",
+      "plural": "Koronowani Ifryci"
+    },
+    "advMapAmount": {
+      "max": 8,
+      "min": 5
+    },
+    "faction": "core:inferno",
+    "attack": 19,
+    "defense": 15,
+    "cost": {
+      "gold": 4110
+    },
+    "damage": {
+      "max": 28,
+      "min": 19
+    },
+    "growth": 2,
+    "hitPoints": 101,
+    "level": 6,
+    "speed": 13,
+    "fightValue": 1584,
+    "aiValue": 1848,
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcCrownedEfreet",
+      "iconSmall": "fourth-forms/creatures/dcCrownedEfreet/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcCrownedEfreet/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "mapAttackFromRight": "AvWattak.def:0:106",
+      "mapAttackFromLeft": "AvWattak.def:0:107",
+      "map": "AVWefrx0"
+    },
+    "doubleWide": false,
+    "sound": {
+      "attack": "ESULATTK.wav",
+      "defend": "ESULDFND.wav",
+      "killed": "ESULKILL.wav",
+      "move": "ESULMOVE.wav",
+      "shoot": "ESULSHOT.wav",
+      "wince": "ESULWNCE.wav"
+    },
+    "abilities": {
+      "inherited6": {
+        "type": "FLYING"
+      },
+      "inherited7": {
+        "type": "FIRE_SHIELD",
+        "val": 20
+      },
+      "inherited8": {
+        "subtype": "core:genie",
+        "type": "HATE",
+        "val": 50
+      },
+      "inherited9": {
+        "subtype": "core:masterGenie",
+        "type": "HATE",
+        "val": 50
+      },
+      "inherited10": {
+        "subtype": "fire",
+        "type": "SPELL_SCHOOL_IMMUNITY"
+      },
+      "inherited11": {
+        "type": "LIVING"
+      }
+    },
+    "shots": 0,
+    "horde": 0,
+    "upgrades": [],
+    "description": "Third form of Efreet Sultan. Growth is unchanged."
+  },
+  "dcAbyssPrince": {
+    "name": {
+      "singular": "Książę Otchłani",
+      "plural": "Ksiazeta Otchlani"
+    },
+    "faction": "core:inferno",
+    "level": 7,
+    "cost": {
+      "gold": 20160,
+      "mercury": 9
+    },
+    "doubleWide": false,
+    "speed": 17,
+    "hitPoints": 230,
+    "attack": 28,
+    "defense": 30,
+    "damage": {
+      "max": 44,
+      "min": 33
+    },
+    "fightValue": 5243,
+    "aiValue": 7115,
+    "advMapAmount": {
+      "min": 2,
+      "max": 5
+    },
+    "growth": 1,
+    "hasDoubleWeek": false,
+    "abilities": {
+      "inherited6": {
+        "type": "KING",
+        "val": 2
+      },
+      "inherited7": {
+        "description": "{Reduces enemy luck}\nDevils and Archdevils reduce enemy luck by one",
+        "limiters": [
+          "OPPOSITE_SIDE"
+        ],
+        "propagator": "BATTLE_WIDE",
+        "stacking": "Devils",
+        "type": "LUCK",
+        "val": -1
+      },
+      "inherited8": {
+        "subtype": "core:angel",
+        "type": "HATE",
+        "val": 50
+      },
+      "inherited9": {
+        "subtype": "core:archangel",
+        "type": "HATE",
+        "val": 50
+      },
+      "inherited10": {
+        "type": "BLOCKS_RETALIATION"
+      },
+      "inherited11": {
+        "subtype": "movementTeleporting",
+        "type": "FLYING"
+      },
+      "inherited12": {
+        "type": "LIVING"
+      }
+    },
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcAbyssPrince",
+      "iconSmall": "fourth-forms/creatures/dcAbyssPrince/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcAbyssPrince/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "mapAttackFromRight": "AvWattak.def:0:110",
+      "mapAttackFromLeft": "AvWattak.def:0:111",
+      "map": "AVWdevx0"
+    },
+    "sound": {
+      "attack": "ADVLATTK.wav",
+      "defend": "ADVLDFND.wav",
+      "killed": "ADVLKILL.wav",
+      "move": "ADVLMOVE.wav",
+      "wince": "ADVLWNCE.wav",
+      "startMoving": "ADVLEXT1.wav",
+      "endMoving": "ADVLEXT2.wav"
+    },
+    "shots": 0,
+    "horde": 0,
+    "upgrades": [],
+    "description": "Third form of Arch Devil. Growth is unchanged."
+  },
+  "dcBoneLegionary": {
+    "name": {
+      "singular": "Kościany Legionista",
+      "plural": "Legionisci Kosci"
+    },
+    "advMapAmount": {
+      "max": 25,
+      "min": 20
+    },
+    "faction": "core:necropolis",
+    "attack": 7,
+    "defense": 9,
+    "cost": {
+      "gold": 105
+    },
+    "damage": {
+      "max": 4,
+      "min": 2
+    },
+    "growth": 12,
+    "hitPoints": 8,
+    "horde": 6,
+    "level": 1,
+    "speed": 5,
+    "fightValue": 85,
+    "aiValue": 85,
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcBoneLegionary",
+      "iconSmall": "fourth-forms/creatures/dcBoneLegionary/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcBoneLegionary/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "mapAttackFromRight": "AvWattak.def:0:114",
+      "mapAttackFromLeft": "AvWattak.def:0:115",
+      "map": "AVWskex0"
+    },
+    "doubleWide": false,
+    "sound": {
+      "attack": "SKLWATTK.wav",
+      "defend": "SKLWDFND.wav",
+      "killed": "SKLWKILL.wav",
+      "move": "SKLWMOVE.wav",
+      "wince": "SKLWWNCE.wav"
+    },
+    "abilities": {
+      "inherited6": {
+        "type": "UNDEAD"
+      }
+    },
+    "shots": 0,
+    "upgrades": [],
+    "description": "Third form of Skeleton Warrior. Growth is unchanged."
+  },
+  "dcPlagueGuard": {
+    "name": {
+      "singular": "Plagowy Wartownik",
+      "plural": "Plagowi Wartownicy"
+    },
+    "faction": "core:necropolis",
+    "level": 2,
+    "cost": {
+      "gold": 225
+    },
+    "speed": 4,
+    "hitPoints": 24,
+    "attack": 6,
+    "defense": 8,
+    "damage": {
+      "max": 4,
+      "min": 3
+    },
+    "growth": 8,
+    "aiValue": 128,
+    "fightValue": 160,
+    "advMapAmount": {
+      "min": 16,
+      "max": 22
+    },
+    "abilities": {
+      "inherited6": {
+        "subtype": "core:disease",
+        "type": "SPELL_AFTER_ATTACK",
+        "val": 20
+      },
+      "inherited7": {
+        "type": "UNDEAD"
+      }
+    },
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcPlagueGuard",
+      "iconSmall": "fourth-forms/creatures/dcPlagueGuard/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcPlagueGuard/portrait-large",
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "timeBetweenFidgets": 1,
+      "mapAttackFromRight": "AvWattak.def:0:118",
+      "mapAttackFromLeft": "AvWattak.def:0:119",
+      "map": "AVWzomx0"
+    },
+    "sound": {
+      "attack": "ZMBLATTK.wav",
+      "defend": "ZMBLDFND.wav",
+      "killed": "ZMBLKILL.wav",
+      "move": "ZMBLMOVE.wav",
+      "wince": "ZMBLWNCE.wav"
+    },
+    "shots": 0,
+    "horde": 0,
+    "doubleWide": false,
+    "upgrades": [],
+    "description": "Third form of Zombie. Growth is unchanged."
+  },
+  "dcTombWraith": {
+    "name": {
+      "singular": "Widmo Grobowca",
+      "plural": "Widma Grobowca"
+    },
+    "advMapAmount": {
+      "max": 17,
+      "min": 12
+    },
+    "faction": "core:necropolis",
+    "attack": 8,
+    "defense": 9,
+    "cost": {
+      "gold": 500
+    },
+    "damage": {
+      "max": 6,
+      "min": 4
+    },
+    "growth": 7,
+    "hitPoints": 21,
+    "level": 3,
+    "speed": 7,
+    "fightValue": 252,
+    "aiValue": 315,
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcTombWraith",
+      "iconSmall": "fourth-forms/creatures/dcTombWraith/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcTombWraith/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "mapAttackFromRight": "AvWattak.def:0:122",
+      "mapAttackFromLeft": "AvWattak.def:0:123",
+      "map": "AVWwigx0"
+    },
+    "doubleWide": false,
+    "sound": {
+      "attack": "WRTHATTK.wav",
+      "defend": "WRTHDFND.wav",
+      "killed": "WRTHKILL.wav",
+      "move": "WRTHMOVE.wav",
+      "wince": "WRTHWNCE.wav"
+    },
+    "abilities": {
+      "inherited6": {
+        "type": "FLYING"
+      },
+      "inherited7": {
+        "type": "MANA_DRAIN",
+        "val": 2
+      },
+      "inherited8": {
+        "type": "HP_REGENERATION",
+        "val": 50
+      },
+      "inherited9": {
+        "type": "UNDEAD"
+      }
+    },
+    "shots": 0,
+    "horde": 0,
+    "upgrades": [],
+    "description": "Third form of Wraith. Growth is unchanged."
+  },
+  "dcAncientBloodVampire": {
+    "name": {
+      "singular": "Wampir Prastarej Krwi",
+      "plural": "Pradawni Wampirzy Krwi"
+    },
+    "faction": "core:necropolis",
+    "level": 4,
+    "cost": {
+      "gold": 1300
+    },
+    "speed": 9,
+    "hitPoints": 45,
+    "attack": 13,
+    "defense": 11,
+    "damage": {
+      "max": 10,
+      "min": 6
+    },
+    "growth": 4,
+    "horde": 0,
+    "aiValue": 783,
+    "fightValue": 652,
+    "advMapAmount": {
+      "min": 10,
+      "max": 14
+    },
+    "abilities": {
+      "inherited6": {
+        "type": "FLYING"
+      },
+      "inherited7": {
+        "type": "LIFE_DRAIN",
+        "val": 100
+      },
+      "inherited8": {
+        "type": "BLOCKS_RETALIATION"
+      },
+      "inherited9": {
+        "type": "UNDEAD"
+      }
+    },
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcAncientBloodVampire",
+      "iconSmall": "fourth-forms/creatures/dcAncientBloodVampire/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcAncientBloodVampire/portrait-large",
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "timeBetweenFidgets": 1,
+      "mapAttackFromRight": "AvWattak.def:0:126",
+      "mapAttackFromLeft": "AvWattak.def:0:127",
+      "map": "AVWvamx0"
+    },
+    "sound": {
+      "attack": "NOSFATTK.wav",
+      "defend": "NOSFDFND.wav",
+      "killed": "NOSFKILL.wav",
+      "move": "NOSFMOVE.wav",
+      "shoot": "NOSFSHOT.wav",
+      "wince": "NOSFWNCE.wav",
+      "startMoving": "NOSFEXT1.wav",
+      "endMoving": "NOSFEXT2.wav"
+    },
+    "shots": 0,
+    "doubleWide": false,
+    "upgrades": [],
+    "description": "Third form of Vampire Lord. Growth is unchanged."
+  },
+  "dcArchlich": {
+    "name": {
+      "singular": "Arcylisz",
+      "plural": "Arcylisze"
+    },
+    "advMapAmount": {
+      "max": 10,
+      "min": 8
+    },
+    "faction": "core:necropolis",
+    "attack": 15,
+    "defense": 11,
+    "cost": {
+      "gold": 1870
+    },
+    "damage": {
+      "max": 17,
+      "min": 12
+    },
+    "growth": 3,
+    "hitPoints": 45,
+    "level": 5,
+    "shots": 24,
+    "speed": 7,
+    "fightValue": 889,
+    "aiValue": 1079,
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcArchlich",
+      "iconSmall": "fourth-forms/creatures/dcArchlich/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcArchlich/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "missile": {
+        "projectile": "PLICH.DEF",
+        "attackClimaxFrame": 4,
+        "offset": {
+          "upperX": 48,
+          "upperY": -96,
+          "middleX": 57,
+          "middleY": -66,
+          "lowerX": 57,
+          "lowerY": -12
+        },
+        "frameAngles": [
+          90,
+          72,
+          45,
+          27,
+          0,
+          -27,
+          -45,
+          -72,
+          -90,
+          0,
+          0,
+          0
+        ]
+      },
+      "mapAttackFromRight": "AvWattak.def:0:130",
+      "mapAttackFromLeft": "AvWattak.def:0:131",
+      "map": "AVWlicx0"
+    },
+    "doubleWide": false,
+    "sound": {
+      "attack": "PLCHATTK.wav",
+      "defend": "PLCHDFND.wav",
+      "killed": "PLCHKILL.wav",
+      "move": "PLCHMOVE.wav",
+      "shoot": "PLCHSHOT.wav",
+      "wince": "PLCHWNCE.wav"
+    },
+    "abilities": {
+      "inherited7": {
+        "subtype": "core:deathCloud",
+        "type": "SPELL_LIKE_ATTACK"
+      },
+      "inherited8": {
+        "type": "SHOOTER"
+      },
+      "inherited9": {
+        "type": "UNDEAD"
+      }
+    },
+    "horde": 0,
+    "upgrades": [],
+    "description": "Third form of Power Lich. Growth is unchanged."
+  },
+  "dcDoomKnight": {
+    "name": {
+      "singular": "Rycerz Zagłady",
+      "plural": "Rycerze Zaglady"
+    },
+    "advMapAmount": {
+      "max": 8,
+      "min": 5
+    },
+    "faction": "core:necropolis",
+    "attack": 21,
+    "defense": 19,
+    "cost": {
+      "gold": 5600
+    },
+    "damage": {
+      "max": 35,
+      "min": 18
+    },
+    "growth": 2,
+    "hitPoints": 135,
+    "level": 6,
+    "speed": 9,
+    "fightValue": 2029,
+    "aiValue": 2382,
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcDoomKnight",
+      "iconSmall": "fourth-forms/creatures/dcDoomKnight/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcDoomKnight/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "mapAttackFromRight": "AvWattak.def:0:134",
+      "mapAttackFromLeft": "AvWattak.def:0:135",
+      "map": "AVWbknx0"
+    },
+    "doubleWide": true,
+    "sound": {
+      "attack": "BLRDATTK.wav",
+      "defend": "BLRDDFND.wav",
+      "killed": "BLRDKILL.wav",
+      "move": "BLRDMOVE.wav",
+      "wince": "BLRDWNCE.wav"
+    },
+    "abilities": {
+      "inherited6": {
+        "subtype": "core:curse",
+        "type": "SPELL_AFTER_ATTACK",
+        "val": 20
+      },
+      "inherited7": {
+        "type": "DOUBLE_DAMAGE_CHANCE",
+        "val": 20
+      },
+      "inherited8": {
+        "type": "UNDEAD"
+      }
+    },
+    "shots": 0,
+    "horde": 0,
+    "upgrades": [],
+    "description": "Third form of Dread Knight. Growth is unchanged."
+  },
+  "dcGraveDragon": {
+    "name": {
+      "singular": "Smok Grobowy",
+      "plural": "Smoki Grobowca"
+    },
+    "faction": "core:necropolis",
+    "level": 7,
+    "cost": {
+      "gold": 13440,
+      "mercury": 5
+    },
+    "doubleWide": true,
+    "speed": 14,
+    "hitPoints": 230,
+    "attack": 21,
+    "defense": 19,
+    "damage": {
+      "max": 55,
+      "min": 28
+    },
+    "fightValue": 3228,
+    "aiValue": 4696,
+    "advMapAmount": {
+      "min": 2,
+      "max": 5
+    },
+    "growth": 1,
+    "hasDoubleWeek": false,
+    "abilities": {
+      "inherited6": {
+        "type": "KING"
+      },
+      "inherited7": {
+        "subtype": "core:age",
+        "type": "SPELL_AFTER_ATTACK",
+        "val": 20
+      },
+      "inherited8": {
+        "type": "FLYING"
+      },
+      "inherited9": {
+        "description": "{Reduces enemy morale}\nBone Dragons and Ghost Dragons lower the morale of enemy units by one",
+        "limiters": [
+          "OPPOSITE_SIDE"
+        ],
+        "propagator": "BATTLE_WIDE",
+        "stacking": "Undead Dragons",
+        "type": "MORALE",
+        "val": -1
+      },
+      "inherited10": {
+        "type": "DRAGON_NATURE"
+      },
+      "inherited11": {
+        "type": "UNDEAD"
+      }
+    },
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcGraveDragon",
+      "iconSmall": "fourth-forms/creatures/dcGraveDragon/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcGraveDragon/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "mapAttackFromRight": "AvWattak.def:0:138",
+      "mapAttackFromLeft": "AvWattak.def:0:139",
+      "map": "AVWbonx0"
+    },
+    "sound": {
+      "attack": "GHDRATTK.wav",
+      "defend": "GHDRDFND.wav",
+      "killed": "GHDRKILL.wav",
+      "move": "GHDRMOVE.wav",
+      "wince": "GHDRWNCE.wav"
+    },
+    "shots": 0,
+    "horde": 0,
+    "upgrades": [],
+    "description": "Third form of Ghost Dragon. Growth is unchanged."
+  },
+  "dcDeepTroglodyte": {
+    "name": {
+      "singular": "Troglodyta Głębinowy",
+      "plural": "Troglodyci Glebinowi"
+    },
+    "faction": "core:dungeon",
+    "level": 1,
+    "cost": {
+      "gold": 100
+    },
+    "speed": 5,
+    "hitPoints": 8,
+    "attack": 6,
+    "defense": 7,
+    "damage": {
+      "max": 4,
+      "min": 2
+    },
+    "growth": 14,
+    "horde": 7,
+    "aiValue": 84,
+    "fightValue": 84,
+    "advMapAmount": {
+      "min": 20,
+      "max": 25
+    },
+    "abilities": {
+      "inherited6": {
+        "subtype": "core:blind",
+        "type": "SPELL_IMMUNITY"
+      },
+      "inherited7": {
+        "subtype": "core:stoneGaze",
+        "type": "SPELL_IMMUNITY"
+      },
+      "inherited8": {
+        "type": "LIVING"
+      }
+    },
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcDeepTroglodyte",
+      "iconSmall": "fourth-forms/creatures/dcDeepTroglodyte/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcDeepTroglodyte/portrait-large",
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "timeBetweenFidgets": 1,
+      "mapAttackFromRight": "AvWattak.def:0:142",
+      "mapAttackFromLeft": "AvWattak.def:0:143",
+      "map": "AvWInfr"
+    },
+    "sound": {
+      "attack": "ITRGATTK.wav",
+      "defend": "ITRGDFND.wav",
+      "killed": "ITRGKILL.wav",
+      "move": "ITRGMOVE.wav",
+      "wince": "ITRGWNCE.wav"
+    },
+    "shots": 0,
+    "doubleWide": false,
+    "upgrades": [],
+    "description": "Third form of Infernal Troglodyte. Growth is unchanged."
+  },
+  "dcNightHarpy": {
+    "name": {
+      "singular": "Harpia Nocna",
+      "plural": "Harpie Nocne"
+    },
+    "faction": "core:dungeon",
+    "level": 2,
+    "cost": {
+      "gold": 310
+    },
+    "speed": 9,
+    "hitPoints": 16,
+    "attack": 9,
+    "defense": 7,
+    "damage": {
+      "max": 5,
+      "min": 2
+    },
+    "growth": 8,
+    "horde": 0,
+    "aiValue": 238,
+    "fightValue": 196,
+    "advMapAmount": {
+      "min": 16,
+      "max": 22
+    },
+    "abilities": {
+      "inherited6": {
+        "type": "FLYING"
+      },
+      "inherited7": {
+        "type": "BLOCKS_RETALIATION"
+      },
+      "inherited8": {
+        "type": "RETURN_AFTER_STRIKE"
+      },
+      "inherited9": {
+        "type": "LIVING"
+      }
+    },
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcNightHarpy",
+      "iconSmall": "fourth-forms/creatures/dcNightHarpy/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcNightHarpy/portrait-large",
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "timeBetweenFidgets": 1,
+      "mapAttackFromRight": "AvWattak.def:0:146",
+      "mapAttackFromLeft": "AvWattak.def:0:147",
+      "map": "AVWharx0"
+    },
+    "sound": {
+      "attack": "HHAGATTK.wav",
+      "defend": "HHAGDFND.wav",
+      "killed": "HHAGKILL.wav",
+      "move": "HHAGMOVE.wav",
+      "shoot": "HHAGSHOT.wav",
+      "wince": "HHAGWNCE.wav"
+    },
+    "shots": 0,
+    "doubleWide": false,
+    "upgrades": [],
+    "description": "Third form of Harpy Hag. Growth is unchanged."
+  },
+  "dcAbyssEye": {
+    "name": {
+      "singular": "Oko Otchłani",
+      "plural": "Oczy Otchlani"
+    },
+    "advMapAmount": {
+      "max": 17,
+      "min": 12
+    },
+    "faction": "core:dungeon",
+    "attack": 10,
+    "defense": 16,
+    "cost": {
+      "gold": 605
+    },
+    "damage": {
+      "max": 6,
+      "min": 4
+    },
+    "growth": 7,
+    "hitPoints": 25,
+    "level": 3,
+    "speed": 7,
+    "shots": 24,
+    "fightValue": 245,
+    "aiValue": 367,
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcAbyssEye",
+      "iconSmall": "fourth-forms/creatures/dcAbyssEye/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcAbyssEye/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "missile": {
+        "ray": [
+          {
+            "start": [
+              218,
+              140,
+              25,
+              220
+            ],
+            "end": [
+              218,
+              140,
+              25,
+              64
+            ]
+          },
+          {
+            "start": [
+              255,
+              203,
+              66,
+              255
+            ],
+            "end": [
+              255,
+              203,
+              66,
+              128
+            ]
+          },
+          {
+            "start": [
+              255,
+              244,
+              193,
+              255
+            ],
+            "end": [
+              255,
+              244,
+              193,
+              255
+            ]
+          },
+          {
+            "start": [
+              255,
+              203,
+              66,
+              255
+            ],
+            "end": [
+              255,
+              203,
+              66,
+              128
+            ]
+          },
+          {
+            "start": [
+              218,
+              140,
+              25,
+              220
+            ],
+            "end": [
+              218,
+              140,
+              25,
+              64
+            ]
+          }
+        ],
+        "attackClimaxFrame": 4,
+        "offset": {
+          "upperX": 46,
+          "upperY": -77,
+          "middleX": 47,
+          "middleY": -64,
+          "lowerX": 48,
+          "lowerY": -48
+        },
+        "frameAngles": [
+          90,
+          72,
+          45,
+          27,
+          0,
+          -27,
+          -45,
+          -72,
+          -90,
+          0,
+          0,
+          0
+        ]
+      },
+      "mapAttackFromRight": "AvWattak.def:0:150",
+      "mapAttackFromLeft": "AvWattak.def:0:151",
+      "map": "AVWbehx0"
+    },
+    "sound": {
+      "attack": "EVLIATTK.wav",
+      "defend": "EVLIDFND.wav",
+      "killed": "EVLIKILL.wav",
+      "move": "EVLIMOVE.wav",
+      "shoot": "EVLISHOT.wav",
+      "wince": "EVLIWNCE.wav"
+    },
+    "abilities": {
+      "inherited7": {
+        "type": "NO_MELEE_PENALTY"
+      },
+      "inherited8": {
+        "type": "SHOOTER"
+      },
+      "inherited9": {
+        "type": "LIVING"
+      }
+    },
+    "horde": 0,
+    "doubleWide": false,
+    "upgrades": [],
+    "description": "Third form of Evil Eye. Growth is unchanged."
+  },
+  "dcMedusaEmpress": {
+    "name": {
+      "singular": "Meduza Cesarzowa",
+      "plural": "Meduzy Cesarzowe"
+    },
+    "advMapAmount": {
+      "max": 14,
+      "min": 10
+    },
+    "faction": "core:dungeon",
+    "aiValue": 577,
+    "attack": 12,
+    "cost": {
+      "gold": 860
+    },
+    "damage": {
+      "max": 9,
+      "min": 7
+    },
+    "defense": 11,
+    "fightValue": 423,
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcMedusaEmpress",
+      "iconSmall": "fourth-forms/creatures/dcMedusaEmpress/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcMedusaEmpress/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "missile": {
+        "projectile": "PMEDUSX.DEF",
+        "attackClimaxFrame": 4,
+        "offset": {
+          "upperX": 57,
+          "upperY": -60,
+          "middleX": 57,
+          "middleY": -55,
+          "lowerX": 59,
+          "lowerY": -31
+        },
+        "frameAngles": [
+          90,
+          72,
+          45,
+          27,
+          0,
+          -27,
+          -45,
+          -72,
+          -90,
+          0,
+          0,
+          0
+        ]
+      },
+      "mapAttackFromRight": "AvWattak.def:0:154",
+      "mapAttackFromLeft": "AvWattak.def:0:155",
+      "map": "AVWmedx0"
+    },
+    "growth": 4,
+    "hitPoints": 34,
+    "level": 4,
+    "shots": 8,
+    "doubleWide": true,
+    "sound": {
+      "attack": "MEDQATTK.wav",
+      "defend": "MEDQDFND.wav",
+      "killed": "MEDQKILL.wav",
+      "move": "MEDQMOVE.wav",
+      "shoot": "MEDQSHOT.wav",
+      "wince": "MEDQWNCE.wav"
+    },
+    "speed": 6,
+    "abilities": {
+      "inherited7": {
+        "type": "NO_MELEE_PENALTY"
+      },
+      "inherited8": {
+        "addInfo": null,
+        "subtype": "core:stoneGaze",
+        "type": "SPELL_AFTER_ATTACK",
+        "val": 20
+      },
+      "inherited9": {
+        "type": "SHOOTER"
+      },
+      "inherited10": {
+        "type": "LIVING"
+      }
+    },
+    "horde": 0,
+    "upgrades": [],
+    "description": "Third form of Medusa Queen. Growth is unchanged."
+  },
+  "dcLabyrinthLord": {
+    "name": {
+      "singular": "Minotaur Władca Labiryntu",
+      "plural": "Wladcy Labiryntu"
+    },
+    "advMapAmount": {
+      "max": 10,
+      "min": 8
+    },
+    "faction": "core:dungeon",
+    "attack": 18,
+    "defense": 16,
+    "cost": {
+      "gold": 1790
+    },
+    "damage": {
+      "max": 23,
+      "min": 14
+    },
+    "growth": 3,
+    "hitPoints": 56,
+    "speed": 8,
+    "level": 5,
+    "fightValue": 890,
+    "aiValue": 1068,
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcLabyrinthLord",
+      "iconSmall": "fourth-forms/creatures/dcLabyrinthLord/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcLabyrinthLord/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "mapAttackFromRight": "AvWattak.def:0:158",
+      "mapAttackFromLeft": "AvWattak.def:0:159",
+      "map": "AVWminx0"
+    },
+    "sound": {
+      "attack": "MINKATTK.wav",
+      "defend": "MINKDFND.wav",
+      "killed": "MINKKILL.wav",
+      "move": "MINKMOVE.wav",
+      "shoot": "MINKSHOT.wav",
+      "wince": "MINKWNCE.wav"
+    },
+    "abilities": {
+      "inherited6": {
+        "type": "MORALE",
+        "val": 1,
+        "valueType": "INDEPENDENT_MAX"
+      },
+      "inherited7": {
+        "type": "LIVING"
+      }
+    },
+    "shots": 0,
+    "horde": 0,
+    "doubleWide": false,
+    "upgrades": [],
+    "description": "Third form of Minotaur King. Growth is unchanged."
+  },
+  "dcDeepScorpicore": {
+    "name": {
+      "singular": "Skorpena Głębin",
+      "plural": "Skorpeny Glebinowe"
+    },
+    "advMapAmount": {
+      "max": 8,
+      "min": 5
+    },
+    "faction": "core:dungeon",
+    "attack": 19,
+    "defense": 15,
+    "cost": {
+      "gold": 3920
+    },
+    "damage": {
+      "max": 23,
+      "min": 17
+    },
+    "growth": 2,
+    "hitPoints": 90,
+    "level": 6,
+    "speed": 11,
+    "fightValue": 1248,
+    "aiValue": 1589,
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcDeepScorpicore",
+      "iconSmall": "fourth-forms/creatures/dcDeepScorpicore/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcDeepScorpicore/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "mapAttackFromRight": "AvWattak.def:0:162",
+      "mapAttackFromLeft": "AvWattak.def:0:163",
+      "map": "AVWmanx0"
+    },
+    "doubleWide": true,
+    "sound": {
+      "attack": "SCRPATTK.wav",
+      "defend": "SCRPDFND.wav",
+      "killed": "SCRPKILL.wav",
+      "move": "SCRPMOVE.wav",
+      "shoot": "SCRPSHOT.wav",
+      "wince": "SCRPWNCE.wav"
+    },
+    "abilities": {
+      "inherited6": {
+        "type": "FLYING"
+      },
+      "inherited7": {
+        "subtype": "core:paralyze",
+        "type": "SPELL_AFTER_ATTACK",
+        "val": 20
+      },
+      "inherited8": {
+        "type": "LIVING"
+      }
+    },
+    "shots": 0,
+    "horde": 0,
+    "upgrades": [],
+    "description": "Third form of Scorpicore. Growth is unchanged."
+  },
+  "dcObsidianDragon": {
+    "name": {
+      "singular": "Smok Obsydianowy",
+      "plural": "Smoki Obsydianowe"
+    },
+    "faction": "core:dungeon",
+    "level": 7,
+    "cost": {
+      "gold": 17920,
+      "sulfur": 9
+    },
+    "doubleWide": true,
+    "speed": 15,
+    "hitPoints": 345,
+    "attack": 27,
+    "defense": 27,
+    "damage": {
+      "max": 55,
+      "min": 44
+    },
+    "fightValue": 6783,
+    "aiValue": 8721,
+    "advMapAmount": {
+      "min": 2,
+      "max": 5
+    },
+    "growth": 1,
+    "hasDoubleWeek": false,
+    "abilities": {
+      "inherited6": {
+        "type": "KING"
+      },
+      "inherited7": {
+        "type": "FLYING"
+      },
+      "inherited8": {
+        "type": "DRAGON_NATURE"
+      },
+      "inherited9": {
+        "subtype": "core:boneDragon",
+        "type": "SKELETON_TRANSFORMER_TARGET"
+      },
+      "inherited10": {
+        "subtype": "core:titan",
+        "type": "HATE",
+        "val": 50
+      },
+      "inherited11": {
+        "type": "LEVEL_SPELL_IMMUNITY",
+        "val": 5
+      },
+      "inherited12": {
+        "type": "TWO_HEX_ATTACK_BREATH"
+      },
+      "inherited13": {
+        "type": "LIVING"
+      }
+    },
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcObsidianDragon",
+      "iconSmall": "fourth-forms/creatures/dcObsidianDragon/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcObsidianDragon/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "mapAttackFromRight": "AvWattak.def:0:166",
+      "mapAttackFromLeft": "AvWattak.def:0:167",
+      "map": "AVWddrx0"
+    },
+    "sound": {
+      "attack": "BKDRATTK.wav",
+      "defend": "BKDRDFND.wav",
+      "killed": "BKDRKILL.wav",
+      "move": "BKDRMOVE.wav",
+      "wince": "BKDRWNCE.wav"
+    },
+    "shots": 0,
+    "horde": 0,
+    "upgrades": [],
+    "description": "Third form of Black Dragon. Growth is unchanged."
+  },
+  "dcVeteranHobgoblin": {
+    "name": {
+      "singular": "Hobgoblin Weteran",
+      "plural": "Hobgobliny Weterani"
+    },
+    "faction": "core:stronghold",
+    "level": 1,
+    "cost": {
+      "gold": 75
+    },
+    "speed": 7,
+    "hitPoints": 6,
+    "attack": 8,
+    "defense": 4,
+    "damage": {
+      "max": 3,
+      "min": 2
+    },
+    "growth": 15,
+    "horde": 8,
+    "hasDoubleWeek": true,
+    "aiValue": 78,
+    "fightValue": 65,
+    "advMapAmount": {
+      "min": 20,
+      "max": 25
+    },
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcVeteranHobgoblin",
+      "iconSmall": "fourth-forms/creatures/dcVeteranHobgoblin/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcVeteranHobgoblin/portrait-large",
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "timeBetweenFidgets": 1,
+      "mapAttackFromRight": "AvWattak.def:0:170",
+      "mapAttackFromLeft": "AvWattak.def:0:171",
+      "map": "AVWgobx0"
+    },
+    "sound": {
+      "attack": "HGOBATTK.wav",
+      "defend": "HGOBDFND.wav",
+      "killed": "HGOBKILL.wav",
+      "move": "HGOBMOVE.wav",
+      "wince": "HGOBWNCE.wav"
+    },
+    "abilities": {
+      "inherited6": {
+        "type": "LIVING"
+      }
+    },
+    "shots": 0,
+    "doubleWide": false,
+    "upgrades": [],
+    "description": "Third form of Hobgoblin. Growth is unchanged."
+  },
+  "dcWolfHetman": {
+    "name": {
+      "singular": "Wilczy Hetman",
+      "plural": "Wilczy Hetmani"
+    },
+    "advMapAmount": {
+      "max": 22,
+      "min": 16
+    },
+    "faction": "core:stronghold",
+    "attack": 11,
+    "defense": 6,
+    "cost": {
+      "gold": 255
+    },
+    "damage": {
+      "max": 5,
+      "min": 4
+    },
+    "growth": 9,
+    "hitPoints": 12,
+    "level": 2,
+    "speed": 8,
+    "doubleWide": true,
+    "fightValue": 174,
+    "aiValue": 203,
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcWolfHetman",
+      "iconSmall": "fourth-forms/creatures/dcWolfHetman/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcWolfHetman/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "mapAttackFromRight": "AvWattak.def:0:174",
+      "mapAttackFromLeft": "AvWattak.def:0:175",
+      "map": "AVWwolx0"
+    },
+    "sound": {
+      "attack": "HGWRATTK.wav",
+      "defend": "HGWRDFND.wav",
+      "killed": "HGWRKILL.wav",
+      "move": "HGWRMOVE.wav",
+      "wince": "HGWRWNCE.wav"
+    },
+    "abilities": {
+      "inherited6": {
+        "type": "ADDITIONAL_ATTACK",
+        "val": 1
+      },
+      "inherited7": {
+        "type": "LIVING"
+      }
+    },
+    "shots": 0,
+    "horde": 0,
+    "upgrades": [],
+    "description": "Third form of Wolf Raider. Growth is unchanged."
+  },
+  "dcAxeMasterOrc": {
+    "name": {
+      "singular": "Ork Mistrz Topora",
+      "plural": "Orkowie Mistrzowie Topora"
+    },
+    "advMapAmount": {
+      "max": 17,
+      "min": 12
+    },
+    "faction": "core:stronghold",
+    "attack": 10,
+    "defense": 5,
+    "cost": {
+      "gold": 360
+    },
+    "damage": {
+      "max": 6,
+      "min": 3
+    },
+    "growth": 7,
+    "hitPoints": 23,
+    "speed": 5,
+    "shots": 24,
+    "level": 3,
+    "fightValue": 200,
+    "aiValue": 240,
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcAxeMasterOrc",
+      "iconSmall": "fourth-forms/creatures/dcAxeMasterOrc/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcAxeMasterOrc/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "missile": {
+        "projectile": "PORCHX.DEF",
+        "attackClimaxFrame": 4,
+        "offset": {
+          "upperX": 72,
+          "upperY": -83,
+          "middleX": 70,
+          "middleY": -67,
+          "lowerX": 63,
+          "lowerY": -33
+        },
+        "frameAngles": [
+          90,
+          72,
+          45,
+          27,
+          0,
+          -27,
+          -45,
+          -72,
+          -90,
+          0,
+          0,
+          0
+        ]
+      },
+      "mapAttackFromRight": "AvWattak.def:0:178",
+      "mapAttackFromLeft": "AvWattak.def:0:179",
+      "map": "AVWorcx0"
+    },
+    "sound": {
+      "attack": "ORCCATTK.wav",
+      "defend": "ORCCDFND.wav",
+      "killed": "ORCCKILL.wav",
+      "move": "ORCCMOVE.wav",
+      "shoot": "ORCCSHOT.wav",
+      "wince": "ORCCWNCE.wav"
+    },
+    "abilities": {
+      "inherited7": {
+        "type": "SHOOTER"
+      },
+      "inherited8": {
+        "type": "LIVING"
+      }
+    },
+    "horde": 0,
+    "doubleWide": false,
+    "upgrades": [],
+    "description": "Third form of Orc Chieftain. Growth is unchanged."
+  },
+  "dcElderOgreShaman": {
+    "name": {
+      "singular": "Ogr Starszy Szaman",
+      "plural": "Prastarzy Szamani Ogrow"
+    },
+    "advMapAmount": {
+      "max": 14,
+      "min": 10
+    },
+    "faction": "core:stronghold",
+    "attack": 14,
+    "defense": 9,
+    "cost": {
+      "gold": 1040
+    },
+    "damage": {
+      "max": 13,
+      "min": 7
+    },
+    "growth": 4,
+    "hitPoints": 69,
+    "speed": 5,
+    "level": 4,
+    "fightValue": 672,
+    "aiValue": 672,
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcElderOgreShaman",
+      "iconSmall": "fourth-forms/creatures/dcElderOgreShaman/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcElderOgreShaman/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "mapAttackFromRight": "AvWattak.def:0:182",
+      "mapAttackFromLeft": "AvWattak.def:0:183",
+      "map": "AVWogrx0"
+    },
+    "sound": {
+      "attack": "OGRMATTK.wav",
+      "defend": "OGRMDFND.wav",
+      "killed": "OGRMKILL.wav",
+      "move": "OGRMMOVE.wav",
+      "shoot": "OGRMSHOT.wav",
+      "wince": "OGRMWNCE.wav"
+    },
+    "abilities": {
+      "inherited7": {
+        "subtype": "core:bloodlust",
+        "type": "SPELLCASTER",
+        "val": 2
+      },
+      "inherited9": {
+        "type": "LIVING"
+      }
+    },
+    "shots": 0,
+    "horde": 0,
+    "doubleWide": false,
+    "upgrades": [],
+    "description": "Third form of Ogre Mage. Growth is unchanged."
+  },
+  "dcStormbird": {
+    "name": {
+      "singular": "Ptak Burzowy",
+      "plural": "Ptaki Burzy"
+    },
+    "advMapAmount": {
+      "max": 10,
+      "min": 8
+    },
+    "faction": "core:stronghold",
+    "attack": 16,
+    "defense": 12,
+    "cost": {
+      "gold": 2180
+    },
+    "damage": {
+      "max": 18,
+      "min": 13
+    },
+    "growth": 3,
+    "hitPoints": 68,
+    "speed": 11,
+    "level": 5,
+    "doubleWide": true,
+    "fightValue": 869,
+    "aiValue": 1106,
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcStormbird",
+      "iconSmall": "fourth-forms/creatures/dcStormbird/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcStormbird/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "mapAttackFromRight": "AvWattak.def:0:186",
+      "mapAttackFromLeft": "AvWattak.def:0:187",
+      "map": "AVWrocx0"
+    },
+    "sound": {
+      "attack": "TBRDATTK.wav",
+      "defend": "TBRDDFND.wav",
+      "killed": "TBRDKILL.wav",
+      "move": "TBRDMOVE.wav",
+      "wince": "TBRDWNCE.wav"
+    },
+    "abilities": {
+      "inherited6": {
+        "type": "FLYING"
+      },
+      "inherited7": {
+        "subtype": "core:thunderbolt",
+        "type": "SPELL_AFTER_ATTACK",
+        "val": 20
+      },
+      "inherited9": {
+        "type": "LIVING"
+      }
+    },
+    "shots": 0,
+    "horde": 0,
+    "upgrades": [],
+    "description": "Third form of Thunderbird. Growth is unchanged."
+  },
+  "dcDestroyerCyclops": {
+    "name": {
+      "singular": "Cyklop Niszczyciel",
+      "plural": "Cyklopi Burzyciele"
+    },
+    "advMapAmount": {
+      "max": 6,
+      "min": 5
+    },
+    "faction": "core:stronghold",
+    "attack": 19,
+    "defense": 14,
+    "cost": {
+      "gold": 4110
+    },
+    "damage": {
+      "max": 22,
+      "min": 18
+    },
+    "growth": 2,
+    "hitPoints": 79,
+    "shots": 24,
+    "speed": 8,
+    "level": 6,
+    "fightValue": 1110,
+    "aiValue": 1443,
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcDestroyerCyclops",
+      "iconSmall": "fourth-forms/creatures/dcDestroyerCyclops/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcDestroyerCyclops/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "missile": {
+        "projectile": "PCYCLBX.DEF",
+        "attackClimaxFrame": 4,
+        "offset": {
+          "upperX": 55,
+          "upperY": -3,
+          "middleX": 54,
+          "middleY": -79,
+          "lowerX": 43,
+          "lowerY": -37
+        },
+        "frameAngles": [
+          0
+        ]
+      },
+      "mapAttackFromRight": "AvWattak.def:0:190",
+      "mapAttackFromLeft": "AvWattak.def:0:191",
+      "map": "AVWcycx0"
+    },
+    "sound": {
+      "attack": "CYCLATTK.wav",
+      "defend": "CYCLDFND.wav",
+      "killed": "CYCLKILL.wav",
+      "move": "CYCLMOVE.wav",
+      "shoot": "CYCLSHOT.wav",
+      "wince": "CYCLWNCE.wav"
+    },
+    "abilities": {
+      "inherited7": {
+        "subtype": "core:cyclopsShot",
+        "type": "CATAPULT"
+      },
+      "inherited8": {
+        "subtype": "core:cyclopsShot",
+        "type": "CATAPULT_EXTRA_SHOTS",
+        "val": 1,
+        "valueType": "BASE_NUMBER"
+      },
+      "inherited9": {
+        "type": "SHOOTER"
+      },
+      "inherited10": {
+        "type": "LIVING"
+      }
+    },
+    "horde": 0,
+    "doubleWide": false,
+    "upgrades": [],
+    "description": "Third form of Cyclops King. Growth is unchanged."
+  },
+  "dcBehemothPatriarch": {
+    "name": {
+      "singular": "Behemot Patriarcha",
+      "plural": "Behemoty Patriarchowie"
+    },
+    "faction": "core:stronghold",
+    "level": 7,
+    "cost": {
+      "crystal": 5,
+      "gold": 13440
+    },
+    "doubleWide": true,
+    "speed": 9,
+    "hitPoints": 345,
+    "advMapAmount": {
+      "min": 2,
+      "max": 5
+    },
+    "attack": 21,
+    "defense": 21,
+    "damage": {
+      "max": 55,
+      "min": 33
+    },
+    "fightValue": 5397,
+    "aiValue": 6168,
+    "growth": 1,
+    "hasDoubleWeek": false,
+    "abilities": {
+      "inherited6": {
+        "type": "KING"
+      },
+      "inherited7": {
+        "type": "ENEMY_DEFENCE_REDUCTION",
+        "val": 80
+      },
+      "inherited8": {
+        "type": "LIVING"
+      }
+    },
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcBehemothPatriarch",
+      "iconSmall": "fourth-forms/creatures/dcBehemothPatriarch/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcBehemothPatriarch/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "mapAttackFromRight": "AvWattak.def:0:194",
+      "mapAttackFromLeft": "AvWattak.def:0:195",
+      "map": "AVWbhmx0"
+    },
+    "sound": {
+      "attack": "BMTHATTK.wav",
+      "defend": "BMTHDFND.wav",
+      "killed": "BMTHKILL.wav",
+      "move": "BMTHMOVE.wav",
+      "wince": "BMTHWNCE.wav"
+    },
+    "shots": 0,
+    "horde": 0,
+    "upgrades": [],
+    "description": "Third form of Ancient Behemoth. Growth is unchanged."
+  },
+  "dcIronshieldGnoll": {
+    "name": {
+      "singular": "Gnoll Żelaznej Tarczy",
+      "plural": "Gnolle Zelaznej Tarczy"
+    },
+    "faction": "core:fortress",
+    "level": 1,
+    "cost": {
+      "gold": 105
+    },
+    "speed": 5,
+    "hitPoints": 8,
+    "attack": 5,
+    "defense": 9,
+    "damage": {
+      "max": 4,
+      "min": 3
+    },
+    "growth": 12,
+    "horde": 6,
+    "aiValue": 90,
+    "fightValue": 90,
+    "advMapAmount": {
+      "min": 20,
+      "max": 25
+    },
+    "hasDoubleWeek": true,
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcIronshieldGnoll",
+      "iconSmall": "fourth-forms/creatures/dcIronshieldGnoll/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcIronshieldGnoll/portrait-large",
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "timeBetweenFidgets": 1,
+      "mapAttackFromRight": "AvWattak.def:0:198",
+      "mapAttackFromLeft": "AvWattak.def:0:199",
+      "map": "AVWgnlx0"
+    },
+    "sound": {
+      "attack": "GNLMATTK.wav",
+      "defend": "GNLMDFND.wav",
+      "killed": "GNLMKILL.wav",
+      "move": "GNLMMOVE.wav",
+      "wince": "GNLMWNCE.wav"
+    },
+    "abilities": {
+      "inherited6": {
+        "type": "LIVING"
+      }
+    },
+    "shots": 0,
+    "doubleWide": false,
+    "upgrades": [],
+    "description": "Third form of Gnoll Marauder. Growth is unchanged."
+  },
+  "dcLizardHunter": {
+    "name": {
+      "singular": "Jaszczurzy Łowca",
+      "plural": "Jaszczurowi Lowcy"
+    },
+    "advMapAmount": {
+      "max": 22,
+      "min": 16
+    },
+    "faction": "core:fortress",
+    "attack": 8,
+    "defense": 9,
+    "cost": {
+      "gold": 255
+    },
+    "damage": {
+      "max": 6,
+      "min": 3
+    },
+    "growth": 9,
+    "hitPoints": 17,
+    "level": 2,
+    "speed": 5,
+    "shots": 24,
+    "fightValue": 130,
+    "aiValue": 156,
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcLizardHunter",
+      "iconSmall": "fourth-forms/creatures/dcLizardHunter/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcLizardHunter/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "missile": {
+        "projectile": "PPLIZAX.DEF",
+        "attackClimaxFrame": 4,
+        "offset": {
+          "upperX": 41,
+          "upperY": -92,
+          "middleX": 58,
+          "middleY": -79,
+          "lowerX": 29,
+          "lowerY": -14
+        },
+        "frameAngles": [
+          90,
+          72,
+          45,
+          27,
+          0,
+          -27,
+          -45,
+          -72,
+          -90,
+          0,
+          0,
+          0
+        ]
+      },
+      "mapAttackFromRight": "AvWattak.def:0:202",
+      "mapAttackFromLeft": "AvWattak.def:0:203",
+      "map": "AVWlizx0"
+    },
+    "doubleWide": false,
+    "sound": {
+      "attack": "ALIZATTK.wav",
+      "defend": "ALIZDFND.wav",
+      "killed": "ALIZKILL.wav",
+      "move": "ALIZMOVE.wav",
+      "shoot": "ALIZSHOT.wav",
+      "wince": "ALIZWNCE.wav"
+    },
+    "abilities": {
+      "inherited7": {
+        "type": "SHOOTER"
+      },
+      "inherited8": {
+        "type": "LIVING"
+      },
+      "longRange": {
+        "type": "NO_DISTANCE_PENALTY"
+      }
+    },
+    "horde": 0,
+    "upgrades": [],
+    "description": "Third form of Lizard Warrior. Growth is unchanged."
+  },
+  "dcVenomFly": {
+    "name": {
+      "singular": "Ważka Trucizny",
+      "plural": "Wazki Jadowe"
+    },
+    "advMapAmount": {
+      "max": 17,
+      "min": 12
+    },
+    "faction": "core:fortress",
+    "attack": 11,
+    "defense": 11,
+    "cost": {
+      "gold": 520
+    },
+    "damage": {
+      "max": 6,
+      "min": 3
+    },
+    "growth": 8,
+    "hitPoints": 23,
+    "speed": 13,
+    "level": 3,
+    "fightValue": 250,
+    "aiValue": 312,
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcVenomFly",
+      "iconSmall": "fourth-forms/creatures/dcVenomFly/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcVenomFly/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "mapAttackFromRight": "AvWattak.def:0:210",
+      "mapAttackFromLeft": "AvWattak.def:0:211",
+      "map": "AvWDFir"
+    },
+    "sound": {
+      "attack": "FDFLATTK.wav",
+      "defend": "FDFLDFND.wav",
+      "killed": "FDFLKILL.wav",
+      "move": "FDFLMOVE.wav",
+      "shoot": "FDFLSHOT.wav",
+      "wince": "FDFLWNCE.wav"
+    },
+    "abilities": {
+      "inherited6": {
+        "type": "FLYING"
+      },
+      "inherited7": {
+        "subtype": "core:weakness",
+        "type": "SPELL_AFTER_ATTACK",
+        "val": 100
+      },
+      "inherited8": {
+        "subtype": "core:dispelHelpful",
+        "type": "SPELL_AFTER_ATTACK",
+        "val": 100
+      },
+      "inherited9": {
+        "type": "LIVING"
+      }
+    },
+    "shots": 0,
+    "horde": 0,
+    "doubleWide": false,
+    "upgrades": [],
+    "description": "Third form of Dragon Fly. Growth is unchanged."
+  },
+  "dcPrimevalBasilisk": {
+    "name": {
+      "singular": "Bazyliszek Prastary",
+      "plural": "Bazyliszki Pradawne"
+    },
+    "advMapAmount": {
+      "max": 14,
+      "min": 10
+    },
+    "faction": "core:fortress",
+    "attack": 13,
+    "defense": 15,
+    "cost": {
+      "gold": 1040
+    },
+    "damage": {
+      "max": 11,
+      "min": 7
+    },
+    "growth": 4,
+    "hitPoints": 48,
+    "level": 4,
+    "speed": 7,
+    "fightValue": 561,
+    "aiValue": 714,
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcPrimevalBasilisk",
+      "iconSmall": "fourth-forms/creatures/dcPrimevalBasilisk/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcPrimevalBasilisk/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "mapAttackFromRight": "AvWattak.def:0:214",
+      "mapAttackFromLeft": "AvWattak.def:0:215",
+      "map": "AvWGBas"
+    },
+    "doubleWide": true,
+    "sound": {
+      "attack": "GBASATTK.wav",
+      "defend": "GBASDFND.wav",
+      "killed": "GBASKILL.wav",
+      "move": "GBASMOVE.wav",
+      "wince": "GBASWNCE.wav"
+    },
+    "abilities": {
+      "inherited6": {
+        "subtype": "core:stoneGaze",
+        "type": "SPELL_AFTER_ATTACK",
+        "val": 20
+      },
+      "inherited7": {
+        "type": "LIVING"
+      }
+    },
+    "shots": 0,
+    "horde": 0,
+    "upgrades": [],
+    "description": "Third form of Greater Basilisk. Growth is unchanged."
+  },
+  "dcGorgonMatriarch": {
+    "name": {
+      "singular": "Gorgona Matriarcha",
+      "plural": "Gorgony Matriarchinie"
+    },
+    "advMapAmount": {
+      "max": 10,
+      "min": 8
+    },
+    "faction": "core:fortress",
+    "attack": 12,
+    "defense": 19,
+    "cost": {
+      "gold": 1870
+    },
+    "damage": {
+      "max": 17,
+      "min": 13
+    },
+    "growth": 3,
+    "hitPoints": 84,
+    "level": 5,
+    "speed": 6,
+    "fightValue": 1028,
+    "aiValue": 1028,
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcGorgonMatriarch",
+      "iconSmall": "fourth-forms/creatures/dcGorgonMatriarch/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcGorgonMatriarch/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "mapAttackFromRight": "AvWattak.def:0:206",
+      "mapAttackFromLeft": "AvWattak.def:0:207",
+      "map": "AVWgorx0"
+    },
+    "doubleWide": true,
+    "sound": {
+      "attack": "BGORATTK.wav",
+      "defend": "BGORDFND.wav",
+      "killed": "BGORKILL.wav",
+      "move": "BGORMOVE.wav",
+      "wince": "BGORWNCE.wav"
+    },
+    "abilities": {
+      "inherited6": {
+        "subtype": "deathStareGorgon",
+        "type": "DEATH_STARE",
+        "val": 10
+      },
+      "inherited7": {
+        "type": "LIVING"
+      }
+    },
+    "shots": 0,
+    "horde": 0,
+    "upgrades": [],
+    "description": "Third form of Mighty Gorgon. Growth is unchanged."
+  },
+  "dcMarshWyvern": {
+    "name": {
+      "singular": "Wiwerna Bagienna",
+      "plural": "Wiwerny Bagienne"
+    },
+    "advMapAmount": {
+      "max": 6,
+      "min": 5
+    },
+    "faction": "core:fortress",
+    "attack": 17,
+    "defense": 15,
+    "cost": {
+      "gold": 4110
+    },
+    "damage": {
+      "max": 26,
+      "min": 21
+    },
+    "growth": 2,
+    "hitPoints": 79,
+    "level": 6,
+    "speed": 11,
+    "doubleWide": true,
+    "fightValue": 1181,
+    "aiValue": 1518,
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcMarshWyvern",
+      "iconSmall": "fourth-forms/creatures/dcMarshWyvern/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcMarshWyvern/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "mapAttackFromRight": "AvWattak.def:0:218",
+      "mapAttackFromLeft": "AvWattak.def:0:219",
+      "map": "AVWwyvx0"
+    },
+    "sound": {
+      "attack": "WYVMATTK.wav",
+      "defend": "WYVMDFND.wav",
+      "killed": "WYVMKILL.wav",
+      "move": "WYVMMOVE.wav",
+      "wince": "WYVMWNCE.wav"
+    },
+    "abilities": {
+      "inherited6": {
+        "type": "FLYING"
+      },
+      "inherited7": {
+        "subtype": "core:poison",
+        "type": "SPELL_AFTER_ATTACK",
+        "val": 30
+      },
+      "inherited8": {
+        "type": "LIVING"
+      }
+    },
+    "shots": 0,
+    "horde": 0,
+    "upgrades": [],
+    "description": "Third form of Wyvern Monarch. Growth is unchanged."
+  },
+  "dcPrimordialHydra": {
+    "name": {
+      "singular": "Hydra Pierwotna",
+      "plural": "Hydry Pierwotne"
+    },
+    "faction": "core:fortress",
+    "level": 7,
+    "cost": {
+      "gold": 15680,
+      "sulfur": 5
+    },
+    "doubleWide": true,
+    "speed": 7,
+    "hitPoints": 288,
+    "attack": 20,
+    "defense": 22,
+    "damage": {
+      "max": 50,
+      "min": 28
+    },
+    "fightValue": 5272,
+    "aiValue": 5931,
+    "advMapAmount": {
+      "min": 2,
+      "max": 5
+    },
+    "growth": 1,
+    "hasDoubleWeek": false,
+    "abilities": {
+      "inherited6": {
+        "type": "KING"
+      },
+      "inherited7": {
+        "type": "ATTACKS_ALL_ADJACENT"
+      },
+      "inherited8": {
+        "subtype": "core:boneDragon",
+        "type": "SKELETON_TRANSFORMER_TARGET"
+      },
+      "inherited9": {
+        "type": "BLOCKS_RETALIATION"
+      },
+      "inherited10": {
+        "type": "LIVING"
+      }
+    },
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcPrimordialHydra",
+      "iconSmall": "fourth-forms/creatures/dcPrimordialHydra/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcPrimordialHydra/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "mapAttackFromRight": "AvWattak.def:0:222",
+      "mapAttackFromLeft": "AvWattak.def:0:223",
+      "map": "AVWhydx0"
+    },
+    "sound": {
+      "attack": "CHYDATTK.wav",
+      "defend": "CHYDDFND.wav",
+      "killed": "CHYDKILL.wav",
+      "move": "CHYDMOVE.wav",
+      "wince": "CHYDWNCE.wav"
+    },
+    "shots": 0,
+    "horde": 0,
+    "upgrades": [],
+    "description": "Third form of Chaos Hydra. Growth is unchanged."
+  },
+  "dcAuroraNymph": {
+    "name": {
+      "singular": "Nimfa Zorzy",
+      "plural": "Nimfy Zorzy"
+    },
+    "advMapAmount": {
+      "max": 25,
+      "min": 20
+    },
+    "faction": "core:conflux",
+    "attack": 5,
+    "defense": 3,
+    "cost": {
+      "gold": 45
+    },
+    "damage": {
+      "max": 4,
+      "min": 2
+    },
+    "growth": 20,
+    "horde": 10,
+    "hitPoints": 4,
+    "speed": 9,
+    "level": 1,
+    "fightValue": 70,
+    "aiValue": 95,
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcAuroraNymph",
+      "iconSmall": "fourth-forms/creatures/dcAuroraNymph/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcAuroraNymph/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "mapAttackFromRight": "AvWattak.def:0:238",
+      "mapAttackFromLeft": "AvWattak.def:0:239",
+      "map": "AVWsprit"
+    },
+    "sound": {
+      "attack": "SPRTATTK.wav",
+      "defend": "SPRTDFND.wav",
+      "killed": "SPRTKILL.wav",
+      "move": "SPRTMOVE.wav",
+      "wince": "SPRTWNCE.wav"
+    },
+    "abilities": {
+      "inherited6": {
+        "type": "FLYING"
+      },
+      "inherited7": {
+        "type": "BLOCKS_RETALIATION"
+      },
+      "inherited8": {
+        "type": "LIVING"
+      }
+    },
+    "shots": 0,
+    "doubleWide": false,
+    "upgrades": [],
+    "description": "Third form of Sprite. Growth is unchanged."
+  },
+  "dcTempestElemental": {
+    "name": {
+      "singular": "Żywiołak Nawałnicy",
+      "plural": "Zywiolaki Nawalnicy"
+    },
+    "advMapAmount": {
+      "max": 22,
+      "min": 16
+    },
+    "faction": "core:conflux",
+    "attack": 11,
+    "defense": 10,
+    "cost": {
+      "gold": 495
+    },
+    "damage": {
+      "max": 9,
+      "min": 3
+    },
+    "growth": 6,
+    "hitPoints": 28,
+    "speed": 8,
+    "level": 2,
+    "shots": 24,
+    "fightValue": 324,
+    "aiValue": 486,
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcTempestElemental",
+      "iconSmall": "fourth-forms/creatures/dcTempestElemental/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcTempestElemental/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "missile": {
+        "projectile": "CPRGTIX.DEF",
+        "attackClimaxFrame": 2,
+        "offset": {
+          "upperX": 50,
+          "upperY": -100,
+          "middleX": 80,
+          "middleY": -80,
+          "lowerX": 45,
+          "lowerY": -40
+        },
+        "frameAngles": [
+          90,
+          72,
+          45,
+          27,
+          0,
+          -27,
+          -45,
+          -72,
+          -90,
+          0,
+          0,
+          0
+        ]
+      },
+      "mapAttackFromRight": "AvWattak.def:0:254",
+      "mapAttackFromLeft": "AvWattak.def:0:255",
+      "map": "AVWstorm"
+    },
+    "sound": {
+      "attack": "STORATTK.wav",
+      "defend": "STORDFND.wav",
+      "killed": "STORKILL.wav",
+      "move": "STORMOVE.wav",
+      "shoot": "STORSHOT.wav",
+      "wince": "STORWNCE.wav"
+    },
+    "abilities": {
+      "inherited7": {
+        "subtype": "core:armageddon",
+        "type": "MORE_DAMAGE_FROM_SPELL",
+        "val": 100
+      },
+      "inherited8": {
+        "subtype": "core:chainLightning",
+        "type": "MORE_DAMAGE_FROM_SPELL",
+        "val": 100
+      },
+      "inherited9": {
+        "type": "MIND_IMMUNITY"
+      },
+      "inherited10": {
+        "subtype": "core:lightningBolt",
+        "type": "MORE_DAMAGE_FROM_SPELL",
+        "val": 100
+      },
+      "inherited11": {
+        "subtype": "core:meteorShower",
+        "type": "SPELL_IMMUNITY"
+      },
+      "inherited12": {
+        "type": "NON_LIVING"
+      },
+      "inherited13": {
+        "subtype": "core:earthElemental",
+        "type": "HATE",
+        "val": 100
+      },
+      "inherited14": {
+        "subtype": "core:magmaElemental",
+        "type": "HATE",
+        "val": 100
+      },
+      "inherited15": {
+        "type": "SHOOTER"
+      },
+      "inherited18": {
+        "subtype": "core:protectAir",
+        "type": "SPELLCASTER",
+        "val": 2
+      }
+    },
+    "horde": 0,
+    "doubleWide": false,
+    "upgrades": [],
+    "description": "Third form of Storm Elemental. Growth is unchanged."
+  },
+  "dcGlacierElemental": {
+    "name": {
+      "singular": "Żywiołak Lodowca",
+      "plural": "Zywiolaki Lodowca"
+    },
+    "faction": "core:conflux",
+    "level": 3,
+    "cost": {
+      "gold": 810
+    },
+    "speed": 6,
+    "hitPoints": 34,
+    "attack": 10,
+    "defense": 11,
+    "damage": {
+      "max": 8,
+      "min": 4
+    },
+    "shots": 24,
+    "doubleWide": true,
+    "growth": 6,
+    "aiValue": 380,
+    "fightValue": 315,
+    "advMapAmount": {
+      "min": 12,
+      "max": 17
+    },
+    "abilities": {
+      "inherited7": {
+        "subtype": "core:armageddon",
+        "type": "MORE_DAMAGE_FROM_SPELL",
+        "val": 100
+      },
+      "inherited8": {
+        "subtype": "core:fireShield",
+        "type": "MORE_DAMAGE_FROM_SPELL",
+        "val": 100
+      },
+      "inherited9": {
+        "subtype": "core:fireWallTrigger",
+        "type": "MORE_DAMAGE_FROM_SPELL",
+        "val": 100
+      },
+      "inherited10": {
+        "subtype": "core:fireball",
+        "type": "MORE_DAMAGE_FROM_SPELL",
+        "val": 100
+      },
+      "inherited11": {
+        "subtype": "core:frostRing",
+        "type": "SPELL_IMMUNITY"
+      },
+      "inherited12": {
+        "subtype": "core:iceBolt",
+        "type": "SPELL_IMMUNITY"
+      },
+      "inherited13": {
+        "type": "MIND_IMMUNITY"
+      },
+      "inherited14": {
+        "subtype": "core:inferno",
+        "type": "MORE_DAMAGE_FROM_SPELL",
+        "val": 100
+      },
+      "inherited15": {
+        "type": "NON_LIVING"
+      },
+      "inherited16": {
+        "subtype": "core:energyElemental",
+        "type": "HATE",
+        "val": 100
+      },
+      "inherited17": {
+        "subtype": "core:fireElemental",
+        "type": "HATE",
+        "val": 100
+      },
+      "inherited18": {
+        "type": "SHOOTER"
+      },
+      "inherited21": {
+        "subtype": "core:protectWater",
+        "type": "SPELLCASTER",
+        "val": 2
+      }
+    },
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcGlacierElemental",
+      "iconSmall": "fourth-forms/creatures/dcGlacierElemental/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcGlacierElemental/portrait-large",
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "missile": {
+        "projectile": "PICEE.DEF",
+        "attackClimaxFrame": 2,
+        "frameAngles": [
+          90,
+          72,
+          45,
+          27,
+          0,
+          -27,
+          -45,
+          -72,
+          -90,
+          0,
+          0,
+          0
+        ],
+        "offset": {
+          "lowerX": 18,
+          "lowerY": -92,
+          "middleX": 43,
+          "middleY": -99,
+          "upperX": 28,
+          "upperY": -107
+        }
+      },
+      "timeBetweenFidgets": 1,
+      "mapAttackFromRight": "AvWattak.def:0:246",
+      "mapAttackFromLeft": "AvWattak.def:0:247",
+      "map": "AVWicee"
+    },
+    "sound": {
+      "attack": "ICELATTK.wav",
+      "defend": "ICELDFND.wav",
+      "killed": "ICELKILL.wav",
+      "move": "ICELMOVE.wav",
+      "shoot": "ICELSHOT.wav",
+      "wince": "ICELWNCE.wav"
+    },
+    "horde": 0,
+    "upgrades": [],
+    "description": "Third form of Ice Elemental. Growth is unchanged."
+  },
+  "dcPlasmaElemental": {
+    "name": {
+      "singular": "Żywiołak Plazmy",
+      "plural": "Zywiolaki Plazmy"
+    },
+    "advMapAmount": {
+      "max": 24,
+      "min": 10
+    },
+    "faction": "core:conflux",
+    "attack": 15,
+    "defense": 9,
+    "cost": {
+      "gold": 1040
+    },
+    "damage": {
+      "max": 7,
+      "min": 5
+    },
+    "growth": 5,
+    "hitPoints": 40,
+    "speed": 8,
+    "level": 4,
+    "fightValue": 360,
+    "aiValue": 470,
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcPlasmaElemental",
+      "iconSmall": "fourth-forms/creatures/dcPlasmaElemental/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcPlasmaElemental/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "mapAttackFromRight": "AvWattak.def:0:258",
+      "mapAttackFromLeft": "AvWattak.def:0:259",
+      "map": "AVWnrg"
+    },
+    "sound": {
+      "attack": "ENERATTK.wav",
+      "defend": "ENERDFND.wav",
+      "killed": "ENERKILL.wav",
+      "move": "ENERMOVE.wav",
+      "wince": "ENERWNCE.wav"
+    },
+    "abilities": {
+      "inherited6": {
+        "type": "FLYING"
+      },
+      "inherited7": {
+        "subtype": "core:frostRing",
+        "type": "MORE_DAMAGE_FROM_SPELL",
+        "val": 100
+      },
+      "inherited8": {
+        "subtype": "core:iceBolt",
+        "type": "MORE_DAMAGE_FROM_SPELL",
+        "val": 100
+      },
+      "inherited9": {
+        "subtype": "fire",
+        "type": "SPELL_SCHOOL_IMMUNITY"
+      },
+      "inherited10": {
+        "type": "MIND_IMMUNITY"
+      },
+      "inherited11": {
+        "type": "NON_LIVING"
+      },
+      "inherited12": {
+        "subtype": "core:iceElemental",
+        "type": "HATE",
+        "val": 100
+      },
+      "inherited13": {
+        "subtype": "core:waterElemental",
+        "type": "HATE",
+        "val": 100
+      },
+      "inherited16": {
+        "subtype": "core:protectFire",
+        "type": "SPELLCASTER",
+        "val": 2
+      },
+      "waterImmunity": {
+        "type": "SPELL_SCHOOL_IMMUNITY",
+        "subtype": "spellSchool.water"
+      },
+      "fireImmunity": {
+        "type": "SPELL_SCHOOL_IMMUNITY",
+        "subtype": "spellSchool.fire"
+      }
+    },
+    "shots": 0,
+    "horde": 0,
+    "doubleWide": false,
+    "upgrades": [],
+    "description": "Third form of Energy Elemental. Growth is unchanged."
+  },
+  "dcObsidianElemental": {
+    "name": {
+      "singular": "Żywiołak Obsydianu",
+      "plural": "Zywiolaki Obsydianu"
+    },
+    "advMapAmount": {
+      "max": 10,
+      "min": 8
+    },
+    "faction": "core:conflux",
+    "attack": 12,
+    "defense": 14,
+    "cost": {
+      "gold": 1560
+    },
+    "damage": {
+      "max": 11,
+      "min": 7
+    },
+    "growth": 4,
+    "hitPoints": 48,
+    "speed": 6,
+    "level": 5,
+    "fightValue": 490,
+    "aiValue": 490,
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcObsidianElemental",
+      "iconSmall": "fourth-forms/creatures/dcObsidianElemental/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcObsidianElemental/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "mapAttackFromRight": "AvWattak.def:0:250",
+      "mapAttackFromLeft": "AvWattak.def:0:251",
+      "map": "AVWstone"
+    },
+    "sound": {
+      "attack": "MAGMATTK.wav",
+      "defend": "MAGMDFND.wav",
+      "killed": "MAGMKILL.wav",
+      "move": "MAGMMOVE.wav",
+      "wince": "MAGMWNCE.wav"
+    },
+    "abilities": {
+      "inherited6": {
+        "subtype": "core:armageddon",
+        "type": "SPELL_IMMUNITY"
+      },
+      "inherited7": {
+        "subtype": "core:chainLightning",
+        "type": "SPELL_IMMUNITY"
+      },
+      "inherited8": {
+        "type": "MIND_IMMUNITY"
+      },
+      "inherited9": {
+        "subtype": "core:lightningBolt",
+        "type": "SPELL_IMMUNITY"
+      },
+      "inherited10": {
+        "subtype": "core:meteorShower",
+        "type": "MORE_DAMAGE_FROM_SPELL",
+        "val": 100
+      },
+      "inherited11": {
+        "type": "NON_LIVING"
+      },
+      "inherited12": {
+        "subtype": "core:airElemental",
+        "type": "HATE",
+        "val": 100
+      },
+      "inherited13": {
+        "subtype": "core:stormElemental",
+        "type": "HATE",
+        "val": 100
+      },
+      "inherited16": {
+        "subtype": "core:protectEarth",
+        "type": "SPELLCASTER",
+        "val": 2
+      }
+    },
+    "shots": 0,
+    "horde": 0,
+    "doubleWide": false,
+    "upgrades": [],
+    "description": "Third form of Magma Elemental. Growth is unchanged."
+  },
+  "dcEtherElemental": {
+    "name": {
+      "singular": "Żywiołak Eteru",
+      "plural": "Zywiolaki Eteru"
+    },
+    "faction": "core:conflux",
+    "level": 6,
+    "cost": {
+      "gold": 2990
+    },
+    "speed": 9,
+    "hitPoints": 90,
+    "attack": 18,
+    "defense": 14,
+    "damage": {
+      "max": 29,
+      "min": 18
+    },
+    "growth": 2,
+    "horde": 0,
+    "aiValue": 2012,
+    "fightValue": 1724,
+    "advMapAmount": {
+      "min": 5,
+      "max": 8
+    },
+    "abilities": {
+      "inherited6": {
+        "type": "ATTACKS_ALL_ADJACENT"
+      },
+      "inherited7": {
+        "type": "LEVEL_SPELL_IMMUNITY",
+        "val": 5
+      },
+      "inherited8": {
+        "type": "BLOCKS_RETALIATION"
+      },
+      "inherited9": {
+        "type": "NON_LIVING"
+      },
+      "blindingStrike": {
+        "type": "SPELL_AFTER_ATTACK",
+        "addInfo": [
+          2,
+          0
+        ],
+        "val": 20,
+        "subtype": "core:blind"
+      }
+    },
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcEtherElemental",
+      "iconSmall": "fourth-forms/creatures/dcEtherElemental/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcEtherElemental/portrait-large",
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "timeBetweenFidgets": 1,
+      "mapAttackFromRight": "AvWattak.def:0:242",
+      "mapAttackFromLeft": "AvWattak.def:0:243",
+      "map": "AVWmagel"
+    },
+    "sound": {
+      "attack": "MGELATTK.wav",
+      "defend": "MGELDFND.wav",
+      "killed": "MGELKILL.wav",
+      "move": "MGELMOVE.wav",
+      "wince": "MGELWNCE.wav"
+    },
+    "shots": 0,
+    "doubleWide": false,
+    "upgrades": [],
+    "description": "Third form of Magic Elemental. Growth is unchanged."
+  },
+  "dcPrimordialPhoenix": {
+    "name": {
+      "singular": "Feniks Pierwotnego Ognia",
+      "plural": "Feniksy Pierwotne"
+    },
+    "faction": "core:conflux",
+    "level": 7,
+    "cost": {
+      "gold": 8960,
+      "mercury": 5
+    },
+    "doubleWide": true,
+    "speed": 21,
+    "hitPoints": 230,
+    "attack": 23,
+    "defense": 20,
+    "damage": {
+      "max": 44,
+      "min": 33
+    },
+    "fightValue": 4929,
+    "aiValue": 6721,
+    "advMapAmount": {
+      "min": 2,
+      "max": 5
+    },
+    "growth": 2,
+    "hasDoubleWeek": false,
+    "abilities": {
+      "inherited6": {
+        "type": "KING"
+      },
+      "inherited7": {
+        "type": "FLYING"
+      },
+      "inherited8": {
+        "subtype": "fire",
+        "type": "SPELL_SCHOOL_IMMUNITY"
+      },
+      "inherited9": {
+        "type": "REBIRTH",
+        "val": 20
+      },
+      "inherited11": {
+        "type": "TWO_HEX_ATTACK_BREATH"
+      },
+      "inherited12": {
+        "type": "LIVING"
+      }
+    },
+    "graphics": {
+      "animation": "fourth-forms/creatures/dcPrimordialPhoenix",
+      "iconSmall": "fourth-forms/creatures/dcPrimordialPhoenix/portrait-small",
+      "iconLarge": "fourth-forms/creatures/dcPrimordialPhoenix/portrait-large",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.0,
+        "idle": 3.0,
+        "attack": 0.8
+      },
+      "mapAttackFromRight": "AvWattak.def:0:262",
+      "mapAttackFromLeft": "AvWattak.def:0:263",
+      "map": "AVWphx"
+    },
+    "sound": {
+      "attack": "PHOEATTK.wav",
+      "defend": "PHOEDFND.wav",
+      "killed": "PHOEKILL.wav",
+      "move": "PHOEMOVE.wav",
+      "wince": "PHOEWNCE.wav"
+    },
+    "shots": 0,
+    "horde": 0,
+    "upgrades": [],
+    "description": "Third form of Phoenix. Growth is unchanged."
+  }
+}

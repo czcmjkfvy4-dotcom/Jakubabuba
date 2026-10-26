@@ -1,0 +1,39 @@
+{
+  "images": [
+    {
+      "group": 0,
+      "frame": 51,
+      "file": "town-screen/stronghold/frames/TBSTGOB3"
+    },
+    {
+      "group": 0,
+      "frame": 52,
+      "file": "town-screen/stronghold/frames/TBSTWLF3"
+    },
+    {
+      "group": 0,
+      "frame": 53,
+      "file": "town-screen/stronghold/frames/TBSTORC3"
+    },
+    {
+      "group": 0,
+      "frame": 54,
+      "file": "town-screen/stronghold/frames/TBSTOGR3"
+    },
+    {
+      "group": 0,
+      "frame": 55,
+      "file": "town-screen/stronghold/frames/TBSTROC3"
+    },
+    {
+      "group": 0,
+      "frame": 56,
+      "file": "town-screen/stronghold/frames/TBSTCYC3"
+    },
+    {
+      "group": 0,
+      "frame": 57,
+      "file": "town-screen/stronghold/frames/TBSTBEH3"
+    }
+  ]
+}

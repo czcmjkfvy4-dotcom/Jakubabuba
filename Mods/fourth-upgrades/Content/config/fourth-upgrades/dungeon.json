@@ -1,0 +1,312 @@
+{
+  "core:dungeon": {
+    "town": {
+      "creatures": [
+        [
+          "core:troglodyte",
+          "core:infernalTroglodyte",
+          "dragon-citadel:dcDeepTroglodyte",
+          "dragon-citadel.fourth-upgrades:tumPhosphorescentTroglodyte"
+        ],
+        [
+          "core:harpy",
+          "core:harpyHag",
+          "dragon-citadel:dcNightHarpy",
+          "dragon-citadel.fourth-upgrades:tumHarpySanguinary"
+        ],
+        [
+          "core:beholder",
+          "core:evilEye",
+          "dragon-citadel:dcAbyssEye",
+          "dragon-citadel.fourth-upgrades:tumMonstrousEye"
+        ],
+        [
+          "core:medusa",
+          "core:medusaQueen",
+          "dragon-citadel:dcMedusaEmpress",
+          "dragon-citadel.fourth-upgrades:tumMedusaEmpress"
+        ],
+        [
+          "core:minotaur",
+          "core:minotaurKing",
+          "dragon-citadel:dcLabyrinthLord",
+          "dragon-citadel.fourth-upgrades:tumBlackMinotaur"
+        ],
+        [
+          "core:manticore",
+          "core:scorpicore",
+          "dragon-citadel:dcDeepScorpicore",
+          "dragon-citadel.fourth-upgrades:tumChimera"
+        ],
+        [
+          "core:redDragon",
+          "core:blackDragon",
+          "dragon-citadel:dcObsidianDragon",
+          "wake-of-gods.level8units:darknessDragon"
+        ]
+      ],
+      "hallSlots": [
+        [
+          [
+            "villageHall",
+            "townHall",
+            "cityHall",
+            "capitol"
+          ],
+          [
+            "fort",
+            "citadel",
+            "castle"
+          ],
+          [
+            "tavern"
+          ],
+          [
+            "blacksmith"
+          ]
+        ],
+        [
+          [
+            "marketplace",
+            "resourceSilo"
+          ],
+          [
+            "mageGuild1",
+            "mageGuild2",
+            "mageGuild3",
+            "mageGuild4",
+            "mageGuild5"
+          ],
+          [
+            "special2"
+          ],
+          [
+            "special3"
+          ]
+        ],
+        [
+          [
+            "special1"
+          ],
+          [
+            "special4"
+          ],
+          [
+            "horde1",
+            "horde1Upgr"
+          ]
+        ],
+        [
+          [
+            "dwellingLvl1",
+            "dwellingUpLvl1",
+            "dwellingUp2Lvl1",
+            "dwellingUp3Lvl1"
+          ],
+          [
+            "dwellingLvl2",
+            "dwellingUpLvl2",
+            "dwellingUp2Lvl2",
+            "dwellingUp3Lvl2"
+          ],
+          [
+            "dwellingLvl3",
+            "dwellingUpLvl3",
+            "dwellingUp2Lvl3",
+            "dwellingUp3Lvl3"
+          ],
+          [
+            "dwellingLvl4",
+            "dwellingUpLvl4",
+            "dwellingUp2Lvl4",
+            "dwellingUp3Lvl4"
+          ]
+        ],
+        [
+          [
+            "dwellingLvl5",
+            "dwellingUpLvl5",
+            "dwellingUp2Lvl5",
+            "dwellingUp3Lvl5"
+          ],
+          [
+            "dwellingLvl6",
+            "dwellingUpLvl6",
+            "dwellingUp2Lvl6",
+            "dwellingUp3Lvl6"
+          ],
+          [
+            "dwellingLvl7",
+            "dwellingUpLvl7",
+            "dwellingUp2Lvl7",
+            "dwellingUp3Lvl7"
+          ]
+        ]
+      ],
+      "buildings": {
+        "dwellingUp3Lvl1": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Warren}",
+          "cost": {
+            "gold": 5250,
+            "wood": 15,
+            "ore": 23
+          },
+          "requires": [
+            "dwellingUp2Lvl1"
+          ],
+          "upgrades": "dwellingUp2Lvl1",
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl2": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Harpy Loft}",
+          "cost": {
+            "gold": 8100,
+            "wood": 27,
+            "ore": 18,
+            "sulfur": 6
+          },
+          "requires": [
+            "dwellingUp2Lvl2"
+          ],
+          "upgrades": "dwellingUp2Lvl2",
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl3": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Pillar of Eyes}",
+          "cost": {
+            "gold": 14040,
+            "wood": 22,
+            "ore": 44,
+            "sulfur": 11
+          },
+          "requires": [
+            "dwellingUp2Lvl3"
+          ],
+          "upgrades": "dwellingUp2Lvl3",
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl4": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Stilled Voices}",
+          "cost": {
+            "gold": 24625,
+            "wood": 39,
+            "ore": 52,
+            "sulfur": 21
+          },
+          "requires": [
+            "dwellingUp2Lvl4"
+          ],
+          "upgrades": "dwellingUp2Lvl4",
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl5": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Labyrinth}",
+          "cost": {
+            "gold": 43550,
+            "wood": 47,
+            "ore": 63,
+            "sulfur": 32
+          },
+          "requires": [
+            "dwellingUp2Lvl5"
+          ],
+          "upgrades": "dwellingUp2Lvl5",
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl6": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Manticore Lair}",
+          "cost": {
+            "gold": 93315,
+            "wood": 75,
+            "ore": 75,
+            "sulfur": 75
+          },
+          "requires": [
+            "dwellingUp2Lvl6"
+          ],
+          "upgrades": "dwellingUp2Lvl6",
+          "mode": "normal"
+        },
+        "dwellingUp3Lvl7": {
+          "description": "Recruits the optional fourth form. Growth is unchanged.",
+          "name": "{Adv. Dragon Cave}",
+          "cost": {
+            "gold": 268740,
+            "wood": 135,
+            "ore": 135,
+            "sulfur": 112
+          },
+          "requires": [
+            "dwellingUp2Lvl7"
+          ],
+          "upgrades": "dwellingUp2Lvl7",
+          "mode": "normal"
+        }
+      },
+      "structures": {
+        "dwellingUp3Lvl1": {
+          "animation": "town-screen/dungeon/TBDNUP2_0.def",
+          "x": 0,
+          "y": 283,
+          "z": 9,
+          "border": "town-screen/dungeon/borders/TODTRG3A.bmp",
+          "area": "town-screen/dungeon/areas/TZDTRG3A.bmp"
+        },
+        "dwellingUp3Lvl2": {
+          "animation": "town-screen/dungeon/TBDNUP2_1.def",
+          "x": 0,
+          "y": 26,
+          "border": "town-screen/dungeon/borders/TODHAR3.bmp",
+          "area": "town-screen/dungeon/areas/TZDHAR3.bmp",
+          "z": -2
+        },
+        "dwellingUp3Lvl3": {
+          "animation": "town-screen/dungeon/TBDNUP2_2.def",
+          "x": 118,
+          "y": 256,
+          "z": 6,
+          "border": "TODBEH2A.bmp",
+          "area": "TZDBEH2A.bmp"
+        },
+        "dwellingUp3Lvl4": {
+          "animation": "town-screen/dungeon/TBDNUP2_3.def",
+          "x": 300,
+          "y": 29,
+          "z": -6,
+          "border": "TODMED2.bmp",
+          "area": "TZDMED2.bmp"
+        },
+        "dwellingUp3Lvl5": {
+          "animation": "town-screen/dungeon/TBDNUP2_4.def",
+          "x": 519,
+          "y": 172,
+          "z": 4,
+          "border": "TODMIN2.bmp",
+          "area": "TZDMIN2.bmp"
+        },
+        "dwellingUp3Lvl6": {
+          "animation": "town-screen/dungeon/TBDNUP2_5.def",
+          "x": 270,
+          "y": 253,
+          "z": -4,
+          "border": "town-screen/dungeon/borders/TODMAN3.bmp",
+          "area": "town-screen/dungeon/areas/TZDMAN3.bmp"
+        },
+        "dwellingUp3Lvl7": {
+          "animation": "town-screen/dungeon/TBDNUP2_6.def",
+          "x": 550,
+          "y": 0,
+          "z": -7,
+          "border": "town-screen/dungeon/borders/TODDRA3A.bmp",
+          "area": "town-screen/dungeon/areas/TZDDRA3A.bmp"
+        }
+      }
+    }
+  }
+}

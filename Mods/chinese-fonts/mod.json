@@ -1,0 +1,14 @@
+{
+  "name": "龙之要塞 — Unicode fonts",
+  "description": "龙之要塞的外观仍在改进中。",
+  "author": "Noto Project / Billaden",
+  "version": "1.0.0",
+  "modType": "Translation",
+  "language": "chinese",
+  "depends": [
+    "dragon-citadel"
+  ],
+  "compatibility": {
+    "min": "1.7.5"
+  }
+}

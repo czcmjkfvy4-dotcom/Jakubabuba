@@ -1,0 +1,314 @@
+{
+  "chapters": [
+    {
+      "chapter": 1,
+      "arc": "Rada ocalałych",
+      "landmarks": [
+        {
+          "title": "Plac pustych sztandarów",
+          "position": [
+            7,
+            10
+          ]
+        },
+        {
+          "title": "Spalony tartak",
+          "position": [
+            14,
+            13
+          ]
+        },
+        {
+          "title": "Droga poborców",
+          "position": [
+            23,
+            18
+          ]
+        },
+        {
+          "title": "Kamień pierwszej przysięgi",
+          "position": [
+            28,
+            27
+          ]
+        }
+      ],
+      "newTimedStoryEvents": 3,
+      "guardConclusions": 3,
+      "mechanicsUnchanged": true,
+      "sha256": "4ab2b20181975490516b6e11ec1e283f5fa3edf5076ee5fe4c809043a88154ae"
+    },
+    {
+      "chapter": 2,
+      "arc": "Głos odlewni",
+      "landmarks": [
+        {
+          "title": "Sala bez kowala",
+          "position": [
+            7,
+            10
+          ]
+        },
+        {
+          "title": "Sztolnia dawnych strażników",
+          "position": [
+            14,
+            15
+          ]
+        },
+        {
+          "title": "Warsztat Rody",
+          "position": [
+            23,
+            18
+          ]
+        },
+        {
+          "title": "Brama rdzeni",
+          "position": [
+            28,
+            27
+          ]
+        }
+      ],
+      "newTimedStoryEvents": 3,
+      "guardConclusions": 3,
+      "mechanicsUnchanged": true,
+      "sha256": "08bf691e8efd90373a84849b5ef24f2380a3ade3131338c5444c7e0c4cd1ae7a"
+    },
+    {
+      "chapter": 3,
+      "arc": "Wolność zamiast rozkazu",
+      "landmarks": [
+        {
+          "title": "Obóz pod piorunami",
+          "position": [
+            7,
+            10
+          ]
+        },
+        {
+          "title": "Pierwszy przewodnik",
+          "position": [
+            14,
+            13
+          ]
+        },
+        {
+          "title": "Miejsce przysięgi",
+          "position": [
+            23,
+            18
+          ]
+        },
+        {
+          "title": "Ostatni krąg więzienia",
+          "position": [
+            28,
+            27
+          ]
+        }
+      ],
+      "newTimedStoryEvents": 3,
+      "guardConclusions": 3,
+      "mechanicsUnchanged": true,
+      "sha256": "9ac72997b83b0ece30eb295f3dc5dfd8807bb54b3c00a3a0686a03be22216ec5"
+    },
+    {
+      "chapter": 4,
+      "arc": "Dwa rody, jedna dolina",
+      "landmarks": [
+        {
+          "title": "Rada dwóch grot",
+          "position": [
+            7,
+            10
+          ]
+        },
+        {
+          "title": "Zwęglone archiwum",
+          "position": [
+            14,
+            13
+          ]
+        },
+        {
+          "title": "Przesmyk dwóch głosów",
+          "position": [
+            22,
+            18
+          ]
+        },
+        {
+          "title": "Ołtarz Czystego Płomienia",
+          "position": [
+            28,
+            27
+          ]
+        }
+      ],
+      "newTimedStoryEvents": 3,
+      "guardConclusions": 3,
+      "mechanicsUnchanged": true,
+      "sha256": "6aafdbd8f913193b35d26243b138c6103539a5333c105c014a915d6168cb9ddb"
+    },
+    {
+      "chapter": 5,
+      "arc": "Cena przymierza",
+      "landmarks": [
+        {
+          "title": "Stół rachunków",
+          "position": [
+            7,
+            10
+          ]
+        },
+        {
+          "title": "Zatrzymana karawana",
+          "position": [
+            14,
+            13
+          ]
+        },
+        {
+          "title": "Puste skarbce",
+          "position": [
+            23,
+            18
+          ]
+        },
+        {
+          "title": "Ostatni poborca",
+          "position": [
+            28,
+            27
+          ]
+        }
+      ],
+      "newTimedStoryEvents": 3,
+      "guardConclusions": 3,
+      "mechanicsUnchanged": true,
+      "sha256": "8916a1db69d2aafb72de3f0e2cc2bf943a99b8092f7a99d2781c893a4476f049"
+    },
+    {
+      "chapter": 6,
+      "arc": "Burza, która słucha",
+      "landmarks": [
+        {
+          "title": "Noc bez ciszy",
+          "position": [
+            7,
+            10
+          ]
+        },
+        {
+          "title": "Pęknięty przewodnik",
+          "position": [
+            14,
+            13
+          ]
+        },
+        {
+          "title": "Oko nad przełęczą",
+          "position": [
+            22,
+            18
+          ]
+        },
+        {
+          "title": "Węzeł trzech błysków",
+          "position": [
+            28,
+            27
+          ]
+        }
+      ],
+      "newTimedStoryEvents": 3,
+      "guardConclusions": 3,
+      "mechanicsUnchanged": true,
+      "sha256": "ac7c8c356a78b936ae75ed270bda169ee91b30eff86aae2d8a3634397d32e79a"
+    },
+    {
+      "chapter": 7,
+      "arc": "Relikwia i rachunek królów",
+      "landmarks": [
+        {
+          "title": "Pod cieniem pradawnych",
+          "position": [
+            7,
+            10
+          ]
+        },
+        {
+          "title": "Kamienie Błękitnego Tronu",
+          "position": [
+            14,
+            13
+          ]
+        },
+        {
+          "title": "List anielskiego strażnika",
+          "position": [
+            22,
+            18
+          ]
+        },
+        {
+          "title": "Pieczęć Graala",
+          "position": [
+            28,
+            27
+          ]
+        }
+      ],
+      "newTimedStoryEvents": 3,
+      "guardConclusions": 3,
+      "mechanicsUnchanged": true,
+      "sha256": "1873274fe9631739136a0b2bc977a3b8a691b277c77b963ff71149c9248cca58"
+    },
+    {
+      "chapter": 8,
+      "arc": "Dom na końcu wieków",
+      "landmarks": [
+        {
+          "title": "Rada pod Graalem",
+          "position": [
+            7,
+            10
+          ]
+        },
+        {
+          "title": "Szlak powrotów",
+          "position": [
+            14,
+            13
+          ]
+        },
+        {
+          "title": "Krąg trzech możliwości",
+          "position": [
+            22,
+            18
+          ]
+        },
+        {
+          "title": "Próg ostatniej bitwy",
+          "position": [
+            28,
+            27
+          ]
+        }
+      ],
+      "newTimedStoryEvents": 3,
+      "guardConclusions": 3,
+      "mechanicsUnchanged": true,
+      "sha256": "a7061a052430ea70bf466f5cbaf8cbc6887bf61b2c6afe3e294d16a81872d7b0"
+    }
+  ],
+  "newLandmarks": 32,
+  "newTimedEvents": 24,
+  "newGuardConclusions": 24,
+  "embeddedMapsMatch": true,
+  "backup": "C:\\Users\\GRACOMM\\Documents\\praca\\dragon-citadel-third-upgrades\\campaign-repair-2026-10-12\\backups\\0f961d3397f9",
+  "fullPlaythroughTested": false
+}

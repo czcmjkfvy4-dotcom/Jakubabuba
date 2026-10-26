@@ -1,0 +1,405 @@
+{
+  "core:castle": {
+    "town": {
+      "creatures": [
+        [
+          "core:pikeman",
+          "core:halberdier",
+          "dragon-citadel:dcCrownGuard"
+        ],
+        [
+          "core:archer",
+          "core:marksman",
+          "dragon-citadel:dcRoyalCrossbowman"
+        ],
+        [
+          "core:griffin",
+          "core:royalGriffin",
+          "dragon-citadel:dcCrownGriffin"
+        ],
+        [
+          "core:swordsman",
+          "core:crusader",
+          "dragon-citadel:dcPaladin"
+        ],
+        [
+          "core:monk",
+          "core:zealot",
+          "dragon-citadel:dcHierophant"
+        ],
+        [
+          "core:cavalier",
+          "core:champion",
+          "dragon-citadel:dcRoyalBannerKnight"
+        ],
+        [
+          "core:angel",
+          "core:archangel",
+          "dragon-citadel:dcSeraph"
+        ]
+      ],
+      "hallSlots": [
+        [
+          [
+            "villageHall",
+            "townHall",
+            "cityHall",
+            "capitol"
+          ],
+          [
+            "fort",
+            "citadel",
+            "castle"
+          ],
+          [
+            "tavern",
+            "special3"
+          ],
+          [
+            "blacksmith"
+          ]
+        ],
+        [
+          [
+            "marketplace",
+            "resourceSilo"
+          ],
+          [
+            "mageGuild1",
+            "mageGuild2",
+            "mageGuild3",
+            "mageGuild4"
+          ],
+          [
+            "shipyard",
+            "special1"
+          ]
+        ],
+        [
+          [
+            "special2"
+          ],
+          [
+            "horde1",
+            "horde1Upgr"
+          ]
+        ],
+        [
+          [
+            "dwellingLvl1",
+            "dwellingUpLvl1",
+            "dwellingUp2Lvl1"
+          ],
+          [
+            "dwellingLvl2",
+            "dwellingUpLvl2",
+            "dwellingUp2Lvl2"
+          ],
+          [
+            "dwellingLvl3",
+            "dwellingUpLvl3",
+            "dwellingUp2Lvl3"
+          ],
+          [
+            "dwellingLvl4",
+            "dwellingUpLvl4",
+            "dwellingUp2Lvl4"
+          ]
+        ],
+        [
+          [
+            "dwellingLvl5",
+            "dwellingUpLvl5",
+            "dwellingUp2Lvl5"
+          ],
+          [
+            "dwellingLvl6",
+            "dwellingUpLvl6",
+            "dwellingUp2Lvl6"
+          ],
+          [
+            "dwellingLvl7",
+            "dwellingUpLvl7",
+            "dwellingUp2Lvl7"
+          ]
+        ]
+      ],
+      "buildings": {
+        "dwellingUp2Lvl1": {
+          "name": "Arsenał Gwardii",
+          "description": "Recruits Strażnicy Korony, the third form. Growth is unchanged.",
+          "upgrades": "dwellingUpLvl1",
+          "requires": [
+            "dwellingUpLvl1"
+          ],
+          "cost": {
+            "gold": 3000,
+            "ore": 15,
+            "wood": 10
+          },
+          "mode": "normal"
+        },
+        "dwellingUp2Lvl2": {
+          "name": "Królewska Strzelnica",
+          "description": "Recruits Królewscy Kusznicy, the third form. Growth is unchanged.",
+          "upgrades": "dwellingUpLvl2",
+          "requires": [
+            "dwellingUpLvl2"
+          ],
+          "cost": {
+            "gold": 4500,
+            "wood": 15,
+            "ore": 10
+          },
+          "mode": "normal"
+        },
+        "dwellingUp2Lvl3": {
+          "name": "Gniazdo Korony",
+          "description": "Recruits Gryfy Korony, the third form. Growth is unchanged.",
+          "upgrades": "dwellingUpLvl3",
+          "requires": [
+            "dwellingUpLvl3"
+          ],
+          "cost": {
+            "gold": 6500,
+            "wood": 15,
+            "ore": 15
+          },
+          "mode": "normal"
+        },
+        "dwellingUp2Lvl4": {
+          "name": "Sala Paladynów",
+          "description": "Recruits Paladyni, the third form. Growth is unchanged.",
+          "upgrades": "dwellingUpLvl4",
+          "requires": [
+            "dwellingUpLvl4"
+          ],
+          "cost": {
+            "gold": 8500,
+            "wood": 15,
+            "ore": 20
+          },
+          "mode": "normal"
+        },
+        "dwellingUp2Lvl5": {
+          "name": "Sanktuarium Hierofantow",
+          "description": "Recruits Hierofanci, the third form. Growth is unchanged.",
+          "upgrades": "dwellingUpLvl5",
+          "requires": [
+            "dwellingUpLvl5"
+          ],
+          "cost": {
+            "gold": 12000,
+            "wood": 20,
+            "ore": 20,
+            "gems": 5
+          },
+          "mode": "normal"
+        },
+        "dwellingUp2Lvl6": {
+          "name": "Krolewskie Pole Turniejowe",
+          "description": "Recruits Rycerze Choragwi Krolewskiej, the third form. Growth is unchanged.",
+          "upgrades": "dwellingUpLvl6",
+          "requires": [
+            "dwellingUpLvl6"
+          ],
+          "cost": {
+            "gold": 22000,
+            "wood": 25,
+            "ore": 25,
+            "crystal": 10
+          },
+          "mode": "normal"
+        },
+        "dwellingUp2Lvl7": {
+          "name": "Sanktuarium Serafinow",
+          "description": "Recruits Serafini, the third form. Growth is unchanged.",
+          "upgrades": "dwellingUpLvl7",
+          "requires": [
+            "dwellingUpLvl7"
+          ],
+          "cost": {
+            "gold": 60000,
+            "wood": 30,
+            "ore": 30,
+            "gems": 25
+          },
+          "mode": "normal"
+        }
+      },
+      "structures": {
+        "dwellingUp2Lvl1": {
+          "animation": "fourth-forms/buildings/castle/dcCrownGuard",
+          "x": 304,
+          "y": 65,
+          "z": -3,
+          "area": "fourth-forms/buildings/castle/dcCrownGuard-area.png",
+          "border": "fourth-forms/buildings/castle/dcCrownGuard-border.png"
+        },
+        "dwellingUp2Lvl2": {
+          "animation": "fourth-forms/buildings/castle/dcRoyalCrossbowman",
+          "x": 360,
+          "y": 115,
+          "z": 2,
+          "area": "fourth-forms/buildings/castle/dcRoyalCrossbowman-area.png",
+          "border": "fourth-forms/buildings/castle/dcRoyalCrossbowman-border.png"
+        },
+        "dwellingUp2Lvl3": {
+          "animation": "fourth-forms/buildings/castle/dcCrownGriffin",
+          "x": 76,
+          "y": 35,
+          "z": -2,
+          "area": "fourth-forms/buildings/castle/dcCrownGriffin-area.png",
+          "border": "fourth-forms/buildings/castle/dcCrownGriffin-border.png"
+        },
+        "dwellingUp2Lvl4": {
+          "animation": "fourth-forms/buildings/castle/dcPaladin",
+          "x": 176,
+          "y": 85,
+          "z": 1,
+          "area": "fourth-forms/buildings/castle/dcPaladin-area.png",
+          "border": "fourth-forms/buildings/castle/dcPaladin-border.png"
+        },
+        "dwellingUp2Lvl5": {
+          "animation": "fourth-forms/buildings/castle/dcHierophant",
+          "x": 563,
+          "y": 173,
+          "z": 5,
+          "area": "fourth-forms/buildings/castle/dcHierophant-area.png",
+          "border": "fourth-forms/buildings/castle/dcHierophant-border.png"
+        },
+        "dwellingUp2Lvl6": {
+          "animation": "fourth-forms/buildings/castle/dcRoyalBannerKnight",
+          "x": 160,
+          "y": 190,
+          "z": -1,
+          "area": "fourth-forms/buildings/castle/dcRoyalBannerKnight-area.png",
+          "border": "fourth-forms/buildings/castle/dcRoyalBannerKnight-border.png"
+        },
+        "dwellingUp2Lvl7": {
+          "animation": "fourth-forms/buildings/castle/dcSeraph",
+          "x": 303,
+          "y": 0,
+          "z": -5,
+          "area": "fourth-forms/buildings/castle/dcSeraph-area.png",
+          "border": "fourth-forms/buildings/castle/dcSeraph-border.png"
+        },
+        "grail": {
+          "z": -9
+        },
+        "castle": {
+          "z": -8
+        },
+        "citadel": {
+          "z": -8
+        },
+        "fort": {
+          "z": -8
+        },
+        "special1": {
+          "z": -7
+        },
+        "ship": {
+          "z": -6
+        },
+        "shipyard": {
+          "z": -6
+        },
+        "dwellingLvl7": {
+          "z": -5
+        },
+        "dwellingUpLvl7": {
+          "z": -5
+        },
+        "special2": {
+          "z": -4
+        },
+        "dwellingLvl1": {
+          "z": -3
+        },
+        "dwellingUpLvl1": {
+          "z": -3
+        },
+        "dwellingLvl3": {
+          "z": -2
+        },
+        "dwellingUpLvl3": {
+          "z": -2
+        },
+        "horde1": {
+          "z": -2
+        },
+        "horde1Upgr": {
+          "z": -2
+        },
+        "dwellingLvl6": {
+          "z": -1
+        },
+        "dwellingUpLvl6": {
+          "z": -1
+        },
+        "extraAnimation": {
+          "z": 0
+        },
+        "dwellingLvl4": {
+          "z": 1
+        },
+        "dwellingUpLvl4": {
+          "z": 1
+        },
+        "dwellingLvl2": {
+          "z": 2
+        },
+        "dwellingUpLvl2": {
+          "z": 2
+        },
+        "blacksmith": {
+          "z": 3
+        },
+        "marketplace": {
+          "z": 4
+        },
+        "dwellingLvl5": {
+          "z": 5
+        },
+        "dwellingUpLvl5": {
+          "z": 5
+        },
+        "mageGuild1": {
+          "z": 6
+        },
+        "mageGuild2": {
+          "z": 6
+        },
+        "mageGuild3": {
+          "z": 6
+        },
+        "mageGuild4": {
+          "z": 6
+        },
+        "resourceSilo": {
+          "z": 7
+        },
+        "capitol": {
+          "z": 8
+        },
+        "cityHall": {
+          "z": 8
+        },
+        "townHall": {
+          "z": 8
+        },
+        "villageHall": {
+          "z": 8
+        },
+        "special3": {
+          "z": 9
+        },
+        "tavern": {
+          "z": 9
+        }
+      },
+      "buildingsIcons": "town-screen/castle/HALLCSTL"
+    }
+  }
+}

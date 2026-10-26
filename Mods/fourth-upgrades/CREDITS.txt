@@ -1,0 +1,8 @@
+Wrath of the Creators / Third Upgrades VCMI port
+VMaiko (author of the idea), avatar (porting), Xardas33 (upgraded buildings graphics), Olegmods.INC (ToW third upgrades idea, some building and creature graphics, configs), Aphra (graphics), FirePaladin (Tower T7 building graphics), Koven1Nordsiard (Dungeon alt-T5 building graphics), Toriko (some unit graphics), Nephretes (3rd upgrade dryad), yogdush (3rd upgrade Centaur, Dwarf and Swordsman) Naga Empresses' updated moving animation by Orzie, Elf Noble supposedly made by Witchking, Elder Dendroid made by Trith and edited by Olegmods.INC, Arcane Genie made by Kallen.
+Source: https://github.com/vcmi-mods/third-upgrades
+Revision: 00c3e7e8d129b09a589e856854d8b0e4999411d4
+License: Creative Commons Attribution-ShareAlike 4.0
+https://creativecommons.org/licenses/by-sa/4.0/
+Dragon Citadel integration: scope migration, optional submod packaging, conflict protection.
+This package is not a full conversion of the supplied ERA 3.4.2 archive.

@@ -1,0 +1,317 @@
+{
+  "core:halberdier": {
+    "upgrades": [
+      "dragon-citadel:dcCrownGuard"
+    ]
+  },
+  "core:marksman": {
+    "upgrades": [
+      "dragon-citadel:dcRoyalCrossbowman"
+    ]
+  },
+  "core:royalGriffin": {
+    "upgrades": [
+      "dragon-citadel:dcCrownGriffin"
+    ]
+  },
+  "core:crusader": {
+    "upgrades": [
+      "dragon-citadel:dcPaladin"
+    ]
+  },
+  "core:zealot": {
+    "upgrades": [
+      "dragon-citadel:dcHierophant"
+    ]
+  },
+  "core:champion": {
+    "upgrades": [
+      "dragon-citadel:dcRoyalBannerKnight"
+    ]
+  },
+  "core:archangel": {
+    "upgrades": [
+      "dragon-citadel:dcSeraph"
+    ]
+  },
+  "core:centaurCaptain": {
+    "upgrades": [
+      "dragon-citadel:dcCentaurWarlord"
+    ]
+  },
+  "core:battleDwarf": {
+    "upgrades": [
+      "dragon-citadel:dcRuneDwarf"
+    ]
+  },
+  "core:grandElf": {
+    "upgrades": [
+      "dragon-citadel:dcMoonElf"
+    ]
+  },
+  "core:silverPegasus": {
+    "upgrades": [
+      "dragon-citadel:dcAuroraPegasus"
+    ]
+  },
+  "core:dendroidSoldier": {
+    "upgrades": [
+      "dragon-citadel:dcAncientEnt"
+    ]
+  },
+  "core:warUnicorn": {
+    "upgrades": [
+      "dragon-citadel:dcArmoredUnicorn"
+    ]
+  },
+  "core:goldDragon": {
+    "upgrades": [
+      "dragon-citadel:dcEmeraldDragon"
+    ]
+  },
+  "core:masterGremlin": {
+    "upgrades": [
+      "dragon-citadel:dcMechanicGremlin"
+    ]
+  },
+  "core:obsidianGargoyle": {
+    "upgrades": [
+      "dragon-citadel:dcIcewingGargoyle"
+    ]
+  },
+  "core:ironGolem": {
+    "upgrades": [
+      "dragon-citadel:dcAdamantGolem"
+    ]
+  },
+  "core:archMage": {
+    "upgrades": [
+      "dragon-citadel:dcRuneMage"
+    ]
+  },
+  "core:masterGenie": {
+    "upgrades": [
+      "dragon-citadel:dcDjinnSultan"
+    ]
+  },
+  "core:nagaQueen": {
+    "upgrades": [
+      "dragon-citadel:dcNagaEmpress"
+    ]
+  },
+  "core:titan": {
+    "upgrades": [
+      "dragon-citadel:dcFirmamentTitan"
+    ]
+  },
+  "core:familiar": {
+    "upgrades": [
+      "dragon-citadel:dcAshImp"
+    ]
+  },
+  "core:magog": {
+    "upgrades": [
+      "dragon-citadel:dcAbyssMagog"
+    ]
+  },
+  "core:cerberus": {
+    "upgrades": [
+      "dragon-citadel:dcHellCerberus"
+    ]
+  },
+  "core:hornedDemon": {
+    "upgrades": [
+      "dragon-citadel:dcIronHornDemon"
+    ]
+  },
+  "core:pitLord": {
+    "upgrades": [
+      "dragon-citadel:dcAshLord"
+    ]
+  },
+  "core:efreetSultan": {
+    "upgrades": [
+      "dragon-citadel:dcCrownedEfreet"
+    ]
+  },
+  "core:archDevil": {
+    "upgrades": [
+      "dragon-citadel:dcAbyssPrince"
+    ]
+  },
+  "core:skeletonWarrior": {
+    "upgrades": [
+      "dragon-citadel:dcBoneLegionary"
+    ]
+  },
+  "core:zombieLord": {
+    "upgrades": [
+      "dragon-citadel:dcPlagueGuard"
+    ]
+  },
+  "core:wraith": {
+    "upgrades": [
+      "dragon-citadel:dcTombWraith"
+    ]
+  },
+  "core:vampireLord": {
+    "upgrades": [
+      "dragon-citadel:dcAncientBloodVampire"
+    ]
+  },
+  "core:powerLich": {
+    "upgrades": [
+      "dragon-citadel:dcArchlich"
+    ]
+  },
+  "core:dreadKnight": {
+    "upgrades": [
+      "dragon-citadel:dcDoomKnight"
+    ]
+  },
+  "core:ghostDragon": {
+    "upgrades": [
+      "dragon-citadel:dcGraveDragon"
+    ]
+  },
+  "core:infernalTroglodyte": {
+    "upgrades": [
+      "dragon-citadel:dcDeepTroglodyte"
+    ]
+  },
+  "core:harpyHag": {
+    "upgrades": [
+      "dragon-citadel:dcNightHarpy"
+    ]
+  },
+  "core:evilEye": {
+    "upgrades": [
+      "dragon-citadel:dcAbyssEye"
+    ]
+  },
+  "core:medusaQueen": {
+    "upgrades": [
+      "dragon-citadel:dcMedusaEmpress"
+    ]
+  },
+  "core:minotaurKing": {
+    "upgrades": [
+      "dragon-citadel:dcLabyrinthLord"
+    ]
+  },
+  "core:scorpicore": {
+    "upgrades": [
+      "dragon-citadel:dcDeepScorpicore"
+    ]
+  },
+  "core:blackDragon": {
+    "upgrades": [
+      "dragon-citadel:dcObsidianDragon"
+    ]
+  },
+  "core:hobgoblin": {
+    "upgrades": [
+      "dragon-citadel:dcVeteranHobgoblin"
+    ]
+  },
+  "core:hobgoblinWolfRider": {
+    "upgrades": [
+      "dragon-citadel:dcWolfHetman"
+    ]
+  },
+  "core:orcChieftain": {
+    "upgrades": [
+      "dragon-citadel:dcAxeMasterOrc"
+    ]
+  },
+  "core:ogreMage": {
+    "upgrades": [
+      "dragon-citadel:dcElderOgreShaman"
+    ]
+  },
+  "core:thunderbird": {
+    "upgrades": [
+      "dragon-citadel:dcStormbird"
+    ]
+  },
+  "core:cyclopKing": {
+    "upgrades": [
+      "dragon-citadel:dcDestroyerCyclops"
+    ]
+  },
+  "core:ancientBehemoth": {
+    "upgrades": [
+      "dragon-citadel:dcBehemothPatriarch"
+    ]
+  },
+  "core:gnollMarauder": {
+    "upgrades": [
+      "dragon-citadel:dcIronshieldGnoll"
+    ]
+  },
+  "core:lizardWarrior": {
+    "upgrades": [
+      "dragon-citadel:dcLizardHunter"
+    ]
+  },
+  "core:fireDragonFly": {
+    "upgrades": [
+      "dragon-citadel:dcVenomFly"
+    ]
+  },
+  "core:greaterBasilisk": {
+    "upgrades": [
+      "dragon-citadel:dcPrimevalBasilisk"
+    ]
+  },
+  "core:mightyGorgon": {
+    "upgrades": [
+      "dragon-citadel:dcGorgonMatriarch"
+    ]
+  },
+  "core:wyvernMonarch": {
+    "upgrades": [
+      "dragon-citadel:dcMarshWyvern"
+    ]
+  },
+  "core:chaosHydra": {
+    "upgrades": [
+      "dragon-citadel:dcPrimordialHydra"
+    ]
+  },
+  "core:sprite": {
+    "upgrades": [
+      "dragon-citadel:dcAuroraNymph"
+    ]
+  },
+  "core:stormElemental": {
+    "upgrades": [
+      "dragon-citadel:dcTempestElemental"
+    ]
+  },
+  "core:iceElemental": {
+    "upgrades": [
+      "dragon-citadel:dcGlacierElemental"
+    ]
+  },
+  "core:energyElemental": {
+    "upgrades": [
+      "dragon-citadel:dcPlasmaElemental"
+    ]
+  },
+  "core:magmaElemental": {
+    "upgrades": [
+      "dragon-citadel:dcObsidianElemental"
+    ]
+  },
+  "core:magicElemental": {
+    "upgrades": [
+      "dragon-citadel:dcEtherElemental"
+    ]
+  },
+  "core:phoenix": {
+    "upgrades": [
+      "dragon-citadel:dcPrimordialPhoenix"
+    ]
+  }
+}

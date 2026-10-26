@@ -1,0 +1,189 @@
+{
+  "basepath": "fourth-forms/creatures/dcCrownGuard/",
+  "sequences": [
+    {
+      "group": 0,
+      "frames": [
+        "move/f000.png",
+        "move/f001.png",
+        "move/f002.png",
+        "move/f003.png",
+        "move/f004.png",
+        "move/f005.png",
+        "move/f006.png",
+        "move/f007.png"
+      ],
+      "generateOverlay": 0,
+      "generateShadow": 0
+    },
+    {
+      "group": 1,
+      "frames": [
+        "idle/f000.png",
+        "idle/f001.png",
+        "idle/f002.png",
+        "idle/f003.png",
+        "idle/f004.png",
+        "idle/f005.png"
+      ],
+      "generateOverlay": 0,
+      "generateShadow": 0
+    },
+    {
+      "group": 2,
+      "frames": [
+        "idle/f000.png",
+        "idle/f001.png",
+        "idle/f002.png",
+        "idle/f003.png",
+        "idle/f004.png",
+        "idle/f005.png"
+      ],
+      "generateOverlay": 0,
+      "generateShadow": 0
+    },
+    {
+      "group": 3,
+      "frames": [
+        "hit/f000.png",
+        "hit/f001.png",
+        "hit/f002.png",
+        "hit/f003.png",
+        "hit/f004.png",
+        "hit/f005.png"
+      ],
+      "generateOverlay": 0,
+      "generateShadow": 0
+    },
+    {
+      "group": 4,
+      "frames": [
+        "defend/f000.png",
+        "defend/f001.png",
+        "defend/f002.png",
+        "defend/f003.png",
+        "defend/f004.png",
+        "defend/f005.png"
+      ],
+      "generateOverlay": 0,
+      "generateShadow": 0
+    },
+    {
+      "group": 5,
+      "frames": [
+        "death/f000.png",
+        "death/f001.png",
+        "death/f002.png",
+        "death/f003.png",
+        "death/f004.png",
+        "death/f005.png"
+      ],
+      "generateOverlay": 0,
+      "generateShadow": 0
+    },
+    {
+      "group": 6,
+      "frames": [
+        "death/f000.png",
+        "death/f001.png",
+        "death/f002.png",
+        "death/f003.png",
+        "death/f004.png",
+        "death/f005.png"
+      ],
+      "generateOverlay": 0,
+      "generateShadow": 0
+    },
+    {
+      "group": 11,
+      "frames": [
+        "attack-up/f000.png",
+        "attack-up/f001.png",
+        "attack-up/f002.png",
+        "attack-up/f003.png",
+        "attack-up/f004.png",
+        "attack-up/f005.png"
+      ],
+      "generateOverlay": 0,
+      "generateShadow": 0
+    },
+    {
+      "group": 12,
+      "frames": [
+        "attack/f000.png",
+        "attack/f001.png",
+        "attack/f002.png",
+        "attack/f003.png",
+        "attack/f004.png",
+        "attack/f005.png"
+      ],
+      "generateOverlay": 0,
+      "generateShadow": 0
+    },
+    {
+      "group": 13,
+      "frames": [
+        "attack-down/f000.png",
+        "attack-down/f001.png",
+        "attack-down/f002.png",
+        "attack-down/f003.png",
+        "attack-down/f004.png",
+        "attack-down/f005.png"
+      ],
+      "generateOverlay": 0,
+      "generateShadow": 0
+    },
+    {
+      "group": 7,
+      "frames": [
+        "turn/f000.png",
+        "turn/f001.png",
+        "turn/f002.png"
+      ],
+      "generateOverlay": 0,
+      "generateShadow": 0
+    },
+    {
+      "group": 8,
+      "frames": [
+        "turn/f003.png",
+        "turn/f004.png",
+        "turn/f005.png"
+      ],
+      "generateOverlay": 0,
+      "generateShadow": 0
+    },
+    {
+      "group": 20,
+      "frames": [
+        "idle/f000.png",
+        "move/f000.png",
+        "move/f001.png"
+      ],
+      "generateOverlay": 0,
+      "generateShadow": 0
+    },
+    {
+      "group": 21,
+      "frames": [
+        "move/f006.png",
+        "move/f007.png",
+        "idle/f000.png"
+      ],
+      "generateOverlay": 0,
+      "generateShadow": 0
+    },
+    {
+      "group": 22,
+      "frames": [
+        "death/f005.png"
+      ]
+    },
+    {
+      "group": 23,
+      "frames": [
+        "death/f005.png"
+      ]
+    }
+  ]
+}

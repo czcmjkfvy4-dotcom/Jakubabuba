@@ -277,368 +277,375 @@
       },
       "structures": {
         "mageGuild1": {
-          "animation": "dragon-citadel/town/buildings/mageGuild",
-          "x": 0,
-          "y": 0,
-          "z": 11800,
+          "animation": "city-redesign/dragonCitadel/mageGuild1",
+          "x": 356,
+          "y": 157,
+          "z": 22,
           "campaignBonus": "BoDmage1.pcx",
-          "border": "dragon-citadel/town-screen/borders/mageGuild",
-          "area": "dragon-citadel/town-screen/areas/mageGuild"
+          "border": "city-redesign/dragonCitadel/mageGuild1-border.png",
+          "area": "city-redesign/dragonCitadel/mageGuild1-area.png"
         },
         "mageGuild2": {
-          "animation": "dragon-citadel/town/buildings/mageGuild",
-          "x": 0,
-          "y": 0,
-          "z": 11800,
+          "animation": "city-redesign/dragonCitadel/mageGuild2",
+          "x": 356,
+          "y": 153,
+          "z": 22,
           "campaignBonus": "BoDmage2.pcx",
-          "border": "dragon-citadel/town-screen/borders/mageGuild",
-          "area": "dragon-citadel/town-screen/areas/mageGuild"
+          "border": "city-redesign/dragonCitadel/mageGuild2-border.png",
+          "area": "city-redesign/dragonCitadel/mageGuild2-area.png"
         },
         "mageGuild3": {
-          "animation": "dragon-citadel/town/buildings/mageGuild",
-          "x": 0,
-          "y": 0,
-          "z": 11800,
+          "animation": "city-redesign/dragonCitadel/mageGuild3",
+          "x": 354,
+          "y": 149,
+          "z": 22,
           "campaignBonus": "BoDmage3.pcx",
-          "border": "dragon-citadel/town-screen/borders/mageGuild",
-          "area": "dragon-citadel/town-screen/areas/mageGuild"
+          "border": "city-redesign/dragonCitadel/mageGuild3-border.png",
+          "area": "city-redesign/dragonCitadel/mageGuild3-area.png"
         },
         "mageGuild4": {
-          "animation": "dragon-citadel/town/buildings/mageGuild",
-          "x": 0,
-          "y": 0,
-          "z": 11800,
+          "animation": "city-redesign/dragonCitadel/mageGuild4",
+          "x": 353,
+          "y": 145,
+          "z": 22,
           "campaignBonus": "BoDmage4.pcx",
-          "border": "dragon-citadel/town-screen/borders/mageGuild",
-          "area": "dragon-citadel/town-screen/areas/mageGuild"
+          "border": "city-redesign/dragonCitadel/mageGuild4-border.png",
+          "area": "city-redesign/dragonCitadel/mageGuild4-area.png"
         },
         "mageGuild5": {
-          "animation": "dragon-citadel/town/buildings/mageGuild",
-          "x": 0,
-          "y": 0,
-          "z": 11800,
+          "animation": "city-redesign/dragonCitadel/mageGuild5",
+          "x": 352,
+          "y": 141,
+          "z": 22,
           "campaignBonus": "BoDmage5.pcx",
-          "border": "dragon-citadel/town-screen/borders/mageGuild",
-          "area": "dragon-citadel/town-screen/areas/mageGuild"
+          "border": "city-redesign/dragonCitadel/mageGuild5-border.png",
+          "area": "city-redesign/dragonCitadel/mageGuild5-area.png"
         },
         "tavern": {
-          "animation": "dragon-citadel/town/buildings/tavern",
-          "x": 0,
-          "y": 0,
+          "animation": "city-redesign/dragonCitadel/tavern",
+          "x": 637,
+          "y": 213,
           "campaignBonus": "BoDtav.pcx",
-          "border": "dragon-citadel/town-screen/borders/tavern",
-          "area": "dragon-citadel/town-screen/areas/tavern",
-          "z": 14505
+          "border": "city-redesign/dragonCitadel/tavern-border.png",
+          "area": "city-redesign/dragonCitadel/tavern-area.png",
+          "z": 31
         },
         "fort": {
-          "animation": "dragon-citadel/town/buildings/fort",
-          "x": 0,
-          "y": 0,
-          "z": 27806,
+          "animation": "city-redesign/dragonCitadel/fort",
+          "x": 188,
+          "y": 140,
+          "z": 28,
           "campaignBonus": "BoDcas1.pcx",
-          "border": "dragon-citadel/town-screen/borders/fort",
-          "area": "dragon-citadel/town-screen/areas/fort"
+          "border": "city-redesign/dragonCitadel/fort-border.png",
+          "area": "city-redesign/dragonCitadel/fort-area.png"
         },
         "citadel": {
-          "animation": "dragon-citadel/town/buildings/citadel",
-          "x": 0,
-          "y": 0,
-          "z": 27806,
+          "animation": "city-redesign/dragonCitadel/citadel",
+          "x": 170,
+          "y": 110,
+          "z": 28,
           "campaignBonus": "BoDcas2.pcx",
-          "border": "dragon-citadel/town-screen/borders/citadel",
-          "area": "dragon-citadel/town-screen/areas/citadel"
+          "border": "city-redesign/dragonCitadel/citadel-border.png",
+          "area": "city-redesign/dragonCitadel/citadel-area.png"
         },
         "castle": {
-          "animation": "dragon-citadel/town/buildings/castle",
-          "x": 0,
-          "y": 0,
-          "z": 27806,
+          "animation": "city-redesign/dragonCitadel/castle",
+          "x": 146,
+          "y": 72,
+          "z": 28,
           "campaignBonus": "BoDcas3.pcx",
-          "border": "dragon-citadel/town-screen/borders/castle",
-          "area": "dragon-citadel/town-screen/areas/castle"
+          "border": "city-redesign/dragonCitadel/castle-border.png",
+          "area": "city-redesign/dragonCitadel/castle-area.png"
         },
         "villageHall": {
-          "animation": "dragon-citadel/town/buildings/villageHall",
-          "x": 0,
-          "y": 0,
+          "animation": "city-redesign/dragonCitadel/villageHall",
+          "x": 241,
+          "y": 297,
           "campaignBonus": "BoDhall1.pcx",
-          "border": "dragon-citadel/town-screen/borders/villageHall",
-          "area": "dragon-citadel/town-screen/areas/villageHall",
-          "z": 36809
+          "border": "city-redesign/dragonCitadel/villageHall-border.png",
+          "area": "city-redesign/dragonCitadel/villageHall-area.png",
+          "z": 43
         },
         "townHall": {
-          "animation": "dragon-citadel/town/buildings/townHall",
-          "x": 0,
-          "y": 0,
+          "animation": "city-redesign/dragonCitadel/townHall",
+          "x": 237,
+          "y": 291,
           "campaignBonus": "BoDhall2.pcx",
-          "border": "dragon-citadel/town-screen/borders/townHall",
-          "area": "dragon-citadel/town-screen/areas/townHall",
-          "z": 36809
+          "border": "city-redesign/dragonCitadel/townHall-border.png",
+          "area": "city-redesign/dragonCitadel/townHall-area.png",
+          "z": 43
         },
         "cityHall": {
-          "animation": "dragon-citadel/town/buildings/cityHall",
-          "x": 0,
-          "y": 0,
+          "animation": "city-redesign/dragonCitadel/cityHall",
+          "x": 233,
+          "y": 284,
           "campaignBonus": "BoDhall3.pcx",
-          "border": "dragon-citadel/town-screen/borders/cityHall",
-          "area": "dragon-citadel/town-screen/areas/cityHall",
-          "z": 36809
+          "border": "city-redesign/dragonCitadel/cityHall-border.png",
+          "area": "city-redesign/dragonCitadel/cityHall-area.png",
+          "z": 43
         },
         "capitol": {
-          "animation": "dragon-citadel/town/buildings/capitol",
-          "x": 0,
-          "y": 0,
+          "animation": "city-redesign/dragonCitadel/capitol",
+          "x": 229,
+          "y": 277,
           "campaignBonus": "BoDhall4.pcx",
-          "border": "dragon-citadel/town-screen/borders/capitol",
-          "area": "dragon-citadel/town-screen/areas/capitol",
-          "z": 36809
+          "border": "city-redesign/dragonCitadel/capitol-border.png",
+          "area": "city-redesign/dragonCitadel/capitol-area.png",
+          "z": 43
         },
         "marketplace": {
-          "animation": "dragon-citadel/town/buildings/marketplace",
-          "x": 0,
-          "y": 0,
-          "z": 24813,
+          "animation": "city-redesign/dragonCitadel/marketplace",
+          "x": 686,
+          "y": 144,
+          "z": 16,
           "campaignBonus": "BoDmark1.pcx",
-          "border": "dragon-citadel/town-screen/borders/marketplace",
-          "area": "dragon-citadel/town-screen/areas/marketplace"
+          "border": "city-redesign/dragonCitadel/marketplace-border.png",
+          "area": "city-redesign/dragonCitadel/marketplace-area.png"
         },
         "resourceSilo": {
-          "animation": "dragon-citadel/town/buildings/resourceSilo",
-          "x": 0,
-          "y": 0,
-          "z": 30014,
+          "animation": "city-redesign/dragonCitadel/resourceSilo",
+          "x": 261,
+          "y": 336,
+          "z": 58,
           "campaignBonus": "BoDmark2.pcx",
-          "border": "dragon-citadel/town-screen/borders/resourceSilo",
-          "area": "dragon-citadel/town-screen/areas/resourceSilo"
+          "border": "city-redesign/dragonCitadel/resourceSilo-border.png",
+          "area": "city-redesign/dragonCitadel/resourceSilo-area.png"
         },
         "blacksmith": {
-          "animation": "dragon-citadel/town/buildings/blacksmith",
-          "x": 0,
-          "y": 0,
-          "z": 36515,
+          "animation": "city-redesign/dragonCitadel/blacksmith",
+          "x": 191,
+          "y": 330,
+          "z": 55,
           "campaignBonus": "BoDsmith.pcx",
-          "border": "dragon-citadel/town-screen/borders/blacksmith",
-          "area": "dragon-citadel/town-screen/areas/blacksmith"
+          "border": "city-redesign/dragonCitadel/blacksmith-border.png",
+          "area": "city-redesign/dragonCitadel/blacksmith-area.png"
         },
         "special1": {
-          "animation": "dragon-citadel/town/buildings/special1",
-          "x": 0,
-          "y": 0,
-          "z": 14516,
+          "animation": "city-redesign/dragonCitadel/special1",
+          "x": 738,
+          "y": 141,
+          "z": 19,
           "campaignBonus": "BoDmarkA.pcx",
-          "border": "dragon-citadel/town-screen/borders/special1",
-          "area": "dragon-citadel/town-screen/areas/special1"
+          "border": "city-redesign/dragonCitadel/special1-border.png",
+          "area": "city-redesign/dragonCitadel/special1-area.png"
         },
         "special2": {
-          "animation": "dragon-citadel/town/buildings/special2",
-          "x": 0,
-          "y": 0,
+          "animation": "city-redesign/dragonCitadel/special2",
+          "x": 113,
+          "y": 336,
           "campaignBonus": "BoDvort.pcx",
-          "border": "dragon-citadel/town-screen/borders/special2",
-          "area": "dragon-citadel/town-screen/areas/special2",
-          "z": 24517
+          "border": "city-redesign/dragonCitadel/special2-border.png",
+          "area": "city-redesign/dragonCitadel/special2-area.png",
+          "z": 52
         },
         "special3": {
-          "animation": "dragon-citadel/town/buildings/special3",
-          "x": 0,
-          "y": 0,
+          "animation": "city-redesign/dragonCitadel/special3",
+          "x": 581,
+          "y": 246,
           "campaignBonus": "BoDport.pcx",
-          "border": "dragon-citadel/town-screen/borders/special3",
-          "area": "dragon-citadel/town-screen/areas/special3",
-          "z": 26518
+          "border": "city-redesign/dragonCitadel/special3-border.png",
+          "area": "city-redesign/dragonCitadel/special3-area.png",
+          "z": 37
         },
         "special4": {
-          "animation": "dragon-citadel/town/buildings/special4",
-          "x": 0,
-          "y": 0,
+          "animation": "city-redesign/dragonCitadel/special4",
+          "x": 79,
+          "y": 318,
           "campaignBonus": "BoDacad.pcx",
-          "border": "dragon-citadel/town-screen/borders/special4",
-          "area": "dragon-citadel/town-screen/areas/special4",
-          "z": 35019
+          "border": "city-redesign/dragonCitadel/special4-border.png",
+          "area": "city-redesign/dragonCitadel/special4-area.png",
+          "z": 49
         },
         "grail": {
-          "animation": "dragon-citadel/town/buildings/grail",
-          "x": 0,
-          "y": 0,
-          "z": 11121,
+          "animation": "city-redesign/dragonCitadel/grail",
+          "x": 542,
+          "y": 70,
+          "z": 4,
           "campaignBonus": "BoDholy.pcx",
-          "border": "dragon-citadel/town-screen/borders/grail",
-          "area": "dragon-citadel/town-screen/areas/grail"
+          "border": "city-redesign/dragonCitadel/grail-border.png",
+          "area": "city-redesign/dragonCitadel/grail-area.png"
         },
         "dwellingLvl1": {
-          "animation": "dragon-citadel/town/buildings/dwellingLvl1",
-          "x": 0,
-          "y": 0,
-          "z": 31022,
+          "animation": "city-redesign/dragonCitadel/dwellingLvl1",
+          "x": 698,
+          "y": 258,
+          "z": 40,
           "campaignBonus": "BoDtrog1.pcx",
-          "border": "dragon-citadel/town-screen/borders/dwellingLvl1",
-          "area": "dragon-citadel/town-screen/areas/dwellingLvl1"
+          "border": "city-redesign/dragonCitadel/dwellingLvl1-border.png",
+          "area": "city-redesign/dragonCitadel/dwellingLvl1-area.png"
         },
         "dwellingLvl2": {
-          "animation": "dragon-citadel/town/buildings/dwellingLvl2",
-          "x": 0,
-          "y": 0,
+          "animation": "city-redesign/dragonCitadel/dwellingLvl2",
+          "x": 299,
+          "y": 318,
           "campaignBonus": "BoDharp1.pcx",
-          "border": "dragon-citadel/town-screen/borders/dwellingLvl2",
-          "area": "dragon-citadel/town-screen/areas/dwellingLvl2",
-          "z": 36824
+          "border": "city-redesign/dragonCitadel/dwellingLvl2-border.png",
+          "area": "city-redesign/dragonCitadel/dwellingLvl2-area.png",
+          "z": 61
         },
         "dwellingLvl3": {
-          "animation": "dragon-citadel/town/buildings/dwellingLvl3",
-          "x": 0,
-          "y": 0,
-          "z": 27826,
+          "animation": "city-redesign/dragonCitadel/dwellingLvl3",
+          "x": 30,
+          "y": 173,
+          "z": 25,
           "campaignBonus": "BoDbeh1.pcx",
-          "border": "dragon-citadel/town-screen/borders/dwellingLvl3",
-          "area": "dragon-citadel/town-screen/areas/dwellingLvl3"
+          "border": "city-redesign/dragonCitadel/dwellingLvl3-border.png",
+          "area": "city-redesign/dragonCitadel/dwellingLvl3-area.png"
         },
         "dwellingLvl4": {
-          "animation": "dragon-citadel/town/buildings/dwellingLvl4",
-          "x": 0,
-          "y": 0,
-          "z": 14228,
+          "animation": "city-redesign/dragonCitadel/dwellingLvl4",
+          "x": 164,
+          "y": 303,
+          "z": 46,
           "campaignBonus": "BoDmedu1.pcx",
-          "border": "dragon-citadel/town-screen/borders/dwellingLvl4",
-          "area": "dragon-citadel/town-screen/areas/dwellingLvl4"
+          "border": "city-redesign/dragonCitadel/dwellingLvl4-border.png",
+          "area": "city-redesign/dragonCitadel/dwellingLvl4-area.png"
         },
         "dwellingLvl5": {
-          "animation": "dragon-citadel/town/buildings/dwellingLvl5",
-          "x": 0,
-          "y": 0,
-          "z": 26432,
+          "animation": "city-redesign/dragonCitadel/dwellingLvl5",
+          "x": 676,
+          "y": 223,
+          "z": 34,
           "campaignBonus": "BoDmino1.pcx",
-          "border": "dragon-citadel/town-screen/borders/dwellingLvl5",
-          "area": "dragon-citadel/town-screen/areas/dwellingLvl5"
+          "border": "city-redesign/dragonCitadel/dwellingLvl5-border.png",
+          "area": "city-redesign/dragonCitadel/dwellingLvl5-area.png"
         },
         "dwellingLvl6": {
-          "animation": "dragon-citadel/town/buildings/dwellingLvl6",
-          "x": 0,
-          "y": 0,
-          "z": 15434,
+          "animation": "city-redesign/dragonCitadel/dwellingLvl6",
+          "x": 53,
+          "y": 46,
+          "z": 1,
           "campaignBonus": "BoDmant1.pcx",
-          "border": "dragon-citadel/town-screen/borders/dwellingLvl6",
-          "area": "dragon-citadel/town-screen/areas/dwellingLvl6"
+          "border": "city-redesign/dragonCitadel/dwellingLvl6-border.png",
+          "area": "city-redesign/dragonCitadel/dwellingLvl6-area.png"
         },
         "dwellingLvl7": {
-          "animation": "dragon-citadel/town/buildings/dwellingLvl7",
-          "x": 0,
-          "y": 0,
-          "z": 10436,
+          "animation": "city-redesign/dragonCitadel/dwellingLvl7",
+          "x": 578,
+          "y": 61,
+          "z": 13,
           "campaignBonus": "BoDdrag1.pcx",
-          "border": "dragon-citadel/town-screen/borders/dwellingLvl7",
-          "area": "dragon-citadel/town-screen/areas/dwellingLvl7"
+          "border": "city-redesign/dragonCitadel/dwellingLvl7-border.png",
+          "area": "city-redesign/dragonCitadel/dwellingLvl7-area.png"
         },
         "dwellingUpLvl1": {
-          "animation": "dragon-citadel/town/buildings/dwellingUpLvl1",
-          "x": 0,
-          "y": 0,
-          "z": 31022,
+          "animation": "city-redesign/dragonCitadel/dwellingUpLvl1",
+          "x": 696,
+          "y": 255,
+          "z": 40,
           "campaignBonus": "BoDtrog2.pcx",
-          "border": "dragon-citadel/town-screen/borders/dwellingUpLvl1",
-          "area": "dragon-citadel/town-screen/areas/dwellingUpLvl1"
+          "border": "city-redesign/dragonCitadel/dwellingUpLvl1-border.png",
+          "area": "city-redesign/dragonCitadel/dwellingUpLvl1-area.png"
         },
         "dwellingUpLvl2": {
-          "animation": "dragon-citadel/town/buildings/dwellingUpLvl2",
-          "x": 0,
-          "y": 0,
+          "animation": "city-redesign/dragonCitadel/dwellingUpLvl2",
+          "x": 298,
+          "y": 315,
           "campaignBonus": "BoDharp2.pcx",
-          "border": "dragon-citadel/town-screen/borders/dwellingUpLvl2",
-          "area": "dragon-citadel/town-screen/areas/dwellingUpLvl2",
-          "z": 36824
+          "border": "city-redesign/dragonCitadel/dwellingUpLvl2-border.png",
+          "area": "city-redesign/dragonCitadel/dwellingUpLvl2-area.png",
+          "z": 61
         },
         "dwellingUp2Lvl2": {
-          "animation": "dragon-citadel/town/buildings/dwellingUpLvl2",
-          "x": 0,
-          "y": 0,
-          "campaignBonus": "BoDharp2.pcx",
-          "border": "dragon-citadel/town-screen/borders/dwellingUpLvl2",
-          "area": "dragon-citadel/town-screen/areas/dwellingUpLvl2",
-          "z": 36824
+          "animation": "city-redesign/dragonCitadel/dwellingUp2Lvl2",
+          "x": 296,
+          "y": 312,
+          "z": 61,
+          "area": "city-redesign/dragonCitadel/dwellingUp2Lvl2-area.png",
+          "border": "city-redesign/dragonCitadel/dwellingUp2Lvl2-border.png",
+          "campaignBonus": "BoDharp2.pcx"
         },
         "dwellingUpLvl3": {
-          "animation": "dragon-citadel/town/buildings/dwellingUpLvl3",
-          "x": 0,
-          "y": 0,
-          "z": 27826,
+          "animation": "city-redesign/dragonCitadel/dwellingUpLvl3",
+          "x": 28,
+          "y": 169,
+          "z": 25,
           "campaignBonus": "BoDbeh2.pcx",
-          "border": "dragon-citadel/town-screen/borders/dwellingUpLvl3",
-          "area": "dragon-citadel/town-screen/areas/dwellingUpLvl3"
+          "border": "city-redesign/dragonCitadel/dwellingUpLvl3-border.png",
+          "area": "city-redesign/dragonCitadel/dwellingUpLvl3-area.png"
         },
         "dwellingUpLvl4": {
-          "animation": "dragon-citadel/town/buildings/dwellingUpLvl4",
-          "x": 0,
-          "y": 0,
-          "z": 14228,
+          "animation": "city-redesign/dragonCitadel/dwellingUpLvl4",
+          "x": 162,
+          "y": 301,
+          "z": 46,
           "campaignBonus": "BoDmedu2.pcx",
-          "border": "dragon-citadel/town-screen/borders/dwellingUpLvl4",
-          "area": "dragon-citadel/town-screen/areas/dwellingUpLvl4"
+          "border": "city-redesign/dragonCitadel/dwellingUpLvl4-border.png",
+          "area": "city-redesign/dragonCitadel/dwellingUpLvl4-area.png"
         },
         "dwellingUpLvl5": {
-          "animation": "dragon-citadel/town/buildings/dwellingUpLvl5",
-          "x": 0,
-          "y": 0,
-          "z": 26432,
+          "animation": "city-redesign/dragonCitadel/dwellingUpLvl5",
+          "x": 674,
+          "y": 219,
+          "z": 34,
           "campaignBonus": "BoDmino2.pcx",
-          "border": "dragon-citadel/town-screen/borders/dwellingUpLvl5",
-          "area": "dragon-citadel/town-screen/areas/dwellingUpLvl5"
+          "border": "city-redesign/dragonCitadel/dwellingUpLvl5-border.png",
+          "area": "city-redesign/dragonCitadel/dwellingUpLvl5-area.png"
         },
         "dwellingUpLvl6": {
-          "animation": "dragon-citadel/town/buildings/dwellingUpLvl6",
-          "x": 0,
-          "y": 0,
-          "z": 15434,
+          "animation": "city-redesign/dragonCitadel/dwellingUpLvl6",
+          "x": 52,
+          "y": 42,
+          "z": 1,
           "campaignBonus": "BoDmant2.pcx",
-          "border": "dragon-citadel/town-screen/borders/dwellingUpLvl6",
-          "area": "dragon-citadel/town-screen/areas/dwellingUpLvl6"
+          "border": "city-redesign/dragonCitadel/dwellingUpLvl6-border.png",
+          "area": "city-redesign/dragonCitadel/dwellingUpLvl6-area.png"
         },
         "dwellingUpLvl7": {
-          "animation": "dragon-citadel/town/buildings/dwellingUpLvl7",
-          "x": 0,
-          "y": 0,
-          "z": 10436,
+          "animation": "city-redesign/dragonCitadel/dwellingUpLvl7",
+          "x": 576,
+          "y": 57,
+          "z": 13,
           "campaignBonus": "BoDdrag2.pcx",
-          "border": "dragon-citadel/town-screen/borders/dwellingUpLvl7",
-          "area": "dragon-citadel/town-screen/areas/dwellingUpLvl7"
+          "border": "city-redesign/dragonCitadel/dwellingUpLvl7-border.png",
+          "area": "city-redesign/dragonCitadel/dwellingUpLvl7-area.png"
         },
         "dwellingUp2Lvl4": {
-          "animation": "dragon-citadel/town/buildings/dwellingUp2Lvl4",
-          "x": 0,
-          "y": 0,
-          "z": 14230,
-          "campaignBonus": "BoDmedu1.pcx",
-          "border": "dragon-citadel/town-screen/borders/dwellingUp2Lvl4",
-          "area": "dragon-citadel/town-screen/areas/dwellingUp2Lvl4"
+          "animation": "city-redesign/dragonCitadel/dwellingUp2Lvl4",
+          "x": 162,
+          "y": 298,
+          "z": 46,
+          "area": "city-redesign/dragonCitadel/dwellingUp2Lvl4-area.png",
+          "border": "city-redesign/dragonCitadel/dwellingUp2Lvl4-border.png",
+          "campaignBonus": "BoDmedu1.pcx"
         },
         "dwellingUp3Lvl4": {
-          "animation": "dragon-citadel/town/buildings/dwellingUp3Lvl4",
-          "x": 0,
-          "y": 0,
-          "z": 14230,
-          "campaignBonus": "BoDmedu2.pcx",
-          "border": "dragon-citadel/town-screen/borders/dwellingUp3Lvl4",
-          "area": "dragon-citadel/town-screen/areas/dwellingUp3Lvl4"
+          "animation": "city-redesign/dragonCitadel/dwellingUp3Lvl4",
+          "x": 164,
+          "y": 303,
+          "z": 47,
+          "campaignBonus": "BoDmedu1.pcx",
+          "border": "city-redesign/dragonCitadel/dwellingUp3Lvl4-border.png",
+          "area": "city-redesign/dragonCitadel/dwellingUp3Lvl4-area.png"
         },
         "special5": {
-          "animation": "dragon-citadel/town/buildings/special5",
-          "x": 0,
-          "y": 0,
+          "animation": "city-redesign/dragonCitadel/special5",
+          "x": 656,
+          "y": 99,
           "campaignBonus": "BoDport.pcx",
-          "border": "dragon-citadel/town-screen/borders/special5",
-          "area": "dragon-citadel/town-screen/areas/special5",
-          "z": 36520
+          "border": "city-redesign/dragonCitadel/special5-border.png",
+          "area": "city-redesign/dragonCitadel/special5-area.png",
+          "z": 10
         },
         "special6": {
-          "animation": "dragon-citadel/town/buildings/special5",
+          "animation": "city-redesign/dragonCitadel/special6",
+          "x": 691,
+          "y": 93,
+          "campaignBonus": "BoDport.pcx",
+          "border": "city-redesign/dragonCitadel/special6-border.png",
+          "area": "city-redesign/dragonCitadel/special6-area.png",
+          "z": 7
+        },
+        "foregroundRamparts": {
           "x": 0,
           "y": 0,
-          "campaignBonus": "BoDport.pcx",
-          "border": "dragon-citadel/town-screen/borders/special5",
-          "area": "dragon-citadel/town-screen/areas/special5",
-          "z": 36521
+          "z": 100,
+          "animation": "city-redesign/dragonCitadel/foreground-ramparts",
+          "area": "city-redesign/dragonCitadel/foreground-pass-through.png"
         }
       },
       "musicTheme": [
-        "music/Dungeon"
+        "music/DragonCitadel_StoneAndFire"
       ],
       "defaultTavern": 5,
       "tavernVideo": "TAVERN.BIK",
@@ -1115,7 +1122,9 @@
                 "message": "@core.genrltxt.579",
                 "manaPercentage": 200
               }
-            ]
+            ],
+            "onVisitedMessage": "Wir Smoczej Many został już wykorzystany w tym tygodniu. Odnowi się na początku kolejnego tygodnia.",
+            "onEmptyMessage": "Bohater ma już wystarczająco dużo many; wir nie może zwiększyć jej ponad 200% maksimum."
           },
           "name": "Wir Smoczej Many",
           "description": "Raz w tygodniu podwaja punkty many odwiedzającego bohatera do 200% jego maksimum."
@@ -1146,7 +1155,9 @@
                 "message": "@core.genrltxt.583",
                 "heroExperience": 1000
               }
-            ]
+            ],
+            "onVisitedMessage": "Ten bohater ukończył już szkolenie w Akademii Smoczych Mistrzów.",
+            "onEmptyMessage": "Akademia nie ma teraz dodatkowego szkolenia dla tego bohatera."
           },
           "name": "Akademia Smoczych Mistrzów",
           "description": "Każdy bohater może odwiedzić Akademię raz i otrzymać 1000 punktów doświadczenia."

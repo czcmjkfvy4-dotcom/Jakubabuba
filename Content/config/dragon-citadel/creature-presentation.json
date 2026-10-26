@@ -1,0 +1,2318 @@
+{
+  "schema": 1,
+  "upgradeScale": 1.06,
+  "recruitmentFrameMs": 125,
+  "recruitmentCropY": 150,
+  "battleSpeedMultiplier": 0.8,
+  "sprites": {
+    "FOURTH-FORMS/CREATURES/DCCROWNGUARD/": {
+      "scale": 0.9304347826086956,
+      "anchorX": 189.0,
+      "anchorY": 269,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": true
+    },
+    "RECRUITMENT-CREATURES/DCCROWNGUARD/": {
+      "scale": 0.9304347826086956,
+      "anchorX": 189.0,
+      "anchorY": 269,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": true
+    },
+    "FOURTH-FORMS/CREATURES/DCROYALCROSSBOWMAN/": {
+      "scale": 1.051948051948052,
+      "anchorX": 199.0,
+      "anchorY": 267,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCROYALCROSSBOWMAN/": {
+      "scale": 1.051948051948052,
+      "anchorX": 199.0,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCCROWNGRIFFIN/": {
+      "scale": 1.063157894736842,
+      "anchorX": 226.5,
+      "anchorY": 280,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCCROWNGRIFFIN/": {
+      "scale": 0.9292929292929293,
+      "anchorX": 226.5,
+      "anchorY": 280,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCPALADIN/": {
+      "scale": 1.010989010989011,
+      "anchorX": 197.0,
+      "anchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCPALADIN/": {
+      "scale": 1.010989010989011,
+      "anchorX": 197.0,
+      "anchorY": 268,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCHIEROPHANT/": {
+      "scale": 1.0625,
+      "anchorX": 195.5,
+      "anchorY": 267,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCHIEROPHANT/": {
+      "scale": 1.0625,
+      "anchorX": 195.5,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCROYALBANNERKNIGHT/": {
+      "scale": 1.0918367346938775,
+      "anchorX": 217.0,
+      "anchorY": 265,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCROYALBANNERKNIGHT/": {
+      "scale": 1.082761578044597,
+      "anchorX": 217.0,
+      "anchorY": 265,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCSERAPH/": {
+      "scale": 1.07,
+      "anchorX": 192.5,
+      "anchorY": 267,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCSERAPH/": {
+      "scale": 1.07,
+      "anchorX": 192.5,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCCENTAURWARLORD/": {
+      "scale": 1.0256410256410255,
+      "anchorX": 207.5,
+      "anchorY": 269,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCCENTAURWARLORD/": {
+      "scale": 0.9401709401709402,
+      "anchorX": 207.5,
+      "anchorY": 269,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCRUNEDWARF/": {
+      "scale": 1.0422535211267605,
+      "anchorX": 193.0,
+      "anchorY": 267,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCRUNEDWARF/": {
+      "scale": 1.0422535211267605,
+      "anchorX": 193.0,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCMOONELF/": {
+      "scale": 1.064102564102564,
+      "anchorX": 196.5,
+      "anchorY": 265,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCMOONELF/": {
+      "scale": 1.064102564102564,
+      "anchorX": 196.5,
+      "anchorY": 265,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCAURORAPEGASUS/": {
+      "scale": 0.9387755102040817,
+      "anchorX": 212.0,
+      "anchorY": 270,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCAURORAPEGASUS/": {
+      "scale": 0.8679245283018868,
+      "anchorX": 212.0,
+      "anchorY": 270,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCANCIENTENT/": {
+      "scale": 0.8222222222222222,
+      "anchorX": 195.5,
+      "anchorY": 269,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCANCIENTENT/": {
+      "scale": 0.8,
+      "anchorX": 195.5,
+      "anchorY": 269,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCARMOREDUNICORN/": {
+      "scale": 1.0560747663551402,
+      "anchorX": 226.5,
+      "anchorY": 267,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCARMOREDUNICORN/": {
+      "scale": 0.8932038834951457,
+      "anchorX": 226.5,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCEMERALDDRAGON/": {
+      "scale": 1.0714285714285714,
+      "anchorX": 207.5,
+      "anchorY": 267,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCEMERALDDRAGON/": {
+      "scale": 0.5317919075144508,
+      "anchorX": 207.5,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCMECHANICGREMLIN/": {
+      "scale": 1.0666666666666667,
+      "anchorX": 202.0,
+      "anchorY": 267,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCMECHANICGREMLIN/": {
+      "scale": 1.0666666666666667,
+      "anchorX": 202.0,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCICEWINGGARGOYLE/": {
+      "scale": 1.0632911392405062,
+      "anchorX": 193.0,
+      "anchorY": 267,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCICEWINGGARGOYLE/": {
+      "scale": 1.0632911392405062,
+      "anchorX": 193.0,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCADAMANTGOLEM/": {
+      "scale": 0.9340659340659341,
+      "anchorX": 201.0,
+      "anchorY": 266,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCADAMANTGOLEM/": {
+      "scale": 0.9340659340659341,
+      "anchorX": 201.0,
+      "anchorY": 266,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCRUNEMAGE/": {
+      "scale": 1.0594059405940595,
+      "anchorX": 195.0,
+      "anchorY": 267,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCRUNEMAGE/": {
+      "scale": 1.0594059405940595,
+      "anchorX": 195.0,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCDJINNSULTAN/": {
+      "scale": 0.9587628865979382,
+      "anchorX": 210.0,
+      "anchorY": 266,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCDJINNSULTAN/": {
+      "scale": 0.9587628865979382,
+      "anchorX": 210.0,
+      "anchorY": 266,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCNAGAEMPRESS/": {
+      "scale": 1.0408163265306123,
+      "anchorX": 236.0,
+      "anchorY": 264,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCNAGAEMPRESS/": {
+      "scale": 0.8109897384971864,
+      "anchorX": 236.0,
+      "anchorY": 264,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCFIRMAMENTTITAN/": {
+      "scale": 1.058252427184466,
+      "anchorX": 210.0,
+      "anchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCFIRMAMENTTITAN/": {
+      "scale": 1.0,
+      "anchorX": 210.0,
+      "anchorY": 268,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCASHIMP/": {
+      "scale": 1.0588235294117647,
+      "anchorX": 192.0,
+      "anchorY": 266,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCASHIMP/": {
+      "scale": 1.0588235294117647,
+      "anchorX": 192.0,
+      "anchorY": 266,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCABYSSMAGOG/": {
+      "scale": 1.0,
+      "anchorX": 185.5,
+      "anchorY": 267,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCABYSSMAGOG/": {
+      "scale": 1.0,
+      "anchorX": 185.5,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCHELLCERBERUS/": {
+      "scale": 1.056338028169014,
+      "anchorX": 216.0,
+      "anchorY": 267,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCHELLCERBERUS/": {
+      "scale": 1.0454545454545454,
+      "anchorX": 216.0,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCIRONHORNDEMON/": {
+      "scale": 1.0606060606060606,
+      "anchorX": 201.5,
+      "anchorY": 267,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCIRONHORNDEMON/": {
+      "scale": 1.0606060606060606,
+      "anchorX": 201.5,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCASHLORD/": {
+      "scale": 1.053191489361702,
+      "anchorX": 193.5,
+      "anchorY": 266,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCASHLORD/": {
+      "scale": 1.053191489361702,
+      "anchorX": 193.5,
+      "anchorY": 266,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCCROWNEDEFREET/": {
+      "scale": 0.9411764705882353,
+      "anchorX": 207.0,
+      "anchorY": 270,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCCROWNEDEFREET/": {
+      "scale": 0.9411764705882353,
+      "anchorX": 207.0,
+      "anchorY": 270,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCABYSSPRINCE/": {
+      "scale": 1.0603448275862069,
+      "anchorX": 202.5,
+      "anchorY": 266,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCABYSSPRINCE/": {
+      "scale": 0.773109243697479,
+      "anchorX": 202.5,
+      "anchorY": 266,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCBONELEGIONARY/": {
+      "scale": 1.0224719101123596,
+      "anchorX": 201.0,
+      "anchorY": 269,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCBONELEGIONARY/": {
+      "scale": 1.0224719101123596,
+      "anchorX": 201.0,
+      "anchorY": 269,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCPLAGUEGUARD/": {
+      "scale": 0.978021978021978,
+      "anchorX": 196.0,
+      "anchorY": 266,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCPLAGUEGUARD/": {
+      "scale": 0.978021978021978,
+      "anchorX": 196.0,
+      "anchorY": 266,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCTOMBWRAITH/": {
+      "scale": 1.0952380952380953,
+      "anchorX": 185.0,
+      "anchorY": 258,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCTOMBWRAITH/": {
+      "scale": 1.0952380952380953,
+      "anchorX": 185.0,
+      "anchorY": 258,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCANCIENTBLOODVAMPIRE/": {
+      "scale": 1.0454545454545454,
+      "anchorX": 193.0,
+      "anchorY": 267,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCANCIENTBLOODVAMPIRE/": {
+      "scale": 1.0454545454545454,
+      "anchorX": 193.0,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCARCHLICH/": {
+      "scale": 1.11,
+      "anchorX": 200.0,
+      "anchorY": 265,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCARCHLICH/": {
+      "scale": 1.1,
+      "anchorX": 200.0,
+      "anchorY": 265,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCDOOMKNIGHT/": {
+      "scale": 1.0,
+      "anchorX": 216.0,
+      "anchorY": 266,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCDOOMKNIGHT/": {
+      "scale": 0.7666666666666667,
+      "anchorX": 216.0,
+      "anchorY": 266,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCGRAVEDRAGON/": {
+      "scale": 1.0614035087719298,
+      "anchorX": 207.5,
+      "anchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCGRAVEDRAGON/": {
+      "scale": 0.5859872611464968,
+      "anchorX": 207.5,
+      "anchorY": 268,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCDEEPTROGLODYTE/": {
+      "scale": 1.0568181818181819,
+      "anchorX": 200.0,
+      "anchorY": 267,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCDEEPTROGLODYTE/": {
+      "scale": 0.6133333333333333,
+      "anchorX": 200.0,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCNIGHTHARPY/": {
+      "scale": 1.0689655172413792,
+      "anchorX": 197.5,
+      "anchorY": 267,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCNIGHTHARPY/": {
+      "scale": 0.8598130841121495,
+      "anchorX": 197.5,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCABYSSEYE/": {
+      "scale": 1.064516129032258,
+      "anchorX": 189.5,
+      "anchorY": 264,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCABYSSEYE/": {
+      "scale": 0.968421052631579,
+      "anchorX": 189.5,
+      "anchorY": 264,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCMEDUSAEMPRESS/": {
+      "scale": 1.0555555555555556,
+      "anchorX": 205.0,
+      "anchorY": 269,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCMEDUSAEMPRESS/": {
+      "scale": 0.9019607843137255,
+      "anchorX": 205.0,
+      "anchorY": 269,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCLABYRINTHLORD/": {
+      "scale": 1.0638297872340425,
+      "anchorX": 202.5,
+      "anchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCLABYRINTHLORD/": {
+      "scale": 0.8761904761904762,
+      "anchorX": 202.5,
+      "anchorY": 268,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCDEEPSCORPICORE/": {
+      "scale": 1.075268817204301,
+      "anchorX": 210.0,
+      "anchorY": 266,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCDEEPSCORPICORE/": {
+      "scale": 0.8363636363636363,
+      "anchorX": 210.0,
+      "anchorY": 266,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCOBSIDIANDRAGON/": {
+      "scale": 1.0769230769230769,
+      "anchorX": 210.0,
+      "anchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCOBSIDIANDRAGON/": {
+      "scale": 0.6301369863013698,
+      "anchorX": 210.0,
+      "anchorY": 268,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCVETERANHOBGOBLIN/": {
+      "scale": 1.0735294117647058,
+      "anchorX": 201.0,
+      "anchorY": 267,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCVETERANHOBGOBLIN/": {
+      "scale": 1.0735294117647058,
+      "anchorX": 201.0,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCWOLFHETMAN/": {
+      "scale": 0.9791666666666666,
+      "anchorX": 216.5,
+      "anchorY": 267,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCWOLFHETMAN/": {
+      "scale": 0.8440366972477065,
+      "anchorX": 216.5,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCAXEMASTERORC/": {
+      "scale": 0.9222222222222223,
+      "anchorX": 197.5,
+      "anchorY": 266,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCAXEMASTERORC/": {
+      "scale": 0.9222222222222223,
+      "anchorX": 197.5,
+      "anchorY": 266,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCELDEROGRESHAMAN/": {
+      "scale": 1.0618556701030928,
+      "anchorX": 202.5,
+      "anchorY": 267,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCELDEROGRESHAMAN/": {
+      "scale": 0.968421052631579,
+      "anchorX": 202.5,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCSTORMBIRD/": {
+      "scale": 0.963963963963964,
+      "anchorX": 191.0,
+      "anchorY": 270,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCSTORMBIRD/": {
+      "scale": 0.647887323943662,
+      "anchorX": 191.0,
+      "anchorY": 270,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCDESTROYERCYCLOPS/": {
+      "scale": 1.0098039215686274,
+      "anchorX": 191.0,
+      "anchorY": 266,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCDESTROYERCYCLOPS/": {
+      "scale": 1.0098039215686274,
+      "anchorX": 191.0,
+      "anchorY": 266,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCBEHEMOTHPATRIARCH/": {
+      "scale": 1.06,
+      "anchorX": 212.0,
+      "anchorY": 266,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCBEHEMOTHPATRIARCH/": {
+      "scale": 0.7301587301587301,
+      "anchorX": 212.0,
+      "anchorY": 266,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCIRONSHIELDGNOLL/": {
+      "scale": 0.9397590361445783,
+      "anchorX": 188.5,
+      "anchorY": 267,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCIRONSHIELDGNOLL/": {
+      "scale": 0.9397590361445783,
+      "anchorX": 188.5,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCLIZARDHUNTER/": {
+      "scale": 1.043956043956044,
+      "anchorX": 185.5,
+      "anchorY": 267,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCLIZARDHUNTER/": {
+      "scale": 0.8288288288288288,
+      "anchorX": 185.5,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCVENOMFLY/": {
+      "scale": 1.0694444444444444,
+      "anchorX": 194.5,
+      "anchorY": 252,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCVENOMFLY/": {
+      "scale": 1.0574712643678161,
+      "anchorX": 194.5,
+      "anchorY": 252,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCPRIMEVALBASILISK/": {
+      "scale": 1.0416666666666667,
+      "anchorX": 207.0,
+      "anchorY": 267,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCPRIMEVALBASILISK/": {
+      "scale": 0.5411764705882353,
+      "anchorX": 207.0,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCGORGONMATRIARCH/": {
+      "scale": 1.0666666666666667,
+      "anchorX": 210.5,
+      "anchorY": 267,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCGORGONMATRIARCH/": {
+      "scale": 0.6814814814814815,
+      "anchorX": 210.5,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCMARSHWYVERN/": {
+      "scale": 1.0594059405940595,
+      "anchorX": 204.5,
+      "anchorY": 267,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCMARSHWYVERN/": {
+      "scale": 0.6258503401360545,
+      "anchorX": 204.5,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCPRIMORDIALHYDRA/": {
+      "scale": 1.0642201834862386,
+      "anchorX": 184.5,
+      "anchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCPRIMORDIALHYDRA/": {
+      "scale": 0.4717948717948718,
+      "anchorX": 184.5,
+      "anchorY": 268,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCAURORANYMPH/": {
+      "scale": 1.0875,
+      "anchorX": 192.0,
+      "anchorY": 267,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCAURORANYMPH/": {
+      "scale": 1.0875,
+      "anchorX": 192.0,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCTEMPESTELEMENTAL/": {
+      "scale": 1.134020618556701,
+      "anchorX": 200.5,
+      "anchorY": 265,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCTEMPESTELEMENTAL/": {
+      "scale": 0.9108910891089109,
+      "anchorX": 200.5,
+      "anchorY": 265,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCGLACIERELEMENTAL/": {
+      "scale": 1.0612244897959184,
+      "anchorX": 208.0,
+      "anchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCGLACIERELEMENTAL/": {
+      "scale": 0.9387755102040817,
+      "anchorX": 208.0,
+      "anchorY": 268,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCPLASMAELEMENTAL/": {
+      "scale": 1.0560747663551402,
+      "anchorX": 200.0,
+      "anchorY": 269,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCPLASMAELEMENTAL/": {
+      "scale": 1.0,
+      "anchorX": 200.0,
+      "anchorY": 269,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCOBSIDIANELEMENTAL/": {
+      "scale": 1.0851063829787233,
+      "anchorX": 196.0,
+      "anchorY": 266,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCOBSIDIANELEMENTAL/": {
+      "scale": 0.71875,
+      "anchorX": 196.0,
+      "anchorY": 266,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCETHERELEMENTAL/": {
+      "scale": 1.1711711711711712,
+      "anchorX": 195.0,
+      "anchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCETHERELEMENTAL/": {
+      "scale": 0.990990990990991,
+      "anchorX": 195.0,
+      "anchorY": 268,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCPRIMORDIALPHOENIX/": {
+      "scale": 1.0588235294117647,
+      "anchorX": 215.0,
+      "anchorY": 271,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCPRIMORDIALPHOENIX/": {
+      "scale": 0.6865671641791045,
+      "anchorX": 215.0,
+      "anchorY": 271,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCDRAGONEXECUTIONER/": {
+      "scale": 1.0,
+      "anchorX": 198.5,
+      "anchorY": 267,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCDRAGONEXECUTIONER/": {
+      "scale": 1.0,
+      "anchorX": 198.5,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCSTORMHEARTTITAN/": {
+      "scale": 1.058252427184466,
+      "anchorX": 204.5,
+      "anchorY": 267,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCSTORMHEARTTITAN/": {
+      "scale": 1.058252427184466,
+      "anchorX": 204.5,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCRUNEMAGICDRAGON/": {
+      "scale": 1.063063063063063,
+      "anchorX": 212.0,
+      "anchorY": 267,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCRUNEMAGICDRAGON/": {
+      "scale": 0.7796610169491526,
+      "anchorX": 212.0,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCCROWNEDRUBYDRAGON/": {
+      "scale": 1.0614035087719298,
+      "anchorX": 196.0,
+      "anchorY": 267,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCCROWNEDRUBYDRAGON/": {
+      "scale": 0.6216216216216216,
+      "anchorX": 196.0,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCETERNALCORROSIONDRAGON/": {
+      "scale": 1.0625,
+      "anchorX": 208.5,
+      "anchorY": 267,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCETERNALCORROSIONDRAGON/": {
+      "scale": 0.7863247863247863,
+      "anchorX": 208.5,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCTEMPESTEYEDRAGON/": {
+      "scale": 1.0625,
+      "anchorX": 208.0,
+      "anchorY": 266,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCTEMPESTEYEDRAGON/": {
+      "scale": 0.696969696969697,
+      "anchorX": 208.0,
+      "anchorY": 266,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCFROZENFIRMAMENTDRAGON/": {
+      "scale": 1.063063063063063,
+      "anchorX": 210.5,
+      "anchorY": 267,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCFROZENFIRMAMENTDRAGON/": {
+      "scale": 0.7603305785123967,
+      "anchorX": 210.5,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "FOURTH-FORMS/CREATURES/DCLASTECLIPSEDRAGON/": {
+      "scale": 1.2307692307692308,
+      "anchorX": 203.0,
+      "anchorY": 285,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCLASTECLIPSEDRAGON/": {
+      "scale": 0.3898305084745763,
+      "anchorX": 203.0,
+      "anchorY": 285,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "DRAGON-CITADEL/CREATURES/DCENCHANTER/BATTLE/": {
+      "scale": 1.0769230769230769,
+      "anchorX": 196.5,
+      "anchorY": 267,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false
+    },
+    "RECRUITMENT-CREATURES/DCCITADELARCHERTHIRD/": {
+      "scale": 1.0769230769230769,
+      "anchorX": 196.5,
+      "anchorY": 267,
+      "removeDetachedLines": true,
+      "removeDetachedGrayMarks": false,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268
+    }
+  },
+  "defs": {
+    "CREATURES/CASTLE/BATTLE/CR197": {
+      "scale": 0.9826086956521739,
+      "anchorX": 195.5,
+      "anchorY": 269,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMROYALHALBERDIER": {
+      "scale": 0.9862608695652174,
+      "anchorX": 195.5,
+      "anchorY": 269,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/CASTLE/BATTLE/CR198": {
+      "scale": 1.1168831168831168,
+      "anchorX": 197.0,
+      "anchorY": 267,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMCROSSBOWMAN": {
+      "scale": 1.115064935064935,
+      "anchorX": 197.0,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/CASTLE/BATTLE/CR199": {
+      "scale": 1.1263157894736842,
+      "anchorX": 218.5,
+      "anchorY": 267,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMCEASARGRIFFIN": {
+      "scale": 0.985050505050505,
+      "anchorX": 218.5,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/CASTLE/BATTLE/CR291": {
+      "scale": 1.0769230769230769,
+      "anchorX": 198.0,
+      "anchorY": 268,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMINQUISITOR": {
+      "scale": 1.0716483516483517,
+      "anchorX": 198.0,
+      "anchorY": 268,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/CASTLE/BATTLE/CR320": {
+      "scale": 1.125,
+      "anchorX": 196.5,
+      "anchorY": 267,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMHIGHPRIEST": {
+      "scale": 1.1262500000000002,
+      "anchorX": 196.5,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/CASTLE/BATTLE/CR201": {
+      "scale": 1.118811881188119,
+      "anchorX": 219.0,
+      "anchorY": 267,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMHOLYCHAMPION": {
+      "scale": 0.8086260330578514,
+      "anchorX": 219.0,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/SUPREMEARCHANGEL/ZM150Z": {
+      "scale": 1.13,
+      "anchorX": 218.5,
+      "anchorY": 267,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/SUPREMEARCHANGEL": {
+      "scale": 1.1342,
+      "anchorX": 218.5,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/RAMPART/BATTLE/CR293": {
+      "scale": 1.0854700854700854,
+      "anchorX": 218.0,
+      "anchorY": 269,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMCENTAURGENERAL": {
+      "scale": 0.9965811965811967,
+      "anchorX": 218.0,
+      "anchorY": 269,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/RAMPART/BATTLE/CR203": {
+      "scale": 1.0985915492957747,
+      "anchorX": 195.5,
+      "anchorY": 267,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMBERSERKERDWARF": {
+      "scale": 1.1047887323943661,
+      "anchorX": 195.5,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/RAMPART/BATTLE/CR256": {
+      "scale": 1.1282051282051282,
+      "anchorX": 196.5,
+      "anchorY": 265,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMSHARPSHOOTERELF": {
+      "scale": 1.127948717948718,
+      "anchorX": 196.5,
+      "anchorY": 265,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/RAMPART/BATTLE/CR204": {
+      "scale": 1.0,
+      "anchorX": 222.5,
+      "anchorY": 270,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMGOLDENPEGASUS": {
+      "scale": 0.9200000000000002,
+      "anchorX": 222.5,
+      "anchorY": 270,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/RAMPART/BATTLE/CR205": {
+      "scale": 0.8676470588235294,
+      "anchorX": 193.0,
+      "anchorY": 270,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMELDERDENDROID": {
+      "scale": 0.841764705882353,
+      "anchorX": 193.0,
+      "anchorY": 270,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/RAMPART/BATTLE/CR206": {
+      "scale": 1.1214953271028036,
+      "anchorX": 218.5,
+      "anchorY": 267,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMLEGENDARYUNICORN": {
+      "scale": 0.9467961165048544,
+      "anchorX": 218.5,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/DIAMONDDRAGON/ZM151Z": {
+      "scale": 1.1339285714285714,
+      "anchorX": 218.5,
+      "anchorY": 267,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/DIAMONDDRAGON": {
+      "scale": 0.5636994219653179,
+      "anchorX": 218.5,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/TOWER/BATTLE/CR255": {
+      "scale": 1.1333333333333333,
+      "anchorX": 197.5,
+      "anchorY": 267,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMGRANDMASTERGREMLIN": {
+      "scale": 1.1306666666666667,
+      "anchorX": 197.5,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/TOWER/BATTLE/CR208": {
+      "scale": 1.1265822784810127,
+      "anchorX": 196.0,
+      "anchorY": 267,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMMARBLEGARGOYLE": {
+      "scale": 1.1270886075949367,
+      "anchorX": 196.0,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/TOWER/BATTLE/CR209": {
+      "scale": 0.989010989010989,
+      "anchorX": 197.5,
+      "anchorY": 266,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMSTEELGOLEM": {
+      "scale": 0.9901098901098903,
+      "anchorX": 197.5,
+      "anchorY": 266,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/TOWER/BATTLE/CR257": {
+      "scale": 1.118811881188119,
+      "anchorX": 196.5,
+      "anchorY": 267,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMSUPREMEARCHMAGE": {
+      "scale": 1.122970297029703,
+      "anchorX": 196.5,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/TOWER/BATTLE/CR210": {
+      "scale": 1.0206185567010309,
+      "anchorX": 204.5,
+      "anchorY": 266,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMARCANEGENIE": {
+      "scale": 1.0162886597938143,
+      "anchorX": 204.5,
+      "anchorY": 266,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/TOWER/BATTLE/CR211": {
+      "scale": 1.1020408163265305,
+      "anchorX": 232.0,
+      "anchorY": 264,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMNAGAEMPRESS": {
+      "scale": 0.7540781779008926,
+      "anchorX": 232.0,
+      "anchorY": 264,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/LORDOFTHUNDER/ZM152Z": {
+      "scale": 1.1262135922330097,
+      "anchorX": 196.5,
+      "anchorY": 268,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/LORDOFTHUNDER": {
+      "scale": 1.06,
+      "anchorX": 196.5,
+      "anchorY": 268,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/INFERNO/BATTLE/CR213": {
+      "scale": 1.1176470588235294,
+      "anchorX": 196.5,
+      "anchorY": 266,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMVERMIN": {
+      "scale": 1.1223529411764708,
+      "anchorX": 196.5,
+      "anchorY": 266,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/INFERNO/BATTLE/CR214": {
+      "scale": 1.0561797752808988,
+      "anchorX": 186.0,
+      "anchorY": 267,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMWINGEDMAGOG": {
+      "scale": 1.06,
+      "anchorX": 186.0,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/INFERNO/BATTLE/CR215": {
+      "scale": 1.1267605633802817,
+      "anchorX": 218.0,
+      "anchorY": 267,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMASTRALCERBERUS": {
+      "scale": 1.1081818181818182,
+      "anchorX": 218.0,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/INFERNO/BATTLE/CR216": {
+      "scale": 1.121212121212121,
+      "anchorX": 197.5,
+      "anchorY": 267,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMSHARPHORNEDDEMON": {
+      "scale": 1.1242424242424243,
+      "anchorX": 197.5,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/INFERNO/BATTLE/CR217": {
+      "scale": 1.1170212765957446,
+      "anchorX": 196.5,
+      "anchorY": 266,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMPITMASTER": {
+      "scale": 1.116382978723404,
+      "anchorX": 196.5,
+      "anchorY": 266,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/INFERNO/BATTLE/CR218": {
+      "scale": 1.0,
+      "anchorX": 206.5,
+      "anchorY": 270,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMEFREETRAJAH": {
+      "scale": 0.9976470588235294,
+      "anchorX": 206.5,
+      "anchorY": 270,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/HELLBARON/ZM153Z": {
+      "scale": 1.1206896551724137,
+      "anchorX": 196.5,
+      "anchorY": 266,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/HELLBARON": {
+      "scale": 0.8194957983193278,
+      "anchorX": 196.5,
+      "anchorY": 266,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/NECROPOLIS/BATTLE/CR220": {
+      "scale": 1.0786516853932584,
+      "anchorX": 206.0,
+      "anchorY": 269,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMSKELETONKNIGHT": {
+      "scale": 1.083820224719101,
+      "anchorX": 206.0,
+      "anchorY": 269,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/NECROPOLIS/BATTLE/CR329": {
+      "scale": 1.010752688172043,
+      "anchorX": 196.5,
+      "anchorY": 266,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMGHOUL": {
+      "scale": 1.0144086021505376,
+      "anchorX": 196.5,
+      "anchorY": 266,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/NECROPOLIS/BATTLE/CR261": {
+      "scale": 1.1529411764705881,
+      "anchorX": 194.5,
+      "anchorY": 259,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMSPECTER": {
+      "scale": 1.147294117647059,
+      "anchorX": 194.5,
+      "anchorY": 259,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/NECROPOLIS/BATTLE/CR221": {
+      "scale": 1.1136363636363635,
+      "anchorX": 196.5,
+      "anchorY": 267,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMNOSFERATU": {
+      "scale": 1.1081818181818184,
+      "anchorX": 196.5,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/NECROPOLIS/BATTLE/CR222": {
+      "scale": 1.18,
+      "anchorX": 204.0,
+      "anchorY": 265,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMLICHKING": {
+      "scale": 1.1660000000000001,
+      "anchorX": 204.0,
+      "anchorY": 265,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/NECROPOLIS/BATTLE/CR223": {
+      "scale": 1.0471698113207548,
+      "anchorX": 223.0,
+      "anchorY": 266,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMDEATHKNIGHT": {
+      "scale": 0.8049999999999999,
+      "anchorX": 223.0,
+      "anchorY": 266,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/BLOODDRAGON/ZM154Z": {
+      "scale": 1.1228070175438596,
+      "anchorX": 214.5,
+      "anchorY": 268,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/BLOODDRAGON": {
+      "scale": 0.6211464968152867,
+      "anchorX": 214.5,
+      "anchorY": 268,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/DUNGEON/BATTLE/CR225": {
+      "scale": 1.125,
+      "anchorX": 196.5,
+      "anchorY": 267,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMPHOSPHORESCENTTROGLODYTE": {
+      "scale": 0.6501333333333333,
+      "anchorX": 196.5,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/DUNGEON/BATTLE/CR227": {
+      "scale": 1.125,
+      "anchorX": 196.0,
+      "anchorY": 267,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMHARPYSANGUINARY": {
+      "scale": 0.9010450297366185,
+      "anchorX": 196.0,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/DUNGEON/BATTLE/CR226": {
+      "scale": 1.1290322580645162,
+      "anchorX": 196.0,
+      "anchorY": 264,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMMONSTROUSEYE": {
+      "scale": 1.0265263157894737,
+      "anchorX": 196.0,
+      "anchorY": 264,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/DUNGEON/BATTLE/CR228": {
+      "scale": 1.1222222222222222,
+      "anchorX": 218.5,
+      "anchorY": 269,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMMEDUSAEMPRESS": {
+      "scale": 0.956078431372549,
+      "anchorX": 218.5,
+      "anchorY": 269,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/DUNGEON/BATTLE/CR229": {
+      "scale": 1.127659574468085,
+      "anchorX": 196.5,
+      "anchorY": 268,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMBLACKMINOTAUR": {
+      "scale": 0.9287619047619048,
+      "anchorX": 196.5,
+      "anchorY": 268,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/DUNGEON/BATTLE/CR230": {
+      "scale": 1.127659574468085,
+      "anchorX": 217.0,
+      "anchorY": 267,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMCHIMERA": {
+      "scale": 0.8771141199226307,
+      "anchorX": 217.0,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/DARKNESSDRAGON/ZM155Z": {
+      "scale": 1.1442307692307692,
+      "anchorX": 218.0,
+      "anchorY": 268,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/DARKNESSDRAGON": {
+      "scale": 0.6679452054794521,
+      "anchorX": 218.0,
+      "anchorY": 268,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/STRONGHOLD/BATTLE/CR232": {
+      "scale": 1.1323529411764706,
+      "anchorX": 198.0,
+      "anchorY": 267,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMHOBGOBLINOVERLORD": {
+      "scale": 1.1379411764705885,
+      "anchorX": 198.0,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/STRONGHOLD/BATTLE/CR233": {
+      "scale": 1.0416666666666667,
+      "anchorX": 218.5,
+      "anchorY": 267,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMWOLFRIDERKILLER": {
+      "scale": 0.8946788990825688,
+      "anchorX": 218.5,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/STRONGHOLD/BATTLE/CR234": {
+      "scale": 0.9777777777777777,
+      "anchorX": 195.5,
+      "anchorY": 266,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMORCLEADER": {
+      "scale": 0.9775555555555556,
+      "anchorX": 195.5,
+      "anchorY": 266,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/STRONGHOLD/BATTLE/CR235": {
+      "scale": 1.1237113402061856,
+      "anchorX": 196.0,
+      "anchorY": 267,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMELDEROGRE": {
+      "scale": 1.0265263157894737,
+      "anchorX": 196.0,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/STRONGHOLD/BATTLE/CR236": {
+      "scale": 1.018018018018018,
+      "anchorX": 204.5,
+      "anchorY": 270,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMLIGHTNINGBIRD": {
+      "scale": 0.6867605633802818,
+      "anchorX": 204.5,
+      "anchorY": 270,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/STRONGHOLD/BATTLE/CR237": {
+      "scale": 1.0686274509803921,
+      "anchorX": 196.0,
+      "anchorY": 266,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMCYCLOPSEMPEROR": {
+      "scale": 1.0703921568627452,
+      "anchorX": 196.0,
+      "anchorY": 266,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/GHOSTBEHEMOTH/ZM156Z": {
+      "scale": 1.12,
+      "anchorX": 218.0,
+      "anchorY": 266,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/GHOSTBEHEMOTH": {
+      "scale": 0.773968253968254,
+      "anchorX": 218.0,
+      "anchorY": 266,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/FORTRESS/BATTLE/CR321": {
+      "scale": 1.0,
+      "anchorX": 200.5,
+      "anchorY": 267,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMGNOLLSHAMAN": {
+      "scale": 0.9961445783132531,
+      "anchorX": 200.5,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/FORTRESS/BATTLE/CR240": {
+      "scale": 1.10989010989011,
+      "anchorX": 195.0,
+      "anchorY": 267,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMELITELIZARD": {
+      "scale": 0.8785585585585585,
+      "anchorX": 195.0,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/FORTRESS/BATTLE/CR241": {
+      "scale": 1.1232876712328768,
+      "anchorX": 196.0,
+      "anchorY": 253,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMCHAOTICDRAGONFLY": {
+      "scale": 1.1055644780349552,
+      "anchorX": 196.0,
+      "anchorY": 253,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/FORTRESS/BATTLE/CR242": {
+      "scale": 1.1111111111111112,
+      "anchorX": 219.0,
+      "anchorY": 267,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMLAVABASILISK": {
+      "scale": 0.5736470588235294,
+      "anchorX": 219.0,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/FORTRESS/BATTLE/CR244": {
+      "scale": 1.1333333333333333,
+      "anchorX": 218.0,
+      "anchorY": 267,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMCATOPLEBA": {
+      "scale": 0.7223703703703703,
+      "anchorX": 218.0,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/FORTRESS/BATTLE/CR243": {
+      "scale": 1.118811881188119,
+      "anchorX": 218.5,
+      "anchorY": 267,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMACIDWYVERN": {
+      "scale": 0.6634013605442177,
+      "anchorX": 218.5,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/HELLHYDRA/ZM157Z": {
+      "scale": 1.128440366972477,
+      "anchorX": 216.0,
+      "anchorY": 268,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/HELLHYDRA": {
+      "scale": 0.5001025641025642,
+      "anchorX": 216.0,
+      "anchorY": 268,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/CONFLUX/BATTLE/CR246": {
+      "scale": 1.1219512195121952,
+      "anchorX": 192.0,
+      "anchorY": 267,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMFAIRY": {
+      "scale": 1.1246341463414633,
+      "anchorX": 192.0,
+      "anchorY": 267,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/CONFLUX/BATTLE/CR247": {
+      "scale": 1.125,
+      "anchorX": 200.5,
+      "anchorY": 272,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMHURRICANEELEMENTAL": {
+      "scale": 0.9005559786747905,
+      "anchorX": 200.5,
+      "anchorY": 272,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/CONFLUX/BATTLE/CR248": {
+      "scale": 1.1224489795918366,
+      "anchorX": 218.5,
+      "anchorY": 268,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMLIFEELEMENTAL": {
+      "scale": 0.9951020408163266,
+      "anchorX": 218.5,
+      "anchorY": 268,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/CONFLUX/BATTLE/CR249": {
+      "scale": 1.1214953271028036,
+      "anchorX": 196.5,
+      "anchorY": 269,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMPLASMAELEMENTAL": {
+      "scale": 1.06,
+      "anchorX": 196.5,
+      "anchorY": 269,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/CONFLUX/BATTLE/CR250": {
+      "scale": 1.148936170212766,
+      "anchorX": 197.0,
+      "anchorY": 266,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMMINERALELEMENTAL": {
+      "scale": 0.7618750000000001,
+      "anchorX": 197.0,
+      "anchorY": 266,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/CONFLUX/BATTLE/CR251": {
+      "scale": 1.2432432432432432,
+      "anchorX": 197.5,
+      "anchorY": 268,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/TUMVOIDELEMENTAL": {
+      "scale": 1.0504504504504506,
+      "anchorX": 197.5,
+      "anchorY": 268,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    },
+    "CREATURES/SACREDPHOENIX/ZM158Z": {
+      "scale": 1.1241830065359477,
+      "anchorX": 218.5,
+      "anchorY": 271,
+      "removeDetachedLines": false
+    },
+    "RECRUITMENT-CREATURES/SACREDPHOENIX": {
+      "scale": 0.7277611940298507,
+      "anchorX": 218.5,
+      "anchorY": 271,
+      "targetAnchorX": 200,
+      "targetAnchorY": 268,
+      "removeDetachedLines": false,
+      "removeDetachedGrayMarks": false
+    }
+  },
+  "previews": {
+    "dragon-citadel:dcCrownGuard": "recruitment-creatures/dcCrownGuard",
+    "dragon-citadel.fourth-upgrades:tumRoyalHalberdier": "recruitment-creatures/tumRoyalHalberdier",
+    "dragon-citadel:dcRoyalCrossbowman": "recruitment-creatures/dcRoyalCrossbowman",
+    "dragon-citadel.fourth-upgrades:tumCrossbowman": "recruitment-creatures/tumCrossbowman",
+    "dragon-citadel:dcCrownGriffin": "recruitment-creatures/dcCrownGriffin",
+    "dragon-citadel.fourth-upgrades:tumCeasarGriffin": "recruitment-creatures/tumCeasarGriffin",
+    "dragon-citadel:dcPaladin": "recruitment-creatures/dcPaladin",
+    "dragon-citadel.fourth-upgrades:tumInquisitor": "recruitment-creatures/tumInquisitor",
+    "dragon-citadel:dcHierophant": "recruitment-creatures/dcHierophant",
+    "dragon-citadel.fourth-upgrades:tumHighPriest": "recruitment-creatures/tumHighPriest",
+    "dragon-citadel:dcRoyalBannerKnight": "recruitment-creatures/dcRoyalBannerKnight",
+    "dragon-citadel.fourth-upgrades:tumHolyChampion": "recruitment-creatures/tumHolyChampion",
+    "dragon-citadel:dcSeraph": "recruitment-creatures/dcSeraph",
+    "wake-of-gods.level8units:supremeArchangel": "recruitment-creatures/supremeArchangel",
+    "dragon-citadel:dcCentaurWarlord": "recruitment-creatures/dcCentaurWarlord",
+    "dragon-citadel.fourth-upgrades:tumCentaurGeneral": "recruitment-creatures/tumCentaurGeneral",
+    "dragon-citadel:dcRuneDwarf": "recruitment-creatures/dcRuneDwarf",
+    "dragon-citadel.fourth-upgrades:tumBerserkerDwarf": "recruitment-creatures/tumBerserkerDwarf",
+    "dragon-citadel:dcMoonElf": "recruitment-creatures/dcMoonElf",
+    "dragon-citadel.fourth-upgrades:tumSharpshooterElf": "recruitment-creatures/tumSharpshooterElf",
+    "dragon-citadel:dcAuroraPegasus": "recruitment-creatures/dcAuroraPegasus",
+    "dragon-citadel.fourth-upgrades:tumGoldenPegasus": "recruitment-creatures/tumGoldenPegasus",
+    "dragon-citadel:dcAncientEnt": "recruitment-creatures/dcAncientEnt",
+    "dragon-citadel.fourth-upgrades:tumElderDendroid": "recruitment-creatures/tumElderDendroid",
+    "dragon-citadel:dcArmoredUnicorn": "recruitment-creatures/dcArmoredUnicorn",
+    "dragon-citadel.fourth-upgrades:tumLegendaryUnicorn": "recruitment-creatures/tumLegendaryUnicorn",
+    "dragon-citadel:dcEmeraldDragon": "recruitment-creatures/dcEmeraldDragon",
+    "wake-of-gods.level8units:diamondDragon": "recruitment-creatures/diamondDragon",
+    "dragon-citadel:dcMechanicGremlin": "recruitment-creatures/dcMechanicGremlin",
+    "dragon-citadel.fourth-upgrades:tumGrandmasterGremlin": "recruitment-creatures/tumGrandmasterGremlin",
+    "dragon-citadel:dcIcewingGargoyle": "recruitment-creatures/dcIcewingGargoyle",
+    "dragon-citadel.fourth-upgrades:tumMarbleGargoyle": "recruitment-creatures/tumMarbleGargoyle",
+    "dragon-citadel:dcAdamantGolem": "recruitment-creatures/dcAdamantGolem",
+    "dragon-citadel.fourth-upgrades:tumSteelGolem": "recruitment-creatures/tumSteelGolem",
+    "dragon-citadel:dcRuneMage": "recruitment-creatures/dcRuneMage",
+    "dragon-citadel.fourth-upgrades:tumSupremeArchMage": "recruitment-creatures/tumSupremeArchMage",
+    "dragon-citadel:dcDjinnSultan": "recruitment-creatures/dcDjinnSultan",
+    "dragon-citadel.fourth-upgrades:tumArcaneGenie": "recruitment-creatures/tumArcaneGenie",
+    "dragon-citadel:dcNagaEmpress": "recruitment-creatures/dcNagaEmpress",
+    "dragon-citadel.fourth-upgrades:tumNagaEmpress": "recruitment-creatures/tumNagaEmpress",
+    "dragon-citadel:dcFirmamentTitan": "recruitment-creatures/dcFirmamentTitan",
+    "wake-of-gods.level8units:lordOfThunder": "recruitment-creatures/lordOfThunder",
+    "dragon-citadel:dcAshImp": "recruitment-creatures/dcAshImp",
+    "dragon-citadel.fourth-upgrades:tumVermin": "recruitment-creatures/tumVermin",
+    "dragon-citadel:dcAbyssMagog": "recruitment-creatures/dcAbyssMagog",
+    "dragon-citadel.fourth-upgrades:tumWingedMagog": "recruitment-creatures/tumWingedMagog",
+    "dragon-citadel:dcHellCerberus": "recruitment-creatures/dcHellCerberus",
+    "dragon-citadel.fourth-upgrades:tumAstralCerberus": "recruitment-creatures/tumAstralCerberus",
+    "dragon-citadel:dcIronHornDemon": "recruitment-creatures/dcIronHornDemon",
+    "dragon-citadel.fourth-upgrades:tumSharpHornedDemon": "recruitment-creatures/tumSharpHornedDemon",
+    "dragon-citadel:dcAshLord": "recruitment-creatures/dcAshLord",
+    "dragon-citadel.fourth-upgrades:tumPitMaster": "recruitment-creatures/tumPitMaster",
+    "dragon-citadel:dcCrownedEfreet": "recruitment-creatures/dcCrownedEfreet",
+    "dragon-citadel.fourth-upgrades:tumEfreetRajah": "recruitment-creatures/tumEfreetRajah",
+    "dragon-citadel:dcAbyssPrince": "recruitment-creatures/dcAbyssPrince",
+    "wake-of-gods.level8units:hellBaron": "recruitment-creatures/hellBaron",
+    "dragon-citadel:dcBoneLegionary": "recruitment-creatures/dcBoneLegionary",
+    "dragon-citadel.fourth-upgrades:tumSkeletonKnight": "recruitment-creatures/tumSkeletonKnight",
+    "dragon-citadel:dcPlagueGuard": "recruitment-creatures/dcPlagueGuard",
+    "dragon-citadel.fourth-upgrades:tumGhoul": "recruitment-creatures/tumGhoul",
+    "dragon-citadel:dcTombWraith": "recruitment-creatures/dcTombWraith",
+    "dragon-citadel.fourth-upgrades:tumSpecter": "recruitment-creatures/tumSpecter",
+    "dragon-citadel:dcAncientBloodVampire": "recruitment-creatures/dcAncientBloodVampire",
+    "dragon-citadel.fourth-upgrades:tumNosferatu": "recruitment-creatures/tumNosferatu",
+    "dragon-citadel:dcArchlich": "recruitment-creatures/dcArchlich",
+    "dragon-citadel.fourth-upgrades:tumLichKing": "recruitment-creatures/tumLichKing",
+    "dragon-citadel:dcDoomKnight": "recruitment-creatures/dcDoomKnight",
+    "dragon-citadel.fourth-upgrades:tumDeathKnight": "recruitment-creatures/tumDeathKnight",
+    "dragon-citadel:dcGraveDragon": "recruitment-creatures/dcGraveDragon",
+    "wake-of-gods.level8units:bloodDragon": "recruitment-creatures/bloodDragon",
+    "dragon-citadel:dcDeepTroglodyte": "recruitment-creatures/dcDeepTroglodyte",
+    "dragon-citadel.fourth-upgrades:tumPhosphorescentTroglodyte": "recruitment-creatures/tumPhosphorescentTroglodyte",
+    "dragon-citadel:dcNightHarpy": "recruitment-creatures/dcNightHarpy",
+    "dragon-citadel.fourth-upgrades:tumHarpySanguinary": "recruitment-creatures/tumHarpySanguinary",
+    "dragon-citadel:dcAbyssEye": "recruitment-creatures/dcAbyssEye",
+    "dragon-citadel.fourth-upgrades:tumMonstrousEye": "recruitment-creatures/tumMonstrousEye",
+    "dragon-citadel:dcMedusaEmpress": "recruitment-creatures/dcMedusaEmpress",
+    "dragon-citadel.fourth-upgrades:tumMedusaEmpress": "recruitment-creatures/tumMedusaEmpress",
+    "dragon-citadel:dcLabyrinthLord": "recruitment-creatures/dcLabyrinthLord",
+    "dragon-citadel.fourth-upgrades:tumBlackMinotaur": "recruitment-creatures/tumBlackMinotaur",
+    "dragon-citadel:dcDeepScorpicore": "recruitment-creatures/dcDeepScorpicore",
+    "dragon-citadel.fourth-upgrades:tumChimera": "recruitment-creatures/tumChimera",
+    "dragon-citadel:dcObsidianDragon": "recruitment-creatures/dcObsidianDragon",
+    "wake-of-gods.level8units:darknessDragon": "recruitment-creatures/darknessDragon",
+    "dragon-citadel:dcVeteranHobgoblin": "recruitment-creatures/dcVeteranHobgoblin",
+    "dragon-citadel.fourth-upgrades:tumHobgoblinOverlord": "recruitment-creatures/tumHobgoblinOverlord",
+    "dragon-citadel:dcWolfHetman": "recruitment-creatures/dcWolfHetman",
+    "dragon-citadel.fourth-upgrades:tumWolfRiderKiller": "recruitment-creatures/tumWolfRiderKiller",
+    "dragon-citadel:dcAxeMasterOrc": "recruitment-creatures/dcAxeMasterOrc",
+    "dragon-citadel.fourth-upgrades:tumOrcLeader": "recruitment-creatures/tumOrcLeader",
+    "dragon-citadel:dcElderOgreShaman": "recruitment-creatures/dcElderOgreShaman",
+    "dragon-citadel.fourth-upgrades:tumElderOgre": "recruitment-creatures/tumElderOgre",
+    "dragon-citadel:dcStormbird": "recruitment-creatures/dcStormbird",
+    "dragon-citadel.fourth-upgrades:tumLightningbird": "recruitment-creatures/tumLightningbird",
+    "dragon-citadel:dcDestroyerCyclops": "recruitment-creatures/dcDestroyerCyclops",
+    "dragon-citadel.fourth-upgrades:tumCyclopsEmperor": "recruitment-creatures/tumCyclopsEmperor",
+    "dragon-citadel:dcBehemothPatriarch": "recruitment-creatures/dcBehemothPatriarch",
+    "wake-of-gods.level8units:ghostBehemoth": "recruitment-creatures/ghostBehemoth",
+    "dragon-citadel:dcIronshieldGnoll": "recruitment-creatures/dcIronshieldGnoll",
+    "dragon-citadel.fourth-upgrades:tumGnollShaman": "recruitment-creatures/tumGnollShaman",
+    "dragon-citadel:dcLizardHunter": "recruitment-creatures/dcLizardHunter",
+    "dragon-citadel.fourth-upgrades:tumEliteLizard": "recruitment-creatures/tumEliteLizard",
+    "dragon-citadel:dcVenomFly": "recruitment-creatures/dcVenomFly",
+    "dragon-citadel.fourth-upgrades:tumChaoticDragonFly": "recruitment-creatures/tumChaoticDragonFly",
+    "dragon-citadel:dcPrimevalBasilisk": "recruitment-creatures/dcPrimevalBasilisk",
+    "dragon-citadel.fourth-upgrades:tumLavaBasilisk": "recruitment-creatures/tumLavaBasilisk",
+    "dragon-citadel:dcGorgonMatriarch": "recruitment-creatures/dcGorgonMatriarch",
+    "dragon-citadel.fourth-upgrades:tumCatopleba": "recruitment-creatures/tumCatopleba",
+    "dragon-citadel:dcMarshWyvern": "recruitment-creatures/dcMarshWyvern",
+    "dragon-citadel.fourth-upgrades:tumAcidWyvern": "recruitment-creatures/tumAcidWyvern",
+    "dragon-citadel:dcPrimordialHydra": "recruitment-creatures/dcPrimordialHydra",
+    "wake-of-gods.level8units:hellHydra": "recruitment-creatures/hellHydra",
+    "dragon-citadel:dcAuroraNymph": "recruitment-creatures/dcAuroraNymph",
+    "dragon-citadel.fourth-upgrades:tumFairy": "recruitment-creatures/tumFairy",
+    "dragon-citadel:dcTempestElemental": "recruitment-creatures/dcTempestElemental",
+    "dragon-citadel.fourth-upgrades:tumHurricaneElemental": "recruitment-creatures/tumHurricaneElemental",
+    "dragon-citadel:dcGlacierElemental": "recruitment-creatures/dcGlacierElemental",
+    "dragon-citadel.fourth-upgrades:tumLifeElemental": "recruitment-creatures/tumLifeElemental",
+    "dragon-citadel:dcPlasmaElemental": "recruitment-creatures/dcPlasmaElemental",
+    "dragon-citadel.fourth-upgrades:tumPlasmaElemental": "recruitment-creatures/tumPlasmaElemental",
+    "dragon-citadel:dcObsidianElemental": "recruitment-creatures/dcObsidianElemental",
+    "dragon-citadel.fourth-upgrades:tumMineralElemental": "recruitment-creatures/tumMineralElemental",
+    "dragon-citadel:dcEtherElemental": "recruitment-creatures/dcEtherElemental",
+    "dragon-citadel.fourth-upgrades:tumVoidElemental": "recruitment-creatures/tumVoidElemental",
+    "dragon-citadel:dcPrimordialPhoenix": "recruitment-creatures/dcPrimordialPhoenix",
+    "wake-of-gods.level8units:sacredPhoenix": "recruitment-creatures/sacredPhoenix",
+    "dragon-citadel:dcDragonExecutioner": "recruitment-creatures/dcCitadelArcherThird",
+    "dragon-citadel:dcStormheartTitan": "recruitment-creatures/dcStormheartTitan",
+    "dragon-citadel:dcRuneMagicDragon": "recruitment-creatures/dcRuneMagicDragon",
+    "dragon-citadel:dcCrownedRubyDragon": "recruitment-creatures/dcCrownedRubyDragon",
+    "dragon-citadel:dcEternalCorrosionDragon": "recruitment-creatures/dcEternalCorrosionDragon",
+    "dragon-citadel:dcTempestEyeDragon": "recruitment-creatures/dcTempestEyeDragon",
+    "dragon-citadel:dcFrozenFirmamentDragon": "recruitment-creatures/dcFrozenFirmamentDragon",
+    "dragon-citadel:dcLastEclipseDragon": "recruitment-creatures/dcLastEclipseDragon",
+    "dragon-citadel:dcEnchanter": "recruitment-creatures/dcDragonExecutioner"
+  },
+  "comparisonPrevious": {
+    "dragon-citadel:dcCrownGuard": "core:halberdier",
+    "dragon-citadel:dcRoyalCrossbowman": "core:marksman",
+    "dragon-citadel:dcCrownGriffin": "core:royalGriffin",
+    "dragon-citadel:dcPaladin": "core:crusader",
+    "dragon-citadel:dcHierophant": "core:zealot",
+    "dragon-citadel:dcRoyalBannerKnight": "core:champion",
+    "dragon-citadel:dcSeraph": "core:archangel",
+    "dragon-citadel:dcCentaurWarlord": "core:centaurCaptain",
+    "dragon-citadel:dcRuneDwarf": "core:battleDwarf",
+    "dragon-citadel:dcMoonElf": "core:grandElf",
+    "dragon-citadel:dcAuroraPegasus": "core:silverPegasus",
+    "dragon-citadel:dcAncientEnt": "core:dendroidSoldier",
+    "dragon-citadel:dcArmoredUnicorn": "core:warUnicorn",
+    "dragon-citadel:dcEmeraldDragon": "core:goldDragon",
+    "dragon-citadel:dcMechanicGremlin": "core:masterGremlin",
+    "dragon-citadel:dcIcewingGargoyle": "core:obsidianGargoyle",
+    "dragon-citadel:dcAdamantGolem": "core:ironGolem",
+    "dragon-citadel:dcRuneMage": "core:archMage",
+    "dragon-citadel:dcDjinnSultan": "core:masterGenie",
+    "dragon-citadel:dcNagaEmpress": "core:nagaQueen",
+    "dragon-citadel:dcFirmamentTitan": "core:titan",
+    "dragon-citadel:dcAshImp": "core:familiar",
+    "dragon-citadel:dcAbyssMagog": "core:magog",
+    "dragon-citadel:dcHellCerberus": "core:cerberus",
+    "dragon-citadel:dcIronHornDemon": "core:hornedDemon",
+    "dragon-citadel:dcAshLord": "core:pitLord",
+    "dragon-citadel:dcCrownedEfreet": "core:efreetSultan",
+    "dragon-citadel:dcAbyssPrince": "core:archDevil",
+    "dragon-citadel:dcBoneLegionary": "core:skeletonWarrior",
+    "dragon-citadel:dcPlagueGuard": "core:zombieLord",
+    "dragon-citadel:dcTombWraith": "core:wraith",
+    "dragon-citadel:dcAncientBloodVampire": "core:vampireLord",
+    "dragon-citadel:dcArchlich": "core:powerLich",
+    "dragon-citadel:dcDoomKnight": "core:dreadKnight",
+    "dragon-citadel:dcGraveDragon": "core:ghostDragon",
+    "dragon-citadel:dcDeepTroglodyte": "core:infernalTroglodyte",
+    "dragon-citadel:dcNightHarpy": "core:harpyHag",
+    "dragon-citadel:dcAbyssEye": "core:evilEye",
+    "dragon-citadel:dcMedusaEmpress": "core:medusaQueen",
+    "dragon-citadel:dcLabyrinthLord": "core:minotaurKing",
+    "dragon-citadel:dcDeepScorpicore": "core:scorpicore",
+    "dragon-citadel:dcObsidianDragon": "core:blackDragon",
+    "dragon-citadel:dcVeteranHobgoblin": "core:hobgoblin",
+    "dragon-citadel:dcWolfHetman": "core:hobgoblinWolfRider",
+    "dragon-citadel:dcAxeMasterOrc": "core:orcChieftain",
+    "dragon-citadel:dcElderOgreShaman": "core:ogreMage",
+    "dragon-citadel:dcStormbird": "core:thunderbird",
+    "dragon-citadel:dcDestroyerCyclops": "core:cyclopKing",
+    "dragon-citadel:dcBehemothPatriarch": "core:ancientBehemoth",
+    "dragon-citadel:dcIronshieldGnoll": "core:gnollMarauder",
+    "dragon-citadel:dcLizardHunter": "core:lizardWarrior",
+    "dragon-citadel:dcVenomFly": "core:fireDragonFly",
+    "dragon-citadel:dcPrimevalBasilisk": "core:greaterBasilisk",
+    "dragon-citadel:dcGorgonMatriarch": "core:mightyGorgon",
+    "dragon-citadel:dcMarshWyvern": "core:wyvernMonarch",
+    "dragon-citadel:dcPrimordialHydra": "core:chaosHydra",
+    "dragon-citadel:dcAuroraNymph": "core:sprite",
+    "dragon-citadel:dcTempestElemental": "core:stormElemental",
+    "dragon-citadel:dcGlacierElemental": "core:iceElemental",
+    "dragon-citadel:dcPlasmaElemental": "core:energyElemental",
+    "dragon-citadel:dcObsidianElemental": "core:magmaElemental",
+    "dragon-citadel:dcEtherElemental": "core:magicElemental",
+    "dragon-citadel:dcPrimordialPhoenix": "core:phoenix",
+    "dragon-citadel:dcDragonExecutioner": "dragon-citadel:dcEnchanter",
+    "dragon-citadel:dcStormheartTitan": "dragon-citadel:dcTitan",
+    "dragon-citadel:dcRuneMagicDragon": "dragon-citadel:dcPhoenix",
+    "dragon-citadel:dcCrownedRubyDragon": "dragon-citadel:dcCrystalDragon",
+    "dragon-citadel:dcEternalCorrosionDragon": "dragon-citadel:dcBlackDragon",
+    "dragon-citadel:dcTempestEyeDragon": "dragon-citadel:dcEternalStormDragon",
+    "dragon-citadel:dcFrozenFirmamentDragon": "dragon-citadel:dcAzureDragon",
+    "dragon-citadel:dcLastEclipseDragon": "dragon-citadel:dcAbsoluteDragon"
+  }
+}

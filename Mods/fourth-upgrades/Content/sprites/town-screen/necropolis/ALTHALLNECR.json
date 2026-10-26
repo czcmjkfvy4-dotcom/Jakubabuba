@@ -1,0 +1,39 @@
+{
+  "images": [
+    {
+      "group": 0,
+      "frame": 51,
+      "file": "town-screen/necropolis/frames/TBNCSKL3"
+    },
+    {
+      "group": 0,
+      "frame": 52,
+      "file": "town-screen/necropolis/frames/TBNCZMB3"
+    },
+    {
+      "group": 0,
+      "frame": 53,
+      "file": "town-screen/necropolis/frames/TBNCWGH3"
+    },
+    {
+      "group": 0,
+      "frame": 54,
+      "file": "town-screen/necropolis/frames/TBNCVMP3"
+    },
+    {
+      "group": 0,
+      "frame": 55,
+      "file": "town-screen/necropolis/frames/TBNCLCH3"
+    },
+    {
+      "group": 0,
+      "frame": 56,
+      "file": "town-screen/necropolis/frames/TBNCDKN3"
+    },
+    {
+      "group": 0,
+      "frame": 57,
+      "file": "town-screen/necropolis/frames/TBNCSKD3"
+    }
+  ]
+}

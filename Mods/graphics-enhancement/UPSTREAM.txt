@@ -1,0 +1,4 @@
+H3Landscape 0.0.4, Paracelsus83. VCMI port: https://github.com/vcmi-mods/h3landscape
+Upstream: https://github.com/Paracelsus83/H3Landscape
+License: MIT only for non-original-Heroes-III assets; this does not grant rights to original game assets.
+Archive: https://github.com/vcmi-mods/h3landscape/releases/download/1.7/h3landscape-vcmi-1.7.zip
