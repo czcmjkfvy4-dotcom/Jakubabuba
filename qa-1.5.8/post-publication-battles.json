@@ -1,0 +1,70 @@
+{
+  "allRequestedChaptersPassed": true,
+  "fullPlaythrough": false,
+  "chapters": {
+    "1": {
+      "passed": true,
+      "errorCount": 0,
+      "warningCount": 0,
+      "battleResultsApplied": true,
+      "fixtureSkipsManualTactics": true,
+      "fixtureSkipsBriefingAndVictoryConditions": true
+    },
+    "2": {
+      "passed": true,
+      "errorCount": 0,
+      "warningCount": 0,
+      "battleResultsApplied": true,
+      "fixtureSkipsManualTactics": true,
+      "fixtureSkipsBriefingAndVictoryConditions": true
+    },
+    "3": {
+      "passed": true,
+      "errorCount": 0,
+      "warningCount": 0,
+      "battleResultsApplied": true,
+      "fixtureSkipsManualTactics": true,
+      "fixtureSkipsBriefingAndVictoryConditions": true
+    },
+    "4": {
+      "passed": true,
+      "errorCount": 0,
+      "warningCount": 0,
+      "battleResultsApplied": false,
+      "fixtureSkipsManualTactics": true,
+      "fixtureSkipsBriefingAndVictoryConditions": true
+    },
+    "5": {
+      "passed": true,
+      "errorCount": 0,
+      "warningCount": 0,
+      "battleResultsApplied": false,
+      "fixtureSkipsManualTactics": true,
+      "fixtureSkipsBriefingAndVictoryConditions": true
+    },
+    "6": {
+      "passed": true,
+      "errorCount": 0,
+      "warningCount": 0,
+      "battleResultsApplied": false,
+      "fixtureSkipsManualTactics": true,
+      "fixtureSkipsBriefingAndVictoryConditions": true
+    },
+    "7": {
+      "passed": true,
+      "errorCount": 0,
+      "warningCount": 0,
+      "battleResultsApplied": false,
+      "fixtureSkipsManualTactics": true,
+      "fixtureSkipsBriefingAndVictoryConditions": true
+    },
+    "8": {
+      "passed": true,
+      "errorCount": 0,
+      "warningCount": 0,
+      "battleResultsApplied": false,
+      "fixtureSkipsManualTactics": true,
+      "fixtureSkipsBriefingAndVictoryConditions": true
+    }
+  }
+}
