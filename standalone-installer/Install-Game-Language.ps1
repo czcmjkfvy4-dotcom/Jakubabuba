@@ -4,6 +4,7 @@ param(
     [string]$Cache = "$env:LOCALAPPDATA\Dragon Citadel\LanguagePackages"
 )
 $ErrorActionPreference = 'Stop'
+$env:PSModulePath = (Join-Path $PSHOME 'Modules') + ';' + $env:PSModulePath
 if ($Language -eq 'english') { return }
 $catalog = Get-Content -LiteralPath (Join-Path $PSScriptRoot 'game-language-packages.json') -Raw -Encoding UTF8 | ConvertFrom-Json
 $package = $catalog.PSObject.Properties[$Language].Value
