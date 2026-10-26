@@ -11,3 +11,5 @@ Pakiet dystrybucyjny pobiera tłumaczenie bazowe bezpośrednio ze wskazanego w k
 Ograniczenia: nie wykonano oceny każdego zdania przez rodzimych użytkowników ośmiu języków ani pełnego ręcznego przejścia kampanii. Teksty kampanii moda obejmują tłumaczenia maszynowe wymagające redakcji. Japoński pakiet społecznościowy zawiera oznaczony przez autora komponent AI dla map i Chronicles, włączany przez selektor. Nie oznacza to gwarancji pełnego dubbingu ośmiu języków ani tłumaczenia dowolnych obcych modów. Prace nad wyglądem Smoczej Cytadeli są nadal w toku.
 
 Dowody: native-report.json, native-*.json, launcher/report.json, installed-startup/, actual-language-windows/. Galeria: JEZYKI-CALEJ-GRY.html.
+
+Dodatkowy odbiór: poprawiono konflikt odziedziczonych ścieżek modułów PowerShell w instalatorze języków. Po poprawce sprawdzono świeże rozpakowanie, odrzucenie uszkodzonego archiwum oraz ponowną czystą instalację pełnego pakietu. Standardowe VCMI także dochodzi do menu bez ERROR i ostrzeżeń warstw; ten test nie potwierdza niestandardowych mechanik na standardowym silniku.
