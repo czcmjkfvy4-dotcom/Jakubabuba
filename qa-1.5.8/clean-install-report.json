@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "archiveSHA256": "7a47f5e262b3db4170b7490099baaa85f3945ffd51437e2593e58c669ba80138",
+  "archiveSHA256": "a72986b912230d972a80dff4b52b95869c3aa06aa80f2e216376ca41cf540629",
   "installedFromExtractedArchive": true,
   "originalGameDataImportedFromUserSource": true,
   "unrelatedUserSavesUnchanged": 94,
@@ -30,5 +30,9 @@
       "warnings": []
     }
   },
-  "fullCampaignPlaythrough": false
+  "fullCampaignPlaythrough": false,
+  "installedArchiveSHA256": "7a47f5e262b3db4170b7490099baaa85f3945ffd51437e2593e58c669ba80138",
+  "documentationOnlyRepackAfterInstallation": true,
+  "allPayloadEntriesVerifiedAfterRepack": 14984,
+  "unchangedPayloadManifestSHA256": "944d5830e44fd49f17724975a283a800947b3b0d9bcde8bd67d103594a13811e"
 }
