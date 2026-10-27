@@ -24,3 +24,13 @@ See TUM-RESOURCE-CREDITS.txt, bundled mod metadata, graphics submod licenses, fo
 The 1.5.9 language correction translates 344 Polish-source entries individually, checks for Polish leakage, covers all visible Chinese/Japanese codepoints in the inspected catalogs and derives the two final dragon stat/cost lessons from creature data. Ultimate and Absolute Dragons have distinct names in every supported language. This remains a machine translation draft with targeted manual corrections, not a full native-speaker literary review.
 
 The optional fourth-upgrade mode also verifies 52 text entries from its active WoG dependency in each language, completing the German, Spanish and French English fallbacks. Other manually enabled third-party submods remain outside this localization guarantee.
+
+
+VCMI repository access (status checked 27 October 2026)
+
+The mod has a separate repository index that can be added in the VCMI launcher settings as an extra repository:
+https://raw.githubusercontent.com/czcmjkfvy4-dotcom/Jakubabuba/main/repository.json
+
+Keep the default VCMI repository enabled. The extra repository supplies the mod archive; it does not install the BILLADENC4 engine. Use the complete 1.5.9 installer for the matching runtime required by the custom mechanics.
+
+The official catalog submission https://github.com/vcmi/vcmi-mods-repository/pull/169 was closed without merging. Maintainers cited the custom engine requirement and quality concerns. Dragon Citadel is therefore not available in the default official catalog. The public prerelease and the extra repository remain available independently.

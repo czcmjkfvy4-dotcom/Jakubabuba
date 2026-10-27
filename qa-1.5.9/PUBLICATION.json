@@ -28,9 +28,14 @@
   "catalog": {
     "url": "https://github.com/vcmi/vcmi-mods-repository/pull/169",
     "draft": true,
-    "state": "open",
+    "state": "closed",
     "merged": false,
-    "defaultCatalogAvailabilityConfirmed": false
+    "defaultCatalogAvailabilityConfirmed": false,
+    "checkedOn": "2026-10-27",
+    "maintainerFeedback": [
+      "Custom VCMI builds cannot be included in the main repository used by stock VCMI players.",
+      "Maintainers closed the submission with quality concerns."
+    ]
   },
   "publicDownloadsVerified": true
 }
