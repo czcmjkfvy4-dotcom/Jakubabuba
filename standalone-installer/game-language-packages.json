@@ -40,5 +40,12 @@
     "bytes": 57088202,
     "sha256": "cf9288fa88107e590426fbb99cb6ec4f7caa8af86bce08ee0804518831ec38d3",
     "source": "https://github.com/vcmi-mods/japanese-translation/releases/download/1.7/japanese-translation-vcmi-1.7.zip"
+  },
+  "english": {
+    "id": "english-translation",
+    "bytes": 33844428,
+    "sha256": "6d0434bd404e135e7b26cdeda0584b50828ae4f28371d85944c2de66bcefac15",
+    "source": "https://github.com/vcmi-mods/h3-for-vcmi-englisation/releases/download/1.7/h3-for-vcmi-englisation-vcmi-1.7.zip",
+    "upstreamId": "h3-for-vcmi-englisation"
   }
 }

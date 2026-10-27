@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "languages": [
+    {
+      "language": "polish",
+      "exitCode": 0,
+      "passed": true
+    },
+    {
+      "language": "english",
+      "exitCode": 0,
+      "passed": true
+    },
+    {
+      "language": "german",
+      "exitCode": 0,
+      "passed": true
+    },
+    {
+      "language": "chinese",
+      "exitCode": 0,
+      "passed": true
+    },
+    {
+      "language": "japanese",
+      "exitCode": 0,
+      "passed": true
+    },
+    {
+      "language": "russian",
+      "exitCode": 0,
+      "passed": true
+    },
+    {
+      "language": "spanish",
+      "exitCode": 0,
+      "passed": true
+    },
+    {
+      "language": "french",
+      "exitCode": 0,
+      "passed": true
+    }
+  ]
+}

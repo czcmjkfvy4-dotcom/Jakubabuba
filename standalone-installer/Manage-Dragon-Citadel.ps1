@@ -34,7 +34,7 @@ function Apply-Selection([bool]$enabled, [bool]$graphicsEnabled) {
     if ($effectiveLanguage -eq 'Keep') {
         $effectiveLanguage = (Get-Content -LiteralPath (Join-Path $Profile 'config\settings.json') -Raw -Encoding UTF8 | ConvertFrom-Json).general.language
     }
-    if ($effectiveLanguage -in @('polish','german','chinese','japanese','russian','spanish','french')) {
+    if ($effectiveLanguage -in @('polish','english','german','chinese','japanese','russian','spanish','french')) {
         & (Join-Path $PSScriptRoot 'Install-Game-Language.ps1') -Language $effectiveLanguage -Runtime $Runtime
         $translationId = $effectiveLanguage + '-translation'
         $p.Value.mods += $translationId

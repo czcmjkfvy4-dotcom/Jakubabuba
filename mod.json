@@ -1,8 +1,8 @@
 {
   "name": "Dragon Citadel",
-  "description": "Requires the matching BILLADENC4 engine for custom mechanics; use the complete installer. Dragon Citadel with integral third creature forms, an eight-chapter campaign and optional fourth forms. Work on the appearance of Dragon Citadel is in progress.",
+  "description": "Dragon Citadel with integral third creature forms, an eight-chapter campaign and optional fourth forms. Requires the BILLADENC4 engine included in the complete installer. Work on the appearance of Dragon Citadel is in progress.",
   "author": "Billaden",
-  "version": "1.5.8",
+  "version": "1.5.9",
   "contact": "https://github.com/czcmjkfvy4-dotcom/Jakubabuba",
   "modType": "Town",
   "language": "english",
@@ -138,7 +138,7 @@
   ],
   "polish": {
     "name": "Smocza Cytadela",
-    "description": "Smocza Cytadela z integralnymi trzecimi formami jednostek, ośmiorozdziałową kampanią i opcjonalnymi czwartymi formami. Prace nad wyglądem Smoczej Cytadeli w trakcie.",
+    "description": "Smocza Cytadela z integralnymi trzecimi formami jednostek, ośmiorozdziałową kampanią i opcjonalnymi czwartymi formami. Wymagany jest silnik BILLADENC4 z pełnego instalatora. Prace nad wyglądem Smoczej Cytadeli w trakcie.",
     "author": "Billaden",
     "translations": [
       "translation/dragon-citadel/polish.json"
@@ -146,7 +146,7 @@
   },
   "english": {
     "name": "Dragon Citadel",
-    "description": "Dragon Citadel with integral third creature forms, an eight-chapter campaign and optional fourth forms. Work on the appearance of Dragon Citadel is in progress.",
+    "description": "Dragon Citadel with integral third creature forms, an eight-chapter campaign and optional fourth forms. Requires the BILLADENC4 engine included in the complete installer. Work on the appearance of Dragon Citadel is in progress.",
     "author": "Billaden",
     "translations": [
       "translation/dragon-citadel/english.json"
@@ -154,7 +154,7 @@
   },
   "german": {
     "name": "Drachenzitadelle",
-    "description": "Drachenzitadelle mit integrierten dritten Kreaturenformen, einer Kampagne mit acht Kapiteln und optionalen vierten Formen. Die grafische Überarbeitung der Drachenzitadelle ist noch in Arbeit.",
+    "description": "Drachenzitadelle mit integrierten dritten Kreaturenformen, einer Kampagne mit acht Kapiteln und optionalen vierten Formen. Benötigt die BILLADENC4-Engine aus dem vollständigen Installationspaket. Die grafische Überarbeitung der Drachenzitadelle ist noch in Arbeit.",
     "author": "Billaden",
     "translations": [
       "translation/dragon-citadel/german.json"
@@ -162,7 +162,7 @@
   },
   "chinese": {
     "name": "龙之要塞",
-    "description": "龙之要塞包含内置的第三形态兵种、八章战役及可选的第四形态。 龙之要塞的外观仍在改进中。",
+    "description": "龙之要塞包含内置的第三形态兵种、八章战役及可选的第四形态。 需要完整安装包中提供的 BILLADENC4 引擎。 龙之要塞的外观仍在改进中。",
     "author": "Billaden",
     "translations": [
       "translation/dragon-citadel/chinese.json"
@@ -170,7 +170,7 @@
   },
   "japanese": {
     "name": "ドラゴン・シタデル",
-    "description": "ドラゴン・シタデルには兵士の第3形態、全8章のキャンペーン、任意で有効にできる第4形態が含まれます。 ドラゴン・シタデルの外観は現在改修中です。",
+    "description": "ドラゴン・シタデルには兵士の第3形態、全8章のキャンペーン、任意で有効にできる第4形態が含まれます。 完全版インストーラーに含まれる BILLADENC4 エンジンが必要です。 ドラゴン・シタデルの外観は現在改修中です。",
     "author": "Billaden",
     "translations": [
       "translation/dragon-citadel/japanese.json"
@@ -178,7 +178,7 @@
   },
   "russian": {
     "name": "Драконья цитадель",
-    "description": "Драконья цитадель со встроенными третьими формами существ, кампанией из восьми глав и дополнительными четвёртыми формами. Внешний вид Драконьей цитадели находится в доработке.",
+    "description": "Драконья цитадель со встроенными третьими формами существ, кампанией из восьми глав и дополнительными четвёртыми формами. Требуется движок BILLADENC4 из полного установочного пакета. Внешний вид Драконьей цитадели находится в доработке.",
     "author": "Billaden",
     "translations": [
       "translation/dragon-citadel/russian.json"
@@ -186,7 +186,7 @@
   },
   "spanish": {
     "name": "Ciudadela del Dragón",
-    "description": "Ciudadela del Dragón con terceras formas de criaturas integradas, una campaña de ocho capítulos y cuartas formas opcionales. El aspecto de la Ciudadela del Dragón sigue en desarrollo.",
+    "description": "Ciudadela del Dragón con terceras formas de criaturas integradas, una campaña de ocho capítulos y cuartas formas opcionales. Requiere el motor BILLADENC4 incluido en el instalador completo. El aspecto de la Ciudadela del Dragón sigue en desarrollo.",
     "author": "Billaden",
     "translations": [
       "translation/dragon-citadel/spanish.json"
@@ -194,7 +194,7 @@
   },
   "french": {
     "name": "Citadelle du Dragon",
-    "description": "Citadelle du Dragon avec les troisièmes formes des créatures intégrées, une campagne de huit chapitres et des quatrièmes formes facultatives. L’apparence de la Citadelle du Dragon est en cours d’amélioration.",
+    "description": "Citadelle du Dragon avec les troisièmes formes des créatures intégrées, une campagne de huit chapitres et des quatrièmes formes facultatives. Nécessite le moteur BILLADENC4 fourni avec le programme d’installation complet. L’apparence de la Citadelle du Dragon est en cours d’amélioration.",
     "author": "Billaden",
     "translations": [
       "translation/dragon-citadel/french.json"

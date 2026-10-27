@@ -1,0 +1,148 @@
+{
+  "version": "1.5.9",
+  "localImplementationComplete": true,
+  "nativeBaseAndMod": {
+    "passed": true,
+    "languages": [
+      {
+        "language": "polish",
+        "exitCode": 0,
+        "passed": true
+      },
+      {
+        "language": "english",
+        "exitCode": 0,
+        "passed": true
+      },
+      {
+        "language": "german",
+        "exitCode": 0,
+        "passed": true
+      },
+      {
+        "language": "chinese",
+        "exitCode": 0,
+        "passed": true
+      },
+      {
+        "language": "japanese",
+        "exitCode": 0,
+        "passed": true
+      },
+      {
+        "language": "russian",
+        "exitCode": 0,
+        "passed": true
+      },
+      {
+        "language": "spanish",
+        "exitCode": 0,
+        "passed": true
+      },
+      {
+        "language": "french",
+        "exitCode": 0,
+        "passed": true
+      }
+    ]
+  },
+  "nativeWithFourth": {
+    "passed": true,
+    "languages": [
+      {
+        "language": "polish",
+        "exitCode": 0,
+        "passed": true
+      },
+      {
+        "language": "english",
+        "exitCode": 0,
+        "passed": true
+      },
+      {
+        "language": "german",
+        "exitCode": 0,
+        "passed": true
+      },
+      {
+        "language": "chinese",
+        "exitCode": 0,
+        "passed": true
+      },
+      {
+        "language": "japanese",
+        "exitCode": 0,
+        "passed": true
+      },
+      {
+        "language": "russian",
+        "exitCode": 0,
+        "passed": true
+      },
+      {
+        "language": "spanish",
+        "exitCode": 0,
+        "passed": true
+      },
+      {
+        "language": "french",
+        "exitCode": 0,
+        "passed": true
+      }
+    ]
+  },
+  "contentAudit": true,
+  "fontCoverage": {
+    "passed": true,
+    "languages": [
+      {
+        "language": "chinese",
+        "distinctVisibleCodepoints": 3464,
+        "missingCodepoints": [],
+        "passed": true
+      },
+      {
+        "language": "japanese",
+        "distinctVisibleCodepoints": 2475,
+        "missingCodepoints": [],
+        "passed": true
+      }
+    ]
+  },
+  "cleanInstall": {
+    "passed": true,
+    "archiveSHA256": "ef4e3a988a95d5e06c9e9ba9f5d6c4b443ae06a45e762e746a1682b248536924",
+    "installedFromExtractedArchive": true,
+    "originalGameDataImportedFromUserSource": true,
+    "unrelatedUserSavesUnchanged": 94,
+    "modes": {
+      "third-only": {
+        "passed": true,
+        "markersReached": true,
+        "errorCount": 0,
+        "warningCount": 0,
+        "errors": [],
+        "warnings": []
+      },
+      "third-fourth-graphics": {
+        "passed": true,
+        "markersReached": true,
+        "errorCount": 0,
+        "warningCount": 0,
+        "errors": [],
+        "warnings": []
+      },
+      "third-only-again": {
+        "passed": true,
+        "markersReached": true,
+        "errorCount": 0,
+        "warningCount": 0,
+        "errors": [],
+        "warnings": []
+      }
+    },
+    "fullCampaignPlaythrough": false
+  },
+  "fullHumanCampaignPlaythrough": false,
+  "humanLiteraryReview": false
+}

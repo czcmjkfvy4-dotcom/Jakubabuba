@@ -1,0 +1,16 @@
+{
+  "keysPerTarget": 344,
+  "targetLanguages": [
+    "english",
+    "german",
+    "chinese",
+    "japanese",
+    "russian",
+    "spanish",
+    "french"
+  ],
+  "sourceLanguageExplicit": "polish",
+  "individualRequests": 1834,
+  "humanLiteraryReview": false,
+  "completed": true
+}

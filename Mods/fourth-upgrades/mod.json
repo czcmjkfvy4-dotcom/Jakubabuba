@@ -38,34 +38,61 @@
   ],
   "polish": {
     "name": "Opcjonalne czwarte formy",
-    "description": "Opcjonalne czwarte formy. Prace nad wyglądem Smoczej Cytadeli w trakcie."
+    "description": "Opcjonalne czwarte formy. Prace nad wyglądem Smoczej Cytadeli w trakcie.",
+    "translations": [
+      "translation/wog-eight-languages/polish.json"
+    ]
   },
   "english": {
     "name": "Optional fourth forms",
-    "description": "Optional fourth forms. Work on the appearance of Dragon Citadel is in progress."
+    "description": "Optional fourth forms. Work on the appearance of Dragon Citadel is in progress.",
+    "translations": [
+      "translation/wog-eight-languages/english.json"
+    ]
   },
   "german": {
     "name": "Optionale vierte Formen",
-    "description": "Optionale vierte Formen. Die grafische Überarbeitung der Drachenzitadelle ist noch in Arbeit."
+    "description": "Optionale vierte Formen. Die grafische Überarbeitung der Drachenzitadelle ist noch in Arbeit.",
+    "translations": [
+      "translation/wog-eight-languages/german.json"
+    ]
   },
   "chinese": {
     "name": "可选第四形态",
-    "description": "可选第四形态. 龙之要塞的外观仍在改进中。"
+    "description": "可选第四形态. 龙之要塞的外观仍在改进中。",
+    "translations": [
+      "translation/wog-eight-languages/chinese.json"
+    ]
   },
   "japanese": {
     "name": "任意の第4形態",
-    "description": "任意の第4形態. ドラゴン・シタデルの外観は現在改修中です。"
+    "description": "任意の第4形態. ドラゴン・シタデルの外観は現在改修中です。",
+    "translations": [
+      "translation/wog-eight-languages/japanese.json"
+    ]
   },
   "russian": {
     "name": "Дополнительные четвёртые формы",
-    "description": "Дополнительные четвёртые формы. Внешний вид Драконьей цитадели находится в доработке."
+    "description": "Дополнительные четвёртые формы. Внешний вид Драконьей цитадели находится в доработке.",
+    "translations": [
+      "translation/wog-eight-languages/russian.json"
+    ]
   },
   "spanish": {
     "name": "Cuartas formas opcionales",
-    "description": "Cuartas formas opcionales. El aspecto de la Ciudadela del Dragón sigue en desarrollo."
+    "description": "Cuartas formas opcionales. El aspecto de la Ciudadela del Dragón sigue en desarrollo.",
+    "translations": [
+      "translation/wog-eight-languages/spanish.json"
+    ]
   },
   "french": {
     "name": "Quatrièmes formes facultatives",
-    "description": "Quatrièmes formes facultatives. L’apparence de la Citadelle du Dragon est en cours d’amélioration."
-  }
+    "description": "Quatrièmes formes facultatives. L’apparence de la Citadelle du Dragon est en cours d’amélioration.",
+    "translations": [
+      "translation/wog-eight-languages/french.json"
+    ]
+  },
+  "translations": [
+    "translation/wog-eight-languages/english.json"
+  ]
 }

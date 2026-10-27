@@ -1,0 +1,61 @@
+{
+  "success": true,
+  "languages": [
+    {
+      "language": "polish",
+      "exitCode": 0,
+      "actualTownInterface": true,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "language": "english",
+      "exitCode": 0,
+      "actualTownInterface": true,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "language": "german",
+      "exitCode": 0,
+      "actualTownInterface": true,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "language": "chinese",
+      "exitCode": 0,
+      "actualTownInterface": true,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "language": "japanese",
+      "exitCode": 0,
+      "actualTownInterface": true,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "language": "russian",
+      "exitCode": 0,
+      "actualTownInterface": true,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "language": "spanish",
+      "exitCode": 0,
+      "actualTownInterface": true,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "language": "french",
+      "exitCode": 0,
+      "actualTownInterface": true,
+      "errors": [],
+      "passed": true
+    }
+  ]
+}

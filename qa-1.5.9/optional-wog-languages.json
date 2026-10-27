@@ -1,0 +1,46 @@
+{
+  "prepared": true,
+  "languages": [
+    {
+      "language": "polish",
+      "strings": 52,
+      "filledEnglishFallbacks": 0
+    },
+    {
+      "language": "english",
+      "strings": 52,
+      "filledEnglishFallbacks": 0
+    },
+    {
+      "language": "german",
+      "strings": 52,
+      "filledEnglishFallbacks": 25
+    },
+    {
+      "language": "chinese",
+      "strings": 52,
+      "filledEnglishFallbacks": 0
+    },
+    {
+      "language": "japanese",
+      "strings": 52,
+      "filledEnglishFallbacks": 0
+    },
+    {
+      "language": "russian",
+      "strings": 52,
+      "filledEnglishFallbacks": 0
+    },
+    {
+      "language": "spanish",
+      "strings": 52,
+      "filledEnglishFallbacks": 43
+    },
+    {
+      "language": "french",
+      "strings": 52,
+      "filledEnglishFallbacks": 52
+    }
+  ],
+  "stringsPerLanguage": 52
+}
