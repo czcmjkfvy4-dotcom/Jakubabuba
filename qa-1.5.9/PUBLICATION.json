@@ -1,0 +1,36 @@
+{
+  "url": "https://github.com/czcmjkfvy4-dotcom/Jakubabuba/releases/tag/v1.5.9",
+  "prerelease": true,
+  "assets": [
+    {
+      "name": "Smocza-Cytadela-1.5.9-Complete.zip",
+      "url": "https://github.com/czcmjkfvy4-dotcom/Jakubabuba/releases/download/v1.5.9/Smocza-Cytadela-1.5.9-Complete.zip",
+      "bytes": 493335259,
+      "sha256": "ef4e3a988a95d5e06c9e9ba9f5d6c4b443ae06a45e762e746a1682b248536924",
+      "githubDigest": "sha256:ef4e3a988a95d5e06c9e9ba9f5d6c4b443ae06a45e762e746a1682b248536924"
+    },
+    {
+      "name": "BILLADENC4-corresponding-source.zip",
+      "url": "https://github.com/czcmjkfvy4-dotcom/Jakubabuba/releases/download/v1.5.9/BILLADENC4-corresponding-source.zip",
+      "bytes": 15086429,
+      "sha256": "54bac91e48b6ebfcca22c2ba6f1549a43e5046bb2ce9754c8c29e87c994c28fc",
+      "githubDigest": "sha256:54bac91e48b6ebfcca22c2ba6f1549a43e5046bb2ce9754c8c29e87c994c28fc"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "url": "https://github.com/czcmjkfvy4-dotcom/Jakubabuba/releases/download/v1.5.9/SHA256SUMS.txt",
+      "bytes": 205,
+      "sha256": "30c4dd0d229363be4f864d8f4c4980c1b00104f9aabdd00ec917dd30eac0deb3",
+      "githubDigest": "sha256:30c4dd0d229363be4f864d8f4c4980c1b00104f9aabdd00ec917dd30eac0deb3"
+    }
+  ],
+  "allAssetsUploaded": true,
+  "catalog": {
+    "url": "https://github.com/vcmi/vcmi-mods-repository/pull/169",
+    "draft": true,
+    "state": "open",
+    "merged": false,
+    "defaultCatalogAvailabilityConfirmed": false
+  },
+  "publicDownloadsVerified": true
+}
