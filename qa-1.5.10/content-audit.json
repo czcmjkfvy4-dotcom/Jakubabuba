@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "languages": [
+    {
+      "language": "english",
+      "polishLeakage": [],
+      "criticalNumericProblems": [],
+      "passed": true
+    },
+    {
+      "language": "german",
+      "polishLeakage": [],
+      "criticalNumericProblems": [],
+      "passed": true
+    },
+    {
+      "language": "chinese",
+      "polishLeakage": [],
+      "criticalNumericProblems": [],
+      "passed": true
+    },
+    {
+      "language": "japanese",
+      "polishLeakage": [],
+      "criticalNumericProblems": [],
+      "passed": true
+    },
+    {
+      "language": "russian",
+      "polishLeakage": [],
+      "criticalNumericProblems": [],
+      "passed": true
+    },
+    {
+      "language": "spanish",
+      "polishLeakage": [],
+      "criticalNumericProblems": [],
+      "passed": true
+    },
+    {
+      "language": "french",
+      "polishLeakage": [],
+      "criticalNumericProblems": [],
+      "passed": true
+    }
+  ],
+  "humanLiteraryReview": false
+}

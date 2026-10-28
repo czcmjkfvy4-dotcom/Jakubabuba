@@ -1,0 +1,42 @@
+{
+	"baseGameStringsCompared" : 6415,
+	"campaignEmbeddedMapsLoaded" : 8,
+	"chapters" : {
+		"01" : {
+			"questResolved" : true,
+			"title" : "01. Iskra Cytadéli"
+		},
+		"02" : {
+			"questResolved" : true,
+			"title" : "02. Noyaux dorés"
+		},
+		"03" : {
+			"questResolved" : true,
+			"title" : "03. Serment des Titanes"
+		},
+		"04" : {
+			"questResolved" : true,
+			"title" : "04. Cavernes de magie brisée"
+		},
+		"05" : {
+			"questResolved" : true,
+			"title" : "05. Trésor de la tempête"
+		},
+		"06" : {
+			"questResolved" : true,
+			"title" : "06. La tempête éternelle arrive"
+		},
+		"07" : {
+			"questResolved" : true,
+			"title" : "07. Le trône bleu"
+		},
+		"08" : {
+			"questResolved" : true,
+			"title" : "08. Cœur de la fin des âges"
+		}
+	},
+	"language" : "french",
+	"stringsCompared" : 1131,
+	"success" : true,
+	"verifiedEngineOverrides" : 0
+}

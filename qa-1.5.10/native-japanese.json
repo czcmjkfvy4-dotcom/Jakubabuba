@@ -1,0 +1,42 @@
+{
+	"baseGameStringsCompared" : 6453,
+	"campaignEmbeddedMapsLoaded" : 8,
+	"chapters" : {
+		"01" : {
+			"questResolved" : true,
+			"title" : "01. イスクラ・シタデリ"
+		},
+		"02" : {
+			"questResolved" : true,
+			"title" : "02. ゴールデンコア"
+		},
+		"03" : {
+			"questResolved" : true,
+			"title" : "03. ティターンズの誓い"
+		},
+		"04" : {
+			"questResolved" : true,
+			"title" : "04. 壊れた魔法の洞窟"
+		},
+		"05" : {
+			"questResolved" : true,
+			"title" : "05. 嵐の宝庫"
+		},
+		"06" : {
+			"questResolved" : true,
+			"title" : "06. 永遠の嵐がやってくる"
+		},
+		"07" : {
+			"questResolved" : true,
+			"title" : "07. 青い玉座"
+		},
+		"08" : {
+			"questResolved" : true,
+			"title" : "08. 時代の終わりの中心"
+		}
+	},
+	"language" : "japanese",
+	"stringsCompared" : 1131,
+	"success" : true,
+	"verifiedEngineOverrides" : 0
+}

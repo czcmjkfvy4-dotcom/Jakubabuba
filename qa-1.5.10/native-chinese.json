@@ -1,0 +1,42 @@
+{
+	"baseGameStringsCompared" : 6443,
+	"campaignEmbeddedMapsLoaded" : 8,
+	"chapters" : {
+		"01" : {
+			"questResolved" : true,
+			"title" : "01.《火星报》"
+		},
+		"02" : {
+			"questResolved" : true,
+			"title" : "02.金核"
+		},
+		"03" : {
+			"questResolved" : true,
+			"title" : "03.泰坦之誓"
+		},
+		"04" : {
+			"questResolved" : true,
+			"title" : "04. 破碎魔法之穴"
+		},
+		"05" : {
+			"questResolved" : true,
+			"title" : "05. 风暴宝库"
+		},
+		"06" : {
+			"questResolved" : true,
+			"title" : "06. 永恒风暴即将来临"
+		},
+		"07" : {
+			"questResolved" : true,
+			"title" : "07. 蓝色王座"
+		},
+		"08" : {
+			"questResolved" : true,
+			"title" : "08. 末世之心"
+		}
+	},
+	"language" : "chinese",
+	"stringsCompared" : 1131,
+	"success" : true,
+	"verifiedEngineOverrides" : 0
+}

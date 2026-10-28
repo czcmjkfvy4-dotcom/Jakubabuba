@@ -1,0 +1,31 @@
+{
+  "candidateVersion": "1.5.10",
+  "publishedReleaseChanged": false,
+  "languages": [
+    "english",
+    "polish",
+    "german",
+    "chinese",
+    "japanese",
+    "russian",
+    "spanish",
+    "french"
+  ],
+  "biographiesPerLanguage": 16,
+  "totalReplacedBiographies": 128,
+  "heroMechanicsUnchanged": true,
+  "files": [
+    "Content/translation/dragon-citadel/english.json",
+    "Content/translation/dragon-citadel/polish.json",
+    "Content/translation/dragon-citadel/german.json",
+    "Content/translation/dragon-citadel/chinese.json",
+    "Content/translation/dragon-citadel/japanese.json",
+    "Content/translation/dragon-citadel/russian.json",
+    "Content/translation/dragon-citadel/spanish.json",
+    "Content/translation/dragon-citadel/french.json",
+    "Content/config/dragon-citadel/hero-roster.json",
+    "mod.json"
+  ],
+  "nativeSpeakerReview": false,
+  "artRedrawCompleted": false
+}

@@ -1,0 +1,27 @@
+{
+  "targets": [
+    {
+      "path": "main installed mod",
+      "files": 10,
+      "version": "1.5.10",
+      "candidate": true,
+      "heroMechanicsUnchanged": true
+    },
+    {
+      "path": "standalone installed mod",
+      "files": 10,
+      "version": "1.5.10",
+      "candidate": true,
+      "heroMechanicsUnchanged": true
+    },
+    {
+      "path": "private campaign runtime",
+      "files": 10,
+      "version": "1.5.10",
+      "candidate": true,
+      "heroMechanicsUnchanged": true
+    }
+  ],
+  "saveFilesUnchanged": 94,
+  "published159ArchiveUnchanged": true
+}

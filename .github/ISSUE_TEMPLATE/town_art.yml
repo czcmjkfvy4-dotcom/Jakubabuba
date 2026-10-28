@@ -1,0 +1,24 @@
+name: Town building feedback
+description: Identify a visible placement, mask, scale or art problem.
+title: "[Town art] "
+body:
+  - type: input
+    id: building
+    attributes:
+      label: Town, building and upgrade stage
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What looks wrong in the game?
+      description: Describe placement, ground contact, readability or overlap.
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Actual game screenshot and mod version
+      description: Please use a game capture rather than a proposed illustration.
+    validations:
+      required: true

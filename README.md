@@ -1,36 +1,41 @@
-# Dragon Citadel 1.5.9 — playable development release
+# Dragon Citadel
 
-Integral third creature upgrades, optional fourth upgrades, eight campaign chapters and revised town building terraces. Work on the appearance of Dragon Citadel is in progress.
+A mountain town built around foundries, narrow passes and rival dragon broods. The mod includes third creature forms, optional fourth forms and a campaign of eight chapters.
 
-## Installation and eight languages
+**Playable release:** [1.5.9](https://github.com/czcmjkfvy4-dotcom/Jakubabuba/releases/tag/v1.5.9). **This branch:** unreleased 1.5.10 editorial candidate. Town artwork is still being revised.
 
-Use the complete Projects installer from the release assets. Supply your own Heroes III Complete data. Choose Polski, English, Deutsch, 简体中文, 日本語, Русский, Español or Français in Manage-Dragon-Citadel.ps1. The selector changes the game language and activates its base-game translation package as well as the mod translations. On first selection, the required community translation package is downloaded directly from the official VCMI catalog source and checked against a pinned SHA-256. Internet access is needed for this first download; subsequent starts use installed files. English also has a pinned community base-game translation package. Translation packs are not relicensed as Dragon Citadel content.
+![Town interface captured in VCMI using a QA save with test resources](qa-1.5.9/actual-language-windows/english/dragon-citadel-dragonCitadel.png)
 
-## Runtime requirement
+## Play
 
-BILLADENC4, based on VCMI 1.7.5, is required for custom monthly dragon recruitment and Ruby Golem mechanics. Installing the mod with a standard VCMI launcher does not replace its engine. Use the matching complete installer; corresponding engine source is supplied with the installer. Do not mix old client/server/library binaries.
+1. Download the complete installer from the 1.5.9 release assets.
+2. Provide your own Heroes III Complete game data.
+3. Start the Dragon Citadel launcher. Choose a language and enable optional fourth forms or the graphics submod if wanted.
 
-## Verified scope and limitations
+The supported languages are Polish, English, German, Simplified Chinese, Japanese, Russian, Spanish and French. The first use of a base-game language pack requires internet access. The installer checks downloaded packs against pinned checksums.
 
-The engine resolved 1,131 mod text keys in each of eight languages and 6,415–6,453 base-game text entries in all eight languages, including separately verified VCMI dictionary overrides. All eight standalone campaign maps and their eight embedded campaign counterparts loaded in each language. Actual town screens were captured in all eight languages; see qa-1.5.9/JEZYKI-CALEJ-GRY.html. This is not a full manual campaign playthrough or a native-speaker review of every translation. The mod campaign includes machine-translated draft text. Japanese upstream map/Chronicles translations include an explicitly marked AI-translated optional component enabled by the selector.
+**The complete rules require BILLADENC4, based on VCMI 1.7.5.** Adding the mod to a stock VCMI launcher does not install that engine. See [compatibility](docs/compatibility.md) before using the extra repository.
 
-Fort, citadel and castle use a shared courtyard anchor and nominal linear scales 1, 1.3 and 1.69. Forty-seven town building states were captured through actual town interfaces. Graphical work remains in progress. Four AI campaign scenarios did not finish within the bounded test; no claim of complete campaign acceptance is made.
+[Polski opis i instalacja](README.pl.md)
 
-## Credits
+## What changes in this branch
 
-See TUM-RESOURCE-CREDITS.txt, bundled mod metadata, graphics submod licenses, font licenses and the engine's corresponding-source archive. Heroes III data is imported locally and is not included in the complete installer.
+Sixteen hero biographies previously repeated a technical description of joining the faction. They now describe individual duties and choices within the Citadel. All eight language files are updated. The source hero definitions use English text instead of damaged Polish fallbacks; skills, specialties and armies are unchanged.
 
+> Arlach measures every bridge before bringing his ballista across. A weapon lost to haste cannot defend the Citadel.
 
-The 1.5.9 language correction translates 344 Polish-source entries individually, checks for Polish leakage, covers all visible Chinese/Japanese codepoints in the inspected catalogs and derives the two final dragon stat/cost lessons from creature data. Ultimate and Absolute Dragons have distinct names in every supported language. This remains a machine translation draft with targeted manual corrections, not a full native-speaker literary review.
+These are stories written for this mod, not additions to official Heroes III canon. Translation editing was assisted by AI; a full native-speaker review is still pending.
 
-The optional fourth-upgrade mode also verifies 52 text entries from its active WoG dependency in each language, completing the German, Spanish and French English fallbacks. Other manually enabled third-party submods remain outside this localization guarantee.
+## Status
 
+This remains a development project. Small buildings and the visual fit of parts of the town still need work. Campaign victory objectives have been reached in separate automated trials; continuous campaign carryover and a full manual playthrough have not been certified. See [known issues](docs/known-issues.md) and the [1.5.10 verification record](qa-1.5.10/README.md).
 
-VCMI repository access (status checked 27 October 2026)
+The official VCMI catalog submissions were closed without acceptance. The extra repository is maintained independently:
 
-The mod has a separate repository index that can be added in the VCMI launcher settings as an extra repository:
-https://raw.githubusercontent.com/czcmjkfvy4-dotcom/Jakubabuba/main/repository.json
+`https://raw.githubusercontent.com/czcmjkfvy4-dotcom/Jakubabuba/main/repository.json`
 
-Keep the default VCMI repository enabled. The extra repository supplies the mod archive; it does not install the BILLADENC4 engine. Use the complete 1.5.9 installer for the matching runtime required by the custom mechanics.
+## Feedback and credits
 
-The official catalog submission https://github.com/vcmi/vcmi-mods-repository/pull/169 was closed without merging. Maintainers cited the custom engine requirement and quality concerns. Dragon Citadel is therefore not available in the default official catalog. The public prerelease and the extra repository remain available independently.
+Please report the engine version, mod version, enabled submods, steps to reproduce and expected result. For town artwork, identify the building and upgrade stage and attach an actual game screenshot. The issue forms ask for these details.
+
+Project direction: Billaden. See [credits and development tools](docs/credits-and-tools.md), [resource credits](TUM-RESOURCE-CREDITS.txt) and the bundled font and submod notices. Original Heroes III game data is not included in the installer.

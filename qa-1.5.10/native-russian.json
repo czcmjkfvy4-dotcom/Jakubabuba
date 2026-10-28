@@ -1,0 +1,42 @@
+{
+	"baseGameStringsCompared" : 6415,
+	"campaignEmbeddedMapsLoaded" : 8,
+	"chapters" : {
+		"01" : {
+			"questResolved" : true,
+			"title" : "01. Искра Цитадели"
+		},
+		"02" : {
+			"questResolved" : true,
+			"title" : "02. Золотые ядра"
+		},
+		"03" : {
+			"questResolved" : true,
+			"title" : "03. Клятва Титанов"
+		},
+		"04" : {
+			"questResolved" : true,
+			"title" : "04. Пещеры разрушенной магии"
+		},
+		"05" : {
+			"questResolved" : true,
+			"title" : "05. Сокровищница Шторма"
+		},
+		"06" : {
+			"questResolved" : true,
+			"title" : "06. Приближается Вечная Буря"
+		},
+		"07" : {
+			"questResolved" : true,
+			"title" : "07. Синий Трон"
+		},
+		"08" : {
+			"questResolved" : true,
+			"title" : "08. Сердце конца веков"
+		}
+	},
+	"language" : "russian",
+	"stringsCompared" : 1131,
+	"success" : true,
+	"verifiedEngineOverrides" : 7
+}

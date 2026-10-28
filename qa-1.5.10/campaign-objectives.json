@@ -1,0 +1,95 @@
+{
+  "individualChapterEvidence": [
+    {
+      "chapter": 1,
+      "victoryObjectiveReached": true,
+      "day": 16,
+      "exitCode": 0,
+      "errors": 0,
+      "warnings": 5,
+      "mapSHA256": "b5e45325a6ea5793c8a440bac0484f3c078bd76e9a58fc0c965759376766a585",
+      "method": "Earlier computer-slot AI trial",
+      "replayedDuringEditorialRevision": false
+    },
+    {
+      "chapter": 2,
+      "victoryObjectiveReached": true,
+      "day": 36,
+      "exitCode": 0,
+      "errors": 0,
+      "warnings": 3,
+      "mapSHA256": "1450ca6d6431db9da66781dfc2c1e96b717eb00381d6d959568a5d1e5f52703b",
+      "method": "Earlier computer-slot AI trial",
+      "replayedDuringEditorialRevision": false
+    },
+    {
+      "chapter": 3,
+      "victoryObjectiveReached": true,
+      "day": 162,
+      "exitCode": 0,
+      "errors": 0,
+      "warnings": 12,
+      "mapSHA256": "5f3ff0b22d80f500d4e57ac54934176b667d1353224aa004c39fccdeac1be716",
+      "method": "Earlier computer-slot AI trial",
+      "replayedDuringEditorialRevision": false
+    },
+    {
+      "chapter": 4,
+      "victoryObjectiveReached": true,
+      "day": 9,
+      "exitCode": 1,
+      "errors": 4,
+      "warnings": 4,
+      "mapSHA256": "100acafa507c986ace6f7b89f34d07571494efc0884f7875e19d998bc4881b99",
+      "method": "AI with human starting events; victory followed by headless test shutdown failure",
+      "replayedDuringEditorialRevision": false
+    },
+    {
+      "chapter": 5,
+      "victoryObjectiveReached": true,
+      "day": 99,
+      "exitCode": 0,
+      "errors": 0,
+      "warnings": 7,
+      "mapSHA256": "3b4a04c5e63725a855f7d5c647b3e731681558bb3c8b25d8d5cc64265bf2cc2a",
+      "method": "AI with human starting events and one declared legal paid mission-building priority",
+      "replayedDuringEditorialRevision": false
+    },
+    {
+      "chapter": 6,
+      "victoryObjectiveReached": true,
+      "day": 7,
+      "exitCode": 1,
+      "errors": 4,
+      "warnings": 4,
+      "mapSHA256": "a2146c0fa26e7f3d4042dea00d876659bf792cc678c085073a0b90446cd46301",
+      "method": "AI with human starting events; victory followed by headless test shutdown failure",
+      "replayedDuringEditorialRevision": false
+    },
+    {
+      "chapter": 7,
+      "victoryObjectiveReached": true,
+      "day": 137,
+      "exitCode": 0,
+      "errors": 0,
+      "warnings": 18,
+      "mapSHA256": "727b8d432f6358a0515d488eb80fd329b463f2a5a06effcd2c998b9071d184bf",
+      "method": "AI with human starting events and one declared legal paid mission-building priority",
+      "replayedDuringEditorialRevision": false
+    },
+    {
+      "chapter": 8,
+      "victoryObjectiveReached": true,
+      "day": 60,
+      "exitCode": 0,
+      "errors": 0,
+      "warnings": 10,
+      "mapSHA256": "5db3659a90b1375a936ee618b148309da0f87894e5436aa6c779bcab621774a7",
+      "method": "Earlier computer-slot AI trial",
+      "replayedDuringEditorialRevision": false
+    }
+  ],
+  "continuousCampaignCarryoverVerified": false,
+  "manualPlaythroughVerified": false,
+  "editorialPatchDoesNotChangeMaps": true
+}

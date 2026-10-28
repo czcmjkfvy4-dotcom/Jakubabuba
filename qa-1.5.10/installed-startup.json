@@ -1,0 +1,17 @@
+{
+  "version": "1.5.10",
+  "installations": [
+    {
+      "installation": "main",
+      "menuInitialized": true,
+      "errorCount": 0,
+      "warningCount": 0
+    },
+    {
+      "installation": "standalone",
+      "menuInitialized": true,
+      "errorCount": 0,
+      "warningCount": 0
+    }
+  ]
+}

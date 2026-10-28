@@ -1,0 +1,42 @@
+{
+	"baseGameStringsCompared" : 6415,
+	"campaignEmbeddedMapsLoaded" : 8,
+	"chapters" : {
+		"01" : {
+			"questResolved" : true,
+			"title" : "01. La chispa de la Ciudadela"
+		},
+		"02" : {
+			"questResolved" : true,
+			"title" : "02. Núcleos dorados"
+		},
+		"03" : {
+			"questResolved" : true,
+			"title" : "03. Juramento de los Titánes"
+		},
+		"04" : {
+			"questResolved" : true,
+			"title" : "04. Cavernas de la Magia Rota"
+		},
+		"05" : {
+			"questResolved" : true,
+			"title" : "05. Tesoro de la Tormenta"
+		},
+		"06" : {
+			"questResolved" : true,
+			"title" : "06. Se acerca la tormenta eterna"
+		},
+		"07" : {
+			"questResolved" : true,
+			"title" : "07. El Trono Azul"
+		},
+		"08" : {
+			"questResolved" : true,
+			"title" : "08. Corazón del Fin de los Tiempos"
+		}
+	},
+	"language" : "spanish",
+	"stringsCompared" : 1131,
+	"success" : true,
+	"verifiedEngineOverrides" : 0
+}
