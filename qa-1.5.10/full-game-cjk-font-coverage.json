@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "languages": [
+    {
+      "language": "chinese",
+      "distinctVisibleCodepoints": 3464,
+      "missingCodepoints": [],
+      "passed": true
+    },
+    {
+      "language": "japanese",
+      "distinctVisibleCodepoints": 2477,
+      "missingCodepoints": [],
+      "passed": true
+    }
+  ]
+}

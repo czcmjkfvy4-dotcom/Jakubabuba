@@ -1,0 +1,42 @@
+{
+	"baseGameStringsCompared" : 6453,
+	"campaignEmbeddedMapsLoaded" : 8,
+	"chapters" : {
+		"01" : {
+			"questResolved" : true,
+			"title" : "01. Spark of the Citadel"
+		},
+		"02" : {
+			"questResolved" : true,
+			"title" : "02. Golden Cores"
+		},
+		"03" : {
+			"questResolved" : true,
+			"title" : "03. Oath of the Titans"
+		},
+		"04" : {
+			"questResolved" : true,
+			"title" : "04. Caverns of Broken Magic"
+		},
+		"05" : {
+			"questResolved" : true,
+			"title" : "05. Treasury of the Storm"
+		},
+		"06" : {
+			"questResolved" : true,
+			"title" : "06. The Eternal Storm is coming"
+		},
+		"07" : {
+			"questResolved" : true,
+			"title" : "07. The Blue Throne"
+		},
+		"08" : {
+			"questResolved" : true,
+			"title" : "08. Heart of the End of Ages"
+		}
+	},
+	"language" : "english",
+	"stringsCompared" : 1131,
+	"success" : true,
+	"verifiedEngineOverrides" : 0
+}

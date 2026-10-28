@@ -36,11 +36,11 @@
     },
     "texts": {
       "name": "Lorelei",
-      "biography": "Lorelei dołącza do Smoczej Cytadeli, zachowując swoje doświadczenie, umiejętności i klasyczną specjalizację.",
+      "biography": "Lorelei scouts the ravines before the banners rise. She trusts a harpy's warning more than a council's promise.",
       "specialty": {
-        "name": "Harpie",
-        "tooltip": "Specjalizacja: Harpie",
-        "description": "Klasyczna specjalizacja bohatera Lorelei: Harpie."
+        "name": "Harpies",
+        "tooltip": "Specialty: Harpies",
+        "description": "Lorelei's classic specialty: Harpies."
       }
     }
   },
@@ -82,11 +82,11 @@
     },
     "texts": {
       "name": "Arlach",
-      "biography": "Arlach dołącza do Smoczej Cytadeli, zachowując swoje doświadczenie, umiejętności i klasyczną specjalizację.",
+      "biography": "Arlach measures every bridge before bringing his ballista across. A weapon lost to haste cannot defend the Citadel.",
       "specialty": {
-        "name": "Balista",
-        "tooltip": "Specjalizacja: Balista",
-        "description": "Klasyczna specjalizacja bohatera Arlach: Balista."
+        "name": "Ballista",
+        "tooltip": "Specialty: Ballista",
+        "description": "Arlach's classic specialty: Ballista."
       }
     }
   },
@@ -127,11 +127,11 @@
     },
     "texts": {
       "name": "Dace",
-      "biography": "Dace dołącza do Smoczej Cytadeli, zachowując swoje doświadczenie, umiejętności i klasyczną specjalizację.",
+      "biography": "Dace asks his minotaurs to hold the narrow road, not chase a fleeing enemy. The foundries depend on that road.",
       "specialty": {
-        "name": "Minotaury",
-        "tooltip": "Specjalizacja: Minotaury",
-        "description": "Klasyczna specjalizacja bohatera Dace: Minotaury."
+        "name": "Minotaurs",
+        "tooltip": "Specialty: Minotaurs",
+        "description": "Dace's classic specialty: Minotaurs."
       }
     }
   },
@@ -172,11 +172,11 @@
     },
     "texts": {
       "name": "Ajit",
-      "biography": "Ajit dołącza do Smoczej Cytadeli, zachowując swoje doświadczenie, umiejętności i klasyczną specjalizację.",
+      "biography": "Ajit posts his watchers where torchlight ends. He brings the council reports of movement, not comforting guesses.",
       "specialty": {
-        "name": "Obserwatorzy",
-        "tooltip": "Specjalizacja: Obserwatorzy",
-        "description": "Klasyczna specjalizacja bohatera Ajit: Obserwatorzy."
+        "name": "Beholders",
+        "tooltip": "Specialty: Beholders",
+        "description": "Ajit's classic specialty: Beholders."
       }
     }
   },
@@ -219,11 +219,11 @@
     },
     "texts": {
       "name": "Damacon",
-      "biography": "Damacon dołącza do Smoczej Cytadeli, zachowując swoje doświadczenie, umiejętności i klasyczną specjalizację.",
+      "biography": "Damacon keeps the wages separate from the war chest. He has seen what happens when a victorious army goes unpaid.",
       "specialty": {
-        "name": "Złoto",
-        "tooltip": "Specjalizacja: Złoto",
-        "description": "Klasyczna specjalizacja bohatera Damacon: Złoto."
+        "name": "Gold",
+        "tooltip": "Specialty: Gold",
+        "description": "Damacon's classic specialty: Gold."
       }
     }
   },
@@ -264,11 +264,11 @@
     },
     "texts": {
       "name": "Gunnar",
-      "biography": "Gunnar dołącza do Smoczej Cytadeli, zachowując swoje doświadczenie, umiejętności i klasyczną specjalizację.",
+      "biography": "Gunnar leaves before dawn to find the next pass. He would rather change the route than bury another exhausted scout.",
       "specialty": {
-        "name": "Logistyka",
-        "tooltip": "Specjalizacja: Logistyka",
-        "description": "Klasyczna specjalizacja bohatera Gunnar: Logistyka."
+        "name": "Logistics",
+        "tooltip": "Specialty: Logistics",
+        "description": "Gunnar's classic specialty: Logistics."
       }
     }
   },
@@ -309,11 +309,11 @@
     },
     "texts": {
       "name": "Synca",
-      "biography": "Synca dołącza do Smoczej Cytadeli, zachowując swoje doświadczenie, umiejętności i klasyczną specjalizację.",
+      "biography": "Synca knows which ledges her manticores will accept. Her scouts mark safe approaches before the supply columns climb.",
       "specialty": {
-        "name": "Mantykory",
-        "tooltip": "Specjalizacja: Mantykory",
-        "description": "Klasyczna specjalizacja bohatera Synca: Mantykory."
+        "name": "Manticores",
+        "tooltip": "Specialty: Manticores",
+        "description": "Synca's classic specialty: Manticores."
       }
     }
   },
@@ -354,11 +354,11 @@
     },
     "texts": {
       "name": "Shakti",
-      "biography": "Shakti dołącza do Smoczej Cytadeli, zachowując swoje doświadczenie, umiejętności i klasyczną specjalizację.",
+      "biography": "Shakti listens to the workers beneath the terraces. A cracked support can threaten the Citadel as surely as an enemy army.",
       "specialty": {
-        "name": "Troglodyci",
-        "tooltip": "Specjalizacja: Troglodyci",
-        "description": "Klasyczna specjalizacja bohatera Shakti: Troglodyci."
+        "name": "Troglodytes",
+        "tooltip": "Specialty: Troglodytes",
+        "description": "Shakti's classic specialty: Troglodytes."
       }
     }
   },
@@ -409,11 +409,11 @@
     },
     "texts": {
       "name": "Alamar",
-      "biography": "Alamar dołącza do Smoczej Cytadeli, zachowując swoje doświadczenie, umiejętności i klasyczną specjalizację.",
+      "biography": "Alamar remembers the names of those he brings back. Before every battle, he asks whether the same victory could cost fewer lives.",
       "specialty": {
-        "name": "Wskrzeszenie",
-        "tooltip": "Specjalizacja: Wskrzeszenie",
-        "description": "Klasyczna specjalizacja bohatera Alamar: Wskrzeszenie."
+        "name": "Resurrection",
+        "tooltip": "Specialty: Resurrection",
+        "description": "Alamar's classic specialty: Resurrection."
       }
     }
   },
@@ -457,11 +457,11 @@
     },
     "texts": {
       "name": "Jaegar",
-      "biography": "Jaegar dołącza do Smoczej Cytadeli, zachowując swoje doświadczenie, umiejętności i klasyczną specjalizację.",
+      "biography": "Jaegar keeps a quiet chamber above the furnaces. There he gathers his thoughts before returning to the noise of the council.",
       "specialty": {
-        "name": "Mistycyzm",
-        "tooltip": "Specjalizacja: Mistycyzm",
-        "description": "Klasyczna specjalizacja bohatera Jaegar: Mistycyzm."
+        "name": "Mysticism",
+        "tooltip": "Specialty: Mysticism",
+        "description": "Jaegar's classic specialty: Mysticism."
       }
     }
   },
@@ -505,11 +505,11 @@
     },
     "texts": {
       "name": "Malekith",
-      "biography": "Malekith dołącza do Smoczej Cytadeli, zachowując swoje doświadczenie, umiejętności i klasyczną specjalizację.",
+      "biography": "Malekith studies the scars left by his spells. The Citadel gives him power; its crowded terraces give him reasons for restraint.",
       "specialty": {
-        "name": "Magia",
-        "tooltip": "Specjalizacja: Magia",
-        "description": "Klasyczna specjalizacja bohatera Malekith: Magia."
+        "name": "Sorcery",
+        "tooltip": "Specialty: Sorcery",
+        "description": "Malekith's classic specialty: Sorcery."
       }
     }
   },
@@ -556,11 +556,11 @@
     },
     "texts": {
       "name": "Jeddite",
-      "biography": "Jeddite dołącza do Smoczej Cytadeli, zachowując swoje doświadczenie, umiejętności i klasyczną specjalizację.",
+      "biography": "Jeddite waits until the wounded are carried inside before taking his place at the council. Orders can wait; some lives cannot.",
       "specialty": {
-        "name": "Wskrzeszenie",
-        "tooltip": "Specjalizacja: Wskrzeszenie",
-        "description": "Klasyczna specjalizacja bohatera Jeddite: Wskrzeszenie."
+        "name": "Resurrection",
+        "tooltip": "Specialty: Resurrection",
+        "description": "Jeddite's classic specialty: Resurrection."
       }
     }
   },
@@ -604,11 +604,11 @@
     },
     "texts": {
       "name": "Geon",
-      "biography": "Geon dołącza do Smoczej Cytadeli, zachowując swoje doświadczenie, umiejętności i klasyczną specjalizację.",
+      "biography": "Geon watches an enemy spell from beginning to end. After the battle, his notes matter more to him than the spoils.",
       "specialty": {
-        "name": "Sokole Oko",
-        "tooltip": "Specjalizacja: Sokole Oko",
-        "description": "Klasyczna specjalizacja bohatera Geon: Sokole Oko."
+        "name": "Eagle Eye",
+        "tooltip": "Specialty: Eagle Eye",
+        "description": "Geon's classic specialty: Eagle Eye."
       }
     }
   },
@@ -659,11 +659,11 @@
     },
     "texts": {
       "name": "Deemer",
-      "biography": "Deemer dołącza do Smoczej Cytadeli, zachowując swoje doświadczenie, umiejętności i klasyczną specjalizację.",
+      "biography": "Deemer can break a pass with falling stone. He now insists on knowing who must travel through it after the battle.",
       "specialty": {
-        "name": "Deszcz Meteorytów",
-        "tooltip": "Specjalizacja: Deszcz Meteorytów",
-        "description": "Klasyczna specjalizacja bohatera Deemer: Deszcz Meteorytów."
+        "name": "Meteor Shower",
+        "tooltip": "Specialty: Meteor Shower",
+        "description": "Deemer's classic specialty: Meteor Shower."
       }
     }
   },
@@ -713,11 +713,11 @@
     },
     "texts": {
       "name": "Sephinroth",
-      "biography": "Sephinroth dołącza do Smoczej Cytadeli, zachowując swoje doświadczenie, umiejętności i klasyczną specjalizację.",
+      "biography": "Sephinroth records every crystal taken from the mountain. Her ledgers settle disputes between the foundries and the dragon keepers.",
       "specialty": {
-        "name": "Kryształy",
-        "tooltip": "Specjalizacja: Kryształy",
-        "description": "Klasyczna specjalizacja bohatera Sephinroth: Kryształy."
+        "name": "Crystals",
+        "tooltip": "Specialty: Crystals",
+        "description": "Sephinroth's classic specialty: Crystals."
       }
     }
   },
@@ -767,11 +767,11 @@
     },
     "texts": {
       "name": "Darkstorn",
-      "biography": "Darkstorn dołącza do Smoczej Cytadeli, zachowując swoje doświadczenie, umiejętności i klasyczną specjalizację.",
+      "biography": "Darkstorn walks beside the foremost shield bearers. He believes protective magic belongs where the first blow will fall.",
       "specialty": {
-        "name": "Kamienna Skóra",
-        "tooltip": "Specjalizacja: Kamienna Skóra",
-        "description": "Klasyczna specjalizacja bohatera Darkstorn: Kamienna Skóra."
+        "name": "Stone Skin",
+        "tooltip": "Specialty: Stone Skin",
+        "description": "Darkstorn's classic specialty: Stone Skin."
       }
     }
   }

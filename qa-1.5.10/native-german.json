@@ -1,0 +1,42 @@
+{
+	"baseGameStringsCompared" : 6453,
+	"campaignEmbeddedMapsLoaded" : 8,
+	"chapters" : {
+		"01" : {
+			"questResolved" : true,
+			"title" : "01. Der Funke der Zitadelle"
+		},
+		"02" : {
+			"questResolved" : true,
+			"title" : "02. Goldene Kerne"
+		},
+		"03" : {
+			"questResolved" : true,
+			"title" : "03. Eid der Titanen"
+		},
+		"04" : {
+			"questResolved" : true,
+			"title" : "04. Höhlen der gebrochenen Magie"
+		},
+		"05" : {
+			"questResolved" : true,
+			"title" : "05. Schatzkammer des Sturms"
+		},
+		"06" : {
+			"questResolved" : true,
+			"title" : "06. Der ewige Sturm kommt"
+		},
+		"07" : {
+			"questResolved" : true,
+			"title" : "07. Der Blaue Thron"
+		},
+		"08" : {
+			"questResolved" : true,
+			"title" : "08. Herz des Endes der Zeitalter"
+		}
+	},
+	"language" : "german",
+	"stringsCompared" : 1131,
+	"success" : true,
+	"verifiedEngineOverrides" : 0
+}

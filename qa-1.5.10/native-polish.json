@@ -1,0 +1,42 @@
+{
+	"baseGameStringsCompared" : 6453,
+	"campaignEmbeddedMapsLoaded" : 8,
+	"chapters" : {
+		"01" : {
+			"questResolved" : true,
+			"title" : "01. Iskra Cytadeli"
+		},
+		"02" : {
+			"questResolved" : true,
+			"title" : "02. Złote Rdzenie"
+		},
+		"03" : {
+			"questResolved" : true,
+			"title" : "03. Przysięga Tytanów"
+		},
+		"04" : {
+			"questResolved" : true,
+			"title" : "04. Groty Pękniętej Magii"
+		},
+		"05" : {
+			"questResolved" : true,
+			"title" : "05. Skarbnica Burzy"
+		},
+		"06" : {
+			"questResolved" : true,
+			"title" : "06. Nadciąga Wieczna Burza"
+		},
+		"07" : {
+			"questResolved" : true,
+			"title" : "07. Błękitny Tron"
+		},
+		"08" : {
+			"questResolved" : true,
+			"title" : "08. Serce Końca Wieków"
+		}
+	},
+	"language" : "polish",
+	"stringsCompared" : 1131,
+	"success" : true,
+	"verifiedEngineOverrides" : 0
+}

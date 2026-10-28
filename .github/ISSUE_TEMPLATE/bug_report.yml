@@ -1,0 +1,29 @@
+name: Gameplay or installation problem
+description: Report a reproducible problem in Dragon Citadel.
+title: "[Bug] "
+body:
+  - type: input
+    id: versions
+    attributes:
+      label: Engine and mod versions
+      description: Include whether you use stock VCMI or BILLADENC4.
+    validations:
+      required: true
+  - type: input
+    id: configuration
+    attributes:
+      label: Language and enabled submods
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps, expected result and actual result
+      description: For a campaign problem, include the chapter and day.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshot, relevant log or reproducible save
+      description: Remove personal information before attaching files.
